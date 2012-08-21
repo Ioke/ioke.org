@@ -1,0 +1,183 @@
+<!DOCTYPE html 
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Ioke</title>
+    <link rel="stylesheet" href="style/ioke-style.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <div id="logo">
+      <a href="index.html">
+        <img src="img/IokeLogo.png" alt="Ioke Logo" width="118" height="115" border="0"/>
+      </a>
+    </div>
+
+    <div id="content">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td valign="top" style="background: #E6EEEE;">
+            <table cellpadding="0" cellspacing="0" border="0" id="menu">
+              <tr>
+                <td>
+                  <span class="menuItem">
+                    <a href="http://ioke.org/wiki/index.php/News" class="unselectedMenuItem">News</a>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="height:.4em"></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <span class="menuItem">
+                    <a href="index.html" class="selectedMenuItem">About Ioke</a>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="height:.4em"></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <span class="menuItem">
+                    <a href="http://ioke.org/wiki/index.php/Guide" class="unselectedMenuItem">Guide</a>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="height:.4em"></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <span class="menuItem">
+                    <a href="download.html" class="unselectedMenuItem">Download</a>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="height:.4em"></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <span class="menuItem">
+                    <a href="http://ioke.kenai.com" class="unselectedMenuItem">Project page</a>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="height:.4em"></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <span class="menuItem">
+                    <a href="http://ci.ioke.org" class="unselectedMenuItem">CI</a>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="height:.4em"></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <span class="menuItem">
+                    <a href="dok/release/index.html" class="unselectedMenuItem">Reference</a>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="height:.4em"></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <span class="menuItem">
+                    <a href="dok/latest/index.html" class="unselectedMenuItem">Reference (snapshot)</a>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="height:.4em"></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <span class="menuItem">
+                    <a href="http://ioke.org/wiki/index.php/Resources" class="unselectedMenuItem">Resources</a>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="height:.4em"></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <span class="menuItem">
+                    <a href="http://ioke.org/wiki" class="unselectedMenuItem">Wiki</a>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td style="height:.4em"></td>
+              </tr>
+            </table>
+        </td>
+        <td>
+          <table cellpadding="0" cellspacing="0" border="0" style="width:50em">
+            <tr>
+              <td style="width:10em"></td>
+              <td>
+<pre class="code">
+<span style="color: #b0c4de;">Ioke</span> <span style="color: #00bfff;">=</span> <span style="color: #606060;">LanguageExperiment</span> <span style="color: #449900;">with</span>(
+  <span style="color: #7777d4;">goal:</span> <span style="color: #7777d4;">:expressiveness</span><span style="color: #006666;">,</span>
+  <span style="color: #7777d4;">data:</span> as(code)<span style="color: #006666;">,</span>
+  <span style="color: #7777d4;">code:</span> as(data)<span style="color: #006666;">,</span>
+  <span style="color: #7777d4;">features:</span> [
+    <span style="color: #7777d4;">:dynamic</span><span style="color: #006666;">,</span>
+    <span style="color: #7777d4;">:object_oriented</span><span style="color: #006666;">,</span>
+    <span style="color: #7777d4;">:prototype_based</span><span style="color: #006666;">,</span>
+    <span style="color: #7777d4;">:homoiconic</span><span style="color: #006666;">,</span>
+    <span style="color: #7777d4;">:macros</span>
+  ]<span style="color: #006666;">,</span>
+  <span style="color: #7777d4;">runtimes:</span> (<span style="color: #606060;">JVM</span><span style="color: #006666;">,</span> <span style="color: #606060;">CLR</span>)<span style="color: #006666;">,</span>
+  <span style="color: #7777d4;">inspirations:</span> <span style="color: #449900;">set</span>(<span style="color: #606060;">Io</span><span style="color: #006666;">,</span> <span style="color: #606060;">Smalltalk</span><span style="color: #006666;">,</span> <span style="color: #606060;">Ruby</span><span style="color: #006666;">,</span> <span style="color: #606060;">Lisp</span>)
+)
+
+<span style="color: #b0c4de;">hello</span> <span style="color: #00bfff;">=</span> <span style="color: #6495ed;">method</span>(name<span style="color: #006666;">,</span>
+  <span style="color: #0050a0;">"hello, </span><span style="color: #449900;">#{name}</span><span style="color: #0050a0;">!"</span> <span style="color: #449900;">println</span>)
+
+<span style="color: #606060;">Ioke</span> inspirations select(
+  features include?(<span style="color: #7777d4;">:object_oriented</span>)
+) each(x<span style="color: #006666;">,</span> hello(x name))
+</pre>
+
+                <p>Ioke is a <i>folding</i> language. It allows you to write highly expressive code that writes code. Ioke allows you to create abstractions at any level, and expressiveness is the ultimate goal of the language.</p>
+
+                <p>Ioke is a dynamic language targeted at virtual machines, currently the Java Virtual Machine and the Common Language Runtime. It's been designed from scratch to be a highly flexible general purpose language. It is a prototype-based programming language that is inspired by <a href="http://iolanguage.com">Io</a>, <a href="http://smalltalk.org">Smalltalk</a>, <a href="http://lisp.org">Lisp</a> and <a href="http://ruby-lang.org">Ruby</a>.</p>
+
+                <p>Ioke is hosted at Kenai. This is where bugs are reported, mailing lists are joined, and the source code can be found. The link to the project at Kenai can be found in the left hand menu.</p>
+                
+                <p>The current version of Ioke is P, with ikj 0.4.0 for the JVM and ikc 0.4.0 for the CLR. That means that Ioke is not production ready. Ioke P is the fourth release and is geared towards making something available that people can use. This site will currently only contain links to other places, reference documentation and most importantly - a guide to the language. That guide should contain everything I know about the language, so with these resources it should be quite easy to get started.</p>
+
+                <p>Ioke is a language I designed for myself. That means that some design choices might not match what you would expect. Ioke is a language that makes sense to me. If it makes sense to you too, great! But be warned that I have made several decisions that doesn't necessarily match what most general purpose languages choose to do.</p>
+
+                <p>More information about the rationale and ideas behind Ioke - and also information about the development process - can be found in my blog, at <a href="http://olabini.com/blog/tag/ioke">http://olabini.com/blog/tag/ioke</a></p>
+                <br/>
+
+                <p style="text-align:right;"><em>Ola Bini</em></p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    </div>
+  </body>
+</html>
