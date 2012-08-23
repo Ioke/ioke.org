@@ -1,0 +1,41 @@
+<span class="irc-date">[0:37]</span> <span class="irc-green">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) has joined #ioke</span><br />
+<span class="irc-date">[0:58]</span> <span class="irc-navy">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) Quit (Client Quit)</span><br />
+<span class="irc-date">[7:12]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[8:03]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-251-116-041.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:33]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-251-116-041.chello.nl) Quit ()</span><br />
+<span class="irc-date">[8:38]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-251-116-041.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-251-116-041.chello.nl) Quit ()</span><br />
+<span class="irc-date">[10:03]</span> <span class="irc-green">* naeu (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-green">* Narnach (n=narnach@82.94.4.219) has joined #ioke</span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[12:28]</span> <span class="irc-green">* exlibris (n=exlibris@port-87-193-165-87.static.qsc.de) has joined #ioke</span><br />
+<span class="irc-date">[13:26]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit (niven.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[13:26]</span> <span class="irc-green">* naeu (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[15:07]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit ()</span><br />
+<span class="irc-date">[15:08]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-251-116-041.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[15:31]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[15:34]</span> <span class="irc-navy">* Narnach (n=narnach@82.94.4.219) Quit ("Leaving...")</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-navy">* exlibris (n=exlibris@port-87-193-165-87.static.qsc.de) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[16:41]</span> <span class="irc-black">&lt;naeu&gt; hey olabini</span><br />
+<span class="irc-date">[17:30]</span> <span class="irc-black">&lt;olabini&gt; hi</span><br />
+<span class="irc-date">[17:30]</span> <span class="irc-black">&lt;naeu&gt; i solved the weird text interpolation within Message doText issue</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;naeu&gt; a = "&lt;a href=\\\"<a href="http://iconfactory.com/software/twitterrific\\\"&gt;twitterrific&lt;/a&gt;"">http://iconfactory.com/software/twitterrific\\\"&gt;twitterrific&lt;/a&gt;"</a></span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;naeu&gt; Message doText("#{a}")</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;naeu&gt; *** - java.lang.RuntimeException: MismatchedTokenException(34!=10) (Condition Error NativeException)</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;naeu&gt; see the error now?</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;naeu&gt; Message doText("\"#{a}\"")</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;naeu&gt; +&gt; "&lt;a href=\"<a href="http://iconfactory.com/software/twitterrific\"&gt;twitterrific&lt;/a&gt;"">http://iconfactory.com/software/twitterrific\"&gt;twitterrific&lt;/a&gt;"</a></span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;olabini&gt; oops</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[17:37]</span> <span class="irc-black">&lt;naeu&gt; although MismatchedTokenException(34!=10)  isn't exactly too descriptive</span><br />
+<span class="irc-date">[17:44]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-251-116-041.chello.nl) Quit ()</span><br />
+<span class="irc-date">[17:57]</span> <span class="irc-black">&lt;olabini&gt; nope</span><br />
+<span class="irc-date">[18:31]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-navy">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[19:23]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-226.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[19:29]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[19:29]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[19:50]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-226.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[21:49]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />

@@ -1,0 +1,68 @@
+<span class="irc-date">[0:41]</span> <span class="irc-green">* bguthrie (n=bguthrie@glo2.manheim.com) has joined #ioke</span><br />
+<span class="irc-date">[0:43]</span> <span class="irc-navy">* bguthrie (n=bguthrie@glo2.manheim.com) Quit (Client Quit)</span><br />
+<span class="irc-date">[1:32]</span> <span class="irc-green">* bguthrie (n=bguthrie@c-24-30-76-226.hsd1.ga.comcast.net) has joined #ioke</span><br />
+<span class="irc-date">[1:38]</span> <span class="irc-black">&lt;bguthrie&gt; hey all, anyone around?</span><br />
+<span class="irc-date">[6:24]</span> <span class="irc-green">* olabini (n=ola@c-d64ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[8:33]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:51]</span> <span class="irc-green">* Narnach_ (n=narnach@a82-94-4-220.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:59]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[9:08]</span> <span class="irc-green">* Narnach_ is now known as Narnach</span><br />
+<span class="irc-date">[9:16]</span> <span class="irc-green">* olabini (n=ola@194.132.20.9) has joined #ioke</span><br />
+<span class="irc-date">[9:16]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;bguthrie&gt; ??(42) call should == 42</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;bguthrie&gt; hot</span><br />
+<span class="irc-date">[9:36]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r90da113 / (src/grammar/ioke.g src/main/ioke/lang/util/StringUtils.java): Fix #178 - allow CRLF combinations when escaping newlines in text literals - <a href="http://bit.ly/Fbq9">http://bit.ly/Fbq9</a></span><br />
+<span class="irc-date">[13:06]</span> <span class="irc-navy">* bguthrie (n=bguthrie@c-24-30-76-226.hsd1.ga.comcast.net) Quit ()</span><br />
+<span class="irc-date">[13:13]</span> <span class="irc-navy">* olabini (n=ola@194.132.20.9) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[13:32]</span> <span class="irc-green">* naeu (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-green">* olabini (n=ola@c-d64ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[15:10]</span> <span class="irc-green">* bguthrie (n=bguthrie@glo2.manheim.com) has joined #ioke</span><br />
+<span class="irc-date">[15:23]</span> <span class="irc-navy">* bguthrie (n=bguthrie@glo2.manheim.com) Quit ()</span><br />
+<span class="irc-date">[16:40]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-220.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[17:57]</span> <span class="irc-black">&lt;olabini&gt; evening, people</span><br />
+<span class="irc-date">[17:57]</span> <span class="irc-black">&lt;olabini&gt; this channel has been sadly quiet after the initial flurry of activity</span><br />
+<span class="irc-date">[18:02]</span> <span class="irc-brick">* olabini is hacking on a slightly hard problem at the moment. disambiguation between class and instance methods. ouch.</span><br />
+<span class="irc-date">[18:03]</span> <span class="irc-black">&lt;olabini&gt; am thinking about doing something slightly evil.</span><br />
+<span class="irc-date">[18:03]</span> <span class="irc-black">&lt;olabini&gt; namely: when exposing class methods, just expose them prepended with class:</span><br />
+<span class="irc-date">[18:03]</span> <span class="irc-black">&lt;olabini&gt; that means, if you do:</span><br />
+<span class="irc-date">[18:03]</span> <span class="irc-black">&lt;olabini&gt; java:util:ArrayList toString</span><br />
+<span class="irc-date">[18:03]</span> <span class="irc-black">&lt;olabini&gt;   that will actually fail, because it will invoke the instance toString</span><br />
+<span class="irc-date">[18:03]</span> <span class="irc-black">&lt;olabini&gt; while doing</span><br />
+<span class="irc-date">[18:03]</span> <span class="irc-black">&lt;olabini&gt; java:util:ArrayList class:toString</span><br />
+<span class="irc-date">[18:04]</span> <span class="irc-black">&lt;olabini&gt;   does the right thing</span><br />
+<span class="irc-date">[18:04]</span> <span class="irc-black">&lt;olabini&gt; does this sound evil?</span><br />
+<span class="irc-date">[18:04]</span> <span class="irc-black">&lt;olabini&gt; I have an alternative, but it is worse, so I think I'll go with this.</span><br />
+<span class="irc-date">[18:14]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit ()</span><br />
+<span class="irc-date">[18:17]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * rc1d7c70 / (3 files in 3 dirs): Fix the whole stupidness with class vs instance in Java - <a href="http://bit.ly/aZpO">http://bit.ly/aZpO</a></span><br />
+<span class="irc-date">[18:48]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r8310c90 / (2 files in 2 dirs): Fix up the last implementation a bit to allow invocation of class-methods on instances of that class - <a href="http://bit.ly/FWQU">http://bit.ly/FWQU</a></span><br />
+<span class="irc-date">[18:59]</span> <span class="irc-brick">* olabini is downloading a windows image for vmware. guess I don't have any other choice - will be hard to debug Ioke problems on windows without it</span><br />
+<span class="irc-date">[19:00]</span> <span class="irc-black">&lt;olabini&gt; whoops. that sounded like I'm doing something illegal. -- I'm not, it's from one of TW's download servers</span><br />
+<span class="irc-date">[19:00]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[19:13]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[19:29]</span> <span class="irc-navy">* vincenz (n=vincenz@li23-146.members.linode.com) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[19:29]</span> <span class="irc-green">* vincenz (n=vincenz@li23-146.members.linode.com) has joined #ioke</span><br />
+<span class="irc-date">[20:10]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-5.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[20:45]</span> <span class="irc-green">* martido (n=martin@dslb-092-074-116-101.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[20:47]</span> <span class="irc-black">&lt;martido&gt; ola: sounds like windows is some highly contagious disease ;)</span><br />
+<span class="irc-date">[20:48]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[20:49]</span> <span class="irc-black">&lt;olabini&gt; it is. really.</span><br />
+<span class="irc-date">[20:49]</span> <span class="irc-black">&lt;olabini&gt; and dangerous</span><br />
+<span class="irc-date">[20:49]</span> <span class="irc-black">&lt;olabini&gt; it's an epidemic</span><br />
+<span class="irc-date">[20:49]</span> <span class="irc-black">&lt;olabini&gt; or even pandemic</span><br />
+<span class="irc-date">[20:49]</span> <span class="irc-black">&lt;martido&gt; ;)</span><br />
+<span class="irc-date">[20:49]</span> <span class="irc-black">&lt;martido&gt; is there a climax to pandemic?</span><br />
+<span class="irc-date">[20:50]</span> <span class="irc-black">&lt;martido&gt; well, as long as I don't get myself a Linux box (and I will!!!!) you can count on me reporting anything that seems suspicious on Windows</span><br />
+<span class="irc-date">[20:52]</span> <span class="irc-black">&lt;martido&gt; maybe you shouldn't have said that Ioke works on Windows ;) would save you a lot of work I guess</span><br />
+<span class="irc-date">[21:16]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Connection reset by peer)</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[22:00]</span> <span class="irc-black">&lt;naeu&gt; olabini: hey there</span><br />
+<span class="irc-date">[22:08]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[22:27]</span> <span class="irc-black">&lt;olabini&gt; hi hi.</span><br />
+<span class="irc-date">[22:27]</span> <span class="irc-black">&lt;olabini&gt; bed time now</span><br />
+<span class="irc-date">[22:27]</span> <span class="irc-black">&lt;olabini&gt; martido: and yes, you're right</span><br />
+<span class="irc-date">[22:27]</span> <span class="irc-black">&lt;olabini&gt; but now I'm committed.</span><br />
+<span class="irc-date">[22:30]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-5.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[22:33]</span> <span class="irc-green">* martido (n=martin@dslb-092-074-116-101.pools.arcor-ip.net) has left #ioke</span><br />

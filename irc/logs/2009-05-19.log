@@ -1,0 +1,131 @@
+<span class="irc-date">[0:02]</span> <span class="irc-navy">* basu_ (n=basu@139.147.18.6) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[0:02]</span> <span class="irc-navy">* basu__ (n=basu@139.147.18.6) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[6:15]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-86.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[6:50]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-86.vc-graz.ac.at) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[7:03]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[7:15]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[7:43]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-251-116-041.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[10:36]</span> <span class="irc-black">&lt;naeu&gt; olabini: hey there</span><br />
+<span class="irc-date">[10:38]</span> <span class="irc-green">* basu (n=basu@139.147.18.6) has joined #ioke</span><br />
+<span class="irc-date">[10:38]</span> <span class="irc-green">* basu_ (n=basu@139.147.18.6) has joined #ioke</span><br />
+<span class="irc-date">[11:04]</span> <span class="irc-black">&lt;olabini&gt; hi sam</span><br />
+<span class="irc-date">[11:05]</span> <span class="irc-black">&lt;naeu&gt; just placed a comment on your latest blog</span><br />
+<span class="irc-date">[11:05]</span> <span class="irc-black">&lt;naeu&gt; the first paragraph is just tongue-in-cheek</span><br />
+<span class="irc-date">[11:06]</span> <span class="irc-black">&lt;naeu&gt; just so you know the intention of the tone :-)</span><br />
+<span class="irc-date">[11:08]</span> <span class="irc-black">&lt;olabini&gt; k</span><br />
+<span class="irc-date">[11:08]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[11:08]</span> <span class="irc-black">&lt;naeu&gt; it reads like a summary of my tutorials/presentations</span><br />
+<span class="irc-date">[11:08]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[11:09]</span> <span class="irc-black">&lt;naeu&gt; which is really great to read</span><br />
+<span class="irc-date">[11:09]</span> <span class="irc-black">&lt;olabini&gt; doesnt surprise me, really</span><br />
+<span class="irc-date">[11:09]</span> <span class="irc-black">&lt;naeu&gt; it also goes quite a long way to explain why I haunt these parts despite being a pretty crappy programmer ;-)</span><br />
+<span class="irc-date">[11:11]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[13:58]</span> <span class="irc-green">* donizetti (n=donizett@189.79.130.40) has joined #ioke</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-green">* donizetti_ (n=donizett@201-13-10-138.dsl.telesp.net.br) has joined #ioke</span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-navy">* donizetti (n=donizett@189.79.130.40) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[14:32]</span> <span class="irc-navy">* donizetti_ (n=donizett@201-13-10-138.dsl.telesp.net.br) Quit ()</span><br />
+<span class="irc-date">[15:07]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-251-116-041.chello.nl) Quit ()</span><br />
+<span class="irc-date">[16:43]</span> <span class="irc-green">* donizetti (n=donizett@189.79.151.21) has joined #ioke</span><br />
+<span class="irc-date">[17:33]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-244.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[17:40]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[17:51]</span> <span class="irc-black">&lt;naeu&gt; That Ted Neward article is absurd</span><br />
+<span class="irc-date">[17:56]</span> <span class="irc-black">&lt;naeu&gt; I mean, the only thing the whole article seems to say is that "it's easier to build new languages atop the JVM or CLR"</span><br />
+<span class="irc-date">[17:57]</span> <span class="irc-black">&lt;naeu&gt; and it doesn't even do that very clearly</span><br />
+<span class="irc-date">[17:57]</span> <span class="irc-black">&lt;naeu&gt; (for those that haven't seen the article: <a href="https://www.code-magazine.com/Article.aspx?quickid=0903131)">https://www.code-magazine.com/Article.aspx?quickid=0903131)</a></span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;olabini&gt; yeah, I know</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;olabini&gt; it is geared towards general consumption, though</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;olabini&gt; (I'm not excusing it)</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;naeu&gt; don't you TW people read each other's work before putting it out?</span><br />
+<span class="irc-date">[18:00]</span> <span class="irc-black">&lt;naeu&gt; I don't think that this is good advertisement for your brand</span><br />
+<span class="irc-date">[18:00]</span> <span class="irc-black">&lt;naeu&gt; ok, so if it's geared towards general consumption, why the hell write a line like: "But to make that version of OCaml-on-CLR work correctly, he first had to implement a form of parametric polymorphism for the CLR???. "</span><br />
+<span class="irc-date">[18:01]</span> <span class="irc-black">&lt;naeu&gt; unless he wanted to sound smart</span><br />
+<span class="irc-date">[18:01]</span> <span class="irc-black">&lt;naeu&gt; how many 'general consumers' know what parametric polymorphism is?</span><br />
+<span class="irc-date">[18:02]</span> <span class="irc-black">&lt;naeu&gt; it's exactly this kind of article which flies in the face of all Guy Steele spoke about in Growing a Language (which, shamefully, I only saw for the first time the other day)</span><br />
+<span class="irc-date">[18:08]</span> <span class="irc-black">&lt;naeu&gt; (I'm only really this annoyed because I generally happen to like TW people and perhaps would have applied to join if it wasn't for the fact that London sucks ass)</span><br />
+<span class="irc-date">[18:12]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[18:12]</span> <span class="irc-black">&lt;olabini&gt; you are totally right</span><br />
+<span class="irc-date">[18:12]</span> <span class="irc-black">&lt;olabini&gt; I'm ashamed. this shouldn't have been associated with TWs brand.</span><br />
+<span class="irc-date">[18:13]</span> <span class="irc-black">&lt;olabini&gt; and we will try to sort it out.</span><br />
+<span class="irc-date">[18:14]</span> <span class="irc-black">&lt;naeu&gt; I think it's a shame because there is a really great article somewhere in that topic for that audience</span><br />
+<span class="irc-date">[18:14]</span> <span class="irc-black">&lt;naeu&gt; perhaps using the recent Guardian article as a starting point</span><br />
+<span class="irc-date">[18:15]</span> <span class="irc-black">&lt;naeu&gt; (which was surprisingly good)</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-black">&lt;olabini&gt; yeah. that one was great</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-black">&lt;olabini&gt; indeed</span><br />
+<span class="irc-date">[18:28]</span> <span class="irc-black">&lt;naeu&gt; btw, on a different note, it was lovely to see how beautifully Ioke fits in with my perception of Guy's intent for his Growing a Language presentation</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-black">&lt;olabini&gt; yeah. I hope it does</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-black">&lt;olabini&gt; I love that presentation and keep it in mind all the time</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-black">&lt;naeu&gt; well I really think it does</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-black">&lt;olabini&gt; great to hear that</span><br />
+<span class="irc-date">[18:41]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-244.vc-graz.ac.at) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[18:42]</span> <span class="irc-green">* kar8nga (n=kar8nga@f-30.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[19:00]</span> <span class="irc-black">&lt;donizetti&gt; hey guys</span><br />
+<span class="irc-date">[19:00]</span> <span class="irc-black">&lt;donizetti&gt; ola sorry to bother you</span><br />
+<span class="irc-date">[19:01]</span> <span class="irc-black">&lt;donizetti&gt; but i'm going to talk about programming languages target at JVM at an event here in Brazil</span><br />
+<span class="irc-date">[19:01]</span> <span class="irc-black">&lt;donizetti&gt; and the language that I will show is Ioke</span><br />
+<span class="irc-date">[19:03]</span> <span class="irc-black">&lt;donizetti&gt; and i was wandering if any of your talks had been exposed on the web?</span><br />
+<span class="irc-date">[19:06]</span> <span class="irc-black">&lt;naeu&gt; donizetti: cool to hear that you're going to showcase Ioke</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-black">&lt;donizetti&gt; naeu : =D</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-black">&lt;naeu&gt; as far as I'm aware Ola is the only one to have given full-length talks with slides on Ioke and I don't believe his slides are available to download</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-black">&lt;naeu&gt; but perhaps if you ask him nicely...</span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-black">&lt;donizetti&gt; it'll be an interesting event</span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-black">&lt;donizetti&gt; some other guys will talk about clojure, scala, groove</span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-black">&lt;olabini&gt; they are</span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-black">&lt;olabini&gt; I think</span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-black">&lt;olabini&gt; no, they weren't</span><br />
+<span class="irc-date">[19:10]</span> <span class="irc-black">&lt;donizetti&gt; :(</span><br />
+<span class="irc-date">[19:10]</span> <span class="irc-black">&lt;olabini&gt; I will put the latest version online</span><br />
+<span class="irc-date">[19:10]</span> <span class="irc-black">&lt;olabini&gt; give me 2 secs</span><br />
+<span class="irc-date">[19:10]</span> <span class="irc-black">&lt;donizetti&gt; =D</span><br />
+<span class="irc-date">[19:10]</span> <span class="irc-black">&lt;donizetti&gt; thanks ola</span><br />
+<span class="irc-date">[19:12]</span> <span class="irc-black">&lt;olabini&gt; no worries</span><br />
+<span class="irc-date">[19:12]</span> <span class="irc-black">&lt;olabini&gt; mail me if you have any questions</span><br />
+<span class="irc-date">[19:12]</span> <span class="irc-black">&lt;donizetti&gt; cool</span><br />
+<span class="irc-date">[19:13]</span> <span class="irc-black">&lt;donizetti&gt; enjoying the opportunity</span><br />
+<span class="irc-date">[19:13]</span> <span class="irc-black">&lt;donizetti&gt; i'm really looking forward to help ioke in some way</span><br />
+<span class="irc-date">[19:13]</span> <span class="irc-black">&lt;olabini&gt; slides are here:</span><br />
+<span class="irc-date">[19:13]</span> <span class="irc-black">&lt;donizetti&gt; a few days ago i had a talk with calor vilella about that</span><br />
+<span class="irc-date">[19:13]</span> <span class="irc-black">&lt;olabini&gt; <a href="http://olabini.com/presentations/Ioke-AFoldingLanguage-May14.pdf">http://olabini.com/presentations/Ioke-AFoldingLanguage-May14.pdf</a></span><br />
+<span class="irc-date">[19:14]</span> <span class="irc-black">&lt;donizetti&gt; and we talked about an ioke framework for yaml and json</span><br />
+<span class="irc-date">[19:14]</span> <span class="irc-black">&lt;olabini&gt; and as it happens, the video is up too, here: <a href="http://skillsmatter.com/podcast/java-jee/introduction-to-ioke">http://skillsmatter.com/podcast/java-jee/introduction-to-ioke</a></span><br />
+<span class="irc-date">[19:14]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[19:14]</span> <span class="irc-black">&lt;donizetti&gt; but we didn't know if it would be good or not</span><br />
+<span class="irc-date">[19:14]</span> <span class="irc-black">&lt;donizetti&gt; cos ioke has a great integration with java</span><br />
+<span class="irc-date">[19:14]</span> <span class="irc-black">&lt;donizetti&gt; and soon will have with .net</span><br />
+<span class="irc-date">[19:14]</span> <span class="irc-black">&lt;donizetti&gt; and both have good libraries for that</span><br />
+<span class="irc-date">[19:14]</span> <span class="irc-black">&lt;donizetti&gt; what do you think ola?</span><br />
+<span class="irc-date">[19:15]</span> <span class="irc-black">&lt;olabini&gt; well now</span><br />
+<span class="irc-date">[19:15]</span> <span class="irc-black">&lt;olabini&gt; .NET have no good libs for YAML</span><br />
+<span class="irc-date">[19:15]</span> <span class="irc-black">&lt;olabini&gt; and it is still good to have a good native Ioke api</span><br />
+<span class="irc-date">[19:15]</span> <span class="irc-black">&lt;olabini&gt; I would probably wrap JvYAMLb for the JVM version</span><br />
+<span class="irc-date">[19:15]</span> <span class="irc-black">&lt;olabini&gt; the .NET version is harder</span><br />
+<span class="irc-date">[19:16]</span> <span class="irc-black">&lt;donizetti&gt; i thought about wrappin jvYAML for the jvm version too, to be honest I've started something on it</span><br />
+<span class="irc-date">[19:18]</span> <span class="irc-black">&lt;donizetti&gt; the good point about writing a library entirely using ioke would be that it could be used on jvm and .net</span><br />
+<span class="irc-date">[19:21]</span> <span class="irc-black">&lt;naeu&gt; olabini: haha, you've elevated yourself from "programming language geek" to "programming langauge MANIAC"</span><br />
+<span class="irc-date">[20:12]</span> <span class="irc-black">&lt;naeu&gt; ah, it's a real shame, the skillsmatter video has duff sound at around 20mins in and it get rather out of sync</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;olabini&gt; oh yeah?</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;olabini&gt; haven't seen that. a shame</span><br />
+<span class="irc-date">[20:39]</span> <span class="irc-black">&lt;naeu&gt; but the moniker "programming language maniac" might just stick ;-)</span><br />
+<span class="irc-date">[20:41]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[20:41]</span> <span class="irc-black">&lt;olabini&gt; yeah, I know</span><br />
+<span class="irc-date">[20:41]</span> <span class="irc-black">&lt;olabini&gt; I've considered stopping to use it</span><br />
+<span class="irc-date">[20:41]</span> <span class="irc-black">&lt;olabini&gt; but haven't so far</span><br />
+<span class="irc-date">[20:41]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[20:41]</span> <span class="irc-black">&lt;olabini&gt; it is pretty fair</span><br />
+<span class="irc-date">[20:42]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-navy">* kar8nga (n=kar8nga@f-30.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[21:35]</span> <span class="irc-green">* BetaWaffle_ (n=andrew@c-98-251-0-224.hsd1.ga.comcast.net) has joined #ioke</span><br />
+<span class="irc-date">[21:35]</span> <span class="irc-green">* BetaWaffle__ (n=andrew@c-98-251-0-224.hsd1.ga.comcast.net) has joined #ioke</span><br />
+<span class="irc-date">[21:35]</span> <span class="irc-navy">* BetaWaffle_ (n=andrew@c-98-251-0-224.hsd1.ga.comcast.net) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[21:36]</span> <span class="irc-navy">* BetaWaffle__ (n=andrew@c-98-251-0-224.hsd1.ga.comcast.net) Quit (Client Quit)</span><br />
+<span class="irc-date">[21:51]</span> <span class="irc-navy">* BetaWaffle (n=andrew@c-98-251-0-224.hsd1.ga.comcast.net) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-navy">* basu_ (n=basu@139.147.18.6) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[22:05]</span> <span class="irc-navy">* basu (n=basu@139.147.18.6) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[22:12]</span> <span class="irc-black">&lt;donizetti&gt; ola , naeu : can you indicate some goods book about programming languages?</span><br />
+<span class="irc-date">[22:14]</span> <span class="irc-black">&lt;naeu&gt; donizetti: what kind of stuff are you looking to learn?</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;donizetti&gt; programing languages theory!</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[23:24]</span> <span class="irc-green">* basu (n=basu@139.147.18.6) has joined #ioke</span><br />
+<span class="irc-date">[23:24]</span> <span class="irc-green">* basu_ (n=basu@139.147.18.6) has joined #ioke</span><br />
+<span class="irc-date">[23:31]</span> <span class="irc-navy">* basu (n=basu@139.147.18.6) Quit ("leaving")</span><br />

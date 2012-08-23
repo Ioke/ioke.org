@@ -1,0 +1,43 @@
+<span class="irc-date">[5:13]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-45.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[5:42]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-45.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[8:42]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-251-057-102.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[13:36]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-251-057-102.chello.nl) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-green">* naeu (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[14:30]</span> <span class="irc-green">* olabini (n=ola@93-97-45-26.zone5.bethere.co.uk) has joined #ioke</span><br />
+<span class="irc-date">[14:30]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[15:31]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[15:35]</span> <span class="irc-green">* donizetti_ (n=donizett@187.37.206.68) has joined #ioke</span><br />
+<span class="irc-date">[15:35]</span> <span class="irc-black">&lt;donizetti_&gt; hello guys!</span><br />
+<span class="irc-date">[15:36]</span> <span class="irc-black">&lt;donizetti_&gt; olabini: say hello to jimwebber for me! =D</span><br />
+<span class="irc-date">[15:39]</span> <span class="irc-black">&lt;olabini&gt; will do</span><br />
+<span class="irc-date">[15:39]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[15:40]</span> <span class="irc-black">&lt;donizetti_&gt; thanks!</span><br />
+<span class="irc-date">[15:51]</span> <span class="irc-black">&lt;naeu&gt; Ah, wasn't Plato great!</span><br />
+<span class="irc-date">[15:51]</span> <span class="irc-black">&lt;naeu&gt; ???First, the taking in of scattered particulars under one Idea, so that everyone understands what is being talked about...Second, the separation of the Idea into parts, by dividing it at the joints, as nature directs, not breaking any limb in half as a bad carver might.???</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-black">&lt;naeu&gt; here he covers unification, communication and abstraction neatly</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-black">&lt;CIA-9&gt; ioke: Ola Bini master * r359588b / lib/ioke/ispec/formatter.ik : Make it possible to turn of ansi coloring even on linux - <a href="http://bit.ly/1uZPhF">http://bit.ly/1uZPhF</a></span><br />
+<span class="irc-date">[15:58]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[16:01]</span> <span class="irc-black">&lt;CIA-9&gt; ioke: Ola Bini master * r7ce4a18 / build.xml : Pass on ispec.ansi setting to test run - <a href="http://bit.ly/DyO4k">http://bit.ly/DyO4k</a></span><br />
+<span class="irc-date">[16:04]</span> <span class="irc-black">&lt;CIA-9&gt; ioke: Ola Bini master * rc5c6457 / build.xml : Stupid typo - <a href="http://bit.ly/67DEu">http://bit.ly/67DEu</a></span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-black">&lt;donizetti_&gt; olabini: have you decided where will you take ioke next?</span><br />
+<span class="irc-date">[16:20]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit ()</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[16:45]</span> <span class="irc-black">&lt;olabini&gt; donizetti_: not really</span><br />
+<span class="irc-date">[16:45]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[16:45]</span> <span class="irc-black">&lt;olabini&gt; it's a hard question</span><br />
+<span class="irc-date">[16:45]</span> <span class="irc-black">&lt;olabini&gt; so I'm solving simpler problems right now</span><br />
+<span class="irc-date">[16:48]</span> <span class="irc-black">&lt;donizetti_&gt; I see</span><br />
+<span class="irc-date">[16:48]</span> <span class="irc-black">&lt;donizetti_&gt; i've tried something on the issue of parrot!</span><br />
+<span class="irc-date">[16:48]</span> <span class="irc-black">&lt;donizetti_&gt; really nice challenge!</span><br />
+<span class="irc-date">[16:50]</span> <span class="irc-black">&lt;donizetti_&gt; but the one I got really excited of was the fact of it became statically typed.</span><br />
+<span class="irc-date">[17:19]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[17:55]</span> <span class="irc-navy">* olabini (n=ola@93-97-45-26.zone5.bethere.co.uk) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[18:06]</span> <span class="irc-green">* olabini (n=ola@217.40.10.35) has joined #ioke</span><br />
+<span class="irc-date">[18:06]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[18:07]</span> <span class="irc-green">* olabini (n=ola@217.40.10.35) has left #ioke</span><br />
+<span class="irc-date">[18:58]</span> <span class="irc-green">* olabini (n=ola@217.40.10.35) has joined #ioke</span><br />
+<span class="irc-date">[18:58]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-navy">* olabini (n=ola@217.40.10.35) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[20:05]</span> <span class="irc-navy">* donizetti_ (n=donizett@187.37.206.68) Quit ()</span><br />
+<span class="irc-date">[22:25]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />

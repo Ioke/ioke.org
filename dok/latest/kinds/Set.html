@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Kind: DefaultBehavior</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href=".././dokgen-style.css" type="text/css" media="screen" />
+    <script language="JavaScript" type="text/javascript">
+    // <![CDATA[
+
+        function toggleSource( id )
+        {
+          var elem
+          var link
+
+          if( document.getElementById )
+          {
+            elem = document.getElementById( id )
+            link = document.getElementById( "l_" + id )
+          }
+          else if ( document.all )
+          {
+            elem = eval( "document.all." + id )
+            link = eval( "document.all.l_" + id )
+          }
+          else
+            return false;
+
+          if( elem.style.display == "block" )
+          {
+            elem.style.display = "none"
+            link.innerHTML = "show source"
+          }
+          else
+          {
+            elem.style.display = "block"
+            link.innerHTML = "hide source"
+          }
+        }
+
+        function openCode( url )
+        {
+          window.open( url, "SOURCE_CODE", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=480,width=750" ).focus();
+        }
+      // ]]>
+    </script>
+  </head>
+
+  <body>
+    <table border='0' cellpadding='0' cellspacing='0' width="100%" class='banner'>
+      <tr>
+        <td>
+          <table width="100%" border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+              <td class="file-title" colspan="2">
+                <span class="file-title-prefix">Kind</span>
+                <br />
+                Set
+              </td>
+              <td align="right">
+                <table cellspacing="0" cellpadding="2">
+                  <tr>
+                    <td>Main mimic:</td>
+                    <td>
+                      <a href="../kinds/Mixins/Sequenced.html">Mixins Sequenced</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <div id="bodyContent">
+      <div id="content">
+        <div class="description">
+          <p>
+A set is an unordered collection of objects that contains no duplicates.
+          </p>
+        </div>
+
+        <div class="sectiontitle">Mimics</div>
+        <ul>
+          <li><a href="../kinds/Mixins/Sequenced.html">Mixins Sequenced</a></li><li><a href="../kinds/Origin.html">Origin</a></li>
+        </ul>
+
+        <div class="sectiontitle">Inactive cells</div>
+        <ul>
+          <li><a href="#C00813">kind</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Active cells</div>
+        <ul>
+          <li><a href="#C00822">+(otherSet)</a></li>
+<li><a href="#C00820">&lt;&lt;(value)</a></li>
+<li><a href="#C00815">==(other)</a></li>
+<li><a href="#C00834">===(other)</a></li>
+<li><a href="#C00833">?&(...)</a></li>
+<li><a href="#C00832">?|(...)</a></li>
+<li><a href="#C00830">each([indexOrArgOrCode] nil, [argOrCode] nil, [code] nil)</a></li>
+<li><a href="#C00819">empty?()</a></li>
+<li><a href="#C00814">hash()</a></li>
+<li><a href="#C00831">ifEmpty(...)</a></li>
+<li><a href="#C00828">include?(object)</a></li>
+<li><a href="#C00816">inspect()</a></li>
+<li><a href="#C00818">notice()</a></li>
+<li><a href="#C00821">remove!(value)</a></li>
+<li><a href="#C00829">seq()</a></li>
+<li><a href="#C00817">withIdentitySemantics!()</a></li>
+<li><a href="#C00836">∈(element)</a></li>
+<li><a href="#C00837">∉(element)</a></li>
+<li><a href="#C00823">∩(otherSet)</a></li>
+<li><a href="#C00835">∪(other)</a></li>
+<li><a href="#C00825">⊂(otherSet)</a></li>
+<li><a href="#C00827">⊃(otherSet)</a></li>
+<li><a href="#C00824">⊆(otherSet)</a></li>
+<li><a href="#C00826">⊇(otherSet)</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Specs</div>
+        <div class="specs">
+          
+        </div>
+
+        <div class="sectiontitle">Inactive cells (details)</div>
+                <div class="cell">
+          <a name="C00813"></a>
+          <table border="0" cellpadding="5">
+            <tr valign="top">
+              <td class="cell-name">kind</td>
+              <td>=</td>
+              <td class="cell-value">"Set"</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div class="sectiontitle">Active cells (details)</div>
+                <div class="cell">
+          <div class="title">
+          <a name="C00822"></a><b>+</b>(otherSet)
+          </div>
+          <div class="description">
+            <p>returns a new set that contains the receivers elements and the elements of the set sent in as the argument.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00820"></a><b>&lt;&lt;</b>(value)
+          </div>
+          <div class="description">
+            <p>Adds the argument to this set, if it's not already in the set. Returns the set after adding the object.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00815"></a><b>==</b>(other)
+          </div>
+          <div class="description">
+            <p>returns true if the left hand side set is equal to the right hand side set.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00834"></a><b>===</b>(other)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00834_source')" id="l_C00834_source">show source</a> ]</p>
+            <div id="C00834_source" class="dyn-source">
+<pre>
+method(other, 
+  if(self same?(
+      []), 
+    Reflector other:mimics?(cell(:other), 
+      []), 
+    bind(rescue(Condition Error, fn(c, false)), 
+      self include?(
+        other))))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00833"></a><b>?&</b>(...)
+          </div>
+          <div class="description">
+            <p>if this set is non-empty, returns the result of evaluating the argument, otherwise returns the set</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00833_source')" id="l_C00833_source">show source</a> ]</p>
+            <div id="C00833_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    unless(empty?, 
+      call argAt(0), 
+      self), 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00832"></a><b>?|</b>(...)
+          </div>
+          <div class="description">
+            <p>if this set is empty, returns the result of evaluating the argument, otherwise returns the set</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00832_source')" id="l_C00832_source">show source</a> ]</p>
+            <div id="C00832_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    if(empty?, 
+      call argAt(0), 
+      self), 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00830"></a><b>each</b>([indexOrArgOrCode] nil, [argOrCode] nil, [code] nil)
+          </div>
+          <div class="description">
+            <p>takes either one, two or three arguments. if one argument is given, it should be a message chain that will be sent to each object in the set. the result will be thrown away. if two arguments are given, the first is an unevaluated name that will be set to each of the values in the set in succession, and then the second argument will be evaluated in a scope with that argument in it. if three arguments is given, the first one is an unevaluated name that will be set to the index of each element, and the other two arguments are the name of the argument for the value, and the actual code. the code will evaluate in a lexical context, and if the argument name is available outside the context, it will be shadowed. the method will return the set. the iteration order is not defined.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00819"></a><b>empty?</b>()
+          </div>
+          <div class="description">
+            <p>returns true if this set is empty, false otherwise</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00814"></a><b>hash</b>()
+          </div>
+          <div class="description">
+            <p>returns a hash for the set</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00831"></a><b>ifEmpty</b>(...)
+          </div>
+          <div class="description">
+            <p>if this set is empty, returns the result of evaluating the argument, otherwise returns the set</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00831_source')" id="l_C00831_source">show source</a> ]</p>
+            <div id="C00831_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    if(empty?, 
+      call argAt(0), 
+      self), 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00828"></a><b>include?</b>(object)
+          </div>
+          <div class="description">
+            <p>returns true if the receiver includes the evaluated argument, otherwise false</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00816"></a><b>inspect</b>()
+          </div>
+          <div class="description">
+            <p>Returns a text inspection of the object</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00818"></a><b>notice</b>()
+          </div>
+          <div class="description">
+            <p>Returns a brief text inspection of the object</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00821"></a><b>remove!</b>(value)
+          </div>
+          <div class="description">
+            <p>Removes the argument from the set, if it's in the set. Returns the set after removing the object.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00829"></a><b>seq</b>()
+          </div>
+          <div class="description">
+            <p>returns a new sequence to iterate over this set</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00817"></a><b>withIdentitySemantics!</b>()
+          </div>
+          <div class="description">
+            <p>Converts this set to use identity semantics, and then returns it.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00836"></a><b>∈</b>(element)
+          </div>
+          <div class="description">
+            <p>returns true if the argument is in the set</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00836_source')" id="l_C00836_source">show source</a> ]</p>
+            <div id="C00836_source" class="dyn-source">
+<pre>
+method(element, 
+  include?(element))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00837"></a><b>∉</b>(element)
+          </div>
+          <div class="description">
+            <p>returns false if the argument is in the set</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00837_source')" id="l_C00837_source">show source</a> ]</p>
+            <div id="C00837_source" class="dyn-source">
+<pre>
+method(element, 
+  !(include?(element)))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00823"></a><b>∩</b>(otherSet)
+          </div>
+          <div class="description">
+            <p>returns a new set that is the intersection of the receiver and the argument.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00835"></a><b>∪</b>(other)
+          </div>
+          <div class="description">
+            <p>returns a new set that is the set-theoretic union of this set and the argument set</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00835_source')" id="l_C00835_source">show source</a> ]</p>
+            <div id="C00835_source" class="dyn-source">
+<pre>
+method(other, 
+  self +(other))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00825"></a><b>⊂</b>(otherSet)
+          </div>
+          <div class="description">
+            <p>returns true if this set is a proper subset of the argument set</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00827"></a><b>⊃</b>(otherSet)
+          </div>
+          <div class="description">
+            <p>returns true if this set is a proper superset of the argument set</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00824"></a><b>⊆</b>(otherSet)
+          </div>
+          <div class="description">
+            <p>returns true if this set is a subset of the argument set</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00826"></a><b>⊇</b>(otherSet)
+          </div>
+          <div class="description">
+            <p>returns true if this set is a superset of the argument set</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>

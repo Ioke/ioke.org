@@ -1,0 +1,39 @@
+<span class="irc-date">[6:19]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[8:16]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit ("Leaving")</span><br />
+<span class="irc-date">[11:10]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[13:01]</span> <span class="irc-green">* donizetti (n=donizett@189.120.169.78) has joined #ioke</span><br />
+<span class="irc-date">[13:36]</span> <span class="irc-navy">* donizetti (n=donizett@189.120.169.78) Quit ()</span><br />
+<span class="irc-date">[14:28]</span> <span class="irc-green">* naeu (n=sam@193.128.16.130) has joined #ioke</span><br />
+<span class="irc-date">[14:31]</span> <span class="irc-green">* olabini (n=ola@93-97-45-26.zone5.bethere.co.uk) has joined #ioke</span><br />
+<span class="irc-date">[14:31]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[14:54]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@nat/sun/x-52a9a0c2b740d164) has joined #ioke</span><br />
+<span class="irc-date">[16:30]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[17:01]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@nat/sun/x-52a9a0c2b740d164) Quit ("Leaving")</span><br />
+<span class="irc-date">[17:03]</span> <span class="irc-navy">* naeu (n=sam@193.128.16.130) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[19:36]</span> <span class="irc-green">* kar8nga (n=kar8nga@f-137.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[19:58]</span> <span class="irc-green">* martido (n=martin@dslb-088-067-180-232.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[20:31]</span> <span class="irc-black">&lt;martido&gt; olabini: hi, finally got around to thinking a bit about tuples and destruct. assignments. I'm not sure however if I understand your example on the wiki correctly ... got some time to shed some light on this?</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;martido&gt; your example is: (cell(:a),c,b) = (a,b,c)</span><br />
+<span class="irc-date">[20:33]</span> <span class="irc-black">&lt;martido&gt; the parentheses on the LHS denotes a destruct. assignment, right?</span><br />
+<span class="irc-date">[20:34]</span> <span class="irc-black">&lt;martido&gt; what do the parens on the RHS mean?</span><br />
+<span class="irc-date">[20:44]</span> <span class="irc-black">&lt;martido&gt; or are these just for the parser to indicate that we're dealing with destruct. assignment?</span><br />
+<span class="irc-date">[20:44]</span> <span class="irc-black">&lt;martido&gt; furthermore, you say that destruct. assignment will iterate over the RHS if it's NOT one of the things it knows about, such as tuples, lists, sets. sorry, but can you elaborate on this?</span><br />
+<span class="irc-date">[20:46]</span> <span class="irc-black">&lt;martido&gt; well, sorry for the many questions ;) you still working on your presentation tomorrow night? wish I could be there ...</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-navy">* kar8nga (n=kar8nga@f-137.vc-graz.ac.at) Quit (Read error: 145 (Connection timed out))</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;olabini&gt; sorry</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;olabini&gt; the rhs in this case is a tuple</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;olabini&gt; a tuple will be returned from a call to the empty message with more than one argument</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;olabini&gt; doing (a, b, c) = a, c, b</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;olabini&gt; wouldn't be valid syntax, and I don't want it to be valid either without the parenthesis</span><br />
+<span class="irc-date">[20:58]</span> <span class="irc-black">&lt;martido&gt; I see, thanks, so parens are the literal syntax for tuples?</span><br />
+<span class="irc-date">[21:00]</span> <span class="irc-black">&lt;martido&gt; oh and what do you mean by "empty message"?</span><br />
+<span class="irc-date">[21:47]</span> <span class="irc-black">&lt;martido&gt; gotta go unfortunately</span><br />
+<span class="irc-date">[21:48]</span> <span class="irc-black">&lt;martido&gt; I assume you're pretty busy the next couple of days with qcon, your presentation, etc. so maybe we can talk about this after that?</span><br />
+<span class="irc-date">[21:50]</span> <span class="irc-black">&lt;martido&gt; good night + have fun tomorrow</span><br />
+<span class="irc-date">[21:50]</span> <span class="irc-navy">* martido (n=martin@dslb-088-067-180-232.pools.arcor-ip.net) Quit ()</span><br />
+<span class="irc-date">[22:01]</span> <span class="irc-green">* zabbai (i=c9663fa4@gateway/web/ajax/mibbit.com/x-f3deb0a1e531a42b) has joined #ioke</span><br />
+<span class="irc-date">[22:03]</span> <span class="irc-navy">* olabini (n=ola@93-97-45-26.zone5.bethere.co.uk) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[22:06]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[22:59]</span> <span class="irc-green">* naeu (n=sam@135.196.169.246) has joined #ioke</span><br />
+<span class="irc-date">[23:03]</span> <span class="irc-navy">* zabbai (i=c9663fa4@gateway/web/ajax/mibbit.com/x-f3deb0a1e531a42b) Quit ("<a href="http://www.mibbit.com">http://www.mibbit.com</a> ajax IRC Client")</span><br />

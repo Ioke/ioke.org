@@ -1,0 +1,28 @@
+<span class="irc-date">[6:12]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[6:36]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[8:12]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[8:52]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:57]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[10:56]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[12:12]</span> <span class="irc-green">* andreaja (n=sodoff@65.111.170.77) has joined #ioke</span><br />
+<span class="irc-date">[16:25]</span> <span class="irc-green">* donizetti (n=donizett@187.37.206.68) has joined #ioke</span><br />
+<span class="irc-date">[16:25]</span> <span class="irc-black">&lt;donizetti&gt; hello guys!</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[16:34]</span> <span class="irc-green">* cirquitz (n=cirquitz@203.199.114.33) has joined #ioke</span><br />
+<span class="irc-date">[16:38]</span> <span class="irc-green">* cirquitz (n=cirquitz@203.199.114.33) has left #ioke</span><br />
+<span class="irc-date">[17:38]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:58]</span> <span class="irc-navy">* donizetti (n=donizett@187.37.206.68) Quit ()</span><br />
+<span class="irc-date">[19:04]</span> <span class="irc-green">* donizetti (n=donizett@187.37.206.68) has joined #ioke</span><br />
+<span class="irc-date">[19:29]</span> <span class="irc-green">* cratuki (n=craig@213.253.62.66) has joined #ioke</span><br />
+<span class="irc-date">[20:06]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[20:15]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:25]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[20:27]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:37]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[21:42]</span> <span class="irc-green">* donizetti (n=donizett@187.37.206.68) has left #ioke</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-black">&lt;cratuki&gt; I'm doing 'ob getClass getName toString println'</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-black">&lt;cratuki&gt; but ioke complains, "couldn't find cell 'getName' on 'class java.lang.Class'". Do you know why this would be?</span><br />
+<span class="irc-date">[22:08]</span> <span class="irc-black">&lt;cratuki&gt; Ah found it. <a href="http://ioke.org/wiki/index.php/Guide#Class_methods">http://ioke.org/wiki/index.php/Guide#Class_methods</a></span><br />
+<span class="irc-date">[22:27]</span> <span class="irc-black">&lt;cratuki&gt; There's an error here: <a href="http://ioke.org/wiki/index.php/Guide#Building_Ioke">http://ioke.org/wiki/index.php/Guide#Building_Ioke</a></span><br />
+<span class="irc-date">[22:28]</span> <span class="irc-black">&lt;cratuki&gt; "..will not coerce Text into java.util.String.." should be java.lang.String I think.</span><br />
+<span class="irc-date">[22:48]</span> <span class="irc-green">* cratuki (n=craig@213.253.62.66) has left #ioke</span><br />

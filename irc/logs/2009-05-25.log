@@ -1,0 +1,134 @@
+<span class="irc-date">[7:59]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-251-116-041.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;martido&gt; @naeu: hi, read that you're tackling Project Euler with Ioke? really cool! what about posting the solutions to the wiki?</span><br />
+<span class="irc-date">[10:07]</span> <span class="irc-black">&lt;naeu&gt; martido: yeah, I should do that</span><br />
+<span class="irc-date">[10:08]</span> <span class="irc-black">&lt;naeu&gt; I answered the first couple in iik</span><br />
+<span class="irc-date">[10:08]</span> <span class="irc-black">&lt;naeu&gt; but it would be useful to neaten them up</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;martido&gt; yes and it shows how Ioke can be used to solve such problems; I guess that's always a good thing especially for people who</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;martido&gt; 're new to the language</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;naeu&gt; indeed :-)</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;naeu&gt; keep pestering me if i don't get round to doing it soon ;-)</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;martido&gt; i will =)</span><br />
+<span class="irc-date">[10:34]</span> <span class="irc-black">&lt;martido&gt; btw, soon I'm off to the train station to catch my train to Berlin. really looking forward to a live Ioke talk tomorrow =) and of course the keynote about programming languages ...</span><br />
+<span class="irc-date">[10:36]</span> <span class="irc-black">&lt;naeu&gt; any chance you could blog about them?</span><br />
+<span class="irc-date">[10:38]</span> <span class="irc-black">&lt;martido&gt; yes, i definitely planned to do that</span><br />
+<span class="irc-date">[10:38]</span> <span class="irc-black">&lt;martido&gt; i'll post the links here when they're finished</span><br />
+<span class="irc-date">[10:39]</span> <span class="irc-black">&lt;martido&gt; probably Ola's going to blog about it too</span><br />
+<span class="irc-date">[10:43]</span> <span class="irc-black">&lt;naeu&gt; true</span><br />
+<span class="irc-date">[10:43]</span> <span class="irc-black">&lt;naeu&gt; but it will be nice to see a post from the audience</span><br />
+<span class="irc-date">[10:43]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[10:48]</span> <span class="irc-black">&lt;martido&gt; i'll do my best ;)</span><br />
+<span class="irc-date">[10:48]</span> <span class="irc-black">&lt;martido&gt; so I'm off now. yay!!</span><br />
+<span class="irc-date">[10:49]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit ()</span><br />
+<span class="irc-date">[12:02]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[13:22]</span> <span class="irc-green">* donizetti (n=donizett@187.37.198.20) has joined #ioke</span><br />
+<span class="irc-date">[13:22]</span> <span class="irc-black">&lt;donizetti&gt; hi guys!</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;naeu&gt; donizetti: hey there</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;naeu&gt; sorry i can't stay long - i'm off to the dentists in a short moment</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;donizetti&gt; ok</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-black">&lt;donizetti&gt; I'm thinking about what will a show at my talk about ioke!</span><br />
+<span class="irc-date">[13:40]</span> <span class="irc-black">&lt;donizetti&gt; naeu :  I have a question for you! =D</span><br />
+<span class="irc-date">[13:40]</span> <span class="irc-black">&lt;naeu&gt; when is it going to be?</span><br />
+<span class="irc-date">[13:40]</span> <span class="irc-black">&lt;naeu&gt; ooh ok...</span><br />
+<span class="irc-date">[13:40]</span> <span class="irc-black">&lt;donizetti&gt; wednesday!</span><br />
+<span class="irc-date">[13:41]</span> <span class="irc-black">&lt;donizetti&gt; i don't know if Jim Webber told you about that, but he came to brazil to talk on a conference that the company I work for organize every year!</span><br />
+<span class="irc-date">[13:42]</span> <span class="irc-black">&lt;donizetti&gt; We hang out for four days, and have a lot of interesting conversation!</span><br />
+<span class="irc-date">[13:43]</span> <span class="irc-black">&lt;donizetti&gt; I told him that I was writing and ioke parser for YAML and JSON, and he warned me that you already had done that!</span><br />
+<span class="irc-date">[13:43]</span> <span class="irc-black">&lt;donizetti&gt; is it right?</span><br />
+<span class="irc-date">[13:47]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-251-116-041.chello.nl) Quit ()</span><br />
+<span class="irc-date">[15:45]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[15:48]</span> <span class="irc-black">&lt;naeu&gt; donizetti: hey there</span><br />
+<span class="irc-date">[15:48]</span> <span class="irc-black">&lt;naeu&gt; sorry, I was at the dentists</span><br />
+<span class="irc-date">[15:48]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[15:49]</span> <span class="irc-black">&lt;donizetti&gt; no worries</span><br />
+<span class="irc-date">[15:49]</span> <span class="irc-black">&lt;donizetti&gt; you warned me about that! =D</span><br />
+<span class="irc-date">[15:49]</span> <span class="irc-black">&lt;naeu&gt; Yeah, Jim was at #falandoemjava</span><br />
+<span class="irc-date">[15:49]</span> <span class="irc-black">&lt;naeu&gt; and he's partially correct :-)</span><br />
+<span class="irc-date">[15:49]</span> <span class="irc-black">&lt;donizetti&gt; really?</span><br />
+<span class="irc-date">[15:49]</span> <span class="irc-black">&lt;naeu&gt; a while back melwin wrote a very basic JSON parser</span><br />
+<span class="irc-date">[15:50]</span> <span class="irc-black">&lt;naeu&gt; which essentially twiddled the way Ioke works to conform to JSON</span><br />
+<span class="irc-date">[15:50]</span> <span class="irc-black">&lt;naeu&gt; and I also have written a more formal JSON parser</span><br />
+<span class="irc-date">[15:50]</span> <span class="irc-black">&lt;donizetti&gt; cool!</span><br />
+<span class="irc-date">[15:50]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://github.com/innovationfactory/jikson/tree/master">http://github.com/innovationfactory/jikson/tree/master</a></span><br />
+<span class="irc-date">[15:50]</span> <span class="irc-black">&lt;naeu&gt; it's *really* *really* slow though ;-)</span><br />
+<span class="irc-date">[15:51]</span> <span class="irc-black">&lt;naeu&gt; but it's pretty well tested</span><br />
+<span class="irc-date">[15:51]</span> <span class="irc-black">&lt;donizetti&gt; rs</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-black">&lt;naeu&gt; rs?</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-black">&lt;donizetti&gt; i thinking building something with ioke at that moment has this price been a little slow!</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-black">&lt;donizetti&gt; oh sorry, rs is like hehe or something like that!</span><br />
+<span class="irc-date">[15:53]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[15:53]</span> <span class="irc-black">&lt;donizetti&gt; in portuguese it would be the compression for "risadas" that mean laughs!</span><br />
+<span class="irc-date">[15:55]</span> <span class="irc-black">&lt;donizetti&gt; jikson is awesome!</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;donizetti&gt; now I'm able to keep trying to build something web with ioke!</span><br />
+<span class="irc-date">[16:04]</span> <span class="irc-black">&lt;naeu&gt; thanks!</span><br />
+<span class="irc-date">[16:04]</span> <span class="irc-black">&lt;naeu&gt; did you manage to get it working?</span><br />
+<span class="irc-date">[16:04]</span> <span class="irc-black">&lt;donizetti&gt; not yet, I'm cloning it! =D</span><br />
+<span class="irc-date">[16:05]</span> <span class="irc-black">&lt;naeu&gt; ;-)</span><br />
+<span class="irc-date">[16:08]</span> <span class="irc-black">&lt;naeu&gt; donizetti: you need to include a line like this:</span><br />
+<span class="irc-date">[16:08]</span> <span class="irc-black">&lt;naeu&gt; use(System currentDirectory + "/../vendor/jikson/lib/jikson.ik")</span><br />
+<span class="irc-date">[16:10]</span> <span class="irc-black">&lt;donizetti&gt; ok, I'll do that!</span><br />
+<span class="irc-date">[16:10]</span> <span class="irc-green">* donizetti (n=donizett@187.37.198.20) has left #ioke</span><br />
+<span class="irc-date">[16:11]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[18:19]</span> <span class="irc-green">* donizetti (n=donizett@187.37.198.20) has joined #ioke</span><br />
+<span class="irc-date">[18:22]</span> <span class="irc-black">&lt;donizetti&gt; naeu: sorry, about lefting all of sudden!</span><br />
+<span class="irc-date">[18:28]</span> <span class="irc-black">&lt;naeu&gt; donizetti: that's ok</span><br />
+<span class="irc-date">[18:28]</span> <span class="irc-black">&lt;naeu&gt; i'm off out now anyway</span><br />
+<span class="irc-date">[18:28]</span> <span class="irc-black">&lt;naeu&gt; to Amsterdam.rb</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-black">&lt;donizetti&gt; cool!</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-black">&lt;donizetti&gt; where is InnovationFactory situated?</span><br />
+<span class="irc-date">[18:42]</span> <span class="irc-black">&lt;naeu&gt; Amsterdam</span><br />
+<span class="irc-date">[18:45]</span> <span class="irc-black">&lt;donizetti&gt; cool!</span><br />
+<span class="irc-date">[18:45]</span> <span class="irc-black">&lt;donizetti&gt; I was thinking about applying to work with you! :p</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-black">&lt;naeu&gt; you fancy moving to Amsterdam?</span><br />
+<span class="irc-date">[18:49]</span> <span class="irc-green">* kar8nga (n=kar8nga@f-70.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:50]</span> <span class="irc-black">&lt;donizetti&gt; I'm thinking about moving to Europe, so the companies I would like to work are ThoughtWorks and Innovation Factory, but I heard that London is not a nice place to live! :(</span><br />
+<span class="irc-date">[18:50]</span> <span class="irc-black">&lt;naeu&gt; yeah, that's the problem with London</span><br />
+<span class="irc-date">[18:50]</span> <span class="irc-black">&lt;naeu&gt; there's loads of cool stuff there</span><br />
+<span class="irc-date">[18:50]</span> <span class="irc-black">&lt;naeu&gt; but it's just not (in my opinion) a nice place to live</span><br />
+<span class="irc-date">[18:51]</span> <span class="irc-black">&lt;naeu&gt; Amsterdam on the other hand is a lovely place to live</span><br />
+<span class="irc-date">[18:57]</span> <span class="irc-black">&lt;donizetti&gt; really?</span><br />
+<span class="irc-date">[18:57]</span> <span class="irc-black">&lt;donizetti&gt; but there is another problem for me!</span><br />
+<span class="irc-date">[18:57]</span> <span class="irc-black">&lt;donizetti&gt; :(</span><br />
+<span class="irc-date">[18:57]</span> <span class="irc-black">&lt;donizetti&gt; i'm planing to marry and if i leave my girl friend must go with me! :P</span><br />
+<span class="irc-date">[19:01]</span> <span class="irc-black">&lt;naeu&gt; yeah, i understand how you feel</span><br />
+<span class="irc-date">[19:01]</span> <span class="irc-black">&lt;naeu&gt; I'm married and my wife is planning on moving back to England in October</span><br />
+<span class="irc-date">[19:04]</span> <span class="irc-black">&lt;donizetti&gt; it's sad!</span><br />
+<span class="irc-date">[19:06]</span> <span class="irc-black">&lt;donizetti&gt; a cool thing about going to thoughtworks is that I could meet Ola Bini!</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-black">&lt;naeu&gt; there are lots of other cool people working for ThoughtWorks too</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-black">&lt;donizetti&gt;  yeah!</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-black">&lt;donizetti&gt; i know some of them!</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-black">&lt;naeu&gt; even better</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-black">&lt;donizetti&gt; hehe</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-black">&lt;naeu&gt; so you hung out with Weeber for a few days then?</span><br />
+<span class="irc-date">[19:08]</span> <span class="irc-black">&lt;donizetti&gt; i'm saying that cos I know Ola Bini don't have a degree as me, and it is really hard to be noticed when you aren't a phd!</span><br />
+<span class="irc-date">[19:08]</span> <span class="irc-black">&lt;donizetti&gt; yeah, four days!</span><br />
+<span class="irc-date">[19:08]</span> <span class="irc-black">&lt;donizetti&gt; last saturday we spent all day just having beers! hehe</span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-black">&lt;naeu&gt; so what did Weeber say about me?</span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-black">&lt;naeu&gt; anything rude?</span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-black">&lt;donizetti&gt; nops, he said a lot of goods things about you and ola!</span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-black">&lt;naeu&gt; that's nice of him</span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-black">&lt;naeu&gt; did he tell you we did our Ph.D.'s at Newcastle?</span><br />
+<span class="irc-date">[19:10]</span> <span class="irc-black">&lt;naeu&gt; hmm, bad apostrophe there</span><br />
+<span class="irc-date">[19:10]</span> <span class="irc-black">&lt;donizetti&gt; no, I knew abou his Ph.D but I didn't know about yours!</span><br />
+<span class="irc-date">[19:10]</span> <span class="irc-black">&lt;naeu&gt; that's how we know each other</span><br />
+<span class="irc-date">[19:10]</span> <span class="irc-black">&lt;donizetti&gt; really?</span><br />
+<span class="irc-date">[19:10]</span> <span class="irc-black">&lt;naeu&gt; he was a few years ahead of me</span><br />
+<span class="irc-date">[19:10]</span> <span class="irc-black">&lt;naeu&gt; yep</span><br />
+<span class="irc-date">[19:10]</span> <span class="irc-black">&lt;donizetti&gt; so nice!</span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-black">&lt;naeu&gt; he did his Ph.D. in the field of parallel processing</span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-black">&lt;naeu&gt; I did mine on DSLs for virtual environments</span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-black">&lt;donizetti&gt; yeah, we talked a lot about that!</span><br />
+<span class="irc-date">[19:12]</span> <span class="irc-black">&lt;donizetti&gt; what was your Ph.D about?</span><br />
+<span class="irc-date">[19:12]</span> <span class="irc-black">&lt;naeu&gt; so what did he say about Ola's work on Ioke?</span><br />
+<span class="irc-date">[19:12]</span> <span class="irc-black">&lt;naeu&gt; I'm interested in hearing his opinion about all this</span><br />
+<span class="irc-date">[19:13]</span> <span class="irc-black">&lt;donizetti&gt; he told that Ola has been doing a remarkle working on ioke!</span><br />
+<span class="irc-date">[19:15]</span> <span class="irc-black">&lt;naeu&gt; brb</span><br />
+<span class="irc-date">[19:15]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[19:36]</span> <span class="irc-green">* mozinator (n=mozinato@195-241-109-215.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:04]</span> <span class="irc-navy">* kar8nga (n=kar8nga@f-70.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[20:06]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-navy">* donizetti (n=donizett@187.37.198.20) Quit ()</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[22:24]</span> <span class="irc-navy">* mozinator (n=mozinato@195-241-109-215.ip.telfort.nl) Quit ("Leaving")</span><br />

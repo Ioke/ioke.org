@@ -1,0 +1,571 @@
+<span class="irc-date">[0:23]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[0:24]</span> <span class="irc-black">&lt;melwin&gt; Anyone in?</span><br />
+<span class="irc-date">[0:25]</span> <span class="irc-black">&lt;HeMan&gt; yes</span><br />
+<span class="irc-date">[0:25]</span> <span class="irc-black">&lt;naeu&gt; hey hey</span><br />
+<span class="irc-date">[0:25]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[0:25]</span> <span class="irc-black">&lt;naeu&gt; melwin: I just saw your commit got added to the pot</span><br />
+<span class="irc-date">[0:26]</span> <span class="irc-black">&lt;melwin&gt; naeu: Great... I've just created a new decimal-type-checks branch and merged the 6 fixes I've done this far.</span><br />
+<span class="irc-date">[0:26]</span> <span class="irc-black">&lt;naeu&gt; oh nice</span><br />
+<span class="irc-date">[0:26]</span> <span class="irc-black">&lt;naeu&gt; I've been trying to think about a nicer way for ispec to handle the tests</span><br />
+<span class="irc-date">[0:27]</span> <span class="irc-black">&lt;naeu&gt; I'd love to express something similar to:</span><br />
+<span class="irc-date">[0:27]</span> <span class="irc-black">&lt;melwin&gt; Yes... I was thinking of adding something to simplify the receiver test especially.</span><br />
+<span class="irc-date">[0:27]</span> <span class="irc-black">&lt;naeu&gt; List cell("inspect") should validate receiver as(List)</span><br />
+<span class="irc-date">[0:27]</span> <span class="irc-black">&lt;melwin&gt; You might also need to specify how it is to be called...</span><br />
+<span class="irc-date">[0:27]</span> <span class="irc-black">&lt;naeu&gt; absolutely</span><br />
+<span class="irc-date">[0:28]</span> <span class="irc-black">&lt;naeu&gt; List cell("at") should validate receiver as(List) with(0)</span><br />
+<span class="irc-date">[0:28]</span> <span class="irc-black">&lt;naeu&gt; or something</span><br />
+<span class="irc-date">[0:28]</span> <span class="irc-black">&lt;melwin&gt; List "at" is already given in the ispec context, eh?</span><br />
+<span class="irc-date">[0:28]</span> <span class="irc-black">&lt;melwin&gt; Maybe that can be reused...</span><br />
+<span class="irc-date">[0:28]</span> <span class="irc-black">&lt;naeu&gt; or:</span><br />
+<span class="irc-date">[0:28]</span> <span class="irc-black">&lt;naeu&gt; cell("at") should validate args as([Number, Range])</span><br />
+<span class="irc-date">[0:29]</span> <span class="irc-black">&lt;melwin&gt; naeu: I'm still thinking about if we can do the java code more declarative... Like in the crazy-type-check branch.</span><br />
+<span class="irc-date">[0:30]</span> <span class="irc-black">&lt;naeu&gt; have you noticed that asNumber and asText correctly create conditions when necessary?</span><br />
+<span class="irc-date">[0:30]</span> <span class="irc-black">&lt;melwin&gt; But I haven't thought of a good way to do it cleanly, without leaking code into unrelated parts.</span><br />
+<span class="irc-date">[0:31]</span> <span class="irc-black">&lt;melwin&gt; Yes, why?</span><br />
+<span class="irc-date">[0:31]</span> <span class="irc-black">&lt;naeu&gt; it just seemed interesting that they worked correctly :-)</span><br />
+<span class="irc-date">[0:32]</span> <span class="irc-black">&lt;melwin&gt; Yes, and Ola has added a lot of type checking code to the number related kinds as well.</span><br />
+<span class="irc-date">[0:32]</span> <span class="irc-black">&lt;melwin&gt; But almost no method validate receiver...</span><br />
+<span class="irc-date">[0:32]</span> <span class="irc-black">&lt;melwin&gt; methods...</span><br />
+<span class="irc-date">[0:34]</span> <span class="irc-black">&lt;naeu&gt; interesting</span><br />
+<span class="irc-date">[0:34]</span> <span class="irc-black">&lt;melwin&gt; The thing with the crazy-type-check is that we could get away with not changing most methods at all.</span><br />
+<span class="irc-date">[0:34]</span> <span class="irc-black">&lt;melwin&gt; Just add type declaration when building the argument list.</span><br />
+<span class="irc-date">[0:34]</span> <span class="irc-black">&lt;naeu&gt; ah ok</span><br />
+<span class="irc-date">[0:35]</span> <span class="irc-black">&lt;naeu&gt; that does sound appealing :-)</span><br />
+<span class="irc-date">[0:36]</span> <span class="irc-black">&lt;melwin&gt; Indeed!</span><br />
+<span class="irc-date">[0:37]</span> <span class="irc-black">&lt;naeu&gt; it does seem like this is something that's going to plague Ioke for a while</span><br />
+<span class="irc-date">[0:38]</span> <span class="irc-black">&lt;melwin&gt; Yeah...</span><br />
+<span class="irc-date">[0:39]</span> <span class="irc-black">&lt;naeu&gt; and really requires intricate knowledge of the boundaries between Ioke and Java</span><br />
+<span class="irc-date">[0:41]</span> <span class="irc-black">&lt;melwin&gt; It does.</span><br />
+<span class="irc-date">[0:43]</span> <span class="irc-black">&lt;melwin&gt; Damn... I think I'm going to try to implement the type checking argument definitions in a way that might be acceptable for Ola...</span><br />
+<span class="irc-date">[0:43]</span> <span class="irc-black">&lt;melwin&gt; Instead of putting the code in DefaultArgumentsBuilder perhaps I can subclass it or something....</span><br />
+<span class="irc-date">[0:44]</span> <span class="irc-black">&lt;melwin&gt; Just because it's a fun challenge. :)</span><br />
+<span class="irc-date">[0:47]</span> <span class="irc-black">&lt;naeu&gt; :)</span><br />
+<span class="irc-date">[0:47]</span> <span class="irc-black">&lt;naeu&gt; and you'll learn from it whatever Ola says</span><br />
+<span class="irc-date">[0:48]</span> <span class="irc-black">&lt;melwin&gt; Yes. He's my involuntary sensei. ;P</span><br />
+<span class="irc-date">[0:48]</span> <span class="irc-black">&lt;naeu&gt; ;-)</span><br />
+<span class="irc-date">[0:48]</span> <span class="irc-black">&lt;naeu&gt; I learned more haskell today</span><br />
+<span class="irc-date">[0:48]</span> <span class="irc-black">&lt;melwin&gt; Always ready to ridicule my feeble attempts at code-fu.</span><br />
+<span class="irc-date">[0:48]</span> <span class="irc-black">&lt;naeu&gt; and the haskell hackers were seriously impressed with Ioke</span><br />
+<span class="irc-date">[0:49]</span> <span class="irc-black">&lt;melwin&gt; Sounds fun! You know haskell hackers?</span><br />
+<span class="irc-date">[0:49]</span> <span class="irc-black">&lt;naeu&gt; yep</span><br />
+<span class="irc-date">[0:49]</span> <span class="irc-black">&lt;naeu&gt; it seems that I'm starting to know quite a few programming people these days</span><br />
+<span class="irc-date">[0:49]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[0:50]</span> <span class="irc-black">&lt;melwin&gt; Nice... How did you find them?</span><br />
+<span class="irc-date">[0:50]</span> <span class="irc-black">&lt;naeu&gt; through Ruby interestingly enough</span><br />
+<span class="irc-date">[0:51]</span> <span class="irc-black">&lt;naeu&gt; they come along to Amsterdam.rb</span><br />
+<span class="irc-date">[0:51]</span> <span class="irc-black">&lt;naeu&gt; (there's not much sense setting up an Amsterdam.ik just yet ;-)</span><br />
+<span class="irc-date">[0:52]</span> <span class="irc-black">&lt;melwin&gt; Hehe, we'll get there. :)</span><br />
+<span class="irc-date">[0:52]</span> <span class="irc-black">&lt;naeu&gt; yep</span><br />
+<span class="irc-date">[0:52]</span> <span class="irc-black">&lt;naeu&gt; I think that Ioke has really good legs</span><br />
+<span class="irc-date">[0:53]</span> <span class="irc-black">&lt;naeu&gt; and the more I see of it, the more I believe in the concept</span><br />
+<span class="irc-date">[0:53]</span> <span class="irc-black">&lt;naeu&gt; if a language can excite haskell hackers, it must have some appeal ;-)</span><br />
+<span class="irc-date">[0:53]</span> <span class="irc-black">&lt;naeu&gt; right, bed time for me!</span><br />
+<span class="irc-date">[0:53]</span> <span class="irc-black">&lt;naeu&gt; must sleep....</span><br />
+<span class="irc-date">[0:53]</span> <span class="irc-black">&lt;melwin&gt; Laters!</span><br />
+<span class="irc-date">[0:53]</span> <span class="irc-black">&lt;naeu&gt; i have the morning free tomorrow</span><br />
+<span class="irc-date">[0:54]</span> <span class="irc-black">&lt;naeu&gt; so I should be able to crack on with the List stuff based on your latest commit</span><br />
+<span class="irc-date">[0:54]</span> <span class="irc-black">&lt;naeu&gt; (oh and I think we should come up with a fun name for olabini/master)</span><br />
+<span class="irc-date">[0:55]</span> <span class="irc-black">&lt;naeu&gt; (I caught myself calling it core earlier today, but already don't like that name)</span><br />
+<span class="irc-date">[0:55]</span> <span class="irc-black">&lt;naeu&gt; (I wondered about pot or cauldron)</span><br />
+<span class="irc-date">[0:56]</span> <span class="irc-black">&lt;naeu&gt; it seems like Ioke is a language for language-wizards</span><br />
+<span class="irc-date">[0:56]</span> <span class="irc-black">&lt;naeu&gt; and all wizards need a pot/cauldron ;-)</span><br />
+<span class="irc-date">[0:56]</span> <span class="irc-black">&lt;naeu&gt; ok sleep tight</span><br />
+<span class="irc-date">[0:56]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[0:59]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[2:27]</span> <span class="irc-navy">* bguthrie (n=bguthrie@27.sub-75-198-214.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[4:38]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[6:33]</span> <span class="irc-green">* bguthrie (n=bguthrie@233.sub-70-211-2.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[6:33]</span> <span class="irc-navy">* bguthrie (n=bguthrie@233.sub-70-211-2.myvzw.com) Quit (Client Quit)</span><br />
+<span class="irc-date">[9:40]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[9:45]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[10:01]</span> <span class="irc-brick">* olabini waves good morning</span><br />
+<span class="irc-date">[10:03]</span> <span class="irc-black">&lt;melwin&gt; Hey...</span><br />
+<span class="irc-date">[10:03]</span> <span class="irc-black">&lt;melwin&gt; olabini: I'm playing with the type checking arguments builder again... :)</span><br />
+<span class="irc-date">[10:04]</span> <span class="irc-black">&lt;melwin&gt; Now as a subclass to DefaultArgumentsDefinition.</span><br />
+<span class="irc-date">[10:04]</span> <span class="irc-black">&lt;melwin&gt; No changes to the DefaultArgumentsDefinition except making a few fields in the builder protected instead of private....</span><br />
+<span class="irc-date">[10:04]</span> <span class="irc-black">&lt;melwin&gt; Still adverse to the idea? :)</span><br />
+<span class="irc-date">[10:08]</span> <span class="irc-black">&lt;melwin&gt; It would just remove so much awkward type checking in the actual JavaMethods.</span><br />
+<span class="irc-date">[10:08]</span> <span class="irc-black">&lt;melwin&gt; Want to see what it looks like?</span><br />
+<span class="irc-date">[10:09]</span> <span class="irc-black">&lt;melwin&gt; <a href="http://github.com/melwin/ioke/commits/new-type-checker">http://github.com/melwin/ioke/commits/new-type-checker</a></span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-black">&lt;melwin&gt; olabini: I know you said don't bother, but I thought it a fun challenge that would simplify the code and make it cleaner in the methods where we just need to check the receiver or some argument.</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;melwin&gt; Gotta go look at apartments - back laters....!</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-black">&lt;olabini&gt; well, if it actually works in most cases, I'm fine with it</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-black">&lt;olabini&gt; but keep in mind that most of the JavaMethods aren't as general as I'd like them at the moment. =)</span><br />
+<span class="irc-date">[10:38]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[10:41]</span> <span class="irc-black">&lt;olabini&gt; morning sam</span><br />
+<span class="irc-date">[10:48]</span> <span class="irc-black">&lt;naeu&gt; morning ola</span><br />
+<span class="irc-date">[10:48]</span> <span class="irc-black">&lt;naeu&gt; having a nice weekend?</span><br />
+<span class="irc-date">[10:49]</span> <span class="irc-black">&lt;olabini&gt; pretty good, indeed.</span><br />
+<span class="irc-date">[10:49]</span> <span class="irc-black">&lt;olabini&gt; working on the aspects now</span><br />
+<span class="irc-date">[10:49]</span> <span class="irc-black">&lt;olabini&gt; the most important part about them is that I can't allow them to interfere unless you use them</span><br />
+<span class="irc-date">[10:50]</span> <span class="irc-black">&lt;olabini&gt; my first addition of before-macros made the test process take FOUR times longer</span><br />
+<span class="irc-date">[10:50]</span> <span class="irc-black">&lt;olabini&gt; so I'm back on the drawing board with a less ambitious version</span><br />
+<span class="irc-date">[10:50]</span> <span class="irc-black">&lt;naeu&gt; four times longer!</span><br />
+<span class="irc-date">[10:50]</span> <span class="irc-black">&lt;olabini&gt; I know that goes against my not caring about performance goal</span><br />
+<span class="irc-date">[10:50]</span> <span class="irc-black">&lt;olabini&gt; but that was just to much, and I think I can get mostly the same expressability without it</span><br />
+<span class="irc-date">[10:50]</span> <span class="irc-black">&lt;naeu&gt; but Ioke is crazy slow anyway</span><br />
+<span class="irc-date">[10:51]</span> <span class="irc-black">&lt;olabini&gt; the main difference is that cells an advice bind to is decided when you add that advice</span><br />
+<span class="irc-date">[10:51]</span> <span class="irc-black">&lt;olabini&gt; yeah, I know</span><br />
+<span class="irc-date">[10:51]</span> <span class="irc-black">&lt;naeu&gt; so what's four times slower really?</span><br />
+<span class="irc-date">[10:51]</span> <span class="irc-black">&lt;olabini&gt; hehe.</span><br />
+<span class="irc-date">[10:51]</span> <span class="irc-black">&lt;olabini&gt; true.</span><br />
+<span class="irc-date">[10:51]</span> <span class="irc-black">&lt;naeu&gt; seriously though</span><br />
+<span class="irc-date">[10:51]</span> <span class="irc-black">&lt;olabini&gt; but the other problem was that the code ended up being really ugly</span><br />
+<span class="irc-date">[10:51]</span> <span class="irc-black">&lt;olabini&gt; I think that was my main problem</span><br />
+<span class="irc-date">[10:51]</span> <span class="irc-black">&lt;naeu&gt; you wouldn't use Ioke to implement a google-sized map reduce</span><br />
+<span class="irc-date">[10:51]</span> <span class="irc-black">&lt;olabini&gt; and in contrast, I now have most of the before advice working in less than 20 lines of Ioke code</span><br />
+<span class="irc-date">[10:51]</span> <span class="irc-black">&lt;olabini&gt; true</span><br />
+<span class="irc-date">[10:52]</span> <span class="irc-black">&lt;naeu&gt; ugly code is a far more serious issue</span><br />
+<span class="irc-date">[10:52]</span> <span class="irc-black">&lt;olabini&gt; but I kinda like this implementation much more anyway</span><br />
+<span class="irc-date">[10:52]</span> <span class="irc-black">&lt;olabini&gt; and I think it allows certain things that might have been hard to implement using the other scheme</span><br />
+<span class="irc-date">[10:52]</span> <span class="irc-black">&lt;naeu&gt; I'd just follow your gut not your brain :-)</span><br />
+<span class="irc-date">[10:52]</span> <span class="irc-black">&lt;olabini&gt; the original scheme was basically this, for each cell lookup, first lookup ALL applicable advice in all mimics, and apply those</span><br />
+<span class="irc-date">[10:52]</span> <span class="irc-black">&lt;olabini&gt; and that information couldn't be cached</span><br />
+<span class="irc-date">[10:53]</span> <span class="irc-black">&lt;olabini&gt; yeah, I'm doing that now, I hope</span><br />
+<span class="irc-date">[10:53]</span> <span class="irc-black">&lt;olabini&gt; I like this implementation</span><br />
+<span class="irc-date">[10:53]</span> <span class="irc-black">&lt;naeu&gt; i.e. don't do what you think is best, do what you feel is best</span><br />
+<span class="irc-date">[10:56]</span> <span class="irc-black">&lt;naeu&gt; what's the new scheme do?</span><br />
+<span class="irc-date">[10:56]</span> <span class="irc-black">&lt;naeu&gt; and you can't really do precise caching in decently dynamic languages anyway - you just have to do good guess work and excellent error detection on method lookups</span><br />
+<span class="irc-date">[10:56]</span> <span class="irc-black">&lt;naeu&gt; but all those things can be worked on *afterwards* :-)</span><br />
+<span class="irc-date">[10:56]</span> <span class="irc-black">&lt;olabini&gt; sure</span><br />
+<span class="irc-date">[10:56]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[10:56]</span> <span class="irc-black">&lt;olabini&gt; well, right now the implementation basically just replaces cells</span><br />
+<span class="irc-date">[10:56]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[10:56]</span> <span class="irc-black">&lt;naeu&gt; I think it's *really* interesting to put the main emphasis on expressiveness</span><br />
+<span class="irc-date">[10:56]</span> <span class="irc-black">&lt;naeu&gt; and see how far you can go with it</span><br />
+<span class="irc-date">[10:57]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[10:57]</span> <span class="irc-black">&lt;naeu&gt; two of my haskell hacker friends were really interested in what i had to show them</span><br />
+<span class="irc-date">[10:57]</span> <span class="irc-black">&lt;olabini&gt; cool</span><br />
+<span class="irc-date">[10:57]</span> <span class="irc-black">&lt;naeu&gt; so that's an interesting phenomena ;-)</span><br />
+<span class="irc-date">[10:59]</span> <span class="irc-black">&lt;olabini&gt; yeah, really</span><br />
+<span class="irc-date">[10:59]</span> <span class="irc-black">&lt;olabini&gt; that doesn't happen that often</span><br />
+<span class="irc-date">[10:59]</span> <span class="irc-black">&lt;naeu&gt; indeed ;-)</span><br />
+<span class="irc-date">[11:00]</span> <span class="irc-black">&lt;naeu&gt; they're very defensive about their pureness</span><br />
+<span class="irc-date">[11:00]</span> <span class="irc-black">&lt;olabini&gt; absolutely</span><br />
+<span class="irc-date">[11:00]</span> <span class="irc-black">&lt;olabini&gt; and that's interesting. Ioke is about as unpure you can get</span><br />
+<span class="irc-date">[11:00]</span> <span class="irc-black">&lt;naeu&gt; and when they said haskell can do x, and I said so can Ioke</span><br />
+<span class="irc-date">[11:00]</span> <span class="irc-black">&lt;naeu&gt; they were impressed</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;olabini&gt; that is neat</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;olabini&gt; ok, now I'm going to have to work on a hard problem</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;olabini&gt; evaluation of arguments</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;naeu&gt; the funny thing is that polar opposites are never on a straight line</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;naeu&gt; they're usually in a circle</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;olabini&gt; they should only be evaluated once when they go through advice</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;olabini&gt; ah, true</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;naeu&gt; and end up being simultaneously far apart and close</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;naeu&gt; perhaps Ioke and Haskell are two such polar opposites</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[11:02]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[11:02]</span> <span class="irc-black">&lt;naeu&gt; ok, enjoy advice argument evaluations :-)</span><br />
+<span class="irc-date">[11:02]</span> <span class="irc-black">&lt;naeu&gt; i'm going to eat croissants and drink english tea with milk ;-)</span><br />
+<span class="irc-date">[11:02]</span> <span class="irc-black">&lt;olabini&gt; thanks. =)</span><br />
+<span class="irc-date">[11:02]</span> <span class="irc-black">&lt;olabini&gt; have fun</span><br />
+<span class="irc-date">[11:02]</span> <span class="irc-black">&lt;naeu&gt; will do!</span><br />
+<span class="irc-date">[11:02]</span> <span class="irc-black">&lt;olabini&gt; in that british way of yours</span><br />
+<span class="irc-date">[11:02]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[11:03]</span> <span class="irc-black">&lt;naeu&gt; no tubes of meat paste for me ;-)</span><br />
+<span class="irc-date">[11:03]</span> <span class="irc-black">&lt;olabini&gt; oh, btw</span><br />
+<span class="irc-date">[11:03]</span> <span class="irc-black">&lt;olabini&gt; did you notice the reverse operator thing?</span><br />
+<span class="irc-date">[11:03]</span> <span class="irc-black">&lt;naeu&gt; i think i remember you mentioning it</span><br />
+<span class="irc-date">[11:04]</span> <span class="irc-black">&lt;olabini&gt; I just realized that you can combine a reverse operator with a macro, and then suddenly you can lazy-evaluate the left hand side of something</span><br />
+<span class="irc-date">[11:04]</span> <span class="irc-black">&lt;olabini&gt; if :: is a macro</span><br />
+<span class="irc-date">[11:04]</span> <span class="irc-black">&lt;naeu&gt; you were talking about thinking of ending it with a semi-colon</span><br />
+<span class="irc-date">[11:04]</span> <span class="irc-black">&lt;olabini&gt; foo bar quux :: []</span><br />
+<span class="irc-date">[11:04]</span> <span class="irc-black">&lt;naeu&gt; oh nice!!!!</span><br />
+<span class="irc-date">[11:04]</span> <span class="irc-black">&lt;olabini&gt; then "foo bar quux" won't necessarily be evaluated</span><br />
+<span class="irc-date">[11:04]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[11:04]</span> <span class="irc-black">&lt;olabini&gt; because the operator shuffling can transform it to</span><br />
+<span class="irc-date">[11:04]</span> <span class="irc-black">&lt;olabini&gt; [] ::(foo bar quux)</span><br />
+<span class="irc-date">[11:04]</span> <span class="irc-black">&lt;olabini&gt; and since :: is a macro, it treats the arguments the same way</span><br />
+<span class="irc-date">[11:04]</span> <span class="irc-black">&lt;naeu&gt; so you can have complete control of which side will be lazy</span><br />
+<span class="irc-date">[11:04]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[11:04]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[11:05]</span> <span class="irc-black">&lt;olabini&gt; but only one side at a time... except for trinary operators, of course</span><br />
+<span class="irc-date">[11:05]</span> <span class="irc-black">&lt;naeu&gt; that will be very powerful for writing internal DSLs</span><br />
+<span class="irc-date">[11:26]</span> <span class="irc-black">&lt;naeu&gt; so with this latest advice scheme, is it possible to 'idempotently' add and remove the same before advice to a given cell?</span><br />
+<span class="irc-date">[11:28]</span> <span class="irc-black">&lt;naeu&gt; i.e. do you somehow implement a chain of functionality within a given cell, such that you can add/remove advice without affecting other advice/cell functionality?</span><br />
+<span class="irc-date">[11:30]</span> <span class="irc-black">&lt;olabini&gt; yeah, I will have that</span><br />
+<span class="irc-date">[11:31]</span> <span class="irc-black">&lt;naeu&gt; oh great</span><br />
+<span class="irc-date">[11:31]</span> <span class="irc-black">&lt;naeu&gt; that was my main worry when you said "right now the implementation basically just replaces cells"</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;naeu&gt; so I guess you'll have to turn a cell into a chain of sub-cells</span><br />
+<span class="irc-date">[11:33]</span> <span class="irc-black">&lt;naeu&gt; that's an interesting idea actually</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;olabini&gt; well.</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;olabini&gt; what I do, in fact, is cheating</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;naeu&gt; ok...</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;olabini&gt; I replace a cell with a lecro that calls the advice and the actual cell</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;naeu&gt; so you add cells</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;olabini&gt; but I leave enough information on the lecro itself so that I can remove it from the chain and replace the original behavior</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;olabini&gt; yeah, exactly</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;naeu&gt; a bit like Rails' alias_method_chain</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;olabini&gt; somewhat</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;olabini&gt; except that this is way more convenient and easy</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;olabini&gt; and interesting approach I've been using more and more, is the idea of setting cells on "macro" objects</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-black">&lt;naeu&gt; yeah, I really dislike alias_method_chain</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-black">&lt;olabini&gt; to give metadata</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-black">&lt;olabini&gt; me to</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-black">&lt;naeu&gt; and the general concept of polluting the namespace with garbage methods that only the actual method the advice is applying to cares about</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;naeu&gt; i think it's dirty :-)</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;olabini&gt; yeah, that's true</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;olabini&gt; but since in Ioke, everything is an object that has cells, I can just save away metadata on the actual method itself</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;naeu&gt; i think it would be far cleaner if all the advice functionality resided within the cell it applies to</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;olabini&gt; that's what I'm doing</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;naeu&gt; so it's not polluting the cell's object's namespace</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;naeu&gt; just the cell's namespace</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;naeu&gt; which is fine</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;naeu&gt; so do you wrap a fn() inside a 'macro' object and then add the advice cells to that?</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;olabini&gt; something like that.</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;naeu&gt; sounds good to me</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;olabini&gt; I will check in the code later today</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;naeu&gt; looking forward to it :-)</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;olabini&gt; as soon as I get this damned argument processing working</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[11:40]</span> <span class="irc-black">&lt;naeu&gt; well i'll stop disturbing you ;-)</span><br />
+<span class="irc-date">[11:40]</span> <span class="irc-black">&lt;olabini&gt; yeah, after the aspects are in place, I'm in for the end run for the Ioke S release</span><br />
+<span class="irc-date">[11:40]</span> <span class="irc-black">&lt;olabini&gt; I'm aiming for Friday</span><br />
+<span class="irc-date">[11:40]</span> <span class="irc-black">&lt;naeu&gt; nice</span><br />
+<span class="irc-date">[11:43]</span> <span class="irc-black">&lt;naeu&gt; melwin: ping</span><br />
+<span class="irc-date">[11:55]</span> <span class="irc-black">&lt;olabini&gt; ok. that was the easy part of aspects - defining them for one specific cell</span><br />
+<span class="irc-date">[11:55]</span> <span class="irc-black">&lt;olabini&gt; I'm also trying to figure out what it should look like in the doks</span><br />
+<span class="irc-date">[11:55]</span> <span class="irc-black">&lt;olabini&gt; it would be really nice to have something like:</span><br />
+<span class="irc-date">[11:56]</span> <span class="irc-black">&lt;olabini&gt; Origin after(:mimic) &lt;&lt; method(+args, initialize(*args))</span><br />
+<span class="irc-date">[11:56]</span> <span class="irc-black">&lt;olabini&gt; show up in some way</span><br />
+<span class="irc-date">[12:00]</span> <span class="irc-black">&lt;naeu&gt; interesting</span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-black">&lt;naeu&gt; would that then require that mimic take arguments to fulfil the requirements of the after aspect?</span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-black">&lt;naeu&gt; i'm working out where to start working on these type checks</span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-black">&lt;naeu&gt; welwin has got branches sprouting off everywhichway</span><br />
+<span class="irc-date">[12:03]</span> <span class="irc-black">&lt;naeu&gt; ah, I think I've got a good spot :-)</span><br />
+<span class="irc-date">[12:04]</span> <span class="irc-black">&lt;olabini&gt; naeu: yes, exactly</span><br />
+<span class="irc-date">[12:04]</span> <span class="irc-black">&lt;olabini&gt; mimic can take arguments, but it doesn't have to use them.</span><br />
+<span class="irc-date">[12:04]</span> <span class="irc-black">&lt;naeu&gt; ah, ok</span><br />
+<span class="irc-date">[12:05]</span> <span class="irc-black">&lt;naeu&gt; is that what the + does?</span><br />
+<span class="irc-date">[12:05]</span> <span class="irc-black">&lt;naeu&gt; 0 or more args</span><br />
+<span class="irc-date">[12:06]</span> <span class="irc-black">&lt;olabini&gt; rest argument, yes</span><br />
+<span class="irc-date">[12:06]</span> <span class="irc-black">&lt;olabini&gt; method(a, b, +rest, 42)</span><br />
+<span class="irc-date">[12:06]</span> <span class="irc-black">&lt;olabini&gt; takes two required arguments and one rest argument</span><br />
+<span class="irc-date">[12:08]</span> <span class="irc-black">&lt;naeu&gt; and method(+anything)</span><br />
+<span class="irc-date">[12:08]</span> <span class="irc-black">&lt;naeu&gt; takes any methods</span><br />
+<span class="irc-date">[12:08]</span> <span class="irc-black">&lt;naeu&gt; a bit like a macro</span><br />
+<span class="irc-date">[12:09]</span> <span class="irc-black">&lt;naeu&gt; except the arguments are all evaluated before they're passed to the method</span><br />
+<span class="irc-date">[12:09]</span> <span class="irc-black">&lt;olabini&gt; well, yeah</span><br />
+<span class="irc-date">[12:09]</span> <span class="irc-black">&lt;olabini&gt; except for keyword arguments</span><br />
+<span class="irc-date">[12:09]</span> <span class="irc-black">&lt;olabini&gt; to get both positional and keyword arguments, you need to do something like this:</span><br />
+<span class="irc-date">[12:09]</span> <span class="irc-black">&lt;olabini&gt; method(+rest, +:krest, [rest, krest])</span><br />
+<span class="irc-date">[12:10]</span> <span class="irc-black">&lt;olabini&gt; where krest is a dict that takes all the keyword arguments</span><br />
+<span class="irc-date">[12:10]</span> <span class="irc-black">&lt;naeu&gt; ah, nice</span><br />
+<span class="irc-date">[12:13]</span> <span class="irc-black">&lt;olabini&gt; I think this is in the guide, isn't it?</span><br />
+<span class="irc-date">[12:14]</span> <span class="irc-black">&lt;olabini&gt; one thing I always missed in Ruby was real, integrated sets</span><br />
+<span class="irc-date">[12:15]</span> <span class="irc-black">&lt;olabini&gt; I like having them in Ioke</span><br />
+<span class="irc-date">[12:23]</span> <span class="irc-black">&lt;naeu&gt; yeah, the guide did go into a lot of detail regarding arguments</span><br />
+<span class="irc-date">[12:23]</span> <span class="irc-black">&lt;naeu&gt; it's just that it's one activity reading, and another using ;-)</span><br />
+<span class="irc-date">[12:23]</span> <span class="irc-black">&lt;naeu&gt; yes! I really missed sets too</span><br />
+<span class="irc-date">[12:24]</span> <span class="irc-black">&lt;naeu&gt; it's interesting that rspec only just implemented an unordered list equality matcher</span><br />
+<span class="irc-date">[12:24]</span> <span class="irc-black">&lt;naeu&gt; I kept on implementing one of those myself</span><br />
+<span class="irc-date">[12:24]</span> <span class="irc-black">&lt;naeu&gt; so often I don't care about order and don't want duplicates</span><br />
+<span class="irc-date">[12:26]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[12:26]</span> <span class="irc-black">&lt;olabini&gt; ah, interesting</span><br />
+<span class="irc-date">[12:27]</span> <span class="irc-black">&lt;olabini&gt; yeah, I've done that too often</span><br />
+<span class="irc-date">[12:27]</span> <span class="irc-black">&lt;olabini&gt; ending up doing</span><br />
+<span class="irc-date">[12:27]</span> <span class="irc-black">&lt;olabini&gt; foo.sort.uniq.should == [1,2,3].sort</span><br />
+<span class="irc-date">[12:27]</span> <span class="irc-black">&lt;olabini&gt; which feels a bit silly</span><br />
+<span class="irc-date">[12:32]</span> <span class="irc-black">&lt;naeu&gt; ah ok</span><br />
+<span class="irc-date">[12:32]</span> <span class="irc-black">&lt;naeu&gt; i implemented a matcher</span><br />
+<span class="irc-date">[12:32]</span> <span class="irc-black">&lt;naeu&gt; so i had</span><br />
+<span class="irc-date">[12:33]</span> <span class="irc-black">&lt;naeu&gt; foo.should unordered_equals [1,2,3]</span><br />
+<span class="irc-date">[12:33]</span> <span class="irc-black">&lt;naeu&gt; but not it's</span><br />
+<span class="irc-date">[12:33]</span> <span class="irc-black">&lt;naeu&gt; foo.should =~ [1,2,3]</span><br />
+<span class="irc-date">[12:33]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[12:33]</span> <span class="irc-black">&lt;naeu&gt; *but now it's</span><br />
+<span class="irc-date">[12:35]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[12:35]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[12:35]</span> <span class="irc-black">&lt;olabini&gt; I wonder if it might be interesting to make blocks implement ===</span><br />
+<span class="irc-date">[12:35]</span> <span class="irc-black">&lt;olabini&gt; so you can do something like</span><br />
+<span class="irc-date">[12:36]</span> <span class="irc-black">&lt;olabini&gt; case(abc,</span><br />
+<span class="irc-date">[12:36]</span> <span class="irc-black">&lt;olabini&gt;    fn(x, x == :foo), ; do something</span><br />
+<span class="irc-date">[12:36]</span> <span class="irc-black">&lt;olabini&gt; )</span><br />
+<span class="irc-date">[12:36]</span> <span class="irc-black">&lt;olabini&gt; and then you can grep on it too</span><br />
+<span class="irc-date">[12:36]</span> <span class="irc-black">&lt;olabini&gt; [1,2,3,4,5] grep(fn(num, num%2 == 0))</span><br />
+<span class="irc-date">[12:36]</span> <span class="irc-black">&lt;naeu&gt; sounds mighty interesting</span><br />
+<span class="irc-date">[12:37]</span> <span class="irc-black">&lt;naeu&gt; you could implement some really interesting 'active' filters with that approach</span><br />
+<span class="irc-date">[12:38]</span> <span class="irc-black">&lt;naeu&gt; i guess you could only have one-param blocks though</span><br />
+<span class="irc-date">[12:38]</span> <span class="irc-black">&lt;olabini&gt; and as it happens ... the implementation is a one liner</span><br />
+<span class="irc-date">[12:38]</span> <span class="irc-black">&lt;olabini&gt; cell(:LexicalBlock) do(=== = generateMatchMethod(call))</span><br />
+<span class="irc-date">[12:38]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[12:38]</span> <span class="irc-black">&lt;naeu&gt; although, I must admit, I don't fully grok some of the concepts in that line</span><br />
+<span class="irc-date">[12:39]</span> <span class="irc-black">&lt;naeu&gt; but luckily, time is on my side</span><br />
+<span class="irc-date">[12:39]</span> <span class="irc-black">&lt;naeu&gt; (or at least it's healthy to assume so)</span><br />
+<span class="irc-date">[12:39]</span> <span class="irc-black">&lt;olabini&gt; well, generateMatchMethod is a syntax that expands into a matcher</span><br />
+<span class="irc-date">[12:39]</span> <span class="irc-black">&lt;olabini&gt; I use it to implement most of the ===</span><br />
+<span class="irc-date">[12:39]</span> <span class="irc-black">&lt;olabini&gt; because they all share the same kind of behavior</span><br />
+<span class="irc-date">[12:40]</span> <span class="irc-black">&lt;naeu&gt; i still need to properly go through the builtin directory</span><br />
+<span class="irc-date">[12:40]</span> <span class="irc-black">&lt;olabini&gt; well, it's getting larger every day</span><br />
+<span class="irc-date">[12:40]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[12:40]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;naeu&gt; but i'm sure there are a lot of patterns i just need to learn</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;olabini&gt; probably</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;olabini&gt; I'm making them up as I go</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;olabini&gt; generateMatchMethod is defined as:</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;olabini&gt;   otherMethod = call arguments[0]</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;olabini&gt;   ''(method(other,</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;olabini&gt;       if(self same?(`self),</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;olabini&gt;         other mimics?(`self),</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;olabini&gt;         bind(rescue(Condition Error, fn(c, false)),</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;olabini&gt;           self `(otherMethod) (other))))))</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[12:42]</span> <span class="irc-black">&lt;olabini&gt; inside of a syntax</span><br />
+<span class="irc-date">[12:42]</span> <span class="irc-black">&lt;naeu&gt; that's starting to look like lisp :-)</span><br />
+<span class="irc-date">[12:42]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[12:42]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[12:42]</span> <span class="irc-black">&lt;olabini&gt; those syntax things generally do</span><br />
+<span class="irc-date">[12:43]</span> <span class="irc-black">&lt;naeu&gt; it just shows that your statement about Ioke being lisp inside out is true</span><br />
+<span class="irc-date">[12:43]</span> <span class="irc-black">&lt;naeu&gt; lisp is very much there under the covers</span><br />
+<span class="irc-date">[12:59]</span> <span class="irc-black">&lt;olabini&gt; naeu: so. removing advice. what do you think about that?</span><br />
+<span class="irc-date">[13:00]</span> <span class="irc-black">&lt;naeu&gt; i think if you add advice, then remove it, then things should look (or at least behave) exactly like it did before the the advice was initially added</span><br />
+<span class="irc-date">[13:00]</span> <span class="irc-black">&lt;olabini&gt; absolutely</span><br />
+<span class="irc-date">[13:00]</span> <span class="irc-black">&lt;olabini&gt; what what I mean is - since you can't really compare fn-s with each other, how should you specify what should be removed?</span><br />
+<span class="irc-date">[13:00]</span> <span class="irc-black">&lt;olabini&gt; as it works right now, something like:</span><br />
+<span class="irc-date">[13:00]</span> <span class="irc-black">&lt;olabini&gt; foo before(:x) &lt;&lt; fn(;do something)</span><br />
+<span class="irc-date">[13:01]</span> <span class="irc-black">&lt;olabini&gt; will call the method before. before will create a new Pointcut, and then the &lt;&lt; method will be called on that pointcut</span><br />
+<span class="irc-date">[13:01]</span> <span class="irc-black">&lt;olabini&gt; so how would you go about removing that specific advice?</span><br />
+<span class="irc-date">[13:01]</span> <span class="irc-black">&lt;naeu&gt; ah, pointcuts - I've heard about them but don't fully know what they are</span><br />
+<span class="irc-date">[13:01]</span> <span class="irc-black">&lt;naeu&gt; but you're right, there isn't really a handle to the advice once it's added</span><br />
+<span class="irc-date">[13:01]</span> <span class="irc-black">&lt;olabini&gt; it's just a name I've given to an object that points out where to work on advice</span><br />
+<span class="irc-date">[13:02]</span> <span class="irc-black">&lt;olabini&gt; so I'm wondering if you have a use case</span><br />
+<span class="irc-date">[13:02]</span> <span class="irc-black">&lt;naeu&gt; which isn't a problem if you only allow one before filter</span><br />
+<span class="irc-date">[13:02]</span> <span class="irc-black">&lt;naeu&gt; but if you have chains of them...</span><br />
+<span class="irc-date">[13:02]</span> <span class="irc-black">&lt;olabini&gt; yeah, exactly</span><br />
+<span class="irc-date">[13:02]</span> <span class="irc-black">&lt;olabini&gt; and that's where some of the power is</span><br />
+<span class="irc-date">[13:02]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[13:02]</span> <span class="irc-black">&lt;naeu&gt; indeed :-)</span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-black">&lt;naeu&gt; i guess you can either treat them as a stack</span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-black">&lt;olabini&gt; to allow chaining of several different advice without them affecting each other</span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-black">&lt;naeu&gt; push, pop etc</span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-black">&lt;naeu&gt; but i don't like that</span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-black">&lt;olabini&gt; me neither</span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-black">&lt;olabini&gt; but it would work easily, that's true</span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-black">&lt;naeu&gt; i'd prefer giving each advice a handle</span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-black">&lt;olabini&gt; ah, right. good idea.</span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-black">&lt;olabini&gt; I might have to redo some of this then</span><br />
+<span class="irc-date">[13:04]</span> <span class="irc-black">&lt;naeu&gt; then you could pull of a specific advice</span><br />
+<span class="irc-date">[13:04]</span> <span class="irc-black">&lt;naeu&gt; *off</span><br />
+<span class="irc-date">[13:04]</span> <span class="irc-black">&lt;olabini&gt; I wonder what that should look like</span><br />
+<span class="irc-date">[13:04]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[13:04]</span> <span class="irc-black">&lt;olabini&gt; maybe ...</span><br />
+<span class="irc-date">[13:04]</span> <span class="irc-black">&lt;olabini&gt; &lt;&lt; will add an unnamed advice</span><br />
+<span class="irc-date">[13:04]</span> <span class="irc-black">&lt;naeu&gt; although you'd also have to consider what happens if you add two advice with the same name</span><br />
+<span class="irc-date">[13:04]</span> <span class="irc-black">&lt;olabini&gt; will "add" will add a named advice</span><br />
+<span class="irc-date">[13:04]</span> <span class="irc-black">&lt;olabini&gt; so instead of</span><br />
+<span class="irc-date">[13:04]</span> <span class="irc-black">&lt;olabini&gt; before(:foo) &lt;&lt; fn(x)</span><br />
+<span class="irc-date">[13:04]</span> <span class="irc-black">&lt;olabini&gt; you would do</span><br />
+<span class="irc-date">[13:05]</span> <span class="irc-black">&lt;naeu&gt; is there any way you can generate a hash symbol from a fn?</span><br />
+<span class="irc-date">[13:05]</span> <span class="irc-black">&lt;olabini&gt; before(:foo) add(:blurgus, fn(x))</span><br />
+<span class="irc-date">[13:05]</span> <span class="irc-black">&lt;olabini&gt; naeu: well, I can do that, but that is TOTALLY unsafe</span><br />
+<span class="irc-date">[13:05]</span> <span class="irc-black">&lt;olabini&gt; I mean, what if some other code happens to add the same code you do?</span><br />
+<span class="irc-date">[13:05]</span> <span class="irc-black">&lt;olabini&gt; I think naming is the way to go here</span><br />
+<span class="irc-date">[13:05]</span> <span class="irc-black">&lt;naeu&gt; but that's the same problem with two simutaneous names</span><br />
+<span class="irc-date">[13:06]</span> <span class="irc-black">&lt;naeu&gt; *similar</span><br />
+<span class="irc-date">[13:06]</span> <span class="irc-black">&lt;naeu&gt; not simutaneous</span><br />
+<span class="irc-date">[13:06]</span> <span class="irc-black">&lt;olabini&gt; not exactly, but yeah</span><br />
+<span class="irc-date">[13:06]</span> <span class="irc-black">&lt;olabini&gt; see, the thing is, you will only use named advice if you need to remove them again</span><br />
+<span class="irc-date">[13:06]</span> <span class="irc-black">&lt;naeu&gt; yep</span><br />
+<span class="irc-date">[13:06]</span> <span class="irc-black">&lt;naeu&gt; i agree with that</span><br />
+<span class="irc-date">[13:06]</span> <span class="irc-black">&lt;olabini&gt; so the risk for collission is much smaller because of that</span><br />
+<span class="irc-date">[13:06]</span> <span class="irc-black">&lt;olabini&gt; actually, I think that is OK.</span><br />
+<span class="irc-date">[13:06]</span> <span class="irc-black">&lt;naeu&gt; you could combine the two</span><br />
+<span class="irc-date">[13:06]</span> <span class="irc-black">&lt;naeu&gt; you could treat it like a stack</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; yes.</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;naeu&gt; but also with names for some of the elements</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; so remove for a name only removes the outermost</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; good. that makes sense.</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;naeu&gt; which would mean you could even add two simiarly named advices</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;naeu&gt; exactly</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; sure. and there will be namespacing, so removing a before-advice will not touch an after-advice with the same name</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; coolers</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;naeu&gt; indeed :-)</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;naeu&gt; this all sounds a lot nicer than alias_method_chain ;-)</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;olabini&gt; this feels good, absolutely</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;olabini&gt; and especially since everything is contained</span><br />
+<span class="irc-date">[13:22]</span> <span class="irc-brown">-christel- [Global Notice] Hi all, As some of you may have noticed, we lost our ipv6 servers for a extended period of time in the last day. I am terribly sorry about this, it would appear that we've unmasked yet another peculiar hyperion bug. They're back up now and we shouldn't experience any further problems. Thank you for using freenode and have a great day.</span><br />
+<span class="irc-date">[13:25]</span> <span class="irc-black">&lt;naeu&gt; olabini: whilst in the shower i just had a potentially interesting/potentially crazy idea</span><br />
+<span class="irc-date">[13:26]</span> <span class="irc-black">&lt;naeu&gt; i mean, I'm totally up for containing everything</span><br />
+<span class="irc-date">[13:26]</span> <span class="irc-black">&lt;naeu&gt; but also, where there's a rule, there's an excuse for breaking it ;-)</span><br />
+<span class="irc-date">[13:26]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[13:27]</span> <span class="irc-black">&lt;naeu&gt; but it would be nice to have advices that are object wide</span><br />
+<span class="irc-date">[13:27]</span> <span class="irc-black">&lt;olabini&gt; this sounds interesting</span><br />
+<span class="irc-date">[13:27]</span> <span class="irc-black">&lt;olabini&gt; hmm. describe</span><br />
+<span class="irc-date">[13:27]</span> <span class="irc-black">&lt;naeu&gt; i.e. before all cell calls do this</span><br />
+<span class="irc-date">[13:27]</span> <span class="irc-black">&lt;naeu&gt; and after all cell calls do this</span><br />
+<span class="irc-date">[13:27]</span> <span class="irc-black">&lt;naeu&gt; for a given object</span><br />
+<span class="irc-date">[13:28]</span> <span class="irc-black">&lt;naeu&gt; so i wondered, in the same respect as method_missing, it might be interesting to implement some hooks</span><br />
+<span class="irc-date">[13:28]</span> <span class="irc-black">&lt;olabini&gt; hmm. right</span><br />
+<span class="irc-date">[13:28]</span> <span class="irc-black">&lt;olabini&gt; actually, I have been thinking about hooks like that</span><br />
+<span class="irc-date">[13:28]</span> <span class="irc-black">&lt;olabini&gt; but I'm not sure if they belong in the aspect system, or as hooks in general</span><br />
+<span class="irc-date">[13:28]</span> <span class="irc-black">&lt;olabini&gt; I'm leaning towards the latter</span><br />
+<span class="irc-date">[13:28]</span> <span class="irc-black">&lt;naeu&gt; i agree</span><br />
+<span class="irc-date">[13:28]</span> <span class="irc-black">&lt;naeu&gt; definitely hooks</span><br />
+<span class="irc-date">[13:28]</span> <span class="irc-black">&lt;naeu&gt; and not aspects</span><br />
+<span class="irc-date">[13:29]</span> <span class="irc-black">&lt;naeu&gt; as far as implementation is concerned</span><br />
+<span class="irc-date">[13:29]</span> <span class="irc-black">&lt;naeu&gt; but conceptually they're aspects :-)</span><br />
+<span class="irc-date">[13:29]</span> <span class="irc-black">&lt;naeu&gt; you could do all sorts of crazy stuff with them</span><br />
+<span class="irc-date">[13:29]</span> <span class="irc-black">&lt;naeu&gt; i.e. before all cells which name's match this regexp...</span><br />
+<span class="irc-date">[13:30]</span> <span class="irc-black">&lt;olabini&gt; sure</span><br />
+<span class="irc-date">[13:30]</span> <span class="irc-black">&lt;naeu&gt; when it's night time...</span><br />
+<span class="irc-date">[13:30]</span> <span class="irc-black">&lt;olabini&gt; that would be interesting.</span><br />
+<span class="irc-date">[13:30]</span> <span class="irc-black">&lt;naeu&gt; that would be powerful for building a tracing system</span><br />
+<span class="irc-date">[13:30]</span> <span class="irc-black">&lt;olabini&gt; but the hard part about that is that they shouldn't have an impact on code that doesn't use it</span><br />
+<span class="irc-date">[13:30]</span> <span class="irc-black">&lt;naeu&gt; yeah, sure</span><br />
+<span class="irc-date">[13:31]</span> <span class="irc-black">&lt;naeu&gt; the problem is you need to check the whole mimic chain for the existence of the hook methods</span><br />
+<span class="irc-date">[13:31]</span> <span class="irc-black">&lt;naeu&gt; because having a beforeCellCall hook on Origin would be very powerful</span><br />
+<span class="irc-date">[13:32]</span> <span class="irc-black">&lt;olabini&gt; sure</span><br />
+<span class="irc-date">[13:32]</span> <span class="irc-black">&lt;olabini&gt; exactly</span><br />
+<span class="irc-date">[13:32]</span> <span class="irc-black">&lt;olabini&gt; that's one of the reasons the code for the original aspects became really ugly</span><br />
+<span class="irc-date">[13:34]</span> <span class="irc-black">&lt;naeu&gt; yeah</span><br />
+<span class="irc-date">[13:34]</span> <span class="irc-black">&lt;naeu&gt; it's a shame, because it would be a very nice thing to have</span><br />
+<span class="irc-date">[13:35]</span> <span class="irc-black">&lt;naeu&gt; but perhaps implementing it as hooks might have less impact than having a chain on every single cell</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;naeu&gt; anyway, i'm off to meet some friends that have visited from Newcastle</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;naeu&gt; it's always fun to catch up on what's been happening at the University since I left</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-black">&lt;naeu&gt; good luck with the rest of the aspect stuff</span><br />
+<span class="irc-date">[13:42]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[13:42]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[13:42]</span> <span class="irc-black">&lt;olabini&gt; see you</span><br />
+<span class="irc-date">[13:51]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[14:31]</span> <span class="irc-black">&lt;olabini&gt; AHAHAHAHA. found the heisenbug!</span><br />
+<span class="irc-date">[15:24]</span> <span class="irc-green">* felipero (n=felipe@189-55-73-254-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[15:24]</span> <span class="irc-black">&lt;felipero&gt; hi all</span><br />
+<span class="irc-date">[15:25]</span> <span class="irc-black">&lt;felipero&gt; melwin, I've fixed the identation of those commits. (deleted the branch in github and re-commited everything)</span><br />
+<span class="irc-date">[16:17]</span> <span class="irc-green">* junebug (n=azoic@adsl-76-200-189-126.dsl.pltn13.sbcglobal.net) has joined #ioke</span><br />
+<span class="irc-date">[16:26]</span> <span class="irc-brick">* olabini is almost finished with before and after advice. only around-advice missing!</span><br />
+<span class="irc-date">[16:46]</span> <span class="irc-navy">* junebug (n=azoic@adsl-76-200-189-126.dsl.pltn13.sbcglobal.net) Quit (Read error: 54 (Connection reset by peer))</span><br />
+<span class="irc-date">[16:46]</span> <span class="irc-green">* junebug (n=azoic@adsl-76-200-189-126.dsl.pltn13.sbcglobal.net) has joined #ioke</span><br />
+<span class="irc-date">[16:50]</span> <span class="irc-navy">* junebug (n=azoic@adsl-76-200-189-126.dsl.pltn13.sbcglobal.net) Quit (Client Quit)</span><br />
+<span class="irc-date">[17:15]</span> <span class="irc-black">&lt;olabini&gt; CIA-48: ping</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:04]</span> <span class="irc-black">&lt;CIA-48&gt; ioke: Ola Bini master * rb2a20de / (docs/aspects docs/todo): Update documentation for aspects - <a href="http://tinyurl.com/7zml22">http://tinyurl.com/7zml22</a></span><br />
+<span class="irc-date">[18:04]</span> <span class="irc-black">&lt;CIA-48&gt; ioke: Ola Bini master * rc834e2c / (6 files in 3 dirs): Add support for initialization - <a href="http://tinyurl.com/7yx2ff">http://tinyurl.com/7yx2ff</a></span><br />
+<span class="irc-date">[18:05]</span> <span class="irc-black">&lt;olabini&gt; interesting. CIA doesn't seem to notice when I merge branches and push those</span><br />
+<span class="irc-date">[18:05]</span> <span class="irc-black">&lt;olabini&gt; it only notices new commits, not new heads. how annoying</span><br />
+<span class="irc-date">[18:06]</span> <span class="irc-black">&lt;olabini&gt; anyway. aspects are in. YAY.</span><br />
+<span class="irc-date">[18:13]</span> <span class="irc-brick">* olabini just sent a mail about the immediate future for Ioke</span><br />
+<span class="irc-date">[18:17]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[18:17]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:19]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 54 (Connection reset by peer))</span><br />
+<span class="irc-date">[18:19]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:20]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Client Quit)</span><br />
+<span class="irc-date">[19:29]</span> <span class="irc-brick">* felipero just finished the correction of Range class and now is working on Text class</span><br />
+<span class="irc-date">[20:26]</span> <span class="irc-black">&lt;felipero&gt; olabini, are you there?</span><br />
+<span class="irc-date">[20:31]</span> <span class="irc-black">&lt;felipero&gt; where is defined the empty? cell for Text class?</span><br />
+<span class="irc-date">[20:36]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[21:29]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[21:32]</span> <span class="irc-black">&lt;naeu&gt; great stuff about the aspects</span><br />
+<span class="irc-date">[21:32]</span> <span class="irc-black">&lt;naeu&gt; i'll take a look tomorrow</span><br />
+<span class="irc-date">[21:32]</span> <span class="irc-black">&lt;olabini&gt; felipero: well, Text empty? is defined in src/builtin/D40_text.ik</span><br />
+<span class="irc-date">[21:33]</span> <span class="irc-black">&lt;olabini&gt; so it's not an issue in itself</span><br />
+<span class="irc-date">[21:33]</span> <span class="irc-black">&lt;olabini&gt; since it uses the length method</span><br />
+<span class="irc-date">[21:33]</span> <span class="irc-black">&lt;naeu&gt; I'm going to try and make Monday night free to crack on with some conversion issues</span><br />
+<span class="irc-date">[21:33]</span> <span class="irc-black">&lt;olabini&gt; cool</span><br />
+<span class="irc-date">[21:33]</span> <span class="irc-black">&lt;naeu&gt; this weekend I've been trying to relax as much as possible :-)</span><br />
+<span class="irc-date">[21:33]</span> <span class="irc-black">&lt;olabini&gt; of course</span><br />
+<span class="irc-date">[21:33]</span> <span class="irc-black">&lt;olabini&gt; I get that</span><br />
+<span class="irc-date">[21:34]</span> <span class="irc-black">&lt;olabini&gt; I've been spending time with my new guitar, so I can relate</span><br />
+<span class="irc-date">[21:34]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[21:34]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[21:34]</span> <span class="irc-black">&lt;naeu&gt; oh, olabini we also need to sort out transport to Amsterdam at some point</span><br />
+<span class="irc-date">[21:34]</span> <span class="irc-black">&lt;naeu&gt; perhaps we can get that nailed this week</span><br />
+<span class="irc-date">[21:34]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[21:34]</span> <span class="irc-black">&lt;olabini&gt; should be good</span><br />
+<span class="irc-date">[21:34]</span> <span class="irc-black">&lt;naeu&gt; indeed :-)</span><br />
+<span class="irc-date">[21:35]</span> <span class="irc-black">&lt;naeu&gt; I've got 300 euros to start with</span><br />
+<span class="irc-date">[21:35]</span> <span class="irc-black">&lt;naeu&gt; and if that's not enough, then I should be able to sort out some more</span><br />
+<span class="irc-date">[21:35]</span> <span class="irc-black">&lt;olabini&gt; cool</span><br />
+<span class="irc-date">[21:35]</span> <span class="irc-black">&lt;olabini&gt; ok. night people</span><br />
+<span class="irc-date">[21:35]</span> <span class="irc-black">&lt;naeu&gt; sleep well!</span><br />
+<span class="irc-date">[21:35]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[21:35]</span> <span class="irc-black">&lt;felipero&gt; olabini, I found it some minutes ago.. =)</span><br />
+<span class="irc-date">[21:36]</span> <span class="irc-black">&lt;felipero&gt; hi naeu</span><br />
+<span class="irc-date">[21:36]</span> <span class="irc-black">&lt;naeu&gt; felipero: I saw your commits</span><br />
+<span class="irc-date">[21:36]</span> <span class="irc-black">&lt;naeu&gt; only briefly looked at them, and they look really good :-)</span><br />
+<span class="irc-date">[21:36]</span> <span class="irc-black">&lt;naeu&gt; you should be pleased with yourself!</span><br />
+<span class="irc-date">[21:36]</span> <span class="irc-black">&lt;felipero&gt; thanks</span><br />
+<span class="irc-date">[21:36]</span> <span class="irc-black">&lt;naeu&gt; have you had a chat with melwin to sort out what to look at next?</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-black">&lt;felipero&gt; I'm in the middle of a decision here</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-black">&lt;naeu&gt; we need to really crack on with them before Ola releases the next Ioke</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-black">&lt;felipero&gt; I'm working on the Text class and the problem is in the getText() static method</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-black">&lt;naeu&gt; ah ok</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-black">&lt;naeu&gt; that's a pretty magic method if I remember correctly</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-black">&lt;felipero&gt; I could just do Object onAsText = context.runtime.text.convertToThis(on); before every call of getText(on)</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-black">&lt;naeu&gt; either sort it out with Ola, or move on to something else :-)</span><br />
+<span class="irc-date">[21:38]</span> <span class="irc-black">&lt;naeu&gt; leave the tricky stuff to Ola</span><br />
+<span class="irc-date">[21:38]</span> <span class="irc-black">&lt;felipero&gt; but htis is a problem, since getText is public</span><br />
+<span class="irc-date">[21:38]</span> <span class="irc-black">&lt;naeu&gt; i have to go now sadly</span><br />
+<span class="irc-date">[21:38]</span> <span class="irc-black">&lt;naeu&gt; but try not to worry about it too much</span><br />
+<span class="irc-date">[21:38]</span> <span class="irc-black">&lt;felipero&gt; ok.. see you naeu</span><br />
+<span class="irc-date">[21:39]</span> <span class="irc-black">&lt;naeu&gt; make a note of it, and move on to other classes</span><br />
+<span class="irc-date">[21:39]</span> <span class="irc-black">&lt;olabini&gt; felipero: what is magic about getText?</span><br />
+<span class="irc-date">[21:39]</span> <span class="irc-black">&lt;naeu&gt; it's more important we get more of it done, so stick to the easier stuff</span><br />
+<span class="irc-date">[21:39]</span> <span class="irc-black">&lt;naeu&gt; and then we can tackle the hard stuff at the end of the week :-)</span><br />
+<span class="irc-date">[21:39]</span> <span class="irc-black">&lt;naeu&gt; nightnight</span><br />
+<span class="irc-date">[21:39]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[21:39]</span> <span class="irc-black">&lt;felipero&gt; naeu said it is magic.. I didn't</span><br />
+<span class="irc-date">[21:40]</span> <span class="irc-black">&lt;felipero&gt; it is just static, so the problem could get spread across any getText() call</span><br />
+<span class="irc-date">[21:40]</span> <span class="irc-black">&lt;felipero&gt; I was thinking in put a ispec to test it, but the solution would require changing the arguments of this method</span><br />
+<span class="irc-date">[21:40]</span> <span class="irc-black">&lt;felipero&gt; and I don't know where it is being called</span><br />
+<span class="irc-date">[21:42]</span> <span class="irc-black">&lt;felipero&gt; so,</span><br />
+<span class="irc-date">[21:42]</span> <span class="irc-black">&lt;felipero&gt; public static String getText(Object on) {</span><br />
+<span class="irc-date">[21:42]</span> <span class="irc-black">&lt;felipero&gt;         return ((Text)(IokeObject.data(on))).getText();</span><br />
+<span class="irc-date">[21:42]</span> <span class="irc-black">&lt;felipero&gt;     }</span><br />
+<span class="irc-date">[21:42]</span> <span class="irc-black">&lt;felipero&gt; should probably be:</span><br />
+<span class="irc-date">[21:43]</span> <span class="irc-black">&lt;felipero&gt; public static String getText(Object on, IokeObject context) {</span><br />
+<span class="irc-date">[21:43]</span> <span class="irc-black">&lt;felipero&gt;         r}</span><br />
+<span class="irc-date">[21:43]</span> <span class="irc-black">&lt;felipero&gt; and we could deal the conversion right there... otherwise there will be duplication of code like:</span><br />
+<span class="irc-date">[21:43]</span> <span class="irc-black">&lt;felipero&gt; Object onAsText = context.runtime.text.convertToThis(on); before every call of getText(on)</span><br />
+<span class="irc-date">[22:06]</span> <span class="irc-black">&lt;melwin&gt; Dudes.</span><br />
+<span class="irc-date">[22:06]</span> <span class="irc-black">&lt;felipero&gt; hi melwin</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;melwin&gt; Hey. How are you?</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;felipero&gt; fine...</span><br />
+<span class="irc-date">[22:08]</span> <span class="irc-black">&lt;felipero&gt; just took some ice cream... to clear my ideas. =)</span><br />
+<span class="irc-date">[22:08]</span> <span class="irc-black">&lt;melwin&gt; Sweet.</span><br />
+<span class="irc-date">[22:08]</span> <span class="irc-black">&lt;melwin&gt; I'm just fixing a nightcap with the missus. :P</span><br />
+<span class="irc-date">[22:09]</span> <span class="irc-black">&lt;felipero&gt; =)</span><br />
+<span class="irc-date">[22:09]</span> <span class="irc-black">&lt;melwin&gt; I'll be in shortly... I've suggested an alternative validation approach to Ola, which he seems ok with assuming we find it useful.</span><br />
+<span class="irc-date">[22:10]</span> <span class="irc-black">&lt;felipero&gt; should I stop doing this way then?</span><br />
+<span class="irc-date">[22:10]</span> <span class="irc-black">&lt;melwin&gt; Well, see what you think about this: <a href="http://github.com/melwin/ioke/commits/new-type-checker">http://github.com/melwin/ioke/commits/new-type-checker</a></span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-black">&lt;melwin&gt; I was trying to find a way to avoid the boiler plate code we're writing to simplify the JavaMethod code.</span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-black">&lt;melwin&gt; By introducing type information in arguments definition builder.</span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-black">&lt;melwin&gt; Take a look - I'll be back in a bit.</span><br />
+<span class="irc-date">[22:22]</span> <span class="irc-black">&lt;felipero&gt; ok... make sense</span><br />
+<span class="irc-date">[22:24]</span> <span class="irc-black">&lt;felipero&gt; but won't fix cases where we have the cast in a static method</span><br />
+<span class="irc-date">[22:24]</span> <span class="irc-black">&lt;felipero&gt; like getText()</span><br />
+<span class="irc-date">[22:25]</span> <span class="irc-black">&lt;felipero&gt; in the Text class. see: <a href="http://github.com/felipero/ioke/commit/9da1048dac195e4e755840683eabaa6838e257a1">http://github.com/felipero/ioke/commit/9da1048dac195e4e755840683eabaa6838e257a1</a></span><br />
+<span class="irc-date">[22:25]</span> <span class="irc-brick">* felipero will be back in some minutes</span><br />
+<span class="irc-date">[22:27]</span> <span class="irc-black">&lt;melwin&gt; Why not?</span><br />
+<span class="irc-date">[22:29]</span> <span class="irc-black">&lt;melwin&gt; That should work just fine.</span><br />
+<span class="irc-date">[22:37]</span> <span class="irc-black">&lt;felipero&gt; you're rigt</span><br />
+<span class="irc-date">[22:37]</span> <span class="irc-black">&lt;felipero&gt; from the Text class it will work ok</span><br />
+<span class="irc-date">[22:38]</span> <span class="irc-black">&lt;felipero&gt; but getText is static and public, so anyone can call that from outside of Text class and get a ClassCast Exception</span><br />
+<span class="irc-date">[22:38]</span> <span class="irc-black">&lt;felipero&gt; but I believe this is another issue</span><br />
+<span class="irc-date">[22:38]</span> <span class="irc-black">&lt;melwin&gt; Yes - it can only be called with the correct type of object argument - but that is a separate issue, as you say.</span><br />
+<span class="irc-date">[22:39]</span> <span class="irc-black">&lt;melwin&gt; Callers must validate argument before calling that helper - just as with the helpers in all other objects.</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;felipero&gt; yes... I wonder if is there a todo list or if the isue tracker is already working</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;felipero&gt; we need to trac these things</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;melwin&gt; There is a bug tracker at Kenai.</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;felipero&gt; is it already being used?</span><br />
+<span class="irc-date">[22:43]</span> <span class="irc-black">&lt;felipero&gt; yes... it is</span><br />
+<span class="irc-date">[22:43]</span> <span class="irc-black">&lt;felipero&gt; for some things at least...</span><br />
+<span class="irc-date">[22:44]</span> <span class="irc-black">&lt;melwin&gt; A few bugs, yes...</span><br />
+<span class="irc-date">[22:44]</span> <span class="irc-black">&lt;melwin&gt; Not that I would call the helper method a bug, however.</span><br />
+<span class="irc-date">[22:44]</span> <span class="irc-black">&lt;felipero&gt; not a bug, but an enhancement</span><br />
+<span class="irc-date">[22:46]</span> <span class="irc-black">&lt;felipero&gt; I gotta go now</span><br />
+<span class="irc-date">[22:46]</span> <span class="irc-black">&lt;melwin&gt; Not sure if it's meaningful. Something for Ola to determine I guess.</span><br />
+<span class="irc-date">[22:46]</span> <span class="irc-black">&lt;melwin&gt; Laters!</span><br />
+<span class="irc-date">[22:46]</span> <span class="irc-black">&lt;felipero&gt; talk to you tomorrow...</span><br />
+<span class="irc-date">[22:47]</span> <span class="irc-navy">* felipero (n=felipe@189-55-73-254-nd.cpe.vivax.com.br) Quit ("Saindo")</span><br />

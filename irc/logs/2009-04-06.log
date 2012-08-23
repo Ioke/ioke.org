@@ -1,0 +1,159 @@
+<span class="irc-date">[1:12]</span> <span class="irc-black">&lt;hsuh&gt; ok, tks</span><br />
+<span class="irc-date">[3:42]</span> <span class="irc-navy">* hsuh (n=user@c925a569.virtua.com.br) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[5:23]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[5:37]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit ("Leaving")</span><br />
+<span class="irc-date">[5:56]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: bguthrie master * r282c43a / (4 files in 3 dirs): Added extremely simple Run Spec commands to the Ioke TextMate bundle. - <a href="http://bit.ly/oiL26">http://bit.ly/oiL26</a></span><br />
+<span class="irc-date">[5:56]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: bguthrie master * rfce79a2 / (4 files in 2 dirs): Added simple HTML formatter to TextMate bundle. - <a href="http://bit.ly/kDzhY">http://bit.ly/kDzhY</a></span><br />
+<span class="irc-date">[5:56]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * r772ac64 / (5 files in 3 dirs): Merge branch 'tmbundle_runtest' of git://github.com/bguthrie/ioke into bguthrie/tmbundle_runtest - <a href="http://bit.ly/oHzb8">http://bit.ly/oHzb8</a></span><br />
+<span class="irc-date">[6:08]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[6:08]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@nat/sun/x-f1d439140d5c40f6) has joined #ioke</span><br />
+<span class="irc-date">[6:39]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[6:54]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[7:04]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[7:27]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@nat/sun/x-f1d439140d5c40f6) Quit ("Leaving")</span><br />
+<span class="irc-date">[7:27]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@nat/sun/x-969f35151a5fa111) has joined #ioke</span><br />
+<span class="irc-date">[8:20]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[8:34]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@nat/sun/x-969f35151a5fa111) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[9:02]</span> <span class="irc-green">* mozinator (i=mozinato@a80-127-247-151.mobile.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:13]</span> <span class="irc-navy">* mozinator (i=mozinato@a80-127-247-151.mobile.xs4all.nl) Quit ("Ik ga weg")</span><br />
+<span class="irc-date">[9:59]</span> <span class="irc-green">* naeu (n=sam@h36036.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-green">* mkrauskopf_ (n=mkrausko@nat/sun/x-eb702dfe36318912) has joined #ioke</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;olabini&gt; morning</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;naeu&gt; morning, morning</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;naeu&gt; so, ioke E was a bit of a surprise :-)</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;naeu&gt; i guess you needed to cheer your day up a little ;-)</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-black">&lt;olabini&gt; and now I can work on some interesting stuff</span><br />
+<span class="irc-date">[10:35]</span> <span class="irc-black">&lt;naeu&gt; indeed</span><br />
+<span class="irc-date">[10:35]</span> <span class="irc-black">&lt;naeu&gt; i was away from all computers this weekend :-)</span><br />
+<span class="irc-date">[10:35]</span> <span class="irc-black">&lt;naeu&gt; camping in a friend's garden</span><br />
+<span class="irc-date">[10:35]</span> <span class="irc-black">&lt;naeu&gt; lovely stuff</span><br />
+<span class="irc-date">[10:36]</span> <span class="irc-black">&lt;olabini&gt; nice</span><br />
+<span class="irc-date">[10:36]</span> <span class="irc-black">&lt;naeu&gt; and i'm going to take a real 'need-driven-development' approach to my continued Ioke contributions</span><br />
+<span class="irc-date">[10:37]</span> <span class="irc-black">&lt;naeu&gt; which means the next thing I'll take a look at (before I finish the templating thing) is building a json parser</span><br />
+<span class="irc-date">[10:37]</span> <span class="irc-black">&lt;naeu&gt; I should be able to use my TextScanner for it</span><br />
+<span class="irc-date">[10:37]</span> <span class="irc-black">&lt;naeu&gt; I want to be able to parse the json twitter feed of my last 20 tweets so I can auto generate the twitter section on my web page</span><br />
+<span class="irc-date">[10:38]</span> <span class="irc-black">&lt;naeu&gt; rather than updating it by hand every time i update twitter ;-)</span><br />
+<span class="irc-date">[10:39]</span> <span class="irc-black">&lt;olabini&gt; ah, cool</span><br />
+<span class="irc-date">[10:39]</span> <span class="irc-black">&lt;olabini&gt; nice</span><br />
+<span class="irc-date">[11:05]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit ()</span><br />
+<span class="irc-date">[12:10]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[12:13]</span> <span class="irc-navy">* mkrauskopf_ (n=mkrausko@nat/sun/x-eb702dfe36318912) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[12:29]</span> <span class="irc-green">* mkrauskopf_ (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[12:37]</span> <span class="irc-navy">* mkrauskopf_ (n=mkrausko@195.47.79.66) Quit ("Leaving")</span><br />
+<span class="irc-date">[12:37]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[12:39]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit (Client Quit)</span><br />
+<span class="irc-date">[12:39]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;naeu&gt; olabini: is there any reason why Regexp#quote quotes</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;naeu&gt; } but not ]</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;naeu&gt; i.e. should it be quoting } at all?</span><br />
+<span class="irc-date">[12:42]</span> <span class="irc-black">&lt;olabini&gt; well.</span><br />
+<span class="irc-date">[12:42]</span> <span class="irc-black">&lt;olabini&gt; probably not</span><br />
+<span class="irc-date">[12:43]</span> <span class="irc-black">&lt;naeu&gt; just thought i hadn't mentioned regexps for a bit, so didn't want that little well of joy to dry up ;-)</span><br />
+<span class="irc-date">[12:44]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[12:48]</span> <span class="irc-green">* donizetti (n=donizett@189.120.169.35) has joined #ioke</span><br />
+<span class="irc-date">[13:53]</span> <span class="irc-green">* mkrauskopf_ (n=mkrausko@nat/sun/x-e92fe6b89404a033) has joined #ioke</span><br />
+<span class="irc-date">[14:10]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[14:35]</span> <span class="irc-green">* donizetti_ (n=donizett@189.120.169.35) has joined #ioke</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-black">&lt;naeu&gt; olabini: are you about?</span><br />
+<span class="irc-date">[14:49]</span> <span class="irc-black">&lt;olabini&gt; yup</span><br />
+<span class="irc-date">[14:50]</span> <span class="irc-black">&lt;naeu&gt; first up, #/"/</span><br />
+<span class="irc-date">[14:50]</span> <span class="irc-black">&lt;naeu&gt; that breaks the emacs ioke major mode</span><br />
+<span class="irc-date">[14:51]</span> <span class="irc-black">&lt;naeu&gt; it thinks it's a string</span><br />
+<span class="irc-date">[14:51]</span> <span class="irc-black">&lt;naeu&gt; #/#{}#{}/</span><br />
+<span class="irc-date">[14:51]</span> <span class="irc-black">&lt;naeu&gt; and in the above the second interpolation isn't treated as such with respect to the highlighting</span><br />
+<span class="irc-date">[14:52]</span> <span class="irc-black">&lt;naeu&gt; but they're just side issues :-)</span><br />
+<span class="irc-date">[14:52]</span> <span class="irc-black">&lt;olabini&gt; ah, nice</span><br />
+<span class="irc-date">[14:52]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[14:52]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[14:52]</span> <span class="irc-black">&lt;naeu&gt; the main question i wanted to ask is how would you define the reverse solidus as a text, and then convert it to a regexp</span><br />
+<span class="irc-date">[14:53]</span> <span class="irc-black">&lt;olabini&gt; that stuff is tricky in the emacs mode</span><br />
+<span class="irc-date">[14:53]</span> <span class="irc-black">&lt;olabini&gt; "reverse solidus"</span><br />
+<span class="irc-date">[14:53]</span> <span class="irc-black">&lt;olabini&gt; ?</span><br />
+<span class="irc-date">[14:53]</span> <span class="irc-black">&lt;naeu&gt; reverseSolidus = "\"</span><br />
+<span class="irc-date">[14:53]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[14:53]</span> <span class="irc-black">&lt;olabini&gt; oh, I see</span><br />
+<span class="irc-date">[14:53]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[14:53]</span> <span class="irc-navy">* donizetti (n=donizett@189.120.169.35) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[14:53]</span> <span class="irc-black">&lt;naeu&gt; fancy wording in the JSON rfc</span><br />
+<span class="irc-date">[14:53]</span> <span class="irc-black">&lt;olabini&gt; haven't seen that before</span><br />
+<span class="irc-date">[14:53]</span> <span class="irc-black">&lt;naeu&gt; me neither :-)</span><br />
+<span class="irc-date">[14:53]</span> <span class="irc-black">&lt;naeu&gt; but:</span><br />
+<span class="irc-date">[14:54]</span> <span class="irc-black">&lt;olabini&gt; Regexp from("\\\\")</span><br />
+<span class="irc-date">[14:54]</span> <span class="irc-black">&lt;olabini&gt; this works</span><br />
+<span class="irc-date">[14:55]</span> <span class="irc-black">&lt;naeu&gt; reverseSolidus = "\\" . #/\s*#{Regexp quote(reverseSolidus)}\s*/</span><br />
+<span class="irc-date">[14:55]</span> <span class="irc-black">&lt;naeu&gt; doesn't seem to do that</span><br />
+<span class="irc-date">[14:55]</span> <span class="irc-black">&lt;naeu&gt; hmm, yes it does</span><br />
+<span class="irc-date">[14:56]</span> <span class="irc-black">&lt;naeu&gt; i must have gone in a full circle</span><br />
+<span class="irc-date">[14:56]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[14:56]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-black">&lt;naeu&gt; anyway, who the hell calls it a reverse solidus???</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[14:59]</span> <span class="irc-black">&lt;naeu&gt; out of smugness, both #/"/ and #/#{a}#{b}/ highlight properly within TextMate</span><br />
+<span class="irc-date">[14:59]</span> <span class="irc-black">&lt;olabini&gt; of course</span><br />
+<span class="irc-date">[14:59]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[15:00]</span> <span class="irc-black">&lt;naeu&gt; although this breaks both of them: #/\//</span><br />
+<span class="irc-date">[15:05]</span> <span class="irc-green">* donizetti_ (n=donizett@189.120.169.35) has left #ioke</span><br />
+<span class="irc-date">[15:07]</span> <span class="irc-black">&lt;olabini&gt; ah</span><br />
+<span class="irc-date">[15:07]</span> <span class="irc-black">&lt;olabini&gt; yeah, the problem is that you need recursive rules to handle all cases</span><br />
+<span class="irc-date">[15:07]</span> <span class="irc-black">&lt;olabini&gt; =/</span><br />
+<span class="irc-date">[15:15]</span> <span class="irc-black">&lt;naeu&gt; annoying</span><br />
+<span class="irc-date">[15:15]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[15:16]</span> <span class="irc-black">&lt;naeu&gt; do you still have ideas for using ANTLR to highlight stuff from emacs?</span><br />
+<span class="irc-date">[15:19]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[15:19]</span> <span class="irc-black">&lt;olabini&gt; I do</span><br />
+<span class="irc-date">[15:19]</span> <span class="irc-black">&lt;olabini&gt; and I will</span><br />
+<span class="irc-date">[15:19]</span> <span class="irc-black">&lt;olabini&gt; but not sure exactly when I'll get time to finish that</span><br />
+<span class="irc-date">[15:20]</span> <span class="irc-black">&lt;olabini&gt; eeh... and I realize I promised Terence to having something working in a month</span><br />
+<span class="irc-date">[15:20]</span> <span class="irc-black">&lt;olabini&gt; =/</span><br />
+<span class="irc-date">[15:20]</span> <span class="irc-black">&lt;olabini&gt; oh well</span><br />
+<span class="irc-date">[15:20]</span> <span class="irc-black">&lt;olabini&gt; it will come. =)</span><br />
+<span class="irc-date">[15:24]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[15:26]</span> <span class="irc-black">&lt;naeu&gt; #/"(([^\\])|((?-ixmus:"))|((?-ixmus:\\\\))|((?-ixmus:\\\/))|((?-ixmus:\\b))|((?-ixmus:\\f))|((?-ixmus:\\n))|((?-ixmus:\\r))|((?-ixmus:\\t))|((?-ixmus:\\u[a-fA-F0-9]{4})))*"/</span><br />
+<span class="irc-date">[15:26]</span> <span class="irc-black">&lt;naeu&gt; look at that</span><br />
+<span class="irc-date">[15:26]</span> <span class="irc-black">&lt;naeu&gt; it validates JSON strings</span><br />
+<span class="irc-date">[15:28]</span> <span class="irc-black">&lt;naeu&gt; although it would be nicer if it said musix rather than ixmus ;-)</span><br />
+<span class="irc-date">[15:28]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[15:29]</span> <span class="irc-black">&lt;naeu&gt; actually, there's a mistake in there if you can spot it ;-)</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;olabini&gt; not really</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;olabini&gt; =P</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;olabini&gt; maybe you should work with a real parser instead?</span><br />
+<span class="irc-date">[15:54]</span> <span class="irc-black">&lt;naeu&gt; i wanted to make it a pure ioke parser</span><br />
+<span class="irc-date">[15:54]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[15:55]</span> <span class="irc-black">&lt;naeu&gt; and it's also good to keep pushing the regexp support</span><br />
+<span class="irc-date">[15:55]</span> <span class="irc-black">&lt;naeu&gt; ;-)</span><br />
+<span class="irc-date">[15:55]</span> <span class="irc-black">&lt;naeu&gt; Regexp from("([^\"\\])") ;=&gt; boom!</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;naeu&gt; I wanted it to produce: #/([^"\\])/</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;olabini&gt; well, in that case you need to double the escape in front of the square brackets</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;olabini&gt; Regexp from("([^\"\\\\])") ;=&gt; boom!</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;olabini&gt; wait</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-black">&lt;olabini&gt; that won't work</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-black">&lt;naeu&gt; yep, that does work</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-black">&lt;olabini&gt; ah, right</span><br />
+<span class="irc-date">[16:16]</span> <span class="irc-navy">* naeu (n=sam@h36036.upc-h.chello.nl) Quit ()</span><br />
+<span class="irc-date">[16:39]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit ()</span><br />
+<span class="irc-date">[16:57]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[17:01]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[17:01]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[17:50]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-63.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:07]</span> <span class="irc-navy">* mkrauskopf_ (n=mkrausko@nat/sun/x-e92fe6b89404a033) Quit ("Leaving")</span><br />
+<span class="irc-date">[18:16]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[19:12]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-63.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[19:13]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-63.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[19:21]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-63.vc-graz.ac.at) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[20:12]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-89.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[20:46]</span> <span class="irc-green">* k (n=kar8nga@e-38.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[20:46]</span> <span class="irc-green">* k is now known as Guest87901</span><br />
+<span class="irc-date">[20:54]</span> <span class="irc-navy">* Guest87901 (n=kar8nga@e-38.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[21:00]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-89.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[22:12]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit ("Leaving")</span><br />

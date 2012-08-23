@@ -1,0 +1,121 @@
+<span class="irc-date">[2:59]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[7:02]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[7:23]</span> <span class="irc-navy">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[8:05]</span> <span class="irc-green">* mkrauskopf_ (n=mkrausko@nat/sun/x-e99e6003077ee0b7) has joined #ioke</span><br />
+<span class="irc-date">[8:05]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[8:19]</span> <span class="irc-green">* naeu (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:19]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[9:08]</span> <span class="irc-navy">* mkrauskopf_ (n=mkrausko@nat/sun/x-e99e6003077ee0b7) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[9:11]</span> <span class="irc-green">* mkrauskopf_ (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[9:12]</span> <span class="irc-green">* olabini (n=ola@c-398de155.234-1-64736c10.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[9:12]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[9:21]</span> <span class="irc-black">&lt;olabini&gt; hellu</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;naeu&gt; mornin'</span><br />
+<span class="irc-date">[9:27]</span> <span class="irc-black">&lt;naeu&gt; what does Amanda mean when she says "Ioke rumor mill spreads interesting developments."</span><br />
+<span class="irc-date">[9:27]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[9:27]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[9:27]</span> <span class="irc-black">&lt;olabini&gt; I wish she hadn't said that</span><br />
+<span class="irc-date">[9:27]</span> <span class="irc-black">&lt;olabini&gt; but I was to late when I talked to Josh</span><br />
+<span class="irc-date">[9:28]</span> <span class="irc-black">&lt;olabini&gt; it's nothing exciting right now</span><br />
+<span class="irc-date">[9:29]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[9:29]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[9:44]</span> <span class="irc-black">&lt;olabini&gt; so, now you know</span><br />
+<span class="irc-date">[9:44]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:44]</span> <span class="irc-black">&lt;olabini&gt; the BIG SECRET!</span><br />
+<span class="irc-date">[9:45]</span> <span class="irc-black">&lt;olabini&gt; how's the textscanner coming along?</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;naeu&gt; haha, i don't know anything!</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;olabini&gt; I just told you in a private message</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;olabini&gt; haven't you seen it?</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;naeu&gt; all i know is that there are secrets ;-)</span><br />
+<span class="irc-date">[10:01]</span> <span class="irc-black">&lt;naeu&gt; ah, just now</span><br />
+<span class="irc-date">[10:01]</span> <span class="irc-black">&lt;olabini&gt; no, about 30 minutes ago</span><br />
+<span class="irc-date">[10:01]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[10:01]</span> <span class="irc-black">&lt;naeu&gt; i was busy explaining Ruby basics to my new colleague</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;olabini&gt; aha</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;naeu&gt; btw, it would be cool if you could try and shoot for a DSL talk at JAOO this year</span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;naeu&gt; rock the world with the importance of semantic expressivity for creating DSLs</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;olabini&gt; hm, yeah, I would like to do that</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;olabini&gt; but they don't have any DSL at this years JAOO</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;olabini&gt; I was planning on doing something like that</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;naeu&gt; pants</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;naeu&gt; why the hell not</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;olabini&gt; not sure</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;naeu&gt; there's a whole iPhone track this year</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;olabini&gt; I asked Kresten, but didn't really get any answer</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[10:34]</span> <span class="irc-black">&lt;olabini&gt; I am slated for a half day "constructing languages" tutorial</span><br />
+<span class="irc-date">[10:34]</span> <span class="irc-black">&lt;olabini&gt; but that's going to be pretty handson</span><br />
+<span class="irc-date">[10:34]</span> <span class="irc-black">&lt;naeu&gt; and a *whole* spring track</span><br />
+<span class="irc-date">[10:36]</span> <span class="irc-black">&lt;naeu&gt; hmm, the tracks don't look as exciting this year</span><br />
+<span class="irc-date">[10:37]</span> <span class="irc-black">&lt;olabini&gt; yeah, I know. I agree</span><br />
+<span class="irc-date">[10:37]</span> <span class="irc-black">&lt;olabini&gt; still some good stuff</span><br />
+<span class="irc-date">[10:38]</span> <span class="irc-black">&lt;naeu&gt; yeah, sure</span><br />
+<span class="irc-date">[10:41]</span> <span class="irc-black">&lt;olabini&gt; anyway, on the whole I agree with you</span><br />
+<span class="irc-date">[10:42]</span> <span class="irc-black">&lt;olabini&gt; some of the Agile tracks seem very interesting, but the focus on Language oriented programming is something I miss in the program</span><br />
+<span class="irc-date">[10:42]</span> <span class="irc-black">&lt;naeu&gt; i wonder how we could gather all the people interested in semantic expressivity/language oriented programming/communicating programming/etc. together</span><br />
+<span class="irc-date">[10:42]</span> <span class="irc-black">&lt;naeu&gt; that would be nice</span><br />
+<span class="irc-date">[10:43]</span> <span class="irc-black">&lt;olabini&gt; yeah, that was something I was thinking about too</span><br />
+<span class="irc-date">[10:43]</span> <span class="irc-black">&lt;olabini&gt; that would be interesting</span><br />
+<span class="irc-date">[10:43]</span> <span class="irc-black">&lt;olabini&gt; a summit for LOP</span><br />
+<span class="irc-date">[10:43]</span> <span class="irc-black">&lt;naeu&gt; exactly</span><br />
+<span class="irc-date">[10:43]</span> <span class="irc-black">&lt;naeu&gt; in somewhere beautiful</span><br />
+<span class="irc-date">[10:44]</span> <span class="irc-black">&lt;naeu&gt; I'd love to do something that focussed on communication</span><br />
+<span class="irc-date">[10:44]</span> <span class="irc-black">&lt;naeu&gt; i.e. not focus too much on presentations</span><br />
+<span class="irc-date">[10:44]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[10:44]</span> <span class="irc-black">&lt;olabini&gt; true</span><br />
+<span class="irc-date">[10:44]</span> <span class="irc-black">&lt;naeu&gt; but, i don't know, maybe go for a long walk together in the hills</span><br />
+<span class="irc-date">[10:44]</span> <span class="irc-black">&lt;naeu&gt; so we can all talk at length</span><br />
+<span class="irc-date">[10:45]</span> <span class="irc-black">&lt;naeu&gt; then it can be a proper summit ;-)</span><br />
+<span class="irc-date">[10:45]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[10:45]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[10:45]</span> <span class="irc-black">&lt;naeu&gt; but do you know what i mean?</span><br />
+<span class="irc-date">[10:46]</span> <span class="irc-black">&lt;olabini&gt; yeah, I think I do</span><br />
+<span class="irc-date">[10:46]</span> <span class="irc-black">&lt;naeu&gt; i only mention walking because i used to lead teams out in scotland, and it was perfect for a lot of free-flowing communication and general bonding</span><br />
+<span class="irc-date">[10:46]</span> <span class="irc-black">&lt;naeu&gt; but there must be plenty of other activities which produce a similar environment</span><br />
+<span class="irc-date">[10:49]</span> <span class="irc-black">&lt;naeu&gt; i imagine something like a 3 day event: day one - group exercise to allow us to all really get to know each other and talk profusely, day two - presentation style stuff, day three - hacking together</span><br />
+<span class="irc-date">[10:49]</span> <span class="irc-black">&lt;naeu&gt; anyway, it's food time here :-)</span><br />
+<span class="irc-date">[10:51]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[10:51]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[10:52]</span> <span class="irc-black">&lt;martido&gt; @olabini: just saw a BIG ad for the RailsWayCon in Berlin ... you're talking about Ioke there? cool</span><br />
+<span class="irc-date">[10:52]</span> <span class="irc-black">&lt;olabini&gt; ah, cool</span><br />
+<span class="irc-date">[10:52]</span> <span class="irc-black">&lt;olabini&gt; yeah, I am</span><br />
+<span class="irc-date">[10:52]</span> <span class="irc-black">&lt;olabini&gt; I'm keynoting to</span><br />
+<span class="irc-date">[10:52]</span> <span class="irc-black">&lt;olabini&gt; too</span><br />
+<span class="irc-date">[10:53]</span> <span class="irc-black">&lt;martido&gt; about what?</span><br />
+<span class="irc-date">[10:53]</span> <span class="irc-black">&lt;olabini&gt; programming languages</span><br />
+<span class="irc-date">[10:53]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[10:53]</span> <span class="irc-black">&lt;martido&gt; of course ;)</span><br />
+<span class="irc-date">[10:54]</span> <span class="irc-black">&lt;martido&gt; the ad lists a few sessions, but says nothing about the keynote ... only "Ioke for Ruby developers" and "JRuby internals"</span><br />
+<span class="irc-date">[10:58]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[10:58]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[10:58]</span> <span class="irc-black">&lt;martido&gt; well, but Google</span><br />
+<span class="irc-date">[10:58]</span> <span class="irc-black">&lt;martido&gt; 's your friend</span><br />
+<span class="irc-date">[10:58]</span> <span class="irc-black">&lt;martido&gt; sounds interesting ... the keynote I mean</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;martido&gt; couldnt' find a schedule though ... you're talks don't happen to be all on the same day? ;)</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;olabini&gt; they will be on the 26th, I think</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;olabini&gt; I need to fly out the same evening, so I asked them to get everything the same day</span><br />
+<span class="irc-date">[11:02]</span> <span class="irc-black">&lt;martido&gt; hmm ... might be worth a short trip to Berlin</span><br />
+<span class="irc-date">[11:02]</span> <span class="irc-black">&lt;martido&gt; gotta check out the prices for a single day</span><br />
+<span class="irc-date">[11:22]</span> <span class="irc-green">* olabini (n=ola@c-398de155.234-1-64736c10.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[11:42]</span> <span class="irc-black">&lt;naeu&gt; ah, call for papers for the berlin railsway conf has finished</span><br />
+<span class="irc-date">[11:42]</span> <span class="irc-black">&lt;naeu&gt; drat</span><br />
+<span class="irc-date">[11:43]</span> <span class="irc-black">&lt;naeu&gt; ah, it's in may already</span><br />
+<span class="irc-date">[13:11]</span> <span class="irc-navy">* mkrauskopf_ (n=mkrausko@195.47.79.66) Quit (Read error: 145 (Connection timed out))</span><br />
+<span class="irc-date">[13:20]</span> <span class="irc-green">* mkrauskopf_ (n=mkrausko@nat/sun/x-0a4512b80a55b858) has joined #ioke</span><br />
+<span class="irc-date">[15:00]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[15:00]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[15:01]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit ()</span><br />
+<span class="irc-date">[15:47]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit ()</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-63.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:24]</span> <span class="irc-green">* felipero (n=Felipe@189-55-18-206-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit ()</span><br />
+<span class="irc-date">[18:44]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-63.vc-graz.ac.at) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[18:55]</span> <span class="irc-green">* msimbartl (n=martin@195.39.86.150) has joined #ioke</span><br />
+<span class="irc-date">[18:56]</span> <span class="irc-navy">* msimbartl (n=martin@195.39.86.150) Quit (Client Quit)</span><br />
+<span class="irc-date">[19:38]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-2.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[21:38]</span> <span class="irc-navy">* mkrauskopf_ (n=mkrausko@nat/sun/x-0a4512b80a55b858) Quit ("Leaving")</span><br />
+<span class="irc-date">[22:23]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-2.vc-graz.ac.at) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[22:29]</span> <span class="irc-navy">* felipero (n=Felipe@189-55-18-206-nd.cpe.vivax.com.br) Quit ("Saindo")</span><br />

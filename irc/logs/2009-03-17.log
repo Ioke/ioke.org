@@ -1,0 +1,166 @@
+<span class="irc-date">[3:17]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[3:37]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[3:38]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[3:39]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[3:39]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[3:50]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[3:50]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[6:40]</span> <span class="irc-green">* olabini (n=ola@c-398de155.234-1-64736c10.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[6:40]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[8:58]</span> <span class="irc-green">* naeu (n=sam@h36036.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:58]</span> <span class="irc-black">&lt;olabini&gt; morning, Sam</span><br />
+<span class="irc-date">[8:59]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:10]</span> <span class="irc-black">&lt;naeu&gt; olabini: morning</span><br />
+<span class="irc-date">[9:10]</span> <span class="irc-black">&lt;naeu&gt; I achieved absolutely nothing last night</span><br />
+<span class="irc-date">[9:11]</span> <span class="irc-black">&lt;naeu&gt; I lost the entire night to my cold-turkey state :-(</span><br />
+<span class="irc-date">[9:12]</span> <span class="irc-black">&lt;naeu&gt; how are you doing? Hopefully better...</span><br />
+<span class="irc-date">[9:17]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[9:17]</span> <span class="irc-black">&lt;olabini&gt; well, I'm fine</span><br />
+<span class="irc-date">[9:17]</span> <span class="irc-black">&lt;olabini&gt; hacking on JRuby stuff at the moment</span><br />
+<span class="irc-date">[9:17]</span> <span class="irc-black">&lt;olabini&gt; but will get to Ioke after lunch, hopefully</span><br />
+<span class="irc-date">[9:17]</span> <span class="irc-black">&lt;olabini&gt; if this goes as expected, at least</span><br />
+<span class="irc-date">[9:17]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[9:17]</span> <span class="irc-black">&lt;naeu&gt; I feel like I'm on drugs</span><br />
+<span class="irc-date">[9:18]</span> <span class="irc-black">&lt;naeu&gt; yet the truth is kind of the opposite</span><br />
+<span class="irc-date">[9:18]</span> <span class="irc-black">&lt;naeu&gt; weird really</span><br />
+<span class="irc-date">[9:18]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[9:18]</span> <span class="irc-black">&lt;olabini&gt; well, it's not</span><br />
+<span class="irc-date">[9:18]</span> <span class="irc-black">&lt;olabini&gt; you're always on drugs</span><br />
+<span class="irc-date">[9:19]</span> <span class="irc-black">&lt;olabini&gt; you're just not on the drugs you're used to</span><br />
+<span class="irc-date">[9:19]</span> <span class="irc-black">&lt;naeu&gt; yep, that's why i said 'kind of' :-)</span><br />
+<span class="irc-date">[9:19]</span> <span class="irc-black">&lt;olabini&gt; caffeine suppreses some parts of your brain chemistry</span><br />
+<span class="irc-date">[9:19]</span> <span class="irc-black">&lt;olabini&gt; but now those suppressants are gone</span><br />
+<span class="irc-date">[9:19]</span> <span class="irc-black">&lt;olabini&gt; so you are in fact more on drugs now</span><br />
+<span class="irc-date">[9:19]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:19]</span> <span class="irc-black">&lt;naeu&gt; and my brain is freaking out</span><br />
+<span class="irc-date">[9:40]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[9:42]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[9:45]</span> <span class="irc-brick">* olabini is reinstalling Java. it is FUN</span><br />
+<span class="irc-date">[9:56]</span> <span class="irc-brick">* naeu is drinking fresh mint tea</span><br />
+<span class="irc-date">[10:13]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit (Connection timed out)</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[12:05]</span> <span class="irc-navy">* olabini (n=ola@c-398de155.234-1-64736c10.cust.bredbandsbolaget.se) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[12:08]</span> <span class="irc-green">* olabini (n=ola@c-398de155.234-1-64736c10.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[12:08]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[13:30]</span> <span class="irc-black">&lt;olabini&gt; it annoys me that I can't figure out why ::foo loops forever</span><br />
+<span class="irc-date">[13:30]</span> <span class="irc-black">&lt;olabini&gt; my antlr-fu isn't strong enough, I guess</span><br />
+<span class="irc-date">[13:33]</span> <span class="irc-black">&lt;naeu&gt; coffee is the solution</span><br />
+<span class="irc-date">[13:33]</span> <span class="irc-black">&lt;naeu&gt; and certainly not sparkling spring water which is what I've got here :-)</span><br />
+<span class="irc-date">[13:35]</span> <span class="irc-black">&lt;naeu&gt; not sure if it helps, but just plain :: loops forever</span><br />
+<span class="irc-date">[13:36]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[13:36]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[13:36]</span> <span class="irc-black">&lt;olabini&gt; very strange</span><br />
+<span class="irc-date">[13:36]</span> <span class="irc-black">&lt;olabini&gt; don't know why</span><br />
+<span class="irc-date">[13:36]</span> <span class="irc-black">&lt;naeu&gt; Joe Armstrong would be able to fix it in 5 seconds</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;naeu&gt; did I tell you that he told me that people writing languages on the JVM were missing out on the fun of writing their own VM</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;naeu&gt; and that VMs are not actually that hard to write</span><br />
+<span class="irc-date">[13:41]</span> <span class="irc-green">* naeu_ (n=sam@h36036.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[13:45]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[13:45]</span> <span class="irc-black">&lt;olabini&gt; yeah, that's true</span><br />
+<span class="irc-date">[13:45]</span> <span class="irc-black">&lt;olabini&gt; they are fun to write</span><br />
+<span class="irc-date">[13:45]</span> <span class="irc-black">&lt;olabini&gt; except for GC's and schedulers and so on</span><br />
+<span class="irc-date">[13:45]</span> <span class="irc-black">&lt;olabini&gt; and it's more fun designing the language</span><br />
+<span class="irc-date">[13:45]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[13:48]</span> <span class="irc-navy">* naeu (n=sam@h36036.upc-h.chello.nl) Quit (Read error: 145 (Connection timed out))</span><br />
+<span class="irc-date">[14:05]</span> <span class="irc-black">&lt;naeu_&gt; :-)</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;olabini&gt; actually,designing is fun</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-black">&lt;olabini&gt; I've started thinking about how an Ola-like static, function language would look like</span><br />
+<span class="irc-date">[14:26]</span> <span class="irc-black">&lt;naeu_&gt; Ola-like?</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;olabini&gt; that Ola likes</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;olabini&gt; or patterned after Olas mind</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;olabini&gt; something like that</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;olabini&gt; =P</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;naeu_&gt; hahaha</span><br />
+<span class="irc-date">[14:28]</span> <span class="irc-black">&lt;naeu_&gt; i'm interested in thinking about how Ioke and Clojure might interact</span><br />
+<span class="irc-date">[14:29]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[14:30]</span> <span class="irc-black">&lt;naeu_&gt; I think that Ioke, Clojure and Java provide an interesting and complimentary mix of traits</span><br />
+<span class="irc-date">[14:32]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[14:32]</span> <span class="irc-black">&lt;olabini&gt; that's probably true</span><br />
+<span class="irc-date">[14:32]</span> <span class="irc-black">&lt;naeu_&gt; gah, my head throbs</span><br />
+<span class="irc-date">[14:33]</span> <span class="irc-green">* olabini (n=ola@c-398de155.234-1-64736c10.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit (No route to host)</span><br />
+<span class="irc-date">[16:09]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-black">&lt;naeu_&gt; IKanServe :-)</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-black">&lt;naeu_&gt; hehe</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;olabini&gt; you like the joke?</span><br />
+<span class="irc-date">[16:54]</span> <span class="irc-black">&lt;naeu_&gt; IKanHazHeadache</span><br />
+<span class="irc-date">[16:54]</span> <span class="irc-black">&lt;naeu_&gt; :-)</span><br />
+<span class="irc-date">[17:00]</span> <span class="irc-navy">* naeu_ (n=sam@h36036.upc-h.chello.nl) Quit ()</span><br />
+<span class="irc-date">[17:17]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[18:55]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-brick">* olabini is hacking on IKanServe</span><br />
+<span class="irc-date">[19:08]</span> <span class="irc-brick">* naeu is drinking lemon and honey flavoured hot water and is going to play the piano</span><br />
+<span class="irc-date">[19:12]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[19:12]</span> <span class="irc-black">&lt;olabini&gt; having fun without caffeine, ey?</span><br />
+<span class="irc-date">[19:12]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[19:13]</span> <span class="irc-black">&lt;naeu&gt; it's bloody awful</span><br />
+<span class="irc-date">[19:13]</span> <span class="irc-black">&lt;naeu&gt; there's no way my brain can code in this state</span><br />
+<span class="irc-date">[19:13]</span> <span class="irc-black">&lt;naeu&gt; let's see if i can still play the piano</span><br />
+<span class="irc-date">[19:15]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[19:16]</span> <span class="irc-black">&lt;naeu&gt; i'm interested to hear how you get on with IKanServe</span><br />
+<span class="irc-date">[19:18]</span> <span class="irc-black">&lt;naeu&gt; hmmm still seems I can play :-) yey</span><br />
+<span class="irc-date">[19:20]</span> <span class="irc-black">&lt;olabini&gt; I'm trying to make a really minimal jetty</span><br />
+<span class="irc-date">[19:20]</span> <span class="irc-black">&lt;olabini&gt; not that simple</span><br />
+<span class="irc-date">[19:20]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[19:21]</span> <span class="irc-black">&lt;naeu&gt; mmm my 'piano' sounds so much better now i have a subwoofer</span><br />
+<span class="irc-date">[19:21]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[19:21]</span> <span class="irc-black">&lt;naeu&gt; are you going to document your progress?</span><br />
+<span class="irc-date">[19:21]</span> <span class="irc-black">&lt;olabini&gt; yeah well.</span><br />
+<span class="irc-date">[19:21]</span> <span class="irc-black">&lt;olabini&gt; I'll commit it too</span><br />
+<span class="irc-date">[19:21]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[19:21]</span> <span class="irc-black">&lt;olabini&gt; it's in a new repo on github</span><br />
+<span class="irc-date">[19:21]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[19:22]</span> <span class="irc-black">&lt;olabini&gt; but yeah, I'll write about it on my blog when I have something working</span><br />
+<span class="irc-date">[19:22]</span> <span class="irc-black">&lt;naeu&gt; lovely</span><br />
+<span class="irc-date">[19:35]</span> <span class="irc-green">* wavis (i=4526d11e@gateway/web/ajax/mibbit.com/x-e2d0c34bfad542b2) has joined #ioke</span><br />
+<span class="irc-date">[19:36]</span> <span class="irc-black">&lt;wavis&gt; hey, anyone know the square root operator?</span><br />
+<span class="irc-date">[19:38]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[19:38]</span> <span class="irc-black">&lt;olabini&gt; there is none</span><br />
+<span class="irc-date">[19:39]</span> <span class="irc-black">&lt;wavis&gt; oh... :(</span><br />
+<span class="irc-date">[19:40]</span> <span class="irc-black">&lt;wavis&gt; hm JavaGround Math gives a stack trace</span><br />
+<span class="irc-date">[19:40]</span> <span class="irc-black">&lt;olabini&gt; oh yeah?</span><br />
+<span class="irc-date">[19:40]</span> <span class="irc-black">&lt;olabini&gt; maybe you should use java:math:Math</span><br />
+<span class="irc-date">[19:40]</span> <span class="irc-black">&lt;wavis&gt; ok i'll try it</span><br />
+<span class="irc-date">[19:41]</span> <span class="irc-black">&lt;wavis&gt; nopes</span><br />
+<span class="irc-date">[19:41]</span> <span class="irc-black">&lt;wavis&gt; probably an overflow exception, but it scrolled off the top</span><br />
+<span class="irc-date">[19:44]</span> <span class="irc-black">&lt;olabini&gt; hm</span><br />
+<span class="irc-date">[19:44]</span> <span class="irc-black">&lt;olabini&gt; yeah, I'm still working on the java integration bits</span><br />
+<span class="irc-date">[19:50]</span> <span class="irc-black">&lt;wavis&gt; okay i'll not bother you about it</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;olabini&gt; math is probably a domain you shouldn't be looking at Ioke for</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;olabini&gt; ... =)</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;wavis&gt; i was thinking about trying to create a scripting ground that would dynamically create objects for whatever scripting engines are loaded</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;olabini&gt; that should be easy</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-black">&lt;wavis&gt; thing is they'd have to come back to being ioke objects in the end, so it's back to java integration</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-black">&lt;wavis&gt; do you think?</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-black">&lt;olabini&gt; yeah, probably</span><br />
+<span class="irc-date">[19:57]</span> <span class="irc-black">&lt;olabini&gt; well. that's the first part of the servlet working</span><br />
+<span class="irc-date">[19:57]</span> <span class="irc-black">&lt;olabini&gt; yay</span><br />
+<span class="irc-date">[19:57]</span> <span class="irc-black">&lt;olabini&gt; tomorrow I'll fix it so it actually works with requests and responses</span><br />
+<span class="irc-date">[19:58]</span> <span class="irc-black">&lt;olabini&gt; and then maybe some more fancy dispatching</span><br />
+<span class="irc-date">[19:58]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[19:58]</span> <span class="irc-black">&lt;wavis&gt; servlet?? i think i'm out of the loop. should i hg pull?</span><br />
+<span class="irc-date">[19:59]</span> <span class="irc-black">&lt;olabini&gt; ehm, no</span><br />
+<span class="irc-date">[19:59]</span> <span class="irc-black">&lt;olabini&gt; not hg pull</span><br />
+<span class="irc-date">[19:59]</span> <span class="irc-black">&lt;olabini&gt; I would recommend you to use git instead</span><br />
+<span class="irc-date">[19:59]</span> <span class="irc-black">&lt;olabini&gt; I'm thinking about discontinuing hg support</span><br />
+<span class="irc-date">[19:59]</span> <span class="irc-black">&lt;olabini&gt; and I haven't pushed to hg for a while</span><br />
+<span class="irc-date">[20:00]</span> <span class="irc-black">&lt;wavis&gt; oh well that makes some sense. i was wondering how you were maintaining them simultaneously anyway</span><br />
+<span class="irc-date">[20:00]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[20:00]</span> <span class="irc-black">&lt;olabini&gt; hg convert didn't work very well</span><br />
+<span class="irc-date">[20:00]</span> <span class="irc-black">&lt;olabini&gt; and doing it by hand is impossible really</span><br />
+<span class="irc-date">[20:00]</span> <span class="irc-black">&lt;wavis&gt; i use hg personally but i don't care what i clone with</span><br />
+<span class="irc-date">[20:00]</span> <span class="irc-black">&lt;wavis&gt; hg can always submit git patches</span><br />
+<span class="irc-date">[20:01]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[20:01]</span> <span class="irc-black">&lt;wavis&gt; ok. i'll switch</span><br />
+<span class="irc-date">[20:01]</span> <span class="irc-black">&lt;olabini&gt; cool</span><br />
+<span class="irc-date">[20:01]</span> <span class="irc-brick">* olabini is now off for some music hacking</span><br />
+<span class="irc-date">[20:02]</span> <span class="irc-navy">* wavis (i=4526d11e@gateway/web/ajax/mibbit.com/x-e2d0c34bfad542b2) Quit ("<a href="http://www.mibbit.com">http://www.mibbit.com</a> ajax IRC Client")</span><br />
+<span class="irc-date">[21:26]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-121.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[21:31]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-121.vc-graz.ac.at) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[21:47]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />

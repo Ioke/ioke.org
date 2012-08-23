@@ -1,0 +1,188 @@
+<span class="irc-date">[0:56]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[1:24]</span> <span class="irc-navy">* olabini (n=ola@80-73-60-114.cust.kungalv.net) Quit (Read error: 145 (Connection timed out))</span><br />
+<span class="irc-date">[2:02]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[9:11]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-green">* olabini (n=ola@80-73-60-114.cust.kungalv.net) has joined #ioke</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[10:06]</span> <span class="irc-green">* melwin (n=soup@83.227.215.81) has joined #ioke</span><br />
+<span class="irc-date">[10:06]</span> <span class="irc-black">&lt;melwin&gt; Hullu...</span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-black">&lt;olabini&gt; hi there!</span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-black">&lt;naeu&gt; melwin: hey there</span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-black">&lt;naeu&gt; you're alive!</span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[10:11]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[10:11]</span> <span class="irc-black">&lt;olabini&gt; my thoughts exactly</span><br />
+<span class="irc-date">[10:11]</span> <span class="irc-black">&lt;olabini&gt; he might be a reanimated zombie bot, of course</span><br />
+<span class="irc-date">[10:11]</span> <span class="irc-black">&lt;naeu&gt; true</span><br />
+<span class="irc-date">[10:11]</span> <span class="irc-black">&lt;olabini&gt; so just because he's on IRC we can't be sure he's alive</span><br />
+<span class="irc-date">[10:11]</span> <span class="irc-black">&lt;naeu&gt; or an echo of his former self rippling through irc time and space</span><br />
+<span class="irc-date">[10:13]</span> <span class="irc-black">&lt;naeu&gt; although as an extension of your previous point - i've never met him personally so I can't be at all certain he's not a clever typographical system with access to irc</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;melwin&gt; Yeah - I know... My dad is super ill - I've been occupied with less pleasant things than ioke...</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;naeu&gt; ah man, that's not nice to hear</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;melwin&gt; Y'all doin' ok?</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;naeu&gt; yeah, was doing fine till i heard your news</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;naeu&gt; i'm really sorry to hear it</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;olabini&gt; sorry to hear that</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;olabini&gt; we're fine.</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;olabini&gt; ioke progress have been slow latel</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;melwin&gt; Thanks guys.</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-brick">* olabini has been lazy</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;olabini&gt; but I'm trying to pick it up</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-black">&lt;olabini&gt; current goal is a simple swing interface</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-black">&lt;melwin&gt; Heh... What's next in line?</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-black">&lt;melwin&gt; Ah..</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-black">&lt;melwin&gt; You mean for the repl or something?</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-black">&lt;olabini&gt; it's pretty close</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-black">&lt;olabini&gt; largest missing bit is the coercion of lexical blocks to interfaces</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-black">&lt;olabini&gt; yeah, for the REPL</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-black">&lt;olabini&gt; but I'm doing it as a script file right now</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-black">&lt;olabini&gt; it's pretty neat, actually</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-black">&lt;olabini&gt; small code</span><br />
+<span class="irc-date">[10:17]</span> <span class="irc-black">&lt;melwin&gt; Nice. I saw your twit on the html builder. :P</span><br />
+<span class="irc-date">[10:17]</span> <span class="irc-black">&lt;olabini&gt; <a href="http://gist.github.com/82802">http://gist.github.com/82802</a></span><br />
+<span class="irc-date">[10:17]</span> <span class="irc-black">&lt;olabini&gt; melwin: ah, yeah. that was neat</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;olabini&gt; I have a complete ioke servlet now</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;olabini&gt; IKanServe works really well actually</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;olabini&gt; I need to write a blog post about it</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;naeu&gt; haha, why does the button say "hello Ruby"</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;naeu&gt; ;-)</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;olabini&gt; oops</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[10:19]</span> <span class="irc-black">&lt;melwin&gt; I really like this syntax: button = JButton new("Press me!") do(</span><br />
+<span class="irc-date">[10:19]</span> <span class="irc-black">&lt;melwin&gt;   addActionListener(fn(e, button text = "Hello Ruby")))</span><br />
+<span class="irc-date">[10:19]</span> <span class="irc-black">&lt;olabini&gt; I "adapted" the example from JRuby</span><br />
+<span class="irc-date">[10:19]</span> <span class="irc-black">&lt;olabini&gt; yeah. do makes it such much more pleasent</span><br />
+<span class="irc-date">[10:19]</span> <span class="irc-black">&lt;naeu&gt; it's really really clean</span><br />
+<span class="irc-date">[10:19]</span> <span class="irc-black">&lt;naeu&gt; do you have the same thing in Ruby?</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;melwin&gt; How efficient is the java interop code, would you say? Any major pain areas?</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;naeu&gt; it would be nice to compare and contrast</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;olabini&gt; no, nothing similar</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;olabini&gt; it's pretty efficient compared to the rest of Ike</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;olabini&gt; Ioke</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;melwin&gt; Seemed like qcon was a great success.</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;olabini&gt; it was great</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;naeu&gt; QCon was great</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;olabini&gt; and no, the closest thing in Ruby is instance_eval with a block</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;olabini&gt; but that can cause problems with lexical capture</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;olabini&gt; and it doesn't return the receiver</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;olabini&gt; which do does, which makes it really nice for this</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;olabini&gt; I don't even need to actually assign the frame to anything</span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;naeu&gt; hmm yes, i see that now</span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-brick">* olabini will be back in a bit</span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-brick">* naeu needs breakfast</span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-brick">* melwin too.</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-brick">* olabini doesn't need breakfast</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[11:47]</span> <span class="irc-black">&lt;naeu&gt; olabini: maybe it's you that's the reanimated zombie bot then - given your disinterest in revitalising morning food ;-)</span><br />
+<span class="irc-date">[11:48]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[11:49]</span> <span class="irc-brick">* naeu is off to make a fresh mint tea for himself plus a caffeine infested cup of tea for Susanna</span><br />
+<span class="irc-date">[11:50]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[11:50]</span> <span class="irc-brick">* olabini is drinking coca cola</span><br />
+<span class="irc-date">[11:50]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[11:51]</span> <span class="irc-black">&lt;naeu&gt; now that's definitely the devil's drink ;-)</span><br />
+<span class="irc-date">[11:52]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[11:56]</span> <span class="irc-brick">* olabini is writing a blog post about IKanServe</span><br />
+<span class="irc-date">[12:28]</span> <span class="irc-brick">* naeu off for a cycle ride with Susanna</span><br />
+<span class="irc-date">[12:28]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[13:42]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[14:06]</span> <span class="irc-green">* martido (n=martin@dslb-088-066-195-079.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[14:07]</span> <span class="irc-black">&lt;naeu&gt; olabini: fyi ant example-app doesn't work for me: <a href="http://gist.github.com/82853">http://gist.github.com/82853</a></span><br />
+<span class="irc-date">[14:10]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-9.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[14:10]</span> <span class="irc-black">&lt;martido&gt; hey all, gotta stupid question about git if you don't mind</span><br />
+<span class="irc-date">[14:11]</span> <span class="irc-black">&lt;martido&gt; I created a local branch of my master branch, made some changes, switched back to master branch and the changes I've made are there as well ... is it supposed to be that way?</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;martido&gt; always thought branches are self-contained?</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;martido&gt; hmm. or maybe it's a stupid windows/cygwin issue</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-black">&lt;martido&gt; or I just too dumb ;)</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-black">&lt;martido&gt; 'm</span><br />
+<span class="irc-date">[14:21]</span> <span class="irc-black">&lt;martido&gt; olabini: your Swing example is really nice! you're right, the do method makes this really really clean ...</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;olabini&gt; martido: not sure. that shouldn't happen.</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;olabini&gt; yeah, the do is nice</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;olabini&gt; naeu: I'm stupid. will fix that slight problem now</span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;olabini&gt; naeu: it's fixed on trunk now</span><br />
+<span class="irc-date">[14:30]</span> <span class="irc-black">&lt;martido&gt; hmm too bad; maybe it's really a windows/cygwin thing ... damn you microsoft ;)</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-black">&lt;olabini&gt; I've tried the other version of git (non-cygwin</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-black">&lt;olabini&gt; that worked well</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-black">&lt;olabini&gt; what's your workflow for the branching?</span><br />
+<span class="irc-date">[15:11]</span> <span class="irc-green">* l (n=kar8nga@a-205.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[15:11]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-9.vc-graz.ac.at) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[15:11]</span> <span class="irc-green">* l is now known as Guest16949</span><br />
+<span class="irc-date">[15:18]</span> <span class="irc-black">&lt;melwin&gt; martido: "Made some changes" - does that include committing the changes? If not you would see the changes when checking out master as well. That's one thing that would explain it, at least.</span><br />
+<span class="irc-date">[15:20]</span> <span class="irc-green">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) has joined #ioke</span><br />
+<span class="irc-date">[15:23]</span> <span class="irc-black">&lt;melwin&gt; IKanServe... Sounds like lolcode to me... :P</span><br />
+<span class="irc-date">[15:24]</span> <span class="irc-black">&lt;melwin&gt; Duh, I Ola already made that connection... :]</span><br />
+<span class="irc-date">[15:24]</span> <span class="irc-black">&lt;melwin&gt; ...I |see| Ola...</span><br />
+<span class="irc-date">[15:27]</span> <span class="irc-black">&lt;olabini&gt; nice duality between beginning with IK and being a bit silly</span><br />
+<span class="irc-date">[15:29]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[15:30]</span> <span class="irc-black">&lt;melwin&gt; ioke.max.runtimes... interesting...</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-black">&lt;martido&gt; olabini, melwin: my workflow is as follows: I'm pulling the latest commits from Ola's master repo into my local master; I create a local branch with 'git checkout -b &lt;name-of-branch&gt;'; I'm modifying some files while on the new local branch (no add/commit yet); now when I'm switching back to my local master branch (git checkout master), git indicates that there are modified files ...</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-black">&lt;melwin&gt; Yeah - that's expected.</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-black">&lt;martido&gt; is that about how one works with git? well, maybe I'm doing it wrong?</span><br />
+<span class="irc-date">[15:33]</span> <span class="irc-black">&lt;melwin&gt; It's only if you add and commit the modifications that you tell git that they belong to the new branch.</span><br />
+<span class="irc-date">[15:34]</span> <span class="irc-black">&lt;martido&gt; ahhhh! thanks melwin. will try that out</span><br />
+<span class="irc-date">[15:35]</span> <span class="irc-black">&lt;melwin&gt; If you just want to temporarily save the modified files you can always do: git stash</span><br />
+<span class="irc-date">[15:35]</span> <span class="irc-black">&lt;melwin&gt; Then checkout master and do other things, then go back to new branch and do: git stash pop</span><br />
+<span class="irc-date">[15:35]</span> <span class="irc-black">&lt;martido&gt; ok, I'll try that before actually committing the stuff</span><br />
+<span class="irc-date">[15:35]</span> <span class="irc-black">&lt;melwin&gt; ... to reapply the changes...</span><br />
+<span class="irc-date">[15:36]</span> <span class="irc-black">&lt;melwin&gt; But git stash gets rid of the changes in the working copy after saving them, so you can't commit after stashing.</span><br />
+<span class="irc-date">[15:36]</span> <span class="irc-black">&lt;melwin&gt; What is it you're trying to accomplish with your workflow?</span><br />
+<span class="irc-date">[15:37]</span> <span class="irc-black">&lt;martido&gt; yeah though so much; I meant that I'll try stashing rather than committing</span><br />
+<span class="irc-date">[15:37]</span> <span class="irc-black">&lt;melwin&gt; Ok! :)</span><br />
+<span class="irc-date">[15:37]</span> <span class="irc-black">&lt;martido&gt; ;)</span><br />
+<span class="irc-date">[15:37]</span> <span class="irc-black">&lt;naeu&gt; olabini: where do i update the IKanServe ant file to create the logs directory</span><br />
+<span class="irc-date">[15:37]</span> <span class="irc-black">&lt;naeu&gt; that's currently failing now</span><br />
+<span class="irc-date">[15:39]</span> <span class="irc-black">&lt;martido&gt; so just one more quick (stupid) question: if I'm on a particular local branch and I want to commit some changes to my remote repo, do I have to specifiy anything such that git knows which branch to commit to? Or does it figure it out automatically?</span><br />
+<span class="irc-date">[15:40]</span> <span class="irc-black">&lt;martido&gt; sorry, I'm pretty much a beginner with git</span><br />
+<span class="irc-date">[15:40]</span> <span class="irc-black">&lt;naeu&gt; martido: depends if the branch you're on is tracking another branch</span><br />
+<span class="irc-date">[15:40]</span> <span class="irc-black">&lt;martido&gt; naeu: so I have to first track a remote branch?</span><br />
+<span class="irc-date">[15:41]</span> <span class="irc-black">&lt;naeu&gt; usually when you first create a local branch from a remote branch git sets it up to track it automatically</span><br />
+<span class="irc-date">[15:41]</span> <span class="irc-black">&lt;naeu&gt; there must be a way to change this manually, but i never use it</span><br />
+<span class="irc-date">[15:41]</span> <span class="irc-black">&lt;melwin&gt; Right. You commit to that local branch, then push committed changes to the remote repo.</span><br />
+<span class="irc-date">[15:41]</span> <span class="irc-black">&lt;naeu&gt; exactly</span><br />
+<span class="irc-date">[15:41]</span> <span class="irc-black">&lt;melwin&gt; So you never commit directly to a remote repository... That's DVCS thinking! ;P</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;melwin&gt; Sorry, CVCS!</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;melwin&gt; :]</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;naeu&gt; the only thing i ever need to occasionally specify is the name of the remote</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;martido&gt; well, in my case I created the local branch first and pushed that to github so I don't know if git set up the tracking</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;melwin&gt; Right.</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;martido&gt; melwin: yeah I've gotta get used to that ;)</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;naeu&gt; no, you *never* commit directly to a remote repository</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;martido&gt; been a svn user as long as I can think</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;naeu&gt; that's the main difference between dvcs and cvcs :)</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;martido&gt; naeu: sorry for the mis-terminology ... I meant push</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;naeu&gt; ooh ok</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;naeu&gt; yep, you do push your local objects to a remote</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;melwin&gt; martido: If you've pushed a branch to a remote repo you can always just push again!</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;naeu&gt; git stores all the commits as objects</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-black">&lt;martido&gt; ok, pretty dense stuff ... git ;)</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-black">&lt;naeu&gt; yes it is</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-black">&lt;melwin&gt; It's fun to use, I think.</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-black">&lt;naeu&gt; have you read scott Chacon's peepcode book on git? (<a href="http://peepcode.com/products/git-internals-pdf)">http://peepcode.com/products/git-internals-pdf)</a></span><br />
+<span class="irc-date">[15:45]</span> <span class="irc-black">&lt;martido&gt; no never heard of it. is it worth it?</span><br />
+<span class="irc-date">[15:45]</span> <span class="irc-black">&lt;naeu&gt; martido: every penny/cent/gold-nugget</span><br />
+<span class="irc-date">[15:45]</span> <span class="irc-black">&lt;martido&gt; ;) I'll get it then</span><br />
+<span class="irc-date">[15:45]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[15:46]</span> <span class="irc-black">&lt;naeu&gt; right i'm off out again into the sunshine</span><br />
+<span class="irc-date">[15:46]</span> <span class="irc-black">&lt;martido&gt; have fun ;)</span><br />
+<span class="irc-date">[15:46]</span> <span class="irc-brick">* naeu cycling merrily through the streets of Amsterdam with Susanna</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-navy">* Guest16949 (n=kar8nga@a-205.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[16:01]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[16:39]</span> <span class="irc-navy">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) Quit ()</span><br />
+<span class="irc-date">[16:55]</span> <span class="irc-black">&lt;martido&gt; melwin: just to let you know, it worked exactly as you said. after committing the changes to my local branch, all other branches (including master) remained unaffected. Thanks again!</span><br />
+<span class="irc-date">[16:55]</span> <span class="irc-black">&lt;melwin&gt; Great!</span><br />
+<span class="irc-date">[16:57]</span> <span class="irc-black">&lt;martido&gt; seems I need to take back what I said earlier about microsoft ... well, not EVERYTHING I ever said of course, but at least that bit about git ;)</span><br />
+<span class="irc-date">[17:21]</span> <span class="irc-green">* embro1001 (n=sintaks@70.94.3.19) has joined #ioke</span><br />
+<span class="irc-date">[18:13]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-203.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:23]</span> <span class="irc-green">* k (n=kar8nga@a-248.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:24]</span> <span class="irc-green">* k is now known as Guest13293</span><br />
+<span class="irc-date">[18:33]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-203.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[19:57]</span> <span class="irc-navy">* olabini (n=ola@80-73-60-114.cust.kungalv.net) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[20:26]</span> <span class="irc-green">* kar8nga (n=kar8nga@193.171.240.45) has joined #ioke</span><br />
+<span class="irc-date">[20:28]</span> <span class="irc-navy">* martido (n=martin@dslb-088-066-195-079.pools.arcor-ip.net) Quit ()</span><br />
+<span class="irc-date">[20:41]</span> <span class="irc-navy">* Guest13293 (n=kar8nga@a-248.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[22:14]</span> <span class="irc-green">* k (n=kar8nga@e-34.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[22:14]</span> <span class="irc-green">* k is now known as Guest43560</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-navy">* kar8nga (n=kar8nga@193.171.240.45) Quit (Read error: 145 (Connection timed out))</span><br />
+<span class="irc-date">[22:41]</span> <span class="irc-navy">* Guest43560 (n=kar8nga@e-34.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />

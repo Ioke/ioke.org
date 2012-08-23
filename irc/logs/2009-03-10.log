@@ -1,0 +1,37 @@
+<span class="irc-date">[1:32]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[1:38]</span> <span class="irc-navy">* naeu (n=sam@135.196.169.246) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[5:24]</span> <span class="irc-green">* vic (n=vic@189.143.23.234) has joined #ioke</span><br />
+<span class="irc-date">[5:25]</span> <span class="irc-green">* vic is now known as zabbai</span><br />
+<span class="irc-date">[6:57]</span> <span class="irc-green">* naeu (n=sam@135.196.169.246) has joined #ioke</span><br />
+<span class="irc-date">[7:04]</span> <span class="irc-navy">* naeu (n=sam@135.196.169.246) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[7:39]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[8:01]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-220.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit ()</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * rac57d64 / (4 files in 4 dirs): Handle i flag correctly in Regexps - <a href="http://bit.ly/fUZhd">http://bit.ly/fUZhd</a></span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r5790b51 / test/regexp_spec.ik : Add tests for s and x flags - <a href="http://bit.ly/12cAGl">http://bit.ly/12cAGl</a></span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * rfc3aaf5 / test/regexp_spec.ik : Add tests for u-flag on regexps - <a href="http://bit.ly/aKsfq">http://bit.ly/aKsfq</a></span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r0001057 / test/regexp_spec.ik : Final tests for regexp flags - <a href="http://bit.ly/32PG2K">http://bit.ly/32PG2K</a></span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-green">* donizetti (n=donizett@189.120.169.78) has joined #ioke</span><br />
+<span class="irc-date">[13:27]</span> <span class="irc-navy">* donizetti (n=donizett@189.120.169.78) Quit ()</span><br />
+<span class="irc-date">[13:39]</span> <span class="irc-green">* donizetti (n=donizett@189.120.169.78) has joined #ioke</span><br />
+<span class="irc-date">[13:40]</span> <span class="irc-green">* donizetti_ (n=donizett@189.120.169.78) has joined #ioke</span><br />
+<span class="irc-date">[13:43]</span> <span class="irc-navy">* donizetti_ (n=donizett@189.120.169.78) Quit (Client Quit)</span><br />
+<span class="irc-date">[13:53]</span> <span class="irc-navy">* thijso (n=thijs@83.98.233.115) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[14:02]</span> <span class="irc-navy">* donizetti (n=donizett@189.120.169.78) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[15:08]</span> <span class="irc-navy">* zabbai (n=vic@189.143.23.234) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[15:08]</span> <span class="irc-green">* zabbai (n=vic@189.143.23.234) has joined #ioke</span><br />
+<span class="irc-date">[16:10]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-220.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[16:54]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit ()</span><br />
+<span class="irc-date">[17:58]</span> <span class="irc-green">* mkrauskopf_ (n=mkrausko@nat/sun/x-37c71bb299d03e5a) has joined #ioke</span><br />
+<span class="irc-date">[17:58]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-239.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-green">* vic (n=vic@201.102.25.107) has joined #ioke</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-green">* vic is now known as Guest88409</span><br />
+<span class="irc-date">[18:49]</span> <span class="irc-navy">* zabbai (n=vic@189.143.23.234) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[18:53]</span> <span class="irc-navy">* mkrauskopf_ (n=mkrausko@nat/sun/x-37c71bb299d03e5a) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[19:12]</span> <span class="irc-navy">* Guest88409 (n=vic@201.102.25.107) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[19:13]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[20:39]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-239.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[23:52]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit ()</span><br />

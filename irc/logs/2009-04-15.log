@@ -1,0 +1,174 @@
+<span class="irc-date">[8:27]</span> <span class="irc-green">* IokeStormBot (n=PircBot@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[8:27]</span> <span class="irc-green">* Topic is 'Ioke - a dynamic programming language for the JVM | <a href="http://ioke.org">http://ioke.org</a> | Logs <a href="http://ioke.org/irc/logs'">http://ioke.org/irc/logs'</a></span><br />
+<span class="irc-date">[8:27]</span> <span class="irc-green">* Set by olabini on Thu Jan 22 13:02:32 GMT 2009</span><br />
+<span class="irc-date">[8:27]</span> <span class="irc-red">[freenode-connect VERSION]</span><br />
+<span class="irc-date">[8:27]</span> <span class="irc-black">&lt;olabini&gt; hello there, IokeStormBot</span><br />
+<span class="irc-date">[8:28]</span> <span class="irc-black">&lt;naeu&gt; we're back on air</span><br />
+<span class="irc-date">[8:29]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[8:32]</span> <span class="irc-black">&lt;naeu&gt; so, before "sam" is evaluated, what is it?</span><br />
+<span class="irc-date">[8:33]</span> <span class="irc-black">&lt;naeu&gt; just the message internal:createText with some params?</span><br />
+<span class="irc-date">[8:35]</span> <span class="irc-black">&lt;naeu&gt; well, one param - the text to be created</span><br />
+<span class="irc-date">[8:37]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[8:38]</span> <span class="irc-black">&lt;naeu&gt; by the way: internal:createText with no params ;=&gt; BOOM</span><br />
+<span class="irc-date">[8:38]</span> <span class="irc-black">&lt;naeu&gt; do you want bug reports for that kind of thing?</span><br />
+<span class="irc-date">[8:42]</span> <span class="irc-black">&lt;olabini&gt; hm</span><br />
+<span class="irc-date">[8:42]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[8:42]</span> <span class="irc-black">&lt;olabini&gt; that one is pretty unlikely to be used, but sure, report it</span><br />
+<span class="irc-date">[8:42]</span> <span class="irc-black">&lt;olabini&gt; preferrably with a patch from github</span><br />
+<span class="irc-date">[8:42]</span> <span class="irc-black">&lt;olabini&gt; =P</span><br />
+<span class="irc-date">[8:43]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[9:09]</span> <span class="irc-black">&lt;naeu&gt; is there a preferred condition to signal for raising concerns about method arity?</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-green">* cirquitz (n=cirquitz@203.199.114.33) has joined #ioke</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-green">* Narnach_ (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[10:02]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@nat/sun/x-777e6fc9b3fed1b5) Quit ("Leaving")</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;olabini&gt; naeu: depending on what the problem is, yes</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;olabini&gt; these are the pertinent defined ones</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;olabini&gt; Condition Error Invocation ArgumentWithoutDefaultValue</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;olabini&gt; Condition Error Invocation TooFewArguments</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;olabini&gt; Condition Error Invocation TooManyArguments</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;olabini&gt; Condition Error Invocation MismatchedKeywords</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-black">&lt;naeu&gt; cool, thanks</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;naeu&gt; can you see why this doesn't fail in the test suite:</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;naeu&gt;  it("should raise a condition if no params are passed",</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;naeu&gt;       fn(internal:createText) should signal(Condition Error Invocation TooFewArguments)</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;naeu&gt;     )</span><br />
+<span class="irc-date">[10:49]</span> <span class="irc-black">&lt;olabini&gt; hm.</span><br />
+<span class="irc-date">[10:49]</span> <span class="irc-black">&lt;olabini&gt; that should work, yes.</span><br />
+<span class="irc-date">[10:49]</span> <span class="irc-black">&lt;olabini&gt; strange</span><br />
+<span class="irc-date">[10:50]</span> <span class="irc-navy">* bguthrie (n=bguthrie@c-98-230-174-93.hsd1.ga.comcast.net) Quit ()</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;naeu&gt; i just stuck it in test/text_spec.ik and did an ant clean ; ant and all specs passed</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;naeu&gt; i expected that one to fail</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;olabini&gt; hm</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;olabini&gt; weird</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;olabini&gt; does it fail if you run the file itself?</span><br />
+<span class="irc-date">[11:44]</span> <span class="irc-black">&lt;naeu&gt; no it doesn't</span><br />
+<span class="irc-date">[11:44]</span> <span class="irc-black">&lt;naeu&gt; is there a chance that iik is handling it differently?</span><br />
+<span class="irc-date">[11:51]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[11:51]</span> <span class="irc-black">&lt;olabini&gt; possibly</span><br />
+<span class="irc-date">[11:51]</span> <span class="irc-black">&lt;olabini&gt; but probably not</span><br />
+<span class="irc-date">[11:51]</span> <span class="irc-black">&lt;olabini&gt; =</span><br />
+<span class="irc-date">[11:51]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[11:55]</span> <span class="irc-black">&lt;naeu&gt; are you able to duplicate it at your end?</span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-black">&lt;olabini&gt; haven't had time to check</span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-black">&lt;olabini&gt; =/</span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-black">&lt;olabini&gt; right now bogged down in creation of all presentations for next week</span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-black">&lt;olabini&gt; plus being sick</span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-black">&lt;olabini&gt; plus some other nice deadlines</span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-black">&lt;naeu&gt; good luck with all that!</span><br />
+<span class="irc-date">[12:02]</span> <span class="irc-black">&lt;naeu&gt; keep juggling!</span><br />
+<span class="irc-date">[12:10]</span> <span class="irc-navy">* Narnach_ (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[12:12]</span> <span class="irc-navy">* cirquitz (n=cirquitz@203.199.114.33) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[12:12]</span> <span class="irc-green">* cirquitz (n=cirquitz@203.199.114.33) has joined #ioke</span><br />
+<span class="irc-date">[12:30]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[12:32]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit ()</span><br />
+<span class="irc-date">[12:57]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[14:06]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[14:25]</span> <span class="irc-green">* mkrauskopf_ (n=mkrausko@nat/sun/x-453c045b78ff66c4) has joined #ioke</span><br />
+<span class="irc-date">[14:42]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[15:49]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit ()</span><br />
+<span class="irc-date">[16:16]</span> <span class="irc-navy">* exlibris (n=exlibris@port-87-234-254-194.static.qsc.de) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[16:16]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit ()</span><br />
+<span class="irc-date">[16:16]</span> <span class="irc-green">* naeu (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[16:17]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit (Client Quit)</span><br />
+<span class="irc-date">[16:46]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[16:48]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Client Quit)</span><br />
+<span class="irc-date">[17:05]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:10]</span> <span class="irc-black">&lt;naeu&gt; olabini: do you know of any trick to keep the jvm running so you don't have to wait for it to start every time you want to run ispec?</span><br />
+<span class="irc-date">[18:14]</span> <span class="irc-black">&lt;olabini&gt; hm</span><br />
+<span class="irc-date">[18:14]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[18:14]</span> <span class="irc-black">&lt;olabini&gt; there aren't any good ways</span><br />
+<span class="irc-date">[18:14]</span> <span class="irc-black">&lt;olabini&gt; =/</span><br />
+<span class="irc-date">[18:14]</span> <span class="irc-black">&lt;olabini&gt; nailgun could work, maybe</span><br />
+<span class="irc-date">[18:14]</span> <span class="irc-black">&lt;olabini&gt; haven't tried it though</span><br />
+<span class="irc-date">[18:15]</span> <span class="irc-black">&lt;naeu&gt; fair enough</span><br />
+<span class="irc-date">[18:16]</span> <span class="irc-black">&lt;naeu&gt; and what's the Ioke equivalent of to_i and to_f</span><br />
+<span class="irc-date">[18:22]</span> <span class="irc-black">&lt;olabini&gt; asRational and asDecimal</span><br />
+<span class="irc-date">[18:22]</span> <span class="irc-black">&lt;naeu&gt; ah cool</span><br />
+<span class="irc-date">[18:22]</span> <span class="irc-black">&lt;naeu&gt; I would have totally missed that</span><br />
+<span class="irc-date">[18:23]</span> <span class="irc-black">&lt;naeu&gt; "" cellNames(true) sort grep(#/umber/)</span><br />
+<span class="irc-date">[18:23]</span> <span class="irc-black">&lt;naeu&gt; fail</span><br />
+<span class="irc-date">[18:23]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[18:24]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[18:25]</span> <span class="irc-black">&lt;olabini&gt; actually, I'm not sure they are implemented for Texts</span><br />
+<span class="irc-date">[18:25]</span> <span class="irc-black">&lt;naeu&gt; hmmm...</span><br />
+<span class="irc-date">[18:25]</span> <span class="irc-black">&lt;naeu&gt; "" cellNames(true) sort grep(#/as/)</span><br />
+<span class="irc-date">[18:25]</span> <span class="irc-black">&lt;naeu&gt; +&gt; [:Base, :BaseBehavior, :Case, :aliasMethod, :asText, :case, :"case:and", :"case:else", :"case:nand", :"case:nor", :"case:not", :"case:or", :"case:otherwise", :"case:xor", :"java:lang:Class", :pass, :"primitiveJavaClass!"]</span><br />
+<span class="irc-date">[18:25]</span> <span class="irc-black">&lt;olabini&gt; no</span><br />
+<span class="irc-date">[18:25]</span> <span class="irc-black">&lt;olabini&gt; they aren't</span><br />
+<span class="irc-date">[18:25]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-black">&lt;olabini&gt; the reason is that you need to use toRational and toDecimal</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-black">&lt;olabini&gt; asDecimal and asRational are more like to_int and to_flt</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-black">&lt;olabini&gt; toRational and toDecimal are more like to_i and to_f</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-black">&lt;naeu&gt; "" cellNames(true) sort grep(#/to/)</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-black">&lt;naeu&gt; +&gt; [:JavaArrayProxyCreator, :toDecimal, :toRational]</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-black">&lt;naeu&gt; when you mean to_int you mean more strict?</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-black">&lt;naeu&gt; is there a reason you don't have toInteger</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-black">&lt;olabini&gt; generally it isn't useful</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-black">&lt;olabini&gt; but you can add it if you want to</span><br />
+<span class="irc-date">[18:28]</span> <span class="irc-black">&lt;naeu&gt; ok, the situation i'm in is as follows:</span><br />
+<span class="irc-date">[18:28]</span> <span class="irc-black">&lt;naeu&gt; i have a method that takes a string</span><br />
+<span class="irc-date">[18:28]</span> <span class="irc-black">&lt;naeu&gt; and needs to turn it into the correct type of number</span><br />
+<span class="irc-date">[18:28]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[18:28]</span> <span class="irc-black">&lt;naeu&gt; "1" =&gt; 1, "1.0" =&gt; 1.0</span><br />
+<span class="irc-date">[18:28]</span> <span class="irc-black">&lt;naeu&gt; etc</span><br />
+<span class="irc-date">[18:28]</span> <span class="irc-black">&lt;olabini&gt; that's tricky</span><br />
+<span class="irc-date">[18:28]</span> <span class="irc-black">&lt;naeu&gt; should I just eval it?</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-black">&lt;olabini&gt; maybe that's the best solution</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-black">&lt;naeu&gt; or should i take the time to introspect the numbers</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-black">&lt;naeu&gt; it's for the json parser</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-black">&lt;naeu&gt; and I already am guaranteed that the numbers confirm to the json rfc</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-black">&lt;olabini&gt; ok</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-black">&lt;olabini&gt; then eval is probably quickest</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-black">&lt;olabini&gt; and easiest</span><br />
+<span class="irc-date">[18:30]</span> <span class="irc-black">&lt;naeu&gt; i think the json number schema is the same as iokes</span><br />
+<span class="irc-date">[18:30]</span> <span class="irc-black">&lt;naeu&gt; well we'll soon see if it isn't anyway ;-)</span><br />
+<span class="irc-date">[18:31]</span> <span class="irc-black">&lt;naeu&gt; what's the ioke equivalent of eval?</span><br />
+<span class="irc-date">[18:32]</span> <span class="irc-black">&lt;naeu&gt; evaluateOn</span><br />
+<span class="irc-date">[18:32]</span> <span class="irc-black">&lt;naeu&gt; hmm, no, that's just for macros</span><br />
+<span class="irc-date">[18:33]</span> <span class="irc-navy">* cirquitz (n=cirquitz@203.199.114.33) Quit ("Leaving")</span><br />
+<span class="irc-date">[18:33]</span> <span class="irc-black">&lt;olabini&gt; naeu: Message fromText("foo") evaluateOn(call ground)</span><br />
+<span class="irc-date">[18:33]</span> <span class="irc-black">&lt;olabini&gt; it's not as catcy as eval of course</span><br />
+<span class="irc-date">[18:33]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;naeu&gt; too damn right!</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;olabini&gt; maybe we should add an eval method</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;olabini&gt; should be simpl</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;olabini&gt; simple</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;naeu&gt; doesn't exactly roll off the tongue ;-)</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;olabini&gt; Origin eval = method(str, Message fromText(str) evaluateOn(self))</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;olabini&gt; happy?</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;naeu&gt; dribbling with enthusiasm</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;olabini&gt; goodie</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;olabini&gt; uhm</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;olabini&gt; that sounded weird</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;naeu&gt; that's because you evalled it in your own weird context</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;naeu&gt; ;-)</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[18:41]</span> <span class="irc-black">&lt;naeu&gt; should the eval call asText on its argument?</span><br />
+<span class="irc-date">[18:43]</span> <span class="irc-black">&lt;naeu&gt; or signal a condition if it's not text?</span><br />
+<span class="irc-date">[18:43]</span> <span class="irc-black">&lt;naeu&gt; or at least, how do I make this more useful:</span><br />
+<span class="irc-date">[18:43]</span> <span class="irc-black">&lt;naeu&gt; iik&gt; Origin eval(1)</span><br />
+<span class="irc-date">[18:43]</span> <span class="irc-black">&lt;naeu&gt; *** - expected type: ''</span><br />
+<span class="irc-date">[18:59]</span> <span class="irc-black">&lt;naeu&gt; btw, I think that it's really cool that there's no need to allow an optional binding to eval as the context is explicitly the receiver of eval</span><br />
+<span class="irc-date">[19:06]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://github.com/innovationfactory/ioke/commit/1e8711cfef0489c10b3fed774d2a3d068f2856f6">http://github.com/innovationfactory/ioke/commit/1e8711cfef0489c10b3fed774d2a3d068f2856f6</a></span><br />
+<span class="irc-date">[19:50]</span> <span class="irc-navy">* olabini (n=ola@c-0b4de155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[20:29]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[20:33]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:38]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Client Quit)</span><br />
+<span class="irc-date">[21:18]</span> <span class="irc-navy">* mkrauskopf_ (n=mkrausko@nat/sun/x-453c045b78ff66c4) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[21:19]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@nat/sun/x-6ade968de43c5c45) has joined #ioke</span><br />
+<span class="irc-date">[21:20]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@nat/sun/x-6ade968de43c5c45) Quit (Client Quit)</span><br />
+<span class="irc-date">[21:21]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-green">* olabini (n=ola@c-0b4de155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[22:40]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit ("Leaving")</span><br />
+<span class="irc-date">[23:21]</span> <span class="irc-green">* bguthrie (n=bguthrie@c-98-230-174-93.hsd1.ga.comcast.net) has joined #ioke</span><br />
+<span class="irc-date">[23:39]</span> <span class="irc-navy">* bguthrie (n=bguthrie@c-98-230-174-93.hsd1.ga.comcast.net) Quit ()</span><br />

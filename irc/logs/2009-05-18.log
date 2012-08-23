@@ -1,0 +1,60 @@
+<span class="irc-date">[2:06]</span> <span class="irc-green">* basu__ (n=basu@139.147.18.6) has joined #ioke</span><br />
+<span class="irc-date">[2:06]</span> <span class="irc-black">&lt;basu__&gt; hello</span><br />
+<span class="irc-date">[2:31]</span> <span class="irc-navy">* basu__ (n=basu@139.147.18.6) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[2:32]</span> <span class="irc-navy">* basu_ (n=basu@139.147.18.6) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[3:32]</span> <span class="irc-navy">* eliantor (n=eto@93-45-212-172.ip104.fastwebnet.it) Quit ("Lost terminal")</span><br />
+<span class="irc-date">[5:19]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-4.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[6:02]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-4.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[6:21]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[7:08]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[7:51]</span> <span class="irc-navy">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[7:58]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[8:28]</span> <span class="irc-green">* eliantor (n=eto@93-45-219-3.ip104.fastwebnet.it) has joined #ioke</span><br />
+<span class="irc-date">[9:06]</span> <span class="irc-green">* naeu (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-green">* olabini (n=ola@c-398de155.234-1-64736c10.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[13:39]</span> <span class="irc-navy">* olabini (n=ola@c-398de155.234-1-64736c10.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[13:49]</span> <span class="irc-navy">* eliantor (n=eto@93-45-219-3.ip104.fastwebnet.it) Quit ("leaving")</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit ()</span><br />
+<span class="irc-date">[14:36]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[14:36]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[16:51]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit ()</span><br />
+<span class="irc-date">[17:52]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:15]</span> <span class="irc-green">* martido (n=martin@dslb-088-065-197-102.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-green">* kar8nga (n=kar8nga@f-80.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[19:03]</span> <span class="irc-black">&lt;martido&gt; hey all, can you somehow define an "assignment method/macro" that takes more than one argument? I guess not, but I thought I'd ask anyway</span><br />
+<span class="irc-date">[19:08]</span> <span class="irc-black">&lt;olabini&gt; well, if you mean an assignment place, yes, you can</span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-black">&lt;olabini&gt; say for example something like this:</span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-black">&lt;martido&gt; hey all, can you somehow define an "assignment method/macro" that takes more than one argument? I guess not, but I thought I'd ask anyway</span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-black">&lt;martido&gt; sorry ;)</span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-black">&lt;olabini&gt; x = Origin mimic</span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-black">&lt;olabini&gt; x cell("blah=") = method(one, two, three, four, "assigning stupid stuff")</span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-black">&lt;olabini&gt; can be called with:</span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-black">&lt;olabini&gt; x blah("one", "two", "three") = "four"</span><br />
+<span class="irc-date">[19:15]</span> <span class="irc-black">&lt;martido&gt; ah, thanks very much</span><br />
+<span class="irc-date">[19:16]</span> <span class="irc-black">&lt;martido&gt; how does that work internally?</span><br />
+<span class="irc-date">[19:16]</span> <span class="irc-black">&lt;martido&gt; the whole thing gets transformed to "x =(blah("one", "two", "three"), "four")"</span><br />
+<span class="irc-date">[19:16]</span> <span class="irc-black">&lt;martido&gt; so you look for a method call "blah="</span><br />
+<span class="irc-date">[19:17]</span> <span class="irc-black">&lt;martido&gt; and then? you just pass the thing on the right as the last argument?</span><br />
+<span class="irc-date">[19:33]</span> <span class="irc-black">&lt;martido&gt; and say you would like to do something like: "x blah = ("one", "two", "three", "four")"? Would you need destructuring assignment for that? Or some kind of "splattable" tuples?</span><br />
+<span class="irc-date">[20:03]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[20:03]</span> <span class="irc-green">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:07]</span> <span class="irc-green">* basu_ (n=basu@139.147.18.6) has joined #ioke</span><br />
+<span class="irc-date">[20:07]</span> <span class="irc-green">* basu__ (n=basu@139.147.18.6) has joined #ioke</span><br />
+<span class="irc-date">[20:12]</span> <span class="irc-navy">* kar8nga (n=kar8nga@f-80.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[20:24]</span> <span class="irc-navy">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[20:31]</span> <span class="irc-navy">* basu_ (n=basu@139.147.18.6) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-navy">* basu__ (n=basu@139.147.18.6) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[20:37]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:37]</span> <span class="irc-navy">* martido (n=martin@dslb-088-065-197-102.pools.arcor-ip.net) Quit ()</span><br />
+<span class="irc-date">[21:46]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[21:47]</span> <span class="irc-black">&lt;olabini&gt; you could also have the blah= method do something funky with its argument</span><br />
+<span class="irc-date">[21:47]</span> <span class="irc-black">&lt;olabini&gt; not an extremely good idea, probably, but still possible</span><br />
+<span class="irc-date">[21:47]</span> <span class="irc-black">&lt;olabini&gt; not sure why you would need it, though</span><br />
+<span class="irc-date">[21:47]</span> <span class="irc-black">&lt;olabini&gt; the API using something like that would probably be a bit confusing.</span><br />
+<span class="irc-date">[22:40]</span> <span class="irc-green">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-navy">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Client Quit)</span><br />
+<span class="irc-date">[22:49]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[23:14]</span> <span class="irc-green">* basu_ (n=basu@139.147.18.6) has joined #ioke</span><br />
+<span class="irc-date">[23:14]</span> <span class="irc-green">* basu__ (n=basu@139.147.18.6) has joined #ioke</span><br />
+<span class="irc-date">[23:27]</span> <span class="irc-black">&lt;basu_&gt; anyone here?</span><br />

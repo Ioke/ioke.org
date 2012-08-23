@@ -1,0 +1,85 @@
+<span class="irc-date">[6:13]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-37.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[6:35]</span> <span class="irc-navy">* Narnach_ (n=narnach@195-241-27-75.ip.telfort.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[6:37]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[6:37]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[7:13]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-37.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[7:25]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:25]</span> <span class="irc-green">* naeu (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:26]</span> <span class="irc-black">&lt;naeu&gt; olabini: hey there, did you manage to catch yesterday's strong/weak typing discussion in here?</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;olabini&gt; no</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;olabini&gt; didn't, sadly</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;olabini&gt; shall I check the logs?</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;olabini&gt; will read it in a while</span><br />
+<span class="irc-date">[9:26]</span> <span class="irc-black">&lt;naeu&gt; well, basically none of us were fully sure of what we were talking about</span><br />
+<span class="irc-date">[9:26]</span> <span class="irc-black">&lt;naeu&gt; so perhaps you might be able to put us on the right track :-)</span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[11:07]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[12:54]</span> <span class="irc-black">&lt;olabini&gt; hmm. lets see</span><br />
+<span class="irc-date">[12:54]</span> <span class="irc-black">&lt;olabini&gt; Ioke os probably more strongly typed than Java</span><br />
+<span class="irc-date">[12:54]</span> <span class="irc-black">&lt;olabini&gt; there are really no implicit conversions</span><br />
+<span class="irc-date">[12:54]</span> <span class="irc-black">&lt;olabini&gt; Scala is very strongly, and statically typed</span><br />
+<span class="irc-date">[12:55]</span> <span class="irc-black">&lt;olabini&gt; C is the best example of a weakly typed language</span><br />
+<span class="irc-date">[12:56]</span> <span class="irc-black">&lt;olabini&gt; the trouble with talking about types in a prototype based language is that in a very real way all objects in the system are their own type.</span><br />
+<span class="irc-date">[12:58]</span> <span class="irc-black">&lt;olabini&gt; the main difference with Perl is that the receiver of a call can be coerced to find a matching combination</span><br />
+<span class="irc-date">[12:59]</span> <span class="irc-black">&lt;olabini&gt; also, Scala's type conversions are strictly compile time</span><br />
+<span class="irc-date">[12:59]</span> <span class="irc-black">&lt;olabini&gt; which means they don't even exist in the runtime type model</span><br />
+<span class="irc-date">[13:00]</span> <span class="irc-black">&lt;olabini&gt; but it is a tricky question</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[14:34]</span> <span class="irc-green">* donizetti (n=donizett@189.79.138.223) has joined #ioke</span><br />
+<span class="irc-date">[14:35]</span> <span class="irc-black">&lt;donizetti&gt; hi guys!</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[15:26]</span> <span class="irc-black">&lt;naeu&gt; olabini: I still don't fully understand the argument that Scala is very strongly typed - given its implicit type conversions, compile time or not (Ruby doesn't have a compile stage, so does that make it completely weak or completely strong?)</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit ()</span><br />
+<span class="irc-date">[16:11]</span> <span class="irc-green">* donizetti_ (n=donizett@189.79.142.82) has joined #ioke</span><br />
+<span class="irc-date">[16:14]</span> <span class="irc-navy">* donizetti_ (n=donizett@189.79.142.82) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-black">&lt;olabini&gt; well. there is a difference.</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-black">&lt;olabini&gt; Scala's version allow conversions of receiver objects implicitly, but only statically</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-black">&lt;olabini&gt; while Ruby's type coercions does not work on the receiver object</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-black">&lt;olabini&gt; they are both strong</span><br />
+<span class="irc-date">[16:16]</span> <span class="irc-green">* donizetti_ (n=donizett@201-13-11-151.dsl.telesp.net.br) has joined #ioke</span><br />
+<span class="irc-date">[16:17]</span> <span class="irc-navy">* donizetti_ (n=donizett@201-13-11-151.dsl.telesp.net.br) Quit (Client Quit)</span><br />
+<span class="irc-date">[16:17]</span> <span class="irc-green">* donizetti_ (n=donizett@201-13-11-151.dsl.telesp.net.br) has joined #ioke</span><br />
+<span class="irc-date">[16:22]</span> <span class="irc-black">&lt;donizetti_&gt; olabini; hello</span><br />
+<span class="irc-date">[16:24]</span> <span class="irc-black">&lt;donizetti_&gt; olabini : you were thinking about what to do next with ioke, have you chosen any?</span><br />
+<span class="irc-date">[16:29]</span> <span class="irc-navy">* donizetti (n=donizett@189.79.138.223) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[16:50]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[16:54]</span> <span class="irc-navy">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[17:14]</span> <span class="irc-navy">* donizetti_ (n=donizett@201-13-11-151.dsl.telesp.net.br) Quit ()</span><br />
+<span class="irc-date">[17:15]</span> <span class="irc-green">* donizetti (n=donizett@201-13-11-151.dsl.telesp.net.br) has joined #ioke</span><br />
+<span class="irc-date">[17:16]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[17:22]</span> <span class="irc-black">&lt;donizetti&gt; naue: hell</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-black">&lt;donizetti&gt; naeu: hello</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-black">&lt;donizetti&gt; naeu: how are you?</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-black">&lt;naeu&gt; donizetti: hey there</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-black">&lt;naeu&gt; just about to tuck into a nice curry I've just cooked :-)</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-black">&lt;donizetti&gt; :)</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-black">&lt;naeu&gt; how are you doing?</span><br />
+<span class="irc-date">[17:24]</span> <span class="irc-black">&lt;donizetti&gt; I'm great!</span><br />
+<span class="irc-date">[17:24]</span> <span class="irc-black">&lt;donizetti&gt; i've read today morning log and saw that you and ola had a talk about weak/strong type too!</span><br />
+<span class="irc-date">[17:34]</span> <span class="irc-black">&lt;naeu&gt; it was rather asynchronous, but Ola did share his opinions :-)</span><br />
+<span class="irc-date">[17:39]</span> <span class="irc-black">&lt;donizetti&gt; have you heard about his book</span><br />
+<span class="irc-date">[17:40]</span> <span class="irc-black">&lt;donizetti&gt; <a href="http://www.amazon.com/Concepts-Techniques-Models-Computer-Programming/dp/0262220695/ref=wl_it_dp?ie=UTF8&amp;coliid=I2O96BEJXWTP7H&amp;colid=2R3ASZ0WPQEOY">http://www.amazon.com/Concepts-Techniques-Models-Computer-Programming/dp/0262220695/ref=wl_it_dp?ie=UTF8&amp;coliid=I2O96BEJXWTP7H&amp;colid=2R3ASZ0WPQEOY</a></span><br />
+<span class="irc-date">[17:40]</span> <span class="irc-black">&lt;donizetti&gt; maybe you have already read it!</span><br />
+<span class="irc-date">[17:44]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-119.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[17:46]</span> <span class="irc-black">&lt;naeu&gt; actually, I haven't</span><br />
+<span class="irc-date">[17:46]</span> <span class="irc-black">&lt;naeu&gt; have you read it?</span><br />
+<span class="irc-date">[17:46]</span> <span class="irc-black">&lt;donizetti&gt; there are a papper from the same author and somebody posted at "the ultimate lambda", i downloaded it and I'm really enjoying it...Both the book and the papper are about programming languages paradigm....if you are interested and don't have the paper I can send it for you!</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;donizetti&gt; i've just bought it!</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;naeu&gt; looks very good</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;naeu&gt; and very long...</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;donizetti&gt; yeah!</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;naeu&gt; 930 pages!</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[17:48]</span> <span class="irc-black">&lt;donizetti&gt; i'm sending you the paper, right now!</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;naeu&gt; great</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[17:51]</span> <span class="irc-black">&lt;donizetti&gt; done!</span><br />
+<span class="irc-date">[17:54]</span> <span class="irc-black">&lt;naeu&gt; received it, thanks :-)</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-119.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[18:30]</span> <span class="irc-black">&lt;donizetti&gt; =D</span><br />
+<span class="irc-date">[18:30]</span> <span class="irc-black">&lt;donizetti&gt; hope that you like it</span><br />
+<span class="irc-date">[19:06]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[19:29]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:31]</span> <span class="irc-green">* donizetti (n=donizett@201-13-11-151.dsl.telesp.net.br) has left #ioke</span><br />
+<span class="irc-date">[22:19]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />

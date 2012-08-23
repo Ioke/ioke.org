@@ -1,0 +1,37 @@
+<span class="irc-date">[0:13]</span> <span class="irc-navy">* Raynes (~Raynes@unaffiliated/raynes) Quit (Ping timeout: 276 seconds)</span><br />
+<span class="irc-date">[0:16]</span> <span class="irc-green">* Raynes (~Raynes@unaffiliated/raynes) has joined #ioke</span><br />
+<span class="irc-date">[1:24]</span> <span class="irc-navy">* jdp (~gu@75.97.120.11.res-cmts.senj.ptd.net) Quit ()</span><br />
+<span class="irc-date">[4:09]</span> <span class="irc-green">* pandrew (~andrew@79.114.121.46) has joined #ioke</span><br />
+<span class="irc-date">[4:13]</span> <span class="irc-black">&lt;pandrew&gt; hello! i was wondering, what is the usual startup time of ioke? i'm wondering if i got something misconfigured, here's mine:</span><br />
+<span class="irc-date">[4:13]</span> <span class="irc-black">&lt;pandrew&gt; time ioke -e "\"test\" println"</span><br />
+<span class="irc-date">[4:13]</span> <span class="irc-black">&lt;pandrew&gt; test</span><br />
+<span class="irc-date">[4:13]</span> <span class="irc-black">&lt;pandrew&gt; real    0m11.186s</span><br />
+<span class="irc-date">[4:13]</span> <span class="irc-black">&lt;pandrew&gt; user    0m8.781s</span><br />
+<span class="irc-date">[4:13]</span> <span class="irc-black">&lt;pandrew&gt; sys     0m0.788s</span><br />
+<span class="irc-date">[4:14]</span> <span class="irc-black">&lt;pandrew&gt; i'm using openjdk 1.6.0_0 on debian linux</span><br />
+<span class="irc-date">[4:16]</span> <span class="irc-black">&lt;pandrew&gt; at the same time jython takes only 3 seconds to start up.</span><br />
+<span class="irc-date">[5:33]</span> <span class="irc-navy">* CIA-16 (cia@208.69.182.149) Quit (*.net *.split)</span><br />
+<span class="irc-date">[5:33]</span> <span class="irc-navy">* skaar (~skaar@substruction.net) Quit (*.net *.split)</span><br />
+<span class="irc-date">[5:33]</span> <span class="irc-navy">* IokeHurricane (~IokeHurri@8.12.35.212) Quit (*.net *.split)</span><br />
+<span class="irc-date">[5:35]</span> <span class="irc-green">* CIA-16 (cia@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[5:35]</span> <span class="irc-green">* IokeHurricane (~IokeHurri@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[5:35]</span> <span class="irc-green">* skaar (~skaar@substruction.net) has joined #ioke</span><br />
+<span class="irc-date">[5:36]</span> <span class="irc-navy">* Raynes (~Raynes@unaffiliated/raynes) Quit (*.net *.split)</span><br />
+<span class="irc-date">[5:36]</span> <span class="irc-navy">* lenbust (~lnx@c-3d54e555.023-3-67626717.cust.bredbandsbolaget.se) Quit (*.net *.split)</span><br />
+<span class="irc-date">[5:36]</span> <span class="irc-green">* Raynes (~Raynes@unaffiliated/raynes) has joined #ioke</span><br />
+<span class="irc-date">[5:36]</span> <span class="irc-green">* lenbust (~lnx@c-3d54e555.023-3-67626717.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[8:21]</span> <span class="irc-navy">* Raynes (~Raynes@unaffiliated/raynes) Quit (Ping timeout: 260 seconds)</span><br />
+<span class="irc-date">[11:30]</span> <span class="irc-green">* Raynes (~Raynes@unaffiliated/raynes) has joined #ioke</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-green">* adm_ (~79f1ba66@gateway/web/freenode/x-ackebrqtorqqvtui) has joined #ioke</span><br />
+<span class="irc-date">[14:25]</span> <span class="irc-navy">* adm_ (~79f1ba66@gateway/web/freenode/x-ackebrqtorqqvtui) Quit (Client Quit)</span><br />
+<span class="irc-date">[14:45]</span> <span class="irc-green">* pandrew (~andrew@79.114.121.46) has left #ioke</span><br />
+<span class="irc-date">[16:58]</span> <span class="irc-green">* Raynes is now known as immanotreallyabo</span><br />
+<span class="irc-date">[16:58]</span> <span class="irc-green">* immanotreallyabo is now known as fakebot</span><br />
+<span class="irc-date">[16:59]</span> <span class="irc-green">* fakebot is now known as fakebotters</span><br />
+<span class="irc-date">[16:59]</span> <span class="irc-green">* fakebotters is now known as Raynes</span><br />
+<span class="irc-date">[18:28]</span> <span class="irc-green">* naeu (~sam@86.93.230.158) has joined #ioke</span><br />
+<span class="irc-date">[18:32]</span> <span class="irc-navy">* naeu (~sam@86.93.230.158) Quit (Client Quit)</span><br />
+<span class="irc-date">[18:33]</span> <span class="irc-green">* naeu (~sam@86.93.230.158) has joined #ioke</span><br />
+<span class="irc-date">[18:59]</span> <span class="irc-navy">* naeu (~sam@86.93.230.158) Quit (Quit: naeu)</span><br />
+<span class="irc-date">[19:34]</span> <span class="irc-navy">* Raynes (~Raynes@unaffiliated/raynes) Quit (Ping timeout: 260 seconds)</span><br />
+<span class="irc-date">[19:35]</span> <span class="irc-green">* Raynes (~Raynes@unaffiliated/raynes) has joined #ioke</span><br />

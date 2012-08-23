@@ -1,0 +1,20 @@
+<span class="irc-date">[5:46]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-27.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[6:06]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-27.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[6:27]</span> <span class="irc-navy">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[7:38]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Victor Hugo Borja master * r732154f / test/operators_spec.ik : * test/operators_spec.ik: Added spec for inverted :: operator - <a href="http://bit.ly/94Oox">http://bit.ly/94Oox</a></span><br />
+<span class="irc-date">[7:38]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini master * r04f6bd2 / test/operators_spec.ik : Remove pending test - <a href="http://bit.ly/147tTk">http://bit.ly/147tTk</a></span><br />
+<span class="irc-date">[8:40]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[13:44]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-61.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[13:45]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-green">* olabini (n=ola@217.40.10.35) has joined #ioke</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[16:01]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-61.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[17:37]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini master * r997da77 / (3 files in 3 dirs): Add Text#evaluateEscapes for Sam. - <a href="http://bit.ly/Xz6Nb">http://bit.ly/Xz6Nb</a></span><br />
+<span class="irc-date">[17:50]</span> <span class="irc-black">&lt;olabini&gt; naeu: Hey Sam</span><br />
+<span class="irc-date">[17:50]</span> <span class="irc-black">&lt;olabini&gt; did you have a question?</span><br />
+<span class="irc-date">[18:14]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-82.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[20:34]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:52]</span> <span class="irc-black">&lt;olabini&gt; hey</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-82.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />

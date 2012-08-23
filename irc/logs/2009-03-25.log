@@ -1,0 +1,320 @@
+<span class="irc-date">[0:00]</span> <span class="irc-navy">* zabbai (n=user@189.143.190.51) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[0:03]</span> <span class="irc-navy">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[0:16]</span> <span class="irc-green">* zabbai (n=user@189.143.190.51) has joined #ioke</span><br />
+<span class="irc-date">[1:09]</span> <span class="irc-navy">* zabbai (n=user@189.143.190.51) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[2:53]</span> <span class="irc-green">* donizetti (n=donizett@201-13-67-33.dsl.telesp.net.br) has joined #ioke</span><br />
+<span class="irc-date">[2:55]</span> <span class="irc-navy">* donizetti (n=donizett@201-13-67-33.dsl.telesp.net.br) Quit (Client Quit)</span><br />
+<span class="irc-date">[4:38]</span> <span class="irc-green">* zabbai (n=user@189.143.190.51) has joined #ioke</span><br />
+<span class="irc-date">[5:11]</span> <span class="irc-navy">* zabbai (n=user@189.143.190.51) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[5:21]</span> <span class="irc-green">* zabbai (n=user@189.143.190.51) has joined #ioke</span><br />
+<span class="irc-date">[6:05]</span> <span class="irc-navy">* zabbai (n=user@189.143.190.51) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[7:40]</span> <span class="irc-green">* zabbai (n=user@189.143.190.51) has joined #ioke</span><br />
+<span class="irc-date">[9:03]</span> <span class="irc-green">* naeu (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:17]</span> <span class="irc-black">&lt;naeu&gt; morning</span><br />
+<span class="irc-date">[9:18]</span> <span class="irc-black">&lt;naeu&gt; can anyone see any issues with this regexp as a matcher for cell identifiers: #/[a-zA-Z_][a-zA-Z0-9!?_:$]*[a-zA-Z0-9!?_]/</span><br />
+<span class="irc-date">[9:19]</span> <span class="irc-black">&lt;olabini&gt; no really. it looks about right</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-black">&lt;olabini&gt; of course, you can just look at the grammar</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-black">&lt;olabini&gt; and there you can see that a cell can end in a $ for example</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-black">&lt;olabini&gt; which your regexp doesn't allow</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-black">&lt;olabini&gt; you also have the problem that your regexp requires at least 2 characters</span><br />
+<span class="irc-date">[9:21]</span> <span class="irc-black">&lt;olabini&gt; while many identifiers are one character long</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;naeu&gt; ah crap, yep</span><br />
+<span class="irc-date">[9:24]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:26]</span> <span class="irc-black">&lt;naeu&gt; #/([a-zA-Z_])|([a-zA-Z_][a-zA-Z0-9!?_:$]*[a-zA-Z0-9!?_$])/</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt; yeah, that looks bettert</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt; but wait</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt; why are you doing it this way?</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt; if you look at the grammar</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt; it says:</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt;     |   Letter (Letter|IDDigit|':'|'!'|'?'|'$')*</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt;     |   ':' (Letter|IDDigit) (Letter|IDDigit|':'|'!'|'?'|'$')*</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt; why don't you just follow that</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;naeu&gt; ah yes, identifiers can end in :</span><br />
+<span class="irc-date">[9:36]</span> <span class="irc-black">&lt;naeu&gt; for some reason i thought that was only the case for dict keys</span><br />
+<span class="irc-date">[9:36]</span> <span class="irc-black">&lt;naeu&gt; #/([a-zA-Z_])|([a-zA-Z_][a-zA-Z0-9!?_:$]*)/</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;olabini&gt; nope</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;naeu&gt; I'm not considering symbols in this situation, so the first half of the grammar is sufficient</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;naeu&gt; nope?</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;olabini&gt; well, the way keyword arguments work is that they are simply identifiers</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;olabini&gt; this: #/([a-zA-Z_])|([a-zA-Z_][a-zA-Z0-9!?_:$]*)/</span><br />
+<span class="irc-date">[9:38]</span> <span class="irc-black">&lt;naeu&gt; isn't that what I just wrote?</span><br />
+<span class="irc-date">[9:38]</span> <span class="irc-black">&lt;olabini&gt; can just be: #/\w[\w!?:$]*/</span><br />
+<span class="irc-date">[9:38]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:38]</span> <span class="irc-black">&lt;naeu&gt; but what about integers?</span><br />
+<span class="irc-date">[9:38]</span> <span class="irc-black">&lt;olabini&gt; ah, right</span><br />
+<span class="irc-date">[9:38]</span> <span class="irc-black">&lt;naeu&gt; 9a isn't a valid identifier</span><br />
+<span class="irc-date">[9:38]</span> <span class="irc-black">&lt;olabini&gt; #/[a-z_][\w!?:$]*/i</span><br />
+<span class="irc-date">[9:38]</span> <span class="irc-black">&lt;naeu&gt; (I started off with something remarkably similar to your latest regexp)</span><br />
+<span class="irc-date">[9:39]</span> <span class="irc-black">&lt;naeu&gt; yeah, but they can also start with capitals too, right?</span><br />
+<span class="irc-date">[9:40]</span> <span class="irc-black">&lt;naeu&gt; that's just typically an identifier for a mimic</span><br />
+<span class="irc-date">[9:40]</span> <span class="irc-black">&lt;naeu&gt; A = 1. A println</span><br />
+<span class="irc-date">[9:40]</span> <span class="irc-black">&lt;olabini&gt; well, the i after the regexp says to ignore case</span><br />
+<span class="irc-date">[9:40]</span> <span class="irc-black">&lt;naeu&gt; ah, ok</span><br />
+<span class="irc-date">[9:40]</span> <span class="irc-black">&lt;naeu&gt; i was just about to look that up</span><br />
+<span class="irc-date">[9:41]</span> <span class="irc-black">&lt;naeu&gt; cool, that's a lot neater</span><br />
+<span class="irc-date">[9:41]</span> <span class="irc-black">&lt;naeu&gt; thanks</span><br />
+<span class="irc-date">[9:41]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:41]</span> <span class="irc-black">&lt;olabini&gt; no worries</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r0490384 / examples/swing1.ik : Update example to do more than one thing on button pressed - <a href="http://bit.ly/jPLq9">http://bit.ly/jPLq9</a></span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * rf5602d1 / (test/aspect_spec.ik test/assignment_spec.ik): Fix an ordering problem in the specs - <a href="http://bit.ly/10mn4k">http://bit.ly/10mn4k</a></span><br />
+<span class="irc-date">[12:00]</span> <span class="irc-black">&lt;naeu&gt; #/\-/ ;=&gt; boom!</span><br />
+<span class="irc-date">[12:00]</span> <span class="irc-black">&lt;naeu&gt; (i need to submit those other tickets too, i'll do them after lunch)</span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-black">&lt;naeu&gt; sadly work is calling strongly these days :-)</span><br />
+<span class="irc-date">[12:05]</span> <span class="irc-black">&lt;olabini&gt; uhm?</span><br />
+<span class="irc-date">[12:05]</span> <span class="irc-black">&lt;olabini&gt; why would you escape -</span><br />
+<span class="irc-date">[12:05]</span> <span class="irc-black">&lt;olabini&gt; ?</span><br />
+<span class="irc-date">[12:05]</span> <span class="irc-black">&lt;olabini&gt; is it quote that does that?</span><br />
+<span class="irc-date">[12:06]</span> <span class="irc-black">&lt;olabini&gt; oops. it does</span><br />
+<span class="irc-date">[12:06]</span> <span class="irc-black">&lt;olabini&gt; sorry</span><br />
+<span class="irc-date">[12:06]</span> <span class="irc-black">&lt;olabini&gt; that's abug</span><br />
+<span class="irc-date">[12:09]</span> <span class="irc-black">&lt;olabini&gt; fixed now</span><br />
+<span class="irc-date">[12:09]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r7a08ef1 / src/main/org/jregex/Pattern.java : Fix bug in escaping regexps - it shouldn't quote a '-' - <a href="http://bit.ly/h94j3">http://bit.ly/h94j3</a></span><br />
+<span class="irc-date">[12:29]</span> <span class="irc-green">* hsuh (n=user@c925a569.virtua.com.br) has joined #ioke</span><br />
+<span class="irc-date">[12:29]</span> <span class="irc-green">* hsuh (n=user@c925a569.virtua.com.br) has left #ioke</span><br />
+<span class="irc-date">[12:46]</span> <span class="irc-black">&lt;naeu&gt; thanks :-)</span><br />
+<span class="irc-date">[12:49]</span> <span class="irc-black">&lt;olabini&gt; no worries</span><br />
+<span class="irc-date">[12:49]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[12:50]</span> <span class="irc-black">&lt;olabini&gt; it was an easy fix</span><br />
+<span class="irc-date">[12:53]</span> <span class="irc-black">&lt;naeu&gt; you seem to have stirred up a lively twitter debate about closure terminology ;-)</span><br />
+<span class="irc-date">[12:53]</span> <span class="irc-black">&lt;olabini&gt; yeah, well.</span><br />
+<span class="irc-date">[12:53]</span> <span class="irc-black">&lt;olabini&gt; it's only one or two who have argued against me, it seems like</span><br />
+<span class="irc-date">[12:55]</span> <span class="irc-black">&lt;naeu&gt; i actually completely agree</span><br />
+<span class="irc-date">[12:55]</span> <span class="irc-black">&lt;naeu&gt; i'm very much in favour of using precise terminology</span><br />
+<span class="irc-date">[12:55]</span> <span class="irc-black">&lt;olabini&gt; well, at least in the field of programming</span><br />
+<span class="irc-date">[12:55]</span> <span class="irc-black">&lt;naeu&gt; sure</span><br />
+<span class="irc-date">[12:55]</span> <span class="irc-black">&lt;olabini&gt; if you can't be precise about things in programming, you create bugs.</span><br />
+<span class="irc-date">[12:55]</span> <span class="irc-black">&lt;olabini&gt; it's as simple as that</span><br />
+<span class="irc-date">[12:56]</span> <span class="irc-black">&lt;olabini&gt; and I think it's interesting that anyone can defend the choice of name for the class to be Closure in Groovy.</span><br />
+<span class="irc-date">[12:56]</span> <span class="irc-black">&lt;naeu&gt; however, i wonder if there's one Ruby book out there that draws a correct distinction between blocks/closures/anonymous functions</span><br />
+<span class="irc-date">[12:56]</span> <span class="irc-black">&lt;olabini&gt; it just goes against how you name things in OO design</span><br />
+<span class="irc-date">[12:56]</span> <span class="irc-black">&lt;olabini&gt; yeah.</span><br />
+<span class="irc-date">[12:56]</span> <span class="irc-black">&lt;olabini&gt; most books avoid the issues completely and calls the blocks or procs or lambda</span><br />
+<span class="irc-date">[12:56]</span> <span class="irc-black">&lt;olabini&gt; all of which are fine</span><br />
+<span class="irc-date">[12:57]</span> <span class="irc-black">&lt;naeu&gt; yeah sure</span><br />
+<span class="irc-date">[12:57]</span> <span class="irc-black">&lt;naeu&gt; although i hate the way ruby handles blocks procs and lambda is strange and subtly different ways</span><br />
+<span class="irc-date">[12:59]</span> <span class="irc-black">&lt;olabini&gt; hehe. yeah, that is true - but a totally different issue.</span><br />
+<span class="irc-date">[13:00]</span> <span class="irc-black">&lt;naeu&gt; i know :-)</span><br />
+<span class="irc-date">[13:02]</span> <span class="irc-black">&lt;naeu&gt; Ruby has a lot of frilly corners</span><br />
+<span class="irc-date">[13:02]</span> <span class="irc-black">&lt;naeu&gt; for example, Jim Weirich just twittered this: <a href="http://gist.github.com/85433">http://gist.github.com/85433</a></span><br />
+<span class="irc-date">[13:15]</span> <span class="irc-black">&lt;olabini&gt; mm</span><br />
+<span class="irc-date">[13:20]</span> <span class="irc-black">&lt;martido&gt; naeu, olabini: I'm very interested in precise terminology when it comes to closures because I want to be able to use the term myself precisely ... sooo ... twitter doesn't happen to have logs? ;)</span><br />
+<span class="irc-date">[13:20]</span> <span class="irc-black">&lt;naeu&gt; martido: are you a ruby guy?</span><br />
+<span class="irc-date">[13:21]</span> <span class="irc-black">&lt;naeu&gt; (and you could also treat <a href="http://search.twitter.com">http://search.twitter.com</a> as a log :-)</span><br />
+<span class="irc-date">[13:21]</span> <span class="irc-black">&lt;martido&gt; naeu: wish I were :( currently reading "the ruby programming language" from o'reilly to finally get up to speed in this language ... I like the concepts very much but had not chance yet to use it very often</span><br />
+<span class="irc-date">[13:21]</span> <span class="irc-black">&lt;naeu&gt; that's ok :-)</span><br />
+<span class="irc-date">[13:22]</span> <span class="irc-black">&lt;naeu&gt; are you familiar with anonymous functions in javascript?</span><br />
+<span class="irc-date">[13:22]</span> <span class="irc-black">&lt;martido&gt; I'll try the search funtion then ;) lol ... that's the first thing that you tell noobs when they start asking questions ;)</span><br />
+<span class="irc-date">[13:22]</span> <span class="irc-black">&lt;martido&gt; yeah a bit</span><br />
+<span class="irc-date">[13:22]</span> <span class="irc-black">&lt;martido&gt; and groovy, and the BGGA closures stuff</span><br />
+<span class="irc-date">[13:22]</span> <span class="irc-black">&lt;naeu&gt; well ruby has anonymous functions too but calls them blocks</span><br />
+<span class="irc-date">[13:22]</span> <span class="irc-black">&lt;naeu&gt; essentially nameless functions</span><br />
+<span class="irc-date">[13:23]</span> <span class="irc-black">&lt;martido&gt; like a lambda expression?</span><br />
+<span class="irc-date">[13:23]</span> <span class="irc-black">&lt;naeu&gt; now Ola's main gripe is when people conflate the term closure with terms used for nameless functions</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;naeu&gt; yeah, exactly like a lambda expression</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;naeu&gt; now firstly, a closure is a function</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;naeu&gt; but it doesn't have to be nameless</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;naeu&gt; so there's the first mistake :-)</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;naeu&gt; and secondly (and most importantly) it has a specific property</span><br />
+<span class="irc-date">[13:25]</span> <span class="irc-black">&lt;naeu&gt; namely, closures reference variables not known to the function itself (or its params)</span><br />
+<span class="irc-date">[13:25]</span> <span class="irc-black">&lt;naeu&gt; these are often referred to as free variables</span><br />
+<span class="irc-date">[13:26]</span> <span class="irc-black">&lt;naeu&gt; where the variables are bound to are determined by a number of factors, and this gives closures their real power</span><br />
+<span class="irc-date">[13:27]</span> <span class="irc-black">&lt;naeu&gt; does that make any sense?</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;martido&gt; sorry, client called ... yes it does make sense; that and it's along the same lines that I have, but what factors do you mean?</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-black">&lt;martido&gt; oops</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-black">&lt;martido&gt; that was not yet ready ;)</span><br />
+<span class="irc-date">[13:40]</span> <span class="irc-black">&lt;martido&gt; well I wanted to say that I agree with you; that's what I thought closures are</span><br />
+<span class="irc-date">[13:40]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[13:40]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://en.wikipedia.org/wiki/Closure_(computer_science)">http://en.wikipedia.org/wiki/Closure_(computer_science)</a></span><br />
+<span class="irc-date">[13:41]</span> <span class="irc-black">&lt;martido&gt; I must have read that article a 100 times already ;) but it's very interesting and suprisingly accurate if sometimes a bit hard to read ... I think</span><br />
+<span class="irc-date">[13:45]</span> <span class="irc-black">&lt;martido&gt; may I ask what you meant by " where the variables are bound to are determined by a number of factors, and this gives closures their real power"?</span><br />
+<span class="irc-date">[13:47]</span> <span class="irc-black">&lt;naeu&gt; haha, that's the meat!</span><br />
+<span class="irc-date">[13:48]</span> <span class="irc-black">&lt;naeu&gt; is there any chance you could scope your question slightly? I'd have to write an entire blog-post length article to attempt to answer that ;-)</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;martido&gt; if I knew what to scope to ;) I tell you what I know (or think I know) and you tell me what's missing ;) well, the closure's free variables are either statically (at creation time) or dynamically (at call time) bound to variables outside the closure's scope. the bindings and the block of code form the closure. that about right? so my question was: what other factors are there?</span><br />
+<span class="irc-date">[14:48]</span> <span class="irc-black">&lt;naeu&gt; sounds about right :-)</span><br />
+<span class="irc-date">[14:49]</span> <span class="irc-black">&lt;martido&gt; cool ;)</span><br />
+<span class="irc-date">[14:49]</span> <span class="irc-black">&lt;naeu&gt; there's nothing magic about it really</span><br />
+<span class="irc-date">[14:50]</span> <span class="irc-black">&lt;martido&gt; no, it isn't ... it's just that everybody seems to have a different "definition"</span><br />
+<span class="irc-date">[14:50]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[14:50]</span> <span class="irc-black">&lt;naeu&gt; I think that was Ola's original gripe ;-)</span><br />
+<span class="irc-date">[14:51]</span> <span class="irc-black">&lt;martido&gt; ah I see ... and he's right about that</span><br />
+<span class="irc-date">[14:53]</span> <span class="irc-black">&lt;naeu&gt; indeed</span><br />
+<span class="irc-date">[15:07]</span> <span class="irc-black">&lt;martido&gt; anyway, thanks for explaining that stuff to me!</span><br />
+<span class="irc-date">[15:12]</span> <span class="irc-green">* donizetti (n=donizett@189.120.155.15) has joined #ioke</span><br />
+<span class="irc-date">[15:14]</span> <span class="irc-black">&lt;naeu&gt; martido: you're very welcome :-)</span><br />
+<span class="irc-date">[15:15]</span> <span class="irc-black">&lt;martido&gt; ;)</span><br />
+<span class="irc-date">[15:21]</span> <span class="irc-green">* donizetti_ (n=donizett@189.120.169.35) has joined #ioke</span><br />
+<span class="irc-date">[15:34]</span> <span class="irc-navy">* donizetti_ (n=donizett@189.120.169.35) Quit ()</span><br />
+<span class="irc-date">[15:38]</span> <span class="irc-navy">* donizetti (n=donizett@189.120.155.15) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-navy">* zabbai (n=user@189.143.190.51) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[16:20]</span> <span class="irc-green">* donizetti (n=donizett@189.120.169.35) has joined #ioke</span><br />
+<span class="irc-date">[16:21]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[16:53]</span> <span class="irc-green">* donizetti_ (n=donizett@189.120.169.35) has joined #ioke</span><br />
+<span class="irc-date">[16:53]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[17:11]</span> <span class="irc-navy">* donizetti (n=donizett@189.120.169.35) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[17:19]</span> <span class="irc-green">* donizetti_ (n=donizett@189.120.169.35) has left #ioke</span><br />
+<span class="irc-date">[17:19]</span> <span class="irc-green">* donizetti_ (n=donizett@189.120.169.35) has joined #ioke</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;naeu&gt; olabini: are you about?</span><br />
+<span class="irc-date">[17:57]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[17:58]</span> <span class="irc-black">&lt;naeu&gt; melwin: howdy</span><br />
+<span class="irc-date">[17:58]</span> <span class="irc-black">&lt;melwin&gt; Hey, Sam.</span><br />
+<span class="irc-date">[17:58]</span> <span class="irc-black">&lt;naeu&gt; have you tried splitting up ioke into multiple files yet</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;naeu&gt; and particularly, have you tried running ispec over them all</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;melwin&gt; No...</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;melwin&gt; Problems?</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;naeu&gt; hmmm</span><br />
+<span class="irc-date">[18:00]</span> <span class="irc-black">&lt;naeu&gt; yeah, i'm having a few teething issues</span><br />
+<span class="irc-date">[18:00]</span> <span class="irc-black">&lt;naeu&gt; probably my blind stupidity</span><br />
+<span class="irc-date">[18:01]</span> <span class="irc-black">&lt;naeu&gt; oh, and i appear to be defecting back to TM</span><br />
+<span class="irc-date">[18:01]</span> <span class="irc-black">&lt;melwin&gt; Really?</span><br />
+<span class="irc-date">[18:01]</span> <span class="irc-black">&lt;melwin&gt; I'll be...</span><br />
+<span class="irc-date">[18:01]</span> <span class="irc-black">&lt;melwin&gt; Is that good or bad...?</span><br />
+<span class="irc-date">[18:01]</span> <span class="irc-black">&lt;naeu&gt; i just can't do things as nimbly in emacs</span><br />
+<span class="irc-date">[18:01]</span> <span class="irc-black">&lt;naeu&gt; still, after all this time</span><br />
+<span class="irc-date">[18:01]</span> <span class="irc-black">&lt;melwin&gt; :/</span><br />
+<span class="irc-date">[18:02]</span> <span class="irc-black">&lt;melwin&gt; I find your lack of faith... disturbing...</span><br />
+<span class="irc-date">[18:02]</span> <span class="irc-black">&lt;melwin&gt; ;]</span><br />
+<span class="irc-date">[18:02]</span> <span class="irc-black">&lt;naeu&gt; just basic highlight, move, edit multiple lines, rename files, move files around in dir trees, navigation</span><br />
+<span class="irc-date">[18:02]</span> <span class="irc-black">&lt;naeu&gt; i struggle with all of those things in emacs</span><br />
+<span class="irc-date">[18:02]</span> <span class="irc-black">&lt;naeu&gt; i can 'sort of' do them</span><br />
+<span class="irc-date">[18:02]</span> <span class="irc-black">&lt;naeu&gt; i think what i really need is a partner sitting next to me with emacs skills</span><br />
+<span class="irc-date">[18:02]</span> <span class="irc-black">&lt;naeu&gt; that i can learn from and talk to</span><br />
+<span class="irc-date">[18:03]</span> <span class="irc-black">&lt;naeu&gt; who can show me stuff</span><br />
+<span class="irc-date">[18:03]</span> <span class="irc-black">&lt;melwin&gt; Time to find a new, emacs-savvy, GF, then?</span><br />
+<span class="irc-date">[18:03]</span> <span class="irc-black">&lt;naeu&gt; thing is, i use my trackpad all the time and it's just as fast as keyboard shortcuts as i don't even need to move my hands</span><br />
+<span class="irc-date">[18:04]</span> <span class="irc-black">&lt;naeu&gt; (well, only a little)</span><br />
+<span class="irc-date">[18:04]</span> <span class="irc-black">&lt;naeu&gt; haha</span><br />
+<span class="irc-date">[18:04]</span> <span class="irc-black">&lt;naeu&gt; that'll be the day!</span><br />
+<span class="irc-date">[18:04]</span> <span class="irc-black">&lt;melwin&gt; Was that what you meant?</span><br />
+<span class="irc-date">[18:04]</span> <span class="irc-black">&lt;melwin&gt; ;P</span><br />
+<span class="irc-date">[18:05]</span> <span class="irc-black">&lt;naeu&gt; haha</span><br />
+<span class="irc-date">[18:08]</span> <span class="irc-black">&lt;naeu&gt; i'm still on the edge between TM and emacs though</span><br />
+<span class="irc-date">[18:08]</span> <span class="irc-black">&lt;naeu&gt; so i haven't fully defected yet ;-)</span><br />
+<span class="irc-date">[18:09]</span> <span class="irc-black">&lt;naeu&gt; do you know if ioke defines something that references the current file name?</span><br />
+<span class="irc-date">[18:09]</span> <span class="irc-black">&lt;olabini&gt; naeu: if you use your trackpad, and its the same speed as keyboard shortcuts, you must be very slow with the keyboard. =)</span><br />
+<span class="irc-date">[18:09]</span> <span class="irc-black">&lt;naeu&gt; i am slow with the keyboard!</span><br />
+<span class="irc-date">[18:09]</span> <span class="irc-black">&lt;olabini&gt; I mean slow in the manner of 10 keys a minute</span><br />
+<span class="irc-date">[18:09]</span> <span class="irc-black">&lt;naeu&gt; ah ok, i'm faster than that</span><br />
+<span class="irc-date">[18:09]</span> <span class="irc-black">&lt;olabini&gt; naeu: yeah</span><br />
+<span class="irc-date">[18:09]</span> <span class="irc-black">&lt;martido&gt; naeu: Message defines a method called fileName ... that what you looking for?</span><br />
+<span class="irc-date">[18:09]</span> <span class="irc-black">&lt;olabini&gt; no, that's not it</span><br />
+<span class="irc-date">[18:10]</span> <span class="irc-black">&lt;olabini&gt; you want</span><br />
+<span class="irc-date">[18:10]</span> <span class="irc-black">&lt;olabini&gt; System currentFile</span><br />
+<span class="irc-date">[18:10]</span> <span class="irc-black">&lt;martido&gt; oh ... sounds a lot better ;)</span><br />
+<span class="irc-date">[18:10]</span> <span class="irc-black">&lt;naeu&gt; so to 'use' a file relative to the current file:</span><br />
+<span class="irc-date">[18:10]</span> <span class="irc-black">&lt;olabini&gt; mm.</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-black">&lt;naeu&gt; use("#{System currentFile}/../blah/foo")</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-black">&lt;olabini&gt; well. yeah.</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-black">&lt;olabini&gt; more or less</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-black">&lt;naeu&gt; ok</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-black">&lt;olabini&gt; there should possibly be a better way of doing that</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-black">&lt;olabini&gt; vic had a general proposal about use-ing of different resources that I liked</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-black">&lt;olabini&gt; might be interesting to be able to say:</span><br />
+<span class="irc-date">[18:12]</span> <span class="irc-black">&lt;olabini&gt; use relative("blah/foo")</span><br />
+<span class="irc-date">[18:12]</span> <span class="irc-black">&lt;olabini&gt; or something similar</span><br />
+<span class="irc-date">[18:12]</span> <span class="irc-black">&lt;naeu&gt; much nicer :-)</span><br />
+<span class="irc-date">[18:12]</span> <span class="irc-black">&lt;martido&gt; indeed</span><br />
+<span class="irc-date">[18:14]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[18:14]</span> <span class="irc-black">&lt;olabini&gt; I like it too</span><br />
+<span class="irc-date">[18:15]</span> <span class="irc-black">&lt;olabini&gt; so use without arguments can return something that can be scoped in different ways</span><br />
+<span class="irc-date">[18:15]</span> <span class="irc-black">&lt;olabini&gt; including a "relative" method</span><br />
+<span class="irc-date">[18:15]</span> <span class="irc-black">&lt;olabini&gt; nice</span><br />
+<span class="irc-date">[18:15]</span> <span class="irc-black">&lt;olabini&gt; but yeah, Sam, for now you're restricted to the above</span><br />
+<span class="irc-date">[18:15]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[18:15]</span> <span class="irc-black">&lt;naeu&gt; no worries</span><br />
+<span class="irc-date">[18:15]</span> <span class="irc-black">&lt;naeu&gt; i'm just quite happy to be in the position of wanting to break out into multiple files</span><br />
+<span class="irc-date">[18:16]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[18:16]</span> <span class="irc-black">&lt;olabini&gt; that's good to be able to do</span><br />
+<span class="irc-date">[18:16]</span> <span class="irc-black">&lt;olabini&gt; anyway,</span><br />
+<span class="irc-date">[18:16]</span> <span class="irc-black">&lt;olabini&gt; in most cases you want your files to be on the load path</span><br />
+<span class="irc-date">[18:16]</span> <span class="irc-black">&lt;olabini&gt; and then require relative to that point</span><br />
+<span class="irc-date">[18:16]</span> <span class="irc-black">&lt;olabini&gt; that's what I did with IKanServe for example</span><br />
+<span class="irc-date">[18:17]</span> <span class="irc-black">&lt;naeu&gt; how do i add dirs to the load path?</span><br />
+<span class="irc-date">[18:17]</span> <span class="irc-black">&lt;martido&gt; see you later folks</span><br />
+<span class="irc-date">[18:17]</span> <span class="irc-black">&lt;naeu&gt; martido: cheerio</span><br />
+<span class="irc-date">[18:17]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit ()</span><br />
+<span class="irc-date">[18:17]</span> <span class="irc-black">&lt;naeu&gt; for example, i have app/lib, app/spec/lib</span><br />
+<span class="irc-date">[18:18]</span> <span class="irc-black">&lt;olabini&gt; System loadPath &lt;&lt; "some/path"</span><br />
+<span class="irc-date">[18:18]</span> <span class="irc-black">&lt;olabini&gt; I think</span><br />
+<span class="irc-date">[18:18]</span> <span class="irc-black">&lt;olabini&gt; look in the system specs</span><br />
+<span class="irc-date">[18:18]</span> <span class="irc-black">&lt;olabini&gt; or use_spec</span><br />
+<span class="irc-date">[18:18]</span> <span class="irc-black">&lt;naeu&gt; use_spec?</span><br />
+<span class="irc-date">[18:19]</span> <span class="irc-black">&lt;olabini&gt; test/use_spec.ik</span><br />
+<span class="irc-date">[18:19]</span> <span class="irc-black">&lt;olabini&gt; whoops</span><br />
+<span class="irc-date">[18:19]</span> <span class="irc-black">&lt;olabini&gt; that's</span><br />
+<span class="irc-date">[18:19]</span> <span class="irc-black">&lt;olabini&gt; test/default_behavior_use_spec.ik</span><br />
+<span class="irc-date">[18:20]</span> <span class="irc-black">&lt;naeu&gt; where are the cells val and val2 defined?</span><br />
+<span class="irc-date">[18:21]</span> <span class="irc-black">&lt;olabini&gt; in the files that "use" drags in</span><br />
+<span class="irc-date">[18:21]</span> <span class="irc-black">&lt;olabini&gt; in test/load1.ik test/load2.ik etc</span><br />
+<span class="irc-date">[18:22]</span> <span class="irc-black">&lt;naeu&gt; ah ok</span><br />
+<span class="irc-date">[18:22]</span> <span class="irc-black">&lt;naeu&gt; makes complete sense</span><br />
+<span class="irc-date">[18:22]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[18:22]</span> <span class="irc-black">&lt;olabini&gt; good</span><br />
+<span class="irc-date">[18:31]</span> <span class="irc-black">&lt;naeu&gt; olabini: why would it say this:</span><br />
+<span class="irc-date">[18:31]</span> <span class="irc-black">&lt;naeu&gt; *** - couldn't load module '/Users/sam/Development/tik/spec/lib/../spec_helper.ik' (Condition Error Load)</span><br />
+<span class="irc-date">[18:31]</span> <span class="irc-black">&lt;naeu&gt; when that file does exist</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;olabini&gt; hmm.</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;olabini&gt; strange</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;olabini&gt; don't know why.</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;olabini&gt; where is the file?</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-black">&lt;naeu&gt; .</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-black">&lt;naeu&gt; |-- doc</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-black">&lt;naeu&gt; |   `-- example_template.tik</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-black">&lt;naeu&gt; |-- lib</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-black">&lt;naeu&gt; |   |-- tik.ik</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-black">&lt;naeu&gt; |   `-- tik_source.ik</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-black">&lt;naeu&gt; `-- spec</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-black">&lt;naeu&gt;     |-- lib</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-black">&lt;naeu&gt;     |   |-- tik_source_spec.ik</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-black">&lt;naeu&gt;     |   `-- tik_spec.ik</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-green">* naeu was kicked from #ioke by IokeHurricane</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-green">* naeu (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:45]</span> <span class="irc-black">&lt;olabini&gt; I don't see the spec_helper.ik</span><br />
+<span class="irc-date">[18:45]</span> <span class="irc-black">&lt;olabini&gt; ...</span><br />
+<span class="irc-date">[18:45]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[18:45]</span> <span class="irc-black">&lt;naeu&gt; nice assumption</span><br />
+<span class="irc-date">[18:46]</span> <span class="irc-black">&lt;naeu&gt; it's there</span><br />
+<span class="irc-date">[18:46]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[18:46]</span> <span class="irc-black">&lt;olabini&gt; in whch directory?</span><br />
+<span class="irc-date">[18:46]</span> <span class="irc-black">&lt;naeu&gt; but IokeHurricane booted me before i could write it</span><br />
+<span class="irc-date">[18:46]</span> <span class="irc-black">&lt;naeu&gt; `-- spec</span><br />
+<span class="irc-date">[18:46]</span> <span class="irc-black">&lt;naeu&gt;     |-- lib</span><br />
+<span class="irc-date">[18:46]</span> <span class="irc-black">&lt;naeu&gt;     |   |-- tik_source_spec.ik</span><br />
+<span class="irc-date">[18:46]</span> <span class="irc-black">&lt;naeu&gt;     |   `-- tik_spec.ik</span><br />
+<span class="irc-date">[18:46]</span> <span class="irc-black">&lt;naeu&gt;     `-- spec_helper.ik</span><br />
+<span class="irc-date">[18:46]</span> <span class="irc-black">&lt;olabini&gt; ah</span><br />
+<span class="irc-date">[18:46]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[18:46]</span> <span class="irc-black">&lt;olabini&gt; yeah.</span><br />
+<span class="irc-date">[18:46]</span> <span class="irc-black">&lt;olabini&gt; can't explain that</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-black">&lt;naeu&gt; and tik_source_spec.ik starts with: use(System currentDirectory + "/tik_source")</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-black">&lt;olabini&gt; you'll probably have to dig in and add some print statements to IokeSystem.java and see what happens</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-black">&lt;olabini&gt; that won't work</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-black">&lt;naeu&gt; hmm, no it doesn't</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-black">&lt;naeu&gt; wrong file</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-black">&lt;naeu&gt; use(System currentDirectory + "/../spec_helper.ik")</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-black">&lt;naeu&gt; that's what it starts with</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-black">&lt;olabini&gt; that should work</span><br />
+<span class="irc-date">[18:48]</span> <span class="irc-black">&lt;naeu&gt; hmmm</span><br />
+<span class="irc-date">[18:49]</span> <span class="irc-black">&lt;olabini&gt; so I guess you should find a good test case for it</span><br />
+<span class="irc-date">[18:50]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[18:50]</span> <span class="irc-black">&lt;naeu&gt; i need to eat</span><br />
+<span class="irc-date">[18:50]</span> <span class="irc-black">&lt;olabini&gt; have fun</span><br />
+<span class="irc-date">[18:50]</span> <span class="irc-black">&lt;naeu&gt; but until i split things up i had tik validating correctly</span><br />
+<span class="irc-date">[18:50]</span> <span class="irc-black">&lt;olabini&gt; ah</span><br />
+<span class="irc-date">[18:54]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://github.com/innovationfactory/tik/tree/master">http://github.com/innovationfactory/tik/tree/master</a></span><br />
+<span class="irc-date">[18:57]</span> <span class="irc-black">&lt;naeu&gt; bbl</span><br />
+<span class="irc-date">[18:59]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit ()</span><br />
+<span class="irc-date">[19:26]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[19:53]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:09]</span> <span class="irc-green">* donizetti (n=donizett@189.120.169.35) has joined #ioke</span><br />
+<span class="irc-date">[20:09]</span> <span class="irc-navy">* donizetti (n=donizett@189.120.169.35) Quit (Client Quit)</span><br />
+<span class="irc-date">[20:15]</span> <span class="irc-green">* zabbai (n=user@189.143.190.51) has joined #ioke</span><br />
+<span class="irc-date">[20:17]</span> <span class="irc-navy">* zabbai (n=user@189.143.190.51) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[20:22]</span> <span class="irc-green">* vborja (n=user@189.143.190.51) has joined #ioke</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-navy">* donizetti_ (n=donizett@189.120.169.35) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[21:20]</span> <span class="irc-green">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[21:38]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />

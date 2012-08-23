@@ -1,0 +1,40 @@
+<span class="irc-date">[0:23]</span> <span class="irc-navy">* vborja (n=vborja@minotaur.apache.org) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[1:11]</span> <span class="irc-navy">* caboom (n=caboom@77-221.static.ikomline.net) Quit ()</span><br />
+<span class="irc-date">[3:56]</span> <span class="irc-green">* bguthrie (n=bguthrie@224.sub-70-194-164.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[7:53]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[9:05]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[9:05]</span> <span class="irc-green">* caboom (n=caboom@77-221.static.ikomline.net) has joined #ioke</span><br />
+<span class="irc-date">[9:05]</span> <span class="irc-black">&lt;martido&gt; g'day</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-251-055-193.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[12:17]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[12:27]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit ()</span><br />
+<span class="irc-date">[12:39]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit ("Leaving")</span><br />
+<span class="irc-date">[12:43]</span> <span class="irc-black">&lt;martido&gt; hey all, needed a bit of List removal functionality lately so I've implemented something. I added a method "remove" to IokeList and wrote some specs: <a href="http://gist.github.com/67432.">http://gist.github.com/67432.</a> "Remove" behaves like "at", i.e. you can remove a single element or a range of elements from a list. What do you think?</span><br />
+<span class="irc-date">[12:44]</span> <span class="irc-black">&lt;martido&gt; actually I more or less copied the specs from the "at" and "[]" methods and adapted them a little bit</span><br />
+<span class="irc-date">[12:59]</span> <span class="irc-black">&lt;martido&gt; oops... sorry... without the dot... <a href="http://gist.github.com/67432">http://gist.github.com/67432</a></span><br />
+<span class="irc-date">[13:40]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[14:28]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[14:43]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-251-055-193.chello.nl) Quit ()</span><br />
+<span class="irc-date">[15:38]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[17:30]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has left #ioke</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-navy">* bguthrie (n=bguthrie@224.sub-70-194-164.myvzw.com) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-160.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:20]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-160.vc-graz.ac.at) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[18:23]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-23.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:51]</span> <span class="irc-green">* bguthrie (n=bguthrie@75.40.149.74) has joined #ioke</span><br />
+<span class="irc-date">[19:13]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[19:32]</span> <span class="irc-green">* martido (n=martin@dslb-088-067-182-176.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[19:36]</span> <span class="irc-green">* martido (n=martin@dslb-088-067-182-176.pools.arcor-ip.net) has left #ioke</span><br />
+<span class="irc-date">[20:02]</span> <span class="irc-green">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:03]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[21:42]</span> <span class="irc-navy">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 54 (Connection reset by peer))</span><br />
+<span class="irc-date">[21:43]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[21:58]</span> <span class="irc-navy">* bguthrie (n=bguthrie@75.40.149.74) Quit ()</span><br />
+<span class="irc-date">[22:05]</span> <span class="irc-green">* k2 (n=kar8nga@a-27.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[22:06]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-23.vc-graz.ac.at) Quit (Nick collision from services.)</span><br />
+<span class="irc-date">[22:06]</span> <span class="irc-green">* k2 is now known as kar8nga</span><br />
+<span class="irc-date">[22:31]</span> <span class="irc-green">* bguthrie (n=bguthrie@75.40.149.74) has joined #ioke</span><br />
+<span class="irc-date">[22:48]</span> <span class="irc-navy">* bguthrie (n=bguthrie@75.40.149.74) Quit ()</span><br />
+<span class="irc-date">[23:02]</span> <span class="irc-green">* bguthrie (n=bguthrie@75.40.149.74) has joined #ioke</span><br />
+<span class="irc-date">[23:12]</span> <span class="irc-navy">* bguthrie (n=bguthrie@75.40.149.74) Quit ()</span><br />
+<span class="irc-date">[23:20]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />

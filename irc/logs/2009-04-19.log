@@ -1,0 +1,245 @@
+<span class="irc-date">[0:06]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[2:45]</span> <span class="irc-green">* bguthrie (n=bguthrie@16.sub-75-206-140.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[4:30]</span> <span class="irc-navy">* bguthrie (n=bguthrie@16.sub-75-206-140.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[4:52]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[8:10]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:42]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-green">* olabini (n=ola@64.208.192.130) has joined #ioke</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[11:09]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[12:25]</span> <span class="irc-navy">* olabini (n=ola@64.208.192.130) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[15:35]</span> <span class="irc-green">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[15:35]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[16:56]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[17:02]</span> <span class="irc-navy">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[17:07]</span> <span class="irc-black">&lt;naeu&gt; melwin: are you about?</span><br />
+<span class="irc-date">[17:07]</span> <span class="irc-black">&lt;melwin&gt; Yah?</span><br />
+<span class="irc-date">[17:07]</span> <span class="irc-black">&lt;melwin&gt; Doing timesheets... Whee!</span><br />
+<span class="irc-date">[17:10]</span> <span class="irc-black">&lt;melwin&gt; naeu: 'sup? :)</span><br />
+<span class="irc-date">[17:11]</span> <span class="irc-black">&lt;naeu&gt; wow</span><br />
+<span class="irc-date">[17:11]</span> <span class="irc-black">&lt;naeu&gt; sounds like fun</span><br />
+<span class="irc-date">[17:11]</span> <span class="irc-black">&lt;melwin&gt; Super...</span><br />
+<span class="irc-date">[17:12]</span> <span class="irc-black">&lt;naeu&gt; haha</span><br />
+<span class="irc-date">[17:12]</span> <span class="irc-black">&lt;naeu&gt; I'm currently working on adding a camelCase cell to Text</span><br />
+<span class="irc-date">[17:12]</span> <span class="irc-black">&lt;naeu&gt; I'm going to implement it in pure Ioke</span><br />
+<span class="irc-date">[17:13]</span> <span class="irc-black">&lt;naeu&gt; but I was wondering if I had to do anything w.r.t. type checking</span><br />
+<span class="irc-date">[17:13]</span> <span class="irc-black">&lt;naeu&gt; Text should checkReceiverTypeOn(:camelCase)</span><br />
+<span class="irc-date">[17:15]</span> <span class="irc-black">&lt;melwin&gt; Hmmm... Lemme think a sec....</span><br />
+<span class="irc-date">[17:16]</span> <span class="irc-black">&lt;melwin&gt; No... I don't see why you need to add it... If someone takes camelCase and sets it on another object the code in camelCase will just fail with some other Ioke error, which should be fine.</span><br />
+<span class="irc-date">[17:17]</span> <span class="irc-black">&lt;melwin&gt; When I last checked no Ioke methods did typechecking that was tested with checkReceiverTypeOn....</span><br />
+<span class="irc-date">[17:17]</span> <span class="irc-black">&lt;melwin&gt; I mean native Ioke methods.</span><br />
+<span class="irc-date">[17:17]</span> <span class="irc-black">&lt;naeu&gt; cool</span><br />
+<span class="irc-date">[17:17]</span> <span class="irc-black">&lt;melwin&gt; They just fail with NoSuchCell or similar if the receiver doesn't provide what is necessary.</span><br />
+<span class="irc-date">[17:18]</span> <span class="irc-black">&lt;naeu&gt; I guess the tests should have some way of specifying that the cell is 'none-native'</span><br />
+<span class="irc-date">[17:18]</span> <span class="irc-black">&lt;melwin&gt; Which is a handled Ioke error, unlike the ClassCastException we got from the java methods.</span><br />
+<span class="irc-date">[17:18]</span> <span class="irc-black">&lt;melwin&gt; Hmmm...</span><br />
+<span class="irc-date">[17:18]</span> <span class="irc-black">&lt;naeu&gt; because what we're saying here is that none-native cells need to have special tests</span><br />
+<span class="irc-date">[17:19]</span> <span class="irc-black">&lt;melwin&gt; I guess the camelCase method could check if receiver mimics Text and signal appropriate error if not... Unless you want it to try to turn the receiver to a text first.</span><br />
+<span class="irc-date">[17:21]</span> <span class="irc-black">&lt;melwin&gt; What was the policy on implicit conversions? Can't remember how Ola wanted it.</span><br />
+<span class="irc-date">[17:21]</span> <span class="irc-black">&lt;naeu&gt; i'm not aware of a conversation on implicit conversions</span><br />
+<span class="irc-date">[17:21]</span> <span class="irc-black">&lt;melwin&gt; Conversation? :]</span><br />
+<span class="irc-date">[17:21]</span> <span class="irc-black">&lt;melwin&gt; Ah, hehe...</span><br />
+<span class="irc-date">[17:21]</span> <span class="irc-black">&lt;naeu&gt; get some glasses ;-)</span><br />
+<span class="irc-date">[17:21]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[17:22]</span> <span class="irc-black">&lt;naeu&gt; oh, and what do you think of this:</span><br />
+<span class="irc-date">[17:22]</span> <span class="irc-black">&lt;naeu&gt; "hi there" camelCase ;=&gt; "HiThere"</span><br />
+<span class="irc-date">[17:22]</span> <span class="irc-black">&lt;naeu&gt; "hi there" camelCase(:lower) ;=&gt; "hiThere"</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-black">&lt;melwin&gt; camelCase, pascalCase</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-black">&lt;melwin&gt; :]</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-black">&lt;naeu&gt; "hi there" camelCase(:upper) ;=&gt; "HiThere"</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-black">&lt;naeu&gt; actually I also added the following synonym:</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-black">&lt;naeu&gt; "hi there" mixedCase ;=&gt; "hiThere"</span><br />
+<span class="irc-date">[17:24]</span> <span class="irc-black">&lt;melwin&gt; wikiCase</span><br />
+<span class="irc-date">[17:24]</span> <span class="irc-black">&lt;melwin&gt; "hi there" wikify</span><br />
+<span class="irc-date">[17:24]</span> <span class="irc-black">&lt;melwin&gt; ;P</span><br />
+<span class="irc-date">[17:24]</span> <span class="irc-black">&lt;naeu&gt; haha</span><br />
+<span class="irc-date">[17:24]</span> <span class="irc-black">&lt;melwin&gt; Hmm... Those keywords...</span><br />
+<span class="irc-date">[17:25]</span> <span class="irc-black">&lt;melwin&gt; "hi there" camelCase ;=&gt; "hiThere"</span><br />
+<span class="irc-date">[17:25]</span> <span class="irc-black">&lt;naeu&gt; "hi there" clownify ;=&gt; "hI THerE"</span><br />
+<span class="irc-date">[17:25]</span> <span class="irc-black">&lt;melwin&gt; "hi there" pascalCase ;=&gt; "HiThere"</span><br />
+<span class="irc-date">[17:25]</span> <span class="irc-black">&lt;naeu&gt; I'm not sure everyone knows what pascalCase is</span><br />
+<span class="irc-date">[17:25]</span> <span class="irc-black">&lt;melwin&gt; "hi there" l33tC4s3 ;=&gt; "h1 th3r3"</span><br />
+<span class="irc-date">[17:25]</span> <span class="irc-black">&lt;naeu&gt; and looking at wikipedia, the article describes camelCase as starting with a capital</span><br />
+<span class="irc-date">[17:26]</span> <span class="irc-black">&lt;melwin&gt; Yeah... I think you're right. And people use different definitions.</span><br />
+<span class="irc-date">[17:26]</span> <span class="irc-black">&lt;melwin&gt; Some people and organizations use the term camel case only for the latter, and refer to upper camel case as Pascal case.</span><br />
+<span class="irc-date">[17:27]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://en.wikipedia.org/wiki/CamelCase">http://en.wikipedia.org/wiki/CamelCase</a></span><br />
+<span class="irc-date">[17:27]</span> <span class="irc-black">&lt;melwin&gt; Yes, my last sentence was from that page... :P</span><br />
+<span class="irc-date">[17:27]</span> <span class="irc-black">&lt;naeu&gt; NerdCaps</span><br />
+<span class="irc-date">[17:28]</span> <span class="irc-black">&lt;melwin&gt; How about:</span><br />
+<span class="irc-date">[17:28]</span> <span class="irc-black">&lt;melwin&gt; "hi there" camelCase ;=&gt; "HiThere"</span><br />
+<span class="irc-date">[17:28]</span> <span class="irc-black">&lt;naeu&gt; which is why I thought it nice to add :upper and :lower options</span><br />
+<span class="irc-date">[17:28]</span> <span class="irc-black">&lt;naeu&gt; where :upper is the default</span><br />
+<span class="irc-date">[17:28]</span> <span class="irc-black">&lt;melwin&gt; "hi there" dromedaryCase ;=&gt; "hiThere"   -- only one hump</span><br />
+<span class="irc-date">[17:28]</span> <span class="irc-black">&lt;naeu&gt; haha</span><br />
+<span class="irc-date">[17:29]</span> <span class="irc-black">&lt;naeu&gt; "hi there you" dromedaryCase ;=&gt; "hiThereyou"</span><br />
+<span class="irc-date">[17:29]</span> <span class="irc-black">&lt;melwin&gt; Hahah, yeah.</span><br />
+<span class="irc-date">[17:29]</span> <span class="irc-black">&lt;melwin&gt; Dude, I dunno.</span><br />
+<span class="irc-date">[17:29]</span> <span class="irc-black">&lt;melwin&gt; upperMixedCase lowerMixedCase</span><br />
+<span class="irc-date">[17:29]</span> <span class="irc-black">&lt;naeu&gt; what do you think about the concept of adding the paremeter :upper and :lower</span><br />
+<span class="irc-date">[17:29]</span> <span class="irc-black">&lt;naeu&gt; i'm not so keen on it</span><br />
+<span class="irc-date">[17:30]</span> <span class="irc-black">&lt;melwin&gt; That's what I'm not so sure about.</span><br />
+<span class="irc-date">[17:30]</span> <span class="irc-black">&lt;naeu&gt; yeah, I thought about upperCamelCase</span><br />
+<span class="irc-date">[17:30]</span> <span class="irc-black">&lt;melwin&gt; Something for Ola to take a philosophical stance on.</span><br />
+<span class="irc-date">[17:30]</span> <span class="irc-black">&lt;naeu&gt; and lowerCamelCase</span><br />
+<span class="irc-date">[17:30]</span> <span class="irc-black">&lt;melwin&gt; Yeah.</span><br />
+<span class="irc-date">[17:30]</span> <span class="irc-black">&lt;naeu&gt; it just seemed pretty verbose</span><br />
+<span class="irc-date">[17:30]</span> <span class="irc-black">&lt;melwin&gt; But in that case (pun intended) I would prefer mixedCase</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;naeu&gt; but for me, mixedCase could mean:</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;naeu&gt; "sam aaron" mixedCase ;=&gt; "SaM AaRoN"</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;melwin&gt; Really?</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;melwin&gt; Ok... :]</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;naeu&gt; yep</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;naeu&gt; it's not specifying the units to be mixed</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;melwin&gt; medialCapitals</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;naeu&gt; haha</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;melwin&gt; (from Wikipedia)</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;melwin&gt; Ok, in that case I think your lower and upperCamelCase sounds best to me.</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;melwin&gt; But it's an interesting question if the main man would prefer keywords instead.</span><br />
+<span class="irc-date">[17:34]</span> <span class="irc-black">&lt;naeu&gt; yeah, exactly</span><br />
+<span class="irc-date">[17:34]</span> <span class="irc-black">&lt;naeu&gt; well, i'll implement them</span><br />
+<span class="irc-date">[17:34]</span> <span class="irc-black">&lt;naeu&gt; then we can discuss the names</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;naeu&gt; it's just that an implementation would be useful for my twitter json feed parser</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;naeu&gt; in_reply_to_screen_name</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;naeu&gt; needs to be a represented by the cell</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;naeu&gt; inReplyToScreenName</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;naeu&gt; for it to be idiomatic Ioke</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;naeu&gt; (which is still something I think is a shame as I much prefer the underscored version for readability)</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;melwin&gt; Cool.</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;melwin&gt; Gotta check that parser of yours.</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;naeu&gt; by the way, my json parser is shit-slow</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;naeu&gt; ccrrraaaazzzy slow</span><br />
+<span class="irc-date">[17:37]</span> <span class="irc-black">&lt;melwin&gt; Tried profiling it?</span><br />
+<span class="irc-date">[17:37]</span> <span class="irc-black">&lt;naeu&gt; nope</span><br />
+<span class="irc-date">[17:38]</span> <span class="irc-black">&lt;naeu&gt; i wouldn't know how to do that</span><br />
+<span class="irc-date">[17:38]</span> <span class="irc-black">&lt;melwin&gt; It was pretty simple loading Ioke in Netbeans and just running it in profiling mode.</span><br />
+<span class="irc-date">[17:38]</span> <span class="irc-black">&lt;naeu&gt; checkout this: <a href="http://github.com/innovationfactory/tweetik/tree/master">http://github.com/innovationfactory/tweetik/tree/master</a></span><br />
+<span class="irc-date">[17:38]</span> <span class="irc-black">&lt;naeu&gt; run git submodule init and update</span><br />
+<span class="irc-date">[17:38]</span> <span class="irc-black">&lt;naeu&gt; and then ispec spec</span><br />
+<span class="irc-date">[17:39]</span> <span class="irc-black">&lt;melwin&gt; I'm no NB user, but the built in profiling support is pretty ok.</span><br />
+<span class="irc-date">[17:39]</span> <span class="irc-black">&lt;naeu&gt; see how long it takes to parse the fixture and print it out ;-)</span><br />
+<span class="irc-date">[17:40]</span> <span class="irc-black">&lt;melwin&gt; Hang on. What should I do? clone that repository?</span><br />
+<span class="irc-date">[17:40]</span> <span class="irc-black">&lt;naeu&gt; yep</span><br />
+<span class="irc-date">[17:40]</span> <span class="irc-black">&lt;naeu&gt; then for it to work you need to pull in Jikson, the JSON parser</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;melwin&gt; Ok.</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;naeu&gt; which is linked as a submodule</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;naeu&gt; so once you've cloned it</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;naeu&gt; just cd into the dir and type</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;melwin&gt; Ok, updating submodule now.</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;naeu&gt; git submodule init</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;naeu&gt; and</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;melwin&gt; Got it.</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;naeu&gt; git submodule update</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;naeu&gt; smashing :-)</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;naeu&gt; then just issue:</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;naeu&gt; ispec spec</span><br />
+<span class="irc-date">[17:42]</span> <span class="irc-black">&lt;naeu&gt; how long does it take on your box?</span><br />
+<span class="irc-date">[17:42]</span> <span class="irc-black">&lt;melwin&gt; Hang on...</span><br />
+<span class="irc-date">[17:42]</span> <span class="irc-black">&lt;naeu&gt; slow coach ;-)</span><br />
+<span class="irc-date">[17:43]</span> <span class="irc-black">&lt;melwin&gt; Gotta pull and build ioke... :]</span><br />
+<span class="irc-date">[17:43]</span> <span class="irc-black">&lt;naeu&gt; haha</span><br />
+<span class="irc-date">[17:43]</span> <span class="irc-black">&lt;naeu&gt; sure</span><br />
+<span class="irc-date">[17:43]</span> <span class="irc-black">&lt;naeu&gt; ah crap</span><br />
+<span class="irc-date">[17:43]</span> <span class="irc-black">&lt;naeu&gt; hmmm</span><br />
+<span class="irc-date">[17:43]</span> <span class="irc-black">&lt;naeu&gt; i think it should work</span><br />
+<span class="irc-date">[17:44]</span> <span class="irc-black">&lt;melwin&gt; Uhhh... Error...</span><br />
+<span class="irc-date">[17:44]</span> <span class="irc-black">&lt;melwin&gt; Condition Error NoSuchCell in 'reading a user timeline should be possible to read in the fixture'</span><br />
+<span class="irc-date">[17:44]</span> <span class="irc-black">&lt;melwin&gt; couldn't find cell 'eval' on 'Jikson_0x12F0A33' (Condition Error NoSuchCell)</span><br />
+<span class="irc-date">[17:44]</span> <span class="irc-black">&lt;melwin&gt; Something I did/didn't do?</span><br />
+<span class="irc-date">[17:44]</span> <span class="irc-black">&lt;naeu&gt; yeah, i was just about to warn you</span><br />
+<span class="irc-date">[17:45]</span> <span class="irc-black">&lt;naeu&gt; I added (with Ola's help) Origin#eval</span><br />
+<span class="irc-date">[17:45]</span> <span class="irc-black">&lt;melwin&gt; Well, that took 0.210 seconds on my box. :]</span><br />
+<span class="irc-date">[17:45]</span> <span class="irc-black">&lt;naeu&gt; merge this with your current branch: <a href="http://github.com/innovationfactory/ioke/tree/eval">http://github.com/innovationfactory/ioke/tree/eval</a></span><br />
+<span class="irc-date">[17:45]</span> <span class="irc-black">&lt;melwin&gt; Uhhh... Stand by... :]</span><br />
+<span class="irc-date">[17:46]</span> <span class="irc-black">&lt;naeu&gt; haha</span><br />
+<span class="irc-date">[17:46]</span> <span class="irc-black">&lt;naeu&gt; standing... by....</span><br />
+<span class="irc-date">[17:48]</span> <span class="irc-black">&lt;melwin&gt; Ok, got it merged...</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;melwin&gt; Finished in 13.338 seconds</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;naeu&gt; good lad</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;naeu&gt; 13 seconds!</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;naeu&gt; jesus</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;naeu&gt; that's insane ;-)</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;melwin&gt; What do you get?</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;naeu&gt; 7</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;melwin&gt; ...</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;naeu&gt; I wonder how much memory it needs....</span><br />
+<span class="irc-date">[17:50]</span> <span class="irc-black">&lt;naeu&gt; I'm on a 2.5GHz Intel Core 2 Duo MacBook Pro with 4GB of 667 MHz DDR2 SDRAM</span><br />
+<span class="irc-date">[17:51]</span> <span class="irc-black">&lt;melwin&gt; Think my box is about the exact same, except 2.13GHz CPU... And Linux.</span><br />
+<span class="irc-date">[17:52]</span> <span class="irc-black">&lt;naeu&gt; weird</span><br />
+<span class="irc-date">[17:52]</span> <span class="irc-black">&lt;melwin&gt; Actually, I've had this issue before that when I run tests they take twice as long as they should... Not sure if that's whats happening here...</span><br />
+<span class="irc-date">[17:53]</span> <span class="irc-black">&lt;naeu&gt; ?? java -version</span><br />
+<span class="irc-date">[17:53]</span> <span class="irc-black">&lt;naeu&gt; java version "1.6.0_07"</span><br />
+<span class="irc-date">[17:53]</span> <span class="irc-black">&lt;naeu&gt; Java(TM) SE Runtime Environment (build 1.6.0_07-b06-153)</span><br />
+<span class="irc-date">[17:53]</span> <span class="irc-black">&lt;naeu&gt; Java HotSpot(TM) 64-Bit Server VM (build 1.6.0_07-b06-57, mixed mode)</span><br />
+<span class="irc-date">[17:53]</span> <span class="irc-black">&lt;melwin&gt; How long for the whole ispec in Ioke?</span><br />
+<span class="irc-date">[17:55]</span> <span class="irc-black">&lt;naeu&gt; 1 minute 28 seconds</span><br />
+<span class="irc-date">[17:56]</span> <span class="irc-black">&lt;melwin&gt; Ehh... 44 seconds when I do ispec test and 22 seconds for ispec during full build with ant!</span><br />
+<span class="irc-date">[17:57]</span> <span class="irc-black">&lt;melwin&gt; So there is something funky going on with the timing for me when I run tests...</span><br />
+<span class="irc-date">[17:57]</span> <span class="irc-black">&lt;naeu&gt; hmmmm</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;naeu&gt; fishy</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;melwin&gt; How do you run ispec with verbose output?</span><br />
+<span class="irc-date">[18:00]</span> <span class="irc-black">&lt;naeu&gt; hmmm, not sure</span><br />
+<span class="irc-date">[18:00]</span> <span class="irc-black">&lt;naeu&gt; it's -cfs for rspec</span><br />
+<span class="irc-date">[18:00]</span> <span class="irc-black">&lt;melwin&gt; Ah, -fs</span><br />
+<span class="irc-date">[18:01]</span> <span class="irc-black">&lt;naeu&gt; cool</span><br />
+<span class="irc-date">[18:02]</span> <span class="irc-black">&lt;naeu&gt; haha ioke is such a slow language as currently implemented ;-)</span><br />
+<span class="irc-date">[18:02]</span> <span class="irc-black">&lt;naeu&gt; it's almost funny</span><br />
+<span class="irc-date">[18:03]</span> <span class="irc-black">&lt;melwin&gt; Aha... I found the reason...</span><br />
+<span class="irc-date">[18:03]</span> <span class="irc-black">&lt;naeu&gt; oooh...</span><br />
+<span class="irc-date">[18:03]</span> <span class="irc-black">&lt;naeu&gt; share, share</span><br />
+<span class="irc-date">[18:04]</span> <span class="irc-black">&lt;melwin&gt; The ioke sh script sets the VM to -client. This makes ispec run in some 40 seconds on my box... Setting it to -server instead (which seems to be what the ant-forked test VM is) makes it run in 22 seconds, but with a bit longer startup...</span><br />
+<span class="irc-date">[18:05]</span> <span class="irc-black">&lt;melwin&gt; Try switching to -server in your ioke script and see what you get.</span><br />
+<span class="irc-date">[18:06]</span> <span class="irc-black">&lt;melwin&gt; Finished in 23.740 seconds</span><br />
+<span class="irc-date">[18:06]</span> <span class="irc-black">&lt;melwin&gt; 3677 examples, 0 failures</span><br />
+<span class="irc-date">[18:06]</span> <span class="irc-black">&lt;melwin&gt; PATH=$PATH:/data/dev/ioke.olabini/bin ioke bin/ispec test -fs  36.19s user 0.76s system 113% cpu 32.690 total</span><br />
+<span class="irc-date">[18:06]</span> <span class="irc-black">&lt;melwin&gt; That's for client.</span><br />
+<span class="irc-date">[18:06]</span> <span class="irc-black">&lt;melwin&gt; Sorry I mean server.</span><br />
+<span class="irc-date">[18:07]</span> <span class="irc-black">&lt;melwin&gt; Finished in 41.871 seconds</span><br />
+<span class="irc-date">[18:07]</span> <span class="irc-black">&lt;melwin&gt; 3677 examples, 0 failures</span><br />
+<span class="irc-date">[18:07]</span> <span class="irc-black">&lt;melwin&gt; PATH=$PATH:/data/dev/ioke.olabini/bin ioke bin/ispec test -fs  50.21s user 0.60s system 96% cpu 52.675 total</span><br />
+<span class="irc-date">[18:07]</span> <span class="irc-black">&lt;melwin&gt; That's for -client....</span><br />
+<span class="irc-date">[18:07]</span> <span class="irc-black">&lt;melwin&gt; A bit of a difference actually...</span><br />
+<span class="irc-date">[18:07]</span> <span class="irc-black">&lt;naeu&gt; hmm, mine is super slow</span><br />
+<span class="irc-date">[18:07]</span> <span class="irc-black">&lt;naeu&gt; still going...</span><br />
+<span class="irc-date">[18:08]</span> <span class="irc-black">&lt;naeu&gt; if you do a ps, what does it tell you about the process?</span><br />
+<span class="irc-date">[18:08]</span> <span class="irc-black">&lt;naeu&gt; mine says:</span><br />
+<span class="irc-date">[18:08]</span> <span class="irc-black">&lt;naeu&gt;  7488 ttys003    1:51.31 /usr/bin/java -server -Dioke.memory.max=128m -Dioke.stack.max=512k -Xmx128m -Xss512k -Xbootclasspath/a:/Users/sam/Development/ioke/lib/ioke.jar -class</span><br />
+<span class="irc-date">[18:08]</span> <span class="irc-black">&lt;melwin&gt; Ah, with -server in ioke sh script I get this for your parser: Finished in 7.456 seconds</span><br />
+<span class="irc-date">[18:09]</span> <span class="irc-black">&lt;melwin&gt; java -server -Dioke.memory.max=128m -Dioke.stack.max=512k -Xmx128m -Xss512k -Xbootclasspath/a:/data/dev/ioke.olabini/lib/ioke.jar -classpath : -Dioke.home=/data/dev/ioke.olabini -Dioke.lib=/data/dev/ioke.olabini/lib -Dioke.script=ioke ioke.lang.Main /data/dev/ioke.olabini/bin/ispec test</span><br />
+<span class="irc-date">[18:09]</span> <span class="irc-black">&lt;naeu&gt; which jvm are you running?</span><br />
+<span class="irc-date">[18:09]</span> <span class="irc-black">&lt;melwin&gt; java version "1.6.0_13"</span><br />
+<span class="irc-date">[18:09]</span> <span class="irc-black">&lt;melwin&gt; Java(TM) SE Runtime Environment (build 1.6.0_13-b03)</span><br />
+<span class="irc-date">[18:09]</span> <span class="irc-black">&lt;melwin&gt; Java HotSpot(TM) Server VM (build 11.3-b02, mixed mode)</span><br />
+<span class="irc-date">[18:10]</span> <span class="irc-black">&lt;naeu&gt; hmm</span><br />
+<span class="irc-date">[18:10]</span> <span class="irc-black">&lt;naeu&gt; i'm 1.6.0_07</span><br />
+<span class="irc-date">[18:10]</span> <span class="irc-black">&lt;naeu&gt; and those specs are still running...</span><br />
+<span class="irc-date">[18:10]</span> <span class="irc-black">&lt;naeu&gt; weird shit</span><br />
+<span class="irc-date">[18:10]</span> <span class="irc-black">&lt;melwin&gt; Really? Geez...</span><br />
+<span class="irc-date">[18:10]</span> <span class="irc-black">&lt;melwin&gt; It's clearly faster with -server for me.</span><br />
+<span class="irc-date">[18:10]</span> <span class="irc-black">&lt;melwin&gt; Full ioke ispec in 20 seconds.</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-black">&lt;naeu&gt; nice</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-black">&lt;melwin&gt; Dude, gotta get going with dinner.</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-black">&lt;naeu&gt; yeah, me too</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-black">&lt;naeu&gt; would be interested in your feedback on Jikson</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-black">&lt;naeu&gt; I've never really done anything like this before</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-black">&lt;melwin&gt; I'll take a look later tonight.</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-black">&lt;naeu&gt; so it's bound to be super crude</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-black">&lt;melwin&gt; See if I remember any Ioke.</span><br />
+<span class="irc-date">[18:12]</span> <span class="irc-black">&lt;naeu&gt; there's nothing tricksy in it</span><br />
+<span class="irc-date">[18:12]</span> <span class="irc-black">&lt;naeu&gt; it's just regular expressions and TextScanner</span><br />
+<span class="irc-date">[18:12]</span> <span class="irc-black">&lt;melwin&gt; Seeing as you rejected my parser I'll give you some nasty feedback. ;P</span><br />
+<span class="irc-date">[18:12]</span> <span class="irc-black">&lt;naeu&gt; hahaha</span><br />
+<span class="irc-date">[18:12]</span> <span class="irc-black">&lt;naeu&gt; yours is a really nice solution</span><br />
+<span class="irc-date">[18:13]</span> <span class="irc-black">&lt;naeu&gt; I just fancied something that could also give error reports</span><br />
+<span class="irc-date">[18:13]</span> <span class="irc-black">&lt;naeu&gt; try feeding mine with some crap :-)</span><br />
+<span class="irc-date">[18:13]</span> <span class="irc-black">&lt;naeu&gt; but it would be interesting to see how much faster yours is than mine</span><br />
+<span class="irc-date">[18:32]</span> <span class="irc-black">&lt;melwin&gt; GF got home... :]</span><br />
+<span class="irc-date">[18:33]</span> <span class="irc-black">&lt;melwin&gt; Yes, of course you're right.</span><br />
+<span class="irc-date">[18:52]</span> <span class="irc-black">&lt;naeu&gt; how am i right?</span><br />
+<span class="irc-date">[18:53]</span> <span class="irc-black">&lt;naeu&gt; it's not often it happens...</span><br />
+<span class="irc-date">[18:57]</span> <span class="irc-black">&lt;melwin&gt; In that your parser is more suitable for real world use.</span><br />
+<span class="irc-date">[18:58]</span> <span class="irc-black">&lt;melwin&gt; Also - I think it's good that there are more "real" programs created in Ioke. It gives the community a base of code to relate to.</span><br />
+<span class="irc-date">[18:58]</span> <span class="irc-black">&lt;melwin&gt; So kudos to you.</span><br />
+<span class="irc-date">[19:14]</span> <span class="irc-black">&lt;naeu&gt; well, you're saying all this before looking at it ;-)</span><br />
+<span class="irc-date">[19:14]</span> <span class="irc-black">&lt;naeu&gt; it's probably a pile of tosh!</span><br />
+<span class="irc-date">[20:25]</span> <span class="irc-black">&lt;naeu&gt; melwin, but seriously, I'd love some structured criticism from you regarding Jikson - I'm still very much a beginner when it comes to actual programming, and I'm very keen to learn at every opportunity. Also, if Jikson is to serve some small part in the base of code the Ioke community relates to, it should be as shiny and idiomatic as possible :-)</span><br />
+<span class="irc-date">[21:20]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />

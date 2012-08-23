@@ -1,0 +1,133 @@
+<span class="irc-date">[6:14]</span> <span class="irc-navy">* Tsion (n=scott@botters/staff/tsion) Quit ("Lost terminal")</span><br />
+<span class="irc-date">[6:15]</span> <span class="irc-green">* Tsion (n=scott@216.65.175.101) has joined #ioke</span><br />
+<span class="irc-date">[6:16]</span> <span class="irc-navy">* Tsion (n=scott@botters/staff/tsion) Quit (Client Quit)</span><br />
+<span class="irc-date">[6:16]</span> <span class="irc-green">* Tsion (n=scott@216.65.175.101) has joined #ioke</span><br />
+<span class="irc-date">[7:08]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit ("Leaving")</span><br />
+<span class="irc-date">[7:11]</span> <span class="irc-navy">* olabini (n=ola@cust-IP-10.data.tre.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[7:19]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[7:29]</span> <span class="irc-green">* slava (n=slava@li13-154.members.linode.com) has joined #ioke</span><br />
+<span class="irc-date">[7:31]</span> <span class="irc-black">&lt;slava&gt; nice language</span><br />
+<span class="irc-date">[7:52]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:12]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[8:43]</span> <span class="irc-green">* naeu (n=sam@h253136.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:26]</span> <span class="irc-brick">* cv is snowed in today</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;naeu&gt; cv: I used to love being snowed in when I used to go to school :-)</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;cv&gt; first time it happened to me in london</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;cv&gt; i'm waiting for snowball warfare to commence soon</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;naeu&gt; you should be outside building snowmen!</span><br />
+<span class="irc-date">[10:05]</span> <span class="irc-black">&lt;cv&gt; should I add javassist (which is under the LGPL/MPL)</span><br />
+<span class="irc-date">[10:05]</span> <span class="irc-black">&lt;cv&gt; would there be a conflict in ioke somehow?</span><br />
+<span class="irc-date">[11:08]</span> <span class="irc-black">&lt;cv&gt; doesn't seem to be a problem -- adding it in</span><br />
+<span class="irc-date">[11:09]</span> <span class="irc-black">&lt;cv&gt; btw, i almost got foo = Java method(System.out.println("hello world!");) to work :D</span><br />
+<span class="irc-date">[11:44]</span> <span class="irc-black">&lt;cv&gt; the hardest problem so far has been figuring out what to do with the semicolon</span><br />
+<span class="irc-date">[13:36]</span> <span class="irc-navy">* naeu (n=sam@h253136.upc-h.chello.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-green">* naeu (n=sam@h253136.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[15:04]</span> <span class="irc-black">&lt;cv&gt; <a href="http://gist.github.com/56936">http://gist.github.com/56936</a> :D</span><br />
+<span class="irc-date">[15:04]</span> <span class="irc-black">&lt;cv&gt; not so happy with the interface for it just yet</span><br />
+<span class="irc-date">[15:05]</span> <span class="irc-black">&lt;cv&gt; but it was a lot easier than i thought -- javassist ROCKS!</span><br />
+<span class="irc-date">[15:29]</span> <span class="irc-green">* [azoic] (n=azoic@adsl-76-220-109-134.dsl.pltn13.sbcglobal.net) has joined #ioke</span><br />
+<span class="irc-date">[15:30]</span> <span class="irc-green">* [azoic] is now known as Guest63624</span><br />
+<span class="irc-date">[15:31]</span> <span class="irc-green">* Guest63624 is now known as [azoic]</span><br />
+<span class="irc-date">[15:48]</span> <span class="irc-green">* adakkak (n=adakkak@gres116.lis.illinois.edu) has joined #ioke</span><br />
+<span class="irc-date">[16:08]</span> <span class="irc-navy">* [azoic] (n=azoic@adsl-76-220-109-134.dsl.pltn13.sbcglobal.net) Quit ("leaving")</span><br />
+<span class="irc-date">[16:38]</span> <span class="irc-navy">* naeu (n=sam@h253136.upc-h.chello.nl) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[17:56]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[17:56]</span> <span class="irc-black">&lt;cv&gt; hey melwin!</span><br />
+<span class="irc-date">[17:57]</span> <span class="irc-black">&lt;melwin&gt; Hi ho!</span><br />
+<span class="irc-date">[17:57]</span> <span class="irc-brick">* melwin snickers.</span><br />
+<span class="irc-date">[17:57]</span> <span class="irc-black">&lt;melwin&gt; How's life?</span><br />
+<span class="irc-date">[17:58]</span> <span class="irc-brick">* melwin is starting to think cv has an on join trigger that greets people.</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;cv&gt; nope, just plain old manual typing over here</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;melwin&gt; :P</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;cv&gt; i've had too many bad experiences bot'ting myself :P</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;melwin&gt; Meeting with Roy for a coffee tomorrow.</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;cv&gt; singham?</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;melwin&gt; Hehehe - gone sentient on you?</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;melwin&gt; cv: Yeah - any pointers?</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;cv&gt; smarter than me sometimes, even :P</span><br />
+<span class="irc-date">[18:00]</span> <span class="irc-black">&lt;cv&gt; i guess the most important one would be "don't mention politics, unless you want the discussion to go that way..."</span><br />
+<span class="irc-date">[18:00]</span> <span class="irc-black">&lt;cv&gt; ...for the next few hours</span><br />
+<span class="irc-date">[18:00]</span> <span class="irc-black">&lt;melwin&gt; Hehe...</span><br />
+<span class="irc-date">[18:00]</span> <span class="irc-black">&lt;cv&gt; but other than that, don't worry, he's a great guy</span><br />
+<span class="irc-date">[18:01]</span> <span class="irc-black">&lt;melwin&gt; Seems like he has some really interesting ideas about how to run the company!</span><br />
+<span class="irc-date">[18:03]</span> <span class="irc-black">&lt;melwin&gt; Ola sent me the link about Roys experiment by Fowler.</span><br />
+<span class="irc-date">[18:14]</span> <span class="irc-black">&lt;slava&gt; hi guys</span><br />
+<span class="irc-date">[18:14]</span> <span class="irc-black">&lt;slava&gt; ioke is neat</span><br />
+<span class="irc-date">[18:18]</span> <span class="irc-black">&lt;cv&gt; hey slava</span><br />
+<span class="irc-date">[18:18]</span> <span class="irc-black">&lt;cv&gt; thanks :)</span><br />
+<span class="irc-date">[18:19]</span> <span class="irc-black">&lt;cv&gt; melwin: btw, check out this thing i'm working on right now <a href="http://gist.github.com/56936">http://gist.github.com/56936</a></span><br />
+<span class="irc-date">[18:20]</span> <span class="irc-black">&lt;slava&gt; i noticed the .ik init files are named so that the sorted order is the right load order</span><br />
+<span class="irc-date">[18:20]</span> <span class="irc-black">&lt;slava&gt; are there any plans to add some kind of automatic dependency system?</span><br />
+<span class="irc-date">[18:20]</span> <span class="irc-black">&lt;melwin&gt; cv: Ha! That's cool. :)</span><br />
+<span class="irc-date">[18:20]</span> <span class="irc-black">&lt;cv&gt; even cooler that it works ;D</span><br />
+<span class="irc-date">[18:20]</span> <span class="irc-black">&lt;melwin&gt; slava: Actually - the order is hard coded right now.</span><br />
+<span class="irc-date">[18:21]</span> <span class="irc-black">&lt;slava&gt; oh, i was confused i guess</span><br />
+<span class="irc-date">[18:21]</span> <span class="irc-black">&lt;slava&gt; you guys should add some kind of require/provide system</span><br />
+<span class="irc-date">[18:21]</span> <span class="irc-black">&lt;melwin&gt; slava: Well - I also thought it was read in sorted order, but it's just named to allow a human to determine order.</span><br />
+<span class="irc-date">[18:21]</span> <span class="irc-black">&lt;melwin&gt; cv: Really neat. Got that committed somewhere?</span><br />
+<span class="irc-date">[18:22]</span> <span class="irc-black">&lt;cv&gt; rebasing ang merging now</span><br />
+<span class="irc-date">[18:22]</span> <span class="irc-black">&lt;cv&gt; quite  few bugs still</span><br />
+<span class="irc-date">[18:22]</span> <span class="irc-black">&lt;slava&gt; i also have a minor design suggestion if anyone cares</span><br />
+<span class="irc-date">[18:23]</span> <span class="irc-black">&lt;slava&gt; since i did a jvm language in a past life and noticed you guys made a design decision which didn't scale, at least in my project</span><br />
+<span class="irc-date">[18:25]</span> <span class="irc-black">&lt;melwin&gt; slava: I suggest you take that with Ola. He's probably around later.</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-black">&lt;slava&gt; well, its nothing big, so I'll just throw it out now before I forget</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-black">&lt;slava&gt; in IokeList, for example, you register various methods that are visible from Ioke, using a typical Command pattern</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-black">&lt;slava&gt; and the methods do marshalling and unmarshalling for arguments</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-navy">* andreaja (n=sodoff@65.111.170.77) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-navy">* caboom (n=caboom@77-221.static.ikomline.net) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-navy">* HeMan (n=jimmy@193.12.106.19) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-black">&lt;slava&gt; this sort of creates boilerplate</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-black">&lt;slava&gt; its better to do all ioke -&gt; java calls via reflection and have a 'define primitive' primitive as your only exported primitive from the java side, if that makes sense</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-black">&lt;slava&gt; this has the added advantage that down the road a bytecode compiler could generate direct calls to your methods instead of working with command pattern objects in compiled code</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-green">* andreaja (n=sodoff@65.111.170.77) has joined #ioke</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-brown">-christel- [Global Notice] Hi all, It would appear one of our client servers just dropped off the face of the planet. We're looking into the issue and should hopefully have it back soon. Affected users just over 2,000. Apologies for the inconvenience and have a good day.</span><br />
+<span class="irc-date">[18:32]</span> <span class="irc-black">&lt;melwin&gt; slava: I still suggest you take that with Ola for a meaningful discussion as he has made all design choices and implemented 99.999% or so of all code. :)</span><br />
+<span class="irc-date">[18:32]</span> <span class="irc-black">&lt;slava&gt; sure</span><br />
+<span class="irc-date">[18:33]</span> <span class="irc-black">&lt;melwin&gt; As he's said himself - he's not cared at all about anything other than expressiveness, so there are bound to be some things that will need to be changed along the way.</span><br />
+<span class="irc-date">[18:33]</span> <span class="irc-black">&lt;slava&gt; oh, this isn't as much about performance as a minor refactoring that would clean up the java side of things</span><br />
+<span class="irc-date">[18:33]</span> <span class="irc-black">&lt;cv&gt; slava: so you would have a ioke [] point to ioke.lang.IokeList as a primitive? or straight through to java.util.List?</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;slava&gt; cv: I'm not familiar enough with the language ti answer that in an informed way</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;melwin&gt; slava: Did I mention performance? :)</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;slava&gt; i think ioke already has a very clean implementation.</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;slava&gt; i'm enjoying looking at it because its so different from what i'm used to</span><br />
+<span class="irc-date">[18:43]</span> <span class="irc-green">* HeMan (n=jimmy@193.12.106.19) has joined #ioke</span><br />
+<span class="irc-date">[18:43]</span> <span class="irc-green">* caboom (n=caboom@77-221.static.ikomline.net) has joined #ioke</span><br />
+<span class="irc-date">[18:51]</span> <span class="irc-navy">* caboom (n=caboom@77-221.static.ikomline.net) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[18:51]</span> <span class="irc-navy">* HeMan (n=jimmy@193.12.106.19) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[19:01]</span> <span class="irc-green">* HeMan (n=jimmy@193.12.106.19) has joined #ioke</span><br />
+<span class="irc-date">[19:01]</span> <span class="irc-green">* caboom (n=caboom@77-221.static.ikomline.net) has joined #ioke</span><br />
+<span class="irc-date">[19:04]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-232.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[19:17]</span> <span class="irc-navy">* caboom (n=caboom@77-221.static.ikomline.net) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[19:17]</span> <span class="irc-navy">* HeMan (n=jimmy@193.12.106.19) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[19:17]</span> <span class="irc-green">* HeMan (n=jimmy@193.12.106.19) has joined #ioke</span><br />
+<span class="irc-date">[19:17]</span> <span class="irc-green">* caboom (n=caboom@77-221.static.ikomline.net) has joined #ioke</span><br />
+<span class="irc-date">[19:22]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-232.vc-graz.ac.at) has left #ioke</span><br />
+<span class="irc-date">[19:23]</span> <span class="irc-green">* azoic (n=azoic@nat/sun/x-c7c583d96305a786) has left #ioke</span><br />
+<span class="irc-date">[19:23]</span> <span class="irc-green">* azoic (n=azoic@nat/sun/x-c297698408633d8d) has joined #ioke</span><br />
+<span class="irc-date">[19:29]</span> <span class="irc-navy">* caboom (n=caboom@77-221.static.ikomline.net) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[19:29]</span> <span class="irc-navy">* HeMan (n=jimmy@193.12.106.19) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[20:02]</span> <span class="irc-green">* olabini (n=ola@c-df4de155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[20:02]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[20:03]</span> <span class="irc-black">&lt;olabini&gt; slava: just peeping in. don't have time to stay so I'll just answer the point you made in your post</span><br />
+<span class="irc-date">[20:03]</span> <span class="irc-black">&lt;olabini&gt; or rather, in your earlier comments</span><br />
+<span class="irc-date">[20:04]</span> <span class="irc-black">&lt;olabini&gt; in theory, you're totally right. the problem is that most of the things that unpackage arguments are doing it in different ways. the Java implemented methods will in the end just be the ones that can't be created in the language itself - which means those that do weird stuff with arguments - or need to work with internal resources in some way</span><br />
+<span class="irc-date">[20:04]</span> <span class="irc-black">&lt;olabini&gt; once the Java integration is in place, I'm actually thinking about reimplementing the core stuff like List, Dict and Set into Ioke code that wraps a Java implementation from the Ioke side</span><br />
+<span class="irc-date">[20:04]</span> <span class="irc-black">&lt;olabini&gt; this will make things HUGELY more manageable</span><br />
+<span class="irc-date">[20:05]</span> <span class="irc-black">&lt;olabini&gt; so the current state of the code is basically just the easiest way to start the language, and the code base is still malleable enough for easy change</span><br />
+<span class="irc-date">[20:05]</span> <span class="irc-black">&lt;olabini&gt; I appreciate the comments!</span><br />
+<span class="irc-date">[20:05]</span> <span class="irc-green">* olabini (n=ola@c-df4de155.1110-8-64736c13.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[20:24]</span> <span class="irc-green">* HeMan (n=jimmy@193.12.106.19) has joined #ioke</span><br />
+<span class="irc-date">[20:24]</span> <span class="irc-green">* caboom (n=caboom@77-221.static.ikomline.net) has joined #ioke</span><br />
+<span class="irc-date">[20:33]</span> <span class="irc-brown">-Martinp23- [Global Notice] Hi folks! Earlier one of our leaf (client) servers had a few connection issues. This was due to latency issues on the sponsor's network. Fortunately, the sponsor now reports that the problems have been resolved and so everything is back to normal. We're very sorry for the inconvenience. Thanks for using freenode and have a nice day!</span><br />
+<span class="irc-date">[22:26]</span> <span class="irc-black">&lt;cv&gt; how bout that? :D</span><br />
+<span class="irc-date">[22:26]</span> <span class="irc-black">&lt;cv&gt; <a href="http://github.com/cv/ioke/commit/ec3011e5fd038567748d1fd2e436fc20f4b8c392">http://github.com/cv/ioke/commit/ec3011e5fd038567748d1fd2e436fc20f4b8c392</a></span><br />
+<span class="irc-date">[22:37]</span> <span class="irc-black">&lt;melwin&gt; Cool idea, that! :)</span><br />
+<span class="irc-date">[22:38]</span> <span class="irc-black">&lt;melwin&gt; Congrats.</span><br />
+<span class="irc-date">[22:49]</span> <span class="irc-black">&lt;cv&gt; it's been really easy to inline other methods</span><br />
+<span class="irc-date">[22:50]</span> <span class="irc-black">&lt;cv&gt; i'm thinking of just doing it to all WithNoArguments ones</span><br />
+<span class="irc-date">[22:50]</span> <span class="irc-black">&lt;cv&gt; a good thing about it is that you can start writing some code and then go "dammit, that one method is really slow", and inline that</span><br />
+<span class="irc-date">[22:50]</span> <span class="irc-black">&lt;cv&gt; happened to me when i was writing Text script()</span><br />
+<span class="irc-date">[22:59]</span> <span class="irc-black">&lt;melwin&gt; The only thing I don't like is the implicit "on" etc... Any chance of making the signature and param handling a bit more regular and non-magic?</span><br />
+<span class="irc-date">[23:01]</span> <span class="irc-black">&lt;melwin&gt; Oops - gotta sleep before gf goes ballistic....! Laters.</span><br />
+<span class="irc-date">[23:01]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit ("Leaving")</span><br />

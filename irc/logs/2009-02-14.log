@@ -1,0 +1,70 @@
+<span class="irc-date">[0:00]</span> <span class="irc-black">&lt;martido&gt; oh and a happy 1234567890 from me too ;)</span><br />
+<span class="irc-date">[0:02]</span> <span class="irc-black">&lt;martido&gt; we all are hopeless geeks ;)</span><br />
+<span class="irc-date">[1:32]</span> <span class="irc-green">* bguthrie (n=bguthrie@55.sub-75-197-181.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[2:41]</span> <span class="irc-green">* martido29 (n=martin@dslb-092-074-121-123.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[2:54]</span> <span class="irc-navy">* martido (n=martin@dslb-092-074-117-224.pools.arcor-ip.net) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[4:02]</span> <span class="irc-green">* cv (n=cv@5ad58ae5.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[4:44]</span> <span class="irc-navy">* cv (n=cv@5ad58ae5.bb.sky.com) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[4:44]</span> <span class="irc-navy">* olabini (n=ola@c-d64ce155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[4:45]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[4:45]</span> <span class="irc-green">* olabini (n=ola@c-d64ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[4:45]</span> <span class="irc-green">* cv (n=cv@5ad58ae5.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[4:46]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[5:03]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[5:11]</span> <span class="irc-navy">* cv (n=cv@5ad58ae5.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[8:03]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-17.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[8:13]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[8:14]</span> <span class="irc-black">&lt;olabini&gt; well, there is some more stuff to be done there, I guess</span><br />
+<span class="irc-date">[8:31]</span> <span class="irc-green">* martido29 (n=martin@dslb-092-074-121-123.pools.arcor-ip.net) has left #ioke</span><br />
+<span class="irc-date">[8:35]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:49]</span> <span class="irc-green">* olabini` (n=ola@c-e74fe155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[8:49]</span> <span class="irc-green">* IokeHurricane sets mode +o olabini` </span><br />
+<span class="irc-date">[9:03]</span> <span class="irc-navy">* bguthrie (n=bguthrie@55.sub-75-197-181.myvzw.com) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[9:13]</span> <span class="irc-navy">* olabini (n=ola@c-d64ce155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[11:15]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit ("Leaving")</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-green">* cv (n=cv@5ad58ae5.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-17.vc-graz.ac.at) has left #ioke</span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-17.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[13:56]</span> <span class="irc-navy">* Tsion (n=scott@botters/staff/tsion) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[13:56]</span> <span class="irc-green">* Tsion (n=scott@botters/staff/tsion) has joined #ioke</span><br />
+<span class="irc-date">[14:28]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r519a901 / (2 files in 2 dirs): Add equals tests and fix the import specs so they aren't using Java 1.6-only classes - <a href="http://bit.ly/3Oq1B">http://bit.ly/3Oq1B</a></span><br />
+<span class="irc-date">[14:28]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * rf75ca71 / src/main/ioke/lang/JavaWrapper.java : Make == and same? works correctly for Java objects - <a href="http://bit.ly/Hh0FP">http://bit.ly/Hh0FP</a></span><br />
+<span class="irc-date">[15:07]</span> <span class="irc-navy">* cv (n=cv@5ad58ae5.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[15:08]</span> <span class="irc-green">* kar8nga1 (n=kar8nga@e-17.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[15:09]</span> <span class="irc-green">* kar8nga2 (n=kar8nga@e-17.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-navy">* kar8nga1 (n=kar8nga@e-17.vc-graz.ac.at) Quit (Read error: 145 (Connection timed out))</span><br />
+<span class="irc-date">[15:23]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-17.vc-graz.ac.at) Quit (Connection timed out)</span><br />
+<span class="irc-date">[15:25]</span> <span class="irc-navy">* kar8nga2 (n=kar8nga@e-17.vc-graz.ac.at) Quit (Connection timed out)</span><br />
+<span class="irc-date">[15:34]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-17.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-17.vc-graz.ac.at) Quit ()</span><br />
+<span class="irc-date">[15:49]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-17.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-17.vc-graz.ac.at) Quit (Connection timed out)</span><br />
+<span class="irc-date">[16:14]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-17.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-green">* kar8nga_ (n=kar8nga@e-17.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-17.vc-graz.ac.at) Quit (Nick collision from services.)</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-green">* kar8nga_ is now known as kar8nga</span><br />
+<span class="irc-date">[16:43]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-17.vc-graz.ac.at) Quit ()</span><br />
+<span class="irc-date">[17:45]</span> <span class="irc-green">* bguthrie (n=bguthrie@68.sub-75-199-101.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[17:54]</span> <span class="irc-green">* bguthrie_ (n=bguthrie@68.sub-75-199-101.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[17:54]</span> <span class="irc-navy">* bguthrie (n=bguthrie@68.sub-75-199-101.myvzw.com) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[18:17]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-79.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:23]</span> <span class="irc-green">* kar8nga_ (n=kar8nga@e-79.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-navy">* kar8nga_ (n=kar8nga@e-79.vc-graz.ac.at) Quit (Client Quit)</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-green">* kar8nga_ (n=kar8nga@e-79.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-79.vc-graz.ac.at) Quit (Nick collision from services.)</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-green">* kar8nga_ is now known as kar8nga</span><br />
+<span class="irc-date">[19:01]</span> <span class="irc-green">* cv (n=cv@5ad58ae5.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[19:03]</span> <span class="irc-green">* cv_ (n=cv@5ad58ae5.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[19:03]</span> <span class="irc-navy">* cv (n=cv@5ad58ae5.bb.sky.com) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[20:18]</span> <span class="irc-green">* olabini`` (n=ola@c-d64ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-green">* IokeHurricane sets mode +o olabini`` </span><br />
+<span class="irc-date">[20:22]</span> <span class="irc-green">* olabini`` (n=ola@c-d64ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[20:29]</span> <span class="irc-navy">* olabini` (n=ola@c-e74fe155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-green">* kar8nga2 (n=kar8nga@a-83.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[21:38]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-79.vc-graz.ac.at) Quit (Nick collision from services.)</span><br />
+<span class="irc-date">[21:38]</span> <span class="irc-green">* kar8nga2 is now known as kar8nga</span><br />
+<span class="irc-date">[22:18]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[22:19]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[22:53]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[23:24]</span> <span class="irc-navy">* cv_ (n=cv@5ad58ae5.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[23:36]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-83.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />

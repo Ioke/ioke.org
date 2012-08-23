@@ -1,0 +1,56 @@
+<span class="irc-date">[19:07]</span> <span class="irc-green">* IokeStormBot (n=PircBot@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-green">* Topic is 'Ioke - a dynamic programming language for the JVM | <a href="http://ioke.org">http://ioke.org</a> | Logs <a href="http://ioke.org/irc/logs'">http://ioke.org/irc/logs'</a></span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-green">* Set by olabini on Thu Jan 22 13:02:32 GMT 2009</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-red">[freenode-connect VERSION]</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-black">&lt;olabini&gt; so. once more for the logs:</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-black">&lt;olabini&gt; &lt;olabini&gt; I know documentation about different kinds of quoting and working</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-black">&lt;olabini&gt;           with the message chain structure has been requested           [20:32]</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-black">&lt;olabini&gt; &lt;olabini&gt; I'm gearing up to write some about that</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-black">&lt;olabini&gt; &lt;olabini&gt; but while I'm at it, is there any other subjects that need</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-black">&lt;olabini&gt;           treatment?</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[19:10]</span> <span class="irc-black">&lt;naeu&gt; wow, never tried combining wasabi with tomatoes</span><br />
+<span class="irc-date">[19:10]</span> <span class="irc-black">&lt;olabini&gt; it's a great combination</span><br />
+<span class="irc-date">[19:10]</span> <span class="irc-black">&lt;naeu&gt; have you given it a name?</span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-black">&lt;olabini&gt; nope. it's an established recipe, actually</span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-black">&lt;naeu&gt; still wouldn't stop me or susanna :-)</span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-black">&lt;naeu&gt; we give lots of things lots of silly names</span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-black">&lt;olabini&gt; can't find an english recipe though</span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-black">&lt;olabini&gt; ok</span><br />
+<span class="irc-date">[19:12]</span> <span class="irc-black">&lt;naeu&gt; so you're speaking explicitly about documentation...</span><br />
+<span class="irc-date">[19:13]</span> <span class="irc-black">&lt;olabini&gt; ?</span><br />
+<span class="irc-date">[19:14]</span> <span class="irc-black">&lt;naeu&gt; with respect to subjects needing treatment</span><br />
+<span class="irc-date">[19:14]</span> <span class="irc-black">&lt;naeu&gt; sorry, i was switching context from chitchat to ioke :-)</span><br />
+<span class="irc-date">[19:15]</span> <span class="irc-black">&lt;naeu&gt; i still have a couple of commits that need a swedish eyeball</span><br />
+<span class="irc-date">[19:15]</span> <span class="irc-black">&lt;naeu&gt; and it might be nice to consider something like Text#evaluateEscapes</span><br />
+<span class="irc-date">[19:17]</span> <span class="irc-black">&lt;naeu&gt; but if we're just talking about documentation, then I think an explanation of Ioke's philosphical statements (Expressiveness over performance</span><br />
+<span class="irc-date">[19:17]</span> <span class="irc-black">&lt;naeu&gt; Abstraction over low level interfaces</span><br />
+<span class="irc-date">[19:17]</span> <span class="irc-black">&lt;naeu&gt; Higher order functionality over explicitness</span><br />
+<span class="irc-date">[19:17]</span> <span class="irc-black">&lt;naeu&gt; ???Right is better??? over ???Worse is better???</span><br />
+<span class="irc-date">[19:17]</span> <span class="irc-black">&lt;naeu&gt; Language oriented programming over APIs</span><br />
+<span class="irc-date">[19:17]</span> <span class="irc-black">&lt;naeu&gt; ???Code as data??? over ???data as code???</span><br />
+<span class="irc-date">[19:17]</span> <span class="irc-black">&lt;naeu&gt; Homoiconicity over syntax</span><br />
+<span class="irc-date">[19:17]</span> <span class="irc-black">&lt;naeu&gt; Syntax over explicit API???s) would be nice</span><br />
+<span class="irc-date">[19:18]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[19:18]</span> <span class="irc-black">&lt;olabini&gt; that's good material to cover, yes.</span><br />
+<span class="irc-date">[19:18]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[19:18]</span> <span class="irc-black">&lt;naeu&gt; also, an explanation of an extension of this diagram (with java stuff etc.) would be really nice: <a href="http://skitch.com/samaaron/bqxht/amsterdam.rb.pdf-page-15-of-37">http://skitch.com/samaaron/bqxht/amsterdam.rb.pdf-page-15-of-37</a></span><br />
+<span class="irc-date">[19:18]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[19:18]</span> <span class="irc-black">&lt;olabini&gt; I've considered making some real documentation about the full hierarchy</span><br />
+<span class="irc-date">[19:18]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[19:19]</span> <span class="irc-black">&lt;naeu&gt; that would be interesting</span><br />
+<span class="irc-date">[19:20]</span> <span class="irc-black">&lt;naeu&gt; i wonder how much of that could link to the actual implementation/specs</span><br />
+<span class="irc-date">[19:20]</span> <span class="irc-black">&lt;naeu&gt; i think that the dokgen concept is a beautiful start to this kind of thing</span><br />
+<span class="irc-date">[19:21]</span> <span class="irc-black">&lt;naeu&gt; one thing that might also be interesting is some documentation on ikc and ikj</span><br />
+<span class="irc-date">[19:22]</span> <span class="irc-black">&lt;olabini&gt; mm</span><br />
+<span class="irc-date">[19:23]</span> <span class="irc-black">&lt;naeu&gt; i would love some insights into how all that stuff works</span><br />
+<span class="irc-date">[19:26]</span> <span class="irc-black">&lt;naeu&gt; anyway, i'm off out to meet susanna now</span><br />
+<span class="irc-date">[19:26]</span> <span class="irc-black">&lt;naeu&gt; enjoy your soup!</span><br />
+<span class="irc-date">[19:26]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[19:26]</span> <span class="irc-black">&lt;naeu&gt; cheerio</span><br />
+<span class="irc-date">[19:48]</span> <span class="irc-navy">* mozinator_ (n=mozinato@195-241-109-215.ip.telfort.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[20:33]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[22:34]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />

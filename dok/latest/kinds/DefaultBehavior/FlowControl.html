@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Kind: DefaultBehavior</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="../.././dokgen-style.css" type="text/css" media="screen" />
+    <script language="JavaScript" type="text/javascript">
+    // <![CDATA[
+
+        function toggleSource( id )
+        {
+          var elem
+          var link
+
+          if( document.getElementById )
+          {
+            elem = document.getElementById( id )
+            link = document.getElementById( "l_" + id )
+          }
+          else if ( document.all )
+          {
+            elem = eval( "document.all." + id )
+            link = eval( "document.all.l_" + id )
+          }
+          else
+            return false;
+
+          if( elem.style.display == "block" )
+          {
+            elem.style.display = "none"
+            link.innerHTML = "show source"
+          }
+          else
+          {
+            elem.style.display = "block"
+            link.innerHTML = "hide source"
+          }
+        }
+
+        function openCode( url )
+        {
+          window.open( url, "SOURCE_CODE", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=480,width=750" ).focus();
+        }
+      // ]]>
+    </script>
+  </head>
+
+  <body>
+    <table border='0' cellpadding='0' cellspacing='0' width="100%" class='banner'>
+      <tr>
+        <td>
+          <table width="100%" border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+              <td class="file-title" colspan="2">
+                <span class="file-title-prefix">Kind</span>
+                <br />
+                DefaultBehavior FlowControl
+              </td>
+              <td align="right">
+                <table cellspacing="0" cellpadding="2">
+                  <tr>
+                    <td>Main mimic:</td>
+                    <td>
+                      none
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <div id="bodyContent">
+      <div id="content">
+        <div class="description">
+          <p>
+contains behavior related to flow control
+          </p>
+        </div>
+
+        <div class="sectiontitle">Mimics</div>
+        <ul>
+          none
+        </ul>
+
+        <div class="sectiontitle">Inactive cells</div>
+        <ul>
+          <li><a href="#C0080">inspect</a></li>
+<li><a href="#C0065">kind</a></li>
+<li><a href="#C0079">notice</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Active cells</div>
+        <ul>
+          <li><a href="#C0076">(+args)</a></li>
+<li><a href="#C0067">break(value nil)</a></li>
+<li><a href="#C0087">cond(...)</a></li>
+<li><a href="#C0069">continue()</a></li>
+<li><a href="#C0094">dip(...)</a></li>
+<li><a href="#C0077">do(...)</a></li>
+<li><a href="#C0075">ensure([code], +[ensureBlocks])</a></li>
+<li><a href="#C0081">for(...)</a></li>
+<li><a href="#C0083">for:dict(...)</a></li>
+<li><a href="#C0082">for:set(...)</a></li>
+<li><a href="#C0073">if(condition, [then] nil, [else] nil)</a></li>
+<li><a href="#C0088">ignoreErrors(...)</a></li>
+<li><a href="#C0066">let([code], +[placesAndValues])</a></li>
+<li><a href="#C0072">loop(+[body])</a></li>
+<li><a href="#C0084">p:for(...)</a></li>
+<li><a href="#C0086">p:for:dict(...)</a></li>
+<li><a href="#C0085">p:for:set(...)</a></li>
+<li><a href="#C0089">passNil(...)</a></li>
+<li><a href="#C0091">rap(...)</a></li>
+<li><a href="#C0068">return(value nil)</a></li>
+<li><a href="#C0093">sap(...)</a></li>
+<li><a href="#C0090">tap(...)</a></li>
+<li><a href="#C0092">tapping(...)</a></li>
+<li><a href="#C0074">unless(condition, [then] nil, [else] nil)</a></li>
+<li><a href="#C0070">until([condition] nil, +[body])</a></li>
+<li><a href="#C0071">while([condition] nil, +[body])</a></li>
+<li><a href="#C0078">with(...)</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Specs</div>
+        <div class="specs">
+          
+        </div>
+
+        <div class="sectiontitle">Inactive cells (details)</div>
+                <div class="cell">
+          <a name="C0080"></a>
+          <table border="0" cellpadding="5">
+            <tr valign="top">
+              <td class="cell-name">inspect</td>
+              <td>=</td>
+              <td class="cell-value">"DefaultBehavior FlowControl"</td>
+            </tr>
+          </table>
+        </div>
+        <div class="cell">
+          <a name="C0065"></a>
+          <table border="0" cellpadding="5">
+            <tr valign="top">
+              <td class="cell-name">kind</td>
+              <td>=</td>
+              <td class="cell-value">"DefaultBehavior FlowControl"</td>
+            </tr>
+          </table>
+        </div>
+        <div class="cell">
+          <a name="C0079"></a>
+          <table border="0" cellpadding="5">
+            <tr valign="top">
+              <td class="cell-name">notice</td>
+              <td>=</td>
+              <td class="cell-value">"DefaultBehavior FlowControl"</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div class="sectiontitle">Active cells (details)</div>
+                <div class="cell">
+          <div class="title">
+          <a name="C0076"></a><b></b>(+args)
+          </div>
+          <div class="description">
+            <p>returns result of evaluating first argument</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C0076_source')" id="l_C0076_source">show source</a> ]</p>
+            <div id="C0076_source" class="dyn-source">
+<pre>
+method(+args, 
+  if(args length ==(1), 
+    args [](0), 
+    tuple(*(args))))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0067"></a><b>break</b>(value nil)
+          </div>
+          <div class="description">
+            <p>breaks out of the enclosing context. if an argument is supplied, this will be returned as the result of the object breaking out of</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0087"></a><b>cond</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero or more arguments. each two arguments are paired, where the first one is the condition part, and the second is the then-part. if there's an uneven number of arguments, that part is the else-part. if no arguments are provided, or no conditions match and there is no else part, cond returns nil.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C0087_source')" id="l_C0087_source">show source</a> ]</p>
+            <div id="C0087_source" class="dyn-source">
+<pre>
+syntax(
+  DefaultBehavior FlowControl cell(:cond) createNestedIfStatements(call arguments))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0069"></a><b>continue</b>()
+          </div>
+          <div class="description">
+            <p>breaks out of the enclosing context and continues from that point again.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0094"></a><b>dip</b>(...)
+          </div>
+          <div class="description">
+            <p>takes one argument name and one piece of code that will get the receiver as argument and return the result of calling the code</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C0094_source')" id="l_C0094_source">show source</a> ]</p>
+            <div id="C0094_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    code = call arguments [](
+        1) 
+    
+    LexicalBlock createFrom(list(argName, code), call ground) call(self) 
+    , 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0077"></a><b>do</b>(...)
+          </div>
+          <div class="description">
+            <p>executes the arguments with the receiver as context and ground, and then returns the receiver.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C0077_source')" id="l_C0077_source">show source</a> ]</p>
+            <div id="C0077_source" class="dyn-source">
+<pre>
+macro(
+  call arguments each(evaluateOn(cell("@"))) 
+  cell("@"))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0075"></a><b>ensure</b>([code], +[ensureBlocks])
+          </div>
+          <div class="description">
+            <p>will execute and return the value of the first argument. after the code has run, all the remaining blocks of code are guaranteed to run in order even if a non-local flow control happens inside the main code. if any code in the ensure blocks generate a new non-local flow control, the rest of the ensure blocks in that specific ensure invocation are not guaranteed to run.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0081"></a><b>for</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C0081_source')" id="l_C0081_source">show source</a> ]</p>
+            <div id="C0081_source" class="dyn-source">
+<pre>
+syntax(
+  DefaultBehavior FlowControl cell(:for) transform(call arguments, "map", "flatMap") 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0083"></a><b>for:dict</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C0083_source')" id="l_C0083_source">show source</a> ]</p>
+            <div id="C0083_source" class="dyn-source">
+<pre>
+syntax(
+  DefaultBehavior FlowControl cell(:for) transform(call arguments, "map:dict", "flatMap:dict") 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0082"></a><b>for:set</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C0082_source')" id="l_C0082_source">show source</a> ]</p>
+            <div id="C0082_source" class="dyn-source">
+<pre>
+syntax(
+  DefaultBehavior FlowControl cell(:for) transform(call arguments, "map:set", "flatMap:set") 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0073"></a><b>if</b>(condition, [then] nil, [else] nil)
+          </div>
+          <div class="description">
+            <p>evaluates the first arguments, and then evaluates the second argument if the result was true, otherwise the last argument. returns the result of the call, or the result if it's not true.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0088"></a><b>ignoreErrors</b>(...)
+          </div>
+          <div class="description">
+            <p>takes one or two pices of code. runs the first code segment and returns nil if it signals an
+error. If a second argument of code is given, evaluates this only when an error is encountered
+and uses the result to return. if everything works as expected, ignoreErrors will just
+return the result of the first evaluation</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C0088_source')" id="l_C0088_source">show source</a> ]</p>
+            <div id="C0088_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      1), 
+    
+    protectedCode = call arguments [](
+        0) 
+    
+    bind(rescue(Condition Error, fn(c, nil)), 
+      protectedCode evaluateOn(call ground, call ground)), 
+    argCount ==(
+      2), 
+    
+    protectedCode = call arguments [](
+        0) 
+    otherwiseCode = call arguments [](
+        1) 
+    
+    bind(rescue(Condition Error, fn(c, otherwiseCode evaluateOn(call ground, call ground))), 
+      protectedCode evaluateOn(call ground, call ground)), 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0066"></a><b>let</b>([code], +[placesAndValues])
+          </div>
+          <div class="description">
+            <p>takes zero or more place and value pairs and one code argument, establishes a new lexical scope and binds the places to the values given. if the place is a simple name, it will just be created as a new binding in the lexical scope. if it is a place specification, that place will be temporarily changed - but guaranteed to be changed back after the lexical scope is finished. the let-form returns the final result of the code argument.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0072"></a><b>loop</b>(+[body])
+          </div>
+          <div class="description">
+            <p>loops forever - executing it's argument over and over until interrupted in some way.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0084"></a><b>p:for</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C0084_source')" id="l_C0084_source">show source</a> ]</p>
+            <div id="C0084_source" class="dyn-source">
+<pre>
+syntax(
+  DefaultBehavior FlowControl cell(:for) transform(call arguments, "p:map", "p:flatMap") 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0086"></a><b>p:for:dict</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C0086_source')" id="l_C0086_source">show source</a> ]</p>
+            <div id="C0086_source" class="dyn-source">
+<pre>
+syntax(
+  DefaultBehavior FlowControl cell(:for) transform(call arguments, "p:map:dict", "p:flatMap:dict") 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0085"></a><b>p:for:set</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C0085_source')" id="l_C0085_source">show source</a> ]</p>
+            <div id="C0085_source" class="dyn-source">
+<pre>
+syntax(
+  DefaultBehavior FlowControl cell(:for) transform(call arguments, "p:map:set", "p:flatMap:set") 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0089"></a><b>passNil</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C0089_source')" id="l_C0089_source">show source</a> ]</p>
+            <div id="C0089_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      1), 
+    
+    code = call arguments [](
+        0) 
+    
+    currentMessage = code 
+    ground = call ground 
+    currentReceiver = call ground 
+    while(currentMessage, 
+      currentReceiver = currentMessage sendTo(currentReceiver, ground) 
+      if(currentReceiver nil?, 
+        return(nil)) 
+      currentMessage = currentMessage next 
+      if(currentMessage &&(currentMessage terminator?), 
+        currentMessage = currentMessage next 
+        currentReceiver = ground) 
+      ) 
+    currentReceiver 
+    , 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0091"></a><b>rap</b>(...)
+          </div>
+          <div class="description">
+            <p>takes one or more message chains. Will call these on the receiver, then return the receiver</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C0091_source')" id="l_C0091_source">show source</a> ]</p>
+            <div id="C0091_source" class="dyn-source">
+<pre>
+macro(
+  call arguments each(code, 
+    code evaluateOn(call ground, self)) 
+  self 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0068"></a><b>return</b>(value nil)
+          </div>
+          <div class="description">
+            <p>returns from the enclosing method/macro. if an argument is supplied, this will be returned as the result of the method/macro breaking out of.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0093"></a><b>sap</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C0093_source')" id="l_C0093_source">show source</a> ]</p>
+            <div id="C0093_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      2), 
+    
+    sapCode = call arguments [](
+        0) 
+    iterCode = call arguments [](
+        1) 
+    
+    result = sapCode evaluateOn(call ground, self) 
+    while(result, 
+      iterCode evaluateOn(call ground, result) 
+      result = sapCode evaluateOn(call ground, self)) 
+    self, 
+    argCount ==(
+      3), 
+    
+    sapCode = call arguments [](
+        0) 
+    argName = call arguments [](
+        1) 
+    iterCode = call arguments [](
+        2) 
+    
+    destructor = Mixins Enumerable Destructor from(argName) 
+    block = LexicalBlock createFrom(destructor argNames +(list(iterCode)), call ground) 
+    result = sapCode evaluateOn(call ground, self) 
+    while(result, 
+      block call(*(destructor unpack(result))) 
+      result = sapCode evaluateOn(call ground, self)) 
+    self 
+    , 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0090"></a><b>tap</b>(...)
+          </div>
+          <div class="description">
+            <p>takes one or two arguments that represent code. Will yield the receiver and then return the receiver after executing the given code</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C0090_source')" id="l_C0090_source">show source</a> ]</p>
+            <div id="C0090_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      1), 
+    
+    code = call arguments [](
+        0) 
+    
+    code evaluateOn(call ground, self) 
+    self, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    code = call arguments [](
+        1) 
+    
+    LexicalBlock createFrom(list(argName, code), call ground) call(self) 
+    self 
+    , 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0092"></a><b>tapping</b>(...)
+          </div>
+          <div class="description">
+            <p>takes one or more message chains. Will call these on the receiver, then return the receiver</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C0092_source')" id="l_C0092_source">show source</a> ]</p>
+            <div id="C0092_source" class="dyn-source">
+<pre>
+macro(
+  call arguments each(code, 
+    code evaluateOn(call ground, self)) 
+  self 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0074"></a><b>unless</b>(condition, [then] nil, [else] nil)
+          </div>
+          <div class="description">
+            <p>evaluates the first arguments, and then evaluates the second argument if the result was false, otherwise the last argument. returns the result of the call, or the result if it's true.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0070"></a><b>until</b>([condition] nil, +[body])
+          </div>
+          <div class="description">
+            <p>until the first argument evaluates to something true, loops and evaluates the next argument</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0071"></a><b>while</b>([condition] nil, +[body])
+          </div>
+          <div class="description">
+            <p>while the first argument evaluates to something true, loops and evaluates the next argument</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C0078"></a><b>with</b>(...)
+          </div>
+          <div class="description">
+            <p>takes any number of keyword arguments, followed by an optional code argument. will first create a new mimic of the receiver, then evaluate all the keyword arguments in order and set cells corresponding to the names of these keyword arguments to the evaluated arguments. if a code argument is supplied, it will be evaluated in the context of the newly created object, using something similar to 'do'. returns the created object.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C0078_source')" id="l_C0078_source">show source</a> ]</p>
+            <div id="C0078_source" class="dyn-source">
+<pre>
+macro(
+  newObject = mimic 
+  call arguments each(arg, 
+    if(arg keyword?, 
+      Reflector other:cell(newObject, arg name asText [](0 ..(0 -(2)))) = arg next evaluateOn(call ground), 
+      arg evaluateOn(call ground, newObject))) 
+  newObject)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<span class="irc-date">[0:18]</span> <span class="irc-green">* hsuh (n=user@c925a569.virtua.com.br) has joined #ioke</span><br />
+<span class="irc-date">[1:00]</span> <span class="irc-navy">* andreaja (n=sodoff@65.111.170.77) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[1:12]</span> <span class="irc-navy">* hsuh (n=user@c925a569.virtua.com.br) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[1:17]</span> <span class="irc-green">* hsuh (n=user@c925a569.virtua.com.br) has joined #ioke</span><br />
+<span class="irc-date">[7:20]</span> <span class="irc-navy">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[7:29]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[8:03]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:07]</span> <span class="irc-green">* olabini (n=ola@85.225.141.57) has joined #ioke</span><br />
+<span class="irc-date">[8:07]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[8:34]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-251-116-041.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:35]</span> <span class="irc-black">&lt;olabini&gt; hey Sam</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-navy">* thewolt (n=thewolt@ip-178.net-89-3-176.rev.numericable.fr) Quit ("Leaving")</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-green">* olabini (n=ola@85.225.141.57) has left #ioke</span><br />
+<span class="irc-date">[10:54]</span> <span class="irc-navy">* hsuh (n=user@c925a569.virtua.com.br) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[14:26]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit ()</span><br />
+<span class="irc-date">[15:13]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[15:13]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-black">&lt;naeu&gt; Hey Ola</span><br />
+<span class="irc-date">[15:50]</span> <span class="irc-black">&lt;olabini&gt; hi</span><br />
+<span class="irc-date">[15:54]</span> <span class="irc-black">&lt;naeu&gt; i'm envious of you</span><br />
+<span class="irc-date">[15:55]</span> <span class="irc-black">&lt;naeu&gt; for meeting the intentional guys today</span><br />
+<span class="irc-date">[15:55]</span> <span class="irc-black">&lt;naeu&gt; their stuff seems really interesting</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;naeu&gt; projections from metamodels seems like a wonderful way to work</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;naeu&gt; although it does suffer from the smalltalk image issues</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;naeu&gt; unless there's an expressive language that is homoiconic to the metamodel</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-black">&lt;naeu&gt; that's *not* XML</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-black">&lt;olabini&gt; there are ways around that</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-black">&lt;olabini&gt; but I'm not really allowed to talk that much about it. I'm under NDA</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-black">&lt;naeu&gt; sure :-)</span><br />
+<span class="irc-date">[16:04]</span> <span class="irc-black">&lt;naeu&gt; btw, what's the nicest way of evaluating Text escapes twice?</span><br />
+<span class="irc-date">[16:05]</span> <span class="irc-black">&lt;olabini&gt; oh, good question</span><br />
+<span class="irc-date">[16:05]</span> <span class="irc-black">&lt;olabini&gt; no idea</span><br />
+<span class="irc-date">[16:05]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[16:05]</span> <span class="irc-black">&lt;olabini&gt; probably not possible right now</span><br />
+<span class="irc-date">[16:05]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[16:07]</span> <span class="irc-black">&lt;naeu&gt; that's no fun!</span><br />
+<span class="irc-date">[16:11]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[16:11]</span> <span class="irc-black">&lt;olabini&gt; it seems like a weird thing to want</span><br />
+<span class="irc-date">[16:12]</span> <span class="irc-black">&lt;olabini&gt; but you can provide a method for doing it, if you want</span><br />
+<span class="irc-date">[16:12]</span> <span class="irc-black">&lt;olabini&gt; the functionality is pretty well factored</span><br />
+<span class="irc-date">[16:12]</span> <span class="irc-black">&lt;olabini&gt; take a look at internal:createText</span><br />
+<span class="irc-date">[16:16]</span> <span class="irc-black">&lt;naeu&gt; well the situation that requires it is pretty simple</span><br />
+<span class="irc-date">[16:16]</span> <span class="irc-black">&lt;naeu&gt; for example, consider the following Text:</span><br />
+<span class="irc-date">[16:16]</span> <span class="irc-black">&lt;naeu&gt; "sam\taaron"</span><br />
+<span class="irc-date">[16:16]</span> <span class="irc-black">&lt;naeu&gt; if we write that directly in code we'll get the chars:</span><br />
+<span class="irc-date">[16:17]</span> <span class="irc-black">&lt;naeu&gt; ["s", "a", "m", "\t", "a", "a", "r", "o", "n"]</span><br />
+<span class="irc-date">[16:18]</span> <span class="irc-black">&lt;naeu&gt; however, if we read that same text from a file, we get these chars:</span><br />
+<span class="irc-date">[16:18]</span> <span class="irc-black">&lt;naeu&gt; ["s", "a", "m", "\\", "t", "a", "a", "r", "o", "n"]</span><br />
+<span class="irc-date">[16:21]</span> <span class="irc-green">* andreaja (n=sodoff@65.111.170.77) has joined #ioke</span><br />
+<span class="irc-date">[16:24]</span> <span class="irc-black">&lt;olabini&gt; oh, we do?</span><br />
+<span class="irc-date">[16:24]</span> <span class="irc-black">&lt;olabini&gt; that shouldn't happen</span><br />
+<span class="irc-date">[16:24]</span> <span class="irc-black">&lt;olabini&gt; that's a bug</span><br />
+<span class="irc-date">[16:24]</span> <span class="irc-black">&lt;naeu&gt; oh ok</span><br />
+<span class="irc-date">[16:24]</span> <span class="irc-black">&lt;olabini&gt; oh wait</span><br />
+<span class="irc-date">[16:24]</span> <span class="irc-black">&lt;olabini&gt; it's not</span><br />
+<span class="irc-date">[16:24]</span> <span class="irc-black">&lt;olabini&gt; it's expected</span><br />
+<span class="irc-date">[16:24]</span> <span class="irc-black">&lt;olabini&gt; sorry</span><br />
+<span class="irc-date">[16:25]</span> <span class="irc-black">&lt;naeu&gt; i didn't think it was a bug</span><br />
+<span class="irc-date">[16:25]</span> <span class="irc-black">&lt;olabini&gt; I'm stupid</span><br />
+<span class="irc-date">[16:25]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[16:25]</span> <span class="irc-black">&lt;naeu&gt; all this escaping starts messing with your brains</span><br />
+<span class="irc-date">[16:25]</span> <span class="irc-black">&lt;olabini&gt; well............ you can always use "Message fromText"</span><br />
+<span class="irc-date">[16:25]</span> <span class="irc-black">&lt;naeu&gt; haha, hackety hack!</span><br />
+<span class="irc-date">[16:25]</span> <span class="irc-black">&lt;olabini&gt; actually, I meant</span><br />
+<span class="irc-date">[16:25]</span> <span class="irc-black">&lt;olabini&gt;  use "Message doText"</span><br />
+<span class="irc-date">[16:25]</span> <span class="irc-black">&lt;olabini&gt; that will give you a text that has been re-escaped</span><br />
+<span class="irc-date">[16:26]</span> <span class="irc-black">&lt;naeu&gt; BOOM!</span><br />
+<span class="irc-date">[16:26]</span> <span class="irc-black">&lt;olabini&gt; eh?</span><br />
+<span class="irc-date">[16:26]</span> <span class="irc-black">&lt;naeu&gt; iik&gt; a</span><br />
+<span class="irc-date">[16:26]</span> <span class="irc-black">&lt;naeu&gt; +&gt; "sam\\taaron"</span><br />
+<span class="irc-date">[16:26]</span> <span class="irc-black">&lt;naeu&gt; iik&gt; Message doText(a)</span><br />
+<span class="irc-date">[16:26]</span> <span class="irc-black">&lt;naeu&gt; *** - java.lang.RuntimeException: MismatchedTokenException(116!=10) (Condition Error NativeException)</span><br />
+<span class="irc-date">[16:26]</span> <span class="irc-black">&lt;naeu&gt;   ioke.lang.parser.Lexer.reportError(Lexer.java:24)</span><br />
+<span class="irc-date">[16:26]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;olabini&gt; interesting</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;olabini&gt; isn't that weird....</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;olabini&gt; hmmmmmmm.</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;olabini&gt; not sure why this happens</span><br />
+<span class="irc-date">[16:28]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[16:28]</span> <span class="irc-black">&lt;olabini&gt; if you feel like getting to know the grammar and internals a bit better, you can try to figure out what happens... =)</span><br />
+<span class="irc-date">[16:29]</span> <span class="irc-black">&lt;naeu&gt; although it is the start of Queen's Day tonight ;-)</span><br />
+<span class="irc-date">[16:29]</span> <span class="irc-black">&lt;naeu&gt; so i think not...</span><br />
+<span class="irc-date">[16:29]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[16:29]</span> <span class="irc-black">&lt;naeu&gt; but it's somethign i should take a look at</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-black">&lt;naeu&gt; right, i'm off out to party with all of Amsterdam!</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-black">&lt;naeu&gt; cheerio</span><br />
+<span class="irc-date">[16:34]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-251-116-041.chello.nl) Quit ()</span><br />
+<span class="irc-date">[16:34]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[19:40]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:25]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[22:39]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[23:35]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />

@@ -1,0 +1,112 @@
+<span class="irc-date">[4:43]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[6:46]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[8:04]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[8:32]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-220.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:35]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[8:39]</span> <span class="irc-green">* naeu (n=sam@h36036.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:57]</span> <span class="irc-green">* olabini (n=ola@c-398de155.234-1-64736c10.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[8:57]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[9:17]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@nat/sun/x-93ea2c57b1e240a8) has joined #ioke</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@nat/sun/x-93ea2c57b1e240a8) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[9:56]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@nat/sun/x-b1477c77b4bb88a9) has joined #ioke</span><br />
+<span class="irc-date">[12:11]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r506332e / (src/main/ioke/lang/InternalBehavior.java test/regexp_spec.ik): Fix so that interpolation of empty regexp works correctly - <a href="http://bit.ly/tInnF">http://bit.ly/tInnF</a></span><br />
+<span class="irc-date">[14:24]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r3e3ee1d / (src/main/ioke/lang/InternalBehavior.java test/regexp_spec.ik): Handle combination of different flags in regexp interpolation - <a href="http://bit.ly/40Gbf">http://bit.ly/40Gbf</a></span><br />
+<span class="irc-date">[15:00]</span> <span class="irc-black">&lt;naeu&gt; cool, regex fixes</span><br />
+<span class="irc-date">[15:03]</span> <span class="irc-black">&lt;naeu&gt; #/A(?-ixmus:hi)\Z/</span><br />
+<span class="irc-date">[15:03]</span> <span class="irc-black">&lt;naeu&gt; looks intriguing</span><br />
+<span class="irc-date">[15:13]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r5d15224 / (3 files in 2 dirs): Change the way Regexp interpolation works to not be COMPLETELY stupid... - <a href="http://bit.ly/3TktM">http://bit.ly/3TktM</a></span><br />
+<span class="irc-date">[15:15]</span> <span class="irc-black">&lt;olabini&gt; naeu: well, the reason is that I need to make sure that the flags are scoped inside the regexp</span><br />
+<span class="irc-date">[15:22]</span> <span class="irc-black">&lt;olabini&gt; so if you combine with interpolation one regexp that is case insensitive</span><br />
+<span class="irc-date">[15:22]</span> <span class="irc-black">&lt;olabini&gt; and one that isn't</span><br />
+<span class="irc-date">[15:22]</span> <span class="irc-black">&lt;olabini&gt; then those invariants should be retained, right?</span><br />
+<span class="irc-date">[15:29]</span> <span class="irc-black">&lt;naeu&gt; oh sure :-)</span><br />
+<span class="irc-date">[15:29]</span> <span class="irc-black">&lt;naeu&gt; i was just saying that the asText version looked intriguing :-)</span><br />
+<span class="irc-date">[15:30]</span> <span class="irc-black">&lt;naeu&gt; so, what's a total dupe?</span><br />
+<span class="irc-date">[15:30]</span> <span class="irc-black">&lt;naeu&gt; :-p</span><br />
+<span class="irc-date">[15:30]</span> <span class="irc-black">&lt;olabini&gt; me</span><br />
+<span class="irc-date">[15:30]</span> <span class="irc-black">&lt;naeu&gt; haha</span><br />
+<span class="irc-date">[15:30]</span> <span class="irc-black">&lt;naeu&gt; i wouldn't say that</span><br />
+<span class="irc-date">[15:30]</span> <span class="irc-black">&lt;olabini&gt; well, my regexp interpolation stuff was pretty stupid, actually</span><br />
+<span class="irc-date">[15:30]</span> <span class="irc-black">&lt;olabini&gt; which is why you got your failures</span><br />
+<span class="irc-date">[15:30]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[15:31]</span> <span class="irc-black">&lt;naeu&gt; these things get found and ironed out eventually</span><br />
+<span class="irc-date">[15:31]</span> <span class="irc-black">&lt;naeu&gt; which is why it's good to have super dupes (like me) playing around with things :-)</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-black">&lt;naeu&gt; where dupeScore(total dupe) &lt; dupeScore(super dupe)</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-black">&lt;olabini&gt; tss</span><br />
+<span class="irc-date">[15:33]</span> <span class="irc-black">&lt;naeu&gt; tss?</span><br />
+<span class="irc-date">[15:33]</span> <span class="irc-black">&lt;naeu&gt; toxic shock syndrome?</span><br />
+<span class="irc-date">[15:34]</span> <span class="irc-black">&lt;olabini&gt; yeah, exactly</span><br />
+<span class="irc-date">[15:37]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r988aed0 / test/regexp_spec.ik : Add a new test for interpolation, to make sure bug #205 doesn't regress - <a href="http://bit.ly/GZ2K5">http://bit.ly/GZ2K5</a></span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;olabini&gt; I have finally some time to get the outstanding bugs fixed</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;olabini&gt; so I can start work on java integration again</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;olabini&gt; naeu: you wouldn't be interested in adding some example code for code katas in the wiki, by any chance? =)</span><br />
+<span class="irc-date">[15:50]</span> <span class="irc-black">&lt;naeu&gt; olabini: of course I would</span><br />
+<span class="irc-date">[15:50]</span> <span class="irc-black">&lt;naeu&gt; do you have any katas in mind?</span><br />
+<span class="irc-date">[15:51]</span> <span class="irc-black">&lt;naeu&gt; or is that something you wanted me to come up with? :-)</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-black">&lt;olabini&gt; well, I was thinking about Dave Thomas code katas</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-black">&lt;olabini&gt; go to the wiki, I've made a page</span><br />
+<span class="irc-date">[15:53]</span> <span class="irc-black">&lt;naeu&gt; ah ok</span><br />
+<span class="irc-date">[15:53]</span> <span class="irc-black">&lt;naeu&gt; it's a fill it in job :-)</span><br />
+<span class="irc-date">[15:53]</span> <span class="irc-black">&lt;naeu&gt; should be good fun to work through</span><br />
+<span class="irc-date">[15:54]</span> <span class="irc-black">&lt;naeu&gt; I'll wrap up the TextScanner stuff tonight and start on one of them</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-black">&lt;olabini&gt; cool</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-black">&lt;olabini&gt; thanks!</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-black">&lt;naeu&gt; you're welcome</span><br />
+<span class="irc-date">[15:59]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r1f7cd89 / (lib/ioke/ispec/runner.ik test/parsing_spec.ik): Fix so that ispecs can be run with the ioke command again, bug #186. - <a href="http://bit.ly/1kMcwz">http://bit.ly/1kMcwz</a></span><br />
+<span class="irc-date">[16:11]</span> <span class="irc-black">&lt;naeu&gt; btw by defaulting hasHelp? to false in ISpec's  Options has caused ispec_spec.ik specs to fail which expect the hasHelp? to be true when passed the -h flag</span><br />
+<span class="irc-date">[16:25]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[16:25]</span> <span class="irc-black">&lt;olabini&gt; whoops</span><br />
+<span class="irc-date">[16:25]</span> <span class="irc-black">&lt;olabini&gt; I see that</span><br />
+<span class="irc-date">[16:25]</span> <span class="irc-black">&lt;olabini&gt; thanks</span><br />
+<span class="irc-date">[16:26]</span> <span class="irc-black">&lt;naeu&gt; np</span><br />
+<span class="irc-date">[16:26]</span> <span class="irc-black">&lt;olabini&gt; yeah, you know</span><br />
+<span class="irc-date">[16:26]</span> <span class="irc-black">&lt;olabini&gt; that was good</span><br />
+<span class="irc-date">[16:26]</span> <span class="irc-black">&lt;olabini&gt; because the correct default value should be false</span><br />
+<span class="irc-date">[16:26]</span> <span class="irc-black">&lt;olabini&gt; those tests actually exposed a different issue</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;olabini&gt; the logic for help-handling was bad</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;olabini&gt; because I had</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;naeu&gt; that was my intuition</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;olabini&gt; hasHelp? = true</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;olabini&gt; but that just set a local variable</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;olabini&gt; it should have been</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;olabini&gt; self hasHelp? = true</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;naeu&gt; or @hasHelp? = true</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * rf63e59b / lib/ioke/ispec/runner.ik : Fix a problem with the help for ispec - <a href="http://bit.ly/5rtWW">http://bit.ly/5rtWW</a></span><br />
+<span class="irc-date">[16:28]</span> <span class="irc-black">&lt;naeu&gt; man my head is totally a nasty place to be right now</span><br />
+<span class="irc-date">[16:28]</span> <span class="irc-black">&lt;naeu&gt; giving up coffee cold turkey is hard work</span><br />
+<span class="irc-date">[16:28]</span> <span class="irc-black">&lt;olabini&gt; ouch, that sucks</span><br />
+<span class="irc-date">[16:28]</span> <span class="irc-black">&lt;olabini&gt; would never be able to do that</span><br />
+<span class="irc-date">[16:29]</span> <span class="irc-black">&lt;naeu&gt; i feel that i need to</span><br />
+<span class="irc-date">[16:29]</span> <span class="irc-black">&lt;naeu&gt; my mind is getting less and less able to focus on the bigger tasks</span><br />
+<span class="irc-date">[16:29]</span> <span class="irc-black">&lt;naeu&gt; flitting about too  much</span><br />
+<span class="irc-date">[16:30]</span> <span class="irc-black">&lt;naeu&gt; so today i've been on mineral water, smoothie and fresh mint tea</span><br />
+<span class="irc-date">[16:30]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[16:30]</span> <span class="irc-black">&lt;naeu&gt; i think it's going to take about a week for the headaches to stop though</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-black">&lt;olabini&gt; aha</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-black">&lt;olabini&gt; well.</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-black">&lt;olabini&gt; I've heard up to two</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-black">&lt;olabini&gt; if you're unlucky</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-black">&lt;naeu&gt; sshhh!</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-black">&lt;naeu&gt; :-p</span><br />
+<span class="irc-date">[16:34]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-220.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[17:14]</span> <span class="irc-navy">* naeu (n=sam@h36036.upc-h.chello.nl) Quit ()</span><br />
+<span class="irc-date">[17:18]</span> <span class="irc-green">* olabini (n=ola@c-398de155.234-1-64736c10.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@nat/sun/x-b1477c77b4bb88a9) Quit ("Leaving")</span><br />
+<span class="irc-date">[18:28]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:32]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[19:04]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[19:17]</span> <span class="irc-green">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[19:17]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-92.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[20:17]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-92.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[20:26]</span> <span class="irc-green">* kar8nga (n=kar8nga@i-167.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[20:34]</span> <span class="irc-navy">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[21:22]</span> <span class="irc-navy">* kar8nga (n=kar8nga@i-167.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[21:55]</span> <span class="irc-green">* kidd (n=user@5.Red-79-150-114.dynamicIP.rima-tde.net) has joined #ioke</span><br />
+<span class="irc-date">[22:01]</span> <span class="irc-green">* kidd (n=user@5.Red-79-150-114.dynamicIP.rima-tde.net) has left #ioke</span><br />

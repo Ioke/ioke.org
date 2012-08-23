@@ -1,0 +1,96 @@
+<span class="irc-date">[0:08]</span> <span class="irc-navy">* olabini (n=ola@217.40.10.35) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[1:03]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[1:06]</span> <span class="irc-navy">* mozinator (n=mozinato@195-241-109-215.ip.telfort.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[6:04]</span> <span class="irc-green">* cirquitz (n=cirquitz@59.164.40.253) has joined #ioke</span><br />
+<span class="irc-date">[6:11]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-39.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[6:25]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-39.vc-graz.ac.at) Quit (Read error: 54 (Connection reset by peer))</span><br />
+<span class="irc-date">[6:29]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-19.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[6:34]</span> <span class="irc-navy">* cirquitz (n=cirquitz@59.164.40.253) Quit ("Leaving")</span><br />
+<span class="irc-date">[6:54]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-19.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[8:19]</span> <span class="irc-green">* naeu (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:21]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:57]</span> <span class="irc-green">* exlibris (n=exlibris@port-87-193-165-87.static.qsc.de) has joined #ioke</span><br />
+<span class="irc-date">[9:19]</span> <span class="irc-green">* olabini (n=ola@93-97-45-26.zone5.bethere.co.uk) has joined #ioke</span><br />
+<span class="irc-date">[9:19]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[9:21]</span> <span class="irc-black">&lt;naeu&gt; Hey Ola, I've been trying to find some documentation for deepCopy - am I looking in the wrong places?</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;olabini&gt; hey</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;olabini&gt; that's a good point. there might not be much</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;olabini&gt; it should be in Message</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;olabini&gt; <a href="http://ioke.org/dok/kinds/Message.html#C00672">http://ioke.org/dok/kinds/Message.html#C00672</a></span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;olabini&gt; this is all</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;olabini&gt; don't seem to have any real specs for it</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;olabini&gt; bad</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;olabini&gt; I'm considering adding a flag to dokgen that will warn about any method it can't find specs for</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;naeu&gt; that would be useful</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;naeu&gt; hmm, this seems broken:</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;naeu&gt; `T1000 terminator?</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;naeu&gt; false</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;naeu&gt; actually it just blows up :D</span><br />
+<span class="irc-date">[9:34]</span> <span class="irc-black">&lt;naeu&gt; I meant</span><br />
+<span class="irc-date">[9:34]</span> <span class="irc-black">&lt;naeu&gt; 'T1000 terminator?</span><br />
+<span class="irc-date">[9:34]</span> <span class="irc-black">&lt;naeu&gt; surely that should return true...</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-black">&lt;olabini&gt; hm</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-black">&lt;olabini&gt; what?</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-black">&lt;olabini&gt; I don't understand why it should return true</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-black">&lt;olabini&gt; it is not a terminator</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-black">&lt;olabini&gt; a terminator is a message with "." as name</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-black">&lt;olabini&gt; that is how it is defined</span><br />
+<span class="irc-date">[9:44]</span> <span class="irc-black">&lt;olabini&gt; and `T1000 blows up of course</span><br />
+<span class="irc-date">[9:45]</span> <span class="irc-black">&lt;olabini&gt; since that is just a method call and you haven't defined T1000</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;naeu&gt; hahahahaha</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;naeu&gt; you're sooo literal!</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;naeu&gt; do a google search for T1000</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;naeu&gt; it *is* a terminator ;-)</span><br />
+<span class="irc-date">[9:52]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:53]</span> <span class="irc-black">&lt;olabini&gt; yeah, true enough</span><br />
+<span class="irc-date">[9:53]</span> <span class="irc-black">&lt;olabini&gt; so</span><br />
+<span class="irc-date">[9:53]</span> <span class="irc-black">&lt;naeu&gt; :-p</span><br />
+<span class="irc-date">[9:53]</span> <span class="irc-black">&lt;olabini&gt; T1000 = Origin mimic do(terminator? = true)</span><br />
+<span class="irc-date">[9:53]</span> <span class="irc-black">&lt;olabini&gt; I might propose that a Message is not the right data structure for a terminator of the robot variety.</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[13:58]</span> <span class="irc-black">&lt;naeu&gt; Ola, what does Ioke benefit from having Gnu.Math?</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;olabini&gt; arbitrary precision numbers</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;olabini&gt; ratios</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;olabini&gt; will get complex and units and dimensions too, when I decide to add that</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;olabini&gt; all in a unified framework</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;olabini&gt; good enough answer? =)</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;naeu&gt; indeed</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-black">&lt;naeu&gt; although I'm assuming if you were to write a javascript port - you'll have to port the framework to js land...</span><br />
+<span class="irc-date">[14:26]</span> <span class="irc-black">&lt;naeu&gt; btw did you use a test suite when you ported parts of gnu.math to c#?</span><br />
+<span class="irc-date">[14:26]</span> <span class="irc-black">&lt;naeu&gt; there's some scary stuff going on in there</span><br />
+<span class="irc-date">[14:52]</span> <span class="irc-green">* RobL__ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-black">&lt;olabini&gt; the thing is</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-black">&lt;olabini&gt; the JS thing can never be compatible</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-black">&lt;olabini&gt; so I need to choose where I draw the line for the JS dialect</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-black">&lt;olabini&gt; ... and no, I didn't use any test suite for the gnu.math port, except Ioke's test suite</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-black">&lt;olabini&gt; and yes, there is some REALLY scary stuff in there</span><br />
+<span class="irc-date">[14:58]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[15:14]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[15:19]</span> <span class="irc-black">&lt;naeu&gt; which sort of things can't be compatible in a JS dialect?</span><br />
+<span class="irc-date">[15:20]</span> <span class="irc-navy">* exlibris (n=exlibris@port-87-193-165-87.static.qsc.de) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[15:20]</span> <span class="irc-green">* exlibris (n=exlibris@port-87-193-165-87.static.qsc.de) has joined #ioke</span><br />
+<span class="irc-date">[15:21]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-black">&lt;olabini&gt; lots of things reall</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-black">&lt;olabini&gt; really</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-black">&lt;olabini&gt; mostly about data structures, though.</span><br />
+<span class="irc-date">[15:45]</span> <span class="irc-black">&lt;naeu&gt; what should i look at to try and understand what you mean?</span><br />
+<span class="irc-date">[15:46]</span> <span class="irc-black">&lt;naeu&gt; i would have imagined that regexp support would vary slightly depending on the engine used</span><br />
+<span class="irc-date">[15:47]</span> <span class="irc-navy">* olabini (n=ola@93-97-45-26.zone5.bethere.co.uk) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[16:21]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit ()</span><br />
+<span class="irc-date">[17:50]</span> <span class="irc-green">* olabini (n=ola@93-97-45-26.zone5.bethere.co.uk) has joined #ioke</span><br />
+<span class="irc-date">[17:50]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[18:39]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-160.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-navy">* exlibris (n=exlibris@port-87-193-165-87.static.qsc.de) Quit ("Leaving...")</span><br />
+<span class="irc-date">[19:50]</span> <span class="irc-green">* cirquitz (n=cirquitz@59.164.145.67) has joined #ioke</span><br />
+<span class="irc-date">[20:09]</span> <span class="irc-navy">* olabini (n=ola@93-97-45-26.zone5.bethere.co.uk) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[20:14]</span> <span class="irc-green">* olabini (n=ola@217.40.10.35) has joined #ioke</span><br />
+<span class="irc-date">[20:14]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[20:25]</span> <span class="irc-navy">* cirquitz (n=cirquitz@59.164.145.67) Quit ("Leaving")</span><br />
+<span class="irc-date">[21:23]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-160.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[21:59]</span> <span class="irc-navy">* olabini (n=ola@217.40.10.35) Quit (Read error: 110 (Connection timed out))</span><br />

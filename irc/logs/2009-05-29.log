@@ -1,0 +1,18 @@
+<span class="irc-date">[0:59]</span> <span class="irc-green">* olabini (n=ola@72-254-98-18.client.stsn.net) has joined #ioke</span><br />
+<span class="irc-date">[0:59]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[4:18]</span> <span class="irc-navy">* olabini (n=ola@72-254-98-18.client.stsn.net) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[8:02]</span> <span class="irc-green">* naeu (n=sam@0x50a5bdb6.arcnxx18.dynamic.dsl.tele.dk) has joined #ioke</span><br />
+<span class="irc-date">[10:53]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[12:44]</span> <span class="irc-navy">* naeu (n=sam@0x50a5bdb6.arcnxx18.dynamic.dsl.tele.dk) Quit ()</span><br />
+<span class="irc-date">[15:49]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[18:57]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini master * rf64a566 / (src/ikj/builtin/J05_javaGround.ik test/java_ground_spec.ik): Add some helper methods for java:util:List to make it easier to work with - <a href="http://bit.ly/VOuac">http://bit.ly/VOuac</a></span><br />
+<span class="irc-date">[18:58]</span> <span class="irc-green">* naeu (n=sam@0x50a5bdb6.arcnxx18.dynamic.dsl.tele.dk) has joined #ioke</span><br />
+<span class="irc-date">[19:01]</span> <span class="irc-navy">* naeu (n=sam@0x50a5bdb6.arcnxx18.dynamic.dsl.tele.dk) Quit (Client Quit)</span><br />
+<span class="irc-date">[20:15]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-62.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[21:36]</span> <span class="irc-green">* donizetti (n=donizett@187.37.198.20) has joined #ioke</span><br />
+<span class="irc-date">[21:36]</span> <span class="irc-green">* donizetti (n=donizett@187.37.198.20) has left #ioke</span><br />
+<span class="irc-date">[22:12]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-62.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[23:07]</span> <span class="irc-green">* naeu_ (n=sam@0x50a5bdb6.arcnxx18.dynamic.dsl.tele.dk) has joined #ioke</span><br />
+<span class="irc-date">[23:08]</span> <span class="irc-navy">* naeu_ (n=sam@0x50a5bdb6.arcnxx18.dynamic.dsl.tele.dk) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[23:42]</span> <span class="irc-green">* donizetti (n=donizett@189.79.148.170) has joined #ioke</span><br />
+<span class="irc-date">[23:43]</span> <span class="irc-navy">* donizetti (n=donizett@189.79.148.170) Quit (Client Quit)</span><br />

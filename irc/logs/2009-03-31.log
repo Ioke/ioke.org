@@ -1,0 +1,658 @@
+<span class="irc-date">[0:59]</span> <span class="irc-green">* felipero (n=Felipe@187.2.4.139) has joined #ioke</span><br />
+<span class="irc-date">[1:01]</span> <span class="irc-black">&lt;felipero&gt; Hi guys...</span><br />
+<span class="irc-date">[1:08]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[1:36]</span> <span class="irc-black">&lt;felipero&gt; anyone knows how to print the current directory?</span><br />
+<span class="irc-date">[2:10]</span> <span class="irc-navy">* felipero (n=Felipe@187.2.4.139) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[2:10]</span> <span class="irc-green">* felipero (n=Felipe@187.2.4.139) has joined #ioke</span><br />
+<span class="irc-date">[3:08]</span> <span class="irc-navy">* felipero (n=Felipe@187.2.4.139) Quit ("Saindo")</span><br />
+<span class="irc-date">[4:42]</span> <span class="irc-green">* martido (n=martin@dslb-088-066-205-169.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[4:43]</span> <span class="irc-black">&lt;martido&gt; felipero: System currentDirectory should work</span><br />
+<span class="irc-date">[5:09]</span> <span class="irc-navy">* martido (n=martin@dslb-088-066-205-169.pools.arcor-ip.net) Quit ()</span><br />
+<span class="irc-date">[6:17]</span> <span class="irc-green">* naeu (n=sam@82-168-104-2.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[6:49]</span> <span class="irc-navy">* naeu (n=sam@82-168-104-2.ip.telfort.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[6:52]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-220.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[6:56]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[7:01]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Client Quit)</span><br />
+<span class="irc-date">[7:20]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[7:57]</span> <span class="irc-green">* HeMan (n=jimmy@ssh.southpole.se) has joined #ioke</span><br />
+<span class="irc-date">[8:05]</span> <span class="irc-green">* naeu (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:49]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-220.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[9:15]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[9:44]</span> <span class="irc-green">* olabini (n=ola@c-398de155.234-1-64736c10.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[9:44]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[9:48]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-220.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:56]</span> <span class="irc-green">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;naeu&gt; howdy all</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;olabini&gt; howdy!</span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;olabini&gt; I'm still a bit annoyed at that openjdk bug</span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;olabini&gt; need to finish up the native array support, then I'll look at the relative loading issue</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;naeu&gt; I'm going to try upgrading my server to lenny at somepoint soon</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;naeu&gt; and see what happens there</span><br />
+<span class="irc-date">[10:36]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[10:40]</span> <span class="irc-black">&lt;olabini&gt; naeu: how is your writeup about QCon coming?</span><br />
+<span class="irc-date">[10:40]</span> <span class="irc-black">&lt;naeu&gt; i did mon and tues</span><br />
+<span class="irc-date">[10:40]</span> <span class="irc-black">&lt;naeu&gt; i put them on our company dev blog</span><br />
+<span class="irc-date">[10:41]</span> <span class="irc-black">&lt;naeu&gt; dev.innovationfactory.nl</span><br />
+<span class="irc-date">[10:41]</span> <span class="irc-black">&lt;olabini&gt; yeah, saw them there</span><br />
+<span class="irc-date">[10:41]</span> <span class="irc-black">&lt;olabini&gt; that's what I meant, how is the rest of the week coming along? =)</span><br />
+<span class="irc-date">[10:41]</span> <span class="irc-black">&lt;naeu&gt; i've written most of weds already</span><br />
+<span class="irc-date">[10:41]</span> <span class="irc-black">&lt;olabini&gt; I have no idea what you saw thu and fri, so I was curious</span><br />
+<span class="irc-date">[10:42]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[10:42]</span> <span class="irc-black">&lt;naeu&gt; well i sat quite a bit in the functional/concurrent stuff  on Thurs</span><br />
+<span class="irc-date">[10:43]</span> <span class="irc-black">&lt;naeu&gt; and on Friday I went to fewer presentations but sat in some bad ideas</span><br />
+<span class="irc-date">[10:43]</span> <span class="irc-black">&lt;naeu&gt; interestingly i decided not to go to any DSL talks</span><br />
+<span class="irc-date">[10:43]</span> <span class="irc-black">&lt;naeu&gt; none of them drew me in</span><br />
+<span class="irc-date">[10:44]</span> <span class="irc-black">&lt;naeu&gt; I'd already seen Glenn speak about DSLs and wasn't overly impressed</span><br />
+<span class="irc-date">[10:46]</span> <span class="irc-black">&lt;olabini&gt; yeah, me too</span><br />
+<span class="irc-date">[10:46]</span> <span class="irc-black">&lt;olabini&gt; to me that talk doesn't have much to do with DSLs</span><br />
+<span class="irc-date">[10:46]</span> <span class="irc-black">&lt;olabini&gt; and not stateoftheart either</span><br />
+<span class="irc-date">[10:47]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[10:48]</span> <span class="irc-black">&lt;naeu&gt; to me, and I would say this, DSLs are more about communication than anything else</span><br />
+<span class="irc-date">[10:48]</span> <span class="irc-black">&lt;naeu&gt; in fact, they're particular parts of the code you *really* want to communicate to a specific audience with a defined literacy</span><br />
+<span class="irc-date">[10:50]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[10:50]</span> <span class="irc-black">&lt;olabini&gt; that's fair</span><br />
+<span class="irc-date">[10:50]</span> <span class="irc-black">&lt;naeu&gt; and when i say literacy I'm just referring to a shared and commonly understood set of vocabulary</span><br />
+<span class="irc-date">[10:52]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[10:52]</span> <span class="irc-black">&lt;naeu&gt; btw, did you notice i changed my home page</span><br />
+<span class="irc-date">[10:53]</span> <span class="irc-black">&lt;naeu&gt; it's still totally busted, but the front page is pretty much how i want it to look</span><br />
+<span class="irc-date">[10:53]</span> <span class="irc-black">&lt;olabini&gt; no, I didn't</span><br />
+<span class="irc-date">[10:53]</span> <span class="irc-black">&lt;olabini&gt; where is it?</span><br />
+<span class="irc-date">[10:53]</span> <span class="irc-black">&lt;naeu&gt; sam.aaron.name</span><br />
+<span class="irc-date">[10:57]</span> <span class="irc-black">&lt;olabini&gt; ah, right. nice</span><br />
+<span class="irc-date">[10:57]</span> <span class="irc-black">&lt;olabini&gt; didn't know you had a Novation Remote</span><br />
+<span class="irc-date">[10:57]</span> <span class="irc-black">&lt;olabini&gt; I have the Remote25</span><br />
+<span class="irc-date">[10:57]</span> <span class="irc-black">&lt;olabini&gt; one of the older ones</span><br />
+<span class="irc-date">[11:00]</span> <span class="irc-black">&lt;naeu&gt; cool</span><br />
+<span class="irc-date">[11:00]</span> <span class="irc-black">&lt;naeu&gt; i wrote some c++ to communicate with it</span><br />
+<span class="irc-date">[11:00]</span> <span class="irc-black">&lt;naeu&gt; so i have more control of the displays</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;olabini&gt; ah, that's cool</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;olabini&gt; how good is the interface?</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;naeu&gt; it's currently generated with some ruby code</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;naeu&gt; which compiles it</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;naeu&gt; then wraps around the std in and out</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;olabini&gt; aha</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;naeu&gt; so you don't know that there's any c++ ;-)</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;olabini&gt; sounds like fun</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;naeu&gt; yeah</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;naeu&gt; so i have a much cleaner interface</span><br />
+<span class="irc-date">[11:02]</span> <span class="irc-black">&lt;naeu&gt; something DSLish rather than something hidiously c++</span><br />
+<span class="irc-date">[11:02]</span> <span class="irc-black">&lt;naeu&gt; however, my plan is to replace the c++ generation with something in ioke</span><br />
+<span class="irc-date">[11:02]</span> <span class="irc-black">&lt;naeu&gt; which is why I wanted to make the template library</span><br />
+<span class="irc-date">[11:02]</span> <span class="irc-brick">* naeu eating with colleagues</span><br />
+<span class="irc-date">[11:03]</span> <span class="irc-black">&lt;olabini&gt; ah</span><br />
+<span class="irc-date">[11:03]</span> <span class="irc-brick">* olabini eating colleagues</span><br />
+<span class="irc-date">[11:03]</span> <span class="irc-black">&lt;olabini&gt; =P</span><br />
+<span class="irc-date">[11:08]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * rcfcd226 / (4 files in 3 dirs): Add tests and fixes for native arrays of Object - <a href="http://bit.ly/1P3dI">http://bit.ly/1P3dI</a></span><br />
+<span class="irc-date">[11:10]</span> <span class="irc-green">* naeu_ (n=sam@h36036.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[11:10]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[11:14]</span> <span class="irc-black">&lt;olabini&gt; Java native arrays are Enumerable. That's pretty neat.</span><br />
+<span class="irc-date">[11:45]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * r4cd6dc7 / (2 files in 2 dirs): Add tests and fixes for native arrays of Strings - <a href="http://bit.ly/wCXIi">http://bit.ly/wCXIi</a></span><br />
+<span class="irc-date">[11:45]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * re3ed102 / test/java_ground_spec.ik : Add tests and fixes for native arrays of Maps - <a href="http://bit.ly/1zmv6o">http://bit.ly/1zmv6o</a></span><br />
+<span class="irc-date">[11:54]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[11:54]</span> <span class="irc-black">&lt;olabini&gt; who was it that did iopt?</span><br />
+<span class="irc-date">[12:05]</span> <span class="irc-black">&lt;olabini&gt; well. those changes have to go, at least for now</span><br />
+<span class="irc-date">[12:05]</span> <span class="irc-black">&lt;olabini&gt; also, wtf... hmm. something else is really wrong</span><br />
+<span class="irc-date">[12:05]</span> <span class="irc-black">&lt;olabini&gt; gah</span><br />
+<span class="irc-date">[12:06]</span> <span class="irc-black">&lt;olabini&gt; I'm really starting to see the need for continuous integration.</span><br />
+<span class="irc-date">[12:09]</span> <span class="irc-black">&lt;naeu_&gt; are you gearing up for a new release?</span><br />
+<span class="irc-date">[12:10]</span> <span class="irc-black">&lt;olabini&gt; well. no, not yet</span><br />
+<span class="irc-date">[12:10]</span> <span class="irc-black">&lt;olabini&gt; I'm just fixing some blocking bugs</span><br />
+<span class="irc-date">[12:10]</span> <span class="irc-black">&lt;olabini&gt; and IOpt is starting to irritate me.</span><br />
+<span class="irc-date">[12:12]</span> <span class="irc-black">&lt;naeu_&gt; just take a moment, and take some deep breaths ;-)</span><br />
+<span class="irc-date">[12:12]</span> <span class="irc-black">&lt;olabini&gt; Vic seems to have made lots of changes to ISpec that I don't agree with, except for putting in Iopt</span><br />
+<span class="irc-date">[12:12]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[12:14]</span> <span class="irc-black">&lt;olabini&gt; as a typical example, "test" or "spec" shouldn't be the default if you don't give an argument to ispec</span><br />
+<span class="irc-date">[12:14]</span> <span class="irc-black">&lt;olabini&gt; that totally messes things up if you want to use ispec from anywhere else</span><br />
+<span class="irc-date">[12:14]</span> <span class="irc-black">&lt;olabini&gt; like using "ioke" on a file</span><br />
+<span class="irc-date">[12:14]</span> <span class="irc-black">&lt;olabini&gt; of course, I should have seen this before merging.</span><br />
+<span class="irc-date">[12:15]</span> <span class="irc-black">&lt;naeu_&gt; i don't quite see what you mean, but that's probably not important</span><br />
+<span class="irc-date">[12:15]</span> <span class="irc-black">&lt;olabini&gt; anyway</span><br />
+<span class="irc-date">[12:15]</span> <span class="irc-black">&lt;olabini&gt; doesn't matter</span><br />
+<span class="irc-date">[12:15]</span> <span class="irc-black">&lt;olabini&gt; just ranting</span><br />
+<span class="irc-date">[12:15]</span> <span class="irc-black">&lt;naeu_&gt; isn't the use of ispec as a stand-alone binary different from 'using' ispec within an ioke file?</span><br />
+<span class="irc-date">[12:16]</span> <span class="irc-black">&lt;olabini&gt; it shouldn't be different</span><br />
+<span class="irc-date">[12:16]</span> <span class="irc-black">&lt;naeu_&gt; or is that not what you're referring to</span><br />
+<span class="irc-date">[12:16]</span> <span class="irc-black">&lt;olabini&gt; if you look in bin/ispec you'll see it really doesn't do much</span><br />
+<span class="irc-date">[12:16]</span> <span class="irc-black">&lt;naeu_&gt; System exit(ISpec Runner CommandLine run(ISpec ispec_options))</span><br />
+<span class="irc-date">[12:17]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[12:17]</span> <span class="irc-black">&lt;olabini&gt; that's just an explicit running</span><br />
+<span class="irc-date">[12:17]</span> <span class="irc-black">&lt;olabini&gt; instead of an at exit hook</span><br />
+<span class="irc-date">[12:17]</span> <span class="irc-black">&lt;olabini&gt; in fact, it doesn't even have to do that</span><br />
+<span class="irc-date">[12:17]</span> <span class="irc-black">&lt;olabini&gt; except that forcing system exit is the main difference</span><br />
+<span class="irc-date">[12:18]</span> <span class="irc-black">&lt;olabini&gt; when doing use("ispec") it isn't certain that you want to exit the interpreter</span><br />
+<span class="irc-date">[12:19]</span> <span class="irc-black">&lt;naeu_&gt; of course</span><br />
+<span class="irc-date">[12:19]</span> <span class="irc-black">&lt;naeu_&gt; you want to be able to use ispec from a REPL after all</span><br />
+<span class="irc-date">[12:22]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[12:22]</span> <span class="irc-black">&lt;olabini&gt; and more importantly</span><br />
+<span class="irc-date">[12:22]</span> <span class="irc-black">&lt;olabini&gt; you want dokgen to be able to use it</span><br />
+<span class="irc-date">[12:22]</span> <span class="irc-black">&lt;olabini&gt; which fails right now</span><br />
+<span class="irc-date">[12:22]</span> <span class="irc-black">&lt;olabini&gt; and many other things with dokgen</span><br />
+<span class="irc-date">[12:22]</span> <span class="irc-black">&lt;olabini&gt; =/</span><br />
+<span class="irc-date">[12:22]</span> <span class="irc-black">&lt;olabini&gt; which is what I'm working on at the moment</span><br />
+<span class="irc-date">[12:28]</span> <span class="irc-black">&lt;naeu_&gt; it would be nice to run dokgen on parts of the codebase</span><br />
+<span class="irc-date">[12:30]</span> <span class="irc-black">&lt;olabini&gt; mm</span><br />
+<span class="irc-date">[12:30]</span> <span class="irc-black">&lt;olabini&gt; I don't know how to get that working well yet</span><br />
+<span class="irc-date">[12:30]</span> <span class="irc-black">&lt;olabini&gt; it's a tricky problem</span><br />
+<span class="irc-date">[12:37]</span> <span class="irc-black">&lt;olabini&gt; this problem seems to be a combination of problems with IOpt, the ISpec changes and also my refactoring to introduce IokeGround</span><br />
+<span class="irc-date">[12:40]</span> <span class="irc-black">&lt;naeu_&gt; ah, frustrating</span><br />
+<span class="irc-date">[12:42]</span> <span class="irc-green">* donizetti (n=donizett@189.120.169.35) has joined #ioke</span><br />
+<span class="irc-date">[12:48]</span> <span class="irc-black">&lt;olabini&gt; hmm. trickier than I expected</span><br />
+<span class="irc-date">[12:49]</span> <span class="irc-black">&lt;olabini&gt; this will take some time</span><br />
+<span class="irc-date">[12:49]</span> <span class="irc-black">&lt;olabini&gt; =/</span><br />
+<span class="irc-date">[12:49]</span> <span class="irc-black">&lt;naeu_&gt; :-(</span><br />
+<span class="irc-date">[13:01]</span> <span class="irc-black">&lt;olabini&gt; ok, this is getting annoying</span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-black">&lt;naeu_&gt; maybe you should take a break for a bit?</span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-black">&lt;olabini&gt; hmm. no time today</span><br />
+<span class="irc-date">[13:04]</span> <span class="irc-black">&lt;naeu_&gt; at least task switch</span><br />
+<span class="irc-date">[13:04]</span> <span class="irc-brick">* olabini is resorting to debug by printline</span><br />
+<span class="irc-date">[13:04]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[13:04]</span> <span class="irc-black">&lt;naeu_&gt; :-)</span><br />
+<span class="irc-date">[13:06]</span> <span class="irc-navy">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) Quit ("Ik ga weg")</span><br />
+<span class="irc-date">[13:21]</span> <span class="irc-black">&lt;olabini&gt; Think I've fixed it</span><br />
+<span class="irc-date">[13:22]</span> <span class="irc-green">* felipero (n=Felipe@189-55-18-206-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[13:22]</span> <span class="irc-black">&lt;olabini&gt; naeu_: the root problem was actually a change I made because of your regexp reports</span><br />
+<span class="irc-date">[13:22]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[13:22]</span> <span class="irc-black">&lt;naeu_&gt; blaming me are you? ;-)</span><br />
+<span class="irc-date">[13:22]</span> <span class="irc-black">&lt;naeu_&gt; hehe</span><br />
+<span class="irc-date">[13:23]</span> <span class="irc-black">&lt;olabini&gt; haha</span><br />
+<span class="irc-date">[13:23]</span> <span class="irc-black">&lt;olabini&gt; no, not at all</span><br />
+<span class="irc-date">[13:23]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[13:23]</span> <span class="irc-black">&lt;naeu_&gt; makes sense though if regexps were used</span><br />
+<span class="irc-date">[13:23]</span> <span class="irc-black">&lt;olabini&gt; sadly, I have no one to blame but myself</span><br />
+<span class="irc-date">[13:23]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[13:23]</span> <span class="irc-black">&lt;olabini&gt; no, that wasn't the problem</span><br />
+<span class="irc-date">[13:23]</span> <span class="irc-black">&lt;naeu_&gt; well, you can blame me too</span><br />
+<span class="irc-date">[13:23]</span> <span class="irc-black">&lt;olabini&gt;  the problem was in how the printing of Messages worked</span><br />
+<span class="irc-date">[13:23]</span> <span class="irc-black">&lt;naeu_&gt; i'm a good scapegoat</span><br />
+<span class="irc-date">[13:23]</span> <span class="irc-black">&lt;olabini&gt; and the representation of regexp interpolations in the Message tree</span><br />
+<span class="irc-date">[13:23]</span> <span class="irc-black">&lt;naeu_&gt; ahhh...</span><br />
+<span class="irc-date">[13:23]</span> <span class="irc-black">&lt;olabini&gt; pretty tricky</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * r034cbae / : Whitespace change - <a href="http://bit.ly/chxM">http://bit.ly/chxM</a></span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * r9e2795c / (12 files in 6 dirs): Fix #216, so that dokgen works again - <a href="http://bit.ly/i4AKv">http://bit.ly/i4AKv</a></span><br />
+<span class="irc-date">[13:35]</span> <span class="irc-black">&lt;olabini&gt; naeu_: I just made a comment on your bug about openjdk</span><br />
+<span class="irc-date">[13:35]</span> <span class="irc-black">&lt;olabini&gt; can you see if that works?</span><br />
+<span class="irc-date">[13:36]</span> <span class="irc-black">&lt;naeu_&gt; sure, hold on</span><br />
+<span class="irc-date">[13:36]</span> <span class="irc-black">&lt;olabini&gt; can you also see if antlr is on the classpath even without running the Ioke build?</span><br />
+<span class="irc-date">[13:36]</span> <span class="irc-black">&lt;naeu_&gt; how do i do that?</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;olabini&gt; just see if Java can load an antlr file</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;olabini&gt; if you do:</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;olabini&gt; java org.antlr.Tool</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;olabini&gt; what happens?</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-black">&lt;naeu_&gt; boom</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-black">&lt;naeu_&gt; java org.antlr.Tool</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-black">&lt;naeu_&gt; Exception in thread "main" java.lang.NoClassDefFoundError: org/antlr/Tool</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-black">&lt;olabini&gt; ok</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-black">&lt;olabini&gt; it was worth a try at least</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-black">&lt;naeu_&gt; that's just from the home dir though</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[13:39]</span> <span class="irc-black">&lt;olabini&gt; hmmmmmmmmmmmmm.</span><br />
+<span class="irc-date">[13:39]</span> <span class="irc-black">&lt;naeu_&gt; is that where you intended me to run it?</span><br />
+<span class="irc-date">[13:39]</span> <span class="irc-black">&lt;olabini&gt; doesn't matter where</span><br />
+<span class="irc-date">[13:39]</span> <span class="irc-black">&lt;naeu_&gt; sure</span><br />
+<span class="irc-date">[13:39]</span> <span class="irc-black">&lt;olabini&gt; can you do a global find for any file that starts with "antlr" and ends with ".jar"</span><br />
+<span class="irc-date">[13:39]</span> <span class="irc-black">&lt;naeu_&gt; sure</span><br />
+<span class="irc-date">[13:40]</span> <span class="irc-black">&lt;olabini&gt; did you try to explicitly set k?</span><br />
+<span class="irc-date">[13:40]</span> <span class="irc-black">&lt;naeu_&gt; not yet</span><br />
+<span class="irc-date">[13:43]</span> <span class="irc-black">&lt;olabini&gt; I'm mailing the antlr list about this</span><br />
+<span class="irc-date">[13:44]</span> <span class="irc-black">&lt;naeu_&gt; matching files: /usr/local/ioke/lib/build/antlr-3.1.2.jar, /usr/local/ioke/lib/release/antlr-3.1.2.jar</span><br />
+<span class="irc-date">[13:45]</span> <span class="irc-black">&lt;olabini&gt; ok</span><br />
+<span class="irc-date">[13:45]</span> <span class="irc-black">&lt;olabini&gt; well, can you try setting k?</span><br />
+<span class="irc-date">[13:49]</span> <span class="irc-black">&lt;naeu_&gt; seems to have worked...</span><br />
+<span class="irc-date">[13:49]</span> <span class="irc-black">&lt;olabini&gt; uhm, wait</span><br />
+<span class="irc-date">[13:49]</span> <span class="irc-black">&lt;naeu_&gt; it's now running the specs</span><br />
+<span class="irc-date">[13:49]</span> <span class="irc-black">&lt;olabini&gt; your bug report uses System currentDirectory</span><br />
+<span class="irc-date">[13:49]</span> <span class="irc-black">&lt;olabini&gt; the other one, that is</span><br />
+<span class="irc-date">[13:49]</span> <span class="irc-black">&lt;naeu_&gt; what should I be using?</span><br />
+<span class="irc-date">[13:49]</span> <span class="irc-black">&lt;olabini&gt; well, that depends on where you're running the file</span><br />
+<span class="irc-date">[13:49]</span> <span class="irc-black">&lt;olabini&gt; System currentDirectory is generally the directory where the interpreter is started in</span><br />
+<span class="irc-date">[13:50]</span> <span class="irc-black">&lt;naeu_&gt; hmm</span><br />
+<span class="irc-date">[13:50]</span> <span class="irc-black">&lt;naeu_&gt; well that explains it</span><br />
+<span class="irc-date">[13:50]</span> <span class="irc-black">&lt;naeu_&gt; i want the directory that the current file is defined in</span><br />
+<span class="irc-date">[13:50]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[13:50]</span> <span class="irc-black">&lt;olabini&gt; which is a totally different thing</span><br />
+<span class="irc-date">[13:51]</span> <span class="irc-black">&lt;olabini&gt; wait. I'm lying</span><br />
+<span class="irc-date">[13:51]</span> <span class="irc-black">&lt;olabini&gt; it seems System currentDirectory doesn't do that</span><br />
+<span class="irc-date">[13:51]</span> <span class="irc-black">&lt;olabini&gt; blah</span><br />
+<span class="irc-date">[13:51]</span> <span class="irc-black">&lt;olabini&gt; ok, something is still weird here</span><br />
+<span class="irc-date">[13:52]</span> <span class="irc-black">&lt;naeu_&gt; i don't believe you're lying, it's just that we're both confused about this</span><br />
+<span class="irc-date">[13:53]</span> <span class="irc-black">&lt;olabini&gt; oh</span><br />
+<span class="irc-date">[13:53]</span> <span class="irc-black">&lt;olabini&gt; that's funy</span><br />
+<span class="irc-date">[13:53]</span> <span class="irc-black">&lt;olabini&gt; funny</span><br />
+<span class="irc-date">[13:53]</span> <span class="irc-black">&lt;olabini&gt; I never implemented functionality for absolute paths to be loaded</span><br />
+<span class="irc-date">[13:53]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[13:53]</span> <span class="irc-black">&lt;olabini&gt; of course</span><br />
+<span class="irc-date">[13:53]</span> <span class="irc-black">&lt;olabini&gt; that explains it</span><br />
+<span class="irc-date">[13:53]</span> <span class="irc-black">&lt;naeu_&gt; hmm, now it's not compiling - weird</span><br />
+<span class="irc-date">[13:53]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[13:53]</span> <span class="irc-black">&lt;olabini&gt; did you do an ant clean inbetween?</span><br />
+<span class="irc-date">[13:53]</span> <span class="irc-black">&lt;naeu_&gt; all i did was a git stash ; git pull ; git stash apply ; ant clean ; ant</span><br />
+<span class="irc-date">[13:55]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[13:55]</span> <span class="irc-black">&lt;olabini&gt; and it doesn't compile?</span><br />
+<span class="irc-date">[13:55]</span> <span class="irc-black">&lt;naeu_&gt; nothing special</span><br />
+<span class="irc-date">[13:55]</span> <span class="irc-black">&lt;olabini&gt; that's bad</span><br />
+<span class="irc-date">[13:55]</span> <span class="irc-black">&lt;naeu_&gt; nope, same error</span><br />
+<span class="irc-date">[13:55]</span> <span class="irc-black">&lt;olabini&gt; what error?</span><br />
+<span class="irc-date">[13:55]</span> <span class="irc-black">&lt;olabini&gt; &lt;naeu_&gt; hmm, now it's not compiling - weird</span><br />
+<span class="irc-date">[13:55]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[13:55]</span> <span class="irc-black">&lt;olabini&gt; and k?</span><br />
+<span class="irc-date">[13:56]</span> <span class="irc-black">&lt;naeu_&gt; that got reset with git stash apply</span><br />
+<span class="irc-date">[13:56]</span> <span class="irc-black">&lt;naeu_&gt; so it's set to 2</span><br />
+<span class="irc-date">[13:56]</span> <span class="irc-black">&lt;naeu_&gt; ?? git diff</span><br />
+<span class="irc-date">[13:56]</span> <span class="irc-black">&lt;naeu_&gt; diff --git a/src/grammar/ioke.g b/src/grammar/ioke.g</span><br />
+<span class="irc-date">[13:56]</span> <span class="irc-black">&lt;naeu_&gt; index 71eb64e..51ea4d3 100644</span><br />
+<span class="irc-date">[13:56]</span> <span class="irc-black">&lt;naeu_&gt; --- a/src/grammar/ioke.g</span><br />
+<span class="irc-date">[13:56]</span> <span class="irc-black">&lt;naeu_&gt; +++ b/src/grammar/ioke.g</span><br />
+<span class="irc-date">[13:56]</span> <span class="irc-black">&lt;naeu_&gt; @@ -1,6 +1,7 @@</span><br />
+<span class="irc-date">[13:56]</span> <span class="irc-black">&lt;naeu_&gt;  grammar ioke;</span><br />
+<span class="irc-date">[13:56]</span> <span class="irc-black">&lt;naeu_&gt;  </span><br />
+<span class="irc-date">[13:56]</span> <span class="irc-black">&lt;naeu_&gt;  options {</span><br />
+<span class="irc-date">[13:56]</span> <span class="irc-black">&lt;naeu_&gt; +    k = 2;</span><br />
+<span class="irc-date">[13:56]</span> <span class="irc-black">&lt;naeu_&gt;      output = AST;</span><br />
+<span class="irc-date">[13:56]</span> <span class="irc-black">&lt;naeu_&gt;  }</span><br />
+<span class="irc-date">[13:56]</span> <span class="irc-black">&lt;naeu_&gt;  </span><br />
+<span class="irc-date">[13:59]</span> <span class="irc-black">&lt;olabini&gt; hmmmmmmmmmmmmmmmm</span><br />
+<span class="irc-date">[13:59]</span> <span class="irc-black">&lt;olabini&gt; so that didn't work</span><br />
+<span class="irc-date">[13:59]</span> <span class="irc-black">&lt;olabini&gt; that means it's probably a JDK bug or antlr bug</span><br />
+<span class="irc-date">[13:59]</span> <span class="irc-black">&lt;olabini&gt; =*</span><br />
+<span class="irc-date">[13:59]</span> <span class="irc-black">&lt;olabini&gt; =(</span><br />
+<span class="irc-date">[14:06]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * ra03d6e9 / (3 files in 3 dirs): Fix bug #220 - make it possible to use things with an absolute path - <a href="http://bit.ly/os48">http://bit.ly/os48</a></span><br />
+<span class="irc-date">[14:07]</span> <span class="irc-black">&lt;olabini&gt; yay</span><br />
+<span class="irc-date">[14:07]</span> <span class="irc-black">&lt;naeu_&gt; it's weird that it compiled the first time, but not the subsequent times</span><br />
+<span class="irc-date">[14:08]</span> <span class="irc-black">&lt;naeu_&gt; yey, for the absolute path fix</span><br />
+<span class="irc-date">[14:08]</span> <span class="irc-black">&lt;olabini&gt; yeah, very weird</span><br />
+<span class="irc-date">[14:09]</span> <span class="irc-black">&lt;naeu_&gt; i was planning to start to use ioke to drive the non-static parts of my home page</span><br />
+<span class="irc-date">[14:10]</span> <span class="irc-black">&lt;olabini&gt; ah, cool!</span><br />
+<span class="irc-date">[14:10]</span> <span class="irc-black">&lt;olabini&gt; I haven't been that adventurous yet</span><br />
+<span class="irc-date">[14:10]</span> <span class="irc-black">&lt;naeu_&gt; currently it's all just html/css</span><br />
+<span class="irc-date">[14:10]</span> <span class="irc-black">&lt;olabini&gt; you realize that Ioke probably leaks memory like a sieve at the moment?</span><br />
+<span class="irc-date">[14:10]</span> <span class="irc-black">&lt;olabini&gt; ... =)</span><br />
+<span class="irc-date">[14:10]</span> <span class="irc-black">&lt;naeu_&gt; yep :-)</span><br />
+<span class="irc-date">[14:10]</span> <span class="irc-black">&lt;olabini&gt; good. just so you know... -)</span><br />
+<span class="irc-date">[14:10]</span> <span class="irc-black">&lt;naeu_&gt; but i'll just be using it for creating html to cache</span><br />
+<span class="irc-date">[14:11]</span> <span class="irc-black">&lt;olabini&gt; ah, ok</span><br />
+<span class="irc-date">[14:11]</span> <span class="irc-black">&lt;naeu_&gt; i.e. ioke scripts called by cron or by git commit hooks</span><br />
+<span class="irc-date">[14:11]</span> <span class="irc-black">&lt;olabini&gt; aha</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-brick">* olabini is getting ready to sort out the last kinks in Java integration</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;naeu_&gt; i'm not adventurous enough to start making living applications out of ioke yet ;-)</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;olabini&gt; haha</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;olabini&gt; yeah.</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;olabini&gt; that's good</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;naeu_&gt; "last kinks" - famous last words ;-)</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;olabini&gt; well, it's the only pending spec right now</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;olabini&gt; the one for integrating on methods that take arguments</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;olabini&gt; but I know some of it already works</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-black">&lt;olabini&gt; it might actually all work - who knows? =)</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-black">&lt;olabini&gt; or rather, who knows until it's tested?</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-black">&lt;naeu_&gt; i haven't looked into the java integration yet</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-black">&lt;naeu_&gt; indeed...</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-black">&lt;olabini&gt; I'm planning to write a blog post about it after Ioke E is out.</span><br />
+<span class="irc-date">[14:14]</span> <span class="irc-black">&lt;naeu_&gt; great</span><br />
+<span class="irc-date">[14:14]</span> <span class="irc-black">&lt;naeu_&gt; i guess you'll also beef up the guide</span><br />
+<span class="irc-date">[14:14]</span> <span class="irc-black">&lt;olabini&gt; carlos talked about using Javassist using the java-integration stuff, to implement more of the core code. that would be nice</span><br />
+<span class="irc-date">[14:14]</span> <span class="irc-black">&lt;olabini&gt; yeah, that's true</span><br />
+<span class="irc-date">[14:15]</span> <span class="irc-black">&lt;naeu_&gt; my java-fu is appallingly  weak</span><br />
+<span class="irc-date">[14:15]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[14:15]</span> <span class="irc-black">&lt;naeu_&gt; my brain just get confused</span><br />
+<span class="irc-date">[14:15]</span> <span class="irc-black">&lt;olabini&gt; yeah, Java has that effect on people</span><br />
+<span class="irc-date">[14:15]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[14:16]</span> <span class="irc-black">&lt;naeu_&gt; in a way, one of the reasons I'm drawn to abstract/readable code is because I just can't read low level stuff</span><br />
+<span class="irc-date">[14:16]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[14:16]</span> <span class="irc-black">&lt;olabini&gt; I know what you mean</span><br />
+<span class="irc-date">[14:16]</span> <span class="irc-black">&lt;naeu_&gt; I struggle to abstract my perception see the overlaying patterns</span><br />
+<span class="irc-date">[14:16]</span> <span class="irc-black">&lt;olabini&gt; I can do it, but I don't want to</span><br />
+<span class="irc-date">[14:17]</span> <span class="irc-black">&lt;naeu_&gt; and my brain just hurts</span><br />
+<span class="irc-date">[14:17]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[14:17]</span> <span class="irc-black">&lt;naeu_&gt; I have the problem quite a lot less with Ruby</span><br />
+<span class="irc-date">[14:17]</span> <span class="irc-black">&lt;olabini&gt; yeah, I can imagine</span><br />
+<span class="irc-date">[14:17]</span> <span class="irc-black">&lt;naeu_&gt; particularly pure Ruby</span><br />
+<span class="irc-date">[14:17]</span> <span class="irc-black">&lt;naeu_&gt; but some Rails code can be pretty awful too</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;naeu_&gt; I just keep thinking "what the fuck is the intention here?"</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;naeu_&gt; and then get angry</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;naeu_&gt; which doesn't help ;-)</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;naeu_&gt; particularly on parts of the code which people just hack and hack and hack and hack on till it works</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;felipero&gt; hi guys</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;naeu_&gt; felipero: hey there</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;felipero&gt; found sometime to be with you guys here...</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;naeu_&gt; hehe</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-black">&lt;felipero&gt; we are closing a new contract in my company and will be harder to find time</span><br />
+<span class="irc-date">[14:21]</span> <span class="irc-black">&lt;felipero&gt; have you seen ikido already?</span><br />
+<span class="irc-date">[14:21]</span> <span class="irc-black">&lt;felipero&gt; any suggestions?</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;naeu_&gt; haven't taken a look yet except for the logo</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;felipero&gt; =)</span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;felipero&gt; I'm trying to find a way to load the actions</span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;felipero&gt; Last time, Ola suggested FileSystem[""]</span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;naeu_&gt; get '/hi' do</span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;naeu_&gt;   "Hello World!"</span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;naeu_&gt; end</span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;naeu_&gt; can you do stuff like this yet?</span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;felipero&gt; yes</span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;felipero&gt; not like that</span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;naeu_&gt; sure, that's just sinatra</span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;naeu_&gt; but i imagine:</span><br />
+<span class="irc-date">[14:24]</span> <span class="irc-black">&lt;felipero&gt; but similar</span><br />
+<span class="irc-date">[14:24]</span> <span class="irc-black">&lt;naeu_&gt; get("/hi"/, "hello world!")</span><br />
+<span class="irc-date">[14:24]</span> <span class="irc-black">&lt;naeu_&gt; oops</span><br />
+<span class="irc-date">[14:24]</span> <span class="irc-black">&lt;felipero&gt; the FileSystem gets relative to where jetty start was trigered</span><br />
+<span class="irc-date">[14:24]</span> <span class="irc-black">&lt;naeu_&gt; get("/hi", "hello world!")</span><br />
+<span class="irc-date">[14:25]</span> <span class="irc-black">&lt;felipero&gt; right now is something like:</span><br />
+<span class="irc-date">[14:25]</span> <span class="irc-black">&lt;felipero&gt;  Ikido action(#r[^/ikido], method("Hello Ikido... cool stuff"))</span><br />
+<span class="irc-date">[14:25]</span> <span class="irc-green">* Narnach_ (n=narnach@a82-94-4-220.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[14:25]</span> <span class="irc-black">&lt;naeu_&gt; well you could wrap that in a macro to remove the need to write method</span><br />
+<span class="irc-date">[14:26]</span> <span class="irc-black">&lt;felipero&gt; yes... I was thinking on make it simpler to call</span><br />
+<span class="irc-date">[14:26]</span> <span class="irc-black">&lt;naeu_&gt; :-)</span><br />
+<span class="irc-date">[14:26]</span> <span class="irc-black">&lt;naeu_&gt; it should be at *least* as clean as sinatra :-)</span><br />
+<span class="irc-date">[14:26]</span> <span class="irc-green">* Narnach__ (n=narnach@82.94.4.220) has joined #ioke</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;felipero&gt; in fact it is more expressive</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;felipero&gt; since we are creating an Ikido action to be handled using the code "Ikido action"</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;felipero&gt; but I agree we need to be less descritive</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;naeu_&gt; hmm, i guess i don't undestand what's going on here then</span><br />
+<span class="irc-date">[14:28]</span> <span class="irc-black">&lt;naeu_&gt; i imagine there's some sort of listener sitting above this choosing which action to execute based on pattern matching the url</span><br />
+<span class="irc-date">[14:28]</span> <span class="irc-black">&lt;felipero&gt; not really</span><br />
+<span class="irc-date">[14:29]</span> <span class="irc-black">&lt;naeu_&gt; how does it work then? :-)</span><br />
+<span class="irc-date">[14:29]</span> <span class="irc-green">* Narnac___ (n=narnach@a82-94-4-220.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[14:29]</span> <span class="irc-black">&lt;felipero&gt; in fact I need Ikido to register these actions when loading the controllers files</span><br />
+<span class="irc-date">[14:29]</span> <span class="irc-black">&lt;felipero&gt; so, when we use("simple_controller") this controller register its own actions</span><br />
+<span class="irc-date">[14:30]</span> <span class="irc-black">&lt;felipero&gt; so, when the IokeServlet is called from IKanServe the actions are registered...</span><br />
+<span class="irc-date">[14:31]</span> <span class="irc-black">&lt;felipero&gt; but this is not definitive</span><br />
+<span class="irc-date">[14:31]</span> <span class="irc-green">* Narna____ (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[14:31]</span> <span class="irc-black">&lt;felipero&gt; it is just the first draft, and I'm all ears for suggestions</span><br />
+<span class="irc-date">[14:31]</span> <span class="irc-black">&lt;felipero&gt; also, I'm trying to solve another problem right now</span><br />
+<span class="irc-date">[14:31]</span> <span class="irc-green">* olabini (n=ola@c-398de155.234-1-64736c10.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[14:32]</span> <span class="irc-black">&lt;felipero&gt; how to dinamically load the "application" or "controller"</span><br />
+<span class="irc-date">[14:32]</span> <span class="irc-black">&lt;felipero&gt; by convetion</span><br />
+<span class="irc-date">[14:32]</span> <span class="irc-black">&lt;felipero&gt; use("") cannot take wild cards =(</span><br />
+<span class="irc-date">[14:34]</span> <span class="irc-black">&lt;naeu_&gt; so are you going to have multiple controllers in ikido?</span><br />
+<span class="irc-date">[14:34]</span> <span class="irc-black">&lt;felipero&gt; not sure... just want to load it dinamically, without have to specific call its name</span><br />
+<span class="irc-date">[14:35]</span> <span class="irc-black">&lt;felipero&gt; ikido differs from sinatra in the matter that ikido runs on a servlet env</span><br />
+<span class="irc-date">[14:35]</span> <span class="irc-black">&lt;felipero&gt; I can't dot something like:</span><br />
+<span class="irc-date">[14:35]</span> <span class="irc-black">&lt;felipero&gt; ioke my_ikido_app.ik</span><br />
+<span class="irc-date">[14:35]</span> <span class="irc-black">&lt;felipero&gt; like in sinatra...</span><br />
+<span class="irc-date">[14:35]</span> <span class="irc-black">&lt;naeu_&gt; sure</span><br />
+<span class="irc-date">[14:36]</span> <span class="irc-black">&lt;felipero&gt; that happens because I need to deploy it in a server and when do that</span><br />
+<span class="irc-date">[14:36]</span> <span class="irc-black">&lt;felipero&gt; my app has no control over the ioke runtime anymore</span><br />
+<span class="irc-date">[14:36]</span> <span class="irc-black">&lt;naeu_&gt; so what does your app have control over?</span><br />
+<span class="irc-date">[14:36]</span> <span class="irc-black">&lt;felipero&gt; the runtime belongs to the IokeServlet</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-black">&lt;naeu_&gt; does it have control of the runtime within the IokeServlet?</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-black">&lt;donizetti&gt; felipero : why we don't write our own IkidoServlet ?</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-black">&lt;felipero&gt; donizetti, because this would be something like rewrite ikanserve</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-black">&lt;felipero&gt; =)</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-navy">* Narnach__ (n=narnach@82.94.4.220) Quit (Read error: 145 (Connection timed out))</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-black">&lt;naeu_&gt; and does the Servlet just pass some sort of url and params to the runtime on each request?</span><br />
+<span class="irc-date">[14:38]</span> <span class="irc-black">&lt;felipero&gt; naeu_,  my app controls what actions to handle and how to handle them</span><br />
+<span class="irc-date">[14:38]</span> <span class="irc-black">&lt;naeu_&gt; that's what i thought :-)</span><br />
+<span class="irc-date">[14:38]</span> <span class="irc-black">&lt;felipero&gt; no... the servlet uses the IokeObject implementation... set some cells and send a message to IKanServe dispatch</span><br />
+<span class="irc-date">[14:39]</span> <span class="irc-black">&lt;felipero&gt; the IKanServe dispatch looks in a list for registered actions</span><br />
+<span class="irc-date">[14:39]</span> <span class="irc-black">&lt;naeu_&gt; and does the message include the url and params?</span><br />
+<span class="irc-date">[14:39]</span> <span class="irc-black">&lt;felipero&gt; IokeServlet wraps the HTTPRequest to be used as a ioke object</span><br />
+<span class="irc-date">[14:40]</span> <span class="irc-black">&lt;felipero&gt; so, we can find the params normally... but I didn't got there yet</span><br />
+<span class="irc-date">[14:40]</span> <span class="irc-black">&lt;felipero&gt; but then... I can't just take my app and say it to use the ikido</span><br />
+<span class="irc-date">[14:40]</span> <span class="irc-black">&lt;felipero&gt; I have to sai to Ikido use my app</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-black">&lt;felipero&gt; and that's what I want to make dinamic right now</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-black">&lt;felipero&gt; after that, I will start to work on params and make the action registering more easier and dinamic</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-black">&lt;felipero&gt; The FileSystem is relative to the server path</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-black">&lt;felipero&gt; not to the classes dir</span><br />
+<span class="irc-date">[14:42]</span> <span class="irc-black">&lt;felipero&gt; and that's where I found the problem</span><br />
+<span class="irc-date">[14:42]</span> <span class="irc-black">&lt;felipero&gt; I could use a config file here, but this would be configuration over convetion... not what I want</span><br />
+<span class="irc-date">[14:42]</span> <span class="irc-black">&lt;felipero&gt; any ideas?</span><br />
+<span class="irc-date">[14:43]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-220.adsl.xs4all.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[14:45]</span> <span class="irc-black">&lt;naeu_&gt; i need to look at the code closer to help, sorry</span><br />
+<span class="irc-date">[14:45]</span> <span class="irc-black">&lt;felipero&gt; =)</span><br />
+<span class="irc-date">[14:45]</span> <span class="irc-black">&lt;felipero&gt; I already did and didn't found the solution. =)</span><br />
+<span class="irc-date">[14:45]</span> <span class="irc-black">&lt;felipero&gt; here is what I tried:</span><br />
+<span class="irc-date">[14:45]</span> <span class="irc-black">&lt;felipero&gt; FileSystem["app/*controller.ik"] each(f, use(f))</span><br />
+<span class="irc-date">[14:46]</span> <span class="irc-navy">* Narnach_ (n=narnach@a82-94-4-220.adsl.xs4all.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[14:47]</span> <span class="irc-black">&lt;donizetti&gt;  ahahah</span><br />
+<span class="irc-date">[14:47]</span> <span class="irc-black">&lt;donizetti&gt; i was thinking about it right now</span><br />
+<span class="irc-date">[14:47]</span> <span class="irc-black">&lt;donizetti&gt; but as you said the FileSytem dir get where the app get started</span><br />
+<span class="irc-date">[14:48]</span> <span class="irc-black">&lt;felipero&gt; yes...</span><br />
+<span class="irc-date">[14:48]</span> <span class="irc-black">&lt;felipero&gt; =(</span><br />
+<span class="irc-date">[14:48]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit ()</span><br />
+<span class="irc-date">[14:48]</span> <span class="irc-black">&lt;felipero&gt; naeu_, do you knwo a way to get the dir where the classes and ioke files are?</span><br />
+<span class="irc-date">[14:49]</span> <span class="irc-black">&lt;naeu_&gt; System currentDirectory</span><br />
+<span class="irc-date">[14:50]</span> <span class="irc-black">&lt;felipero&gt; prints nil</span><br />
+<span class="irc-date">[14:50]</span> <span class="irc-black">&lt;felipero&gt; =(</span><br />
+<span class="irc-date">[14:50]</span> <span class="irc-black">&lt;felipero&gt; but System currentFile  works well</span><br />
+<span class="irc-date">[14:50]</span> <span class="irc-navy">* Narnac___ (n=narnach@a82-94-4-220.adsl.xs4all.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[14:50]</span> <span class="irc-black">&lt;felipero&gt; in fact there are no specs for this cells</span><br />
+<span class="irc-date">[14:53]</span> <span class="irc-black">&lt;naeu_&gt; yeah, this stuff is still yet to be used heavily</span><br />
+<span class="irc-date">[14:56]</span> <span class="irc-black">&lt;felipero&gt; I think to do that, we need to add a method to ioke... so we can take the real current class dir</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-black">&lt;naeu_&gt; you mean the current dir of the environment?</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-black">&lt;naeu_&gt; rather than the current dir of the current class</span><br />
+<span class="irc-date">[14:58]</span> <span class="irc-black">&lt;felipero&gt; no... I need the current dir where the classes are running</span><br />
+<span class="irc-date">[14:58]</span> <span class="irc-black">&lt;felipero&gt; or the base classpath, what would be WEB-INF/classes/</span><br />
+<span class="irc-date">[14:58]</span> <span class="irc-black">&lt;felipero&gt; I think I could also set it up in the runtime from IokeServlet</span><br />
+<span class="irc-date">[14:59]</span> <span class="irc-black">&lt;felipero&gt; using setCurrentWorkingDirectory</span><br />
+<span class="irc-date">[15:03]</span> <span class="irc-black">&lt;naeu_&gt; hmm, i'm not sure how to get at that</span><br />
+<span class="irc-date">[15:03]</span> <span class="irc-black">&lt;naeu_&gt; sorry :-(</span><br />
+<span class="irc-date">[15:06]</span> <span class="irc-black">&lt;felipero&gt; =)</span><br />
+<span class="irc-date">[15:59]</span> <span class="irc-black">&lt;felipero&gt; the problem is the currentWorking dir is not working... =(</span><br />
+<span class="irc-date">[16:01]</span> <span class="irc-black">&lt;naeu_&gt; submit a bug report for it :-)</span><br />
+<span class="irc-date">[16:01]</span> <span class="irc-black">&lt;felipero&gt; or fix ti. )</span><br />
+<span class="irc-date">[16:01]</span> <span class="irc-black">&lt;felipero&gt; =)</span><br />
+<span class="irc-date">[16:01]</span> <span class="irc-green">* olabini (n=ola@cust-IP-10.data.tre.se) has joined #ioke</span><br />
+<span class="irc-date">[16:02]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[16:02]</span> <span class="irc-black">&lt;naeu_&gt; true :-)</span><br />
+<span class="irc-date">[16:02]</span> <span class="irc-black">&lt;felipero&gt; I'll try to fix... if can't will create a bug</span><br />
+<span class="irc-date">[16:02]</span> <span class="irc-black">&lt;olabini&gt; felipero: what's the problem you're seeing with currentDirectory?</span><br />
+<span class="irc-date">[16:02]</span> <span class="irc-black">&lt;felipero&gt; I did it:</span><br />
+<span class="irc-date">[16:02]</span> <span class="irc-black">&lt;felipero&gt; r.setCurrentWorkingDirectory(servletContext.getResource("/WEB-INF/").getPath());</span><br />
+<span class="irc-date">[16:03]</span> <span class="irc-black">&lt;felipero&gt; in the IokeServletContext.java</span><br />
+<span class="irc-date">[16:03]</span> <span class="irc-black">&lt;felipero&gt; and then try System currentDirectory and it returns nil</span><br />
+<span class="irc-date">[16:03]</span> <span class="irc-black">&lt;olabini&gt; no no no</span><br />
+<span class="irc-date">[16:03]</span> <span class="irc-black">&lt;olabini&gt; that's definitely not something you should do</span><br />
+<span class="irc-date">[16:03]</span> <span class="irc-black">&lt;felipero&gt; =O</span><br />
+<span class="irc-date">[16:03]</span> <span class="irc-black">&lt;olabini&gt; System currentDirectory doesn't use CWD</span><br />
+<span class="irc-date">[16:03]</span> <span class="irc-black">&lt;olabini&gt; look at the definition for "System currentDirectory" in IokeSystem.java</span><br />
+<span class="irc-date">[16:04]</span> <span class="irc-black">&lt;felipero&gt; humm...it uses runtime.getCurrentWOrkingDirectory</span><br />
+<span class="irc-date">[16:04]</span> <span class="irc-black">&lt;felipero&gt; witch uses the system getCurrentWorkingDirectory</span><br />
+<span class="irc-date">[16:04]</span> <span class="irc-black">&lt;felipero&gt; witch uses the cwd...</span><br />
+<span class="irc-date">[16:04]</span> <span class="irc-black">&lt;olabini&gt; not exacty</span><br />
+<span class="irc-date">[16:04]</span> <span class="irc-black">&lt;olabini&gt; what it really uses is this:</span><br />
+<span class="irc-date">[16:04]</span> <span class="irc-black">&lt;olabini&gt;                     String name = Message.file(message);</span><br />
+<span class="irc-date">[16:04]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-black">&lt;felipero&gt; where is this line?</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-black">&lt;olabini&gt; in the implementation of currentDirectory</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-black">&lt;olabini&gt;         obj.registerMethod(runtime.newJavaMethod("returns the current directory that the code is executing in", new JavaMethod.WithNoArguments("currentDirectory") {</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-black">&lt;olabini&gt;                 @Override</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-black">&lt;olabini&gt;                 public Object activate(IokeObject method, IokeObject context, IokeObject message, Object on) throws ControlFlow {</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-black">&lt;olabini&gt;                     getArguments().getEvaluatedArguments(context, message, on, new ArrayList&lt;Object&gt;(), new HashMap&lt;String, Object&gt;());</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-black">&lt;olabini&gt;                     String name = Message.file(message);</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-black">&lt;olabini&gt;                     File f = null;</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-black">&lt;olabini&gt;                     if(isAbsoluteFileName(name)) {</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-black">&lt;olabini&gt;                         f = new File(name);</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-black">&lt;felipero&gt; ok...</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-black">&lt;olabini&gt;                     } else {</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-black">&lt;olabini&gt;                         f = new File(context.runtime.getCurrentWorkingDirectory(), name);</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-black">&lt;felipero&gt; then you get the name</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-black">&lt;olabini&gt;                     }</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-black">&lt;olabini&gt;                     if(f.exists() &amp;&amp; f.isFile()) {</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-black">&lt;olabini&gt;                         return context.runtime.newText(f.getParent());</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-black">&lt;olabini&gt;                     }</span><br />
+<span class="irc-date">[16:07]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[16:07]</span> <span class="irc-black">&lt;olabini&gt;                     return context.runtime.nil;</span><br />
+<span class="irc-date">[16:07]</span> <span class="irc-black">&lt;olabini&gt;                 }</span><br />
+<span class="irc-date">[16:07]</span> <span class="irc-black">&lt;olabini&gt;             }));</span><br />
+<span class="irc-date">[16:07]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[16:07]</span> <span class="irc-black">&lt;felipero&gt; but you call getCurrentWorkingDirectory()</span><br />
+<span class="irc-date">[16:08]</span> <span class="irc-black">&lt;olabini&gt; yes</span><br />
+<span class="irc-date">[16:08]</span> <span class="irc-black">&lt;felipero&gt; so, what is the name?</span><br />
+<span class="irc-date">[16:08]</span> <span class="irc-black">&lt;olabini&gt; if the value in Message.file is not absolute, we need to use CWD to find a full filename</span><br />
+<span class="irc-date">[16:08]</span> <span class="irc-black">&lt;olabini&gt; ok</span><br />
+<span class="irc-date">[16:08]</span> <span class="irc-black">&lt;olabini&gt; so</span><br />
+<span class="irc-date">[16:08]</span> <span class="irc-black">&lt;olabini&gt; simply:</span><br />
+<span class="irc-date">[16:08]</span> <span class="irc-black">&lt;olabini&gt; the message that asks for the currentDirectory is called "message" in this code</span><br />
+<span class="irc-date">[16:09]</span> <span class="irc-black">&lt;olabini&gt; we then ask that message object in which file it is created</span><br />
+<span class="irc-date">[16:09]</span> <span class="irc-black">&lt;felipero&gt; ok...</span><br />
+<span class="irc-date">[16:09]</span> <span class="irc-black">&lt;olabini&gt; which means it is the place where the call is</span><br />
+<span class="irc-date">[16:09]</span> <span class="irc-black">&lt;olabini&gt; which gives us the currentDirectory</span><br />
+<span class="irc-date">[16:10]</span> <span class="irc-black">&lt;felipero&gt; and why does it returns nil?</span><br />
+<span class="irc-date">[16:12]</span> <span class="irc-black">&lt;naeu_&gt; if the file doesn't exist ir isn't a file</span><br />
+<span class="irc-date">[16:12]</span> <span class="irc-black">&lt;olabini&gt; because you've done something that destroys the nonexistance</span><br />
+<span class="irc-date">[16:12]</span> <span class="irc-black">&lt;olabini&gt; I mean</span><br />
+<span class="irc-date">[16:12]</span> <span class="irc-black">&lt;olabini&gt; since you change CWD, all file references used are wrong</span><br />
+<span class="irc-date">[16:12]</span> <span class="irc-black">&lt;olabini&gt; which means everything returns nil</span><br />
+<span class="irc-date">[16:12]</span> <span class="irc-black">&lt;felipero&gt; ok...</span><br />
+<span class="irc-date">[16:13]</span> <span class="irc-black">&lt;olabini&gt; what are you trying to do here?</span><br />
+<span class="irc-date">[16:13]</span> <span class="irc-black">&lt;felipero&gt; one sec... I'll remove that... I'm debbugging</span><br />
+<span class="irc-date">[16:13]</span> <span class="irc-black">&lt;naeu_&gt; where is the CWD changed?</span><br />
+<span class="irc-date">[16:13]</span> <span class="irc-black">&lt;naeu_&gt; is that in felipero's code?</span><br />
+<span class="irc-date">[16:13]</span> <span class="irc-black">&lt;olabini&gt; yeah, I wonder that too.</span><br />
+<span class="irc-date">[16:13]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[16:13]</span> <span class="irc-black">&lt;olabini&gt; I think</span><br />
+<span class="irc-date">[16:13]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[16:13]</span> <span class="irc-black">&lt;naeu_&gt; ah, ok</span><br />
+<span class="irc-date">[16:13]</span> <span class="irc-black">&lt;felipero&gt; yes...</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-black">&lt;felipero&gt; ok...</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-black">&lt;felipero&gt; I removed the call to setCurrentWorkingDirectory</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-black">&lt;felipero&gt; now I'm evaluating System currentDirectory like that:</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-black">&lt;felipero&gt; r.evaluateString("System currentDirectory println", r.message, r.ground)</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-black">&lt;felipero&gt; and the result is a nil object</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-black">&lt;olabini&gt; that will fail too</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-black">&lt;olabini&gt; since you aren't evaluating an Ioke file</span><br />
+<span class="irc-date">[16:16]</span> <span class="irc-black">&lt;olabini&gt; once again: what are you trying to do?</span><br />
+<span class="irc-date">[16:16]</span> <span class="irc-black">&lt;felipero&gt; ok... so maybe that's the problem</span><br />
+<span class="irc-date">[16:16]</span> <span class="irc-black">&lt;felipero&gt; FileSystem["app/*controller.ik"] each(f, use(f))</span><br />
+<span class="irc-date">[16:17]</span> <span class="irc-black">&lt;felipero&gt; but the FileSystem relative path is relative to where Jetty was started</span><br />
+<span class="irc-date">[16:17]</span> <span class="irc-black">&lt;felipero&gt; FileSystem directory?("../webapps") == true</span><br />
+<span class="irc-date">[16:17]</span> <span class="irc-black">&lt;naeu_&gt; it might help to define an 'APP_ROOT' variable</span><br />
+<span class="irc-date">[16:17]</span> <span class="irc-black">&lt;olabini&gt; yeah.</span><br />
+<span class="irc-date">[16:18]</span> <span class="irc-black">&lt;olabini&gt; this is going to be painful for you</span><br />
+<span class="irc-date">[16:18]</span> <span class="irc-black">&lt;felipero&gt; yes... that's what I'm trying to do</span><br />
+<span class="irc-date">[16:18]</span> <span class="irc-black">&lt;felipero&gt; get the real class dir</span><br />
+<span class="irc-date">[16:18]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[16:18]</span> <span class="irc-black">&lt;naeu_&gt; :-)</span><br />
+<span class="irc-date">[16:18]</span> <span class="irc-black">&lt;olabini&gt; you can do that from Java, easier</span><br />
+<span class="irc-date">[16:19]</span> <span class="irc-black">&lt;felipero&gt; that's what I thought... that's why I setted the currentWorkingDirectory</span><br />
+<span class="irc-date">[16:19]</span> <span class="irc-black">&lt;olabini&gt; if you want to do that, you need to set CWD _before_ loading anything</span><br />
+<span class="irc-date">[16:20]</span> <span class="irc-black">&lt;olabini&gt; look in ioke.lang.Main for more info on how to use it</span><br />
+<span class="irc-date">[16:20]</span> <span class="irc-black">&lt;olabini&gt; or an example, at least</span><br />
+<span class="irc-date">[16:20]</span> <span class="irc-black">&lt;felipero&gt; before create the runtime?</span><br />
+<span class="irc-date">[16:21]</span> <span class="irc-black">&lt;olabini&gt; no.</span><br />
+<span class="irc-date">[16:21]</span> <span class="irc-black">&lt;olabini&gt; look in Main.</span><br />
+<span class="irc-date">[16:26]</span> <span class="irc-black">&lt;felipero&gt; r.setCurrentWorkingDirectory(cwd);</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;felipero&gt; and then you addLoadPath ...</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;felipero&gt; is that the trikc?</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;felipero&gt; trick?</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;olabini&gt; well, I don't know the rest of your code</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;olabini&gt; but yeah, that should work, provided everything else is correct.</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;felipero&gt; so the problem was I was setting the currentWorkingDirectory but not the loadPath</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;felipero&gt; ?</span><br />
+<span class="irc-date">[16:28]</span> <span class="irc-black">&lt;felipero&gt; in fact the code is yours.... I'm doing that rigth after the r.init() call in IokeServletContext.java from IKanServe</span><br />
+<span class="irc-date">[16:28]</span> <span class="irc-black">&lt;olabini&gt; no</span><br />
+<span class="irc-date">[16:28]</span> <span class="irc-black">&lt;olabini&gt; well.</span><br />
+<span class="irc-date">[16:28]</span> <span class="irc-black">&lt;olabini&gt; you need to do it before init.</span><br />
+<span class="irc-date">[16:29]</span> <span class="irc-black">&lt;felipero&gt; oh... ok</span><br />
+<span class="irc-date">[16:29]</span> <span class="irc-black">&lt;felipero&gt; that was the problem then...</span><br />
+<span class="irc-date">[16:29]</span> <span class="irc-black">&lt;olabini&gt; and you need to make sure that everything needed is in the place you set CWD to</span><br />
+<span class="irc-date">[16:30]</span> <span class="irc-black">&lt;felipero&gt; including lib?</span><br />
+<span class="irc-date">[16:30]</span> <span class="irc-black">&lt;felipero&gt; with jars?</span><br />
+<span class="irc-date">[16:31]</span> <span class="irc-black">&lt;olabini&gt; it all depends</span><br />
+<span class="irc-date">[16:31]</span> <span class="irc-black">&lt;olabini&gt; I still don't understand why you're trying to do this</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-black">&lt;felipero&gt; well... I want to make sure that when people use FileSystem they will be in the WEB-INF relative path</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-black">&lt;felipero&gt; also, for me while developing ikido too</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-black">&lt;felipero&gt; make any sense?</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-black">&lt;olabini&gt; hm.</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-black">&lt;olabini&gt; yeah. it should work, provided you do it right... =)</span><br />
+<span class="irc-date">[16:34]</span> <span class="irc-black">&lt;felipero&gt; =)</span><br />
+<span class="irc-date">[16:34]</span> <span class="irc-black">&lt;naeu_&gt; olabini: isn't that the case with most software ;-)</span><br />
+<span class="irc-date">[16:35]</span> <span class="irc-black">&lt;felipero&gt; not wokring yet...</span><br />
+<span class="irc-date">[16:36]</span> <span class="irc-black">&lt;felipero&gt; will try later... have to go to a customer now...</span><br />
+<span class="irc-date">[16:36]</span> <span class="irc-black">&lt;felipero&gt; thanks for the help...</span><br />
+<span class="irc-date">[16:37]</span> <span class="irc-black">&lt;felipero&gt; one question before go...</span><br />
+<span class="irc-date">[16:37]</span> <span class="irc-green">* olabini` (n=ola@80.251.192.3) has joined #ioke</span><br />
+<span class="irc-date">[16:37]</span> <span class="irc-black">&lt;felipero&gt; what is System loadPath should return??</span><br />
+<span class="irc-date">[16:40]</span> <span class="irc-black">&lt;olabini`&gt; eh?</span><br />
+<span class="irc-date">[16:40]</span> <span class="irc-black">&lt;felipero&gt; System loadPath   also return nil</span><br />
+<span class="irc-date">[16:41]</span> <span class="irc-black">&lt;felipero&gt; what is that cell for?</span><br />
+<span class="irc-date">[16:41]</span> <span class="irc-black">&lt;olabini`&gt; what?</span><br />
+<span class="irc-date">[16:41]</span> <span class="irc-black">&lt;olabini`&gt; that shouldn't return nil</span><br />
+<span class="irc-date">[16:41]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * r4897a80 / (4 files in 2 dirs): Add tests of integrating on methods with arguments - <a href="http://bit.ly/14wG1L">http://bit.ly/14wG1L</a></span><br />
+<span class="irc-date">[16:41]</span> <span class="irc-brick">* naeu_ off out to try and organise the Dutch Ruby/Rails conference</span><br />
+<span class="irc-date">[16:41]</span> <span class="irc-black">&lt;olabini`&gt; the only way it can be nil</span><br />
+<span class="irc-date">[16:42]</span> <span class="irc-black">&lt;olabini`&gt; is if you're executing code without initing stuff</span><br />
+<span class="irc-date">[16:42]</span> <span class="irc-black">&lt;felipero&gt; humm...</span><br />
+<span class="irc-date">[16:43]</span> <span class="irc-black">&lt;felipero&gt; but this should return a list with all the places where look for ioke resources?</span><br />
+<span class="irc-date">[16:43]</span> <span class="irc-black">&lt;olabini`&gt; yeah</span><br />
+<span class="irc-date">[16:43]</span> <span class="irc-black">&lt;felipero&gt; ok... I'll check that later...</span><br />
+<span class="irc-date">[16:43]</span> <span class="irc-black">&lt;felipero&gt; thanks...</span><br />
+<span class="irc-date">[16:44]</span> <span class="irc-black">&lt;felipero&gt; got to go now</span><br />
+<span class="irc-date">[16:44]</span> <span class="irc-black">&lt;olabini`&gt; [workspace/ioke] (master) (1342) ?? ioke -e 'System loadPath inspect println'                                                                                                                                                                                               20090331 18:42</span><br />
+<span class="irc-date">[16:44]</span> <span class="irc-black">&lt;olabini`&gt; [".", "/Users/olabini/workspace/ioke/lib/ioke", "lib/ioke"]</span><br />
+<span class="irc-date">[16:44]</span> <span class="irc-black">&lt;olabini`&gt; [workspace/ioke] (master) (1343) ??</span><br />
+<span class="irc-date">[16:44]</span> <span class="irc-navy">* naeu_ (n=sam@h36036.upc-h.chello.nl) Quit ()</span><br />
+<span class="irc-date">[16:44]</span> <span class="irc-navy">* felipero (n=Felipe@189-55-18-206-nd.cpe.vivax.com.br) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[16:45]</span> <span class="irc-black">&lt;RobL__&gt; One thing you might want to consider - with custom class-loaders, servlet containers, osgi containers and other such strangeness, relying on any particular directory structure can get unreliable quickly. Something simpler/more direct might be more reliable in the long run.</span><br />
+<span class="irc-date">[16:45]</span> <span class="irc-black">&lt;olabini`&gt; yeah</span><br />
+<span class="irc-date">[16:46]</span> <span class="irc-black">&lt;olabini`&gt; which is why I recommend using classpath to load, and then let that ioke script find other stuff</span><br />
+<span class="irc-date">[16:46]</span> <span class="irc-black">&lt;olabini`&gt; but he didn't like that</span><br />
+<span class="irc-date">[16:47]</span> <span class="irc-navy">* Narna____ (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[16:47]</span> <span class="irc-black">&lt;RobL__&gt; You should try shooting a few people. After that, the survivors take "recommendations" more seriously.</span><br />
+<span class="irc-date">[16:47]</span> <span class="irc-black">&lt;olabini`&gt; hehe</span><br />
+<span class="irc-date">[16:59]</span> <span class="irc-navy">* olabini (n=ola@cust-IP-10.data.tre.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[17:05]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * r6fa16c6 / (3 files in 2 dirs): More tests of integration of methods with arguments - <a href="http://bit.ly/184MVl">http://bit.ly/184MVl</a></span><br />
+<span class="irc-date">[18:07]</span> <span class="irc-navy">* olabini` (n=ola@80.251.192.3) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[18:07]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-136.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:14]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-136.vc-graz.ac.at) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[18:15]</span> <span class="irc-green">* felipero (n=Felipe@201.82.80.75) has joined #ioke</span><br />
+<span class="irc-date">[18:16]</span> <span class="irc-green">* kar8nga (n=kar8nga@j-230.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:17]</span> <span class="irc-green">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:19]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-green">* donizetti (n=donizett@189.120.169.35) has left #ioke</span><br />
+<span class="irc-date">[18:55]</span> <span class="irc-navy">* kar8nga (n=kar8nga@j-230.vc-graz.ac.at) Quit (Connection timed out)</span><br />
+<span class="irc-date">[19:35]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[19:35]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[19:43]</span> <span class="irc-navy">* felipero (n=Felipe@201.82.80.75) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[19:43]</span> <span class="irc-green">* felipero (n=Felipe@201.82.80.75) has joined #ioke</span><br />
+<span class="irc-date">[20:16]</span> <span class="irc-black">&lt;felipero&gt; Hi again... =)</span><br />
+<span class="irc-date">[20:22]</span> <span class="irc-black">&lt;felipero&gt; still trying to understand how currentDirectory works...</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;felipero&gt; ok... so the point is that in someplace, somehow the currenteDirectory is being set again with a new value</span><br />
+<span class="irc-date">[20:35]</span> <span class="irc-black">&lt;felipero&gt; found it</span><br />
+<span class="irc-date">[20:35]</span> <span class="irc-black">&lt;felipero&gt; =)</span><br />
+<span class="irc-date">[20:35]</span> <span class="irc-black">&lt;felipero&gt; olabini, at line 390 this code:</span><br />
+<span class="irc-date">[20:35]</span> <span class="irc-black">&lt;felipero&gt; currentWorkingDirectory = new File(".").getCanonicalPath();</span><br />
+<span class="irc-date">[20:36]</span> <span class="irc-black">&lt;felipero&gt; set the currentWorkingDirectory</span><br />
+<span class="irc-date">[20:36]</span> <span class="irc-black">&lt;felipero&gt; in IokeSystem</span><br />
+<span class="irc-date">[20:36]</span> <span class="irc-black">&lt;felipero&gt; this inside the init method, so I can't set the currentDirectory before the init() method.</span><br />
+<span class="irc-date">[20:36]</span> <span class="irc-black">&lt;felipero&gt; I have two options... change the IokeSystem to set only if the cwd is null</span><br />
+<span class="irc-date">[20:37]</span> <span class="irc-black">&lt;felipero&gt; or try to use that after the init method</span><br />
+<span class="irc-date">[20:45]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[20:45]</span> <span class="irc-black">&lt;olabini&gt; ok</span><br />
+<span class="irc-date">[20:45]</span> <span class="irc-black">&lt;olabini&gt; what behavior would be best you think?</span><br />
+<span class="irc-date">[20:49]</span> <span class="irc-black">&lt;felipero&gt; not sure... I don't think I understand the impact of setting a new currentDirectory</span><br />
+<span class="irc-date">[20:51]</span> <span class="irc-black">&lt;felipero&gt; maybe refactor the setCurrentWorkingDirectory to require everything is needed... if anything else is really needed to set it</span><br />
+<span class="irc-date">[20:51]</span> <span class="irc-black">&lt;felipero&gt; like loadPath or something like that</span><br />
+<span class="irc-date">[20:51]</span> <span class="irc-black">&lt;felipero&gt; so, this would make it more secure to chenge the cwd</span><br />
+<span class="irc-date">[20:52]</span> <span class="irc-black">&lt;felipero&gt; also, a verification if the cwd is already defined before set thet in the init method</span><br />
+<span class="irc-date">[20:52]</span> <span class="irc-black">&lt;felipero&gt; what you think?</span><br />
+<span class="irc-date">[20:57]</span> <span class="irc-black">&lt;olabini&gt; loadPath and CWD has nothing to do with each other really.</span><br />
+<span class="irc-date">[20:57]</span> <span class="irc-black">&lt;olabini&gt; and I'm not sure if verification is the right solution. it should be possible to set CWD</span><br />
+<span class="irc-date">[21:01]</span> <span class="irc-green">* donizetti (n=donizett@189.120.169.35) has joined #ioke</span><br />
+<span class="irc-date">[21:02]</span> <span class="irc-black">&lt;olabini&gt; felipero: I'll take a closer look at CWD tomorrow, k?</span><br />
+<span class="irc-date">[21:02]</span> <span class="irc-black">&lt;olabini&gt; but I'm still not sure I understand what you're trying to achieve</span><br />
+<span class="irc-date">[21:03]</span> <span class="irc-black">&lt;olabini&gt; especially since the file based approach will fail totally if someone tries to package everything into a war-file</span><br />
+<span class="irc-date">[21:03]</span> <span class="irc-black">&lt;olabini&gt; and deploy to an appserver that doesn't unpack</span><br />
+<span class="irc-date">[21:04]</span> <span class="irc-black">&lt;felipero&gt; hum... =(</span><br />
+<span class="irc-date">[21:05]</span> <span class="irc-black">&lt;felipero&gt; how does use do that?</span><br />
+<span class="irc-date">[21:05]</span> <span class="irc-black">&lt;olabini&gt; well, use works on the classpath too</span><br />
+<span class="irc-date">[21:05]</span> <span class="irc-black">&lt;olabini&gt; ... that's one of the things that is a problem with Ruby</span><br />
+<span class="irc-date">[21:05]</span> <span class="irc-black">&lt;olabini&gt; it's too dependent on files</span><br />
+<span class="irc-date">[21:05]</span> <span class="irc-black">&lt;olabini&gt; and the filesystem</span><br />
+<span class="irc-date">[21:06]</span> <span class="irc-black">&lt;felipero&gt; ok... but how do that with the classpath? that should be better...</span><br />
+<span class="irc-date">[21:06]</span> <span class="irc-black">&lt;olabini&gt; so I think that some thinking about the best way to dynamically find these kind of resources</span><br />
+<span class="irc-date">[21:06]</span> <span class="irc-black">&lt;olabini&gt; well, you can't.</span><br />
+<span class="irc-date">[21:06]</span> <span class="irc-black">&lt;olabini&gt; that's why you need to do a pull, instead of a search.</span><br />
+<span class="irc-date">[21:06]</span> <span class="irc-black">&lt;olabini&gt; like iks_load</span><br />
+<span class="irc-date">[21:06]</span> <span class="irc-brick">* olabini is off for the night now.</span><br />
+<span class="irc-date">[21:09]</span> <span class="irc-black">&lt;felipero&gt; ok... thanks again...</span><br />
+<span class="irc-date">[22:00]</span> <span class="irc-navy">* donizetti (n=donizett@189.120.169.35) Quit ()</span><br />
+<span class="irc-date">[22:30]</span> <span class="irc-navy">* felipero (n=Felipe@201.82.80.75) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[22:34]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[22:49]</span> <span class="irc-black">&lt;slava&gt; olabini: I'm fond of languages where module names map onto the file system in a deterministic way</span><br />
+<span class="irc-date">[22:49]</span> <span class="irc-black">&lt;slava&gt; so that you don't need to require source files as well as import modules</span><br />
+<span class="irc-date">[22:49]</span> <span class="irc-black">&lt;slava&gt; and just import modules</span><br />
+<span class="irc-date">[23:14]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[23:19]</span> <span class="irc-navy">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[23:29]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />

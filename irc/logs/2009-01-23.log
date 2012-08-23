@@ -1,0 +1,462 @@
+<span class="irc-date">[0:22]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[5:58]</span> <span class="irc-navy">* CIA-48 (n=CIA@208.69.182.149) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[6:00]</span> <span class="irc-green">* CIA-9 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[8:01]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:18]</span> <span class="irc-navy">* olabini (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[8:57]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (clarke.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[8:57]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit (clarke.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[8:57]</span> <span class="irc-navy">* CIA-9 (n=CIA@208.69.182.149) Quit (clarke.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[8:58]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:58]</span> <span class="irc-green">* CIA-9 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[8:58]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[9:02]</span> <span class="irc-green">* olabini (n=ola@194.132.20.9) has joined #ioke</span><br />
+<span class="irc-date">[9:03]</span> <span class="irc-green">* IokeHurricane sets mode +o olabini </span><br />
+<span class="irc-date">[9:08]</span> <span class="irc-black">&lt;olabini&gt; morning!</span><br />
+<span class="irc-date">[9:08]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: morning!</span><br />
+<span class="irc-date">[9:08]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: when?!</span><br />
+<span class="irc-date">[9:09]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: now!</span><br />
+<span class="irc-date">[9:09]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: Gentoo for the nerd-lords in their mother's basement</span><br />
+<span class="irc-date">[9:11]</span> <span class="irc-black">&lt;naeu&gt; olabini: morning</span><br />
+<span class="irc-date">[9:11]</span> <span class="irc-black">&lt;naeu&gt; when are you pushing the S release?</span><br />
+<span class="irc-date">[9:12]</span> <span class="irc-black">&lt;naeu&gt; I've just noticed that the TM syntax doesn't correctly handle all of the escape chars</span><br />
+<span class="irc-date">[9:13]</span> <span class="irc-black">&lt;olabini&gt; I've already pushed it. will send out announcements now</span><br />
+<span class="irc-date">[9:15]</span> <span class="irc-black">&lt;naeu&gt; ok, no problems :-)</span><br />
+<span class="irc-date">[9:15]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:15]</span> <span class="irc-black">&lt;naeu&gt; it can easily wait until E</span><br />
+<span class="irc-date">[9:16]</span> <span class="irc-black">&lt;olabini&gt; hehe. good. I know that the Emacs stuff doesn't handle escapes correctly either, I think</span><br />
+<span class="irc-date">[9:16]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[9:17]</span> <span class="irc-black">&lt;naeu&gt; i just highlight every \ char pair within a string</span><br />
+<span class="irc-date">[9:17]</span> <span class="irc-black">&lt;naeu&gt; and so i need to be more smart</span><br />
+<span class="irc-date">[9:17]</span> <span class="irc-black">&lt;naeu&gt; particularly with unicode and hex escapes</span><br />
+<span class="irc-date">[9:18]</span> <span class="irc-black">&lt;olabini&gt; ah</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-black">&lt;naeu&gt; i really like the notion of a folding language :-)</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-black">&lt;olabini&gt; do you know where I got that name from?</span><br />
+<span class="irc-date">[9:21]</span> <span class="irc-black">&lt;naeu&gt; where?</span><br />
+<span class="irc-date">[9:21]</span> <span class="irc-black">&lt;olabini&gt; Steve Yegge wrote a post called Wizard School</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;olabini&gt; where he used that notion in one place</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;olabini&gt; it was just a paragraph, but the name stayed with me</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;naeu&gt; it's great</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;naeu&gt; when i read it i first thought that all languages support folding to some extent</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;naeu&gt; but some languages have limitations - such as the limitations of paper</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;naeu&gt; i.e. with paper you can only fold it so many times</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;naeu&gt; before it's impossible to add another fold</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;naeu&gt; whereas languages like Ioke seem to support infinite folding</span><br />
+<span class="irc-date">[9:24]</span> <span class="irc-black">&lt;naeu&gt; and some languages are just so brittle, that folding is pretty impossible</span><br />
+<span class="irc-date">[9:36]</span> <span class="irc-black">&lt;olabini&gt; that's a very good metaphor actually</span><br />
+<span class="irc-date">[9:36]</span> <span class="irc-black">&lt;olabini&gt; I think I will use that</span><br />
+<span class="irc-date">[9:36]</span> <span class="irc-navy">* CIA-9 (n=CIA@208.69.182.149) Quit (Killed by Md (stuck))</span><br />
+<span class="irc-date">[9:36]</span> <span class="irc-green">* CIA-9 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;olabini&gt; if you're ok with that</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:40]</span> <span class="irc-black">&lt;naeu&gt; of course!</span><br />
+<span class="irc-date">[9:42]</span> <span class="irc-black">&lt;olabini&gt; have you noticed the multiethnicity of Ioke, btw?</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-black">&lt;naeu&gt; is there any chance you could expand upon that most curious point?</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-black">&lt;olabini&gt; well, I'm just looking at the people that contributed to this release</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-black">&lt;olabini&gt; Brian is from the US</span><br />
+<span class="irc-date">[9:44]</span> <span class="irc-black">&lt;olabini&gt; Carlos is from Brazil but lives in the UK</span><br />
+<span class="irc-date">[9:44]</span> <span class="irc-black">&lt;olabini&gt; You are from the UK, living in Amsterdam</span><br />
+<span class="irc-date">[9:44]</span> <span class="irc-black">&lt;olabini&gt; Me and Martin are from Sweden</span><br />
+<span class="irc-date">[9:44]</span> <span class="irc-black">&lt;olabini&gt; Felipo is also from Brazil</span><br />
+<span class="irc-date">[9:44]</span> <span class="irc-black">&lt;olabini&gt; twellman I don't know anything about</span><br />
+<span class="irc-date">[9:45]</span> <span class="irc-black">&lt;olabini&gt; I think that's a fairly broad spread of people, actually</span><br />
+<span class="irc-date">[9:46]</span> <span class="irc-black">&lt;CIA-9&gt; ioke: Ola Bini master * r6e2a82d / (docs/release_todo docs/todo): Update todos - <a href="http://tinyurl.com/b9m9do">http://tinyurl.com/b9m9do</a></span><br />
+<span class="irc-date">[9:47]</span> <span class="irc-black">&lt;olabini&gt; well. the release is out</span><br />
+<span class="irc-date">[9:47]</span> <span class="irc-black">&lt;naeu&gt; yeah, you're absolutely right about that</span><br />
+<span class="irc-date">[9:47]</span> <span class="irc-black">&lt;naeu&gt; although I'm guessing we're all fairly white young educated men...</span><br />
+<span class="irc-date">[9:48]</span> <span class="irc-black">&lt;naeu&gt; and when i say young i mean early twenties - early thirties</span><br />
+<span class="irc-date">[9:48]</span> <span class="irc-black">&lt;olabini&gt; yes, that's true</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;olabini&gt; so from that perspective we aren't doing to well yet.</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;naeu&gt; but sadly most western programmers fit that stereotype</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;naeu&gt; it would be interesting to do a beard count though :-)</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;HeMan&gt; does Ioke version "number" mimic runlevel in Unix?</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;naeu&gt; IokeHurricane: do you like beards?</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;IokeHurricane&gt; naeu: looks like you're well on your way</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;naeu&gt; indeed I am!</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;olabini&gt; hehehe</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;olabini&gt; I have no beard and will never have one.</span><br />
+<span class="irc-date">[9:51]</span> <span class="irc-black">&lt;olabini&gt; HeMan: hehe. No, it doesn't, although that's a fair guess.</span><br />
+<span class="irc-date">[9:51]</span> <span class="irc-black">&lt;olabini&gt; HeMan: the next release will be E, and the one after that will be P</span><br />
+<span class="irc-date">[9:51]</span> <span class="irc-black">&lt;naeu&gt; olabini: does it mimic the first letter of your partner's names in order of partnership?</span><br />
+<span class="irc-date">[9:51]</span> <span class="irc-black">&lt;naeu&gt; ;-)</span><br />
+<span class="irc-date">[9:52]</span> <span class="irc-black">&lt;HeMan&gt; Good, I was worried that version 6 would suddenly shut down! :)</span><br />
+<span class="irc-date">[9:53]</span> <span class="irc-black">&lt;naeu&gt; i.e. you're not pulling a Tracey Emin on us!</span><br />
+<span class="irc-date">[9:53]</span> <span class="irc-black">&lt;HeMan&gt; was the last version the number 0 or the letter O?</span><br />
+<span class="irc-date">[9:53]</span> <span class="irc-black">&lt;olabini&gt; naeu: HAHAHAHA</span><br />
+<span class="irc-date">[9:53]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://en.wikipedia.org/wiki/Everyone_I_Have_Ever_Slept_With_1963???1995">http://en.wikipedia.org/wiki/Everyone_I_Have_Ever_Slept_With_1963???1995</a></span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-black">&lt;olabini&gt; her name is Stella</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-black">&lt;olabini&gt; and the last version was 0, zero.</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[9:59]</span> <span class="irc-black">&lt;olabini&gt; hmm. and I think I've just decided that the release after Ioke P will be Ioke F</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;melwin&gt; ???</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;naeu&gt; melwin: he's just trying to mess with us</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;melwin&gt; Bah... Humbug...</span><br />
+<span class="irc-date">[10:01]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[10:01]</span> <span class="irc-black">&lt;olabini&gt; I have a simple word I could say, that is the main key to the scheme, although the specific names still would need some though to figure out</span><br />
+<span class="irc-date">[10:02]</span> <span class="irc-black">&lt;olabini&gt; in fact, I think S and F might be the hardest ones since their names are based on a bit more obscure thing</span><br />
+<span class="irc-date">[10:02]</span> <span class="irc-black">&lt;naeu&gt; this is what they call a hook</span><br />
+<span class="irc-date">[10:02]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[10:04]</span> <span class="irc-black">&lt;olabini&gt; although, I'm not sure what to call the release after F.</span><br />
+<span class="irc-date">[10:04]</span> <span class="irc-black">&lt;olabini&gt; that might be more problematic</span><br />
+<span class="irc-date">[10:04]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[10:04]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[10:05]</span> <span class="irc-black">&lt;olabini&gt; but I think I have some time to figure that one out</span><br />
+<span class="irc-date">[10:51]</span> <span class="irc-black">&lt;olabini&gt; naeu: well, your quote about code folding has now been immortalized</span><br />
+<span class="irc-date">[10:51]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: what do you think about that?</span><br />
+<span class="irc-date">[10:51]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: Help me out here.</span><br />
+<span class="irc-date">[10:51]</span> <span class="irc-black">&lt;naeu&gt; olabini: oooh, where?</span><br />
+<span class="irc-date">[10:51]</span> <span class="irc-black">&lt;olabini&gt; in my latest blog entry</span><br />
+<span class="irc-date">[10:52]</span> <span class="irc-black">&lt;naeu&gt; ah yes i see it!</span><br />
+<span class="irc-date">[10:52]</span> <span class="irc-black">&lt;naeu&gt; cool!</span><br />
+<span class="irc-date">[11:00]</span> <span class="irc-black">&lt;naeu&gt;  ooh, your emacs syntax highlighting doesn't seem to prioritise comments over operators</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;olabini&gt; ouch</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;olabini&gt; bad me.</span><br />
+<span class="irc-date">[11:02]</span> <span class="irc-black">&lt;olabini&gt; the problem is that operators override comments</span><br />
+<span class="irc-date">[11:02]</span> <span class="irc-black">&lt;olabini&gt; this is one of the problems with the way font locking works in emacs</span><br />
+<span class="irc-date">[11:02]</span> <span class="irc-black">&lt;olabini&gt; I wish I had time to finish my antlr-elisp thingy so I could just generate the highlighting stuff from the grammar.</span><br />
+<span class="irc-date">[11:04]</span> <span class="irc-black">&lt;naeu&gt; [nil, false, "foo"] any? ; =&gt; true</span><br />
+<span class="irc-date">[11:04]</span> <span class="irc-black">&lt;naeu&gt; has the &gt; highlighted differently</span><br />
+<span class="irc-date">[11:04]</span> <span class="irc-black">&lt;olabini&gt; yeah, I know</span><br />
+<span class="irc-date">[11:04]</span> <span class="irc-black">&lt;olabini&gt; I sometimes fix that by hand</span><br />
+<span class="irc-date">[11:05]</span> <span class="irc-black">&lt;olabini&gt; the strange thing is that it doesn't happen in emacs, just when I do the syntax highlighting in html</span><br />
+<span class="irc-date">[11:06]</span> <span class="irc-black">&lt;naeu&gt; weird</span><br />
+<span class="irc-date">[11:09]</span> <span class="irc-black">&lt;naeu&gt; ooh, and in Ioke S enumerableDefaultMethod example you have :x rather than :n</span><br />
+<span class="irc-date">[11:10]</span> <span class="irc-black">&lt;naeu&gt; or at least your description talks about different var names</span><br />
+<span class="irc-date">[11:10]</span> <span class="irc-black">&lt;naeu&gt; hmmm, actually i'm probably mistaken</span><br />
+<span class="irc-date">[11:10]</span> <span class="irc-black">&lt;naeu&gt; but the description talks about the :n cell as if it appears in the code</span><br />
+<span class="irc-date">[11:11]</span> <span class="irc-black">&lt;naeu&gt; (which it does in later examples)</span><br />
+<span class="irc-date">[11:11]</span> <span class="irc-black">&lt;olabini&gt; naeu: yes.</span><br />
+<span class="irc-date">[11:11]</span> <span class="irc-black">&lt;olabini&gt; I talked about the full contract of the enumerableDefaultMethod</span><br />
+<span class="irc-date">[11:11]</span> <span class="irc-black">&lt;naeu&gt; it just confused me a little</span><br />
+<span class="irc-date">[11:11]</span> <span class="irc-black">&lt;naeu&gt; but then i'm very easily confused :-)</span><br />
+<span class="irc-date">[11:12]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[11:18]</span> <span class="irc-black">&lt;naeu&gt; hmmm:</span><br />
+<span class="irc-date">[11:18]</span> <span class="irc-black">&lt;naeu&gt; "what you end up writing is much closer to the business domain. And that is really what most developers want, right?"</span><br />
+<span class="irc-date">[11:18]</span> <span class="irc-black">&lt;naeu&gt; i'd like to disagree with that</span><br />
+<span class="irc-date">[11:18]</span> <span class="irc-black">&lt;naeu&gt; i mean, i believe it's what most developers *should* want</span><br />
+<span class="irc-date">[11:19]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[11:19]</span> <span class="irc-black">&lt;olabini&gt; that is true</span><br />
+<span class="irc-date">[11:19]</span> <span class="irc-black">&lt;naeu&gt; but i think so many developers live in their world of code - out of the sight of businesses</span><br />
+<span class="irc-date">[11:20]</span> <span class="irc-black">&lt;naeu&gt; i think even the fact that we use the word 'code' is descriptive of this phenomenon</span><br />
+<span class="irc-date">[11:20]</span> <span class="irc-black">&lt;olabini&gt; but what I really meant was that most developers probably want to get to the core of what they're doing, instead of doing to do all the stupid repetitions needed to get something to work</span><br />
+<span class="irc-date">[11:20]</span> <span class="irc-black">&lt;naeu&gt; how many other professions turn communication into codes?</span><br />
+<span class="irc-date">[11:20]</span> <span class="irc-black">&lt;olabini&gt; yeah. that's true. =)</span><br />
+<span class="irc-date">[11:20]</span> <span class="irc-black">&lt;naeu&gt; oh, i totally agree with you</span><br />
+<span class="irc-date">[11:20]</span> <span class="irc-black">&lt;naeu&gt; but how many of them actually realise that?</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;naeu&gt; i fight this every day, even in our small office</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;naeu&gt; people are soooo focussed on non-issues (for the current domain) such as efficiency</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;naeu&gt; and they are pleased with themselves when they write something cryptic</span><br />
+<span class="irc-date">[11:22]</span> <span class="irc-black">&lt;naeu&gt; what i think is really interesting is people often refer to that cryptic code as 'clever code'</span><br />
+<span class="irc-date">[11:22]</span> <span class="irc-black">&lt;naeu&gt; and label 'clever code' as bad</span><br />
+<span class="irc-date">[11:22]</span> <span class="irc-black">&lt;naeu&gt; however, I think your Ioke S implementations are clearly clever code</span><br />
+<span class="irc-date">[11:22]</span> <span class="irc-black">&lt;naeu&gt; just not cryptic clever code</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;olabini&gt; I see what you mean</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;naeu&gt; you're extracting the things that change a lot, from the things that don't</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;naeu&gt; and then you're focussing on making the extracted things readable</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;naeu&gt; i think that is very laudable</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;naeu&gt; and is the main drive behind what many call DSLs</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;naeu&gt; in a hugely loose sense your enumerable implementations are DSLs in their own right</span><br />
+<span class="irc-date">[11:27]</span> <span class="irc-black">&lt;naeu&gt; which is one of the reasons why I think it's unfortunate that Fowler's DSL book is using Java as the didactic vehicle for explaining his concepts</span><br />
+<span class="irc-date">[11:27]</span> <span class="irc-black">&lt;naeu&gt; although i can totally understand why he's doing that</span><br />
+<span class="irc-date">[11:29]</span> <span class="irc-black">&lt;naeu&gt; or at least I should say "his formalisation of these concepts"</span><br />
+<span class="irc-date">[11:33]</span> <span class="irc-black">&lt;melwin&gt; Ioke is a DSL to create general programs in. ;P</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;naeu&gt; hehehe</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;naeu&gt; Ioke is a DSL to fold general programs out of ;-)</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;naeu&gt; it's like a splendid piece of paper for doing origami with....</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://www.ted.com/index.php/talks/robert_lang_folds_way_new_origami.html">http://www.ted.com/index.php/talks/robert_lang_folds_way_new_origami.html</a></span><br />
+<span class="irc-date">[11:40]</span> <span class="irc-black">&lt;melwin&gt; Like a splendid piece of paper that folds YOU into intricate origami.</span><br />
+<span class="irc-date">[11:42]</span> <span class="irc-black">&lt;naeu&gt; oooh, i like the sound of that!</span><br />
+<span class="irc-date">[11:43]</span> <span class="irc-black">&lt;melwin&gt; :]</span><br />
+<span class="irc-date">[12:20]</span> <span class="irc-green">* andreaja (n=sodoff@65.111.170.77) has joined #ioke</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-green">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[14:45]</span> <span class="irc-black">&lt;olabini&gt; Ioke now has a wiki at <a href="http://ioke.org/wiki">http://ioke.org/wiki</a></span><br />
+<span class="irc-date">[14:45]</span> <span class="irc-black">&lt;olabini&gt; feel free to start adding content! =)</span><br />
+<span class="irc-date">[14:48]</span> <span class="irc-black">&lt;melwin&gt; :P</span><br />
+<span class="irc-date">[14:50]</span> <span class="irc-black">&lt;melwin&gt; olabini: Dude... A clean checkout just failed for me.</span><br />
+<span class="irc-date">[14:52]</span> <span class="irc-black">&lt;olabini&gt; oh yeah?</span><br />
+<span class="irc-date">[14:52]</span> <span class="irc-black">&lt;olabini&gt; how?</span><br />
+<span class="irc-date">[14:56]</span> <span class="irc-brick">* olabini is checking out a clean checkout to see too</span><br />
+<span class="irc-date">[15:00]</span> <span class="irc-black">&lt;olabini&gt; a totally clean checkout works fine for me</span><br />
+<span class="irc-date">[15:00]</span> <span class="irc-black">&lt;melwin&gt; On phone - need to check my environment.</span><br />
+<span class="irc-date">[15:00]</span> <span class="irc-black">&lt;olabini&gt; k</span><br />
+<span class="irc-date">[15:09]</span> <span class="irc-black">&lt;melwin&gt; Strange... A single test...</span><br />
+<span class="irc-date">[15:09]</span> <span class="irc-black">&lt;melwin&gt;      [java] 'Dict each should be possible to just give it a message chain, that will be invoked on each object' FAILED</span><br />
+<span class="irc-date">[15:09]</span> <span class="irc-black">&lt;melwin&gt;      [java] expected [] to == [:one =&gt; 1, :three =&gt; 3, :two =&gt; 2]. difference: []. 0 vs 3 (ISpec ExpectationNotMet)</span><br />
+<span class="irc-date">[15:12]</span> <span class="irc-black">&lt;olabini&gt; wow. that is really weird</span><br />
+<span class="irc-date">[15:12]</span> <span class="irc-black">&lt;melwin&gt; Running the test in IIk works, however.</span><br />
+<span class="irc-date">[15:12]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[15:12]</span> <span class="irc-black">&lt;olabini&gt; do you have any ioke on your path?</span><br />
+<span class="irc-date">[15:12]</span> <span class="irc-black">&lt;melwin&gt; I mean, doing the same thing manually...</span><br />
+<span class="irc-date">[15:12]</span> <span class="irc-black">&lt;olabini&gt; or ioke.jar in classpath?</span><br />
+<span class="irc-date">[15:12]</span> <span class="irc-black">&lt;melwin&gt; And running it separately as well.</span><br />
+<span class="irc-date">[15:12]</span> <span class="irc-black">&lt;melwin&gt; No.</span><br />
+<span class="irc-date">[15:13]</span> <span class="irc-black">&lt;melwin&gt; Clean environment in new vmware.</span><br />
+<span class="irc-date">[15:13]</span> <span class="irc-black">&lt;olabini&gt; that is strange</span><br />
+<span class="irc-date">[15:13]</span> <span class="irc-black">&lt;olabini&gt; which Java?</span><br />
+<span class="irc-date">[15:13]</span> <span class="irc-black">&lt;melwin&gt; 1.6.0_11.</span><br />
+<span class="irc-date">[15:13]</span> <span class="irc-black">&lt;naeu_&gt; melwin: works fine for me: 2606 examples, 0 failures</span><br />
+<span class="irc-date">[15:14]</span> <span class="irc-black">&lt;olabini&gt; that is so weird</span><br />
+<span class="irc-date">[15:14]</span> <span class="irc-black">&lt;olabini&gt; and if that one fails, there definitely should be other failing too</span><br />
+<span class="irc-date">[15:14]</span> <span class="irc-black">&lt;olabini&gt; actually</span><br />
+<span class="irc-date">[15:14]</span> <span class="irc-black">&lt;olabini&gt; this might be an ordering issue</span><br />
+<span class="irc-date">[15:14]</span> <span class="irc-black">&lt;olabini&gt; is it in dict_spec.ik?</span><br />
+<span class="irc-date">[15:14]</span> <span class="irc-black">&lt;melwin&gt; Yes.</span><br />
+<span class="irc-date">[15:15]</span> <span class="irc-black">&lt;melwin&gt; Just running "ant".</span><br />
+<span class="irc-date">[15:15]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[15:15]</span> <span class="irc-black">&lt;melwin&gt;      [java]   /home/melwin/work/ioke/test/dict_spec.ik:236:13</span><br />
+<span class="irc-date">[15:16]</span> <span class="irc-black">&lt;olabini&gt; k</span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-black">&lt;olabini&gt; melwin: could you replace the first half of that test with:</span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-black">&lt;olabini&gt;       d = {one: 1, two: 2, three: 3}</span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-black">&lt;olabini&gt;       Pair y = []</span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-black">&lt;olabini&gt;       Pair x = method(y &lt;&lt; self)</span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-black">&lt;olabini&gt;       d each(x)</span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-black">&lt;olabini&gt;       Pair y sort should == [:one =&gt; 1, :two =&gt; 2, :three =&gt; 3] sort</span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-black">&lt;olabini&gt; and try that</span><br />
+<span class="irc-date">[15:19]</span> <span class="irc-black">&lt;melwin&gt; Works.</span><br />
+<span class="irc-date">[15:19]</span> <span class="irc-black">&lt;olabini&gt; cool</span><br />
+<span class="irc-date">[15:19]</span> <span class="irc-black">&lt;olabini&gt; ordering and global state is bad bed companions</span><br />
+<span class="irc-date">[15:19]</span> <span class="irc-black">&lt;olabini&gt; I'll commit this</span><br />
+<span class="irc-date">[15:19]</span> <span class="irc-black">&lt;melwin&gt; Cool - thanks.</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-black">&lt;naeu_&gt; it's amazing how people can be so negative: <a href="http://www.reddit.com/r/programming/comments/7rv10/ioke_s_released/">http://www.reddit.com/r/programming/comments/7rv10/ioke_s_released/</a></span><br />
+<span class="irc-date">[15:47]</span> <span class="irc-black">&lt;melwin&gt; Suckers.</span><br />
+<span class="irc-date">[15:47]</span> <span class="irc-black">&lt;melwin&gt; ;P</span><br />
+<span class="irc-date">[15:48]</span> <span class="irc-black">&lt;melwin&gt; It seems like he focuses on the wrong thing...</span><br />
+<span class="irc-date">[15:49]</span> <span class="irc-black">&lt;naeu_&gt; yep</span><br />
+<span class="irc-date">[15:49]</span> <span class="irc-black">&lt;naeu_&gt; it seems to be the standard attitude</span><br />
+<span class="irc-date">[15:50]</span> <span class="irc-black">&lt;naeu_&gt; sadly :-(</span><br />
+<span class="irc-date">[15:58]</span> <span class="irc-navy">* olabini (n=ola@194.132.20.9) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[16:04]</span> <span class="irc-black">&lt;naeu_&gt; ioke doesn't even have a compiler!</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-black">&lt;melwin&gt; So - blog series part 5 done... With Ioke and the REPL....</span><br />
+<span class="irc-date">[16:07]</span> <span class="irc-black">&lt;naeu_&gt; already...</span><br />
+<span class="irc-date">[16:07]</span> <span class="irc-black">&lt;naeu_&gt; you only just pushed 4</span><br />
+<span class="irc-date">[16:08]</span> <span class="irc-black">&lt;melwin&gt; I had both half done.</span><br />
+<span class="irc-date">[16:08]</span> <span class="irc-black">&lt;melwin&gt; I have a job to attend to.</span><br />
+<span class="irc-date">[16:08]</span> <span class="irc-black">&lt;naeu_&gt; ok :-)</span><br />
+<span class="irc-date">[16:08]</span> <span class="irc-black">&lt;naeu_&gt; attend thee well!</span><br />
+<span class="irc-date">[16:09]</span> <span class="irc-black">&lt;melwin&gt; Just decided to finish the post up now when I'm was done with work.</span><br />
+<span class="irc-date">[16:09]</span> <span class="irc-black">&lt;naeu_&gt; i just added it to reddit</span><br />
+<span class="irc-date">[16:09]</span> <span class="irc-black">&lt;melwin&gt; I meant: I have a job to attend to too - so I can't be writing blogs in the day. :)</span><br />
+<span class="irc-date">[16:09]</span> <span class="irc-black">&lt;naeu_&gt; ah ok :-)</span><br />
+<span class="irc-date">[16:10]</span> <span class="irc-black">&lt;naeu_&gt; i thought that you were going to attend to a job right now..</span><br />
+<span class="irc-date">[16:10]</span> <span class="irc-black">&lt;naeu_&gt; i've been ill today</span><br />
+<span class="irc-date">[16:10]</span> <span class="irc-black">&lt;naeu_&gt; which hasn't been fun at all</span><br />
+<span class="irc-date">[16:10]</span> <span class="irc-black">&lt;melwin&gt; Ack...!</span><br />
+<span class="irc-date">[16:11]</span> <span class="irc-black">&lt;melwin&gt; Poor little thing.</span><br />
+<span class="irc-date">[16:11]</span> <span class="irc-black">&lt;naeu_&gt; i was violently sick last night</span><br />
+<span class="irc-date">[16:11]</span> <span class="irc-black">&lt;naeu_&gt; annoying really</span><br />
+<span class="irc-date">[16:11]</span> <span class="irc-black">&lt;melwin&gt; Guh...</span><br />
+<span class="irc-date">[16:11]</span> <span class="irc-black">&lt;melwin&gt; Speaking of which... I'm hungry, need to go to the store...</span><br />
+<span class="irc-date">[16:11]</span> <span class="irc-black">&lt;naeu_&gt; :-)</span><br />
+<span class="irc-date">[16:11]</span> <span class="irc-black">&lt;melwin&gt; Hope you get better soon.</span><br />
+<span class="irc-date">[16:11]</span> <span class="irc-black">&lt;naeu_&gt; only buy nice things!</span><br />
+<span class="irc-date">[16:12]</span> <span class="irc-black">&lt;naeu_&gt; cheerio :-)</span><br />
+<span class="irc-date">[16:14]</span> <span class="irc-black">&lt;melwin&gt; Laters. :)</span><br />
+<span class="irc-date">[16:25]</span> <span class="irc-green">* azoic (n=azoic@nat/sun/x-562ab4ed2188cf58) has joined #ioke</span><br />
+<span class="irc-date">[16:31]</span> <span class="irc-navy">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[16:31]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[16:38]</span> <span class="irc-green">* olabini (n=ola@cust-IP-10.data.tre.se) has joined #ioke</span><br />
+<span class="irc-date">[16:38]</span> <span class="irc-green">* IokeHurricane sets mode +o olabini </span><br />
+<span class="irc-date">[16:43]</span> <span class="irc-black">&lt;olabini&gt; melwin: good work on the new guides!</span><br />
+<span class="irc-date">[16:44]</span> <span class="irc-black">&lt;naeu&gt; olabini: have you seen this: <a href="http://www.reddit.com/r/programming/comments/7rv10/ioke_s_released/">http://www.reddit.com/r/programming/comments/7rv10/ioke_s_released/</a></span><br />
+<span class="irc-date">[16:44]</span> <span class="irc-black">&lt;naeu&gt; feels like it will be exemplary of the kind of attitude you'll be having to face</span><br />
+<span class="irc-date">[16:44]</span> <span class="irc-black">&lt;olabini&gt; o</span><br />
+<span class="irc-date">[16:45]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[16:45]</span> <span class="irc-black">&lt;olabini&gt; I know that crowd. getting good at ignoring them</span><br />
+<span class="irc-date">[16:45]</span> <span class="irc-black">&lt;naeu&gt; i didn't realise ioke had a compiler</span><br />
+<span class="irc-date">[16:45]</span> <span class="irc-black">&lt;naeu&gt; if you click on that guy's name *all* his comments are negative</span><br />
+<span class="irc-date">[16:48]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[16:48]</span> <span class="irc-black">&lt;olabini&gt; there are a lot of those on reddit</span><br />
+<span class="irc-date">[16:48]</span> <span class="irc-black">&lt;olabini&gt; I generally find that for reasonable comments you should go to hacker news instead</span><br />
+<span class="irc-date">[16:48]</span> <span class="irc-black">&lt;naeu&gt; i should look at that</span><br />
+<span class="irc-date">[16:52]</span> <span class="irc-black">&lt;naeu&gt; haha, they have a link to this: <a href="http://www.ski-epic.com/amsterdam_bicycles/">http://www.ski-epic.com/amsterdam_bicycles/</a></span><br />
+<span class="irc-date">[16:52]</span> <span class="irc-black">&lt;naeu&gt; the author of that is nuts :-)</span><br />
+<span class="irc-date">[16:54]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[16:56]</span> <span class="irc-black">&lt;olabini&gt; one of the first pages I'll add to the wiki will be about common gotchas and mistakes</span><br />
+<span class="irc-date">[16:56]</span> <span class="irc-black">&lt;olabini&gt; where forgetting to separate parts in an if or cond or case statement with comma</span><br />
+<span class="irc-date">[16:57]</span> <span class="irc-black">&lt;olabini&gt; will be the first one</span><br />
+<span class="irc-date">[16:57]</span> <span class="irc-black">&lt;olabini&gt; I've really done that a few times now</span><br />
+<span class="irc-date">[16:57]</span> <span class="irc-black">&lt;olabini&gt; one of the problems with having no keywords</span><br />
+<span class="irc-date">[16:57]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[17:02]</span> <span class="irc-green">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[17:03]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[17:06]</span> <span class="irc-green">* azoic (n=azoic@nat/sun/x-562ab4ed2188cf58) has left #ioke</span><br />
+<span class="irc-date">[17:06]</span> <span class="irc-green">* azoic (n=azoic@nat/sun/x-7f1beacf3fd54bb5) has joined #ioke</span><br />
+<span class="irc-date">[17:08]</span> <span class="irc-green">* azoic (n=azoic@nat/sun/x-7f1beacf3fd54bb5) has left #ioke</span><br />
+<span class="irc-date">[17:08]</span> <span class="irc-green">* azoic (n=azoic@nat/sun/x-084d321155bbb769) has joined #ioke</span><br />
+<span class="irc-date">[17:13]</span> <span class="irc-black">&lt;naeu_&gt; :-)</span><br />
+<span class="irc-date">[17:17]</span> <span class="irc-black">&lt;naeu_&gt; olabini: I have an interesting question for you with respect to the definition of homoiconic languages</span><br />
+<span class="irc-date">[17:27]</span> <span class="irc-navy">* CIA-9 (n=CIA@208.69.182.149) Quit (Read error: 131 (Connection reset by peer))</span><br />
+<span class="irc-date">[17:30]</span> <span class="irc-navy">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 131 (Connection reset by peer))</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-green">* CIA-7 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-navy">* olabini (n=ola@cust-IP-10.data.tre.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[18:56]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-113.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[19:38]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[19:39]</span> <span class="irc-black">&lt;naeu&gt; i was thinking that it could be really useful to have a literal for cell</span><br />
+<span class="irc-date">[19:40]</span> <span class="irc-black">&lt;naeu&gt; to save us typing cell(:cellName)</span><br />
+<span class="irc-date">[19:58]</span> <span class="irc-black">&lt;melwin&gt; Don't talk crazy.</span><br />
+<span class="irc-date">[19:59]</span> <span class="irc-black">&lt;naeu&gt; haha</span><br />
+<span class="irc-date">[19:59]</span> <span class="irc-black">&lt;naeu&gt; it must be my sickness</span><br />
+<span class="irc-date">[19:59]</span> <span class="irc-black">&lt;naeu&gt; one thing that isn't crazy: the TextMate Bundle syntax highlighting currently beats the emacs one</span><br />
+<span class="irc-date">[20:00]</span> <span class="irc-black">&lt;naeu&gt; although ola has some crazy scheme to generate the emacs syntax highlighting from the ANTLR grammar directly</span><br />
+<span class="irc-date">[20:00]</span> <span class="irc-black">&lt;naeu&gt; which will totally rock</span><br />
+<span class="irc-date">[20:31]</span> <span class="irc-black">&lt;melwin&gt; You're delirious... Go back to bed, sicko!</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;naeu&gt; i am in bed</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;melwin&gt; naeu: But seriously, what's so fantastic about the TextMate trundle?</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;naeu&gt; i made it</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;naeu&gt; that's pretty super</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;melwin&gt; Ha!</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;melwin&gt; That's just AWESOME!</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;naeu&gt; indeed!</span><br />
+<span class="irc-date">[20:33]</span> <span class="irc-black">&lt;naeu&gt; WICKED AWESOME</span><br />
+<span class="irc-date">[20:33]</span> <span class="irc-black">&lt;melwin&gt; CRAZY RAD!</span><br />
+<span class="irc-date">[20:34]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[20:34]</span> <span class="irc-black">&lt;melwin&gt; What's your accent like?</span><br />
+<span class="irc-date">[20:34]</span> <span class="irc-black">&lt;naeu&gt; english</span><br />
+<span class="irc-date">[20:34]</span> <span class="irc-black">&lt;naeu&gt; think james bond on a good day</span><br />
+<span class="irc-date">[20:34]</span> <span class="irc-black">&lt;melwin&gt; Oh, really.... Duh!</span><br />
+<span class="irc-date">[20:35]</span> <span class="irc-black">&lt;melwin&gt; I meant, where are you from in England?</span><br />
+<span class="irc-date">[20:35]</span> <span class="irc-black">&lt;naeu&gt; actually i'm originally from Stoke on Trent</span><br />
+<span class="irc-date">[20:35]</span> <span class="irc-black">&lt;naeu&gt; but I've lived all over the place: Lincolnshire, Bristol and Newcastle</span><br />
+<span class="irc-date">[20:39]</span> <span class="irc-black">&lt;melwin&gt; Stoke on Trent, you say? Hmm...</span><br />
+<span class="irc-date">[20:39]</span> <span class="irc-black">&lt;naeu&gt; yeah i do say</span><br />
+<span class="irc-date">[20:39]</span> <span class="irc-black">&lt;melwin&gt; I worked with AZ in Macclesfield for a while.</span><br />
+<span class="irc-date">[20:39]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://en.wikipedia.org/wiki/Stoke-on-Trent">http://en.wikipedia.org/wiki/Stoke-on-Trent</a></span><br />
+<span class="irc-date">[20:39]</span> <span class="irc-black">&lt;naeu&gt; haha nice</span><br />
+<span class="irc-date">[20:40]</span> <span class="irc-black">&lt;naeu&gt; did you have a nice time?</span><br />
+<span class="irc-date">[20:40]</span> <span class="irc-black">&lt;melwin&gt; But I think I only came near Stoke on Trent once... When going south with a colleague...</span><br />
+<span class="irc-date">[20:40]</span> <span class="irc-black">&lt;melwin&gt; Well... It was mostly work... :/</span><br />
+<span class="irc-date">[20:41]</span> <span class="irc-black">&lt;melwin&gt; And Manchester isn't the loveliest city...</span><br />
+<span class="irc-date">[20:41]</span> <span class="irc-black">&lt;melwin&gt; But it was good enough. Kinda interesting project.</span><br />
+<span class="irc-date">[20:41]</span> <span class="irc-black">&lt;naeu&gt; Manchester is a lot nicer than Stoke</span><br />
+<span class="irc-date">[20:41]</span> <span class="irc-black">&lt;melwin&gt; Hehehe...</span><br />
+<span class="irc-date">[20:41]</span> <span class="irc-black">&lt;naeu&gt; although I am happy I'm living in Amsterdam now</span><br />
+<span class="irc-date">[20:42]</span> <span class="irc-black">&lt;melwin&gt; Can't remember anything specific about the Macclesfield accent... You sound similar to people from Manchester?</span><br />
+<span class="irc-date">[20:42]</span> <span class="irc-black">&lt;melwin&gt; Amsterdam is very nice, I think.</span><br />
+<span class="irc-date">[20:43]</span> <span class="irc-black">&lt;naeu&gt; i don't really have a specific accent any more</span><br />
+<span class="irc-date">[20:44]</span> <span class="irc-black">&lt;naeu&gt; it's all a bit washed out</span><br />
+<span class="irc-date">[20:44]</span> <span class="irc-black">&lt;melwin&gt; QE, then, eh? :P</span><br />
+<span class="irc-date">[20:44]</span> <span class="irc-black">&lt;naeu&gt; haha</span><br />
+<span class="irc-date">[20:44]</span> <span class="irc-black">&lt;naeu&gt; I used to live with a Swedish lady</span><br />
+<span class="irc-date">[20:45]</span> <span class="irc-black">&lt;naeu&gt; she had a lovely accent</span><br />
+<span class="irc-date">[20:45]</span> <span class="irc-black">&lt;melwin&gt; Was her name Inga, by any chance?</span><br />
+<span class="irc-date">[20:46]</span> <span class="irc-black">&lt;naeu&gt; Charlotta</span><br />
+<span class="irc-date">[20:47]</span> <span class="irc-black">&lt;melwin&gt; For some reason, I've adopted a bit more American accent, when speaking... I blame Hollywood.</span><br />
+<span class="irc-date">[20:47]</span> <span class="irc-black">&lt;naeu&gt; nasty</span><br />
+<span class="irc-date">[20:47]</span> <span class="irc-black">&lt;naeu&gt; you need to sort that out pronto</span><br />
+<span class="irc-date">[20:47]</span> <span class="irc-black">&lt;naeu&gt; ;-)</span><br />
+<span class="irc-date">[20:47]</span> <span class="irc-black">&lt;melwin&gt; But as I've worked in the UK a lot, my idioms are predominantly British...</span><br />
+<span class="irc-date">[20:48]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[20:49]</span> <span class="irc-black">&lt;naeu&gt; my idioms are mostly made up ;-)</span><br />
+<span class="irc-date">[20:49]</span> <span class="irc-black">&lt;melwin&gt; Hehehe...</span><br />
+<span class="irc-date">[20:51]</span> <span class="irc-green">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:53]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Success)</span><br />
+<span class="irc-date">[20:53]</span> <span class="irc-black">&lt;melwin&gt; Wb...</span><br />
+<span class="irc-date">[20:53]</span> <span class="irc-black">&lt;naeu_&gt; wb?</span><br />
+<span class="irc-date">[20:53]</span> <span class="irc-green">* naeu_ is now known as naeu</span><br />
+<span class="irc-date">[20:53]</span> <span class="irc-green">* naeu is now known as naeu_</span><br />
+<span class="irc-date">[20:54]</span> <span class="irc-green">* naeu_ is now known as naeu</span><br />
+<span class="irc-date">[20:54]</span> <span class="irc-black">&lt;melwin&gt; Welcome Back... It's l33t IRC sp33k...</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-black">&lt;melwin&gt; Sam - as I've told you before - gotta get with da program!</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-black">&lt;melwin&gt; Can't be hangin' with all the cool kids without knowing the lingo!</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-black">&lt;melwin&gt; Can't walk the walk if you can't talk the talk!</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-black">&lt;naeu&gt; balls!</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;melwin&gt; :P</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;melwin&gt; No thanks, I've just eaten.</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;naeu&gt; btw, how old are you?</span><br />
+<span class="irc-date">[20:57]</span> <span class="irc-black">&lt;melwin&gt; Old enough, thankyouverymuch!</span><br />
+<span class="irc-date">[20:57]</span> <span class="irc-black">&lt;melwin&gt; Or, 30, if you talk earth years.</span><br />
+<span class="irc-date">[20:57]</span> <span class="irc-black">&lt;naeu&gt; haha</span><br />
+<span class="irc-date">[20:57]</span> <span class="irc-black">&lt;naeu&gt; i'm 29</span><br />
+<span class="irc-date">[20:57]</span> <span class="irc-black">&lt;melwin&gt; Congrats - you'll be around when I'm gone.</span><br />
+<span class="irc-date">[20:57]</span> <span class="irc-black">&lt;naeu&gt; super!</span><br />
+<span class="irc-date">[20:57]</span> <span class="irc-black">&lt;melwin&gt; Yes - you look forward to that, eh?</span><br />
+<span class="irc-date">[20:58]</span> <span class="irc-black">&lt;naeu&gt; not massively ;-)</span><br />
+<span class="irc-date">[20:58]</span> <span class="irc-black">&lt;melwin&gt; My birthday is last of April... 31 this time.</span><br />
+<span class="irc-date">[20:58]</span> <span class="irc-black">&lt;naeu&gt; ?</span><br />
+<span class="irc-date">[20:58]</span> <span class="irc-black">&lt;melwin&gt; (Same b-day as the King of Sweden, fyi.)</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-black">&lt;naeu&gt; april only has 30 days....</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-black">&lt;melwin&gt; !</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-black">&lt;naeu&gt; ;-)</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-black">&lt;melwin&gt; Aha, ha, ha.</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-black">&lt;naeu&gt; brb</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-black">&lt;melwin&gt; l8r</span><br />
+<span class="irc-date">[21:01]</span> <span class="irc-black">&lt;naeu&gt; hi5</span><br />
+<span class="irc-date">[21:01]</span> <span class="irc-black">&lt;melwin&gt; *slap*</span><br />
+<span class="irc-date">[21:01]</span> <span class="irc-black">&lt;naeu&gt; haha</span><br />
+<span class="irc-date">[21:02]</span> <span class="irc-black">&lt;melwin&gt; I love how the ESRB has a rating label called "Comic Mischief"...</span><br />
+<span class="irc-date">[21:03]</span> <span class="irc-black">&lt;melwin&gt; Wouldn't want kids to experience that on TV.</span><br />
+<span class="irc-date">[21:05]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[21:15]</span> <span class="irc-black">&lt;naeu&gt; i still haven't worked out how to edit a file belonging to root with emacs</span><br />
+<span class="irc-date">[21:18]</span> <span class="irc-black">&lt;melwin&gt; Never got the su or sudo to work?</span><br />
+<span class="irc-date">[21:19]</span> <span class="irc-black">&lt;naeu&gt; nope</span><br />
+<span class="irc-date">[21:20]</span> <span class="irc-black">&lt;naeu&gt; just hands</span><br />
+<span class="irc-date">[21:20]</span> <span class="irc-black">&lt;naeu&gt; *hangs</span><br />
+<span class="irc-date">[21:21]</span> <span class="irc-black">&lt;HeMan&gt; just realised how I can fix my "problem" with any? by reading Olas blogpost!</span><br />
+<span class="irc-date">[21:21]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[21:22]</span> <span class="irc-black">&lt;naeu&gt; what is your problem with any?</span><br />
+<span class="irc-date">[21:22]</span> <span class="irc-black">&lt;HeMan&gt; ah, no, the other way, I can solve my problem by using any?</span><br />
+<span class="irc-date">[21:23]</span> <span class="irc-black">&lt;naeu&gt; ah ok :-)</span><br />
+<span class="irc-date">[21:27]</span> <span class="irc-black">&lt;melwin&gt; Sam will help you through any? problem.</span><br />
+<span class="irc-date">[21:27]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[21:27]</span> <span class="irc-black">&lt;melwin&gt; naeu: When you gonna blog about Ioke?</span><br />
+<span class="irc-date">[21:27]</span> <span class="irc-black">&lt;naeu&gt; when i fix my blog</span><br />
+<span class="irc-date">[21:27]</span> <span class="irc-black">&lt;naeu&gt; it's totally busted right now</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-black">&lt;naeu&gt; and i need a clear head to sort it out</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-black">&lt;naeu&gt; i was thinking of doing some screencasts too</span><br />
+<span class="irc-date">[21:31]</span> <span class="irc-black">&lt;melwin&gt; Cool! Then I can hear you speak.</span><br />
+<span class="irc-date">[21:32]</span> <span class="irc-black">&lt;melwin&gt; ... which will help me in my accent neutralization efforts.</span><br />
+<span class="irc-date">[21:32]</span> <span class="irc-black">&lt;melwin&gt; ... neutralisation... :)</span><br />
+<span class="irc-date">[21:33]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[21:34]</span> <span class="irc-green">* olabini (n=ola@80.73.62.222) has joined #ioke</span><br />
+<span class="irc-date">[21:34]</span> <span class="irc-green">* IokeHurricane sets mode +o olabini </span><br />
+<span class="irc-date">[21:34]</span> <span class="irc-black">&lt;HeMan&gt; hmm, it almost solve my problem</span><br />
+<span class="irc-date">[21:42]</span> <span class="irc-black">&lt;HeMan&gt; Can I someway remove one of the println's from <a href="http://ioke.pastebin.com/d55a0b4f?">http://ioke.pastebin.com/d55a0b4f?</a></span><br />
+<span class="irc-date">[21:44]</span> <span class="irc-black">&lt;HeMan&gt; If I have 0 selector it should show all todo's but if I have one or more selector it should show all todo's that contains any of the selectors</span><br />
+<span class="irc-date">[21:44]</span> <span class="irc-black">&lt;HeMan&gt; but I don't like that I have the two println's</span><br />
+<span class="irc-date">[22:02]</span> <span class="irc-black">&lt;melwin&gt; HeMan: Simple change: <a href="http://ioke.pastebin.com/m6c2d7137">http://ioke.pastebin.com/m6c2d7137</a></span><br />
+<span class="irc-date">[22:02]</span> <span class="irc-black">&lt;melwin&gt; Might be better ways to do it, of course.</span><br />
+<span class="irc-date">[22:06]</span> <span class="irc-black">&lt;HeMan&gt; is @ todo the same as @todo?</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;melwin&gt; Well... @ is self... That's what you want to use, eh?</span><br />
+<span class="irc-date">[22:08]</span> <span class="irc-black">&lt;HeMan&gt; yes</span><br />
+<span class="irc-date">[22:08]</span> <span class="irc-black">&lt;melwin&gt; And @ todo sends the todo message to @... @todo is just a way to write it without witespace, that the parser allows.</span><br />
+<span class="irc-date">[22:08]</span> <span class="irc-black">&lt;melwin&gt; If I'm not mistaken... :)</span><br />
+<span class="irc-date">[22:08]</span> <span class="irc-black">&lt;HeMan&gt; ah!</span><br />
+<span class="irc-date">[22:08]</span> <span class="irc-black">&lt;melwin&gt; I would write it with space, however.</span><br />
+<span class="irc-date">[22:10]</span> <span class="irc-black">&lt;HeMan&gt; ok</span><br />
+<span class="irc-date">[22:12]</span> <span class="irc-black">&lt;melwin&gt; HeMan: Hey.... Try this: <a href="http://ioke.pastebin.com/m396e3999">http://ioke.pastebin.com/m396e3999</a></span><br />
+<span class="irc-date">[22:13]</span> <span class="irc-black">&lt;HeMan&gt; melwin: ah! nice</span><br />
+<span class="irc-date">[22:13]</span> <span class="irc-black">&lt;melwin&gt; Just had to rewrite the if test a bit from your original.</span><br />
+<span class="irc-date">[22:14]</span> <span class="irc-black">&lt;melwin&gt; What you working on?</span><br />
+<span class="irc-date">[22:14]</span> <span class="irc-black">&lt;naeu&gt; that was some nice progression :-)</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;HeMan&gt; melwin: a ioke clone of <a href="http://todotxt.com/">http://todotxt.com/</a></span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-brick">* melwin is drinking wine, so any progression is nice progression.</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;HeMan&gt; or actually, I working on me improving as a programmer</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[22:16]</span> <span class="irc-black">&lt;HeMan&gt; and Ioke was only a sidetrack...</span><br />
+<span class="irc-date">[22:16]</span> <span class="irc-black">&lt;melwin&gt; HeMan: Always admirable to strive for!</span><br />
+<span class="irc-date">[22:16]</span> <span class="irc-black">&lt;melwin&gt; Now I will heat som Edamame and watch latest House with the girlfriend...</span><br />
+<span class="irc-date">[22:16]</span> <span class="irc-black">&lt;naeu&gt; melwin: enjoy that</span><br />
+<span class="irc-date">[22:16]</span> <span class="irc-black">&lt;melwin&gt; Will do, bro... Will do.</span><br />
+<span class="irc-date">[22:16]</span> <span class="irc-black">&lt;melwin&gt; l8rs p33ps!</span><br />
+<span class="irc-date">[22:16]</span> <span class="irc-black">&lt;naeu&gt; haha</span><br />
+<span class="irc-date">[22:17]</span> <span class="irc-navy">* olabini (n=ola@80.73.62.222) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[22:17]</span> <span class="irc-black">&lt;melwin&gt; naeu: Respect your elders!</span><br />
+<span class="irc-date">[22:17]</span> <span class="irc-black">&lt;HeMan&gt; my primary language will be python, but I will learn Smalltalk and Clojure</span><br />
+<span class="irc-date">[22:17]</span> <span class="irc-black">&lt;naeu&gt; cheerio</span><br />
+<span class="irc-date">[22:17]</span> <span class="irc-black">&lt;HeMan&gt; and then either Erlang or Haskell</span><br />
+<span class="irc-date">[22:17]</span> <span class="irc-black">&lt;HeMan&gt; but right now I will go to bed... :)</span><br />
+<span class="irc-date">[22:17]</span> <span class="irc-black">&lt;naeu&gt; some meaty languages there!</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt; HeMan: night night</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[22:21]</span> <span class="irc-black">&lt;HeMan&gt; it's just to soften my brain enough to let all the good python juice flow right in!</span><br />
+<span class="irc-date">[22:21]</span> <span class="irc-black">&lt;HeMan&gt; well, night night</span><br />
+<span class="irc-date">[22:29]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-113.vc-graz.ac.at) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[22:35]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[23:53]</span> <span class="irc-green">* elvvin (n=Martin@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[23:55]</span> <span class="irc-black">&lt;elvvin&gt; uvku]]]</span><br />

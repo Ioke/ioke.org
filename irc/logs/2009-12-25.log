@@ -1,0 +1,16 @@
+<span class="irc-date">[12:36]</span> <span class="irc-green">* jewel (n=jewel@vc-41-30-87-153.umts.vodacom.co.za) has joined #ioke</span><br />
+<span class="irc-date">[12:58]</span> <span class="irc-navy">* jewel (n=jewel@vc-41-30-87-153.umts.vodacom.co.za) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[16:05]</span> <span class="irc-green">* jewel (n=jewel@vc-41-27-32-76.umts.vodacom.co.za) has joined #ioke</span><br />
+<span class="irc-date">[16:21]</span> <span class="irc-navy">* jdp (n=justin@75.97.120.11.res-cmts.senj.ptd.net) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[17:12]</span> <span class="irc-green">* jewel_ (n=jewel@vc-41-27-136-199.umts.vodacom.co.za) has joined #ioke</span><br />
+<span class="irc-date">[17:13]</span> <span class="irc-navy">* jewel (n=jewel@vc-41-27-32-76.umts.vodacom.co.za) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-navy">* jewel_ (n=jewel@vc-41-27-136-199.umts.vodacom.co.za) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-green">* jewel_ (n=jewel@vc-41-29-77-24.umts.vodacom.co.za) has joined #ioke</span><br />
+<span class="irc-date">[19:15]</span> <span class="irc-green">* jewel__ (n=jewel@vc-41-27-3-35.umts.vodacom.co.za) has joined #ioke</span><br />
+<span class="irc-date">[19:16]</span> <span class="irc-navy">* jewel_ (n=jewel@vc-41-29-77-24.umts.vodacom.co.za) Quit (Connection timed out)</span><br />
+<span class="irc-date">[19:45]</span> <span class="irc-navy">* jewel__ (n=jewel@vc-41-27-3-35.umts.vodacom.co.za) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[21:56]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Sam Aaron master * ra07adc8 / (3 files): initial commit of pygments lexer - <a href="http://bit.ly/5va4PE">http://bit.ly/5va4PE</a></span><br />
+<span class="irc-date">[21:56]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Sam Aaron master * r30380f0 / (19 files in 12 dirs): Merge remote branch 'origin/master' into pygments - <a href="http://bit.ly/5sUy5b">http://bit.ly/5sUy5b</a></span><br />
+<span class="irc-date">[21:56]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Sam Aaron master * re2ba112 / share/pygments/lexer.py : update highlighted keywords to better reflect their role (and introducing new tokens from the P release) - <a href="http://bit.ly/4uJ34d">http://bit.ly/4uJ34d</a></span><br />
+<span class="irc-date">[21:56]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Sam Aaron master * r38d4afb / share/pygments/example_source.ik : update pygments example text to reflext previous changes - <a href="http://bit.ly/4D5DtI">http://bit.ly/4D5DtI</a></span><br />
+<span class="irc-date">[21:56]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Sam Aaron master * r9e64906 / (share/pygments/example_source.ik share/pygments/lexer.py): update lexer to deal with alternative Text literal syntax, and fix set literal error in example source. - <a href="http://bit.ly/87GkfO">http://bit.ly/87GkfO</a></span><br />

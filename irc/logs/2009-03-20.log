@@ -1,0 +1,379 @@
+<span class="irc-date">[6:33]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[7:13]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[7:23]</span> <span class="irc-navy">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[7:47]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit ("Leaving")</span><br />
+<span class="irc-date">[7:49]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[8:59]</span> <span class="irc-green">* naeu (n=sam@h36036.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[12:21]</span> <span class="irc-green">* olabini (n=ola@cust-IP-10.data.tre.se) has joined #ioke</span><br />
+<span class="irc-date">[12:21]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[12:24]</span> <span class="irc-black">&lt;olabini&gt; morning</span><br />
+<span class="irc-date">[12:24]</span> <span class="irc-black">&lt;olabini&gt; or afternoon</span><br />
+<span class="irc-date">[12:24]</span> <span class="irc-black">&lt;olabini&gt; or good night</span><br />
+<span class="irc-date">[12:24]</span> <span class="irc-black">&lt;olabini&gt; depending on location</span><br />
+<span class="irc-date">[12:25]</span> <span class="irc-black">&lt;naeu&gt; good day</span><br />
+<span class="irc-date">[12:25]</span> <span class="irc-black">&lt;naeu&gt; i've been having quite a lot of fun with blank_slate</span><br />
+<span class="irc-date">[12:25]</span> <span class="irc-black">&lt;naeu&gt; it's like the edge of the universe</span><br />
+<span class="irc-date">[12:26]</span> <span class="irc-black">&lt;naeu&gt; I'm trying to create a bs object that appends it's message to an internal string and returns itself</span><br />
+<span class="irc-date">[12:26]</span> <span class="irc-black">&lt;naeu&gt; so:</span><br />
+<span class="irc-date">[12:26]</span> <span class="irc-black">&lt;naeu&gt; bs foo bar baz quux</span><br />
+<span class="irc-date">[12:27]</span> <span class="irc-black">&lt;naeu&gt; would store "foo bar baz quux"</span><br />
+<span class="irc-date">[12:27]</span> <span class="irc-black">&lt;naeu&gt; although i'm not having complete success</span><br />
+<span class="irc-date">[12:27]</span> <span class="irc-black">&lt;naeu&gt; but it's fun trying</span><br />
+<span class="irc-date">[12:28]</span> <span class="irc-black">&lt;naeu&gt; this is the current state of what I'm doing:</span><br />
+<span class="irc-date">[12:28]</span> <span class="irc-black">&lt;naeu&gt; use("blank_slate")</span><br />
+<span class="irc-date">[12:28]</span> <span class="irc-black">&lt;naeu&gt; Echo = BlankSlate create(fn(bs,</span><br />
+<span class="irc-date">[12:28]</span> <span class="irc-black">&lt;naeu&gt;     bs inspect = method(content)</span><br />
+<span class="irc-date">[12:28]</span> <span class="irc-black">&lt;naeu&gt;     bs content = ""</span><br />
+<span class="irc-date">[12:28]</span> <span class="irc-black">&lt;naeu&gt;     bs pass = method(+args, +:attrs,</span><br />
+<span class="irc-date">[12:28]</span> <span class="irc-black">&lt;naeu&gt;       content = currentMessage content + currentMessage name</span><br />
+<span class="irc-date">[12:28]</span> <span class="irc-black">&lt;naeu&gt;       self)))</span><br />
+<span class="irc-date">[12:31]</span> <span class="irc-black">&lt;naeu&gt; hmm, the penultimate line should be content += currentMessage name</span><br />
+<span class="irc-date">[12:31]</span> <span class="irc-black">&lt;naeu&gt; but it doesn't work anyway ;-)</span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-navy">* naeu (n=sam@h36036.upc-h.chello.nl) Quit ()</span><br />
+<span class="irc-date">[13:06]</span> <span class="irc-black">&lt;olabini&gt; hmm. interesting.</span><br />
+<span class="irc-date">[13:06]</span> <span class="irc-black">&lt;olabini&gt; now you disappeared</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; the reason += doesn't work is that it's an assignment method</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; there are some other problems in your code too</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; will tell you when you get back.</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-green">* naeu (n=sam@h36036.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; ah, there you are</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; &lt;olabini&gt; hmm. interesting.                                             [14:06]</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; &lt;olabini&gt; now you disappeared</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; &lt;olabini&gt; the reason += doesn't work is that it's an assignment method  [14:07]</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; &lt;olabini&gt; there are some other problems in your code too</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; &lt;olabini&gt; will tell you when you get back.</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; &lt;olabini&gt; =)</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; first</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; in thte pass method</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;olabini&gt; you have</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;olabini&gt;   content = ... something</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;olabini&gt; now</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;olabini&gt; remember that this will actually just assign a local variable</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;olabini&gt; not the global variable</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;olabini&gt; you need @content = ... something</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;olabini&gt; but that won't work</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;olabini&gt; because it will be translated into</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;olabini&gt;    @ =(content, .... something)</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;olabini&gt; and the BS doesn't have a =-method anymore</span><br />
+<span class="irc-date">[13:09]</span> <span class="irc-black">&lt;naeu&gt; hmmm ok</span><br />
+<span class="irc-date">[13:09]</span> <span class="irc-black">&lt;olabini&gt; so you can't actually assign anything new to the bs object iself</span><br />
+<span class="irc-date">[13:09]</span> <span class="irc-black">&lt;naeu&gt; i started off trying to store the content in the scope of the currentMEthod</span><br />
+<span class="irc-date">[13:09]</span> <span class="irc-black">&lt;olabini&gt; the problem with += is the same</span><br />
+<span class="irc-date">[13:09]</span> <span class="irc-black">&lt;olabini&gt; soemthing like</span><br />
+<span class="irc-date">[13:09]</span> <span class="irc-black">&lt;olabini&gt; content += 12</span><br />
+<span class="irc-date">[13:09]</span> <span class="irc-black">&lt;olabini&gt; is actually</span><br />
+<span class="irc-date">[13:09]</span> <span class="irc-black">&lt;olabini&gt; +=(content, 12)</span><br />
+<span class="irc-date">[13:09]</span> <span class="irc-black">&lt;naeu&gt; sure, the trinary operator</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-black">&lt;olabini&gt; so you need to have a += method in the blank slate object for it to work</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-black">&lt;naeu&gt; but isn't that called on the text itself?</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-black">&lt;olabini&gt; nope</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-black">&lt;naeu&gt; aaahh</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-black">&lt;naeu&gt; i see</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-black">&lt;olabini&gt; += is called on the receiving object, just like =</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-black">&lt;olabini&gt; I would recommend you to do soemthing like this:</span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-black">&lt;olabini&gt; use("blank_slate")</span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-black">&lt;olabini&gt; Echo = BlankSlate create(fn(bs,</span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-black">&lt;olabini&gt;     bs inspect = method(content real)</span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-black">&lt;olabini&gt;     bs content = Origin with(real: "")</span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-black">&lt;olabini&gt;     bs pass = method(+args, +:attrs,</span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-black">&lt;olabini&gt;       content real += currentMessage name</span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-black">&lt;olabini&gt;       self)))</span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-black">&lt;olabini&gt; since I don't have Text that can be modified right now</span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-black">&lt;olabini&gt; makes sense?</span><br />
+<span class="irc-date">[13:13]</span> <span class="irc-black">&lt;naeu&gt; what's the real do?</span><br />
+<span class="irc-date">[13:13]</span> <span class="irc-black">&lt;olabini&gt; real is the actual Text</span><br />
+<span class="irc-date">[13:14]</span> <span class="irc-black">&lt;olabini&gt; content is just a container for that text</span><br />
+<span class="irc-date">[13:14]</span> <span class="irc-black">&lt;naeu&gt; you mean that actual Java String?</span><br />
+<span class="irc-date">[13:14]</span> <span class="irc-black">&lt;olabini&gt; well, the actual Ioke Text as it were</span><br />
+<span class="irc-date">[13:14]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[13:14]</span> <span class="irc-black">&lt;olabini&gt; there are no Java Strings in this code</span><br />
+<span class="irc-date">[13:15]</span> <span class="irc-black">&lt;naeu&gt; ah, real is just a method on content which is a mimic of Origin</span><br />
+<span class="irc-date">[13:16]</span> <span class="irc-black">&lt;naeu&gt; ha, that works :-)</span><br />
+<span class="irc-date">[13:16]</span> <span class="irc-black">&lt;naeu&gt; fun :-)</span><br />
+<span class="irc-date">[13:16]</span> <span class="irc-black">&lt;naeu&gt; the next trick is to get rid of inspect and content</span><br />
+<span class="irc-date">[13:17]</span> <span class="irc-black">&lt;naeu&gt; although the question is then how you retrieve information from it ;-)</span><br />
+<span class="irc-date">[13:19]</span> <span class="irc-black">&lt;naeu&gt; is there a way to determine if the current message is the terminator message?</span><br />
+<span class="irc-date">[13:22]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[13:23]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[13:23]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[13:23]</span> <span class="irc-black">&lt;olabini&gt; you can always do special things based on the currentMessage yes</span><br />
+<span class="irc-date">[13:23]</span> <span class="irc-black">&lt;olabini&gt; but the terminator message will not be sent to pass</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;olabini&gt; since it's not a real message</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;naeu&gt; ah, that's a shame</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;naeu&gt; sure</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;olabini&gt; you could do something tricky with closures</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;olabini&gt; because of the fn</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;olabini&gt; in fact, I think that might be the best idea</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;olabini&gt; make pass be an fnx instead</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;olabini&gt; and in the callback you can define a local variable that the fnx can work with</span><br />
+<span class="irc-date">[13:25]</span> <span class="irc-black">&lt;naeu&gt; hmm, nice idea</span><br />
+<span class="irc-date">[13:26]</span> <span class="irc-black">&lt;naeu&gt; how would i then return that in inspect?</span><br />
+<span class="irc-date">[13:26]</span> <span class="irc-black">&lt;naeu&gt; i guess that could be a fnx too</span><br />
+<span class="irc-date">[13:27]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[13:27]</span> <span class="irc-black">&lt;olabini&gt; you could make inspect be an fnx too</span><br />
+<span class="irc-date">[13:27]</span> <span class="irc-black">&lt;olabini&gt; that's probably the easiest solution</span><br />
+<span class="irc-date">[13:27]</span> <span class="irc-black">&lt;naeu&gt; hmm</span><br />
+<span class="irc-date">[13:27]</span> <span class="irc-black">&lt;naeu&gt; *** - couldn't find cell 'currentMessage' on 'LexicalContext_0x4597CCCB' (Condition Error NoSuchCell)</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-green">* olabini` (n=ola@d83-183-87-133.cust.tele2.se) has joined #ioke</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;olabini`&gt; gah</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;olabini`&gt; I wrote lots of stuff</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;olabini`&gt; but you didn't get it</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-black">&lt;olabini`&gt; my stupid internet connection</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-black">&lt;olabini`&gt; anyway. scope everything on content instead</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-black">&lt;olabini`&gt; fnx doesn't have currentMessage</span><br />
+<span class="irc-date">[13:42]</span> <span class="irc-black">&lt;olabini`&gt; hmm</span><br />
+<span class="irc-date">[13:42]</span> <span class="irc-brick">* olabini` is engaging in refactoring. Ground -&gt; IokeGround</span><br />
+<span class="irc-date">[13:47]</span> <span class="irc-black">&lt;olabini`&gt; I guess you disappeared now</span><br />
+<span class="irc-date">[13:47]</span> <span class="irc-black">&lt;olabini`&gt; =)</span><br />
+<span class="irc-date">[13:51]</span> <span class="irc-green">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) has joined #ioke</span><br />
+<span class="irc-date">[13:54]</span> <span class="irc-navy">* olabini (n=ola@cust-IP-10.data.tre.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[13:55]</span> <span class="irc-green">* olabini` (n=ola@d83-183-87-133.cust.tele2.se) has left #ioke</span><br />
+<span class="irc-date">[13:56]</span> <span class="irc-green">* olabini (n=ola@d83-183-87-133.cust.tele2.se) has joined #ioke</span><br />
+<span class="irc-date">[13:56]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[13:57]</span> <span class="irc-brick">* olabini is breaking, breaking, breaking stuff. yay.</span><br />
+<span class="irc-date">[13:59]</span> <span class="irc-black">&lt;olabini&gt; naeu: you gone now?</span><br />
+<span class="irc-date">[14:02]</span> <span class="irc-green">* naeu_ (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[14:05]</span> <span class="irc-black">&lt;olabini&gt; hey</span><br />
+<span class="irc-date">[14:05]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[14:05]</span> <span class="irc-black">&lt;olabini&gt; flaky net?</span><br />
+<span class="irc-date">[14:05]</span> <span class="irc-black">&lt;olabini&gt; I definitely have flaky net</span><br />
+<span class="irc-date">[14:07]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * re751742 / docs/java_ideas : Update java ideas a bit - <a href="http://bit.ly/5NqCw">http://bit.ly/5NqCw</a></span><br />
+<span class="irc-date">[14:08]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * re20da30 / (6 files in 4 dirs): Fix #209 by introducing IokeGround. Ground now mimics JavaGround, so top level scripts can use Java stuff - <a href="http://bit.ly/18hLsI">http://bit.ly/18hLsI</a></span><br />
+<span class="irc-date">[14:09]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[14:09]</span> <span class="irc-brick">* olabini is happy with being finished with large breaking</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-navy">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) Quit ()</span><br />
+<span class="irc-date">[14:14]</span> <span class="irc-brick">* olabini is now adding more funky stuff to pass</span><br />
+<span class="irc-date">[14:17]</span> <span class="irc-black">&lt;naeu_&gt; hey i'm back now</span><br />
+<span class="irc-date">[14:17]</span> <span class="irc-black">&lt;naeu_&gt; was just in a planning meeting</span><br />
+<span class="irc-date">[14:17]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[14:17]</span> <span class="irc-black">&lt;olabini&gt; ok</span><br />
+<span class="irc-date">[14:17]</span> <span class="irc-black">&lt;olabini&gt; so,</span><br />
+<span class="irc-date">[14:17]</span> <span class="irc-black">&lt;olabini&gt; look in the logs</span><br />
+<span class="irc-date">[14:17]</span> <span class="irc-black">&lt;olabini&gt; I think I've explained why your currentMessage thing didn't work</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;olabini&gt; also</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;olabini&gt; I'm adding something interesting</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;olabini&gt; sometimes you don't won't "pass" to always be invoked</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;naeu_&gt; i like interesting :-)</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;olabini&gt; but instead want a regular NoSuchCell to get signalled</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-navy">* naeu (n=sam@h36036.upc-h.chello.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;olabini&gt; so I'm adding a protocol that calls "applicable?" if such a method exists on the "pass" object</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;olabini&gt; I'll use it for the JavaGround pas</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;olabini&gt; pass</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;olabini&gt; I've noticed that since I introduced it, the NoSuchCell messages always point at Ground</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;olabini&gt; which suchs</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;olabini&gt; sucks</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;olabini&gt; and is because of this pass thing</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;naeu_&gt; interesting</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;naeu_&gt; indeed :-)</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;olabini&gt; it should be a pretty general feature</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;naeu_&gt; also I didn't quite get how I can replace currentMessage</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;olabini&gt; I'll see if I can implement it in such a way that super-passes will be invoked if there is one</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-black">&lt;olabini&gt; just change "currentMessage" into "content"</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-black">&lt;naeu_&gt; I'm using it currently to get the name of the cell that was attempted</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-black">&lt;olabini&gt; that's all you need</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-black">&lt;olabini&gt; oh, right</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-black">&lt;olabini&gt; hmm.</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-black">&lt;naeu_&gt; :-)</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-black">&lt;olabini&gt; then you can't use lexical blocks as they are</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-black">&lt;olabini&gt; if you don't care about the arguments</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-black">&lt;olabini&gt; you can use a lecro instead</span><br />
+<span class="irc-date">[14:21]</span> <span class="irc-black">&lt;olabini&gt; they have a "call"</span><br />
+<span class="irc-date">[14:21]</span> <span class="irc-black">&lt;olabini&gt; AND they are lexically scoped</span><br />
+<span class="irc-date">[14:21]</span> <span class="irc-black">&lt;olabini&gt; give me your current code and I'll give you a new version</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;naeu_&gt; use("blank_slate")</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;naeu_&gt; Echo = BlankSlate create(fn(bs,</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;naeu_&gt;     content = ""</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;naeu_&gt;     bs inspect = fnx(content)</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;naeu_&gt;     bs pass = lecro(</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;naeu_&gt;       content += call[0] code</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;naeu_&gt;       self)))</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;naeu_&gt;       </span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;olabini&gt; hm</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;olabini&gt; why call[0] ?</span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;olabini&gt; that seems like it should work thought</span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;olabini&gt; you can do "call message name" instead</span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;naeu_&gt; it was just a raw guess</span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;naeu_&gt; i imagined call would be a list of mesages</span><br />
+<span class="irc-date">[14:24]</span> <span class="irc-black">&lt;naeu_&gt; :-)</span><br />
+<span class="irc-date">[14:24]</span> <span class="irc-black">&lt;naeu_&gt; *** - couldn't find cell 'self' on 'LexicalContext_0x47609975' (Condition Error NoSuchCell)</span><br />
+<span class="irc-date">[14:26]</span> <span class="irc-black">&lt;olabini&gt; ah, of course</span><br />
+<span class="irc-date">[14:26]</span> <span class="irc-black">&lt;olabini&gt; a lecro doesn't have a self</span><br />
+<span class="irc-date">[14:26]</span> <span class="irc-black">&lt;olabini&gt; so return bs</span><br />
+<span class="irc-date">[14:28]</span> <span class="irc-black">&lt;olabini&gt; Sam, do you have IM, btw?</span><br />
+<span class="irc-date">[14:38]</span> <span class="irc-black">&lt;naeu_&gt; sure</span><br />
+<span class="irc-date">[14:38]</span> <span class="irc-black">&lt;naeu_&gt; what's your flavour of choice?</span><br />
+<span class="irc-date">[14:38]</span> <span class="irc-black">&lt;naeu_&gt; gtalk?</span><br />
+<span class="irc-date">[14:39]</span> <span class="irc-black">&lt;olabini&gt; yeah, gtalk is best</span><br />
+<span class="irc-date">[14:39]</span> <span class="irc-black">&lt;olabini&gt; ola.bini@gmail.com</span><br />
+<span class="irc-date">[14:42]</span> <span class="irc-black">&lt;olabini&gt; but you probably know that</span><br />
+<span class="irc-date">[14:42]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[14:44]</span> <span class="irc-green">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) has joined #ioke</span><br />
+<span class="irc-date">[14:48]</span> <span class="irc-black">&lt;olabini&gt; 300 failures. yay.</span><br />
+<span class="irc-date">[14:52]</span> <span class="irc-black">&lt;naeu_&gt; busted!</span><br />
+<span class="irc-date">[14:56]</span> <span class="irc-black">&lt;naeu_&gt; just tried to add you via adium</span><br />
+<span class="irc-date">[15:05]</span> <span class="irc-black">&lt;naeu_&gt; ok, so considering this:</span><br />
+<span class="irc-date">[15:05]</span> <span class="irc-black">&lt;naeu_&gt; use("blank_slate")</span><br />
+<span class="irc-date">[15:05]</span> <span class="irc-black">&lt;naeu_&gt; Echo = BlankSlate create(fn(bs,</span><br />
+<span class="irc-date">[15:05]</span> <span class="irc-black">&lt;naeu_&gt;     content = ""</span><br />
+<span class="irc-date">[15:05]</span> <span class="irc-black">&lt;naeu_&gt;     bs pass = lecro(</span><br />
+<span class="irc-date">[15:05]</span> <span class="irc-black">&lt;naeu_&gt;       content += call message name</span><br />
+<span class="irc-date">[15:05]</span> <span class="irc-black">&lt;naeu_&gt;       bs)))</span><br />
+<span class="irc-date">[15:06]</span> <span class="irc-black">&lt;naeu_&gt; would it be possible to create a message that took one of these echos as a param and cracked it open to retrieve the value of content</span><br />
+<span class="irc-date">[15:07]</span> <span class="irc-black">&lt;naeu_&gt; or is that impossible even with ioke wizardry</span><br />
+<span class="irc-date">[15:08]</span> <span class="irc-navy">* olabini (n=ola@d83-183-87-133.cust.tele2.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[15:20]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit ("Leaving")</span><br />
+<span class="irc-date">[15:33]</span> <span class="irc-navy">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) Quit ()</span><br />
+<span class="irc-date">[16:38]</span> <span class="irc-green">* olabini (n=ola@80-73-60-114.cust.kungalv.net) has joined #ioke</span><br />
+<span class="irc-date">[16:38]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[16:38]</span> <span class="irc-black">&lt;olabini&gt; hi again</span><br />
+<span class="irc-date">[16:47]</span> <span class="irc-black">&lt;naeu_&gt; hey ola</span><br />
+<span class="irc-date">[16:47]</span> <span class="irc-black">&lt;naeu_&gt; did you see my last question?</span><br />
+<span class="irc-date">[16:48]</span> <span class="irc-black">&lt;naeu_&gt; i would be very impressed if ioke could open up an object in such a way</span><br />
+<span class="irc-date">[16:48]</span> <span class="irc-black">&lt;olabini&gt; could you reask it?</span><br />
+<span class="irc-date">[16:49]</span> <span class="irc-black">&lt;naeu_&gt; sure</span><br />
+<span class="irc-date">[16:49]</span> <span class="irc-black">&lt;naeu_&gt; considering this:</span><br />
+<span class="irc-date">[16:49]</span> <span class="irc-black">&lt;naeu_&gt; use("blank_slate")</span><br />
+<span class="irc-date">[16:49]</span> <span class="irc-black">&lt;naeu_&gt; Echo = BlankSlate create(fn(bs,</span><br />
+<span class="irc-date">[16:49]</span> <span class="irc-black">&lt;naeu_&gt;     content = ""</span><br />
+<span class="irc-date">[16:49]</span> <span class="irc-black">&lt;naeu_&gt;     bs pass = lecro(</span><br />
+<span class="irc-date">[16:49]</span> <span class="irc-black">&lt;naeu_&gt;       content += call message name</span><br />
+<span class="irc-date">[16:49]</span> <span class="irc-black">&lt;naeu_&gt;       bs)))</span><br />
+<span class="irc-date">[16:49]</span> <span class="irc-black">&lt;naeu_&gt; would it be possible to create a message that took one of these echos as a param and cracked it open to retrieve the value of content</span><br />
+<span class="irc-date">[16:49]</span> <span class="irc-black">&lt;naeu_&gt; or is that impossible even with ioke wizardry</span><br />
+<span class="irc-date">[16:49]</span> <span class="irc-green">* naeu_ was kicked from #ioke by IokeHurricane</span><br />
+<span class="irc-date">[16:49]</span> <span class="irc-green">* naeu_ (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[16:50]</span> <span class="irc-black">&lt;naeu_&gt; haha, got booted for that</span><br />
+<span class="irc-date">[16:57]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[16:57]</span> <span class="irc-black">&lt;olabini&gt; that would be hard</span><br />
+<span class="irc-date">[16:57]</span> <span class="irc-black">&lt;olabini&gt; I think you should send along a closure too</span><br />
+<span class="irc-date">[16:58]</span> <span class="irc-black">&lt;olabini&gt; and the use that closure when you need access to stuff</span><br />
+<span class="irc-date">[17:02]</span> <span class="irc-black">&lt;naeu_&gt; how do you mean?</span><br />
+<span class="irc-date">[17:04]</span> <span class="irc-black">&lt;olabini&gt; well.</span><br />
+<span class="irc-date">[17:04]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[17:04]</span> <span class="irc-black">&lt;olabini&gt; that depends on how you want to use it</span><br />
+<span class="irc-date">[17:04]</span> <span class="irc-black">&lt;olabini&gt; the closure is a real closure, so the only way to get access to it is by using things that have actually closed over it</span><br />
+<span class="irc-date">[17:06]</span> <span class="irc-black">&lt;naeu_&gt; the question for me is, is it possible to create an echo object that stores all the messages it receives, yet can be opened by something else to reveal the contents</span><br />
+<span class="irc-date">[17:06]</span> <span class="irc-black">&lt;naeu_&gt; so the opening up part can't be a message itself</span><br />
+<span class="irc-date">[17:07]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[17:07]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[17:08]</span> <span class="irc-black">&lt;olabini&gt; if you do it with a closure</span><br />
+<span class="irc-date">[17:08]</span> <span class="irc-black">&lt;olabini&gt; you can create an opener that has access to "content"</span><br />
+<span class="irc-date">[17:08]</span> <span class="irc-black">&lt;olabini&gt; since content isn't actually part of the echo itself</span><br />
+<span class="irc-date">[17:08]</span> <span class="irc-black">&lt;olabini&gt; and echo saves stuff outside itself</span><br />
+<span class="irc-date">[17:11]</span> <span class="irc-black">&lt;naeu_&gt; if you have time at some point it would be nice to see that in action</span><br />
+<span class="irc-date">[17:11]</span> <span class="irc-black">&lt;naeu_&gt; it's a bit beyond my skills right now</span><br />
+<span class="irc-date">[17:11]</span> <span class="irc-black">&lt;olabini&gt; yeah, sure</span><br />
+<span class="irc-date">[17:11]</span> <span class="irc-black">&lt;olabini&gt; give me a few minutes and I'll put something togeter</span><br />
+<span class="irc-date">[17:11]</span> <span class="irc-black">&lt;olabini&gt; together</span><br />
+<span class="irc-date">[17:12]</span> <span class="irc-black">&lt;olabini&gt; I'm just fixing a bug in JavaGround right now</span><br />
+<span class="irc-date">[17:12]</span> <span class="irc-black">&lt;olabini&gt; using the "applicable?" stuff</span><br />
+<span class="irc-date">[17:12]</span> <span class="irc-black">&lt;naeu_&gt; cool</span><br />
+<span class="irc-date">[17:14]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r533dfbd / (3 files in 2 dirs): Add pass - applicable? protocol - <a href="http://bit.ly/1mk74m">http://bit.ly/1mk74m</a></span><br />
+<span class="irc-date">[17:14]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * rd2ce861 / src/builtin/J05_javaGround.ik : Fix bug 210 by using applicable? - <a href="http://bit.ly/7anan">http://bit.ly/7anan</a></span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-black">&lt;naeu_&gt; olabini: right i'm off home now, if you do manage to cobble something together just ping me with it, I'd love to see what you mean :-)</span><br />
+<span class="irc-date">[17:34]</span> <span class="irc-navy">* naeu_ (n=sam@mail.innovationfactory.nl) Quit ()</span><br />
+<span class="irc-date">[17:55]</span> <span class="irc-black">&lt;olabini&gt; will do it</span><br />
+<span class="irc-date">[17:55]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit ()</span><br />
+<span class="irc-date">[18:44]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:50]</span> <span class="irc-black">&lt;olabini&gt; ok, let's see</span><br />
+<span class="irc-date">[18:51]</span> <span class="irc-black">&lt;olabini&gt; EchoHolder = Origin mimic</span><br />
+<span class="irc-date">[18:51]</span> <span class="irc-black">&lt;olabini&gt; EchoHolder Echo = BlankSlate create(fn(bs,</span><br />
+<span class="irc-date">[18:51]</span> <span class="irc-black">&lt;olabini&gt;     content = ""</span><br />
+<span class="irc-date">[18:51]</span> <span class="irc-black">&lt;olabini&gt;     EchoHolder content = fnx(content)</span><br />
+<span class="irc-date">[18:51]</span> <span class="irc-black">&lt;olabini&gt;     bs pass = lecro(</span><br />
+<span class="irc-date">[18:51]</span> <span class="irc-black">&lt;olabini&gt;       content += call message name</span><br />
+<span class="irc-date">[18:52]</span> <span class="irc-black">&lt;olabini&gt;       bs)))</span><br />
+<span class="irc-date">[18:52]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[18:52]</span> <span class="irc-black">&lt;olabini&gt; this is the simplest I can come up with</span><br />
+<span class="irc-date">[18:52]</span> <span class="irc-black">&lt;olabini&gt; you create an EchoHolder</span><br />
+<span class="irc-date">[18:52]</span> <span class="irc-black">&lt;olabini&gt; then create Echo inside of it</span><br />
+<span class="irc-date">[18:52]</span> <span class="irc-black">&lt;olabini&gt; and then create an fnx that returns "content"</span><br />
+<span class="irc-date">[18:52]</span> <span class="irc-black">&lt;olabini&gt; and add that fnx to EchoHolder</span><br />
+<span class="irc-date">[18:52]</span> <span class="irc-black">&lt;olabini&gt; in that way, you don't need to have ANYTHING in bs itself, except for the pass method</span><br />
+<span class="irc-date">[18:52]</span> <span class="irc-black">&lt;olabini&gt; makes sense?</span><br />
+<span class="irc-date">[19:38]</span> <span class="irc-green">* zabbai (i=bd8f1cbb@gateway/web/ajax/mibbit.com/x-f89ae27dff25068f) has joined #ioke</span><br />
+<span class="irc-date">[20:16]</span> <span class="irc-green">* mib_bnp8un (i=bd8f1cbb@gateway/web/ajax/mibbit.com/x-c24b35b28c0ff90d) has joined #ioke</span><br />
+<span class="irc-date">[20:52]</span> <span class="irc-black">&lt;naeu&gt; sorry, i haven't had chance to take a look at that yet</span><br />
+<span class="irc-date">[20:53]</span> <span class="irc-black">&lt;naeu&gt; susanna and i have friends over for dinner :-)</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-black">&lt;naeu&gt; wow, that looks very cool indeed</span><br />
+<span class="irc-date">[21:03]</span> <span class="irc-black">&lt;olabini&gt; no worries</span><br />
+<span class="irc-date">[21:03]</span> <span class="irc-black">&lt;olabini&gt; I'm with my family this weekend, so I won't have that much time to hack</span><br />
+<span class="irc-date">[21:06]</span> <span class="irc-black">&lt;naeu&gt; i hope that you have a nice time with them</span><br />
+<span class="irc-date">[21:06]</span> <span class="irc-black">&lt;olabini&gt; yeah. I will</span><br />
+<span class="irc-date">[21:06]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[21:06]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[21:06]</span> <span class="irc-black">&lt;naeu&gt; do all your family wear hats too?</span><br />
+<span class="irc-date">[21:06]</span> <span class="irc-black">&lt;olabini&gt; nope, I'm the only one. =)</span><br />
+<span class="irc-date">[21:06]</span> <span class="irc-black">&lt;olabini&gt; Ola - the deviant</span><br />
+<span class="irc-date">[21:06]</span> <span class="irc-black">&lt;naeu&gt; you need to influence them</span><br />
+<span class="irc-date">[21:06]</span> <span class="irc-black">&lt;naeu&gt; it's the Bini way ;-)</span><br />
+<span class="irc-date">[21:06]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-black">&lt;olabini&gt; Geeta and Katrine took it up</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-black">&lt;naeu&gt; this is very true!</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-black">&lt;olabini&gt; I thought that was a very fun surprise</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-black">&lt;naeu&gt; but they wore nuns outfits at JAOO....</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-black">&lt;olabini&gt; yeah, I know</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-black">&lt;olabini&gt; and asian sarongs at QCon SF</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-black">&lt;olabini&gt; Kat told me they'd run out of ideas</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-black">&lt;naeu&gt; haha i saw pics of that</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-black">&lt;olabini&gt; and that was why</span><br />
+<span class="irc-date">[21:08]</span> <span class="irc-black">&lt;naeu&gt; luckily Rod came to the rescue with his bleeding head ;-)</span><br />
+<span class="irc-date">[21:08]</span> <span class="irc-black">&lt;olabini&gt; hehe. yeah, exactly</span><br />
+<span class="irc-date">[21:08]</span> <span class="irc-black">&lt;olabini&gt; hm</span><br />
+<span class="irc-date">[21:08]</span> <span class="irc-black">&lt;olabini&gt; this place is logged</span><br />
+<span class="irc-date">[21:09]</span> <span class="irc-black">&lt;olabini&gt; those references are for non-logged places only. =)</span><br />
+<span class="irc-date">[21:09]</span> <span class="irc-black">&lt;olabini&gt; anyway. this weekend I'm planning to get a simple Swing app working in Ioke</span><br />
+<span class="irc-date">[21:09]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[21:09]</span> <span class="irc-black">&lt;olabini&gt; have a good evening.</span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-black">&lt;naeu&gt; you too</span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-black">&lt;naeu&gt; take care :-)</span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-black">&lt;olabini&gt; will do</span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-black">&lt;olabini&gt; this is the script I'll get working. I'm pretty close:</span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-black">&lt;olabini&gt; import(:javax:swing, :JFrame, :JButton)</span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-black">&lt;olabini&gt; import java:awt:GridLayout</span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-black">&lt;olabini&gt; button = JButton new("Press me!") do(</span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-black">&lt;olabini&gt;   addActionListener(fn(e, button text = "Hello Ruby")))</span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-black">&lt;olabini&gt; JFrame new("My Frame") do(</span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-black">&lt;olabini&gt;   layout = GridLayout new(2, 2, 3, 3)</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;naeu&gt; looks very nice</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;olabini&gt;   add(button)</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;olabini&gt;   setSize(300, 80)</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;olabini&gt;   visible = true)</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;olabini&gt; especially note the cute use of "do" to avoid assigning the frame to any variable</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;naeu&gt; cool</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;naeu&gt; (and maybe you can edit the logs?)</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;olabini&gt; anyway. it's the automatic coercion of lexical blocks into interfaces that doesn't work yet</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-black">&lt;olabini&gt; sorry. your comments will live forever in the history of Ioke!</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-black">&lt;olabini&gt; =P</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-black">&lt;naeu&gt; haha</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-black">&lt;naeu&gt; Rod Hull did die after he fell off his roof</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-black">&lt;naeu&gt; that was actually pretty sad in England</span><br />
+<span class="irc-date">[21:15]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[21:16]</span> <span class="irc-black">&lt;olabini&gt; ok. I have no way to understand what that means, I think</span><br />
+<span class="irc-date">[21:16]</span> <span class="irc-black">&lt;olabini&gt; I don't have the cultural attachment to understand the reference</span><br />
+<span class="irc-date">[21:17]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://webzoom.freewebs.com/scottishmusichallsociety/rod%20hull.gif">http://webzoom.freewebs.com/scottishmusichallsociety/rod%20hull.gif</a></span><br />
+<span class="irc-date">[21:17]</span> <span class="irc-black">&lt;naeu&gt; if that helps ;-)</span><br />
+<span class="irc-date">[21:24]</span> <span class="irc-navy">* zabbai (i=bd8f1cbb@gateway/web/ajax/mibbit.com/x-f89ae27dff25068f) Quit ("<a href="http://www.mibbit.com">http://www.mibbit.com</a> ajax IRC Client")</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-navy">* mib_bnp8un (i=bd8f1cbb@gateway/web/ajax/mibbit.com/x-c24b35b28c0ff90d) Quit ("<a href="http://www.mibbit.com">http://www.mibbit.com</a> ajax IRC Client")</span><br />
+<span class="irc-date">[21:39]</span> <span class="irc-green">* martido (n=martin@dslb-088-067-177-017.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[22:32]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[23:12]</span> <span class="irc-navy">* martido (n=martin@dslb-088-067-177-017.pools.arcor-ip.net) Quit ()</span><br />
+<span class="irc-date">[23:23]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[23:46]</span> <span class="irc-black">&lt;olabini&gt; and yeah, Ioke's blank slate is really as blank as it can get... =)</span><br />
+<span class="irc-date">[23:47]</span> <span class="irc-black">&lt;olabini&gt; which means exactly nothing that you haven't already put in there.</span><br />

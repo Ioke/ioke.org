@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Kind: DefaultBehavior</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href=".././dokgen-style.css" type="text/css" media="screen" />
+    <script language="JavaScript" type="text/javascript">
+    // <![CDATA[
+
+        function toggleSource( id )
+        {
+          var elem
+          var link
+
+          if( document.getElementById )
+          {
+            elem = document.getElementById( id )
+            link = document.getElementById( "l_" + id )
+          }
+          else if ( document.all )
+          {
+            elem = eval( "document.all." + id )
+            link = eval( "document.all.l_" + id )
+          }
+          else
+            return false;
+
+          if( elem.style.display == "block" )
+          {
+            elem.style.display = "none"
+            link.innerHTML = "show source"
+          }
+          else
+          {
+            elem.style.display = "block"
+            link.innerHTML = "hide source"
+          }
+        }
+
+        function openCode( url )
+        {
+          window.open( url, "SOURCE_CODE", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=480,width=750" ).focus();
+        }
+      // ]]>
+    </script>
+  </head>
+
+  <body>
+    <table border='0' cellpadding='0' cellspacing='0' width="100%" class='banner'>
+      <tr>
+        <td>
+          <table width="100%" border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+              <td class="file-title" colspan="2">
+                <span class="file-title-prefix">Kind</span>
+                <br />
+                DefaultBehavior
+              </td>
+              <td align="right">
+                <table cellspacing="0" cellpadding="2">
+                  <tr>
+                    <td>Main mimic:</td>
+                    <td>
+                      none
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <div id="bodyContent">
+      <div id="content">
+        <div class="description">
+          <p>
+DefaultBehavior is a mixin that provides most of the methods shared by most instances in the system.
+          </p>
+        </div>
+
+        <div class="sectiontitle">Mimics</div>
+        <ul>
+          none
+        </ul>
+
+        <div class="sectiontitle">Inactive cells</div>
+        <ul>
+          <li><a href="#C0021">kind</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Active cells</div>
+        <ul>
+          <li><a href="#C00242">cellDescriptionDict()</a></li>
+<li><a href="#C00243">cellSummary()</a></li>
+<li><a href="#C00239">genSym()</a></li>
+<li><a href="#C00240">inspect()</a></li>
+<li><a href="#C00241">notice()</a></li>
+<li><a href="#C00238">use(module nil)</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Specs</div>
+        <div class="specs">
+          
+        </div>
+
+        <div class="sectiontitle">Inactive cells (details)</div>
+                <div class="cell">
+          <a name="C0021"></a>
+          <table border="0" cellpadding="5">
+            <tr valign="top">
+              <td class="cell-name">kind</td>
+              <td>=</td>
+              <td class="cell-value">"DefaultBehavior"</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div class="sectiontitle">Active cells (details)</div>
+                <div class="cell">
+          <div class="title">
+          <a name="C00242"></a><b>cellDescriptionDict</b>()
+          </div>
+          <div class="description">
+            <p>returns a dict containing each cell and it's corresponding description</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00242_source')" id="l_C00242_source">show source</a> ]</p>
+            <div id="C00242_source" class="dyn-source">
+<pre>
+method(
+  cellNames = cell(:self) cellNames sort 
+  cellDescs = cellNames map(name, cell(:self) cell(name) notice) 
+  {} addKeysAndValues(cellNames, cellDescs))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00243"></a><b>cellSummary</b>()
+          </div>
+          <div class="description">
+            <p>returns a representation of the current object that includes information about it's cells</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00243_source')" id="l_C00243_source">show source</a> ]</p>
+            <div id="C00243_source" class="dyn-source">
+<pre>
+method(
+  cellDescriptions = cellDescriptionDict 
+  vals = cellDescriptions keys sort map(k, list(k, cellDescriptions [](k))) 
+  " #{cell(:self) notice}:
+%*[  %-28s = %s\n%]" format(vals))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00239"></a><b>genSym</b>()
+          </div>
+          <div class="description">
+            <p>returns a new, unique symbol every time called. The symbol will be quite unreadable, and uses a closure to generate a new number every time that is independent from external state.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00239_source')" id="l_C00239_source">show source</a> ]</p>
+            <div id="C00239_source" class="dyn-source">
+<pre>
+fnx(
+  :("#&lt;GS#{++(n)}&gt;"))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00240"></a><b>inspect</b>()
+          </div>
+          <div class="description">
+            <p>returns a longer description of the receiver, in general including cell information</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00240_source')" id="l_C00240_source">show source</a> ]</p>
+            <div id="C00240_source" class="dyn-source">
+<pre>
+method(
+  cellSummary)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00241"></a><b>notice</b>()
+          </div>
+          <div class="description">
+            <p>returns a short text description of the receiver</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00241_source')" id="l_C00241_source">show source</a> ]</p>
+            <div id="C00241_source" class="dyn-source">
+<pre>
+method(
+  if(currentMessage Origin ==(cell(:self)), 
+    "Origin", 
+    if(currentMessage Ground ==(cell(:self)), 
+      "Ground", 
+      "#{cell(:self) kind}_#{cell(:self) uniqueHexId}" 
+      )))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00238"></a><b>use</b>(module nil)
+          </div>
+          <div class="description">
+            <p>takes one or more evaluated string argument. will import the files corresponding to each of the strings named based on the Ioke loading behavior that can be found in the documentation for the loadBehavior cell on System.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00238_source')" id="l_C00238_source">show source</a> ]</p>
+            <div id="C00238_source" class="dyn-source">
+<pre>
+method(module nil, 
+  unless(module, 
+    return(DefaultBehavior cell(:use)), 
+    System lowLevelLoad!(module, false)))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>

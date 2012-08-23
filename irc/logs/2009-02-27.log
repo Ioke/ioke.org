@@ -1,0 +1,36 @@
+<span class="irc-date">[0:04]</span> <span class="irc-navy">* zabbai (i=c9664f79@gateway/web/ajax/mibbit.com/x-b211b6421c0caad0) Quit ("<a href="http://www.mibbit.com">http://www.mibbit.com</a> ajax IRC Client")</span><br />
+<span class="irc-date">[4:29]</span> <span class="irc-navy">* thijso (n=thijs@83.98.233.115) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[4:29]</span> <span class="irc-green">* thijso (n=thijs@83.98.233.115) has joined #ioke</span><br />
+<span class="irc-date">[6:40]</span> <span class="irc-green">* olabini (n=ola@c-384ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[7:29]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit ("Leaving")</span><br />
+<span class="irc-date">[8:20]</span> <span class="irc-green">* olabini (n=ola@194.132.20.9) has joined #ioke</span><br />
+<span class="irc-date">[8:20]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[8:40]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:45]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-251-055-193.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[9:16]</span> <span class="irc-black">&lt;naeu&gt; a nice argument supporting the case for languages like Ioke: <a href="http://enfranchisedmind.com/blog/2009/02/22/programming-doesnt-suck-or-at-least-it-shouldnt/">http://enfranchisedmind.com/blog/2009/02/22/programming-doesnt-suck-or-at-least-it-shouldnt/</a></span><br />
+<span class="irc-date">[9:52]</span> <span class="irc-black">&lt;olabini&gt; true</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;naeu&gt; olabini: what's the weather like in Sweden today? It's totally grim here in Amsterdam :-(</span><br />
+<span class="irc-date">[10:08]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[10:09]</span> <span class="irc-black">&lt;olabini&gt; well, rain+snow</span><br />
+<span class="irc-date">[10:09]</span> <span class="irc-black">&lt;olabini&gt; right now it's a bit sun, though</span><br />
+<span class="irc-date">[10:13]</span> <span class="irc-black">&lt;olabini&gt; how's your boiler coming along? =)</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;naeu&gt; damned boiler</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;naeu&gt; yesterday Susanna and I went out to buy a heater</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;naeu&gt; but the boiler is still busted</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;naeu&gt; I'm slowly getting used to showering with a bucket of water!</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;olabini&gt; ouch</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;olabini&gt; that sucks</span><br />
+<span class="irc-date">[10:35]</span> <span class="irc-black">&lt;naeu&gt; at least it's not as bad as living in a tent ;-)</span><br />
+<span class="irc-date">[10:44]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[12:22]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[12:53]</span> <span class="irc-navy">* olabini (n=ola@194.132.20.9) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[13:42]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[13:42]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[14:05]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[16:35]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has left #ioke</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-251-055-193.chello.nl) Quit ()</span><br />
+<span class="irc-date">[18:40]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-48.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[21:04]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-48.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[22:56]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[23:39]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />

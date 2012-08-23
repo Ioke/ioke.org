@@ -1,0 +1,90 @@
+<span class="irc-date">[0:02]</span> <span class="irc-navy">* mozinator (n=mozinato@195-241-109-215.ip.telfort.nl) Quit ("Leaving")</span><br />
+<span class="irc-date">[0:11]</span> <span class="irc-navy">* CIA-7 (n=CIA@208.69.182.149) Quit ()</span><br />
+<span class="irc-date">[0:12]</span> <span class="irc-green">* CIA-39 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[4:06]</span> <span class="irc-navy">* CIA-39 (n=CIA@208.69.182.149) Quit ()</span><br />
+<span class="irc-date">[4:09]</span> <span class="irc-green">* CIA-7 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[7:22]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:07]</span> <span class="irc-green">* naeu (n=sam@h253037.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:18]</span> <span class="irc-black">&lt;naeu&gt; Interesting that this shares a lot of concepts with Ioke: <a href="http://hackety.org/potion/">http://hackety.org/potion/</a></span><br />
+<span class="irc-date">[8:45]</span> <span class="irc-black">&lt;olabini&gt; yeah, but it's also interesting how far it diverges in places</span><br />
+<span class="irc-date">[8:47]</span> <span class="irc-black">&lt;naeu&gt; Licks are an interesting middle ground on the homoiconicity movement</span><br />
+<span class="irc-date">[8:47]</span> <span class="irc-black">&lt;naeu&gt; they look like a standardisation of sexps as part of the language</span><br />
+<span class="irc-date">[8:52]</span> <span class="irc-black">&lt;naeu&gt; but there's not much difference between: ('cheese', 'bread', 'mayo') at (1) print and ["cheese", "bread","mayo"] at (1) println</span><br />
+<span class="irc-date">[12:40]</span> <span class="irc-green">* skanev (n=aquarius@95.87.254.115) has joined #ioke</span><br />
+<span class="irc-date">[13:06]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; the way I see licks - they are just a different way of doing quoting</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; or, alternatively, a way of avoiding having XML literals in the language</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; of course, the ioke version would be</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; ["cheese", "bread", "mayo"][1] println</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; or even</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;olabini&gt; '(cheese bread mayo) map(name)[1] println</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;olabini&gt; I wonder. maybe I should have this in core:</span><br />
+<span class="irc-date">[13:09]</span> <span class="irc-black">&lt;olabini&gt; ''' = macro(call arguments[0] map(name asText))</span><br />
+<span class="irc-date">[13:09]</span> <span class="irc-black">&lt;olabini&gt; then you could do</span><br />
+<span class="irc-date">[13:09]</span> <span class="irc-black">&lt;olabini&gt; '''(egg mayo cheese)</span><br />
+<span class="irc-date">[13:09]</span> <span class="irc-black">&lt;olabini&gt; and that will result in ["egg", "mayo", "cheese"]</span><br />
+<span class="irc-date">[14:05]</span> <span class="irc-navy">* skanev (n=aquarius@95.87.254.115) Quit (leguin.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[14:05]</span> <span class="irc-navy">* naeu (n=sam@h253037.upc-h.chello.nl) Quit (leguin.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[14:05]</span> <span class="irc-green">* skanev (n=aquarius@95.87.254.115) has joined #ioke</span><br />
+<span class="irc-date">[14:05]</span> <span class="irc-green">* naeu (n=sam@h253037.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[14:06]</span> <span class="irc-navy">* naeu (n=sam@h253037.upc-h.chello.nl) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[14:06]</span> <span class="irc-green">* naeu (n=sam@62.194.253.37) has joined #ioke</span><br />
+<span class="irc-date">[14:07]</span> <span class="irc-black">&lt;naeu&gt; I wonder if that would get confused with the normal backticks and single quoting syntax</span><br />
+<span class="irc-date">[14:07]</span> <span class="irc-black">&lt;naeu&gt; although it would be lovely to have a syntax to remove the need for all the commas and double-quotes</span><br />
+<span class="irc-date">[14:07]</span> <span class="irc-black">&lt;naeu&gt; they are terribly noisy</span><br />
+<span class="irc-date">[14:08]</span> <span class="irc-black">&lt;naeu&gt; their only saviour is syntax highlighting</span><br />
+<span class="irc-date">[14:50]</span> <span class="irc-navy">* skanev (n=aquarius@95.87.254.115) Quit ()</span><br />
+<span class="irc-date">[15:55]</span> <span class="irc-green">* donizetti (n=donizett@187.37.200.99) has joined #ioke</span><br />
+<span class="irc-date">[15:55]</span> <span class="irc-black">&lt;donizetti&gt; hello guys!</span><br />
+<span class="irc-date">[15:55]</span> <span class="irc-black">&lt;naeu&gt; donizetti: hey there</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;donizetti&gt; olabini: may I ask you a question related to ThougthWorks?</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;donizetti&gt; naeu: hey, how are you?</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;naeu&gt; really well thanks</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-black">&lt;naeu&gt; about to go out to meet Chris from Github and a bunch of other fun people</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-black">&lt;donizetti&gt; really?</span><br />
+<span class="irc-date">[15:58]</span> <span class="irc-black">&lt;naeu&gt; yep</span><br />
+<span class="irc-date">[15:58]</span> <span class="irc-black">&lt;naeu&gt; he's in Amsterdam right now</span><br />
+<span class="irc-date">[15:59]</span> <span class="irc-black">&lt;donizetti&gt; i met Adam Monago from Mingle team, yesterday!</span><br />
+<span class="irc-date">[15:59]</span> <span class="irc-black">&lt;naeu&gt; cool</span><br />
+<span class="irc-date">[15:59]</span> <span class="irc-black">&lt;naeu&gt; was he nice?</span><br />
+<span class="irc-date">[16:00]</span> <span class="irc-black">&lt;donizetti&gt; yeah, really nice!</span><br />
+<span class="irc-date">[16:00]</span> <span class="irc-black">&lt;donizetti&gt; he gave a talk about mingle!</span><br />
+<span class="irc-date">[16:00]</span> <span class="irc-black">&lt;naeu&gt; was it interesting?</span><br />
+<span class="irc-date">[16:00]</span> <span class="irc-black">&lt;donizetti&gt; pretty much</span><br />
+<span class="irc-date">[16:00]</span> <span class="irc-black">&lt;naeu&gt; nice</span><br />
+<span class="irc-date">[16:00]</span> <span class="irc-black">&lt;donizetti&gt; mingle has evolved a lot since I saw it for the first time!</span><br />
+<span class="irc-date">[16:00]</span> <span class="irc-black">&lt;donizetti&gt; time to give it another try!</span><br />
+<span class="irc-date">[16:00]</span> <span class="irc-black">&lt;donizetti&gt; =D</span><br />
+<span class="irc-date">[16:01]</span> <span class="irc-black">&lt;naeu&gt; i haven't seen it in a while</span><br />
+<span class="irc-date">[16:01]</span> <span class="irc-black">&lt;naeu&gt; anyway, i'm off out now</span><br />
+<span class="irc-date">[16:01]</span> <span class="irc-black">&lt;naeu&gt; so chat to you later :-)</span><br />
+<span class="irc-date">[16:01]</span> <span class="irc-black">&lt;naeu&gt; cheerio...</span><br />
+<span class="irc-date">[16:01]</span> <span class="irc-black">&lt;donizetti&gt; ok</span><br />
+<span class="irc-date">[16:01]</span> <span class="irc-black">&lt;donizetti&gt; :)</span><br />
+<span class="irc-date">[16:12]</span> <span class="irc-green">* donizetti_ (n=donizett@187.37.200.99) has joined #ioke</span><br />
+<span class="irc-date">[16:22]</span> <span class="irc-navy">* naeu (n=sam@62.194.253.37) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[16:30]</span> <span class="irc-navy">* donizetti (n=donizett@187.37.200.99) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[16:35]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[17:03]</span> <span class="irc-black">&lt;olabini&gt; hey</span><br />
+<span class="irc-date">[17:03]</span> <span class="irc-black">&lt;olabini&gt; donizetti_: please, go ahead and ask</span><br />
+<span class="irc-date">[17:04]</span> <span class="irc-black">&lt;olabini&gt; and yeah, Adam is a good guy</span><br />
+<span class="irc-date">[17:07]</span> <span class="irc-black">&lt;donizetti_&gt; i'm applying myself for TW london, but I'm a little afraid of the fact that i'm planing to marry , and so I would like to bring my girlfriend with me.</span><br />
+<span class="irc-date">[17:08]</span> <span class="irc-black">&lt;donizetti_&gt; and I don't know if that would be a problem, as I know you have worked in London and that you are married I decided to ask you about that!</span><br />
+<span class="irc-date">[17:12]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[17:12]</span> <span class="irc-black">&lt;olabini&gt; I married after London</span><br />
+<span class="irc-date">[17:12]</span> <span class="irc-black">&lt;olabini&gt; but don't worry, just mention this during the interviews</span><br />
+<span class="irc-date">[17:12]</span> <span class="irc-black">&lt;olabini&gt; the recruiters and HR people are used to taking care of things like this</span><br />
+<span class="irc-date">[17:13]</span> <span class="irc-black">&lt;olabini&gt; so just ask them on the phone interview</span><br />
+<span class="irc-date">[17:15]</span> <span class="irc-black">&lt;donizetti_&gt; :)</span><br />
+<span class="irc-date">[17:15]</span> <span class="irc-black">&lt;donizetti_&gt; great</span><br />
+<span class="irc-date">[17:15]</span> <span class="irc-black">&lt;donizetti_&gt; I'll do that so.</span><br />
+<span class="irc-date">[17:16]</span> <span class="irc-black">&lt;donizetti_&gt; as it will be Jim who will hook up my cv there, I will ask him to warn the recruiters about that too!</span><br />
+<span class="irc-date">[17:16]</span> <span class="irc-black">&lt;donizetti_&gt; thanks Ola!</span><br />
+<span class="irc-date">[17:19]</span> <span class="irc-black">&lt;donizetti_&gt; i'm looking forward to make it work, I will really enjoy work for TW and as probably TW will come to Brazil soon if I will be able to come back from London some day..Of course, that I first need to arrive there! =D</span><br />
+<span class="irc-date">[19:28]</span> <span class="irc-navy">* donizetti_ (n=donizett@187.37.200.99) Quit ()</span><br />
+<span class="irc-date">[19:30]</span> <span class="irc-green">* donizetti (n=donizett@187.37.200.99) has joined #ioke</span><br />
+<span class="irc-date">[19:34]</span> <span class="irc-navy">* donizetti (n=donizett@187.37.200.99) Quit (Client Quit)</span><br />
+<span class="irc-date">[20:07]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-163.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[20:25]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-163.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />

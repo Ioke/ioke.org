@@ -1,0 +1,88 @@
+<span class="irc-date">[0:08]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[1:16]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit (Client Quit)</span><br />
+<span class="irc-date">[7:34]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:58]</span> <span class="irc-black">&lt;martido&gt; YEY! just registered for RailsWayCon in Berlin =) made the early bird as well as an additional discount that came with my subscription of a German Java magazine. so all in all pretty affordable</span><br />
+<span class="irc-date">[9:00]</span> <span class="irc-black">&lt;olabini&gt; cool</span><br />
+<span class="irc-date">[9:00]</span> <span class="irc-black">&lt;martido&gt; yeah, I</span><br />
+<span class="irc-date">[9:00]</span> <span class="irc-black">&lt;martido&gt; oops</span><br />
+<span class="irc-date">[9:00]</span> <span class="irc-black">&lt;martido&gt; I'm really looking forward to it</span><br />
+<span class="irc-date">[9:01]</span> <span class="irc-black">&lt;naeu&gt; martido: nice</span><br />
+<span class="irc-date">[9:01]</span> <span class="irc-black">&lt;naeu&gt; i would have liked to go to that</span><br />
+<span class="irc-date">[9:02]</span> <span class="irc-black">&lt;martido&gt; it's my first ruby/rails conference ... I'm excited ;)</span><br />
+<span class="irc-date">[9:03]</span> <span class="irc-black">&lt;martido&gt; naeu: Berlin's not too far from the Netherlands; you could do a last minute trip ;)</span><br />
+<span class="irc-date">[9:03]</span> <span class="irc-black">&lt;naeu&gt; martido: it's the money really</span><br />
+<span class="irc-date">[9:03]</span> <span class="irc-black">&lt;naeu&gt; given the current financial situation my company wouldn't bee too happy shelling out the attendance fees</span><br />
+<span class="irc-date">[9:04]</span> <span class="irc-black">&lt;martido&gt; ah right, too bad. I was pretty surprised that I had no problem convincing my boss to let me go AND pay for it</span><br />
+<span class="irc-date">[9:04]</span> <span class="irc-black">&lt;naeu&gt; haha, nice</span><br />
+<span class="irc-date">[9:05]</span> <span class="irc-black">&lt;martido&gt; yeees ;)</span><br />
+<span class="irc-date">[9:06]</span> <span class="irc-black">&lt;naeu&gt; martido: where abouts are you from?</span><br />
+<span class="irc-date">[9:06]</span> <span class="irc-black">&lt;martido&gt; naeu: from munich</span><br />
+<span class="irc-date">[9:06]</span> <span class="irc-black">&lt;naeu&gt; ah, not too bad</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-black">&lt;martido&gt; yes, it's quite a nice city</span><br />
+<span class="irc-date">[9:10]</span> <span class="irc-black">&lt;naeu&gt; yeah, i love berlin</span><br />
+<span class="irc-date">[9:12]</span> <span class="irc-black">&lt;martido&gt; berlin's nice; to my shame i've to admit that i've been there only once before</span><br />
+<span class="irc-date">[9:12]</span> <span class="irc-black">&lt;martido&gt; but there so many things to see that those few days weren't nearly enough</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-brick">* olabini just merged mock and stub support</span><br />
+<span class="irc-date">[10:48]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;martido&gt; @olabini: remember that I asked you about good books about programming languge implementation and design last week? did you have the time to take a look at your library?</span><br />
+<span class="irc-date">[11:06]</span> <span class="irc-black">&lt;olabini&gt; ah, right</span><br />
+<span class="irc-date">[11:06]</span> <span class="irc-black">&lt;olabini&gt; mm.</span><br />
+<span class="irc-date">[11:06]</span> <span class="irc-black">&lt;olabini&gt; lets see</span><br />
+<span class="irc-date">[11:06]</span> <span class="irc-black">&lt;olabini&gt; Programming Language Pragmatics is good</span><br />
+<span class="irc-date">[11:06]</span> <span class="irc-black">&lt;martido&gt; I've got that one; it</span><br />
+<span class="irc-date">[11:06]</span> <span class="irc-black">&lt;olabini&gt; so is Essentials of Programming Languages</span><br />
+<span class="irc-date">[11:06]</span> <span class="irc-black">&lt;martido&gt; 's really good</span><br />
+<span class="irc-date">[11:06]</span> <span class="irc-black">&lt;olabini&gt; I like Types and Programming Languages</span><br />
+<span class="irc-date">[11:06]</span> <span class="irc-black">&lt;olabini&gt; by Pierce</span><br />
+<span class="irc-date">[11:06]</span> <span class="irc-black">&lt;olabini&gt; I'm currently reading the folloup</span><br />
+<span class="irc-date">[11:06]</span> <span class="irc-black">&lt;olabini&gt; since I'm a Lisp head</span><br />
+<span class="irc-date">[11:06]</span> <span class="irc-black">&lt;olabini&gt; I like Lisp In Small Pieces</span><br />
+<span class="irc-date">[11:06]</span> <span class="irc-black">&lt;martido&gt; what is it called?</span><br />
+<span class="irc-date">[11:06]</span> <span class="irc-black">&lt;olabini&gt; SICP obviously</span><br />
+<span class="irc-date">[11:07]</span> <span class="irc-black">&lt;olabini&gt; which one?</span><br />
+<span class="irc-date">[11:07]</span> <span class="irc-black">&lt;martido&gt; the followup to TAPL</span><br />
+<span class="irc-date">[11:07]</span> <span class="irc-black">&lt;olabini&gt; the follow up is Advanced topics in Types and Programming Languages</span><br />
+<span class="irc-date">[11:07]</span> <span class="irc-black">&lt;martido&gt; ah ok</span><br />
+<span class="irc-date">[11:07]</span> <span class="irc-black">&lt;martido&gt; I heard it's pretty mathematical</span><br />
+<span class="irc-date">[11:07]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[11:07]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[11:07]</span> <span class="irc-black">&lt;olabini&gt; Purely Functional Data Structures is very useful</span><br />
+<span class="irc-date">[11:08]</span> <span class="irc-black">&lt;martido&gt; is that an e-book? I thought I might've heard the name</span><br />
+<span class="irc-date">[11:08]</span> <span class="irc-black">&lt;olabini&gt; no, not an e-book</span><br />
+<span class="irc-date">[11:08]</span> <span class="irc-black">&lt;olabini&gt; those are probably the main ones</span><br />
+<span class="irc-date">[11:08]</span> <span class="irc-black">&lt;martido&gt; ok, then I was mistaken</span><br />
+<span class="irc-date">[11:09]</span> <span class="irc-black">&lt;martido&gt; cool, thanks a lot; i was toying with idea of buying essentials of PL, but I didn't know if it was worth the money</span><br />
+<span class="irc-date">[11:10]</span> <span class="irc-black">&lt;slava&gt; hi olabini</span><br />
+<span class="irc-date">[11:10]</span> <span class="irc-black">&lt;martido&gt; it has very good chapters on continuations supposedly</span><br />
+<span class="irc-date">[11:10]</span> <span class="irc-black">&lt;olabini&gt; slava: hi there</span><br />
+<span class="irc-date">[11:10]</span> <span class="irc-black">&lt;slava&gt; olabini: I got polymorphic inline caches working in factor</span><br />
+<span class="irc-date">[11:10]</span> <span class="irc-black">&lt;olabini&gt; martido: yeah, it's pretty good</span><br />
+<span class="irc-date">[11:10]</span> <span class="irc-black">&lt;olabini&gt; slava: fantastic - yeah, I saw your tweets about that</span><br />
+<span class="irc-date">[11:10]</span> <span class="irc-black">&lt;olabini&gt; is it a large difference?</span><br />
+<span class="irc-date">[11:11]</span> <span class="irc-black">&lt;slava&gt; 10-20% on some benchmarks</span><br />
+<span class="irc-date">[11:11]</span> <span class="irc-black">&lt;olabini&gt; ah, that's great</span><br />
+<span class="irc-date">[11:11]</span> <span class="irc-black">&lt;slava&gt; biggest difference is when compiling, it seems about 25% faster</span><br />
+<span class="irc-date">[11:11]</span> <span class="irc-black">&lt;olabini&gt; aha</span><br />
+<span class="irc-date">[11:11]</span> <span class="irc-black">&lt;olabini&gt; that's a big difference</span><br />
+<span class="irc-date">[11:11]</span> <span class="irc-black">&lt;olabini&gt; but factor is generally pretty fast, right?</span><br />
+<span class="irc-date">[11:12]</span> <span class="irc-black">&lt;slava&gt; a lot of method calls are eliminatd statically</span><br />
+<span class="irc-date">[11:13]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[11:15]</span> <span class="irc-black">&lt;martido&gt; what exactly are polymorphic inline caches if I may ask?</span><br />
+<span class="irc-date">[11:17]</span> <span class="irc-black">&lt;slava&gt; <a href="http://en.wikipedia.org/wiki/Inline_caching">http://en.wikipedia.org/wiki/Inline_caching</a></span><br />
+<span class="irc-date">[11:17]</span> <span class="irc-black">&lt;martido&gt; thanks, slava</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;slava&gt; olabini: if a call site keeps on missing the PIC is removed and it becomes a megamorphic call site</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;slava&gt; so it doesn't thrash the icache</span><br />
+<span class="irc-date">[11:22]</span> <span class="irc-black">&lt;slava&gt; and megamorphic calls have their own cache; if the cache hits (a typical hit ratio is 99.9%) then a megamorphic method dispatch is 19 instructions</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;olabini&gt; ah, nice</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;olabini&gt; that's not bad at all</span><br />
+<span class="irc-date">[12:28]</span> <span class="irc-green">* exlibris (n=exlibris@port-87-193-165-87.static.qsc.de) has joined #ioke</span><br />
+<span class="irc-date">[12:33]</span> <span class="irc-black">&lt;martido&gt; exit</span><br />
+<span class="irc-date">[12:33]</span> <span class="irc-black">&lt;martido&gt; oh well ... how many times ;)</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit ()</span><br />
+<span class="irc-date">[13:50]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[13:54]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Client Quit)</span><br />
+<span class="irc-date">[15:08]</span> <span class="irc-navy">* andreaja (n=sodoff@65.111.170.77) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-green">* andreaja (n=sodoff@65.111.170.77) has joined #ioke</span><br />
+<span class="irc-date">[16:41]</span> <span class="irc-navy">* exlibris (n=exlibris@port-87-193-165-87.static.qsc.de) Quit ("Leaving...")</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />

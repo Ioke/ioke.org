@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Kind: DefaultBehavior</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href=".././dokgen-style.css" type="text/css" media="screen" />
+    <script language="JavaScript" type="text/javascript">
+    // <![CDATA[
+
+        function toggleSource( id )
+        {
+          var elem
+          var link
+
+          if( document.getElementById )
+          {
+            elem = document.getElementById( id )
+            link = document.getElementById( "l_" + id )
+          }
+          else if ( document.all )
+          {
+            elem = eval( "document.all." + id )
+            link = eval( "document.all.l_" + id )
+          }
+          else
+            return false;
+
+          if( elem.style.display == "block" )
+          {
+            elem.style.display = "none"
+            link.innerHTML = "show source"
+          }
+          else
+          {
+            elem.style.display = "block"
+            link.innerHTML = "hide source"
+          }
+        }
+
+        function openCode( url )
+        {
+          window.open( url, "SOURCE_CODE", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=480,width=750" ).focus();
+        }
+      // ]]>
+    </script>
+  </head>
+
+  <body>
+    <table border='0' cellpadding='0' cellspacing='0' width="100%" class='banner'>
+      <tr>
+        <td>
+          <table width="100%" border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+              <td class="file-title" colspan="2">
+                <span class="file-title-prefix">Kind</span>
+                <br />
+                FileSystem
+              </td>
+              <td align="right">
+                <table cellspacing="0" cellpadding="2">
+                  <tr>
+                    <td>Main mimic:</td>
+                    <td>
+                      <a href="../kinds/Origin.html">Origin</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <div id="bodyContent">
+      <div id="content">
+        <div class="description">
+          <p>
+Gives access to things related to the file system.
+          </p>
+        </div>
+
+        <div class="sectiontitle">Mimics</div>
+        <ul>
+          <li><a href="../kinds/Origin.html">Origin</a></li>
+        </ul>
+
+        <div class="sectiontitle">Inactive cells</div>
+        <ul>
+          <li><a href="#C001001">kind</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Active cells</div>
+        <ul>
+          <li><a href="#C001004">[](+globTexts)</a></li>
+<li><a href="#C001011">copyFile(fileName, destination)</a></li>
+<li><a href="#C001012">createDirectory!(directoryName, createPath false)</a></li>
+<li><a href="#C001005">directory?(directoryName)</a></li>
+<li><a href="#C001015">ensureDirectory(dir)</a></li>
+<li><a href="#C001008">exists?(entryName)</a></li>
+<li><a href="#C001007">file?(fileName)</a></li>
+<li><a href="#C001009">parentOf(entryName)</a></li>
+<li><a href="#C001006">readFully(fileName)</a></li>
+<li><a href="#C001016">readLines(filename)</a></li>
+<li><a href="#C001013">removeDirectory!(directoryName)</a></li>
+<li><a href="#C001014">removeFile!(fileName)</a></li>
+<li><a href="#C001010">withOpenFile(fileName, code)</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Specs</div>
+        <div class="specs">
+          
+        </div>
+
+        <div class="sectiontitle">Inactive cells (details)</div>
+                <div class="cell">
+          <a name="C001001"></a>
+          <table border="0" cellpadding="5">
+            <tr valign="top">
+              <td class="cell-name">kind</td>
+              <td>=</td>
+              <td class="cell-value">"FileSystem"</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div class="sectiontitle">Active cells (details)</div>
+                <div class="cell">
+          <div class="title">
+          <a name="C001004"></a><b>[]</b>(+globTexts)
+          </div>
+          <div class="description">
+            <p>Tries to interpret the given arguments as strings describing file globs, and returns an array containing the result of applying these globs.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C001011"></a><b>copyFile</b>(fileName, destination)
+          </div>
+          <div class="description">
+            <p>Copies a file. Takes two text arguments, where the first is the name of the file to copy and the second is the name of the destination. If the destination is a directory, the file will be copied with the same name, and if it's a filename, the file will get a new name</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C001012"></a><b>createDirectory!</b>(directoryName, createPath false)
+          </div>
+          <div class="description">
+            <p>Takes one string argument and creates a directory with that name. It also takes an optional second argument. If it's true, will try to create all necessary directories inbetween. Default is false. Will signal a condition if the directory already exists, or if there's a file with that name.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C001005"></a><b>directory?</b>(directoryName)
+          </div>
+          <div class="description">
+            <p>Takes one string argument and returns true if it's the relative or absolute name of a directory, and false otherwise.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C001015"></a><b>ensureDirectory</b>(dir)
+          </div>
+          <div class="description">
+            <p>takes one argument that is the relative or absolute path to something that should be a directory. if it exists but isn't a directory, a condition will be signalled. if it exists, and is a directory, nothing is done, and if it doesn't exist it will be created.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C001015_source')" id="l_C001015_source">show source</a> ]</p>
+            <div id="C001015_source" class="dyn-source">
+<pre>
+method(dir, 
+  if(exists?(dir), 
+    if(file?(dir), 
+      bind(restart(ignore, fn), 
+        error!(Condition Error IO, text: "Can't create directory #{dir}, since it already exists and is a file"))), 
+    createDirectory!(dir, true) 
+    ) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C001008"></a><b>exists?</b>(entryName)
+          </div>
+          <div class="description">
+            <p>Takes one string argument and returns true if it's the relative or absolute name of something that exists.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C001007"></a><b>file?</b>(fileName)
+          </div>
+          <div class="description">
+            <p>Takes one string argument and returns true if it's the relative or absolute name of a file, and false otherwise.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C001009"></a><b>parentOf</b>(entryName)
+          </div>
+          <div class="description">
+            <p>Takes one string argument that should be the path of a file or directory, and returns the parent of it - or nil if there is no parent.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C001006"></a><b>readFully</b>(fileName)
+          </div>
+          <div class="description">
+            <p>Takes one string argument that should be a file name, and returns a text of the contents of this file.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C001016"></a><b>readLines</b>(filename)
+          </div>
+          <div class="description">
+            <p>reads the full content of a file and returns a list containing each line of the file as a separate element of the list.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C001016_source')" id="l_C001016_source">show source</a> ]</p>
+            <div id="C001016_source" class="dyn-source">
+<pre>
+method(filename, 
+  if(System windows?, 
+    readFully(filename) split("\r\n"), 
+    readFully(filename) split("\n")) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C001013"></a><b>removeDirectory!</b>(directoryName)
+          </div>
+          <div class="description">
+            <p>Takes one string argument and removes a directory with that name. Will signal a condition if the directory doesn't exist, or if there's a file with that name.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C001014"></a><b>removeFile!</b>(fileName)
+          </div>
+          <div class="description">
+            <p>Takes one string argument and removes a file with that name. Will signal a condition if the file doesn't exist, or if there's a directory with that name.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C001010"></a><b>withOpenFile</b>(fileName, code)
+          </div>
+          <div class="description">
+            <p>Takes a file name and a lexical block - opens the file, ensures that it exists and then yields the file to the block. Finally it closes the file after the block has finished executing, and then returns the result of the block.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<span class="irc-date">[0:15]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[5:51]</span> <span class="irc-navy">* junebug (n=azoic@adsl-76-220-109-134.dsl.pltn13.sbcglobal.net) Quit ()</span><br />
+<span class="irc-date">[6:35]</span> <span class="irc-green">* martyn4 (n=Martyn@72.40.broadband5.iol.cz) has joined #ioke</span><br />
+<span class="irc-date">[6:56]</span> <span class="irc-green">* bguthrie (n=bguthrie@8.sub-70-195-174.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[7:26]</span> <span class="irc-green">* olabini (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[7:26]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[7:44]</span> <span class="irc-black">&lt;olabini&gt; very quiet today</span><br />
+<span class="irc-date">[7:44]</span> <span class="irc-black">&lt;olabini&gt; if anyone is interested. the basic Java invocation of zero-arity methods seem to work OK</span><br />
+<span class="irc-date">[7:45]</span> <span class="irc-black">&lt;olabini&gt; next thing I will tackle is handling arguments correctly. This means handling overloading, and also create a coercion protocol for types.</span><br />
+<span class="irc-date">[7:45]</span> <span class="irc-black">&lt;olabini&gt; this will be done as a new kind of ArgumentsDefinition</span><br />
+<span class="irc-date">[7:46]</span> <span class="irc-black">&lt;olabini&gt; that will be based on one or more Method objects, and will choose which Method object to use, and unpacks the parameters suitable enough for this Method object</span><br />
+<span class="irc-date">[7:46]</span> <span class="irc-black">&lt;olabini&gt; any thoughts or comments on that, please go ahead and flame me. =)</span><br />
+<span class="irc-date">[8:15]</span> <span class="irc-green">* olabini` (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[8:15]</span> <span class="irc-green">* olabini` (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[8:17]</span> <span class="irc-navy">* olabini (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[8:17]</span> <span class="irc-green">* olabini (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[8:17]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[8:33]</span> <span class="irc-navy">* martyn4 (n=Martyn@72.40.broadband5.iol.cz) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-green">* martyn4 (n=Martyn@72.40.broadband5.iol.cz) has joined #ioke</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[12:33]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[12:56]</span> <span class="irc-navy">* olabini (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-164.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-black">&lt;cv&gt; howdy!</span><br />
+<span class="irc-date">[13:39]</span> <span class="irc-navy">* martyn4 (n=Martyn@72.40.broadband5.iol.cz) Quit ("Leaving")</span><br />
+<span class="irc-date">[13:55]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[13:57]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[15:04]</span> <span class="irc-green">* olabini (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[15:04]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[16:17]</span> <span class="irc-black">&lt;cv&gt; olabini: <a href="http://gist.github.com/53020">http://gist.github.com/53020</a> :)</span><br />
+<span class="irc-date">[16:22]</span> <span class="irc-black">&lt;olabini&gt; nice, Carlos</span><br />
+<span class="irc-date">[16:25]</span> <span class="irc-black">&lt;bguthrie&gt; cv, that's pretty awesome</span><br />
+<span class="irc-date">[16:26]</span> <span class="irc-black">&lt;cv&gt; at the pub last night someone gave me an idea for inline java methods</span><br />
+<span class="irc-date">[16:26]</span> <span class="irc-black">&lt;cv&gt; that might make ironing out performance kinks a lot easier</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-green">* martyn4 (n=Martyn@72.40.broadband5.iol.cz) has joined #ioke</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-black">&lt;bguthrie&gt; hey ola, have a question about the implementation of some enumerable methods</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-black">&lt;bguthrie&gt; e.g. include =   self each(n,</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-black">&lt;bguthrie&gt;     if(toFind == cell(:n),</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-black">&lt;bguthrie&gt;       return(true)))</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-black">&lt;bguthrie&gt;   return(false))</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-black">&lt;bguthrie&gt; why does the predicate refer to cell(:n) rather than n directly?</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-164.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[16:42]</span> <span class="irc-black">&lt;cv&gt; wouldn't that evaluate the cell?</span><br />
+<span class="irc-date">[16:42]</span> <span class="irc-black">&lt;cv&gt; so if there's a fn stored in that cell, it'll get run</span><br />
+<span class="irc-date">[16:44]</span> <span class="irc-black">&lt;bguthrie&gt; hmm</span><br />
+<span class="irc-date">[16:45]</span> <span class="irc-black">&lt;bguthrie&gt; that seems plausible</span><br />
+<span class="irc-date">[17:07]</span> <span class="irc-black">&lt;cv&gt; what do you think about something like this? <a href="http://gist.github.com/55597">http://gist.github.com/55597</a></span><br />
+<span class="irc-date">[17:07]</span> <span class="irc-black">&lt;cv&gt; worth spending the weekend on? :)</span><br />
+<span class="irc-date">[17:11]</span> <span class="irc-black">&lt;bguthrie&gt; interesting</span><br />
+<span class="irc-date">[17:11]</span> <span class="irc-black">&lt;bguthrie&gt; and absolutely</span><br />
+<span class="irc-date">[17:12]</span> <span class="irc-black">&lt;bguthrie&gt; it's so interesting that I'm having trouble believing it would be possible</span><br />
+<span class="irc-date">[17:12]</span> <span class="irc-black">&lt;bguthrie&gt; :D</span><br />
+<span class="irc-date">[17:13]</span> <span class="irc-black">&lt;cv&gt; well, some bytecode manipulation and runtime class generation might do the trick</span><br />
+<span class="irc-date">[17:14]</span> <span class="irc-black">&lt;bguthrie&gt; it certainly would clean up a large portion of the core api</span><br />
+<span class="irc-date">[17:14]</span> <span class="irc-black">&lt;bguthrie&gt; and make optimizing methods to java drop-dead easy</span><br />
+<span class="irc-date">[17:14]</span> <span class="irc-black">&lt;bguthrie&gt; go for it</span><br />
+<span class="irc-date">[17:17]</span> <span class="irc-black">&lt;cv&gt; olabini: thoughts?</span><br />
+<span class="irc-date">[17:18]</span> <span class="irc-black">&lt;bguthrie&gt; do cells have metadata?</span><br />
+<span class="irc-date">[18:07]</span> <span class="irc-black">&lt;cv&gt; some</span><br />
+<span class="irc-date">[18:07]</span> <span class="irc-black">&lt;cv&gt; what are you looking for?</span><br />
+<span class="irc-date">[18:10]</span> <span class="irc-navy">* bguthrie (n=bguthrie@8.sub-70-195-174.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[18:13]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-169.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[20:05]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[20:27]</span> <span class="irc-navy">* martyn4 (n=Martyn@72.40.broadband5.iol.cz) Quit ("Leaving")</span><br />
+<span class="irc-date">[22:18]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-169.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-102.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[22:28]</span> <span class="irc-green">* bguthrie (n=bguthrie@196.sub-75-206-46.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[22:44]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-102.vc-graz.ac.at) has left #ioke</span><br />
+<span class="irc-date">[22:53]</span> <span class="irc-black">&lt;bguthrie&gt; @cv nothing specific, just curious</span><br />
+<span class="irc-date">[22:54]</span> <span class="irc-black">&lt;bguthrie&gt; was thinking about clojure and its mechanism for tying metadata into functions</span><br />

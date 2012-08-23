@@ -1,0 +1,158 @@
+<span class="irc-date">[1:59]</span> <span class="irc-green">* bguthrie (n=bguthrie@123.sub-75-203-137.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[5:37]</span> <span class="irc-navy">* bguthrie (n=bguthrie@123.sub-75-203-137.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[6:13]</span> <span class="irc-brick">* olabini is tired</span><br />
+<span class="irc-date">[6:20]</span> <span class="irc-black">&lt;olabini&gt; naeu: it's not clear to me where I should put that code.</span><br />
+<span class="irc-date">[7:03]</span> <span class="irc-navy">* olabini (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[8:58]</span> <span class="irc-green">* naeu (n=sam@h253136.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[10:42]</span> <span class="irc-green">* Tsion (n=scott@botters/staff/tsion) has joined #ioke</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-black">&lt;andreaja&gt; <a href="http://github.com/blog/321-github-rebase-12">http://github.com/blog/321-github-rebase-12</a></span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-black">&lt;andreaja&gt; cool :)</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;Tsion&gt; Hah, that's how I found out about Ioke :0</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;Tsion&gt; :)*</span><br />
+<span class="irc-date">[11:59]</span> <span class="irc-black">&lt;naeu&gt; andreaja: yeah cool :-)</span><br />
+<span class="irc-date">[11:59]</span> <span class="irc-black">&lt;naeu&gt; Tsion: welcome :-)</span><br />
+<span class="irc-date">[11:59]</span> <span class="irc-black">&lt;Tsion&gt; hi naeu :)</span><br />
+<span class="irc-date">[11:59]</span> <span class="irc-black">&lt;naeu&gt; hi</span><br />
+<span class="irc-date">[12:00]</span> <span class="irc-black">&lt;naeu&gt; i'm currently at work right now, so I might not be as responsive as I'd like ;-)</span><br />
+<span class="irc-date">[14:35]</span> <span class="irc-green">* bguthrie (n=bguthrie@67.97.218.226) has joined #ioke</span><br />
+<span class="irc-date">[14:35]</span> <span class="irc-black">&lt;naeu&gt; bguthrie: hey brian, nice health article ;-)</span><br />
+<span class="irc-date">[14:35]</span> <span class="irc-black">&lt;bguthrie&gt; rofl yeah what is the deal with that?</span><br />
+<span class="irc-date">[14:35]</span> <span class="irc-black">&lt;bguthrie&gt; some sort of blog spider?</span><br />
+<span class="irc-date">[14:35]</span> <span class="irc-black">&lt;bguthrie&gt; also, ioke on github blog: <a href="http://github.com/blog/321-github-rebase-12">http://github.com/blog/321-github-rebase-12</a></span><br />
+<span class="irc-date">[14:36]</span> <span class="irc-black">&lt;bguthrie&gt; gotta run!</span><br />
+<span class="irc-date">[14:36]</span> <span class="irc-navy">* bguthrie (n=bguthrie@67.97.218.226) Quit (Client Quit)</span><br />
+<span class="irc-date">[15:33]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@nat/sun/x-99f4026ce35eec0d) has joined #ioke</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@nat/sun/x-99f4026ce35eec0d) Quit ("Leaving")</span><br />
+<span class="irc-date">[16:41]</span> <span class="irc-green">* bguthrie_ (n=bguthrie@67.97.218.226) has joined #ioke</span><br />
+<span class="irc-date">[16:45]</span> <span class="irc-navy">* bguthrie_ (n=bguthrie@67.97.218.226) Quit (Client Quit)</span><br />
+<span class="irc-date">[17:13]</span> <span class="irc-navy">* naeu (n=sam@h253136.upc-h.chello.nl) Quit ()</span><br />
+<span class="irc-date">[17:14]</span> <span class="irc-green">* bguthrie_ (n=bguthrie@67.97.218.226) has joined #ioke</span><br />
+<span class="irc-date">[17:43]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[17:50]</span> <span class="irc-black">&lt;bguthrie_&gt; anyone around?</span><br />
+<span class="irc-date">[18:13]</span> <span class="irc-navy">* bguthrie_ (n=bguthrie@67.97.218.226) Quit ()</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 54 (Connection reset by peer))</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-green">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-navy">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 54 (Connection reset by peer))</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:42]</span> <span class="irc-black">&lt;naeu&gt; damn Geshi is frustrating</span><br />
+<span class="irc-date">[18:58]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[19:06]</span> <span class="irc-green">* olabini (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[19:06]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[19:08]</span> <span class="irc-green">* kar8nga (n=kar8nga@b-126.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[19:42]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[20:01]</span> <span class="irc-black">&lt;cv&gt; hey everyone :)</span><br />
+<span class="irc-date">[20:07]</span> <span class="irc-black">&lt;olabini&gt; hi there</span><br />
+<span class="irc-date">[20:08]</span> <span class="irc-black">&lt;olabini&gt; I'm not here to stay</span><br />
+<span class="irc-date">[20:09]</span> <span class="irc-black">&lt;HeMan&gt; olabini: hows JFokus?</span><br />
+<span class="irc-date">[20:11]</span> <span class="irc-black">&lt;olabini&gt; it was very good, actually</span><br />
+<span class="irc-date">[20:11]</span> <span class="irc-black">&lt;olabini&gt; much better this year</span><br />
+<span class="irc-date">[20:11]</span> <span class="irc-black">&lt;olabini&gt; but I'm way tired.</span><br />
+<span class="irc-date">[20:18]</span> <span class="irc-black">&lt;cv&gt; i'm converting Text script() to java</span><br />
+<span class="irc-date">[20:18]</span> <span class="irc-black">&lt;cv&gt; changed my generator so it spits out a more efficient series of if statements, should perform decently now :)</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-black">&lt;olabini&gt; cool</span><br />
+<span class="irc-date">[20:20]</span> <span class="irc-black">&lt;olabini&gt; cv: I assume the best implementation would be a very large boolean array</span><br />
+<span class="irc-date">[20:20]</span> <span class="irc-black">&lt;olabini&gt; that you initialize at startup</span><br />
+<span class="irc-date">[20:22]</span> <span class="irc-black">&lt;cv&gt; i tried a very large enum array, so array[(int) codePoint] gives you the script</span><br />
+<span class="irc-date">[20:22]</span> <span class="irc-black">&lt;cv&gt; but javac exploded saying the code was too large :P</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;olabini&gt; k</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;olabini&gt; well, that is different</span><br />
+<span class="irc-date">[20:33]</span> <span class="irc-black">&lt;olabini&gt; that's why I said you should just use an array that you create at load time</span><br />
+<span class="irc-date">[20:33]</span> <span class="irc-black">&lt;olabini&gt; because then the code won't be so large, since you can use simple loops to fill it in</span><br />
+<span class="irc-date">[20:42]</span> <span class="irc-black">&lt;cv&gt; gonna use a string literal for that</span><br />
+<span class="irc-date">[20:42]</span> <span class="irc-black">&lt;cv&gt; the old __DATA__ trick :)</span><br />
+<span class="irc-date">[20:42]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[20:46]</span> <span class="irc-black">&lt;cv&gt; Number asRange = method((self..self)) ; is that useful?</span><br />
+<span class="irc-date">[20:46]</span> <span class="irc-black">&lt;cv&gt; 100 asRange asList == [100]</span><br />
+<span class="irc-date">[20:50]</span> <span class="irc-black">&lt;olabini&gt; hmm. possible. not sure</span><br />
+<span class="irc-date">[20:50]</span> <span class="irc-black">&lt;olabini&gt; it seems a bit counterintuitive</span><br />
+<span class="irc-date">[20:50]</span> <span class="irc-black">&lt;olabini&gt; where would you use it, you think?</span><br />
+<span class="irc-date">[20:51]</span> <span class="irc-black">&lt;cv&gt; i have a few methods that can take either numbers or ranges</span><br />
+<span class="irc-date">[20:52]</span> <span class="irc-black">&lt;cv&gt; converting it all to ranges saves some checking</span><br />
+<span class="irc-date">[20:52]</span> <span class="irc-black">&lt;cv&gt; but now i've said that i guess i could just use === for this</span><br />
+<span class="irc-date">[20:52]</span> <span class="irc-black">&lt;olabini&gt; yep, that's what it is for</span><br />
+<span class="irc-date">[20:53]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit ("Leaving")</span><br />
+<span class="irc-date">[21:09]</span> <span class="irc-black">&lt;olabini&gt; ok. now bed. tomorrow I'm going to start hacking again</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;naeu&gt; night night</span><br />
+<span class="irc-date">[21:39]</span> <span class="irc-green">* cv_ (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[21:42]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[21:42]</span> <span class="irc-green">* kar8nga (n=kar8nga@b-126.vc-graz.ac.at) has left #ioke</span><br />
+<span class="irc-date">[21:54]</span> <span class="irc-black">&lt;melwin&gt; W00t!</span><br />
+<span class="irc-date">[21:56]</span> <span class="irc-black">&lt;naeu&gt; hey melwin</span><br />
+<span class="irc-date">[21:57]</span> <span class="irc-black">&lt;melwin&gt; Just had dinner with an amazing collection of people.</span><br />
+<span class="irc-date">[21:57]</span> <span class="irc-black">&lt;melwin&gt; JFokus kicked ass!</span><br />
+<span class="irc-date">[21:58]</span> <span class="irc-black">&lt;naeu&gt; nice</span><br />
+<span class="irc-date">[21:58]</span> <span class="irc-black">&lt;naeu&gt; did you meet jim webber?</span><br />
+<span class="irc-date">[21:58]</span> <span class="irc-black">&lt;melwin&gt; Yes!</span><br />
+<span class="irc-date">[21:58]</span> <span class="irc-black">&lt;naeu&gt; great</span><br />
+<span class="irc-date">[21:58]</span> <span class="irc-black">&lt;naeu&gt; you must call him jim weeber</span><br />
+<span class="irc-date">[21:58]</span> <span class="irc-black">&lt;naeu&gt; that's of high importance</span><br />
+<span class="irc-date">[21:59]</span> <span class="irc-black">&lt;naeu&gt; he's a good guy though</span><br />
+<span class="irc-date">[21:59]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[21:59]</span> <span class="irc-black">&lt;melwin&gt; Hehe... Weeber?</span><br />
+<span class="irc-date">[21:59]</span> <span class="irc-black">&lt;naeu&gt; yeah</span><br />
+<span class="irc-date">[21:59]</span> <span class="irc-black">&lt;naeu&gt; Floyd introduced him as such at QCon one year</span><br />
+<span class="irc-date">[22:00]</span> <span class="irc-black">&lt;naeu&gt; and I'm trying to establish it</span><br />
+<span class="irc-date">[22:00]</span> <span class="irc-black">&lt;naeu&gt; ;-)</span><br />
+<span class="irc-date">[22:00]</span> <span class="irc-black">&lt;melwin&gt; Hehehe...</span><br />
+<span class="irc-date">[22:03]</span> <span class="irc-black">&lt;naeu&gt; this syntax highlighter malarky is painstaking work</span><br />
+<span class="irc-date">[22:10]</span> <span class="irc-black">&lt;naeu&gt; suuuuper fiddly</span><br />
+<span class="irc-date">[22:14]</span> <span class="irc-black">&lt;melwin&gt; Well, the dinner was great - Jonas Bon??r (Terracotta, Scala), Rickard ??berg (original JBoss developer), Cameron Purdy (Coherence boss), Corneliu Vasile (Adobe), Kirk Pepperdine (performance guru), Georges Saab (JRockit boss).</span><br />
+<span class="irc-date">[22:14]</span> <span class="irc-black">&lt;melwin&gt; Pretty strong crowd!</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;melwin&gt; + a guy Odd from Travease who's also into fun stuff in Java.</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;melwin&gt; Really interesting discussions.</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;melwin&gt; Great to meet with some people.</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;naeu&gt; nice</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;melwin&gt; Also met Ola! :)</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;naeu&gt; ooh, hadn't you met him before?</span><br />
+<span class="irc-date">[22:16]</span> <span class="irc-black">&lt;melwin&gt; Nope!</span><br />
+<span class="irc-date">[22:17]</span> <span class="irc-black">&lt;melwin&gt; So that was fun as well.</span><br />
+<span class="irc-date">[22:19]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[22:19]</span> <span class="irc-black">&lt;naeu&gt; AAAARRRRGGGGHHHHHHHHH</span><br />
+<span class="irc-date">[22:19]</span> <span class="irc-black">&lt;naeu&gt; it's like a REALLY annoying puzzle</span><br />
+<span class="irc-date">[22:19]</span> <span class="irc-black">&lt;naeu&gt; 1234444444444444444444444444444444444444235234534534</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt; highlighter - check</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt; 0xFFFFF</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt; highlighter - check</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt; 1E6</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt; highlighter - check</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt; 23.4445e10</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt; highlighter - check</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt; 1E-32</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt; highlighter - FAIL</span><br />
+<span class="irc-date">[22:21]</span> <span class="irc-black">&lt;melwin&gt; Is it because - is a symbol?</span><br />
+<span class="irc-date">[22:22]</span> <span class="irc-black">&lt;naeu&gt; hmm</span><br />
+<span class="irc-date">[22:22]</span> <span class="irc-black">&lt;naeu&gt; it shouldn't be</span><br />
+<span class="irc-date">[22:23]</span> <span class="irc-black">&lt;naeu&gt; but that's a good idea</span><br />
+<span class="irc-date">[22:23]</span> <span class="irc-black">&lt;naeu&gt; another thing about this damned Geshi is that all the matchers bleed into eachother</span><br />
+<span class="irc-date">[22:23]</span> <span class="irc-black">&lt;naeu&gt; affecting each other</span><br />
+<span class="irc-date">[22:23]</span> <span class="irc-black">&lt;naeu&gt; so you have to be super damn careful</span><br />
+<span class="irc-date">[22:23]</span> <span class="irc-black">&lt;naeu&gt; i'll get there though</span><br />
+<span class="irc-date">[22:23]</span> <span class="irc-black">&lt;naeu&gt; i'll not support interpolation</span><br />
+<span class="irc-date">[22:24]</span> <span class="irc-black">&lt;naeu&gt; at least for the first 'release'</span><br />
+<span class="irc-date">[22:26]</span> <span class="irc-black">&lt;melwin&gt; You're a diligent man.</span><br />
+<span class="irc-date">[22:28]</span> <span class="irc-black">&lt;naeu&gt; nuts i say</span><br />
+<span class="irc-date">[22:28]</span> <span class="irc-black">&lt;melwin&gt; Same same.</span><br />
+<span class="irc-date">[22:29]</span> <span class="irc-black">&lt;melwin&gt; ;P</span><br />
+<span class="irc-date">[22:29]</span> <span class="irc-black">&lt;naeu&gt; ha, fixed it</span><br />
+<span class="irc-date">[22:29]</span> <span class="irc-black">&lt;naeu&gt; it seems like the way to win with Geshi is to use crap loads of regexps</span><br />
+<span class="irc-date">[22:29]</span> <span class="irc-black">&lt;naeu&gt; divide and conquer</span><br />
+<span class="irc-date">[22:29]</span> <span class="irc-black">&lt;melwin&gt; :P</span><br />
+<span class="irc-date">[22:30]</span> <span class="irc-black">&lt;naeu&gt; it's not going to be as accurate as the TM bundle</span><br />
+<span class="irc-date">[22:30]</span> <span class="irc-black">&lt;naeu&gt; but that's less of an issue</span><br />
+<span class="irc-date">[22:32]</span> <span class="irc-black">&lt;melwin&gt; As long as it looks pretty.</span><br />
+<span class="irc-date">[22:33]</span> <span class="irc-black">&lt;naeu&gt; oh, it's already tonnes better</span><br />
+<span class="irc-date">[22:33]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[22:34]</span> <span class="irc-black">&lt;melwin&gt; :P</span><br />
+<span class="irc-date">[22:34]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://skitch.com/samaaron/bnatu/php-test">http://skitch.com/samaaron/bnatu/php-test</a></span><br />
+<span class="irc-date">[22:35]</span> <span class="irc-black">&lt;melwin&gt; Nice.</span><br />
+<span class="irc-date">[22:35]</span> <span class="irc-black">&lt;naeu&gt; it's satisfying when it works</span><br />
+<span class="irc-date">[22:40]</span> <span class="irc-black">&lt;naeu&gt; freaky?</span><br />
+<span class="irc-date">[22:40]</span> <span class="irc-black">&lt;naeu&gt; :-p</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;naeu&gt; and somethings just don't make any sense at all</span><br />
+<span class="irc-date">[22:43]</span> <span class="irc-black">&lt;melwin&gt; Gotta sleep...!</span><br />
+<span class="irc-date">[22:43]</span> <span class="irc-black">&lt;melwin&gt; Laters.</span><br />
+<span class="irc-date">[22:44]</span> <span class="irc-black">&lt;naeu&gt; yeah, me too</span><br />
+<span class="irc-date">[22:51]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[23:01]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit ("Leaving")</span><br />
+<span class="irc-date">[23:41]</span> <span class="irc-navy">* cv_ (n=cv@5acb0c3c.bb.sky.com) Quit ("bye!")</span><br />

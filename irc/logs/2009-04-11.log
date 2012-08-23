@@ -1,0 +1,27 @@
+<span class="irc-date">[0:07]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit (Connection timed out)</span><br />
+<span class="irc-date">[0:08]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[0:42]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit ()</span><br />
+<span class="irc-date">[0:59]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[1:02]</span> <span class="irc-green">* RobL__ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[1:16]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini master * rb0f9cf9 / (3 files in 3 dirs): No more hg support in the ruby script - <a href="http://bit.ly/7aTHK">http://bit.ly/7aTHK</a></span><br />
+<span class="irc-date">[1:17]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[9:44]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini master * ra1b7c64 / generate_filter_data.rb : Print a friendly message if something goes wrong with git fixing - <a href="http://bit.ly/70P1g">http://bit.ly/70P1g</a></span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-navy">* RobL__ (n=RobL@roblally.plus.com) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[12:30]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[13:28]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[13:56]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[14:29]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[18:31]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[19:31]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[19:49]</span> <span class="irc-green">* bguthrie (n=bguthrie@113.sub-70-211-184.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[19:53]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[20:03]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[21:18]</span> <span class="irc-black">&lt;slava&gt; olabini: so the 'push up' refactoring where you move a method up to a superclass is one refactoring that you'd be able to perform interactively with a factor-like module system :-)</span><br />
+<span class="irc-date">[21:19]</span> <span class="irc-black">&lt;slava&gt; olabini: I remember before I had automatic undefinitions I'd forget to undefine stuff manually and get confused</span><br />
+<span class="irc-date">[21:32]</span> <span class="irc-green">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) has joined #ioke</span><br />
+<span class="irc-date">[22:26]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[22:44]</span> <span class="irc-navy">* bguthrie (n=bguthrie@113.sub-70-211-184.myvzw.com) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[22:45]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[22:46]</span> <span class="irc-green">* bguthrie (n=bguthrie@113.sub-70-211-184.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[23:34]</span> <span class="irc-navy">* bguthrie (n=bguthrie@113.sub-70-211-184.myvzw.com) Quit ()</span><br />

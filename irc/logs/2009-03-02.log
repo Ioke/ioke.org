@@ -1,0 +1,155 @@
+<span class="irc-date">[0:00]</span> <span class="irc-black">&lt;embro1001&gt; I mean, it seems like it happens somewhere, since you clearly use mixins, but I can't see any place where you are actually doing the mixing in... since that appears to be in the java bit</span><br />
+<span class="irc-date">[0:02]</span> <span class="irc-black">&lt;embro1001&gt; AHA! mimic!</span><br />
+<span class="irc-date">[0:03]</span> <span class="irc-black">&lt;embro1001&gt; B = Origin mimic do(b = method("hello from b" println)) . A = Origin mimic . A mimic!(B) . a  = A mimic . a b ; +&gt; "hello from b"</span><br />
+<span class="irc-date">[0:45]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[2:16]</span> <span class="irc-green">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) has joined #ioke</span><br />
+<span class="irc-date">[2:32]</span> <span class="irc-black">&lt;embro1001&gt; So... I realize that ioke is still more or less a learning exercise at this point... but is there any chance that we'll see network io stuff anytime in the next, say, 6 months?</span><br />
+<span class="irc-date">[3:15]</span> <span class="irc-navy">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) Quit ()</span><br />
+<span class="irc-date">[3:32]</span> <span class="irc-green">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) has joined #ioke</span><br />
+<span class="irc-date">[3:57]</span> <span class="irc-navy">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) Quit ()</span><br />
+<span class="irc-date">[4:13]</span> <span class="irc-green">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) has joined #ioke</span><br />
+<span class="irc-date">[4:17]</span> <span class="irc-green">* Tsion (n=scott@botters/staff/tsion) has left #ioke</span><br />
+<span class="irc-date">[5:18]</span> <span class="irc-navy">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) Quit ()</span><br />
+<span class="irc-date">[6:01]</span> <span class="irc-black">&lt;olabini&gt; naeu: well, when you get up you will see this.</span><br />
+<span class="irc-date">[6:01]</span> <span class="irc-black">&lt;olabini&gt; you have forgotten to have "use("ispec")" at the top of your file, I think</span><br />
+<span class="irc-date">[6:01]</span> <span class="irc-black">&lt;olabini&gt; and since you're running using ioke, and not ispec</span><br />
+<span class="irc-date">[6:32]</span> <span class="irc-green">* petrik (n=petrik@a82-95-189-230.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[7:11]</span> <span class="irc-navy">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[7:24]</span> <span class="irc-green">* ynyr (n=ynyr@cpc1-nott10-0-0-cust595.nott.cable.ntl.com) has joined #ioke</span><br />
+<span class="irc-date">[7:25]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[7:27]</span> <span class="irc-navy">* ynyr (n=ynyr@cpc1-nott10-0-0-cust595.nott.cable.ntl.com) Quit (Client Quit)</span><br />
+<span class="irc-date">[7:43]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[7:52]</span> <span class="irc-green">* olabini (n=ola@c-398de155.234-1-64736c10.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[7:52]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[7:53]</span> <span class="irc-navy">* petrik (n=petrik@a82-95-189-230.adsl.xs4all.nl) Quit ()</span><br />
+<span class="irc-date">[7:54]</span> <span class="irc-black">&lt;olabini&gt; morning</span><br />
+<span class="irc-date">[8:22]</span> <span class="irc-green">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) has joined #ioke</span><br />
+<span class="irc-date">[8:49]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-251-057-220.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:50]</span> <span class="irc-black">&lt;naeu&gt; olabini: the first line of test/lib/text_scanner_spec.ik is use("ispec")</span><br />
+<span class="irc-date">[8:52]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[8:52]</span> <span class="irc-black">&lt;olabini&gt; strange</span><br />
+<span class="irc-date">[8:52]</span> <span class="irc-black">&lt;naeu&gt; this is it in its entirety right now:</span><br />
+<span class="irc-date">[8:52]</span> <span class="irc-black">&lt;naeu&gt; use("ispec")</span><br />
+<span class="irc-date">[8:52]</span> <span class="irc-black">&lt;naeu&gt; use("text_scanner")</span><br />
+<span class="irc-date">[8:52]</span> <span class="irc-black">&lt;naeu&gt; describe(TextScanner,</span><br />
+<span class="irc-date">[8:52]</span> <span class="irc-black">&lt;naeu&gt;   it("should have the correct kind",</span><br />
+<span class="irc-date">[8:52]</span> <span class="irc-black">&lt;naeu&gt;     TextScanner should have kind("TextScanner")</span><br />
+<span class="irc-date">[8:52]</span> <span class="irc-black">&lt;naeu&gt;   )</span><br />
+<span class="irc-date">[8:53]</span> <span class="irc-black">&lt;naeu&gt; )</span><br />
+<span class="irc-date">[8:53]</span> <span class="irc-black">&lt;naeu&gt; and test/lib/text_scanner.ik is:</span><br />
+<span class="irc-date">[8:53]</span> <span class="irc-black">&lt;naeu&gt; TextScanner = Origin mimic</span><br />
+<span class="irc-date">[8:53]</span> <span class="irc-black">&lt;olabini&gt; uhm</span><br />
+<span class="irc-date">[8:53]</span> <span class="irc-black">&lt;olabini&gt; weird</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-black">&lt;naeu&gt; and from the root directory I was trying to run the specs with:</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-black">&lt;olabini&gt; maybe you should change the name of test/lib/text_scanner.ik to text_scanner_spec.ik</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-black">&lt;naeu&gt; bin/ioke test/lib/text_scanner_spec.ik</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-black">&lt;olabini&gt; well, try using ispec to run it instead</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-black">&lt;naeu&gt; oops, my mistake</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-black">&lt;olabini&gt; I haven't seen that error before</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-black">&lt;naeu&gt; the implementation file is:</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-black">&lt;naeu&gt; lib/ioke/text_scanner.ik</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-black">&lt;naeu&gt; and the spec is in</span><br />
+<span class="irc-date">[8:55]</span> <span class="irc-black">&lt;naeu&gt; test/lib/text_scanner_spec.ik</span><br />
+<span class="irc-date">[8:55]</span> <span class="irc-black">&lt;olabini&gt; ok</span><br />
+<span class="irc-date">[9:05]</span> <span class="irc-black">&lt;olabini&gt; weird</span><br />
+<span class="irc-date">[9:05]</span> <span class="irc-black">&lt;olabini&gt; can't explain that</span><br />
+<span class="irc-date">[9:14]</span> <span class="irc-navy">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) Quit ()</span><br />
+<span class="irc-date">[9:18]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[9:18]</span> <span class="irc-black">&lt;martido&gt; hey all</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-220.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:24]</span> <span class="irc-black">&lt;olabini&gt; hi there</span><br />
+<span class="irc-date">[9:26]</span> <span class="irc-black">&lt;Narnach&gt; Good morning</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-green">* ynyr (n=ynyr@khiro1.gotadsl.co.uk) has joined #ioke</span><br />
+<span class="irc-date">[9:56]</span> <span class="irc-black">&lt;naeu&gt; olabini: so where would you put the impl/specs, and how would you run them?</span><br />
+<span class="irc-date">[9:56]</span> <span class="irc-black">&lt;olabini&gt; not sure.</span><br />
+<span class="irc-date">[9:56]</span> <span class="irc-black">&lt;olabini&gt; I guess test/lib is probably as good a place as any</span><br />
+<span class="irc-date">[9:56]</span> <span class="irc-black">&lt;olabini&gt; but I don't understand why it doesn't work</span><br />
+<span class="irc-date">[9:56]</span> <span class="irc-black">&lt;olabini&gt; for you</span><br />
+<span class="irc-date">[9:56]</span> <span class="irc-black">&lt;naeu&gt; i'm wondering whether it's a lib resolution issue</span><br />
+<span class="irc-date">[9:57]</span> <span class="irc-black">&lt;naeu&gt; how does ioke know where to look for the test/impl?</span><br />
+<span class="irc-date">[9:57]</span> <span class="irc-black">&lt;olabini&gt; what?</span><br />
+<span class="irc-date">[9:57]</span> <span class="irc-black">&lt;naeu&gt; is it relative to the ioke binary or the place from where it is called?</span><br />
+<span class="irc-date">[9:57]</span> <span class="irc-black">&lt;olabini&gt; it should be relative to the cwd</span><br />
+<span class="irc-date">[9:57]</span> <span class="irc-black">&lt;naeu&gt; hmmm</span><br />
+<span class="irc-date">[9:57]</span> <span class="irc-black">&lt;olabini&gt; but the lib/ioke place is used basde on the calculated IOKE_HOME</span><br />
+<span class="irc-date">[9:57]</span> <span class="irc-black">&lt;olabini&gt; so it should always work</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;naeu&gt; yeah, that's what i assumed was the case</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;olabini&gt; can you put a gist together of your two files? the spec and the impl</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;naeu&gt; sure...</span><br />
+<span class="irc-date">[10:04]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://gist.github.com/72696">http://gist.github.com/72696</a></span><br />
+<span class="irc-date">[10:04]</span> <span class="irc-black">&lt;olabini&gt; so you still get that weird error?</span><br />
+<span class="irc-date">[10:05]</span> <span class="irc-black">&lt;naeu&gt; if you refresh the gist, i've just attached the error</span><br />
+<span class="irc-date">[10:07]</span> <span class="irc-black">&lt;olabini&gt; I get it too</span><br />
+<span class="irc-date">[10:07]</span> <span class="irc-black">&lt;olabini&gt; it's just when you use ioke to run it</span><br />
+<span class="irc-date">[10:07]</span> <span class="irc-black">&lt;olabini&gt; run with ispec instead, and it works</span><br />
+<span class="irc-date">[10:07]</span> <span class="irc-black">&lt;olabini&gt; I'll try to figure out what is happening</span><br />
+<span class="irc-date">[10:07]</span> <span class="irc-black">&lt;olabini&gt; but you can run the test with ispec</span><br />
+<span class="irc-date">[10:07]</span> <span class="irc-black">&lt;olabini&gt; ie:</span><br />
+<span class="irc-date">[10:07]</span> <span class="irc-black">&lt;olabini&gt;   [workspace/ioke] (master) (1150) ?? ispec test/lib/text_scanner_spec.ik                                                                                                                                                                                                      20090302 11:07</span><br />
+<span class="irc-date">[10:07]</span> <span class="irc-black">&lt;olabini&gt; .</span><br />
+<span class="irc-date">[10:07]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[10:07]</span> <span class="irc-black">&lt;olabini&gt; Finished in 0.10 seconds</span><br />
+<span class="irc-date">[10:08]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[10:08]</span> <span class="irc-black">&lt;olabini&gt; 1 example, 0 failures</span><br />
+<span class="irc-date">[10:08]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[10:08]</span> <span class="irc-black">&lt;olabini&gt; I can provoke the error by doing</span><br />
+<span class="irc-date">[10:08]</span> <span class="irc-black">&lt;naeu&gt; ah, brilliant, thanks :-)</span><br />
+<span class="irc-date">[10:08]</span> <span class="irc-black">&lt;olabini&gt; ioke test/list_spec.ik</span><br />
+<span class="irc-date">[10:08]</span> <span class="irc-black">&lt;olabini&gt; if I want</span><br />
+<span class="irc-date">[10:08]</span> <span class="irc-black">&lt;olabini&gt; so it's nothing to do with your stuff. =)</span><br />
+<span class="irc-date">[10:08]</span> <span class="irc-black">&lt;naeu&gt; well, i can finally get started now ;-)</span><br />
+<span class="irc-date">[10:08]</span> <span class="irc-black">&lt;naeu&gt; but it will have to wait till after work...</span><br />
+<span class="irc-date">[10:09]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[10:09]</span> <span class="irc-black">&lt;naeu&gt; I'm going to the Uterecht.rb meeting tonight</span><br />
+<span class="irc-date">[10:09]</span> <span class="irc-black">&lt;naeu&gt; so I can hack there</span><br />
+<span class="irc-date">[10:09]</span> <span class="irc-black">&lt;Narnach&gt; cool :)</span><br />
+<span class="irc-date">[10:09]</span> <span class="irc-black">&lt;olabini&gt; ah, nich</span><br />
+<span class="irc-date">[10:09]</span> <span class="irc-black">&lt;olabini&gt; nice</span><br />
+<span class="irc-date">[10:09]</span> <span class="irc-black">&lt;Narnach&gt; haven't seen you there in a while :)</span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-black">&lt;naeu&gt; Narnach: i'll be there this time</span><br />
+<span class="irc-date">[10:11]</span> <span class="irc-black">&lt;naeu&gt; it'll be warmer than my house ;-)</span><br />
+<span class="irc-date">[10:11]</span> <span class="irc-black">&lt;Narnach&gt; ah... still boiler problems? :(</span><br />
+<span class="irc-date">[10:12]</span> <span class="irc-black">&lt;naeu&gt; sadly yes</span><br />
+<span class="irc-date">[10:12]</span> <span class="irc-black">&lt;naeu&gt; and it doesn't look like it will be resolved any time soon</span><br />
+<span class="irc-date">[10:12]</span> <span class="irc-black">&lt;naeu&gt; grrrr</span><br />
+<span class="irc-date">[13:42]</span> <span class="irc-green">* olabini (n=ola@c-398de155.234-1-64736c10.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[14:09]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has left #ioke</span><br />
+<span class="irc-date">[15:10]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[15:10]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[15:14]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[16:47]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-220.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[16:53]</span> <span class="irc-navy">* ynyr (n=ynyr@khiro1.gotadsl.co.uk) Quit ()</span><br />
+<span class="irc-date">[17:48]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-251-057-220.chello.nl) Quit ()</span><br />
+<span class="irc-date">[17:56]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit ("Leaving")</span><br />
+<span class="irc-date">[19:03]</span> <span class="irc-green">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) has joined #ioke</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-green">* ynyr (n=ynyr@host217-42-8-53.range217-42.btcentralplus.com) has joined #ioke</span><br />
+<span class="irc-date">[19:31]</span> <span class="irc-navy">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) Quit ()</span><br />
+<span class="irc-date">[19:44]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-173.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[20:12]</span> <span class="irc-navy">* ynyr (n=ynyr@host217-42-8-53.range217-42.btcentralplus.com) Quit ()</span><br />
+<span class="irc-date">[20:23]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[20:47]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-173.vc-graz.ac.at) Quit (Read error: 145 (Connection timed out))</span><br />
+<span class="irc-date">[21:04]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[21:34]</span> <span class="irc-green">* naeu (n=sam@ip201-145-212-87.adsl2.static.versatel.nl) has joined #ioke</span><br />
+<span class="irc-date">[21:46]</span> <span class="irc-navy">* naeu (n=sam@ip201-145-212-87.adsl2.static.versatel.nl) Quit ()</span><br />
+<span class="irc-date">[22:09]</span> <span class="irc-navy">* andreaja (n=sodoff@65.111.170.77) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[22:16]</span> <span class="irc-green">* andreaja (n=sodoff@65.111.170.77) has joined #ioke</span><br />
+<span class="irc-date">[23:05]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[23:05]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[23:05]</span> <span class="irc-navy">* thijso (n=thijs@83.98.233.115) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[23:05]</span> <span class="irc-navy">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[23:05]</span> <span class="irc-navy">* IokeHurricane (n=IokeHurr@8.12.35.212) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[23:05]</span> <span class="irc-navy">* CIA-7 (n=CIA@208.69.182.149) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[23:05]</span> <span class="irc-navy">* skaar (n=skaar@substruction.net) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[23:06]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[23:06]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[23:06]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[23:06]</span> <span class="irc-green">* thijso (n=thijs@83.98.233.115) has joined #ioke</span><br />
+<span class="irc-date">[23:06]</span> <span class="irc-green">* skaar (n=skaar@substruction.net) has joined #ioke</span><br />
+<span class="irc-date">[23:06]</span> <span class="irc-green">* CIA-7 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[23:06]</span> <span class="irc-green">* IokeHurricane (n=IokeHurr@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[23:12]</span> <span class="irc-brown">-tomaw- [Global Notice] Hi all.  A couple of our hubs lost connectivity for a minute or so there resulting in a rather large and noising split.  We have worked around the issue for now and are hopeful things will now settle down.  Sorry for the inconvenience and thank you for using freenode!</span><br />
+<span class="irc-date">[23:13]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[23:41]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />

@@ -1,0 +1,31 @@
+<span class="irc-date">[6:16]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-75.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[6:55]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-75.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[7:37]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-brown">-christel- [Global Notice] Good morning all, in two days, we'll be dropping expired nicks and channels. This is a semi-automated process to clear out the deadwood in the services db. Please remember to identify to NickServ and see <a href="http://bit.ly/Q6iKn">http://bit.ly/Q6iKn</a> for more further information. Have a good day and thank you for using freenode.</span><br />
+<span class="irc-date">[11:30]</span> <span class="irc-brown">-christel- [Global Notice] Good Afternoon all, this coming Thursday (June 11th) we'll be pruning the Services databases, clearing out stale nicks and channels. To prevent your grouped nicks being dropped and to avoid disappointment, please make sure to IDENTIFY. More information can be found at <a href="http://bit.ly/10nqla">http://bit.ly/10nqla</a> Thank you for using freenode and have a good day.</span><br />
+<span class="irc-date">[12:54]</span> <span class="irc-green">* naeu (n=sam@a238247.upc-a.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[15:36]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[16:00]</span> <span class="irc-navy">* naeu (n=sam@a238247.upc-a.chello.nl) Quit ()</span><br />
+<span class="irc-date">[16:09]</span> <span class="irc-brown">-christel- [Global Notice] Hi all! This coming Thursday (June 11th) we'll be pruning the Services database, removing expired nicks and channels. Please make sure you IDENTIFY to NickServ to ensure you don't get disappointed. A few more of these notices will be forthcoming in the next 24-36 hours and we ask you visit <a href="http://bit.ly/10nqla">http://bit.ly/10nqla</a> for more information. Thank you for using freenode and have a good evening!</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-167.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:23]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-167.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-green">* cirquitz (n=cirquitz@59.164.40.62) has joined #ioke</span><br />
+<span class="irc-date">[19:56]</span> <span class="irc-navy">* cirquitz (n=cirquitz@59.164.40.62) Quit ("Leaving")</span><br />
+<span class="irc-date">[20:46]</span> <span class="irc-brown">-Martinp23- [Global Notice] Hi all! This coming Thursday (June 11th) we'll be pruning the Services database, removing expired nicks and channels. Please make sure you IDENTIFY to NickServ to avoid disappointment. A few more of these notices will be sent in the next 24-36 hours - but please do visit <a href="http://bit.ly/10nqla">http://bit.ly/10nqla</a> for more information. #freenode is here to help! Thank you for using freenode and have a good evening!</span><br />
+<span class="irc-date">[20:51]</span> <span class="irc-green">* olabini (n=ola@75.40.150.130) has joined #ioke</span><br />
+<span class="irc-date">[20:51]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[21:21]</span> <span class="irc-green">* donizetti (n=donizett@187.37.206.68) has joined #ioke</span><br />
+<span class="irc-date">[21:22]</span> <span class="irc-black">&lt;donizetti&gt; hello</span><br />
+<span class="irc-date">[21:23]</span> <span class="irc-black">&lt;donizetti&gt; which is the best way of reading xml with ioke nowatodays?</span><br />
+<span class="irc-date">[21:29]</span> <span class="irc-black">&lt;donizetti&gt; i'm almost convinced that I can't use xstrem, am I right?</span><br />
+<span class="irc-date">[21:29]</span> <span class="irc-black">&lt;donizetti&gt; maybe jaxb?</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-black">&lt;olabini&gt; haven't tried any</span><br />
+<span class="irc-date">[21:42]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini master * r4515acd / (4 files in 4 dirs): Fix problems with dokgen - including fixing and testing equality for Infinity - <a href="http://bit.ly/13TXpX">http://bit.ly/13TXpX</a></span><br />
+<span class="irc-date">[21:48]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[22:05]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-green">* donizetti_ (n=donizett@187.37.206.68) has joined #ioke</span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-navy">* donizetti_ (n=donizett@187.37.206.68) Quit (Client Quit)</span><br />
+<span class="irc-date">[22:29]</span> <span class="irc-navy">* donizetti (n=donizett@187.37.206.68) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[22:46]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[23:01]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[23:08]</span> <span class="irc-green">* olabini (n=ola@75.40.150.130) has left #ioke</span><br />

@@ -1,0 +1,124 @@
+<span class="irc-date">[0:50]</span> <span class="irc-green">* olabini (n=ola@122.166.9.230) has joined #ioke</span><br />
+<span class="irc-date">[0:50]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[4:02]</span> <span class="irc-green">* olabini (n=ola@122.166.9.230) has left #ioke</span><br />
+<span class="irc-date">[4:17]</span> <span class="irc-green">* olabini (n=ola@124.247.216.162) has joined #ioke</span><br />
+<span class="irc-date">[4:17]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[5:21]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[5:36]</span> <span class="irc-navy">* olabini (n=ola@124.247.216.162) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[5:44]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit ("Leaving")</span><br />
+<span class="irc-date">[5:45]</span> <span class="irc-green">* olabini (n=ola@124.247.216.162) has joined #ioke</span><br />
+<span class="irc-date">[5:45]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[5:57]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[6:54]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:05]</span> <span class="irc-green">* exlibris (n=exlibris@port-87-234-254-194.static.qsc.de) has joined #ioke</span><br />
+<span class="irc-date">[8:37]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[8:49]</span> <span class="irc-green">* naeu (n=sam@h36036.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[12:16]</span> <span class="irc-black">&lt;olabini&gt; oh boy, I am _so_ close now</span><br />
+<span class="irc-date">[12:32]</span> <span class="irc-black">&lt;martido&gt; @olabini: close to what? ;)</span><br />
+<span class="irc-date">[12:35]</span> <span class="irc-black">&lt;olabini&gt; haha</span><br />
+<span class="irc-date">[12:35]</span> <span class="irc-black">&lt;olabini&gt; releasing something</span><br />
+<span class="irc-date">[12:35]</span> <span class="irc-black">&lt;martido&gt; and you can't tell anything, right? ;)</span><br />
+<span class="irc-date">[12:36]</span> <span class="irc-black">&lt;naeu&gt; martido: he's got constipation</span><br />
+<span class="irc-date">[12:36]</span> <span class="irc-black">&lt;naeu&gt; hasn't been to the toilet in days....</span><br />
+<span class="irc-date">[12:37]</span> <span class="irc-black">&lt;martido&gt; lol ;)</span><br />
+<span class="irc-date">[12:37]</span> <span class="irc-black">&lt;naeu&gt; luckily he's in India now so it won't be long before he drinks some sugar-cane juice from a side-street stall and, well, he'll be releasing something...</span><br />
+<span class="irc-date">[12:38]</span> <span class="irc-black">&lt;olabini&gt; hahaha</span><br />
+<span class="irc-date">[12:38]</span> <span class="irc-black">&lt;olabini&gt; right on the spot, Sam</span><br />
+<span class="irc-date">[12:38]</span> <span class="irc-black">&lt;olabini&gt; =P</span><br />
+<span class="irc-date">[12:38]</span> <span class="irc-black">&lt;martido&gt; ha now I got it ... took me some time ... doh!</span><br />
+<span class="irc-date">[12:38]</span> <span class="irc-black">&lt;martido&gt; ;)</span><br />
+<span class="irc-date">[12:55]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;naeu&gt; hey ola, what are your opinions about using symbols to categorise cell behaviour over explicit cell names</span><br />
+<span class="irc-date">[13:09]</span> <span class="irc-black">&lt;naeu&gt; we were discussing camel case options here yesterday</span><br />
+<span class="irc-date">[13:09]</span> <span class="irc-black">&lt;naeu&gt; for example:</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-black">&lt;naeu&gt; "hi there" camelCase ;=&gt; "HiThere"</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-black">&lt;naeu&gt; "hi there" camelCase(:lower) ;=&gt; "hiThere"</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-black">&lt;naeu&gt; "hi there" camelCase(:upper) ;=&gt; "HiThere" (the default option)</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-black">&lt;naeu&gt; or</span><br />
+<span class="irc-date">[13:11]</span> <span class="irc-black">&lt;naeu&gt; "hi there" lowerCamelCase ;=&gt; "hiThere"</span><br />
+<span class="irc-date">[13:11]</span> <span class="irc-black">&lt;naeu&gt; "hi there" upperCamelCase ;=&gt; "HiThere"</span><br />
+<span class="irc-date">[13:33]</span> <span class="irc-black">&lt;martido&gt; naeu: if you're intersted in my opinion, I would prefer not using symbols but rather something like "hi there" camelCase firstUpper. I would think of camelCase resulting in a default of "hiThere" and the additional firstUpper (or whatever you want) would convert the first character to upper case. does that make any sense?</span><br />
+<span class="irc-date">[13:33]</span> <span class="irc-black">&lt;naeu&gt; martido: interesting opinion</span><br />
+<span class="irc-date">[13:33]</span> <span class="irc-black">&lt;naeu&gt; my problem is that camel case means different things to different people</span><br />
+<span class="irc-date">[13:34]</span> <span class="irc-black">&lt;martido&gt; really? I dodn</span><br />
+<span class="irc-date">[13:34]</span> <span class="irc-black">&lt;martido&gt; ah</span><br />
+<span class="irc-date">[13:34]</span> <span class="irc-black">&lt;martido&gt; didn't know that</span><br />
+<span class="irc-date">[13:34]</span> <span class="irc-black">&lt;naeu&gt; have a look at the wikipedia article on it: <a href="http://en.wikipedia.org/wiki/CamelCase">http://en.wikipedia.org/wiki/CamelCase</a></span><br />
+<span class="irc-date">[13:35]</span> <span class="irc-black">&lt;martido&gt; such a long article for such a seemingly simple concept ;)</span><br />
+<span class="irc-date">[13:35]</span> <span class="irc-black">&lt;martido&gt; hmm maybe you should define what you mean by camel case and make that clear in the docs</span><br />
+<span class="irc-date">[13:41]</span> <span class="irc-black">&lt;naeu&gt; martido: absolutely - whatever decision is finally chosen will be made clear in the docs and (more importantly) the specs</span><br />
+<span class="irc-date">[13:42]</span> <span class="irc-black">&lt;martido&gt; so then you could just define the meaning of camel case in that case</span><br />
+<span class="irc-date">[13:45]</span> <span class="irc-black">&lt;olabini&gt; well. this is looking quite good</span><br />
+<span class="irc-date">[13:45]</span> <span class="irc-black">&lt;olabini&gt; quite good indeed</span><br />
+<span class="irc-date">[13:45]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-brown">-christel- [Global Notice] Hi all, I'm going to need to take services down for a few minutes -- this is to let you know that the network will be without Chan, Nick, MemoServ et al for the next few minutes. They'll be back up again soon and apologies for the inconvenience.</span><br />
+<span class="irc-date">[14:33]</span> <span class="irc-black">&lt;naeu&gt; hmm indeed :-)</span><br />
+<span class="irc-date">[14:34]</span> <span class="irc-navy">* olabini (n=ola@124.247.216.162) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[14:45]</span> <span class="irc-green">* Narnach_ (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[15:00]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[15:46]</span> <span class="irc-navy">* Narnach_ (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[16:05]</span> <span class="irc-navy">* naeu (n=sam@h36036.upc-h.chello.nl) Quit ()</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[16:48]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit ()</span><br />
+<span class="irc-date">[16:50]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[17:03]</span> <span class="irc-navy">* exlibris (n=exlibris@port-87-234-254-194.static.qsc.de) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[17:33]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[19:58]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[19:58]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[19:58]</span> <span class="irc-black">&lt;melwin&gt; Sun is ours! Moahaha!</span><br />
+<span class="irc-date">[20:02]</span> <span class="irc-black">&lt;naeu&gt; hahaha</span><br />
+<span class="irc-date">[20:02]</span> <span class="irc-black">&lt;naeu&gt; evil bastards</span><br />
+<span class="irc-date">[20:03]</span> <span class="irc-black">&lt;naeu&gt; just because it's so damned dark in Sweden</span><br />
+<span class="irc-date">[20:03]</span> <span class="irc-black">&lt;melwin&gt; Funny.</span><br />
+<span class="irc-date">[20:03]</span> <span class="irc-black">&lt;naeu&gt; doesn't mean you should buy the bloody Sun</span><br />
+<span class="irc-date">[20:03]</span> <span class="irc-black">&lt;melwin&gt; ;P</span><br />
+<span class="irc-date">[20:03]</span> <span class="irc-black">&lt;naeu&gt; that' means oracle owns SWING</span><br />
+<span class="irc-date">[20:03]</span> <span class="irc-black">&lt;naeu&gt; nice buy</span><br />
+<span class="irc-date">[20:03]</span> <span class="irc-black">&lt;melwin&gt; Hahaha, lucky us.</span><br />
+<span class="irc-date">[20:04]</span> <span class="irc-black">&lt;naeu&gt; yep</span><br />
+<span class="irc-date">[20:04]</span> <span class="irc-black">&lt;melwin&gt; But seriously - I really like it.</span><br />
+<span class="irc-date">[20:04]</span> <span class="irc-black">&lt;naeu&gt; yeah, as long as you give MySQL devs the freedom that Sun stole</span><br />
+<span class="irc-date">[20:04]</span> <span class="irc-black">&lt;melwin&gt; Just as I liked the BEA acquisition.</span><br />
+<span class="irc-date">[20:04]</span> <span class="irc-black">&lt;naeu&gt; and that JRuby continues to get funding</span><br />
+<span class="irc-date">[20:04]</span> <span class="irc-black">&lt;melwin&gt; And free Java and Solaris.</span><br />
+<span class="irc-date">[20:04]</span> <span class="irc-black">&lt;melwin&gt; I really _really_ want ZFS in Linux.</span><br />
+<span class="irc-date">[20:04]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[20:04]</span> <span class="irc-black">&lt;naeu&gt; i want it on OS X</span><br />
+<span class="irc-date">[20:05]</span> <span class="irc-black">&lt;melwin&gt; I started porting zfs to Linux as a kernel module. Got partway through the test suite, then lost patience... :]</span><br />
+<span class="irc-date">[20:05]</span> <span class="irc-black">&lt;melwin&gt; No fun when you can't share something like that.</span><br />
+<span class="irc-date">[20:05]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[20:05]</span> <span class="irc-black">&lt;melwin&gt; You have it for OSX, no?</span><br />
+<span class="irc-date">[20:05]</span> <span class="irc-black">&lt;naeu&gt; almost</span><br />
+<span class="irc-date">[20:05]</span> <span class="irc-black">&lt;naeu&gt; readable</span><br />
+<span class="irc-date">[20:05]</span> <span class="irc-black">&lt;naeu&gt; not writable</span><br />
+<span class="irc-date">[20:05]</span> <span class="irc-black">&lt;melwin&gt; Really? I thought OSX server defaulted to Zfs nowadays or something.</span><br />
+<span class="irc-date">[20:05]</span> <span class="irc-black">&lt;naeu&gt; nope</span><br />
+<span class="irc-date">[20:05]</span> <span class="irc-black">&lt;melwin&gt; Talk about it?</span><br />
+<span class="irc-date">[20:06]</span> <span class="irc-black">&lt;naeu&gt; i think it might possibly be an option on OS X server</span><br />
+<span class="irc-date">[20:06]</span> <span class="irc-black">&lt;naeu&gt; and in the future it shoul dbe an option for the client os</span><br />
+<span class="irc-date">[20:06]</span> <span class="irc-black">&lt;melwin&gt; I'll be damned. I thought that was a good reason to get a mac.</span><br />
+<span class="irc-date">[20:06]</span> <span class="irc-black">&lt;melwin&gt; Aha, I see.</span><br />
+<span class="irc-date">[20:07]</span> <span class="irc-black">&lt;melwin&gt; I hope Oracle will get more into the OSS stuff now as well. Sun has a lot of things going on there and would be a shame if it was forgotten.</span><br />
+<span class="irc-date">[20:07]</span> <span class="irc-black">&lt;naeu&gt; absolutely</span><br />
+<span class="irc-date">[20:07]</span> <span class="irc-black">&lt;naeu&gt; i totally agree</span><br />
+<span class="irc-date">[20:07]</span> <span class="irc-black">&lt;melwin&gt; I mean with all the community driven reference implementation of different Java stuff.</span><br />
+<span class="irc-date">[20:07]</span> <span class="irc-black">&lt;naeu&gt; indeed</span><br />
+<span class="irc-date">[20:08]</span> <span class="irc-black">&lt;melwin&gt; Oh well... But, I foresee redundancies.</span><br />
+<span class="irc-date">[20:09]</span> <span class="irc-black">&lt;naeu&gt; of course.....</span><br />
+<span class="irc-date">[20:10]</span> <span class="irc-black">&lt;naeu&gt; that's what always happens</span><br />
+<span class="irc-date">[20:10]</span> <span class="irc-black">&lt;naeu&gt; people have been jumping the Sun ship for a while now though</span><br />
+<span class="irc-date">[20:11]</span> <span class="irc-black">&lt;melwin&gt; Yeah... However a colleague of mine just left Oracle to join Suns OEM/embedded department just last week. Now he's back!</span><br />
+<span class="irc-date">[20:11]</span> <span class="irc-black">&lt;melwin&gt; Hahaha...</span><br />
+<span class="irc-date">[20:12]</span> <span class="irc-black">&lt;naeu&gt; hahahaha</span><br />
+<span class="irc-date">[20:12]</span> <span class="irc-black">&lt;naeu&gt; fool</span><br />
+<span class="irc-date">[20:12]</span> <span class="irc-black">&lt;naeu&gt; i bet he looks silly now</span><br />
+<span class="irc-date">[20:14]</span> <span class="irc-black">&lt;naeu&gt; after changing stuff in the builtin dirs, say src/builtin/D40_text.ik, do you know why you have to rebuild ioke with ant for the changes to be reflected?</span><br />
+<span class="irc-date">[20:15]</span> <span class="irc-black">&lt;naeu&gt; does the build process stick stuff in the jar or something?</span><br />
+<span class="irc-date">[20:23]</span> <span class="irc-black">&lt;melwin&gt; Exactly.</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[20:49]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit ("Leaving")</span><br />
+<span class="irc-date">[21:27]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[23:21]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[23:22]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[23:23]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Client Quit)</span><br />

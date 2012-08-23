@@ -1,0 +1,19 @@
+<span class="irc-date">[0:08]</span> <span class="irc-navy">* aslakhellesoy (n=aslakhel@80.203.101.143) Quit ()</span><br />
+<span class="irc-date">[3:47]</span> <span class="irc-black">&lt;jdp&gt; what is the object of a dict element</span><br />
+<span class="irc-date">[3:48]</span> <span class="irc-black">&lt;jdp&gt; like if i go someDict each(index, element, code)</span><br />
+<span class="irc-date">[3:48]</span> <span class="irc-black">&lt;jdp&gt; how do i get the name and value of the dict element in the code block</span><br />
+<span class="irc-date">[11:51]</span> <span class="irc-green">* pdelgallego (n=pdelgall@42.Red-217-125-2.staticIP.rima-tde.net) has joined #ioke</span><br />
+<span class="irc-date">[12:23]</span> <span class="irc-black">&lt;CIA-42&gt; ioke: Ola Bini master * r8921323 / (examples/chinese/account.ik examples/chinese/mandarin.ik): Add Mandarin example - <a href="http://bit.ly/31HIha">http://bit.ly/31HIha</a></span><br />
+<span class="irc-date">[12:52]</span> <span class="irc-navy">* pdelgallego (n=pdelgall@42.Red-217-125-2.staticIP.rima-tde.net) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[15:11]</span> <span class="irc-green">* kar8nga (n=kar8nga@jol13-1-82-66-176-74.fbx.proxad.net) has joined #ioke</span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-green">* pdelgallego (n=pdelgall@42.Red-217-125-2.staticIP.rima-tde.net) has joined #ioke</span><br />
+<span class="irc-date">[15:58]</span> <span class="irc-navy">* pdelgallego (n=pdelgall@42.Red-217-125-2.staticIP.rima-tde.net) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[16:23]</span> <span class="irc-navy">* kar8nga (n=kar8nga@jol13-1-82-66-176-74.fbx.proxad.net) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[19:33]</span> <span class="irc-green">* pdelgallego (n=pdelgall@42.Red-217-125-2.staticIP.rima-tde.net) has joined #ioke</span><br />
+<span class="irc-date">[21:04]</span> <span class="irc-navy">* jdp (n=justin@ool-435238c0.dyn.optonline.net) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[21:13]</span> <span class="irc-green">* delitescere (n=JoshG@12.34.4.34) has joined #ioke</span><br />
+<span class="irc-date">[21:13]</span> <span class="irc-navy">* delitescere (n=JoshG@12.34.4.34) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[21:24]</span> <span class="irc-green">* delitescere (n=JoshG@12.34.4.34) has joined #ioke</span><br />
+<span class="irc-date">[22:26]</span> <span class="irc-navy">* pdelgallego (n=pdelgall@42.Red-217-125-2.staticIP.rima-tde.net) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[22:39]</span> <span class="irc-green">* pdelgallego (n=pdelgall@42.Red-217-125-2.staticIP.rima-tde.net) has joined #ioke</span><br />
+<span class="irc-date">[23:15]</span> <span class="irc-navy">* delitescere (n=JoshG@12.34.4.34) Quit (Read error: 110 (Connection timed out))</span><br />

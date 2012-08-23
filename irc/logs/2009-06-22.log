@@ -1,0 +1,207 @@
+<span class="irc-date">[6:57]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[7:25]</span> <span class="irc-navy">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[7:59]</span> <span class="irc-navy">* CIA-8 (n=CIA@208.69.182.149) Quit ()</span><br />
+<span class="irc-date">[8:03]</span> <span class="irc-green">* CIA-8 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[8:11]</span> <span class="irc-brown">-christel- [Global Notice] Hi all, I'm going to restart services -- you'll be without NickServ, ChanServ, MemoServ etc for a few moments! Sorry for the inconvenience and thank you for using freenode.</span><br />
+<span class="irc-date">[8:45]</span> <span class="irc-green">* olabini (n=ola@c-398de155.234-1-64736c10.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[8:45]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[9:45]</span> <span class="irc-navy">* CIA-8 (n=CIA@208.69.182.149) Quit ()</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-green">* CIA-9 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[10:19]</span> <span class="irc-green">* naeu (n=sam@e170148.upc-e.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[10:49]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[10:52]</span> <span class="irc-navy">* olabini (n=ola@c-398de155.234-1-64736c10.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[11:53]</span> <span class="irc-green">* naeu_ (n=sam@c60134.upc-c.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[12:12]</span> <span class="irc-navy">* naeu (n=sam@e170148.upc-e.chello.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[12:33]</span> <span class="irc-green">* donizetti (n=donizett@187.37.206.68) has joined #ioke</span><br />
+<span class="irc-date">[12:33]</span> <span class="irc-black">&lt;donizetti&gt; good morning!</span><br />
+<span class="irc-date">[13:00]</span> <span class="irc-navy">* donizetti (n=donizett@187.37.206.68) Quit ()</span><br />
+<span class="irc-date">[13:01]</span> <span class="irc-green">* donizetti (n=donizett@187.37.206.68) has joined #ioke</span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-navy">* donizetti (n=donizett@187.37.206.68) Quit (Client Quit)</span><br />
+<span class="irc-date">[13:04]</span> <span class="irc-green">* donizetti (n=donizett@187.37.206.68) has joined #ioke</span><br />
+<span class="irc-date">[15:09]</span> <span class="irc-green">* naeu (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[15:15]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-226.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[15:29]</span> <span class="irc-navy">* naeu_ (n=sam@c60134.upc-c.chello.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[15:34]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-226.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[15:49]</span> <span class="irc-navy">* donizetti (n=donizett@187.37.206.68) Quit ()</span><br />
+<span class="irc-date">[15:50]</span> <span class="irc-green">* donizetti (n=donizett@187.37.206.68) has joined #ioke</span><br />
+<span class="irc-date">[15:58]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[16:43]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit ()</span><br />
+<span class="irc-date">[16:54]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[17:33]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-black">&lt;donizetti&gt; naeu: hi</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-black">&lt;donizetti&gt; may I ask you a question?</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-black">&lt;naeu&gt; hey donizetti</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-black">&lt;naeu&gt; sure</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-black">&lt;donizetti&gt; or you are busy?</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-black">&lt;donizetti&gt; =D</span><br />
+<span class="irc-date">[18:28]</span> <span class="irc-black">&lt;donizetti&gt; do you have an big knowledge of programming languages paradigms?</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-black">&lt;donizetti&gt; I was wonder what is the real difference between strongly typed and weakly typed!</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-black">&lt;donizetti&gt; I know a lot of strongly typed languages, but I do not know any weakly typed and haven't fond any good article about what really means weakly typed!</span><br />
+<span class="irc-date">[18:30]</span> <span class="irc-black">&lt;naeu&gt; interesting question</span><br />
+<span class="irc-date">[18:30]</span> <span class="irc-black">&lt;naeu&gt; I know of a strongly timed language ;-)</span><br />
+<span class="irc-date">[18:30]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[18:31]</span> <span class="irc-black">&lt;donizetti&gt; hehe</span><br />
+<span class="irc-date">[18:31]</span> <span class="irc-black">&lt;naeu&gt; strongly typed means that everything has a kind/type</span><br />
+<span class="irc-date">[18:32]</span> <span class="irc-black">&lt;naeu&gt; but I'm not entirely sure about the exact academic definition</span><br />
+<span class="irc-date">[18:32]</span> <span class="irc-black">&lt;donizetti&gt; it would be great to discuss about that with Ola!</span><br />
+<span class="irc-date">[18:32]</span> <span class="irc-black">&lt;donizetti&gt; hehe</span><br />
+<span class="irc-date">[18:32]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[18:33]</span> <span class="irc-black">&lt;donizetti&gt; I will spend some hours searching about it!</span><br />
+<span class="irc-date">[18:33]</span> <span class="irc-black">&lt;donizetti&gt; I puzzled!</span><br />
+<span class="irc-date">[18:33]</span> <span class="irc-black">&lt;donizetti&gt; i'm</span><br />
+<span class="irc-date">[18:33]</span> <span class="irc-black">&lt;naeu&gt; it feels to me like Ioke is not as strongly typed as, say, Java, but as as soon as I say that I fear I'm misrepresenting the definitino</span><br />
+<span class="irc-date">[18:33]</span> <span class="irc-black">&lt;donizetti&gt; yeah</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;donizetti&gt; it looks the same for me</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;naeu&gt; but what makes me feel that way is the fact that in Ioke mimicing plays an important role, perhaps more important than kinds, and Ioke also has become</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;naeu&gt; but from that perspective the strongly typed aspect isn't affected</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;naeu&gt; as everything always has a type</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;naeu&gt; it's just not used as much and can be altered</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;naeu&gt; perhaps, interestingly, Java might be less strongly typed than Ioke</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;naeu&gt; as it has primitives</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;donizetti&gt; humm</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;donizetti&gt; I'm not sure about that</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;naeu&gt; yet they also have a type, just a different kind of type than normal instances</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;donizetti&gt; I think that java isn't type safety because of it's primitives</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;donizetti&gt; or not</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;donizetti&gt; you are right</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;naeu&gt; the type safety issue with Java comes from passing Objects around everywhere :-)</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;naeu&gt; as the old data structures used to do</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;donizetti&gt; but is java type safety?</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-black">&lt;donizetti&gt; I heard that it is not, and that people misunderstand the difference between type safe and type safety!</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-black">&lt;donizetti&gt; ok!</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-black">&lt;donizetti&gt; sorry</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-black">&lt;naeu&gt; "One of the more common definitions states that weakly typed programming languages are those that support either implicit type conversion (nearly all languages support at least one implicit type conversion), ad-hoc polymorphism (also known as overloading) or both. "</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-black">&lt;donizetti&gt; I wrote that wrong!</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-black">&lt;donizetti&gt; java is type safety but not type safe!</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-black">&lt;naeu&gt; perhaps then, Scala is weakly typed</span><br />
+<span class="irc-date">[18:40]</span> <span class="irc-black">&lt;donizetti&gt; such a crazy stuff this</span><br />
+<span class="irc-date">[18:40]</span> <span class="irc-black">&lt;donizetti&gt; need to read more about that</span><br />
+<span class="irc-date">[18:40]</span> <span class="irc-black">&lt;donizetti&gt; think I'll look for some books at amazon</span><br />
+<span class="irc-date">[18:40]</span> <span class="irc-black">&lt;naeu&gt; yeah, the problem is that the terms strongly typed and weakly typed are used a lot for a lot of different things</span><br />
+<span class="irc-date">[18:40]</span> <span class="irc-black">&lt;naeu&gt; I wouldn't worry about it too much</span><br />
+<span class="irc-date">[18:41]</span> <span class="irc-black">&lt;naeu&gt; I think understanding how best to use a language is more interesting than categorising it</span><br />
+<span class="irc-date">[18:41]</span> <span class="irc-black">&lt;naeu&gt; especially because a feature in isolation, although perhaps tempting to examine and categorise, is nothing without it's context - it's interaction with other features in the system</span><br />
+<span class="irc-date">[18:42]</span> <span class="irc-black">&lt;donizetti&gt; yeah, you are right!</span><br />
+<span class="irc-date">[18:42]</span> <span class="irc-black">&lt;donizetti&gt; I was trying to understand that because I would like to know a real weakly typed language.</span><br />
+<span class="irc-date">[18:42]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[18:43]</span> <span class="irc-black">&lt;donizetti&gt; to see what kind of problems would be nice to have a weakly typed language!</span><br />
+<span class="irc-date">[18:45]</span> <span class="irc-black">&lt;naeu&gt; I think that Javascript is usually described as a weakly typed language</span><br />
+<span class="irc-date">[18:46]</span> <span class="irc-black">&lt;naeu&gt; but don't ask me to explain why ;-)</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-black">&lt;naeu&gt; although I'm guessing that Perl is much more weakly typed than Javascript</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-black">&lt;naeu&gt; in perl if you do this:</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-black">&lt;naeu&gt; "1" + 2</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-black">&lt;naeu&gt; it deals with it</span><br />
+<span class="irc-date">[18:48]</span> <span class="irc-black">&lt;naeu&gt; and outputs 3</span><br />
+<span class="irc-date">[18:48]</span> <span class="irc-black">&lt;donizetti&gt; yeah</span><br />
+<span class="irc-date">[18:48]</span> <span class="irc-black">&lt;naeu&gt; so there's implicit type conversion behind the scenes</span><br />
+<span class="irc-date">[18:48]</span> <span class="irc-black">&lt;donizetti&gt; I thought about that</span><br />
+<span class="irc-date">[18:48]</span> <span class="irc-black">&lt;donizetti&gt; but</span><br />
+<span class="irc-date">[18:48]</span> <span class="irc-black">&lt;donizetti&gt; ioke deals with it too</span><br />
+<span class="irc-date">[18:48]</span> <span class="irc-black">&lt;donizetti&gt; and it's strongly typed!</span><br />
+<span class="irc-date">[18:48]</span> <span class="irc-black">&lt;donizetti&gt; I asked a friend who is an expert on scala and He told me that it's not weakly typed!</span><br />
+<span class="irc-date">[18:49]</span> <span class="irc-black">&lt;naeu&gt; how does he define weakly typed?</span><br />
+<span class="irc-date">[18:49]</span> <span class="irc-black">&lt;naeu&gt; Scala definitely has implicit type conversions</span><br />
+<span class="irc-date">[18:49]</span> <span class="irc-black">&lt;naeu&gt; although they don't break type safety</span><br />
+<span class="irc-date">[18:50]</span> <span class="irc-black">&lt;naeu&gt; if the type can't be safely converted to another type then it raises an error</span><br />
+<span class="irc-date">[18:50]</span> <span class="irc-black">&lt;donizetti&gt; yeah</span><br />
+<span class="irc-date">[18:50]</span> <span class="irc-black">&lt;donizetti&gt; it's a strongly typed language characteristic</span><br />
+<span class="irc-date">[18:50]</span> <span class="irc-black">&lt;donizetti&gt; and every where a looked</span><br />
+<span class="irc-date">[18:50]</span> <span class="irc-black">&lt;donizetti&gt; scala is defined as strongly typed</span><br />
+<span class="irc-date">[18:51]</span> <span class="irc-black">&lt;naeu&gt; well, fair enough :-)</span><br />
+<span class="irc-date">[18:51]</span> <span class="irc-black">&lt;donizetti&gt; i was thinking abou that</span><br />
+<span class="irc-date">[18:51]</span> <span class="irc-black">&lt;naeu&gt; nobody wants to call their language weak anything ;-)</span><br />
+<span class="irc-date">[18:52]</span> <span class="irc-black">&lt;donizetti&gt; and with some googless</span><br />
+<span class="irc-date">[18:52]</span> <span class="irc-black">&lt;donizetti&gt; i decided that perl where weakly typed</span><br />
+<span class="irc-date">[18:52]</span> <span class="irc-black">&lt;donizetti&gt; because of what you already said</span><br />
+<span class="irc-date">[18:52]</span> <span class="irc-black">&lt;donizetti&gt; then I tried the same thing on iik</span><br />
+<span class="irc-date">[18:52]</span> <span class="irc-black">&lt;donizetti&gt; and was puzzled because ioke deal with it too</span><br />
+<span class="irc-date">[18:52]</span> <span class="irc-black">&lt;donizetti&gt; and it's strongly typed</span><br />
+<span class="irc-date">[18:52]</span> <span class="irc-black">&lt;donizetti&gt; :(</span><br />
+<span class="irc-date">[18:53]</span> <span class="irc-black">&lt;donizetti&gt; hehe</span><br />
+<span class="irc-date">[18:53]</span> <span class="irc-black">&lt;donizetti&gt; i think that you have the best anwser</span><br />
+<span class="irc-date">[18:54]</span> <span class="irc-black">&lt;donizetti&gt; no one wants their languages weak even when they are talking about typing!</span><br />
+<span class="irc-date">[18:54]</span> <span class="irc-black">&lt;naeu&gt; well Ioke doesn't convert the string to an integer, or the integer to a string</span><br />
+<span class="irc-date">[18:54]</span> <span class="irc-black">&lt;naeu&gt; in ioke "1" +  2</span><br />
+<span class="irc-date">[18:54]</span> <span class="irc-black">&lt;naeu&gt; is converted to</span><br />
+<span class="irc-date">[18:54]</span> <span class="irc-black">&lt;naeu&gt; "1" +(2)</span><br />
+<span class="irc-date">[18:55]</span> <span class="irc-black">&lt;naeu&gt; and it just so happens that Text has a + cell</span><br />
+<span class="irc-date">[18:55]</span> <span class="irc-black">&lt;donizetti&gt; ok</span><br />
+<span class="irc-date">[18:55]</span> <span class="irc-black">&lt;donizetti&gt; i got that now</span><br />
+<span class="irc-date">[18:55]</span> <span class="irc-black">&lt;naeu&gt; whereas, I'm guessing that Perl converts: "1" +  2</span><br />
+<span class="irc-date">[18:55]</span> <span class="irc-black">&lt;naeu&gt; to</span><br />
+<span class="irc-date">[18:55]</span> <span class="irc-black">&lt;naeu&gt; 1 + 2</span><br />
+<span class="irc-date">[18:55]</span> <span class="irc-black">&lt;naeu&gt; and then does the sum</span><br />
+<span class="irc-date">[18:56]</span> <span class="irc-black">&lt;donizetti&gt; yeah</span><br />
+<span class="irc-date">[18:56]</span> <span class="irc-black">&lt;naeu&gt; but then there's a very thin line between what's going on there, and the + cell on Text calling asText on it's param to convert it to a Text object to concatonate to the end of itself</span><br />
+<span class="irc-date">[18:56]</span> <span class="irc-black">&lt;donizetti&gt; perl do that!</span><br />
+<span class="irc-date">[18:56]</span> <span class="irc-black">&lt;donizetti&gt; i tried it out!</span><br />
+<span class="irc-date">[18:57]</span> <span class="irc-black">&lt;naeu&gt; I guess the difference is to do with how explicit it is</span><br />
+<span class="irc-date">[18:58]</span> <span class="irc-black">&lt;donizetti&gt; hard to studd to digest!</span><br />
+<span class="irc-date">[18:59]</span> <span class="irc-black">&lt;donizetti&gt; suff</span><br />
+<span class="irc-date">[19:00]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[19:03]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-32.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[19:38]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[19:41]</span> <span class="irc-navy">* donizetti (n=donizett@187.37.206.68) Quit ()</span><br />
+<span class="irc-date">[20:02]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:18]</span> <span class="irc-green">* martido (n=martin@dslb-088-065-198-161.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-black">&lt;martido&gt; hey guys, was just reading the logs (for the first time in almost 2 weeks) ... interesting discussion</span><br />
+<span class="irc-date">[20:20]</span> <span class="irc-black">&lt;martido&gt; my 2 cents: a "strictly" strongly-typed language completely disallows any operation on a type that it is not supported by that type</span><br />
+<span class="irc-date">[20:22]</span> <span class="irc-black">&lt;martido&gt; i.e. C and Java are weakly-typed languages because you're allowed to cast a type into another type and you might get a wrong result</span><br />
+<span class="irc-date">[20:26]</span> <span class="irc-black">&lt;martido&gt; however, I've seen the terms "weakly/strongly typed" used in different contexts with slight different meanings/definitions ... so I'm not a 100% sure about *the* right one</span><br />
+<span class="irc-date">[20:30]</span> <span class="irc-black">&lt;martido&gt; as far as I understand, Ioke's "become" method does not compromise the "strongly-typed" propertybecause one kind "becomes" another and is now completely indistinguishable from the *real* thing ... if you know what I mean ;)</span><br />
+<span class="irc-date">[20:35]</span> <span class="irc-black">&lt;naeu&gt; martido: thanks for your take on it :-)</span><br />
+<span class="irc-date">[20:35]</span> <span class="irc-black">&lt;naeu&gt; it's a tricky matter isn't it</span><br />
+<span class="irc-date">[20:35]</span> <span class="irc-black">&lt;naeu&gt; so where would you place Scala?</span><br />
+<span class="irc-date">[20:40]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-32.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;martido&gt; naeu: yes it is ;)</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;martido&gt; hmm, good question</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;martido&gt; I'm not *very* familiar with Scala unfortunately</span><br />
+<span class="irc-date">[20:57]</span> <span class="irc-black">&lt;naeu&gt; ok, a different question then</span><br />
+<span class="irc-date">[20:57]</span> <span class="irc-black">&lt;naeu&gt; how useful do you think the categorisation "strongly typed" is anyway</span><br />
+<span class="irc-date">[20:58]</span> <span class="irc-black">&lt;martido&gt; but I'd say that implicit conversions don't make Scala weakly-typed because, as you already said, they are type-checkd (based on my inferior knowledge)</span><br />
+<span class="irc-date">[20:58]</span> <span class="irc-black">&lt;naeu&gt; particualrly in a prototype langauge which makes heave use of mimics</span><br />
+<span class="irc-date">[20:58]</span> <span class="irc-black">&lt;martido&gt; *that's* another very good question ;) let me think</span><br />
+<span class="irc-date">[21:00]</span> <span class="irc-black">&lt;martido&gt; I'd say that it is useful categorisation because it tells you about guarantees enforced by the type system ... namely that you can't use operations on types that are not supported</span><br />
+<span class="irc-date">[21:04]</span> <span class="irc-black">&lt;martido&gt; hmm ... maybe you could have a prototype language that would allow you to "cast" types such that they fit into your specific context but does so in an unsafe way? Ioke does not allow this ... so, again, I guess it makes sense to me</span><br />
+<span class="irc-date">[21:04]</span> <span class="irc-black">&lt;martido&gt; hope I was making sense ;)</span><br />
+<span class="irc-date">[21:04]</span> <span class="irc-black">&lt;naeu&gt; well, that doesn't make sense for Scala then - as you can use operations that aren't supported by the current types</span><br />
+<span class="irc-date">[21:04]</span> <span class="irc-black">&lt;martido&gt; how?</span><br />
+<span class="irc-date">[21:04]</span> <span class="irc-black">&lt;naeu&gt; you are :-)</span><br />
+<span class="irc-date">[21:05]</span> <span class="irc-black">&lt;martido&gt; thanks ;)</span><br />
+<span class="irc-date">[21:05]</span> <span class="irc-black">&lt;naeu&gt; well if a type doesn't have a given method, it can still be called because Scala will try and convert the type to another that does support the method</span><br />
+<span class="irc-date">[21:05]</span> <span class="irc-black">&lt;naeu&gt; granted, there are rules for this</span><br />
+<span class="irc-date">[21:05]</span> <span class="irc-black">&lt;naeu&gt; but it strikes me as not too dissimilar to Perl converting a string to an integer</span><br />
+<span class="irc-date">[21:06]</span> <span class="irc-black">&lt;naeu&gt; the only difference seems to be that with Perl the type conversion is built into the language and with Scala it's explicitly declared as a set of type conversions</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-black">&lt;martido&gt; ok, but that's a key difference, isn't it? Does Scala always try to convert a type if you call a method on it that doesn't exist?</span><br />
+<span class="irc-date">[21:08]</span> <span class="irc-black">&lt;naeu&gt; only if a type conversion exists</span><br />
+<span class="irc-date">[21:08]</span> <span class="irc-black">&lt;martido&gt; and the question is what does Perl do if the String can't be converted to an integer?</span><br />
+<span class="irc-date">[21:08]</span> <span class="irc-black">&lt;naeu&gt; so it is safely converted</span><br />
+<span class="irc-date">[21:08]</span> <span class="irc-black">&lt;naeu&gt; but aren't you now straying into the area of type safety?</span><br />
+<span class="irc-date">[21:09]</span> <span class="irc-black">&lt;martido&gt; yeah, a little bit I guess ;)</span><br />
+<span class="irc-date">[21:09]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[21:09]</span> <span class="irc-black">&lt;naeu&gt; it's all a muddy dirty area ;-)</span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-black">&lt;martido&gt; I always thought that weakly-typed means kind of a "weakened" type system ... or rather a type system that does not catch all errors</span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-black">&lt;martido&gt; oh yes it is =D</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;martido&gt; but it would be interesting if someone could explain the difference without resorting to "type safety" ... if that's possible</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;martido&gt; Ola would have his own opinion definitely ;)</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-black">&lt;naeu&gt; absolutely :-)</span><br />
+<span class="irc-date">[21:13]</span> <span class="irc-black">&lt;naeu&gt; and one much clearer than mine</span><br />
+<span class="irc-date">[21:13]</span> <span class="irc-black">&lt;martido&gt; definitely ;)</span><br />
+<span class="irc-date">[21:13]</span> <span class="irc-black">&lt;naeu&gt; i'm just wading around in the mud picking old bicycle wheels up and wondering what they are</span><br />
+<span class="irc-date">[21:14]</span> <span class="irc-black">&lt;martido&gt; lol ... that's me over there on the other side of that muddy pool</span><br />
+<span class="irc-date">[21:15]</span> <span class="irc-black">&lt;naeu&gt; hiya!</span><br />
+<span class="irc-date">[21:15]</span> <span class="irc-black">&lt;naeu&gt; found anything exciting?</span><br />
+<span class="irc-date">[21:15]</span> <span class="irc-black">&lt;naeu&gt; i've got another old wheel here...</span><br />
+<span class="irc-date">[21:15]</span> <span class="irc-black">&lt;martido&gt; not really ... some old, torn shoes ;)</span><br />
+<span class="irc-date">[21:17]</span> <span class="irc-black">&lt;martido&gt; but I'm pretty sure that if you ask 10 people about the difference between weakly/strongly-typed you'd get 10 different answers ... so we're not that alone ;)</span><br />
+<span class="irc-date">[21:18]</span> <span class="irc-black">&lt;naeu&gt; yeah, absolutely</span><br />
+<span class="irc-date">[21:20]</span> <span class="irc-black">&lt;martido&gt; oh no, battery's low on my laptop ... I'll be gone in a few minutes unfortunately</span><br />
+<span class="irc-date">[21:20]</span> <span class="irc-black">&lt;martido&gt; I hope we can clarify this discussion sometime</span><br />
+<span class="irc-date">[21:20]</span> <span class="irc-black">&lt;martido&gt; I'm trying to be back tomorrow</span><br />
+<span class="irc-date">[21:21]</span> <span class="irc-green">* Narnach_ (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[21:22]</span> <span class="irc-navy">* martido (n=martin@dslb-088-065-198-161.pools.arcor-ip.net) Quit ()</span><br />
+<span class="irc-date">[21:30]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[21:45]</span> <span class="irc-green">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[22:00]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[22:01]</span> <span class="irc-navy">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />

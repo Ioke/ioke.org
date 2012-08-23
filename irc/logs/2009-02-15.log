@@ -1,0 +1,346 @@
+<span class="irc-date">[3:39]</span> <span class="irc-navy">* bguthrie_ (n=bguthrie@68.sub-75-199-101.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[4:09]</span> <span class="irc-green">* cv (n=cv@5ad58ae5.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[4:44]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[5:00]</span> <span class="irc-green">* bguthrie (n=bguthrie@3.sub-75-199-243.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[6:02]</span> <span class="irc-navy">* cv (n=cv@5ad58ae5.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[6:27]</span> <span class="irc-navy">* bguthrie (n=bguthrie@3.sub-75-199-243.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-green">* protoscript (n=jay@c-69-248-249-247.hsd1.nj.comcast.net) has joined #ioke</span><br />
+<span class="irc-date">[8:15]</span> <span class="irc-black">&lt;protoscript&gt; anyone up?</span><br />
+<span class="irc-date">[8:15]</span> <span class="irc-black">&lt;protoscript&gt; I was hoping someone could point me to an example of calling into java from ioke</span><br />
+<span class="irc-date">[8:48]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-29.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[8:49]</span> <span class="irc-black">&lt;protoscript&gt; hello kar8nga</span><br />
+<span class="irc-date">[8:50]</span> <span class="irc-black">&lt;kar8nga&gt; hy protoscript</span><br />
+<span class="irc-date">[8:50]</span> <span class="irc-black">&lt;protoscript&gt; I was hoping someone could point me to an example of calling into java from ioke</span><br />
+<span class="irc-date">[8:50]</span> <span class="irc-black">&lt;kar8nga&gt; sorry - I'm not so familar with that</span><br />
+<span class="irc-date">[8:50]</span> <span class="irc-black">&lt;protoscript&gt; ok thx anyways mate</span><br />
+<span class="irc-date">[9:02]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-green">* martido (n=martin@dslb-088-067-183-102.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[9:09]</span> <span class="irc-black">&lt;martido&gt; protoscript: take a look at java_ground_spek.ik in the repos for some pointers</span><br />
+<span class="irc-date">[9:10]</span> <span class="irc-black">&lt;martido&gt; there's also a preliminary page in the wiki: <a href="http://ioke.org/wiki/index.php/Java_integration_planning">http://ioke.org/wiki/index.php/Java_integration_planning</a></span><br />
+<span class="irc-date">[9:10]</span> <span class="irc-black">&lt;protoscript&gt; thanks so much!</span><br />
+<span class="irc-date">[9:12]</span> <span class="irc-black">&lt;protoscript&gt; so martido, JavaGround doesn't exist in ioke S?</span><br />
+<span class="irc-date">[9:13]</span> <span class="irc-black">&lt;protoscript&gt; ie, is there any way to do it within ioke S?</span><br />
+<span class="irc-date">[9:13]</span> <span class="irc-black">&lt;martido&gt; no I don't think so</span><br />
+<span class="irc-date">[9:14]</span> <span class="irc-black">&lt;martido&gt; ola's planned the integration for the coming release</span><br />
+<span class="irc-date">[9:14]</span> <span class="irc-black">&lt;protoscript&gt; ah ok thx mate</span><br />
+<span class="irc-date">[9:16]</span> <span class="irc-black">&lt;martido&gt; sure ;)</span><br />
+<span class="irc-date">[9:16]</span> <span class="irc-black">&lt;martido&gt; but for probably more accurate and definitely more detailed information you should ask olabini</span><br />
+<span class="irc-date">[9:16]</span> <span class="irc-black">&lt;naeu&gt; protoscript: you can get at the Java integration stuff (which is still under development) by cloning the latest version of Ioke from GitHub</span><br />
+<span class="irc-date">[9:17]</span> <span class="irc-black">&lt;protoscript&gt; great! will make it a bit easier to build something "real" to learn the lang</span><br />
+<span class="irc-date">[9:18]</span> <span class="irc-black">&lt;naeu&gt; where real in this sense means 'java-based' ;-)</span><br />
+<span class="irc-date">[9:18]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-black">&lt;naeu&gt; although on a fresh pull i'm failing to compile the app due to system resource limitations</span><br />
+<span class="irc-date">[9:21]</span> <span class="irc-black">&lt;naeu&gt; when I say the app, I mean Ioke :-)</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-green">* olabini (n=ola@c-d64ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;martido&gt; naeu: you do?</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;naeu&gt; olabini: hey there, i'm getting system resource limitation errors on a fresh pull</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;naeu&gt; while attempting to compile Ioke</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;protoscript&gt; naeu, nah I just mean so I have access to tons more libraries</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;naeu&gt; protoscript: yeah sure, I was just joking :-)</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;olabini&gt; what kind?</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;naeu&gt; the ability to wrap java libraries with Ioke is an exciting prospect</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;protoscript&gt; phew! ah yes winkie face</span><br />
+<span class="irc-date">[9:24]</span> <span class="irc-black">&lt;olabini&gt; naeu: is it memory or something else?</span><br />
+<span class="irc-date">[9:24]</span> <span class="irc-black">&lt;olabini&gt; I upped the amount of memory in build.xml</span><br />
+<span class="irc-date">[9:24]</span> <span class="irc-black">&lt;naeu&gt; olabini: <a href="http://gist.github.com/64661">http://gist.github.com/64661</a></span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-black">&lt;olabini&gt; when did you do that?</span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-black">&lt;martido&gt; just pulled the latest sources and tried to build the thing. StackOverflowError. Worked like a charm yesterday</span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-black">&lt;naeu&gt; just now</span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-black">&lt;olabini&gt; ok</span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-black">&lt;olabini&gt; I merged something from cv, and I think that's the problem</span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-black">&lt;olabini&gt; he has a file that is automatically generated</span><br />
+<span class="irc-date">[9:26]</span> <span class="irc-black">&lt;olabini&gt; I get the same thing</span><br />
+<span class="irc-date">[9:26]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[9:26]</span> <span class="irc-black">&lt;martido&gt; ola, that could be, I could never compile cv's fork. meant to ask him, but I somehow forgot to</span><br />
+<span class="irc-date">[9:26]</span> <span class="irc-navy">* olabini (n=ola@c-d64ce155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[9:27]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-29.vc-graz.ac.at) Quit ()</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-green">* olabini (n=ola@c-d64ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;olabini&gt; wow. that was an EVIL commit</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt; even opening up that Java file crashed my Emacs</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt; that's never happened before</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;naeu&gt; hahahaha</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;naeu&gt; try vi?</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt; well, I'm reverting</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * rcd0456c / (4 files in 3 dirs):</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Revert "Text script() was way too slow. Rewrote it in Java, and got a nice performance kick out of it, hopefully without causing too much damage to the codebase ;)"</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: This reverts commit f94c12ca9bad7a090100344e342ca333216c2516. - <a href="http://bit.ly/ZGWKc">http://bit.ly/ZGWKc</a></span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt; ok. done</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r9eabd67 / CONTRIBUTORS : Add a new contributor - <a href="http://bit.ly/2U979">http://bit.ly/2U979</a></span><br />
+<span class="irc-date">[9:34]</span> <span class="irc-black">&lt;naeu&gt; great, now works a treat :-)</span><br />
+<span class="irc-date">[9:45]</span> <span class="irc-black">&lt;martido&gt; for me too</span><br />
+<span class="irc-date">[9:46]</span> <span class="irc-black">&lt;naeu&gt; hey ola, this spec doesn't read to well to my eyes:</span><br />
+<span class="irc-date">[9:46]</span> <span class="irc-black">&lt;naeu&gt; it("should be a mimic of Origin",</span><br />
+<span class="irc-date">[9:46]</span> <span class="irc-black">&lt;naeu&gt;     Origin should mimic(JavaGround)</span><br />
+<span class="irc-date">[9:46]</span> <span class="irc-black">&lt;naeu&gt;   )</span><br />
+<span class="irc-date">[9:46]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[9:46]</span> <span class="irc-black">&lt;olabini&gt; should be mimic, probably</span><br />
+<span class="irc-date">[9:46]</span> <span class="irc-black">&lt;olabini&gt; oops</span><br />
+<span class="irc-date">[9:46]</span> <span class="irc-black">&lt;olabini&gt; ah, I see what you mean</span><br />
+<span class="irc-date">[9:46]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[9:46]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[9:47]</span> <span class="irc-black">&lt;olabini&gt; changing it to "should be one of Origin's mimics"</span><br />
+<span class="irc-date">[9:47]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[9:48]</span> <span class="irc-black">&lt;naeu&gt; although it probably raises some misundertandings I have of how this all works</span><br />
+<span class="irc-date">[9:48]</span> <span class="irc-black">&lt;naeu&gt; I was seeing the mimic concept as some kind of hierarchy</span><br />
+<span class="irc-date">[9:48]</span> <span class="irc-black">&lt;naeu&gt; is that a good way of viewing it?</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;naeu&gt; this spec says to me that JavaGround is a sort-of-parent to Origin</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;olabini&gt; roughly, you can see a mimic as a super class</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;olabini&gt; and yes, that is the correct interpretation</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;olabini&gt; Origin has two parents right now</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;olabini&gt; Ground and JavaGround</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;naeu&gt; ok, so I know get the thing that was confusing me</span><br />
+<span class="irc-date">[9:51]</span> <span class="irc-black">&lt;naeu&gt; there's a subtle language difference, but great conceptual difference between 'things I mimic' and 'things that mimic me'</span><br />
+<span class="irc-date">[9:51]</span> <span class="irc-black">&lt;naeu&gt; and I was associating the wrong meaning with 'mimic'</span><br />
+<span class="irc-date">[9:51]</span> <span class="irc-black">&lt;olabini&gt; ah, right</span><br />
+<span class="irc-date">[9:53]</span> <span class="irc-black">&lt;martido&gt; speaking of a hierarchy. I always wondered if one object could mimic more than one other object. And if so, how would you do that? Sorry for that noob question ;)</span><br />
+<span class="irc-date">[9:53]</span> <span class="irc-black">&lt;naeu&gt; so in this sense "should be a mimic of Origin" means (with respect to my looser and dirtier mental model) "should be one of the things that Origin mimics"</span><br />
+<span class="irc-date">[9:55]</span> <span class="irc-black">&lt;martido&gt; naeu: that's how I've viewed it so far ;)</span><br />
+<span class="irc-date">[10:13]</span> <span class="irc-green">* martido (n=martin@dslb-088-067-183-102.pools.arcor-ip.net) has left #ioke</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;naeu&gt; olabini: I've just pushed an update of the geshi colours</span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;naeu&gt; it clearly needs some design work but for now it should at least be more readable on a white background</span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;naeu&gt; I also need to work on the matchers themselves :-)</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-green">* martido (n=martin@dslb-088-067-183-102.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[10:38]</span> <span class="irc-black">&lt;olabini&gt; good. thanks</span><br />
+<span class="irc-date">[10:38]</span> <span class="irc-black">&lt;olabini&gt; martido: yes, you can do appendMimic! or prependMimic!</span><br />
+<span class="irc-date">[10:39]</span> <span class="irc-black">&lt;olabini&gt; actually, no, you can't do appendMimic!</span><br />
+<span class="irc-date">[10:39]</span> <span class="irc-black">&lt;olabini&gt; but you can do mimic! ... that will add a new mimic</span><br />
+<span class="irc-date">[10:44]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r6648e58 / test/java_ground_spec.ik : Change description of mimicing spec for JavaGround - <a href="http://bit.ly/jbhQe">http://bit.ly/jbhQe</a></span><br />
+<span class="irc-date">[10:44]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r04ef136 / share/geshi/ioke.php : Merge branch 'master' of git@github.com:olabini/ioke - <a href="http://bit.ly/g0Pkh">http://bit.ly/g0Pkh</a></span><br />
+<span class="irc-date">[10:45]</span> <span class="irc-green">* olabini` (n=ola@cust-IP-10.data.tre.se) has joined #ioke</span><br />
+<span class="irc-date">[10:46]</span> <span class="irc-black">&lt;olabini`&gt; naeu: I've updated ioke.php at the wiki. check and see how it looks</span><br />
+<span class="irc-date">[10:47]</span> <span class="irc-black">&lt;martido&gt; ola, thanks, always wondered how to do that</span><br />
+<span class="irc-date">[10:48]</span> <span class="irc-black">&lt;martido&gt; however, there's nothing in the guide about that</span><br />
+<span class="irc-date">[10:50]</span> <span class="irc-black">&lt;martido&gt; maybe some page "guide todos" is a good idea to write down those things that need to be put into the guide some time. what do you think?</span><br />
+<span class="irc-date">[10:51]</span> <span class="irc-black">&lt;naeu&gt; olabini`: I can't see any difference</span><br />
+<span class="irc-date">[10:51]</span> <span class="irc-black">&lt;naeu&gt; how did you kickstart things last time?</span><br />
+<span class="irc-date">[10:58]</span> <span class="irc-black">&lt;naeu&gt; martido: there are some related specs in default_behavior_spec.ik</span><br />
+<span class="irc-date">[10:59]</span> <span class="irc-navy">* olabini (n=ola@c-d64ce155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[11:10]</span> <span class="irc-black">&lt;martido&gt; naeu: thanks! I usually read the associated specs if I want to know more about a feature, but apperently I've not seen that...</span><br />
+<span class="irc-date">[11:10]</span> <span class="irc-black">&lt;naeu&gt; :-) you're very welcome</span><br />
+<span class="irc-date">[11:10]</span> <span class="irc-black">&lt;naeu&gt; Enjoy!</span><br />
+<span class="irc-date">[11:15]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-44.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[11:15]</span> <span class="irc-green">* cv (n=cv@5ad58ae5.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[11:20]</span> <span class="irc-black">&lt;olabini`&gt; naeu: sorry, I think I need to touch one of the major config files</span><br />
+<span class="irc-date">[11:20]</span> <span class="irc-black">&lt;olabini`&gt; check now</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;naeu&gt; there we are</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;naeu&gt; that's already much better</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;naeu&gt; although it might be a little too subtle</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;cv&gt; morning! :)</span><br />
+<span class="irc-date">[11:22]</span> <span class="irc-black">&lt;naeu&gt; cv: morning to you my goodly sire</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;olabini`&gt; cv: I had to revert your commit for scripts in Java</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;olabini`&gt; it didn't compile on most peoples JVMs</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;cv&gt; bugger</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;cv&gt; well, that's not completely surprising... until i ended up with that format, i got quite a lot of nastiness from javac</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;cv&gt; (method too long, out of memory, code too big, literal too big, stack overflow errors...)</span><br />
+<span class="irc-date">[11:31]</span> <span class="irc-black">&lt;olabini`&gt; yep</span><br />
+<span class="irc-date">[11:31]</span> <span class="irc-black">&lt;olabini`&gt; I think the general solution to those problems is to generate several static methods that generate part of the data into a byte-array or char-array of the right size</span><br />
+<span class="irc-date">[11:31]</span> <span class="irc-black">&lt;olabini`&gt; that way you can get around the restrictions of code size and so on</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;olabini`&gt; basically:</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;olabini`&gt; final static char[] uni_data;</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;olabini`&gt; static {</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;olabini`&gt; char[] new_unitdata = new char[65536];</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;olabini`&gt; genUnidata1(new_unitdata);</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;olabini`&gt; genUnidata1(new_unitdata);</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;olabini`&gt; genUnidata1(new_unitdata);</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;olabini`&gt; genUnidata1(new_unitdata);</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;olabini`&gt; genUnidata1(new_unitdata);</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;olabini`&gt; genUnidata1(new_unitdata);</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-green">* olabini` was kicked from #ioke by IokeHurricane</span><br />
+<span class="irc-date">[11:33]</span> <span class="irc-green">* olabini (n=ola@cust-IP-10.data.tre.se) has joined #ioke</span><br />
+<span class="irc-date">[11:33]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[11:33]</span> <span class="irc-black">&lt;olabini&gt; sorry</span><br />
+<span class="irc-date">[11:33]</span> <span class="irc-black">&lt;olabini&gt; uhm</span><br />
+<span class="irc-date">[11:33]</span> <span class="irc-black">&lt;olabini&gt; and then at the end</span><br />
+<span class="irc-date">[11:33]</span> <span class="irc-black">&lt;olabini&gt; you assign the new char[] to the final one</span><br />
+<span class="irc-date">[11:33]</span> <span class="irc-black">&lt;olabini&gt; that should get you around those limitations</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;olabini&gt; another alternative is to generate the bytecode directly, but that is a bit more tricky if you don't know that stuff well</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;cv&gt; the fiddly thing is making sure each method ends up under the limits... as far as i could tell, those limits also vary from one compiler to the next</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;olabini&gt; yes</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;olabini&gt; no, not really</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;olabini&gt; the limits are on code size and that's regulated</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;olabini&gt; you can't have code that is larger than 64k bytes</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;olabini&gt; but the problem is that different compilers generate different code</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;olabini&gt; which means you have to be careful to make it a bit smaller</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;olabini&gt; than the code generated by the worst compiler</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-black">&lt;olabini&gt; so it's ok to have 16 or 32 different methods, just to be sure</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-black">&lt;olabini&gt; that's how parser generators and so on work around these limitations</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;cv&gt; fair enough</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;cv&gt; i'll give it a shot then</span><br />
+<span class="irc-date">[11:40]</span> <span class="irc-black">&lt;cv&gt; then if that doesn't work too well, i might try some bytecode generation magic</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[12:09]</span> <span class="irc-green">* olabini` (n=ola@c-d14fe155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[12:10]</span> <span class="irc-green">* IokeHurricane sets mode +o olabini` </span><br />
+<span class="irc-date">[12:18]</span> <span class="irc-black">&lt;martido&gt; cv: what exactly are you trying to accomplish if I may ask?</span><br />
+<span class="irc-date">[12:23]</span> <span class="irc-navy">* olabini (n=ola@cust-IP-10.data.tre.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[12:23]</span> <span class="irc-black">&lt;cv&gt; martido: i'm trying to get as much auxiliar unicode support as possible in ioke</span><br />
+<span class="irc-date">[12:24]</span> <span class="irc-black">&lt;cv&gt; a lot of those things rely on being able to identify the character class and script of a particular unicode codepoint</span><br />
+<span class="irc-date">[12:24]</span> <span class="irc-black">&lt;cv&gt; character classes are relatively easy, as java already supports them</span><br />
+<span class="irc-date">[12:25]</span> <span class="irc-black">&lt;cv&gt; but scripts were not there yet... so i grabbed the good old scripts.txt and tried to transform it into a little utility method</span><br />
+<span class="irc-date">[12:39]</span> <span class="irc-black">&lt;martido&gt; ah, thanks</span><br />
+<span class="irc-date">[12:39]</span> <span class="irc-black">&lt;martido&gt; didn't you work on some inlining stuff too?</span><br />
+<span class="irc-date">[12:51]</span> <span class="irc-navy">* olabini` (n=ola@c-d14fe155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[12:53]</span> <span class="irc-black">&lt;cv&gt; yeah, that was just fooling around with javassist though</span><br />
+<span class="irc-date">[12:53]</span> <span class="irc-black">&lt;cv&gt; with the new java integration stuff it should be a lot simpler to just write that inlining stuff again in ioke itself later</span><br />
+<span class="irc-date">[12:54]</span> <span class="irc-black">&lt;cv&gt; to be honest, i'm not entirely sure inline java code is really that useful</span><br />
+<span class="irc-date">[12:54]</span> <span class="irc-black">&lt;cv&gt; for performance tweaking, maybe</span><br />
+<span class="irc-date">[12:55]</span> <span class="irc-black">&lt;martido&gt; so that was some other kind of java integration?</span><br />
+<span class="irc-date">[12:55]</span> <span class="irc-black">&lt;cv&gt; yeah, ola is working on that</span><br />
+<span class="irc-date">[12:57]</span> <span class="irc-black">&lt;martido&gt; I'm just curious ... how does this work? you creat bytecode on-the-fly for the inlined java code?</span><br />
+<span class="irc-date">[13:02]</span> <span class="irc-navy">* protoscript (n=jay@c-69-248-249-247.hsd1.nj.comcast.net) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[13:02]</span> <span class="irc-black">&lt;martido&gt; yeah, I know he does. What I meant was if your inlining experiment is planned as an additional kind of Java integration...</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;cv&gt; oh... sorta</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;cv&gt; have you played with javassist?</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;cv&gt; i was basically grabbing all the inline code, sticking it into a new implementation of an interface, loading it and registering it on the ioke object</span><br />
+<span class="irc-date">[13:09]</span> <span class="irc-black">&lt;martido&gt; cool, sounds very interesting</span><br />
+<span class="irc-date">[13:09]</span> <span class="irc-black">&lt;martido&gt; no, I've not yet had the chance to play with javassist, but I meant to for a long time now ;)</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-black">&lt;cv&gt; it's a lot of fun</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-black">&lt;martido&gt; you still got a copy of that stuff lying around? I'd really like to take a look to see how that works...</span><br />
+<span class="irc-date">[13:11]</span> <span class="irc-black">&lt;martido&gt; yeah, that's why I'd like to do it some time ;)</span><br />
+<span class="irc-date">[13:11]</span> <span class="irc-black">&lt;cv&gt; it's in my fork... one se</span><br />
+<span class="irc-date">[13:11]</span> <span class="irc-black">&lt;cv&gt; sec*</span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-black">&lt;cv&gt; <a href="http://github.com/cv/ioke/commit/1b5dc72c61d4616b7e1f82c874b08f98d83b3f55">http://github.com/cv/ioke/commit/1b5dc72c61d4616b7e1f82c874b08f98d83b3f55</a></span><br />
+<span class="irc-date">[13:13]</span> <span class="irc-black">&lt;martido&gt; thanks very much</span><br />
+<span class="irc-date">[13:34]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-44.vc-graz.ac.at) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[14:01]</span> <span class="irc-green">* olabini (n=ola@c-d14fe155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[14:01]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-green">* olabini (n=ola@c-d14fe155.1110-8-64736c13.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[14:25]</span> <span class="irc-green">* olabini (n=ola@c-d14fe155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[14:25]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-brick">* olabini just updated Emacs version from 22.0 to 22.3. New versions seems WAY snappier.</span><br />
+<span class="irc-date">[14:34]</span> <span class="irc-black">&lt;cv&gt; i hear they've even added a text editor to it :)</span><br />
+<span class="irc-date">[14:39]</span> <span class="irc-black">&lt;olabini&gt; =P</span><br />
+<span class="irc-date">[14:45]</span> <span class="irc-black">&lt;olabini&gt; I'm trying to decide how the implementation of interfaces should look like.</span><br />
+<span class="irc-date">[14:45]</span> <span class="irc-black">&lt;olabini&gt; it's not totally trivial</span><br />
+<span class="irc-date">[15:10]</span> <span class="irc-black">&lt;cv&gt; what are the choices?</span><br />
+<span class="irc-date">[15:31]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[15:31]</span> <span class="irc-black">&lt;olabini&gt; it's not really a matter of distinct choices</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-black">&lt;olabini&gt; the problem is how to represent objects in Ioke and so on</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-black">&lt;olabini&gt; and also how to handle overriding correctly</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-black">&lt;olabini&gt; so that you can actually override or implement stuff from the ioke side</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-black">&lt;olabini&gt; and how do you handle situations where the Java class/interface have overloaded methods?</span><br />
+<span class="irc-date">[15:47]</span> <span class="irc-black">&lt;olabini&gt; care to take a look at this:</span><br />
+<span class="irc-date">[15:47]</span> <span class="irc-black">&lt;olabini&gt; <a href="http://gist.github.com/64738">http://gist.github.com/64738</a></span><br />
+<span class="irc-date">[15:47]</span> <span class="irc-black">&lt;olabini&gt; does it make sense?</span><br />
+<span class="irc-date">[15:49]</span> <span class="irc-black">&lt;cv&gt; i'm not sure about the use of the word 'integrate'</span><br />
+<span class="irc-date">[15:50]</span> <span class="irc-black">&lt;cv&gt; couldn't it be just a mimic, like s = ioke:lang:test:SimpleInterface mimic. s doSomething = method("hi").</span><br />
+<span class="irc-date">[15:50]</span> <span class="irc-black">&lt;olabini&gt; well, the problem is that mimicking has a very specific meaning in Ioke</span><br />
+<span class="irc-date">[15:51]</span> <span class="irc-black">&lt;olabini&gt; and this is very unsimilar</span><br />
+<span class="irc-date">[15:51]</span> <span class="irc-black">&lt;olabini&gt; the second reason for using the word in active form is because it will be possible to create something that implements several interfaces</span><br />
+<span class="irc-date">[15:51]</span> <span class="irc-black">&lt;olabini&gt; integrate(java:util:HashMap, java:util:Runnable)</span><br />
+<span class="irc-date">[15:51]</span> <span class="irc-black">&lt;olabini&gt; basically, it could have been named something like createProxy</span><br />
+<span class="irc-date">[15:51]</span> <span class="irc-black">&lt;olabini&gt; but I don't like that</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-black">&lt;olabini&gt; the thinking is that you specifically want to integrate those classes/interfaces into Ioke</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-black">&lt;olabini&gt; mimicking can be done on classes and interfaces. it doesn't do the same thing</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-black">&lt;cv&gt; ahh gotcha</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-black">&lt;cv&gt; didn't realize you could mimic an interface - - what does that do?</span><br />
+<span class="irc-date">[15:53]</span> <span class="irc-black">&lt;cv&gt; or rather, in which contexts would it be useful?</span><br />
+<span class="irc-date">[15:53]</span> <span class="irc-black">&lt;olabini&gt; several Ioke references to the same interface with different Ioke data</span><br />
+<span class="irc-date">[15:53]</span> <span class="irc-black">&lt;olabini&gt; not necessarily very useful</span><br />
+<span class="irc-date">[15:54]</span> <span class="irc-black">&lt;olabini&gt; but it could be</span><br />
+<span class="irc-date">[15:54]</span> <span class="irc-black">&lt;olabini&gt; in fact, I have some ideas about things you can do using that</span><br />
+<span class="irc-date">[15:54]</span> <span class="irc-black">&lt;olabini&gt; but that's neither here nor there</span><br />
+<span class="irc-date">[15:54]</span> <span class="irc-black">&lt;olabini&gt; see, what integrate returns, is basically a newly created Java class</span><br />
+<span class="irc-date">[15:55]</span> <span class="irc-black">&lt;olabini&gt; that is more tightly integrated with Ioke than regular Java classes</span><br />
+<span class="irc-date">[15:55]</span> <span class="irc-black">&lt;olabini&gt; anyway, I guess the name can be changed, if someone comes up with a proposal that sounds better</span><br />
+<span class="irc-date">[16:02]</span> <span class="irc-black">&lt;olabini&gt; another reason is that I want there to be a certain distance between Java implemented proxies and the rest of Ioke</span><br />
+<span class="irc-date">[16:02]</span> <span class="irc-black">&lt;olabini&gt; one of the things that made JRuby's Java integration a bit complicated to understand and implement was that it blurred the line between the languages</span><br />
+<span class="irc-date">[16:02]</span> <span class="irc-black">&lt;olabini&gt; I don't think that's a good choice when the paradigms are as different as Java's and Ioke's</span><br />
+<span class="irc-date">[16:02]</span> <span class="irc-black">&lt;olabini&gt; which is why I feel the Clojure path is better</span><br />
+<span class="irc-date">[16:07]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-58.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-black">&lt;cv&gt; what about implement?</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-black">&lt;cv&gt; implement(java:util:Map)</span><br />
+<span class="irc-date">[16:16]</span> <span class="irc-black">&lt;olabini&gt; doesn't work for extending classes</span><br />
+<span class="irc-date">[16:37]</span> <span class="irc-black">&lt;cv&gt; ah, good point</span><br />
+<span class="irc-date">[16:43]</span> <span class="irc-green">* bguthrie (n=bguthrie@32.sub-75-199-146.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[16:48]</span> <span class="irc-black">&lt;bguthrie&gt; ola: latest commit should be fully merged with your master and contain the ispec changes but no mocks. is that the correct thing to do?</span><br />
+<span class="irc-date">[16:56]</span> <span class="irc-black">&lt;olabini&gt; ah, perfect</span><br />
+<span class="irc-date">[16:56]</span> <span class="irc-black">&lt;olabini&gt; only the last commit?</span><br />
+<span class="irc-date">[16:58]</span> <span class="irc-black">&lt;bguthrie&gt; yep</span><br />
+<span class="irc-date">[17:00]</span> <span class="irc-black">&lt;bguthrie&gt; well okay so I'm actually not sure how this works</span><br />
+<span class="irc-date">[17:00]</span> <span class="irc-black">&lt;bguthrie&gt; the latest version of my clone represents your master plus my changes to ispec</span><br />
+<span class="irc-date">[17:00]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[17:00]</span> <span class="irc-black">&lt;olabini&gt; ok</span><br />
+<span class="irc-date">[17:00]</span> <span class="irc-black">&lt;olabini&gt; will take a look later</span><br />
+<span class="irc-date">[17:00]</span> <span class="irc-brick">* olabini is currently swimming around in ASM+classloader hell</span><br />
+<span class="irc-date">[17:00]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[17:00]</span> <span class="irc-black">&lt;bguthrie&gt; haha all right, sorry for the ignorance on my part</span><br />
+<span class="irc-date">[17:01]</span> <span class="irc-black">&lt;olabini&gt; no worries</span><br />
+<span class="irc-date">[17:07]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-58.vc-graz.ac.at) Quit ()</span><br />
+<span class="irc-date">[17:16]</span> <span class="irc-navy">* bguthrie (n=bguthrie@32.sub-75-199-146.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[17:25]</span> <span class="irc-green">* martido29 (n=martin@dslb-088-067-183-102.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[17:25]</span> <span class="irc-navy">* martido (n=martin@dslb-088-067-183-102.pools.arcor-ip.net) Quit (Read error: 54 (Connection reset by peer))</span><br />
+<span class="irc-date">[17:29]</span> <span class="irc-green">* bguthrie (n=bguthrie@77.sub-75-199-219.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;naeu&gt; olabini: is there any chance you can define one Ioke's 'integrate' command in a simple sentence</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;naeu&gt; that's one of the best ways to see if the word works or whether there might be a better alternative</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;olabini&gt; the integrate method will return a proxy that combines access to all its argument types, allowing Ioke overriding of any implementation</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;naeu&gt; currently, in my mind, bridge is a better word, but that might be because I don't understand the concepts well enough</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;olabini&gt; bridge might work</span><br />
+<span class="irc-date">[17:33]</span> <span class="irc-black">&lt;naeu&gt; ok, i'm off out for food with my parents now but i'll keep thinking about it</span><br />
+<span class="irc-date">[17:33]</span> <span class="irc-black">&lt;naeu&gt; my problem with integrate is that it's a little vague</span><br />
+<span class="irc-date">[17:34]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[17:34]</span> <span class="irc-black">&lt;olabini&gt; well. bridge is vague in the same way</span><br />
+<span class="irc-date">[17:34]</span> <span class="irc-black">&lt;naeu&gt; i'd like the word to convey that it's not only integrating, but 'how' it's integrating :-)</span><br />
+<span class="irc-date">[17:34]</span> <span class="irc-black">&lt;naeu&gt; yeah, this is true</span><br />
+<span class="irc-date">[17:34]</span> <span class="irc-black">&lt;olabini&gt; yeah. and bridge does nothing of the sort</span><br />
+<span class="irc-date">[17:34]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[17:34]</span> <span class="irc-black">&lt;olabini&gt; and the "how" is actually quite complicated</span><br />
+<span class="irc-date">[17:34]</span> <span class="irc-black">&lt;naeu&gt; sure :-)</span><br />
+<span class="irc-date">[17:34]</span> <span class="irc-black">&lt;olabini&gt; so I don't want that to be part of the word</span><br />
+<span class="irc-date">[17:34]</span> <span class="irc-black">&lt;naeu&gt; ah ok</span><br />
+<span class="irc-date">[17:34]</span> <span class="irc-black">&lt;naeu&gt; i don't mean the actual implementation</span><br />
+<span class="irc-date">[17:34]</span> <span class="irc-black">&lt;naeu&gt; but the concepts</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;naeu&gt; you can integrate two worlds by combining them, by attaching them, by joining them with a 'bridge', by destroying them and creating a new world for them both....</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;olabini&gt; eh.</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;naeu&gt; etc. :-)</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;olabini&gt; that doesn't make sense either</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;olabini&gt; because there isn't two worlds</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;olabini&gt;  there are two conceptual models</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;olabini&gt; and you're proxying the one onto the other</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;olabini&gt; but I don't like the word proxy</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;olabini&gt; it's to overloaded</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;naeu&gt; yeah, i agree with that</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;naeu&gt;  :-)</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;naeu&gt; i'll think of it more</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;olabini&gt; and one of the reasons I like "integrate" is because I'm talking about Java integration all the time</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;naeu&gt; yeah</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;naeu&gt; i'm siding with you :-)</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;naeu&gt; i just think it's worth discussion and thought :-)</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[17:37]</span> <span class="irc-black">&lt;olabini&gt; definitely</span><br />
+<span class="irc-date">[17:37]</span> <span class="irc-black">&lt;olabini&gt; right now I'm working on the implementation anyway</span><br />
+<span class="irc-date">[17:37]</span> <span class="irc-black">&lt;olabini&gt; and that name doesn't really matter</span><br />
+<span class="irc-date">[17:37]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[17:38]</span> <span class="irc-navy">* bguthrie (n=bguthrie@77.sub-75-199-219.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[17:38]</span> <span class="irc-black">&lt;olabini&gt; ok, I have a basic skeleton in place</span><br />
+<span class="irc-date">[17:39]</span> <span class="irc-black">&lt;olabini&gt; the hard part is how to handle the actual instantiation and dispatching</span><br />
+<span class="irc-date">[17:39]</span> <span class="irc-black">&lt;olabini&gt; will continue on that tomorrow, probably</span><br />
+<span class="irc-date">[17:39]</span> <span class="irc-green">* bguthrie (n=bguthrie@240.sub-75-196-49.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[17:39]</span> <span class="irc-black">&lt;olabini&gt; kinda tricky stuff, really</span><br />
+<span class="irc-date">[17:48]</span> <span class="irc-black">&lt;olabini&gt; actually</span><br />
+<span class="irc-date">[17:48]</span> <span class="irc-black">&lt;olabini&gt; I know something that might make this conceptually even easier</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;olabini&gt; integrate will return a proxy class to all the objects you give it</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;olabini&gt; then, when you create new instances of that proxy class you have to provide a real object to take care of invocations</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;olabini&gt;  .... hmm. no. I don't like that.</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;olabini&gt; scratch it</span><br />
+<span class="irc-date">[17:51]</span> <span class="irc-black">&lt;olabini&gt; I do want the connection to be slightly more seamless than that</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-green">* martido (n=martin@dslb-088-067-183-102.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-navy">* martido29 (n=martin@dslb-088-067-183-102.pools.arcor-ip.net) Quit (Read error: 54 (Connection reset by peer))</span><br />
+<span class="irc-date">[18:03]</span> <span class="irc-green">* martido (n=martin@dslb-088-067-183-102.pools.arcor-ip.net) has left #ioke</span><br />
+<span class="irc-date">[18:03]</span> <span class="irc-green">* martido (n=martin@dslb-088-067-183-102.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[18:07]</span> <span class="irc-green">* olabini (n=ola@c-d14fe155.1110-8-64736c13.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[18:28]</span> <span class="irc-navy">* bguthrie (n=bguthrie@240.sub-75-196-49.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-green">* martido (n=martin@dslb-088-067-183-102.pools.arcor-ip.net) has left #ioke</span><br />
+<span class="irc-date">[18:59]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-43.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[19:56]</span> <span class="irc-green">* caboom (n=caboom@77-221.static.ikomline.net) has joined #ioke</span><br />
+<span class="irc-date">[19:58]</span> <span class="irc-navy">* caboom_ (n=caboom@77-221.static.ikomline.net) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[22:08]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[22:19]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-43.vc-graz.ac.at) Quit (Read error: 145 (Connection timed out))</span><br />
+<span class="irc-date">[23:39]</span> <span class="irc-green">* bguthrie (n=bguthrie@195.sub-75-199-23.myvzw.com) has joined #ioke</span><br />

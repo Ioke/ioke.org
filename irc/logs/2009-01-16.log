@@ -1,0 +1,736 @@
+<span class="irc-date">[0:00]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[0:05]</span> <span class="irc-navy">* azoic (n=azoic@nat/sun/x-c27b56919ed2347b) Quit ("leaving")</span><br />
+<span class="irc-date">[0:23]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[0:31]</span> <span class="irc-green">* azoic (n=azoic@nat/sun/x-f49e1de5c767e09f) has joined #ioke</span><br />
+<span class="irc-date">[0:34]</span> <span class="irc-navy">* azoic (n=azoic@nat/sun/x-f49e1de5c767e09f) Quit (Client Quit)</span><br />
+<span class="irc-date">[0:35]</span> <span class="irc-green">* azoic (n=azoic@nat/sun/x-fc8f53cffb23e773) has joined #ioke</span><br />
+<span class="irc-date">[0:38]</span> <span class="irc-navy">* azoic (n=azoic@nat/sun/x-fc8f53cffb23e773) Quit (Client Quit)</span><br />
+<span class="irc-date">[0:38]</span> <span class="irc-green">* azoic (n=azoic@nat/sun/x-9193b4425784482b) has joined #ioke</span><br />
+<span class="irc-date">[0:54]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[1:21]</span> <span class="irc-green">* junebug (n=azoic@adsl-76-202-116-203.dsl.pltn13.sbcglobal.net) has joined #ioke</span><br />
+<span class="irc-date">[6:13]</span> <span class="irc-navy">* junebug (n=azoic@adsl-76-202-116-203.dsl.pltn13.sbcglobal.net) Quit ()</span><br />
+<span class="irc-date">[7:16]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[7:17]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[7:39]</span> <span class="irc-black">&lt;naeu&gt; morning</span><br />
+<span class="irc-date">[7:45]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[7:58]</span> <span class="irc-black">&lt;olabini&gt; morning</span><br />
+<span class="irc-date">[7:58]</span> <span class="irc-black">&lt;olabini&gt; you can run individual test files</span><br />
+<span class="irc-date">[7:58]</span> <span class="irc-black">&lt;olabini&gt; I generally build by doing</span><br />
+<span class="irc-date">[7:58]</span> <span class="irc-black">&lt;olabini&gt;   ant jar-notest</span><br />
+<span class="irc-date">[7:59]</span> <span class="irc-black">&lt;olabini&gt; and then:</span><br />
+<span class="irc-date">[7:59]</span> <span class="irc-black">&lt;olabini&gt;   ispec test/list_spec.ik</span><br />
+<span class="irc-date">[7:59]</span> <span class="irc-black">&lt;olabini&gt; for example</span><br />
+<span class="irc-date">[7:59]</span> <span class="irc-black">&lt;olabini&gt; if someone wants to add grepping on test descriptions to ispec, I would be all for it</span><br />
+<span class="irc-date">[7:59]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[8:29]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[8:30]</span> <span class="irc-black">&lt;naeu&gt; did you see our discussion about ispec not working as we would have expected?</span><br />
+<span class="irc-date">[8:30]</span> <span class="irc-black">&lt;naeu&gt; last night we wrote a spec that failed</span><br />
+<span class="irc-date">[8:30]</span> <span class="irc-black">&lt;naeu&gt; fixed the code to make it work</span><br />
+<span class="irc-date">[8:30]</span> <span class="irc-black">&lt;naeu&gt; and it no longer blew up</span><br />
+<span class="irc-date">[8:30]</span> <span class="irc-black">&lt;naeu&gt; but ispec failed on a condition flag</span><br />
+<span class="irc-date">[8:30]</span> <span class="irc-black">&lt;naeu&gt; yet it seemed to be the same condition we were checking for</span><br />
+<span class="irc-date">[8:34]</span> <span class="irc-black">&lt;naeu&gt; right, off to work now</span><br />
+<span class="irc-date">[8:34]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[8:36]</span> <span class="irc-black">&lt;olabini&gt; interesting</span><br />
+<span class="irc-date">[8:36]</span> <span class="irc-black">&lt;olabini&gt; couldn't find the full code to check</span><br />
+<span class="irc-date">[8:36]</span> <span class="irc-black">&lt;olabini&gt; you'll have to post me the error</span><br />
+<span class="irc-date">[9:03]</span> <span class="irc-green">* naeu (n=sam@j27119.upc-j.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:11]</span> <span class="irc-black">&lt;olabini&gt; &lt;olabini&gt; interesting                                                   [09:36]</span><br />
+<span class="irc-date">[9:11]</span> <span class="irc-black">&lt;olabini&gt; &lt;olabini&gt; couldn't find the full code to check</span><br />
+<span class="irc-date">[9:11]</span> <span class="irc-black">&lt;olabini&gt; &lt;olabini&gt; you'll have to post me the error</span><br />
+<span class="irc-date">[9:11]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[9:19]</span> <span class="irc-black">&lt;naeu&gt; olabini: maybe you can add the melwin/work branch as a remote</span><br />
+<span class="irc-date">[9:19]</span> <span class="irc-black">&lt;naeu&gt; the commits are in there</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-black">&lt;olabini&gt; maybe</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;CIA-45&gt; ioke: Ola Bini master * r375d4d0 / test/aspect_spec.ik : Add inactive aspect spec - <a href="http://tinyurl.com/9lghfq">http://tinyurl.com/9lghfq</a></span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;CIA-45&gt; ioke: Ola Bini master * r33676fa / docs/todo : Add my simple todo doc - <a href="http://tinyurl.com/8cv54c">http://tinyurl.com/8cv54c</a></span><br />
+<span class="irc-date">[9:24]</span> <span class="irc-black">&lt;olabini&gt; naeu: where is the spec?</span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-black">&lt;naeu&gt; i'll try and generate a diff</span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-black">&lt;olabini&gt; I've added it as a remote</span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-black">&lt;naeu&gt; ah ok</span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-black">&lt;olabini&gt; and checked out melwin/work</span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-black">&lt;olabini&gt; can't see the test though</span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-black">&lt;naeu&gt; great</span><br />
+<span class="irc-date">[9:26]</span> <span class="irc-black">&lt;naeu&gt; hmmm</span><br />
+<span class="irc-date">[9:26]</span> <span class="irc-black">&lt;naeu&gt; add spec to validate type of receiver of List#clear!</span><br />
+<span class="irc-date">[9:26]</span> <span class="irc-black">&lt;olabini&gt; damn. I don't understand the pull command</span><br />
+<span class="irc-date">[9:28]</span> <span class="irc-black">&lt;olabini&gt; ah, right. I just needed to pull</span><br />
+<span class="irc-date">[9:29]</span> <span class="irc-black">&lt;olabini&gt; well, the first diff is wrong, I can see that</span><br />
+<span class="irc-date">[9:29]</span> <span class="irc-black">&lt;naeu&gt; yeah, I avoided using pull for a while</span><br />
+<span class="irc-date">[9:29]</span> <span class="irc-black">&lt;naeu&gt; if you just use fetch and rebase|merge you can get the job done *and* understand what's going on ;-)</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;olabini&gt; ah, wait, now I understand</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;naeu&gt; pull is a bit magic at first</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;olabini&gt; hmm. I see a lot of changes without corresponding tests</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;olabini&gt; specifically for the &lt;=&gt;</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;naeu&gt; yeah, that's melwin playing around</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;naeu&gt; none of this is stuff to be merged in</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;naeu&gt; it's just us playing about</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;naeu&gt; does the List#clear! spec look ok?</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt; ok, naeu</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt; ... you are going to slap yourself on the forehead now</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;naeu&gt; oh, that's nothing new</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt; it shouldn't be:</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;olabini&gt;   x clear! should signal(Condition Error Type IncorrectType)</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;olabini&gt; it should be:</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;olabini&gt;   fn(x clear!) should signal(Condition Error Type IncorrectType)</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;naeu&gt; ahhhhhhh</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;olabini&gt; just like in RSpec you need to have a block around something that causes a condition</span><br />
+<span class="irc-date">[9:34]</span> <span class="irc-black">&lt;olabini&gt; I don't see any good way around that, sadly.</span><br />
+<span class="irc-date">[9:34]</span> <span class="irc-black">&lt;naeu&gt; but do I also need to call the block?</span><br />
+<span class="irc-date">[9:34]</span> <span class="irc-black">&lt;naeu&gt; fn(x clear!).call should...</span><br />
+<span class="irc-date">[9:34]</span> <span class="irc-black">&lt;naeu&gt; (ommitting the . of course)</span><br />
+<span class="irc-date">[9:34]</span> <span class="irc-black">&lt;olabini&gt; and don't worry, I won't merge anything until you say so</span><br />
+<span class="irc-date">[9:34]</span> <span class="irc-black">&lt;olabini&gt; nope, "signal" expects to get something it can send "call" too.</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;naeu&gt; ah ok :-)</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;olabini&gt; otherwise you would have the same problem</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;olabini&gt; the condition would be reported before Ioke has gotten to the "signal" part</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;naeu&gt; how does the implementation fix look?</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;olabini&gt; hmm?</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;naeu&gt; add safe conversion for IokeList#clear!</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;olabini&gt; yeah, that looks good</span><br />
+<span class="irc-date">[9:36]</span> <span class="irc-black">&lt;naeu&gt; did you see the helper function that Melwin created?</span><br />
+<span class="irc-date">[9:36]</span> <span class="irc-black">&lt;olabini&gt; yeah. that's good</span><br />
+<span class="irc-date">[9:36]</span> <span class="irc-black">&lt;naeu&gt; great</span><br />
+<span class="irc-date">[9:36]</span> <span class="irc-black">&lt;naeu&gt; well at least we're on the right track :-)</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;olabini&gt; absolutely.</span><br />
+<span class="irc-date">[9:38]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[9:38]</span> <span class="irc-black">&lt;olabini&gt; oh, btw, I got a mail from someone else who wanted to help out with this</span><br />
+<span class="irc-date">[9:38]</span> <span class="irc-black">&lt;olabini&gt; I pointed to you guys, and IRC</span><br />
+<span class="irc-date">[9:38]</span> <span class="irc-black">&lt;naeu&gt; great!</span><br />
+<span class="irc-date">[9:38]</span> <span class="irc-black">&lt;naeu&gt; the more people working on it and explaining it to each other, the better</span><br />
+<span class="irc-date">[9:40]</span> <span class="irc-black">&lt;olabini&gt; absolutely</span><br />
+<span class="irc-date">[9:41]</span> <span class="irc-black">&lt;olabini&gt; and you realize, when Ioke becomes the next big language, you guys will be the gurus that will have to help all the new people</span><br />
+<span class="irc-date">[9:41]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:41]</span> <span class="irc-black">&lt;olabini&gt; one of you could write the pickaxe!</span><br />
+<span class="irc-date">[9:41]</span> <span class="irc-black">&lt;olabini&gt; ={</span><br />
+<span class="irc-date">[9:41]</span> <span class="irc-black">&lt;olabini&gt; =P</span><br />
+<span class="irc-date">[9:52]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[9:53]</span> <span class="irc-black">&lt;naeu&gt; I am looking for material with which to write a book</span><br />
+<span class="irc-date">[9:53]</span> <span class="irc-black">&lt;naeu&gt; I want it to be on expressive programming</span><br />
+<span class="irc-date">[9:53]</span> <span class="irc-black">&lt;naeu&gt; and Ioke might be the perfect language to use for the examples</span><br />
+<span class="irc-date">[9:59]</span> <span class="irc-black">&lt;naeu&gt; I also discovered another thing I can't seem to do with the TM Bundle: match documentation strings that don't start on the same line as the function keyword (method, syntax, dmacro etc.)</span><br />
+<span class="irc-date">[9:59]</span> <span class="irc-black">&lt;olabini&gt; hmm, that sucks</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;olabini&gt; TM seems to be one of those shallow applications. loads of things are really easy to do, but when you hit the edges it's really hard to get around them</span><br />
+<span class="irc-date">[10:05]</span> <span class="irc-black">&lt;naeu&gt; exactly</span><br />
+<span class="irc-date">[10:05]</span> <span class="irc-black">&lt;naeu&gt; I've put *far* too much effort into ramming my head against various brick walls</span><br />
+<span class="irc-date">[10:06]</span> <span class="irc-black">&lt;naeu&gt; I can't seem to generate a nice symbol table either</span><br />
+<span class="irc-date">[10:09]</span> <span class="irc-black">&lt;olabini&gt; sucky</span><br />
+<span class="irc-date">[10:09]</span> <span class="irc-black">&lt;naeu&gt; it all boils down to the matchers</span><br />
+<span class="irc-date">[10:09]</span> <span class="irc-black">&lt;naeu&gt; they're just not that powerful</span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-black">&lt;naeu&gt; and when you have a syntactically rich language that's not so much of a problem as you have lots of hooks to play with</span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-black">&lt;naeu&gt; however, when you have a semantically rich, yet syntactically bare language (as Ioke is) then you run into trouble</span><br />
+<span class="irc-date">[11:17]</span> <span class="irc-black">&lt;olabini&gt; right. because TM seems to be more suited to the Ruby/Perl category of languages</span><br />
+<span class="irc-date">[11:18]</span> <span class="irc-green">* naeu_ (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;olabini&gt; &lt;olabini&gt; right. because TM seems to be more suited to the Ruby/Perl category</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;olabini&gt;           of languages                                                  [12:17]</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[11:25]</span> <span class="irc-navy">* naeu (n=sam@j27119.upc-j.chello.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[12:20]</span> <span class="irc-black">&lt;naeu_&gt; hmm, I really seem to have a dodgy connection</span><br />
+<span class="irc-date">[12:20]</span> <span class="irc-black">&lt;naeu_&gt; thanks for repeating yourself :-)</span><br />
+<span class="irc-date">[12:21]</span> <span class="irc-black">&lt;naeu_&gt; does emacs let you have access to a DOM/tree-style model of the code it's highlighting?</span><br />
+<span class="irc-date">[12:40]</span> <span class="irc-black">&lt;olabini&gt; nope. that's not how the regular stuff in emacs works</span><br />
+<span class="irc-date">[12:40]</span> <span class="irc-black">&lt;olabini&gt; I'll build a system for that for ioke later on</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;olabini&gt; once I get back working on my antlr-elisp backend</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;naeu_&gt; interesting :-)</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;naeu_&gt; I've just created a new branch on melwin</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;naeu_&gt; called melwin/premerge</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;olabini&gt; cool</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;naeu_&gt; just about to push a commit there that you might be interested in</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;olabini&gt; oh yeah?</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;naeu_&gt; i mean, it's nothing you haven't seen</span><br />
+<span class="irc-date">[12:42]</span> <span class="irc-black">&lt;naeu_&gt; but perhaps it's in a more palatable formate</span><br />
+<span class="irc-date">[12:44]</span> <span class="irc-black">&lt;naeu_&gt; if i can remember how to push a local branch to a remote</span><br />
+<span class="irc-date">[12:44]</span> <span class="irc-black">&lt;naeu_&gt; done</span><br />
+<span class="irc-date">[12:53]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[12:53]</span> <span class="irc-black">&lt;naeu_&gt; how does it look?</span><br />
+<span class="irc-date">[12:53]</span> <span class="irc-black">&lt;naeu_&gt; is there anything I could have done better with it?</span><br />
+<span class="irc-date">[12:56]</span> <span class="irc-black">&lt;olabini&gt; looks good</span><br />
+<span class="irc-date">[12:57]</span> <span class="irc-black">&lt;naeu_&gt;  cool</span><br />
+<span class="irc-date">[13:27]</span> <span class="irc-green">* naeu_ is now known as naeu</span><br />
+<span class="irc-date">[13:58]</span> <span class="irc-green">* junebug (n=azoic@adsl-76-202-116-203.dsl.pltn13.sbcglobal.net) has joined #ioke</span><br />
+<span class="irc-date">[13:58]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-black">&lt;melwin&gt; Meep.</span><br />
+<span class="irc-date">[14:25]</span> <span class="irc-black">&lt;melwin&gt; So what the heck is wrong with the should signal ispec....</span><br />
+<span class="irc-date">[14:28]</span> <span class="irc-black">&lt;olabini&gt; melwin: read the history for today</span><br />
+<span class="irc-date">[14:29]</span> <span class="irc-black">&lt;olabini&gt; look at around 10:30, gmt+1</span><br />
+<span class="irc-date">[14:30]</span> <span class="irc-green">* felipe__ (n=felipe@189-55-18-206-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[14:30]</span> <span class="irc-black">&lt;melwin&gt; Add inactive aspect spec?</span><br />
+<span class="irc-date">[14:31]</span> <span class="irc-black">&lt;melwin&gt; Or you mean in IRC?</span><br />
+<span class="irc-date">[14:31]</span> <span class="irc-green">* felipe__ is now known as felipero</span><br />
+<span class="irc-date">[14:31]</span> <span class="irc-black">&lt;olabini&gt; IRC</span><br />
+<span class="irc-date">[14:32]</span> <span class="irc-black">&lt;olabini&gt; felipero: hi there. melwin is one of the people you should talk to!</span><br />
+<span class="irc-date">[14:32]</span> <span class="irc-black">&lt;felipero&gt; hi all</span><br />
+<span class="irc-date">[14:32]</span> <span class="irc-black">&lt;melwin&gt; ?</span><br />
+<span class="irc-date">[14:33]</span> <span class="irc-black">&lt;melwin&gt; Doh...!</span><br />
+<span class="irc-date">[14:33]</span> <span class="irc-black">&lt;olabini&gt; melwin: felipero wanted to help out with the conversions</span><br />
+<span class="irc-date">[14:34]</span> <span class="irc-black">&lt;olabini&gt; melwin: hehe</span><br />
+<span class="irc-date">[14:34]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[14:34]</span> <span class="irc-black">&lt;melwin&gt; Obviously! I checked the other should signal places, but focused so much in the condition I didn't see the fn....</span><br />
+<span class="irc-date">[14:34]</span> <span class="irc-black">&lt;melwin&gt; olabini: Thanks, makes sense.</span><br />
+<span class="irc-date">[14:35]</span> <span class="irc-black">&lt;melwin&gt; felipero: Cool. You Java hacker?</span><br />
+<span class="irc-date">[14:35]</span> <span class="irc-black">&lt;felipero&gt; melvim: kind of</span><br />
+<span class="irc-date">[14:36]</span> <span class="irc-black">&lt;felipero&gt; melvim: but I'm new in Ioke</span><br />
+<span class="irc-date">[14:36]</span> <span class="irc-black">&lt;naeu&gt; melwin: hey</span><br />
+<span class="irc-date">[14:36]</span> <span class="irc-black">&lt;melwin&gt; Right - we'll, we've just started on this. We've been discussing how to do things... There is a fork of Ioke at github.com/melwin and in the work branch is some initial tests.</span><br />
+<span class="irc-date">[14:36]</span> <span class="irc-black">&lt;melwin&gt; naeu: Dude.</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-black">&lt;melwin&gt; We're idiots.</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-black">&lt;naeu&gt; i created a new branch</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-black">&lt;naeu&gt; premerge</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-black">&lt;melwin&gt; Nice!</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-black">&lt;felipero&gt; melvim: I've looking at the source code and studing ANTLR to understand better</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-black">&lt;naeu&gt; hey felipero :-)</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-black">&lt;felipero&gt; hey naeu...</span><br />
+<span class="irc-date">[14:38]</span> <span class="irc-black">&lt;melwin&gt; felipero: Good...! You might want to check the IRC logs for yesterday evening - we had some discussions about this as well then.</span><br />
+<span class="irc-date">[14:38]</span> <span class="irc-black">&lt;naeu&gt; yep, and then you can really see how slow I am with all of this, so you don't need to feel bad if you don't understand certain things :-)</span><br />
+<span class="irc-date">[14:42]</span> <span class="irc-black">&lt;felipero&gt; naeu: great... we're two. =)</span><br />
+<span class="irc-date">[14:42]</span> <span class="irc-brick">* olabini is working on a JRuby on Rails social networking site today. so not totally Ioke-focused, sadly.</span><br />
+<span class="irc-date">[14:42]</span> <span class="irc-black">&lt;felipero&gt; melvim: how could I check the logs from IRC? any quick command? (its been a long time since I used IRC in university. =))</span><br />
+<span class="irc-date">[14:43]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://ioke.org/irc/logs">http://ioke.org/irc/logs</a></span><br />
+<span class="irc-date">[14:48]</span> <span class="irc-black">&lt;felipero&gt; thanks... naeu</span><br />
+<span class="irc-date">[14:48]</span> <span class="irc-black">&lt;naeu&gt; felipero: you're very welcome</span><br />
+<span class="irc-date">[14:48]</span> <span class="irc-black">&lt;naeu&gt; melwin: did you get chance to checkout melwin/premerge?</span><br />
+<span class="irc-date">[14:48]</span> <span class="irc-black">&lt;melwin&gt; On phone...</span><br />
+<span class="irc-date">[14:49]</span> <span class="irc-black">&lt;naeu&gt; don't break it</span><br />
+<span class="irc-date">[14:50]</span> <span class="irc-black">&lt;melwin&gt; Hmmm... I have an idea I want to try out...</span><br />
+<span class="irc-date">[14:50]</span> <span class="irc-black">&lt;naeu&gt; what's your plan batman?</span><br />
+<span class="irc-date">[14:54]</span> <span class="irc-green">* feliperod (n=felipe@189-55-18-206-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[14:54]</span> <span class="irc-green">* felipero (n=felipe@189-55-18-206-nd.cpe.vivax.com.br) has left #ioke</span><br />
+<span class="irc-date">[14:55]</span> <span class="irc-black">&lt;melwin&gt; I would like to find a way to get reduce duplication by having better utility methods for conversion, that in turn call IokeObject.convertTo</span><br />
+<span class="irc-date">[14:55]</span> <span class="irc-black">&lt;naeu&gt; ok, makes sense</span><br />
+<span class="irc-date">[14:56]</span> <span class="irc-navy">* feliperod (n=felipe@189-55-18-206-nd.cpe.vivax.com.br) Quit (Client Quit)</span><br />
+<span class="irc-date">[14:56]</span> <span class="irc-black">&lt;naeu&gt; so move IokeList.convertTo to IokeObject.convertTo</span><br />
+<span class="irc-date">[14:56]</span> <span class="irc-green">* feliperod (n=felipe@189-55-18-206-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-navy">* feliperod (n=felipe@189-55-18-206-nd.cpe.vivax.com.br) Quit (Client Quit)</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-green">* felipero (n=felipe@189-55-18-206-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-navy">* felipero (n=felipe@189-55-18-206-nd.cpe.vivax.com.br) Quit (Client Quit)</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-green">* felipe__ (n=felipe@189-55-18-206-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[14:58]</span> <span class="irc-black">&lt;melwin&gt; Not quite what I had in mind... I was thinking about something like: runtime.list.convertTo(ob, signal, message)...</span><br />
+<span class="irc-date">[14:58]</span> <span class="irc-black">&lt;olabini&gt; interesting idea</span><br />
+<span class="irc-date">[14:58]</span> <span class="irc-black">&lt;melwin&gt; Hmmm....</span><br />
+<span class="irc-date">[14:59]</span> <span class="irc-green">* felipe__ is now known as felipero</span><br />
+<span class="irc-date">[15:00]</span> <span class="irc-black">&lt;melwin&gt; Or maybe the current IokeList.convertTo is good enough of a helper...</span><br />
+<span class="irc-date">[15:01]</span> <span class="irc-black">&lt;melwin&gt; Actually, I think we should try to start with what we've currently got and do the whole file. Before then we might not see exactly what would be better.</span><br />
+<span class="irc-date">[15:01]</span> <span class="irc-black">&lt;melwin&gt; What say you?</span><br />
+<span class="irc-date">[15:02]</span> <span class="irc-black">&lt;naeu&gt; well I must admit at this stage I couldn't really give any advice ;-)</span><br />
+<span class="irc-date">[15:02]</span> <span class="irc-black">&lt;melwin&gt; naeu: You think you could take care of IokeList?</span><br />
+<span class="irc-date">[15:02]</span> <span class="irc-black">&lt;naeu&gt; I could give it a real good stab :-)</span><br />
+<span class="irc-date">[15:02]</span> <span class="irc-black">&lt;melwin&gt; Then I could start on another class, or help felipero get started.</span><br />
+<span class="irc-date">[15:03]</span> <span class="irc-black">&lt;melwin&gt; I prefer making commits with both tests and functionality in one... What's your preference?</span><br />
+<span class="irc-date">[15:03]</span> <span class="irc-black">&lt;naeu&gt; have a look at melwin/premerge ;-)</span><br />
+<span class="irc-date">[15:06]</span> <span class="irc-navy">* junebug (n=azoic@adsl-76-202-116-203.dsl.pltn13.sbcglobal.net) Quit ()</span><br />
+<span class="irc-date">[15:06]</span> <span class="irc-black">&lt;melwin&gt; Nice!</span><br />
+<span class="irc-date">[15:07]</span> <span class="irc-black">&lt;melwin&gt; Perfect.</span><br />
+<span class="irc-date">[15:08]</span> <span class="irc-black">&lt;naeu&gt; so yep, I totally subscribe to committing both tests and functionality in one</span><br />
+<span class="irc-date">[15:08]</span> <span class="irc-black">&lt;felipero&gt; me too...</span><br />
+<span class="irc-date">[15:08]</span> <span class="irc-black">&lt;naeu&gt; I also think that at this early stage it might be best to keep things in very small chunks</span><br />
+<span class="irc-date">[15:08]</span> <span class="irc-black">&lt;melwin&gt; Good good.</span><br />
+<span class="irc-date">[15:08]</span> <span class="irc-black">&lt;naeu&gt; so Ola can have a good look at the first few commits</span><br />
+<span class="irc-date">[15:09]</span> <span class="irc-black">&lt;melwin&gt; Yes.</span><br />
+<span class="irc-date">[15:09]</span> <span class="irc-black">&lt;melwin&gt; felipero: You looked at the first test commit?</span><br />
+<span class="irc-date">[15:11]</span> <span class="irc-black">&lt;naeu&gt; felipero: <a href="http://github.com/melwin/ioke/commit/080a8a370aed87065b2213e35594d6104a5f2a3b">http://github.com/melwin/ioke/commit/080a8a370aed87065b2213e35594d6104a5f2a3b</a></span><br />
+<span class="irc-date">[15:13]</span> <span class="irc-black">&lt;melwin&gt; naeu: Ok, you take List and I'll find another object. Let's share what we do so we can see if there are things we could improve, of if we find patterns that are nice, etc.</span><br />
+<span class="irc-date">[15:15]</span> <span class="irc-black">&lt;naeu&gt; indeed</span><br />
+<span class="irc-date">[15:15]</span> <span class="irc-black">&lt;naeu&gt; although i need to do another hour or so of actual work :-(</span><br />
+<span class="irc-date">[15:15]</span> <span class="irc-black">&lt;melwin&gt; Sure.</span><br />
+<span class="irc-date">[15:16]</span> <span class="irc-black">&lt;naeu&gt; are you going to head down to Amsterdam to hear Ola talk Ioke at Amsterdam.rb on Feb 23rd?</span><br />
+<span class="irc-date">[15:18]</span> <span class="irc-black">&lt;melwin&gt; Not me, no... I'm in Turkey that week for an internal "code camp"...</span><br />
+<span class="irc-date">[15:18]</span> <span class="irc-black">&lt;naeu&gt; sounds fun</span><br />
+<span class="irc-date">[15:18]</span> <span class="irc-black">&lt;melwin&gt; Not as camp as it sounds... :P</span><br />
+<span class="irc-date">[15:18]</span> <span class="irc-black">&lt;naeu&gt; ;-)</span><br />
+<span class="irc-date">[15:19]</span> <span class="irc-black">&lt;melwin&gt; Sometimes I kill myself... ;P</span><br />
+<span class="irc-date">[15:19]</span> <span class="irc-black">&lt;felipero&gt; not yet...</span><br />
+<span class="irc-date">[15:20]</span> <span class="irc-black">&lt;naeu&gt; it's that dark, dark swedish winter isn't it...</span><br />
+<span class="irc-date">[15:20]</span> <span class="irc-black">&lt;felipero&gt; melvim: I'll look at that after lunch... catch you by logs later</span><br />
+<span class="irc-date">[15:21]</span> <span class="irc-black">&lt;melwin&gt; Ok...!</span><br />
+<span class="irc-date">[15:21]</span> <span class="irc-brick">* melwin thinks felipero doesn't have nickcomplete in the IRC client.</span><br />
+<span class="irc-date">[15:22]</span> <span class="irc-black">&lt;naeu&gt; melvim: nickcompletion is for suckers</span><br />
+<span class="irc-date">[15:23]</span> <span class="irc-black">&lt;melwin&gt; Ha... ha... ha...</span><br />
+<span class="irc-date">[15:23]</span> <span class="irc-black">&lt;naeu&gt; Ho... Ho... Ho...</span><br />
+<span class="irc-date">[15:23]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[15:28]</span> <span class="irc-black">&lt;felipero&gt; what is nickcomplete?</span><br />
+<span class="irc-date">[15:28]</span> <span class="irc-black">&lt;felipero&gt; btw I'm using xchat and before that was using irssi</span><br />
+<span class="irc-date">[15:28]</span> <span class="irc-black">&lt;naeu&gt; in my IRC client, I can tab-complete names</span><br />
+<span class="irc-date">[15:29]</span> <span class="irc-black">&lt;felipero&gt; ok.. just realized.. mine too. =)</span><br />
+<span class="irc-date">[15:29]</span> <span class="irc-black">&lt;naeu&gt; f-tab completes to felipero</span><br />
+<span class="irc-date">[15:29]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[15:29]</span> <span class="irc-black">&lt;naeu&gt; and m-tab completes to melvim</span><br />
+<span class="irc-date">[15:29]</span> <span class="irc-black">&lt;felipero&gt; nice...</span><br />
+<span class="irc-date">[15:30]</span> <span class="irc-black">&lt;naeu&gt; yeah, it does auto typos just to annoy melvim ;-)</span><br />
+<span class="irc-date">[15:30]</span> <span class="irc-red">[naeu VERSION]</span><br />
+<span class="irc-date">[15:31]</span> <span class="irc-brick">* felipero is going to lunch... be back in 1 hour</span><br />
+<span class="irc-date">[15:31]</span> <span class="irc-black">&lt;naeu&gt; enjoy :-)</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-black">&lt;melwin&gt; naeu: Funny.</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-black">&lt;melwin&gt; Again, the comedian.</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-black">&lt;naeu&gt; I have to do something to amuse myself over here ;-)</span><br />
+<span class="irc-date">[15:33]</span> <span class="irc-black">&lt;melwin&gt; Don't like argument type checking? :)</span><br />
+<span class="irc-date">[15:33]</span> <span class="irc-black">&lt;naeu&gt; that's nice because I'm working on that with people</span><br />
+<span class="irc-date">[15:33]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[15:34]</span> <span class="irc-black">&lt;naeu&gt; at the moment I'm super lonely at work</span><br />
+<span class="irc-date">[15:34]</span> <span class="irc-black">&lt;naeu&gt; I'm just not a solo guy</span><br />
+<span class="irc-date">[15:35]</span> <span class="irc-black">&lt;melwin&gt; You were doing some RoR web app, eh?</span><br />
+<span class="irc-date">[15:35]</span> <span class="irc-black">&lt;naeu&gt; yeah</span><br />
+<span class="irc-date">[15:35]</span> <span class="irc-black">&lt;melwin&gt; Some social something or other?</span><br />
+<span class="irc-date">[15:35]</span> <span class="irc-black">&lt;naeu&gt; although i don't have much experience with front end HTML form stuff</span><br />
+<span class="irc-date">[15:36]</span> <span class="irc-black">&lt;naeu&gt; I'm more an abstract pie-in-the-sky man ;-)</span><br />
+<span class="irc-date">[15:36]</span> <span class="irc-black">&lt;melwin&gt; :) You doing design as well?</span><br />
+<span class="irc-date">[15:36]</span> <span class="irc-black">&lt;naeu&gt; no</span><br />
+<span class="irc-date">[15:36]</span> <span class="irc-black">&lt;melwin&gt; I mean, for the site you're building?</span><br />
+<span class="irc-date">[15:37]</span> <span class="irc-black">&lt;naeu&gt; i'm currently trying to retro-fit some tests to a really rather complicated form</span><br />
+<span class="irc-date">[15:37]</span> <span class="irc-black">&lt;naeu&gt; with nested models and other hideousness</span><br />
+<span class="irc-date">[15:38]</span> <span class="irc-black">&lt;naeu&gt; it's more that I much prefer working with people</span><br />
+<span class="irc-date">[15:38]</span> <span class="irc-black">&lt;naeu&gt; pair-programming if possible</span><br />
+<span class="irc-date">[15:39]</span> <span class="irc-black">&lt;melwin&gt; Ugh...</span><br />
+<span class="irc-date">[15:39]</span> <span class="irc-black">&lt;melwin&gt; I've never done any pp for anything substantial.</span><br />
+<span class="irc-date">[15:39]</span> <span class="irc-black">&lt;melwin&gt; You like it?</span><br />
+<span class="irc-date">[15:39]</span> <span class="irc-black">&lt;naeu&gt; love it</span><br />
+<span class="irc-date">[15:40]</span> <span class="irc-black">&lt;melwin&gt; Cool.</span><br />
+<span class="irc-date">[15:51]</span> <span class="irc-black">&lt;naeu&gt; haha, most amusing: <a href="http://blog.mccann.be/wp-content/uploads/2008/12/thank_01.jpg">http://blog.mccann.be/wp-content/uploads/2008/12/thank_01.jpg</a></span><br />
+<span class="irc-date">[15:53]</span> <span class="irc-black">&lt;naeu&gt; and: <a href="http://blog.mccann.be/wp-content/uploads/2008/12/thank_02.jpg">http://blog.mccann.be/wp-content/uploads/2008/12/thank_02.jpg</a></span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-brick">* felipero is back</span><br />
+<span class="irc-date">[16:16]</span> <span class="irc-black">&lt;felipero&gt; melwin, so, are going to do a remote pair programing for this?</span><br />
+<span class="irc-date">[16:16]</span> <span class="irc-black">&lt;felipero&gt; :)</span><br />
+<span class="irc-date">[16:17]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit ()</span><br />
+<span class="irc-date">[16:25]</span> <span class="irc-black">&lt;felipero&gt; melwin, will I become as a colaborator for your fork or should I work on my own fork?</span><br />
+<span class="irc-date">[16:26]</span> <span class="irc-green">* felipe__ (n=felipe@189-55-18-206-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[16:26]</span> <span class="irc-navy">* felipe__ (n=felipe@189-55-18-206-nd.cpe.vivax.com.br) Quit (Client Quit)</span><br />
+<span class="irc-date">[16:28]</span> <span class="irc-black">&lt;olabini&gt; hello again, peeps</span><br />
+<span class="irc-date">[16:30]</span> <span class="irc-brick">* felipero is looking at the fisrt test commit</span><br />
+<span class="irc-date">[16:36]</span> <span class="irc-black">&lt;melwin&gt; felipero: I suggest starting with your own fork and then we can add you as collaborator when we see how we can work together.</span><br />
+<span class="irc-date">[16:37]</span> <span class="irc-black">&lt;melwin&gt; naeu and I can merge your commits so that Ola has a single nice feature branch to pull later.</span><br />
+<span class="irc-date">[16:40]</span> <span class="irc-green">* naeu (n=sam@j27119.upc-j.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[16:41]</span> <span class="irc-black">&lt;naeu&gt; olabini: I can't see any specs for List#at with a Range as a param</span><br />
+<span class="irc-date">[16:41]</span> <span class="irc-black">&lt;CIA-45&gt; ioke: Ola Bini master * r93c8c02 / (3 files in 2 dirs): FileSystem.File is now a subclass of IokeIO, as might be expected ... - <a href="http://tinyurl.com/8y3d5a">http://tinyurl.com/8y3d5a</a></span><br />
+<span class="irc-date">[16:43]</span> <span class="irc-black">&lt;felipero&gt; melwin, ok..</span><br />
+<span class="irc-date">[16:43]</span> <span class="irc-black">&lt;olabini&gt; naeu: well, since List#[] and List#at is the same method, the tests are at List#[]</span><br />
+<span class="irc-date">[16:44]</span> <span class="irc-black">&lt;naeu&gt; olabini: ah: obj.aliasMethod("at", "[]", null, null);</span><br />
+<span class="irc-date">[16:44]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[16:44]</span> <span class="irc-black">&lt;melwin&gt; olabini: Quickie: methods implemented in Java don't handle default values, eh?</span><br />
+<span class="irc-date">[16:45]</span> <span class="irc-black">&lt;olabini&gt; melwin: well, they handle it individually ... so to speak</span><br />
+<span class="irc-date">[16:45]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[16:45]</span> <span class="irc-black">&lt;melwin&gt; Hehe... Ok...</span><br />
+<span class="irc-date">[16:48]</span> <span class="irc-black">&lt;naeu&gt; haha, Java is like a baby or a really old person</span><br />
+<span class="irc-date">[16:48]</span> <span class="irc-black">&lt;naeu&gt; you have to keep repeating it the same old stuff</span><br />
+<span class="irc-date">[16:48]</span> <span class="irc-black">&lt;naeu&gt; relentlessly</span><br />
+<span class="irc-date">[16:50]</span> <span class="irc-black">&lt;naeu&gt; well, another conversion error squashed :-)</span><br />
+<span class="irc-date">[16:53]</span> <span class="irc-black">&lt;melwin&gt; Man, I have something brewing here...</span><br />
+<span class="irc-date">[16:53]</span> <span class="irc-black">&lt;melwin&gt; Ola is going to kill me.</span><br />
+<span class="irc-date">[16:55]</span> <span class="irc-black">&lt;naeu&gt; ;-)</span><br />
+<span class="irc-date">[16:55]</span> <span class="irc-black">&lt;naeu&gt; he'll definitely kill you if you're not working test-first</span><br />
+<span class="irc-date">[16:55]</span> <span class="irc-black">&lt;naeu&gt; I hear he's a ninja with his hat</span><br />
+<span class="irc-date">[16:56]</span> <span class="irc-black">&lt;naeu&gt; olabini: when you get chance, it would be great to get some feedback for my latest commit to melwin/premerge</span><br />
+<span class="irc-date">[16:56]</span> <span class="irc-black">&lt;naeu&gt; and if you don't have any complaints, then from my perspective they're ready for merging to master</span><br />
+<span class="irc-date">[16:58]</span> <span class="irc-black">&lt;olabini&gt; ok, cool. will take a look</span><br />
+<span class="irc-date">[16:58]</span> <span class="irc-black">&lt;olabini&gt; melwin: yeah, you have to be careful. you're in the same country and all</span><br />
+<span class="irc-date">[17:01]</span> <span class="irc-black">&lt;naeu&gt; yeah, I also hear that Ola likes to over feed his victims with weird tubes of paste: <a href="http://skitch.com/samaaron/bbcpq/iphoto">http://skitch.com/samaaron/bbcpq/iphoto</a></span><br />
+<span class="irc-date">[17:13]</span> <span class="irc-black">&lt;melwin&gt; olabini: How much do you dislike something like this: <a href="http://github.com/melwin/ioke/commit/3ab01d74003ee4755e239c832fc2a22b5807429b">http://github.com/melwin/ioke/commit/3ab01d74003ee4755e239c832fc2a22b5807429b</a></span><br />
+<span class="irc-date">[17:13]</span> <span class="irc-black">&lt;melwin&gt; It simplifies things alot in the actual methods... And it's optional if you want to manually do checking.</span><br />
+<span class="irc-date">[17:13]</span> <span class="irc-black">&lt;melwin&gt; Just an idea... I gotta cook some food now.</span><br />
+<span class="irc-date">[17:14]</span> <span class="irc-black">&lt;naeu&gt; melwin: are you going to use weird tubes of paste?</span><br />
+<span class="irc-date">[17:16]</span> <span class="irc-black">&lt;olabini&gt; melwin: no, I don't really like that. it keeps the responsibilities to separated. the Java method code is involved enough as it is, and I feel that it would be hard to give reasonable defaults by doing that</span><br />
+<span class="irc-date">[17:17]</span> <span class="irc-black">&lt;olabini&gt; and also, DefaultArgumentsDefinition is used for every Ioke method call.</span><br />
+<span class="irc-date">[17:17]</span> <span class="irc-black">&lt;olabini&gt; so it seems as if that wouldn't be the right place for Java-only info</span><br />
+<span class="irc-date">[17:17]</span> <span class="irc-black">&lt;naeu&gt; olabini: where would the best place to fix conversion issues in List#inspect be?</span><br />
+<span class="irc-date">[17:18]</span> <span class="irc-black">&lt;naeu&gt; the conversion happens in IokeList.getList</span><br />
+<span class="irc-date">[17:19]</span> <span class="irc-black">&lt;naeu&gt; but that doesn't have access to the message and context</span><br />
+<span class="irc-date">[17:19]</span> <span class="irc-black">&lt;naeu&gt; so I could either pass them on down, or handle things in the IokeObject#inspect override</span><br />
+<span class="irc-date">[17:20]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[17:20]</span> <span class="irc-black">&lt;olabini&gt; interesting question</span><br />
+<span class="irc-date">[17:20]</span> <span class="irc-black">&lt;olabini&gt; in the Java method presumably?</span><br />
+<span class="irc-date">[17:20]</span> <span class="irc-black">&lt;olabini&gt; the one that actually calls getList</span><br />
+<span class="irc-date">[17:21]</span> <span class="irc-black">&lt;olabini&gt; there are two alternatives. either have a precondition that getList will not be called with something that is not an IokeList</span><br />
+<span class="irc-date">[17:21]</span> <span class="irc-black">&lt;olabini&gt; or implement another getList that checks first</span><br />
+<span class="irc-date">[17:22]</span> <span class="irc-black">&lt;naeu&gt; another implementatino of getList would have to take the message and context as params</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-black">&lt;naeu&gt; but that might be a great place to put it</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-black">&lt;melwin&gt; naeu: Why not use the IokeList.convertTo helper?</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-black">&lt;naeu&gt; sure</span><br />
+<span class="irc-date">[17:24]</span> <span class="irc-black">&lt;melwin&gt; olabini: No, no, I agree - but I meant as a general idea... To try to simplify it as much as possible...?</span><br />
+<span class="irc-date">[17:25]</span> <span class="irc-black">&lt;naeu&gt; olabini: so, something like the following: <a href="http://gist.github.com/48020">http://gist.github.com/48020</a></span><br />
+<span class="irc-date">[17:28]</span> <span class="irc-black">&lt;olabini&gt; naeu: yeah, looks good</span><br />
+<span class="irc-date">[17:29]</span> <span class="irc-black">&lt;naeu&gt; ok, i'll add it in :-)</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;melwin&gt; If adding the check in a more generic way we could save hundreds of code lines and avoid repeating ourselves. :]</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;olabini&gt; melwin: yeah, that's true. it's just that it need to be added in the right place</span><br />
+<span class="irc-date">[17:38]</span> <span class="irc-black">&lt;melwin&gt; Yes - sure. But you think worth pursuing that kind of declarative type definition at all or should I just forget about it?</span><br />
+<span class="irc-date">[17:40]</span> <span class="irc-black">&lt;olabini&gt; hmm. not sure</span><br />
+<span class="irc-date">[17:40]</span> <span class="irc-black">&lt;olabini&gt; at this point, I think there are other areas to focus on.</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;melwin&gt; Ok, sure.</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;olabini&gt; cute. my parser combinator library works</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;CIA-45&gt; ioke: Ola Bini master * r2a09551 / (docs/todo examples/parsers/parser_comb.ik): Finalize the matching part of the parser combinator library. YAY. - <a href="http://tinyurl.com/9v7laq">http://tinyurl.com/9v7laq</a></span><br />
+<span class="irc-date">[17:42]</span> <span class="irc-black">&lt;naeu&gt; hey great</span><br />
+<span class="irc-date">[17:42]</span> <span class="irc-black">&lt;melwin&gt; To simplify conversion, I was thinking about adding a converterMethod name to the IokeData subclasses - so that if there is a well known conversion method to convert to a certain type, the IokeData knows about it and we can do things like: runtime.decimal.convertToThis(ob, signal, message, context)... What say you?</span><br />
+<span class="irc-date">[17:46]</span> <span class="irc-black">&lt;melwin&gt; That would allow us to have a single implementation of the convertToThis method, which would also reduce amount of (repeated) code.</span><br />
+<span class="irc-date">[17:46]</span> <span class="irc-black">&lt;olabini&gt; right, that's good</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;olabini&gt; definitely nice</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;melwin&gt; But I can create a suggestion for you to look at.</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;olabini&gt; but it should be possible to override</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;melwin&gt; Of course.</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;olabini&gt; some places will want to use different conversion methods etc</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;olabini&gt; but that should make it easier</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;olabini&gt; ok. great work!</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;olabini&gt; this weekend is going to be aspect-weekend, I think</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;olabini&gt; I've been avoiding aspects for a while, but I think it's finally time to bite the bullet.</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;naeu&gt; well, good luck with that</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;olabini&gt; ok, naeu, melwin, which commits were finished to pull?</span><br />
+<span class="irc-date">[17:50]</span> <span class="irc-black">&lt;melwin&gt; olabini: None... Wait with pulling.</span><br />
+<span class="irc-date">[17:50]</span> <span class="irc-black">&lt;olabini&gt; ah, ok</span><br />
+<span class="irc-date">[17:50]</span> <span class="irc-black">&lt;naeu&gt; yeah, I'd wait</span><br />
+<span class="irc-date">[17:50]</span> <span class="irc-black">&lt;olabini&gt; I thought naeu said that a few were finished</span><br />
+<span class="irc-date">[17:50]</span> <span class="irc-black">&lt;naeu&gt; a few of mine do what you'd like them too</span><br />
+<span class="irc-date">[17:50]</span> <span class="irc-black">&lt;naeu&gt; but I'm currently trying to figure out where's best to put these helper methods</span><br />
+<span class="irc-date">[17:50]</span> <span class="irc-black">&lt;melwin&gt; Well, if you're happy to pull now and then changing again when I implement the helpers.</span><br />
+<span class="irc-date">[17:51]</span> <span class="irc-black">&lt;melwin&gt; naeu: I have a plan, which I've tested in part in the commit in the crazy branch... Check convertToThis...</span><br />
+<span class="irc-date">[17:52]</span> <span class="irc-black">&lt;melwin&gt; If we add that and let IokeData subtypes specify any converter methods, then we don't need helper methods for each IokeData sub-type (like IokeList).</span><br />
+<span class="irc-date">[17:53]</span> <span class="irc-black">&lt;naeu&gt; convertToThis looks good</span><br />
+<span class="irc-date">[17:53]</span> <span class="irc-black">&lt;naeu&gt; although I don't understand what the this variable will be</span><br />
+<span class="irc-date">[17:54]</span> <span class="irc-black">&lt;naeu&gt; in the list case will it be context.runtime.list</span><br />
+<span class="irc-date">[17:54]</span> <span class="irc-black">&lt;melwin&gt; It's used as this, for instance, to convert to IokeList: context.runtime.list.convertToThis(...)</span><br />
+<span class="irc-date">[17:54]</span> <span class="irc-black">&lt;melwin&gt; Exactly!</span><br />
+<span class="irc-date">[17:54]</span> <span class="irc-black">&lt;naeu&gt; so is convertToThis something to put on IokeObject?</span><br />
+<span class="irc-date">[17:55]</span> <span class="irc-black">&lt;naeu&gt; being all generic and everything</span><br />
+<span class="irc-date">[17:55]</span> <span class="irc-black">&lt;olabini&gt; I am in no direct hurry to pull right now. I can wait</span><br />
+<span class="irc-date">[17:55]</span> <span class="irc-navy">* olabini (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit ("restarting Emacs - a once every 6 months event ...")</span><br />
+<span class="irc-date">[17:55]</span> <span class="irc-black">&lt;melwin&gt; I think that would be better...</span><br />
+<span class="irc-date">[17:55]</span> <span class="irc-black">&lt;melwin&gt; naeu: Exactly... I'm doing it now... Or you want to make a stab?</span><br />
+<span class="irc-date">[17:55]</span> <span class="irc-black">&lt;naeu&gt; it would be good to get the olabini-thumbs up</span><br />
+<span class="irc-date">[17:56]</span> <span class="irc-black">&lt;melwin&gt; naeu: He said he approved.</span><br />
+<span class="irc-date">[17:56]</span> <span class="irc-black">&lt;naeu&gt; great</span><br />
+<span class="irc-date">[17:56]</span> <span class="irc-black">&lt;melwin&gt; But he will of course see it when implemented as well.</span><br />
+<span class="irc-date">[17:56]</span> <span class="irc-black">&lt;naeu&gt; well it's probably best if you finish it</span><br />
+<span class="irc-date">[17:56]</span> <span class="irc-black">&lt;naeu&gt; and pop it in as the first commit in a new branch</span><br />
+<span class="irc-date">[17:56]</span> <span class="irc-black">&lt;melwin&gt; What do you think of the name...? convertToThisKind...?</span><br />
+<span class="irc-date">[17:56]</span> <span class="irc-black">&lt;naeu&gt; (yet another!)</span><br />
+<span class="irc-date">[17:56]</span> <span class="irc-black">&lt;naeu&gt; yep, that's already much better</span><br />
+<span class="irc-date">[17:57]</span> <span class="irc-green">* olabini (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[17:57]</span> <span class="irc-green">* IokeHurricane sets mode +o olabini </span><br />
+<span class="irc-date">[17:57]</span> <span class="irc-black">&lt;olabini&gt; hello again. did I miss much?</span><br />
+<span class="irc-date">[17:58]</span> <span class="irc-black">&lt;naeu&gt; [18:55] melwin: I think that would be better...</span><br />
+<span class="irc-date">[17:58]</span> <span class="irc-black">&lt;naeu&gt; [18:55] melwin: naeu: Exactly... I'm doing it now... Or you want to make a stab?</span><br />
+<span class="irc-date">[17:58]</span> <span class="irc-black">&lt;naeu&gt; [18:55] naeu: it would be good to get the olabini-thumbs up</span><br />
+<span class="irc-date">[17:58]</span> <span class="irc-black">&lt;naeu&gt; [18:56] melwin: naeu: He said he approved.</span><br />
+<span class="irc-date">[17:58]</span> <span class="irc-black">&lt;naeu&gt; [18:56] naeu: great</span><br />
+<span class="irc-date">[17:58]</span> <span class="irc-black">&lt;naeu&gt; [18:56] melwin: But he will of course see it when implemented as well.</span><br />
+<span class="irc-date">[17:58]</span> <span class="irc-black">&lt;naeu&gt; [18:56] naeu: well it's probably best if you finish it</span><br />
+<span class="irc-date">[17:58]</span> <span class="irc-black">&lt;naeu&gt; [18:56] naeu: and pop it in as the first commit in a new branch</span><br />
+<span class="irc-date">[17:58]</span> <span class="irc-black">&lt;naeu&gt; [18:56] melwin: What do you think of the name...? convertToThisKind...?</span><br />
+<span class="irc-date">[17:58]</span> <span class="irc-black">&lt;naeu&gt; [18:56] naeu: (yet another!)</span><br />
+<span class="irc-date">[17:58]</span> <span class="irc-black">&lt;naeu&gt; [18:56] naeu: yep, that's already much better</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;olabini&gt; k</span><br />
+<span class="irc-date">[18:00]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[18:00]</span> <span class="irc-black">&lt;naeu&gt; melwin: this time we can create some mergeable commits ;-)</span><br />
+<span class="irc-date">[18:01]</span> <span class="irc-black">&lt;melwin&gt; Hehehe... You just want your code in mainline! ;P</span><br />
+<span class="irc-date">[18:01]</span> <span class="irc-black">&lt;naeu&gt; no, i just want to be productive :-)</span><br />
+<span class="irc-date">[18:03]</span> <span class="irc-black">&lt;melwin&gt; IokeData.getConvertToThisKindMethodName() ?</span><br />
+<span class="irc-date">[18:03]</span> <span class="irc-black">&lt;melwin&gt; A bit long, no?</span><br />
+<span class="irc-date">[18:14]</span> <span class="irc-black">&lt;melwin&gt; naeu?</span><br />
+<span class="irc-date">[18:15]</span> <span class="irc-green">* naeu_ (n=sam@j27119.upc-j.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:15]</span> <span class="irc-black">&lt;melwin&gt; naeu?</span><br />
+<span class="irc-date">[18:16]</span> <span class="irc-black">&lt;melwin&gt; GitHub slow...</span><br />
+<span class="irc-date">[18:17]</span> <span class="irc-black">&lt;melwin&gt; <a href="http://github.com/melwin/ioke/commit/a6808db4cd76d30fba2b29ce1eec6e9e71a08915">http://github.com/melwin/ioke/commit/a6808db4cd76d30fba2b29ce1eec6e9e71a08915</a></span><br />
+<span class="irc-date">[18:18]</span> <span class="irc-black">&lt;melwin&gt; See what you think...</span><br />
+<span class="irc-date">[18:18]</span> <span class="irc-black">&lt;olabini&gt; very slow right now</span><br />
+<span class="irc-date">[18:19]</span> <span class="irc-black">&lt;olabini&gt; not sure if you should use the word kind in the method name</span><br />
+<span class="irc-date">[18:19]</span> <span class="irc-black">&lt;olabini&gt; since it looks more like convertToThisMimic</span><br />
+<span class="irc-date">[18:19]</span> <span class="irc-black">&lt;olabini&gt; I might've misunderstood though</span><br />
+<span class="irc-date">[18:20]</span> <span class="irc-black">&lt;melwin&gt; Ok - no problem!</span><br />
+<span class="irc-date">[18:20]</span> <span class="irc-black">&lt;melwin&gt; I think you're right...</span><br />
+<span class="irc-date">[18:20]</span> <span class="irc-black">&lt;melwin&gt; I didn't really mean "Kind"...</span><br />
+<span class="irc-date">[18:20]</span> <span class="irc-black">&lt;melwin&gt; But I forgot about the Ioke Kind.. :)</span><br />
+<span class="irc-date">[18:21]</span> <span class="irc-black">&lt;melwin&gt; But maybe Mimic is unnecessary as well...? Just convertToThis to keep it succinct...?</span><br />
+<span class="irc-date">[18:21]</span> <span class="irc-black">&lt;olabini&gt; yeah, I think that's good</span><br />
+<span class="irc-date">[18:22]</span> <span class="irc-navy">* naeu (n=sam@j27119.upc-j.chello.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[18:25]</span> <span class="irc-black">&lt;melwin&gt; getConvertToThisMethod()?</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-black">&lt;olabini&gt; getConvertMethod is probably OK</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-black">&lt;melwin&gt; Ok, cool.</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-black">&lt;melwin&gt; But you think the structure is ok otherwise, so we could go ahead using this?</span><br />
+<span class="irc-date">[18:32]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[18:33]</span> <span class="irc-green">* bguthrie (n=bguthrie@236.sub-75-196-204.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[18:33]</span> <span class="irc-black">&lt;bguthrie&gt; hey all, how goes it?</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;olabini&gt; Brian, how are you?</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;olabini&gt; melwin, naeu_: bguthrie here wanted to help out with the conversions</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;bguthrie&gt; good ola, how've you been?</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;olabini&gt; bguthrie is a colleague of mine at ThoughtWorks</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-black">&lt;olabini&gt; hey, I'm fine. keeping busy in Sibe^H^H^Hweden.</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-black">&lt;bguthrie&gt; also having a great time with ioke :)</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-black">&lt;bguthrie&gt; haha</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[18:39]</span> <span class="irc-black">&lt;melwin&gt; Sure... Pushing now...</span><br />
+<span class="irc-date">[18:40]</span> <span class="irc-black">&lt;naeu_&gt; melwin: okeData.getConvertToThisKindMethodName() is crazy long</span><br />
+<span class="irc-date">[18:40]</span> <span class="irc-black">&lt;naeu_&gt; this isn't Objective-C</span><br />
+<span class="irc-date">[18:40]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[18:40]</span> <span class="irc-black">&lt;naeu_&gt; ;-)</span><br />
+<span class="irc-date">[18:40]</span> <span class="irc-black">&lt;melwin&gt; It's changed...</span><br />
+<span class="irc-date">[18:41]</span> <span class="irc-black">&lt;melwin&gt; Ok, latest is up in the new-convert... branch...</span><br />
+<span class="irc-date">[18:41]</span> <span class="irc-black">&lt;melwin&gt; Go ahead and use those....</span><br />
+<span class="irc-date">[18:41]</span> <span class="irc-black">&lt;melwin&gt; bguthrie: You too...</span><br />
+<span class="irc-date">[18:41]</span> <span class="irc-black">&lt;melwin&gt; <a href="http://github.com/melwin/ioke/tree/new-convert-helper-method">http://github.com/melwin/ioke/tree/new-convert-helper-method</a></span><br />
+<span class="irc-date">[18:41]</span> <span class="irc-black">&lt;melwin&gt; I gotta eat now...</span><br />
+<span class="irc-date">[18:41]</span> <span class="irc-black">&lt;melwin&gt; Bbl...</span><br />
+<span class="irc-date">[18:41]</span> <span class="irc-black">&lt;naeu_&gt; cheerio :-)</span><br />
+<span class="irc-date">[18:52]</span> <span class="irc-navy">* felipero (n=felipe@189-55-18-206-nd.cpe.vivax.com.br) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[18:53]</span> <span class="irc-green">* felipero (n=felipe@189-55-18-206-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[18:58]</span> <span class="irc-black">&lt;melwin&gt; felipero: I saw your problem... That's strange!</span><br />
+<span class="irc-date">[18:58]</span> <span class="irc-black">&lt;felipero&gt; melwin, my emacs version is 22</span><br />
+<span class="irc-date">[18:59]</span> <span class="irc-black">&lt;melwin&gt; I believe that should work ok... But I haven't tried it...</span><br />
+<span class="irc-date">[18:59]</span> <span class="irc-black">&lt;olabini&gt; what problem? I'm on Emacs 22 too</span><br />
+<span class="irc-date">[18:59]</span> <span class="irc-black">&lt;melwin&gt; olabini: He's trying to use emacs-starter-kit.</span><br />
+<span class="irc-date">[18:59]</span> <span class="irc-black">&lt;olabini&gt; ah, right. I'm not using that</span><br />
+<span class="irc-date">[18:59]</span> <span class="irc-black">&lt;melwin&gt; And he can't open magit-status.</span><br />
+<span class="irc-date">[19:00]</span> <span class="irc-black">&lt;melwin&gt; he/she... :)</span><br />
+<span class="irc-date">[19:00]</span> <span class="irc-black">&lt;melwin&gt; (just to be safe)...</span><br />
+<span class="irc-date">[19:01]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[19:01]</span> <span class="irc-black">&lt;melwin&gt; bguthrie: You in?</span><br />
+<span class="irc-date">[19:02]</span> <span class="irc-black">&lt;bguthrie&gt; here but working on other stuff atm</span><br />
+<span class="irc-date">[19:02]</span> <span class="irc-black">&lt;felipero&gt; he</span><br />
+<span class="irc-date">[19:02]</span> <span class="irc-black">&lt;felipero&gt; &gt;|</span><br />
+<span class="irc-date">[19:02]</span> <span class="irc-black">&lt;melwin&gt; Ok, cool. If you want we can have a chat about what we've discussed regarding validation...</span><br />
+<span class="irc-date">[19:02]</span> <span class="irc-black">&lt;melwin&gt; felipero: :) Gotcha.</span><br />
+<span class="irc-date">[19:03]</span> <span class="irc-black">&lt;melwin&gt; bguthrie: Later, that is...</span><br />
+<span class="irc-date">[19:03]</span> <span class="irc-black">&lt;melwin&gt; felipero: So... How far have you gotten?</span><br />
+<span class="irc-date">[19:03]</span> <span class="irc-black">&lt;melwin&gt; felipero: Need some assistance getting started?</span><br />
+<span class="irc-date">[19:03]</span> <span class="irc-black">&lt;felipero&gt; melwin, how can I send a private message in irc?</span><br />
+<span class="irc-date">[19:04]</span> <span class="irc-black">&lt;melwin&gt; Do: /msg nick message text</span><br />
+<span class="irc-date">[19:05]</span> <span class="irc-black">&lt;felipero&gt; did it using /query</span><br />
+<span class="irc-date">[19:05]</span> <span class="irc-black">&lt;melwin&gt; felipero: Did you manage to build Ioke yet?</span><br />
+<span class="irc-date">[19:06]</span> <span class="irc-black">&lt;felipero&gt; ok.. got it.. somehow</span><br />
+<span class="irc-date">[19:06]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[19:06]</span> <span class="irc-black">&lt;melwin&gt; felipero: Did you manage to build Ioke yet?</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-black">&lt;felipero&gt; melwin, nope</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-black">&lt;melwin&gt; Ok, do a clone of my fork so you can work with us. Or did you one already?</span><br />
+<span class="irc-date">[19:08]</span> <span class="irc-black">&lt;melwin&gt; git clone git://github.com/melwin/ioke.git</span><br />
+<span class="irc-date">[19:08]</span> <span class="irc-black">&lt;melwin&gt; To build you need ant and Java installed.</span><br />
+<span class="irc-date">[19:08]</span> <span class="irc-black">&lt;felipero&gt; I have a fork... cloned already</span><br />
+<span class="irc-date">[19:08]</span> <span class="irc-black">&lt;felipero&gt; done</span><br />
+<span class="irc-date">[19:08]</span> <span class="irc-black">&lt;melwin&gt; Ok, then to build - just run ant in the ioke directory.</span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-black">&lt;melwin&gt; What OS you on?</span><br />
+<span class="irc-date">[19:10]</span> <span class="irc-black">&lt;felipero&gt; linux</span><br />
+<span class="irc-date">[19:10]</span> <span class="irc-black">&lt;felipero&gt; kubuntu to be precise</span><br />
+<span class="irc-date">[19:10]</span> <span class="irc-black">&lt;melwin&gt; Ok, cool... Did the build work?</span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-black">&lt;felipero&gt; yes</span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-black">&lt;melwin&gt; Good!</span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-black">&lt;felipero&gt; and the interactive shell is also working</span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-black">&lt;melwin&gt; Nice.</span><br />
+<span class="irc-date">[19:12]</span> <span class="irc-black">&lt;melwin&gt; So, you just cloned with git as above, or you created a GitHub fork as well?</span><br />
+<span class="irc-date">[19:13]</span> <span class="irc-black">&lt;felipero&gt; I already had a fork from Olas repo</span><br />
+<span class="irc-date">[19:13]</span> <span class="irc-black">&lt;felipero&gt; I did in it</span><br />
+<span class="irc-date">[19:14]</span> <span class="irc-black">&lt;melwin&gt; Ok, because we are working on a fork which has some new methods specifically for type validation and conversion.</span><br />
+<span class="irc-date">[19:14]</span> <span class="irc-black">&lt;melwin&gt; Once we have something clean and useful, Ola will merge it.</span><br />
+<span class="irc-date">[19:15]</span> <span class="irc-black">&lt;melwin&gt; It's in the "work" branch of the melwin/ioke fork.</span><br />
+<span class="irc-date">[19:15]</span> <span class="irc-black">&lt;felipero&gt; yes... I read that</span><br />
+<span class="irc-date">[19:15]</span> <span class="irc-black">&lt;felipero&gt; I've also merged from yours</span><br />
+<span class="irc-date">[19:15]</span> <span class="irc-black">&lt;naeu_&gt; right, i'm going out to eat and drink</span><br />
+<span class="irc-date">[19:15]</span> <span class="irc-black">&lt;naeu_&gt; and try and forget work :-)</span><br />
+<span class="irc-date">[19:16]</span> <span class="irc-black">&lt;melwin&gt; felipero: Ok, great.</span><br />
+<span class="irc-date">[19:16]</span> <span class="irc-black">&lt;melwin&gt; naeu_: Have fun. :)</span><br />
+<span class="irc-date">[19:16]</span> <span class="irc-black">&lt;naeu_&gt; cheerio :-)</span><br />
+<span class="irc-date">[19:16]</span> <span class="irc-navy">* naeu_ (n=sam@j27119.upc-j.chello.nl) Quit ()</span><br />
+<span class="irc-date">[19:16]</span> <span class="irc-black">&lt;melwin&gt; felipero: So, what you could do is pick a subclass of IokeData - like Decimal.</span><br />
+<span class="irc-date">[19:17]</span> <span class="irc-black">&lt;felipero&gt; i'm in</span><br />
+<span class="irc-date">[19:17]</span> <span class="irc-black">&lt;melwin&gt; Each JavaMethod in these classes needs to be gone through to make sure they don't assume that the "on" parameter or any arguments are of a certain type (by directly casting it).</span><br />
+<span class="irc-date">[19:17]</span> <span class="irc-black">&lt;olabini&gt; probably not Decimal</span><br />
+<span class="irc-date">[19:17]</span> <span class="irc-black">&lt;olabini&gt; take Pair or Range or something like that</span><br />
+<span class="irc-date">[19:18]</span> <span class="irc-black">&lt;olabini&gt; because Decimal already have quite a lot of type conversions built in</span><br />
+<span class="irc-date">[19:18]</span> <span class="irc-black">&lt;melwin&gt; olabini: Right you are.</span><br />
+<span class="irc-date">[19:18]</span> <span class="irc-black">&lt;felipero&gt; =)</span><br />
+<span class="irc-date">[19:19]</span> <span class="irc-black">&lt;felipero&gt; Range</span><br />
+<span class="irc-date">[19:19]</span> <span class="irc-black">&lt;melwin&gt; But it still assumes that "on" is a Decimal, which is incorrect. So it needs to be fixed as well.</span><br />
+<span class="irc-date">[19:19]</span> <span class="irc-black">&lt;melwin&gt; However it has more checks than most, as you say.</span><br />
+<span class="irc-date">[19:21]</span> <span class="irc-black">&lt;melwin&gt; Ok, for Range - take for instance line 132:                     return ((Range)IokeObject.data(on)).inclusive ? context.runtime._false : context.runtime._true;</span><br />
+<span class="irc-date">[19:21]</span> <span class="irc-black">&lt;melwin&gt; It gets the data from the "on" object and casts it to a Range without checking if it really is a range.</span><br />
+<span class="irc-date">[19:22]</span> <span class="irc-black">&lt;melwin&gt; What needs to be done is to check it... By doing, for instance:</span><br />
+<span class="irc-date">[19:24]</span> <span class="irc-black">&lt;felipero&gt; ...</span><br />
+<span class="irc-date">[19:26]</span> <span class="irc-black">&lt;olabini&gt; true</span><br />
+<span class="irc-date">[19:26]</span> <span class="irc-black">&lt;melwin&gt; return Range.isInclusive(IokeObject.data(context.runtime.range.convertToThis(on, message, context))) ? context.runtime._false : context.runtime._true;</span><br />
+<span class="irc-date">[19:28]</span> <span class="irc-black">&lt;melwin&gt; Sorry!!!</span><br />
+<span class="irc-date">[19:28]</span> <span class="irc-black">&lt;melwin&gt; return Range.isInclusive(context.runtime.range.convertToThis(on, message, context)) ? context.runtime._false : context.runtime._true;</span><br />
+<span class="irc-date">[19:28]</span> <span class="irc-black">&lt;felipero&gt; ok.. so convertToThis is the method you added to IokeObject right?</span><br />
+<span class="irc-date">[19:28]</span> <span class="irc-black">&lt;melwin&gt; felipero: Right...</span><br />
+<span class="irc-date">[19:29]</span> <span class="irc-black">&lt;felipero&gt; and what is context.runtime ?</span><br />
+<span class="irc-date">[19:29]</span> <span class="irc-black">&lt;felipero&gt; or better, why use that?</span><br />
+<span class="irc-date">[19:29]</span> <span class="irc-black">&lt;melwin&gt; That's a reference to the runtime instance which keeps references to all base objects (kinds)...</span><br />
+<span class="irc-date">[19:30]</span> <span class="irc-black">&lt;melwin&gt; so context.runtime.list corresponds to the Ioke code: List</span><br />
+<span class="irc-date">[19:31]</span> <span class="irc-black">&lt;melwin&gt; It's so that we can find a reference to this, so that we can convert another object to a mimic of it.</span><br />
+<span class="irc-date">[19:31]</span> <span class="irc-black">&lt;melwin&gt; (if possible).</span><br />
+<span class="irc-date">[19:33]</span> <span class="irc-black">&lt;melwin&gt; olabini: Is it a problem just grabbing any runtime reference? Do we always need to use the context.runtime?</span><br />
+<span class="irc-date">[19:35]</span> <span class="irc-black">&lt;felipero&gt; melwin, so, IokeObject.data(on) converts it to a IokeObject and so this can be casted to a Range (or anything else)</span><br />
+<span class="irc-date">[19:35]</span> <span class="irc-black">&lt;felipero&gt; ok.. got the problem</span><br />
+<span class="irc-date">[19:36]</span> <span class="irc-black">&lt;felipero&gt; just one question... from where does on come from? (or whay its named on?)</span><br />
+<span class="irc-date">[19:36]</span> <span class="irc-black">&lt;melwin&gt; No, IokeObject.data(on) doesn't convert at all. It just casts and extracts the data.</span><br />
+<span class="irc-date">[19:36]</span> <span class="irc-black">&lt;melwin&gt; on is the "self" or "this" object that the method is running "on"....</span><br />
+<span class="irc-date">[19:36]</span> <span class="irc-black">&lt;melwin&gt; It's just a convention used by Ola when defining the methods.</span><br />
+<span class="irc-date">[19:37]</span> <span class="irc-black">&lt;melwin&gt; It's like the "self" parameter in python - by convention.</span><br />
+<span class="irc-date">[19:37]</span> <span class="irc-black">&lt;felipero&gt; yes... casts</span><br />
+<span class="irc-date">[19:37]</span> <span class="irc-black">&lt;felipero&gt; ok...</span><br />
+<span class="irc-date">[19:38]</span> <span class="irc-black">&lt;felipero&gt; makes sense... the mehod is running on this</span><br />
+<span class="irc-date">[19:38]</span> <span class="irc-black">&lt;felipero&gt; =)</span><br />
+<span class="irc-date">[19:38]</span> <span class="irc-black">&lt;melwin&gt; The trick in Ioke is that you can move the methods to other objects, which changes the type of "this".</span><br />
+<span class="irc-date">[19:38]</span> <span class="irc-black">&lt;melwin&gt; So methods need to check that "this" is really of the correct type.</span><br />
+<span class="irc-date">[19:39]</span> <span class="irc-black">&lt;olabini&gt; grab the context.runtime</span><br />
+<span class="irc-date">[19:39]</span> <span class="irc-black">&lt;melwin&gt; olabini: Right.</span><br />
+<span class="irc-date">[19:39]</span> <span class="irc-black">&lt;olabini&gt; I want to have support for multi-VM without mucking about</span><br />
+<span class="irc-date">[19:39]</span> <span class="irc-black">&lt;olabini&gt; and having the context keep track of runtime is a good way of making it easy</span><br />
+<span class="irc-date">[19:40]</span> <span class="irc-black">&lt;felipero&gt; each object has its on runtime?</span><br />
+<span class="irc-date">[19:40]</span> <span class="irc-black">&lt;melwin&gt; felipero: Which is what we're ensuring with the context.runtime.kind.convertToThis(...).</span><br />
+<span class="irc-date">[19:40]</span> <span class="irc-black">&lt;melwin&gt; felipero: It's the same runtime for all objects that live in the same interpreter....</span><br />
+<span class="irc-date">[19:40]</span> <span class="irc-black">&lt;felipero&gt; probably silly question: couldn't it be singleton?</span><br />
+<span class="irc-date">[19:40]</span> <span class="irc-black">&lt;felipero&gt; the runtime?</span><br />
+<span class="irc-date">[19:41]</span> <span class="irc-black">&lt;melwin&gt; Then you can't have multiple instances in the same VM without mucking about with different classloader instances.</span><br />
+<span class="irc-date">[19:41]</span> <span class="irc-black">&lt;felipero&gt; melwin, ok.. so we have a super method convertToThis in IokeObject</span><br />
+<span class="irc-date">[19:41]</span> <span class="irc-black">&lt;melwin&gt; Which is what Ola was implying, I believe.</span><br />
+<span class="irc-date">[19:41]</span> <span class="irc-black">&lt;felipero&gt; the one you just added</span><br />
+<span class="irc-date">[19:41]</span> <span class="irc-black">&lt;melwin&gt; Yes.</span><br />
+<span class="irc-date">[19:42]</span> <span class="irc-black">&lt;melwin&gt; It's just a helper for the IokeData.convertTo methods created by Ola.</span><br />
+<span class="irc-date">[19:42]</span> <span class="irc-black">&lt;felipero&gt; and most of times we can use this one, but some objects will need their on implementation</span><br />
+<span class="irc-date">[19:42]</span> <span class="irc-black">&lt;melwin&gt; Well... Possibly. We haven't gotten that far yet.</span><br />
+<span class="irc-date">[19:42]</span> <span class="irc-black">&lt;melwin&gt; Actually, they wouldn't override that method.</span><br />
+<span class="irc-date">[19:42]</span> <span class="irc-black">&lt;melwin&gt; They would override convertTo in IokeData.</span><br />
+<span class="irc-date">[19:43]</span> <span class="irc-black">&lt;melwin&gt; But for special objects it should be enough to override the getConvertMethod in the IokeData subclass.</span><br />
+<span class="irc-date">[19:43]</span> <span class="irc-black">&lt;melwin&gt; It describes the method to call to convert an object to an object that mimics a certain kind.</span><br />
+<span class="irc-date">[19:45]</span> <span class="irc-black">&lt;melwin&gt; For instance: Decimal might have a convertMethod of "toDecimal".</span><br />
+<span class="irc-date">[19:45]</span> <span class="irc-black">&lt;melwin&gt; Which means that any object could implement a "toDecimal" method to allow it to be converted to a Decimal.</span><br />
+<span class="irc-date">[19:45]</span> <span class="irc-black">&lt;melwin&gt; You with me? :)</span><br />
+<span class="irc-date">[19:46]</span> <span class="irc-black">&lt;melwin&gt; olabini: Correct me when I'm wrong, please. :)</span><br />
+<span class="irc-date">[19:46]</span> <span class="irc-black">&lt;felipero&gt; where is getConvertMethod?</span><br />
+<span class="irc-date">[19:46]</span> <span class="irc-black">&lt;melwin&gt; On IokeData. The standard implementation return null, which means there is no way to convert the object.</span><br />
+<span class="irc-date">[19:47]</span> <span class="irc-black">&lt;melwin&gt; Subclasses can override it to return an alternative name.</span><br />
+<span class="irc-date">[19:47]</span> <span class="irc-black">&lt;felipero&gt; I can find it in IokeData</span><br />
+<span class="irc-date">[19:47]</span> <span class="irc-black">&lt;melwin&gt; Right.</span><br />
+<span class="irc-date">[19:48]</span> <span class="irc-black">&lt;melwin&gt; So, to move forward, try to find a method that looks like it's assuming too much. Try to add a test for this method that makes it break. Then add the conversion calls, recompile and run the test again to validate that it works.</span><br />
+<span class="irc-date">[19:50]</span> <span class="irc-black">&lt;felipero&gt; sory... I mean I can't find it</span><br />
+<span class="irc-date">[19:50]</span> <span class="irc-black">&lt;felipero&gt; misstyped...</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;melwin&gt; Did you merge it correctly? It should be the last method in the file.</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;felipero&gt; sure</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;felipero&gt; maybe it is in a specific branch?</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;felipero&gt; nope... the last one here is toString()</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;melwin&gt; It's in work and new-convert-helper-method.</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-black">&lt;felipero&gt; ok... I was on the master</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-black">&lt;melwin&gt; work is the main development branch. new-convert-helper-method was my test branch.</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-black">&lt;felipero&gt; so I should use work</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-black">&lt;melwin&gt; Right now we go work-&gt;premerge-&gt;master as we're in a bit of a fluctuating state.</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-black">&lt;melwin&gt; Yes.</span><br />
+<span class="irc-date">[19:53]</span> <span class="irc-black">&lt;felipero&gt; after work, merge to premerge e then to master</span><br />
+<span class="irc-date">[19:53]</span> <span class="irc-black">&lt;felipero&gt; ?</span><br />
+<span class="irc-date">[19:53]</span> <span class="irc-black">&lt;felipero&gt; also, checkout from ola's repo?</span><br />
+<span class="irc-date">[19:53]</span> <span class="irc-black">&lt;melwin&gt; Yeah, it's just to get us a chance to group stuff to keep the history clean for when Ola merges.</span><br />
+<span class="irc-date">[19:53]</span> <span class="irc-black">&lt;felipero&gt; or work is from your repo?</span><br />
+<span class="irc-date">[19:54]</span> <span class="irc-black">&lt;melwin&gt; If you have your own GitHub fork, I would just merge the work branch into some branch you have, then commit your things there and ask us to pull from you.</span><br />
+<span class="irc-date">[19:55]</span> <span class="irc-black">&lt;olabini&gt; wait wait guys.</span><br />
+<span class="irc-date">[19:55]</span> <span class="irc-black">&lt;melwin&gt; Yes?</span><br />
+<span class="irc-date">[19:55]</span> <span class="irc-black">&lt;olabini&gt; I've used a convention in my naming of converters</span><br />
+<span class="irc-date">[19:55]</span> <span class="irc-black">&lt;olabini&gt; methods starting with as is implicit conversions</span><br />
+<span class="irc-date">[19:55]</span> <span class="irc-black">&lt;olabini&gt; methods starting with to is explicit conversions</span><br />
+<span class="irc-date">[19:56]</span> <span class="irc-black">&lt;olabini&gt; which means that to-methods will usually not be called from your stuff</span><br />
+<span class="irc-date">[19:56]</span> <span class="irc-black">&lt;olabini&gt; compare Ruby's to_s vs to_str</span><br />
+<span class="irc-date">[19:56]</span> <span class="irc-black">&lt;olabini&gt; I haven't been consistent with this, since there is asText, but that's my thinking at least</span><br />
+<span class="irc-date">[19:56]</span> <span class="irc-black">&lt;melwin&gt; olabini: Actually, I was not planning on adding any conversion methods now.</span><br />
+<span class="irc-date">[19:56]</span> <span class="irc-black">&lt;olabini&gt; no, I just meant so you know which method names to use</span><br />
+<span class="irc-date">[19:56]</span> <span class="irc-black">&lt;melwin&gt; Only adding the calls to convertToThis etc to protect.</span><br />
+<span class="irc-date">[19:57]</span> <span class="irc-black">&lt;melwin&gt; olabini: Ok, cool.</span><br />
+<span class="irc-date">[19:57]</span> <span class="irc-black">&lt;melwin&gt; But right now we'll not override getConvertMethod - so we don't specify any converter names.</span><br />
+<span class="irc-date">[19:57]</span> <span class="irc-black">&lt;melwin&gt; I think that's something for you to decide on when you have some plan. :)</span><br />
+<span class="irc-date">[20:06]</span> <span class="irc-navy">* bguthrie (n=bguthrie@236.sub-75-196-204.myvzw.com) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[20:06]</span> <span class="irc-brick">* felipero is fighting with git</span><br />
+<span class="irc-date">[20:16]</span> <span class="irc-brick">* melwin is rewriting unpushed history - but feels like a man juggling knifes.</span><br />
+<span class="irc-date">[20:27]</span> <span class="irc-black">&lt;melwin&gt; Humm... Seems like Sam isn't merging from work... He's committing straight to premerge...</span><br />
+<span class="irc-date">[20:27]</span> <span class="irc-black">&lt;melwin&gt; Ok...</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-brick">* felipero is still fighting with git... =(</span><br />
+<span class="irc-date">[20:35]</span> <span class="irc-brick">* felipero can see the getConvertMethod()... things are getting better</span><br />
+<span class="irc-date">[20:37]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[20:38]</span> <span class="irc-black">&lt;felipero&gt; I ran the command git branch -b premerge melwins/premerge</span><br />
+<span class="irc-date">[20:38]</span> <span class="irc-black">&lt;felipero&gt; but it says that melwins/premerge is an invalid object</span><br />
+<span class="irc-date">[20:38]</span> <span class="irc-black">&lt;felipero&gt; My intention is to create a local branch from your remote branchs</span><br />
+<span class="irc-date">[20:39]</span> <span class="irc-black">&lt;felipero&gt; just gave up</span><br />
+<span class="irc-date">[20:40]</span> <span class="irc-black">&lt;melwin&gt; Strange!</span><br />
+<span class="irc-date">[20:40]</span> <span class="irc-black">&lt;melwin&gt; Well... No s in melwin...</span><br />
+<span class="irc-date">[20:40]</span> <span class="irc-black">&lt;melwin&gt; Unless that's your remote name..</span><br />
+<span class="irc-date">[20:40]</span> <span class="irc-black">&lt;felipero&gt; when I run git pull melwins premerge it works</span><br />
+<span class="irc-date">[20:40]</span> <span class="irc-black">&lt;felipero&gt; no my remote name is melwins</span><br />
+<span class="irc-date">[20:40]</span> <span class="irc-black">&lt;felipero&gt; ;-)</span><br />
+<span class="irc-date">[20:41]</span> <span class="irc-black">&lt;melwin&gt; What's branch -b? Not checkout -b?</span><br />
+<span class="irc-date">[20:42]</span> <span class="irc-black">&lt;felipero&gt; checkout says that doesn't make sens checkout a branch where I can't commit</span><br />
+<span class="irc-date">[20:43]</span> <span class="irc-black">&lt;melwin&gt; Try: git checkout melwins/premerge</span><br />
+<span class="irc-date">[20:43]</span> <span class="irc-black">&lt;melwin&gt; Then: git checkout -b premerge</span><br />
+<span class="irc-date">[20:44]</span> <span class="irc-black">&lt;felipero&gt; humm</span><br />
+<span class="irc-date">[20:44]</span> <span class="irc-black">&lt;felipero&gt; one sec...</span><br />
+<span class="irc-date">[20:44]</span> <span class="irc-brick">* felipero is trying to knockout git - feels like rocky balboa in rocky V</span><br />
+<span class="irc-date">[20:45]</span> <span class="irc-black">&lt;felipero&gt;  git checkout melwins/premerge</span><br />
+<span class="irc-date">[20:45]</span> <span class="irc-black">&lt;felipero&gt; error: pathspec 'melwins/premerge' did not match any file(s) known to git.</span><br />
+<span class="irc-date">[20:45]</span> <span class="irc-brick">* felipero is down again</span><br />
+<span class="irc-date">[20:46]</span> <span class="irc-black">&lt;melwin&gt; Umm... Do: git remote</span><br />
+<span class="irc-date">[20:46]</span> <span class="irc-black">&lt;melwin&gt; What does that say?</span><br />
+<span class="irc-date">[20:46]</span> <span class="irc-black">&lt;melwin&gt; Is it really ok?</span><br />
+<span class="irc-date">[20:46]</span> <span class="irc-black">&lt;melwin&gt; git remote show melwins</span><br />
+<span class="irc-date">[20:47]</span> <span class="irc-black">&lt;felipero&gt; shows origin, melwins and olabinis</span><br />
+<span class="irc-date">[20:47]</span> <span class="irc-black">&lt;felipero&gt; also shows all the branchs, including premerge</span><br />
+<span class="irc-date">[20:47]</span> <span class="irc-black">&lt;felipero&gt; pretty weird</span><br />
+<span class="irc-date">[20:48]</span> <span class="irc-black">&lt;felipero&gt; if I run</span><br />
+<span class="irc-date">[20:48]</span> <span class="irc-black">&lt;melwin&gt; Strange...</span><br />
+<span class="irc-date">[20:48]</span> <span class="irc-black">&lt;felipero&gt; git pull melwins/premerge it works (with lots of merges, but still works)</span><br />
+<span class="irc-date">[20:48]</span> <span class="irc-black">&lt;melwin&gt; Ummm... not sure what's happened...</span><br />
+<span class="irc-date">[20:51]</span> <span class="irc-black">&lt;felipero&gt; me neither..</span><br />
+<span class="irc-date">[20:51]</span> <span class="irc-black">&lt;felipero&gt; very sad</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;olabini&gt; felipero: did you try</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;olabini&gt; git checkout -b melwins/premerge</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;olabini&gt; ?</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-black">&lt;felipero&gt; wow... just did</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-black">&lt;felipero&gt; looks like worked</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-black">&lt;felipero&gt; i'll try to merge now to see if there is no conflict...</span><br />
+<span class="irc-date">[21:01]</span> <span class="irc-black">&lt;felipero&gt; worked...</span><br />
+<span class="irc-date">[21:01]</span> <span class="irc-brick">* felipero is the last man standing</span><br />
+<span class="irc-date">[21:02]</span> <span class="irc-black">&lt;olabini&gt; yeah, -b is really important to the checkout command there</span><br />
+<span class="irc-date">[21:03]</span> <span class="irc-green">* bguthrie (n=bguthrie@92.sub-70-211-21.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[21:03]</span> <span class="irc-black">&lt;felipero&gt; yes...</span><br />
+<span class="irc-date">[21:03]</span> <span class="irc-black">&lt;felipero&gt; after that I ran git checkout premerge (to create my local version of that)</span><br />
+<span class="irc-date">[21:04]</span> <span class="irc-black">&lt;felipero&gt; and tried to pull</span><br />
+<span class="irc-date">[21:04]</span> <span class="irc-black">&lt;felipero&gt; but got an error</span><br />
+<span class="irc-date">[21:09]</span> <span class="irc-black">&lt;melwin&gt; I'm pushing a number of Decimal updates to the work branch now...</span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-brick">* felipero gave up from understand git for today... He is getting back to Ioke... much better code base. =)</span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-black">&lt;felipero&gt; melwin, could we continue from what we've stopped?</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;melwin&gt; Sure... :)</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;melwin&gt; Maybe you can just do a clean clone? Perhaps it's easier.</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;felipero&gt; yeah... but will do that tomorrow</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;melwin&gt; I'm adding stuff to the work branch now. From there we can get it into premerge when we think it looks ok.</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;melwin&gt; felipero: Ok, so what you want to do?</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-black">&lt;felipero&gt; melwin, I understood the problem.. now how are you fixing it? So, I can start to help</span><br />
+<span class="irc-date">[21:13]</span> <span class="irc-black">&lt;melwin&gt; Well... I showed you the new code for the Range example. You want to go through it?</span><br />
+<span class="irc-date">[21:14]</span> <span class="irc-black">&lt;felipero&gt; this one? return Range.isInclusive(context.runtime.range.convertToThis(on, message, context)) ? context.runtime._false : context.runtime._true;</span><br />
+<span class="irc-date">[21:14]</span> <span class="irc-black">&lt;melwin&gt; Yes...!</span><br />
+<span class="irc-date">[21:14]</span> <span class="irc-black">&lt;melwin&gt; That does the convertToThis to range, as that's what we're expecting.</span><br />
+<span class="irc-date">[21:14]</span> <span class="irc-black">&lt;felipero&gt; but I'll have to implement the convertToThis methdo</span><br />
+<span class="irc-date">[21:14]</span> <span class="irc-black">&lt;melwin&gt; Nono, that already exists.</span><br />
+<span class="irc-date">[21:15]</span> <span class="irc-black">&lt;melwin&gt; It's just a matter of calling it to do the conversion in the relevant places.</span><br />
+<span class="irc-date">[21:15]</span> <span class="irc-black">&lt;melwin&gt; Take a look at the new commits I've done for Decimal.</span><br />
+<span class="irc-date">[21:15]</span> <span class="irc-black">&lt;felipero&gt; calling from the IokeObject, right?</span><br />
+<span class="irc-date">[21:15]</span> <span class="irc-black">&lt;melwin&gt; It's very similar to what needs to be done for Range.</span><br />
+<span class="irc-date">[21:16]</span> <span class="irc-black">&lt;melwin&gt; In general, when you see code like this:  (Range)IokeObject.data(on).xyz  it should be: (Range)IokeObject.data(context.runtime.range.convertToThis(on, message, context)).xyz</span><br />
+<span class="irc-date">[21:17]</span> <span class="irc-black">&lt;melwin&gt; You see? Just add the call to convert the "on" object instead of using it directly.</span><br />
+<span class="irc-date">[21:17]</span> <span class="irc-black">&lt;melwin&gt; And every commit should contain both the tests and the fix for a certain number of methods.</span><br />
+<span class="irc-date">[21:18]</span> <span class="irc-black">&lt;melwin&gt; I do the ispec tests first, run them to validate that it breaks, then add the code to fix it, then rerun tests, then commit.</span><br />
+<span class="irc-date">[21:18]</span> <span class="irc-black">&lt;melwin&gt; See the latest commits in the work branch.</span><br />
+<span class="irc-date">[21:18]</span> <span class="irc-black">&lt;felipero&gt; ok... got it</span><br />
+<span class="irc-date">[21:19]</span> <span class="irc-black">&lt;felipero&gt; is there any case where just calling convertTothis will not work?</span><br />
+<span class="irc-date">[21:19]</span> <span class="irc-black">&lt;melwin&gt; Here's a typical one: <a href="http://github.com/melwin/ioke/commit/9911fdeffbafb1f41229e1af37c29a238fb2c31f">http://github.com/melwin/ioke/commit/9911fdeffbafb1f41229e1af37c29a238fb2c31f</a></span><br />
+<span class="irc-date">[21:19]</span> <span class="irc-black">&lt;felipero&gt; I've seen the commits on line... in one of them you created a local var to reuse it on the different returns</span><br />
+<span class="irc-date">[21:19]</span> <span class="irc-black">&lt;melwin&gt; felipero: Well, right now convertToThis is guaranteed to either fail or return a correct object.</span><br />
+<span class="irc-date">[21:20]</span> <span class="irc-black">&lt;melwin&gt; Yes, I mean... You need to look at each specific method for what makes sense... It's not just search-replace.</span><br />
+<span class="irc-date">[21:20]</span> <span class="irc-black">&lt;felipero&gt; sure</span><br />
+<span class="irc-date">[21:20]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[21:21]</span> <span class="irc-black">&lt;melwin&gt; I gotta take a break. Try to fix something in the Range object and I can take a look at it, if you want.</span><br />
+<span class="irc-date">[21:21]</span> <span class="irc-black">&lt;melwin&gt; Will be back later.</span><br />
+<span class="irc-date">[21:21]</span> <span class="irc-black">&lt;felipero&gt; I'll take a closer look to that in about 2 hours... I have to work for my boss a little...</span><br />
+<span class="irc-date">[21:21]</span> <span class="irc-black">&lt;melwin&gt; Ok!</span><br />
+<span class="irc-date">[21:21]</span> <span class="irc-black">&lt;melwin&gt; Laters!</span><br />
+<span class="irc-date">[21:21]</span> <span class="irc-black">&lt;felipero&gt; laters...</span><br />
+<span class="irc-date">[21:36]</span> <span class="irc-black">&lt;melwin&gt; I'm starting to think we might be better off with different branches for every object we work on... Like a decimal feature branch for the decimal type validation commits, etc...</span><br />
+<span class="irc-date">[21:36]</span> <span class="irc-black">&lt;melwin&gt; That would be more the git way, than working in the same branch...</span><br />
+<span class="irc-date">[21:59]</span> <span class="irc-black">&lt;melwin&gt; olabini: You want to keep the convertToX methods in IokeObject? Or should all be converted to the general converter?</span><br />
+<span class="irc-date">[22:06]</span> <span class="irc-black">&lt;melwin&gt; I was thinking of implementing getConverterMethod as "asDecimal" in Decimal...</span><br />
+<span class="irc-date">[22:39]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit ("Leaving")</span><br />
+<span class="irc-date">[22:44]</span> <span class="irc-navy">* bguthrie (n=bguthrie@92.sub-70-211-21.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[23:08]</span> <span class="irc-navy">* felipero (n=felipe@189-55-18-206-nd.cpe.vivax.com.br) Quit ("Saindo")</span><br />
+<span class="irc-date">[23:53]</span> <span class="irc-green">* felipero (n=felipe@189-55-73-254-nd.cpe.vivax.com.br) has joined #ioke</span><br />

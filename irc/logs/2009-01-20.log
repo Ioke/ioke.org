@@ -1,0 +1,630 @@
+<span class="irc-date">[0:54]</span> <span class="irc-green">* felipero (n=felipe@189-55-73-254-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[2:37]</span> <span class="irc-navy">* felipero (n=felipe@189-55-73-254-nd.cpe.vivax.com.br) Quit ("Saindo")</span><br />
+<span class="irc-date">[3:31]</span> <span class="irc-green">* felipero (n=felipe@189-55-73-254-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[4:07]</span> <span class="irc-black">&lt;cv&gt; felipero: hey dude</span><br />
+<span class="irc-date">[4:08]</span> <span class="irc-black">&lt;felipero&gt; hey</span><br />
+<span class="irc-date">[4:08]</span> <span class="irc-black">&lt;felipero&gt; what's up?</span><br />
+<span class="irc-date">[4:08]</span> <span class="irc-black">&lt;cv&gt; at the campus party?</span><br />
+<span class="irc-date">[4:08]</span> <span class="irc-black">&lt;felipero&gt; not really</span><br />
+<span class="irc-date">[4:09]</span> <span class="irc-black">&lt;felipero&gt; are you?</span><br />
+<span class="irc-date">[4:09]</span> <span class="irc-black">&lt;felipero&gt; or are you in london?</span><br />
+<span class="irc-date">[4:09]</span> <span class="irc-black">&lt;cv&gt; in london</span><br />
+<span class="irc-date">[4:10]</span> <span class="irc-black">&lt;cv&gt; wanted to go this year again, but my sister decided to come here instead</span><br />
+<span class="irc-date">[4:10]</span> <span class="irc-black">&lt;felipero&gt; I'd london too...</span><br />
+<span class="irc-date">[4:10]</span> <span class="irc-black">&lt;felipero&gt; I liked it</span><br />
+<span class="irc-date">[4:11]</span> <span class="irc-black">&lt;felipero&gt; I don't live in Sampa, so I would spend aobut 2hr ot go there</span><br />
+<span class="irc-date">[4:12]</span> <span class="irc-black">&lt;felipero&gt; and tomorrow I have a customer to visit here, so...</span><br />
+<span class="irc-date">[4:15]</span> <span class="irc-black">&lt;felipero&gt; cv, I must go... almost sleeping here. see you around...</span><br />
+<span class="irc-date">[4:15]</span> <span class="irc-black">&lt;cv&gt; catch ya later :)</span><br />
+<span class="irc-date">[4:15]</span> <span class="irc-navy">* felipero (n=felipe@189-55-73-254-nd.cpe.vivax.com.br) Quit ("Saindo")</span><br />
+<span class="irc-date">[4:28]</span> <span class="irc-navy">* olabini (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[5:10]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[6:41]</span> <span class="irc-black">&lt;CIA-48&gt; ioke: Martin Elwin master * r31b29cc / src/main/ioke/lang/TypeCheckingJavaMethod.java : Arguments field should not be static, dammit. - <a href="http://tinyurl.com/a6lh3v">http://tinyurl.com/a6lh3v</a></span><br />
+<span class="irc-date">[6:41]</span> <span class="irc-black">&lt;CIA-48&gt; ioke: Ola Bini master * rfe9cd74 / docs/todo : whitespace - <a href="http://tinyurl.com/9glt85">http://tinyurl.com/9glt85</a></span><br />
+<span class="irc-date">[6:41]</span> <span class="irc-black">&lt;CIA-48&gt; ioke: Ola Bini master * r716f0c6 / src/main/ioke/lang/TypeCheckingJavaMethod.java : Merge branch 'new-type-checker' of git://github.com/melwin/ioke into melwin/new-type-checker - <a href="http://tinyurl.com/7jxytw">http://tinyurl.com/7jxytw</a></span><br />
+<span class="irc-date">[6:41]</span> <span class="irc-black">&lt;CIA-48&gt; ioke: Ola Bini master * r7462764 / src/main/ioke/lang/TypeCheckingJavaMethod.java : Merge branch 'melwin/new-type-checker' - <a href="http://tinyurl.com/7yagac">http://tinyurl.com/7yagac</a></span><br />
+<span class="irc-date">[6:42]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[6:43]</span> <span class="irc-black">&lt;naeu&gt; good morning all</span><br />
+<span class="irc-date">[6:44]</span> <span class="irc-black">&lt;melwin&gt; Hey.</span><br />
+<span class="irc-date">[6:44]</span> <span class="irc-black">&lt;melwin&gt; Just heading off to work.</span><br />
+<span class="irc-date">[6:45]</span> <span class="irc-black">&lt;naeu&gt; nice</span><br />
+<span class="irc-date">[6:45]</span> <span class="irc-black">&lt;naeu&gt; how do you get in?</span><br />
+<span class="irc-date">[6:46]</span> <span class="irc-black">&lt;melwin&gt; Car... And gotta split now! :)</span><br />
+<span class="irc-date">[6:46]</span> <span class="irc-black">&lt;melwin&gt; Cheers.</span><br />
+<span class="irc-date">[6:46]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit ("Leaving")</span><br />
+<span class="irc-date">[6:48]</span> <span class="irc-black">&lt;CIA-48&gt; ioke: Martin Elwin master * rd7bfd34 / (3 files in 2 dirs): Number must check type of receiver. - <a href="http://tinyurl.com/8zt9l3">http://tinyurl.com/8zt9l3</a></span><br />
+<span class="irc-date">[6:48]</span> <span class="irc-black">&lt;CIA-48&gt; ioke: Ola Bini master * rdcc8a10 / (3 files in 2 dirs): Merge branch 'number-type-checks' of git://github.com/melwin/ioke into melwin/number-type-checks - <a href="http://tinyurl.com/7nmapy">http://tinyurl.com/7nmapy</a></span><br />
+<span class="irc-date">[6:59]</span> <span class="irc-black">&lt;CIA-48&gt; ioke: Felipe Rodrigues de Almeida master * r6920202 / (src/main/ioke/lang/Range.java test/range_spec.ik): Range cell 'from' should validate receiver type. - <a href="http://tinyurl.com/9vcjqn">http://tinyurl.com/9vcjqn</a></span><br />
+<span class="irc-date">[6:59]</span> <span class="irc-black">&lt;CIA-48&gt; ioke: Ola Bini master * r995d47b / (src/main/ioke/lang/Range.java test/range_spec.ik): Merge branch 'typecorrection' of git://github.com/felipero/ioke into felipero/typecorrection - <a href="http://tinyurl.com/9oa5pf">http://tinyurl.com/9oa5pf</a></span><br />
+<span class="irc-date">[6:59]</span> <span class="irc-black">&lt;CIA-48&gt; ioke: Ola Bini master * ra0a0482 / CONTRIBUTORS : Add felipero as contributor - <a href="http://tinyurl.com/ayuaar">http://tinyurl.com/ayuaar</a></span><br />
+<span class="irc-date">[7:28]</span> <span class="irc-green">* olabini (n=ola@194.132.20.9) has joined #ioke</span><br />
+<span class="irc-date">[7:28]</span> <span class="irc-green">* IokeHurricane sets mode +o olabini </span><br />
+<span class="irc-date">[7:28]</span> <span class="irc-black">&lt;olabini&gt; morning</span><br />
+<span class="irc-date">[7:33]</span> <span class="irc-black">&lt;naeu&gt; olabini: morning :-)</span><br />
+<span class="irc-date">[7:33]</span> <span class="irc-black">&lt;naeu&gt; feeling any better today?</span><br />
+<span class="irc-date">[7:34]</span> <span class="irc-black">&lt;naeu&gt; I noticed that you said you couldn't get asleep straight away, and then you were up at 5.am...</span><br />
+<span class="irc-date">[7:40]</span> <span class="irc-black">&lt;olabini&gt; a bit better</span><br />
+<span class="irc-date">[7:41]</span> <span class="irc-black">&lt;olabini&gt; but yeah. max 4 hours sleep so we'll see how I feel later today</span><br />
+<span class="irc-date">[7:41]</span> <span class="irc-black">&lt;olabini&gt; and on my way to the subway I slipped (it's very icy here right now), fell and hurt my wrist</span><br />
+<span class="irc-date">[7:41]</span> <span class="irc-black">&lt;olabini&gt; at least I didn't break anything</span><br />
+<span class="irc-date">[7:41]</span> <span class="irc-black">&lt;olabini&gt; but it wasn't a good start today either</span><br />
+<span class="irc-date">[7:42]</span> <span class="irc-black">&lt;olabini&gt; I have merged several type checking changes now</span><br />
+<span class="irc-date">[7:43]</span> <span class="irc-black">&lt;olabini&gt; it seems to be going well!</span><br />
+<span class="irc-date">[7:52]</span> <span class="irc-black">&lt;naeu&gt; impressive work on a bad wrist :-)</span><br />
+<span class="irc-date">[7:52]</span> <span class="irc-black">&lt;naeu&gt; I'm certain I wouldn't be that functional after only 4 hours of sleep</span><br />
+<span class="irc-date">[7:52]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[7:52]</span> <span class="irc-black">&lt;olabini&gt; I can do it sometimes</span><br />
+<span class="irc-date">[7:53]</span> <span class="irc-black">&lt;olabini&gt; not always. and not many days in a stretch</span><br />
+<span class="irc-date">[7:53]</span> <span class="irc-black">&lt;naeu&gt; has anyone committed a validation over an each method yet?</span><br />
+<span class="irc-date">[7:54]</span> <span class="irc-black">&lt;naeu&gt; currently I can't do anything other than break the code with List#each</span><br />
+<span class="irc-date">[7:56]</span> <span class="irc-black">&lt;olabini&gt; no, not yet</span><br />
+<span class="irc-date">[7:56]</span> <span class="irc-black">&lt;naeu&gt; *** - couldn't find cell 'evaluateOn' on 'fn(...)' (Condition Error NoSuchCell)</span><br />
+<span class="irc-date">[7:56]</span> <span class="irc-black">&lt;olabini&gt; oh yeah? why is that?</span><br />
+<span class="irc-date">[7:56]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[7:56]</span> <span class="irc-black">&lt;olabini&gt; well, the problem is that you can't use the helper methods melwin created</span><br />
+<span class="irc-date">[7:56]</span> <span class="irc-black">&lt;olabini&gt; because the arguments can't be evaluated</span><br />
+<span class="irc-date">[7:56]</span> <span class="irc-black">&lt;olabini&gt; show me what you're doing</span><br />
+<span class="irc-date">[7:56]</span> <span class="irc-black">&lt;naeu&gt; why is that?</span><br />
+<span class="irc-date">[7:57]</span> <span class="irc-black">&lt;naeu&gt; is that because the arguments for each are of different types depending on the arity?</span><br />
+<span class="irc-date">[7:57]</span> <span class="irc-black">&lt;naeu&gt; and melwin's helper methods just deal with one type?</span><br />
+<span class="irc-date">[7:58]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://gist.github.com/49395">http://gist.github.com/49395</a></span><br />
+<span class="irc-date">[8:00]</span> <span class="irc-black">&lt;olabini&gt; well, it is because the arguments doesn't have a type at all</span><br />
+<span class="irc-date">[8:00]</span> <span class="irc-black">&lt;olabini&gt; they are all messages, since they shouldn't be evaluated</span><br />
+<span class="irc-date">[8:00]</span> <span class="irc-black">&lt;naeu&gt; although all that gist will serve to do is highlight my misunderstanding of what's going on ;-)</span><br />
+<span class="irc-date">[8:00]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[8:01]</span> <span class="irc-black">&lt;naeu&gt; ah, ok</span><br />
+<span class="irc-date">[8:01]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[8:01]</span> <span class="irc-black">&lt;olabini&gt; so, Im not sure this is how melwins code work, but I think it is</span><br />
+<span class="irc-date">[8:01]</span> <span class="irc-black">&lt;olabini&gt; I'm pretty here he calls getEvaluatedArguments</span><br />
+<span class="irc-date">[8:01]</span> <span class="irc-black">&lt;olabini&gt; and doing that on the arguments to each will be totally incorrect</span><br />
+<span class="irc-date">[8:01]</span> <span class="irc-black">&lt;olabini&gt; see,</span><br />
+<span class="irc-date">[8:01]</span> <span class="irc-black">&lt;olabini&gt; say we have this</span><br />
+<span class="irc-date">[8:02]</span> <span class="irc-black">&lt;olabini&gt;  [1,2,3] each(x, x*x println)</span><br />
+<span class="irc-date">[8:02]</span> <span class="irc-black">&lt;olabini&gt; if you call getEvaluatedArguments</span><br />
+<span class="irc-date">[8:02]</span> <span class="irc-black">&lt;olabini&gt; it will try to evaluate "x" first, but since there is no x cell in the outside scope it will fail</span><br />
+<span class="irc-date">[8:02]</span> <span class="irc-black">&lt;olabini&gt; or, it might work</span><br />
+<span class="irc-date">[8:02]</span> <span class="irc-black">&lt;olabini&gt; for some places. but it won't do what each should do</span><br />
+<span class="irc-date">[8:03]</span> <span class="irc-black">&lt;naeu&gt; sure</span><br />
+<span class="irc-date">[8:03]</span> <span class="irc-black">&lt;olabini&gt; namely bind the name "x" and evaluate x*x println for every element</span><br />
+<span class="irc-date">[8:03]</span> <span class="irc-black">&lt;naeu&gt; I'm just looking at his commit (3f249e5db30e75133432339cef21c8b5b2acd956)</span><br />
+<span class="irc-date">[8:03]</span> <span class="irc-black">&lt;olabini&gt; so that's why melwin's code can't be used for anything that takes unevaluated arguments</span><br />
+<span class="irc-date">[8:04]</span> <span class="irc-black">&lt;naeu&gt; and I can't see getEvaluatedArguments within TypeCheckingJavaMethod</span><br />
+<span class="irc-date">[8:04]</span> <span class="irc-black">&lt;olabini&gt; no, it's because it happens implicitly</span><br />
+<span class="irc-date">[8:04]</span> <span class="irc-black">&lt;olabini&gt; that's one of the things melwin did</span><br />
+<span class="irc-date">[8:04]</span> <span class="irc-black">&lt;olabini&gt; oh, wait</span><br />
+<span class="irc-date">[8:04]</span> <span class="irc-black">&lt;olabini&gt; yeah, it's because he doesn't use it</span><br />
+<span class="irc-date">[8:04]</span> <span class="irc-black">&lt;olabini&gt; he uses getValidatedArgumentsAndReceiver instead</span><br />
+<span class="irc-date">[8:05]</span> <span class="irc-black">&lt;olabini&gt; a new method he added to TypeCheckingJavaMethod</span><br />
+<span class="irc-date">[8:05]</span> <span class="irc-black">&lt;naeu&gt; and that calls it implicitly behind the scenes?</span><br />
+<span class="irc-date">[8:05]</span> <span class="irc-black">&lt;olabini&gt; so to speak</span><br />
+<span class="irc-date">[8:05]</span> <span class="irc-black">&lt;olabini&gt; TypeCheckingJavaMethod overrides activate, and then defines another activate with more arguments</span><br />
+<span class="irc-date">[8:05]</span> <span class="irc-black">&lt;olabini&gt; the second activate is called from the TypeCheckingJavaMethod.activate</span><br />
+<span class="irc-date">[8:07]</span> <span class="irc-black">&lt;naeu&gt; ah ok, and the second activate (defined in a parent class) calls getEvaluatedArguments?</span><br />
+<span class="irc-date">[8:12]</span> <span class="irc-black">&lt;olabini&gt; it calls getValidatedArgumentsAndReceiver, which in turn will call getEvaluatedArguments</span><br />
+<span class="irc-date">[8:13]</span> <span class="irc-black">&lt;naeu&gt; ok :-)</span><br />
+<span class="irc-date">[8:17]</span> <span class="irc-black">&lt;naeu&gt; ok, i have to dash into work now</span><br />
+<span class="irc-date">[8:18]</span> <span class="irc-black">&lt;naeu&gt; I hope that the rest of today is an improvement over yesterday :-)</span><br />
+<span class="irc-date">[8:18]</span> <span class="irc-black">&lt;naeu&gt; and i hope your wrist gets better soon too!</span><br />
+<span class="irc-date">[8:18]</span> <span class="irc-black">&lt;naeu&gt; cheerio</span><br />
+<span class="irc-date">[8:18]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[8:30]</span> <span class="irc-navy">* olabini (n=ola@194.132.20.9) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[8:31]</span> <span class="irc-green">* olabini (n=ola@194.132.20.9) has joined #ioke</span><br />
+<span class="irc-date">[8:32]</span> <span class="irc-green">* IokeHurricane sets mode +o olabini </span><br />
+<span class="irc-date">[9:01]</span> <span class="irc-green">* naeu (n=sam@j27119.upc-j.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:09]</span> <span class="irc-black">&lt;olabini&gt; there seems to be a bug in melwin's stuff</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;naeu&gt; ah, crap</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;naeu&gt; btw, have you seen ANTLRWorks?</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;olabini&gt; never got it to work well for me</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;naeu&gt; i'm just flicking through the Ioke grammar in it</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;olabini&gt; I fixed the bug</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;olabini&gt; and what do you say of this spec:</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt;       Call should checkReceiverTypeOn(:evaluatedArguments)</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt; this will do more or less the same as:</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;CIA-48&gt; ioke: Ola Bini master * r616362e / (3 files in 2 dirs): Add support for send - <a href="http://tinyurl.com/9uujxw">http://tinyurl.com/9uujxw</a></span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;CIA-48&gt; ioke: Ola Bini master * r760fdc0 / (4 files in 4 dirs): Add support for a new expectation check for receivers, and implement a method to pass it in Call - <a href="http://tinyurl.com/a5xx27">http://tinyurl.com/a5xx27</a></span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;naeu&gt; great</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;CIA-48&gt; ioke: Ola Bini master * r393a912 / (src/main/ioke/lang/Call.java test/call_spec.ik): Convert more Call methods to use receiver type checking - <a href="http://tinyurl.com/8w35bt">http://tinyurl.com/8w35bt</a></span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;CIA-48&gt; ioke: Ola Bini master * r8745b2d / (3 files in 2 dirs): Fix bug in argument type checking that didn't notice that optional arguments were hit upon. Also add the rest of the type checking of receivers to Call - <a href="http://tinyurl.com/9ftz2f">http://tinyurl.com/9ftz2f</a></span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;CIA-48&gt; ioke: Ola Bini master * r0fd7e97 / (test/list_spec.ik test/number_spec.ik): Convert all the existing receiver type checking specs - <a href="http://tinyurl.com/8rm8vo">http://tinyurl.com/8rm8vo</a></span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;naeu&gt; I was thinking about doing something like that</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt;   x = Origin mimic. x cell(:evaluatedArguments) = Call cell(:evaluatedArguments). fn(x evaluatedArguments) should signal(Condition Error Type IncorrectType)</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt; yeah, well. it's in now.</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt; and I've converted stuff to use it</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;naeu&gt; although it's hard when the method needs params</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;olabini&gt; esch</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;olabini&gt; yeah, I know</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;olabini&gt; except</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;olabini&gt;  ... this spec handles that too</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;olabini&gt; :</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;olabini&gt;  List should checkReceiverTypeOn(:"&lt;=&gt;", [])</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;olabini&gt; you just give it some extra arguments</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;naeu&gt; oh, nice</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;olabini&gt; and they will be sent to the call</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;olabini&gt; I added a send-method btw</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;olabini&gt; to make it easy to do this kind of thing</span><br />
+<span class="irc-date">[9:34]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[9:34]</span> <span class="irc-black">&lt;olabini&gt; it works more or less exactly like Ruby send.</span><br />
+<span class="irc-date">[9:34]</span> <span class="irc-black">&lt;naeu&gt; it must please you how easy it is to add this stuff</span><br />
+<span class="irc-date">[9:34]</span> <span class="irc-black">&lt;olabini&gt; yep.</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;olabini&gt; that feels good</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;olabini&gt; gives validation that the model is more or less right</span><br />
+<span class="irc-date">[9:36]</span> <span class="irc-black">&lt;naeu&gt; people are starting to get excited by your Amsterdam.rb talk on the mailing list</span><br />
+<span class="irc-date">[9:36]</span> <span class="irc-black">&lt;naeu&gt; have you decided upon the format in any way?</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;olabini&gt; cool</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;naeu&gt; I was wondering if you could do some live coding in addition to slides...</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;olabini&gt; no, I haven't thought about at all</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;olabini&gt; well, yeah, I will definitely do live coding</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;naeu&gt; splendid :-)</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;olabini&gt; and I might want to code up some slide-ware in Ioke at that point, since I expect to have Java integratino in</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;naeu&gt; haha, nice</span><br />
+<span class="irc-date">[9:38]</span> <span class="irc-black">&lt;olabini&gt; we'll see how much time I have</span><br />
+<span class="irc-date">[9:38]</span> <span class="irc-black">&lt;naeu&gt; sure</span><br />
+<span class="irc-date">[9:38]</span> <span class="irc-black">&lt;naeu&gt; oh, and if there's any way you can do some JRuby integration, you'll really make people drool</span><br />
+<span class="irc-date">[9:39]</span> <span class="irc-black">&lt;olabini&gt; hehe. that would be nice</span><br />
+<span class="irc-date">[9:39]</span> <span class="irc-black">&lt;olabini&gt; shouldn't be too hard.</span><br />
+<span class="irc-date">[9:39]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:39]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[9:47]</span> <span class="irc-black">&lt;naeu&gt; I like how clean the implementation of send is :-)</span><br />
+<span class="irc-date">[9:48]</span> <span class="irc-black">&lt;naeu&gt; what does cell(:realValue) do?</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;olabini&gt; well. realValue is the lefthand side of a "should" expression</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;olabini&gt; cell makes sure that it's not activated.</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;olabini&gt; so if someone wants to do</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;olabini&gt;   DefaultMethod should checkReceiverTypeOn(:flurg)</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;olabini&gt; that will work</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;olabini&gt; actually, it won't</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;olabini&gt; cell(:DefaultMethod) should checkReceiverTypeOn(:flurg)</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;olabini&gt; that will work</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;olabini&gt; but if the cell(:realValue) isn't in the implementation, it will be activated at that point</span><br />
+<span class="irc-date">[9:51]</span> <span class="irc-black">&lt;naeu&gt; so in that case, self is the should contect, and DefaultMethod is the value of self realValue</span><br />
+<span class="irc-date">[9:51]</span> <span class="irc-black">&lt;naeu&gt; *context</span><br />
+<span class="irc-date">[9:52]</span> <span class="irc-black">&lt;naeu&gt; ok, I need to look further into the implementation of ispec...</span><br />
+<span class="irc-date">[10:08]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[10:17]</span> <span class="irc-black">&lt;naeu&gt; why is it sooo hard to ask your colleagues to write tests to explain what they want to do?</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;naeu&gt; arrrgggh</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;naeu&gt; i really believe that if you write a spec it illustrates your intentions and is a great thing to discuss</span><br />
+<span class="irc-date">[10:19]</span> <span class="irc-black">&lt;naeu&gt; rather than "how do I code this" questions</span><br />
+<span class="irc-date">[10:19]</span> <span class="irc-black">&lt;naeu&gt; I think "is this a good thing to do, and if so, how would I make this pass?" is a much better approach</span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;olabini&gt; definitely</span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;naeu&gt; he got really angry with me :-(</span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;olabini&gt; it makes it so much easier to design the interface</span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;olabini&gt; if you've actually tried it out in a spec</span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;naeu&gt; he hates tests</span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;olabini&gt; hmm. that sucks</span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;naeu&gt; and thinks I'm just an annoying whiner</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-brick">* olabini have just written a list of all things that need to be written about in the guide for the release, and realized that there will be no more sleep this week</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;olabini&gt; hmm.</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;naeu&gt; i can help with the guide if you want</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;naeu&gt; you could just write raw unpolished descriptions</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;naeu&gt; and I could turn them into nice prose</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; it's OK, I think I'll manage</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-navy">* CIA-48 (n=CIA@208.69.182.149) Quit ()</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-green">* CIA-48 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[11:42]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: what do you think?</span><br />
+<span class="irc-date">[11:42]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: Oh dear god, I know where this is going.</span><br />
+<span class="irc-date">[11:43]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: are you sure about that?</span><br />
+<span class="irc-date">[11:43]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: what do you say to that?</span><br />
+<span class="irc-date">[11:43]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: I say you're just messing about</span><br />
+<span class="irc-date">[11:43]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: Of course</span><br />
+<span class="irc-date">[11:43]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: no, really!</span><br />
+<span class="irc-date">[11:43]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: Anyway, upon arrival at the hotel, surprise suprise they find their friend standing in the lobby, dazed and staring at the ceiling muttering to himself.  Understandably they were all pissed off with him for making them worry and bringing their trip down as a result of their half assed search. However all the friend can reply with is ?this fucking town is full of gremlins!?? They tried to calm him down and tell him that it was the acid making hi</span><br />
+<span class="irc-date">[11:49]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: I think it's time you shut up</span><br />
+<span class="irc-date">[11:49]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: it's actually one of the largest trolling experiments ever conducted</span><br />
+<span class="irc-date">[11:49]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: really?</span><br />
+<span class="irc-date">[11:49]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: and so I'm like "Oh, really? What part?"</span><br />
+<span class="irc-date">[11:49]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: I don't believe that</span><br />
+<span class="irc-date">[11:49]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: jerry falwell's dead</span><br />
+<span class="irc-date">[11:49]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: oh no!</span><br />
+<span class="irc-date">[11:49]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: "You also agree that you will not use these products for any purposes prohibited by United States law, including, without limitation, the development, design, manufacture or production of missiles, or nuclear, chemical or biological weapons."</span><br />
+<span class="irc-date">[12:00]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[12:11]</span> <span class="irc-black">&lt;naeu&gt; haha</span><br />
+<span class="irc-date">[12:11]</span> <span class="irc-black">&lt;naeu&gt; I can't believe IokeHurricane has op rights ;-)</span><br />
+<span class="irc-date">[12:16]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[12:18]</span> <span class="irc-black">&lt;olabini&gt; naeu: why not?</span><br />
+<span class="irc-date">[12:18]</span> <span class="irc-black">&lt;olabini&gt; that's the way I get op rights back every time</span><br />
+<span class="irc-date">[12:19]</span> <span class="irc-black">&lt;olabini&gt; and IokeHurricane keeps the channel open</span><br />
+<span class="irc-date">[12:19]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: naeu doesn't like you</span><br />
+<span class="irc-date">[12:19]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: Yeah, that one doesn't stand a chance.</span><br />
+<span class="irc-date">[12:26]</span> <span class="irc-green">* naeu_ (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[12:34]</span> <span class="irc-navy">* naeu (n=sam@j27119.upc-j.chello.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[12:46]</span> <span class="irc-green">* felipero (n=felipe@189-55-18-206-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[12:47]</span> <span class="irc-black">&lt;felipero&gt; Hi all</span><br />
+<span class="irc-date">[12:54]</span> <span class="irc-black">&lt;naeu_&gt; felipero: hey there</span><br />
+<span class="irc-date">[12:55]</span> <span class="irc-green">* naeu_ is now known as naeu</span><br />
+<span class="irc-date">[12:57]</span> <span class="irc-black">&lt;felipero&gt; how are you, man?</span><br />
+<span class="irc-date">[12:58]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: how are YOU?</span><br />
+<span class="irc-date">[12:58]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: something about jewish dating</span><br />
+<span class="irc-date">[13:01]</span> <span class="irc-black">&lt;felipero&gt; naeu, have you found a way around the each issue?</span><br />
+<span class="irc-date">[13:01]</span> <span class="irc-black">&lt;naeu&gt; felipero: I haven't had further chance to look at it</span><br />
+<span class="irc-date">[13:01]</span> <span class="irc-black">&lt;naeu&gt; I'm at work right now</span><br />
+<span class="irc-date">[13:02]</span> <span class="irc-black">&lt;felipero&gt; oh.. ok</span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-black">&lt;felipero&gt; what language are you dealing at work now?</span><br />
+<span class="irc-date">[13:09]</span> <span class="irc-black">&lt;naeu&gt; Ruby</span><br />
+<span class="irc-date">[13:11]</span> <span class="irc-black">&lt;felipero&gt; olabini, so, now we must use the checkReceiverTypeOn instead that other way?</span><br />
+<span class="irc-date">[13:11]</span> <span class="irc-black">&lt;olabini&gt; must and must</span><br />
+<span class="irc-date">[13:11]</span> <span class="irc-black">&lt;olabini&gt; it would be nice</span><br />
+<span class="irc-date">[13:11]</span> <span class="irc-black">&lt;olabini&gt; since it's less code</span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-black">&lt;felipero&gt; sure...</span><br />
+<span class="irc-date">[13:13]</span> <span class="irc-black">&lt;felipero&gt; where are checkReceiverTypeOn implemented?</span><br />
+<span class="irc-date">[13:15]</span> <span class="irc-black">&lt;olabini&gt; lib/ioke/ispec/expectations.ik</span><br />
+<span class="irc-date">[13:17]</span> <span class="irc-black">&lt;felipero&gt; oh.. nice</span><br />
+<span class="irc-date">[13:18]</span> <span class="irc-black">&lt;felipero&gt; now I got what is being done. =)</span><br />
+<span class="irc-date">[13:18]</span> <span class="irc-black">&lt;felipero&gt; much better...</span><br />
+<span class="irc-date">[14:10]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-black">&lt;naeu&gt; melwin: afternoon</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-black">&lt;melwin&gt; Dude.</span><br />
+<span class="irc-date">[14:15]</span> <span class="irc-black">&lt;naeu&gt; how's the hair?</span><br />
+<span class="irc-date">[14:16]</span> <span class="irc-black">&lt;melwin&gt; Pointy as ever.</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;naeu&gt; splendid</span><br />
+<span class="irc-date">[14:47]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[15:16]</span> <span class="irc-navy">* olabini (n=ola@194.132.20.9) Quit (Read error: 145 (Connection timed out))</span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-black">&lt;cv&gt; afternoon everyone</span><br />
+<span class="irc-date">[15:38]</span> <span class="irc-black">&lt;felipero&gt; hi cv...</span><br />
+<span class="irc-date">[15:41]</span> <span class="irc-black">&lt;cv&gt; yesterday i've added cobertura support to the build so we can see what the test coverage is like</span><br />
+<span class="irc-date">[15:41]</span> <span class="irc-black">&lt;cv&gt; mixed results</span><br />
+<span class="irc-date">[15:41]</span> <span class="irc-black">&lt;cv&gt; it either didn't work properly or coverage is actually pretty low :(</span><br />
+<span class="irc-date">[16:13]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-black">&lt;felipero&gt; cv, are you considering the ispecs in the coverage too?</span><br />
+<span class="irc-date">[16:34]</span> <span class="irc-black">&lt;cv&gt; yeah, seeing there are no other kinds of tests :)</span><br />
+<span class="irc-date">[16:38]</span> <span class="irc-black">&lt;melwin&gt; felipero: Hey.</span><br />
+<span class="irc-date">[16:38]</span> <span class="irc-black">&lt;melwin&gt; You figure out the activate?</span><br />
+<span class="irc-date">[16:44]</span> <span class="irc-black">&lt;felipero&gt; yes... I did...</span><br />
+<span class="irc-date">[16:45]</span> <span class="irc-black">&lt;felipero&gt; but I still didn't get it</span><br />
+<span class="irc-date">[16:45]</span> <span class="irc-black">&lt;felipero&gt; it calls super.activate</span><br />
+<span class="irc-date">[16:45]</span> <span class="irc-black">&lt;felipero&gt; so, I suppose super.activate is calling getEvaluatedArguments</span><br />
+<span class="irc-date">[16:47]</span> <span class="irc-black">&lt;felipero&gt; then, it will call the normal activate()</span><br />
+<span class="irc-date">[16:47]</span> <span class="irc-black">&lt;felipero&gt; that is the one I was calling</span><br />
+<span class="irc-date">[16:48]</span> <span class="irc-black">&lt;felipero&gt; so, I did changed it. Worked, but I can't see how it really works here</span><br />
+<span class="irc-date">[16:49]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit ()</span><br />
+<span class="irc-date">[16:58]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[16:59]</span> <span class="irc-black">&lt;melwin&gt; Well, the TypeCheckingJavaMethod also does getValidatedArgumentsAndReceiver (or whatever it was called), which in turn does getArguments() and then runs through the validation.</span><br />
+<span class="irc-date">[16:59]</span> <span class="irc-black">&lt;melwin&gt; So the arguments are evaluated and validated before they end up at the new activate method.</span><br />
+<span class="irc-date">[16:59]</span> <span class="irc-black">&lt;melwin&gt; It's optional however, so what you did also works - but since it's just standard boilerplate code it's better to just get rid of it... DRY, you know! :)</span><br />
+<span class="irc-date">[17:12]</span> <span class="irc-black">&lt;felipero&gt; sure... but the line TypeCheckingJavaMethod calls getValidatedArgumentAndReceiver is in activate with 4 arguments</span><br />
+<span class="irc-date">[17:13]</span> <span class="irc-black">&lt;felipero&gt; you said to override activate with 6 arguments, and this just calls super.activate the means, is calling the activate from JavaMethod</span><br />
+<span class="irc-date">[17:13]</span> <span class="irc-black">&lt;felipero&gt; so, that's where I get confused</span><br />
+<span class="irc-date">[17:13]</span> <span class="irc-black">&lt;felipero&gt; =)</span><br />
+<span class="irc-date">[17:19]</span> <span class="irc-black">&lt;melwin&gt; Ehhh... Now I'm confused! Let's see here...</span><br />
+<span class="irc-date">[17:20]</span> <span class="irc-black">&lt;melwin&gt; Overriding the activate with 6 arguments in the new TypeCheckingJavaMethod will replace the super.activate call with whatever code you put in there.</span><br />
+<span class="irc-date">[17:21]</span> <span class="irc-black">&lt;melwin&gt; If you _don't_ override it, however, it will just call super.activate which signals a condition that there is no code to execute.</span><br />
+<span class="irc-date">[17:22]</span> <span class="irc-black">&lt;melwin&gt; We agree on this, eh? :)</span><br />
+<span class="irc-date">[17:25]</span> <span class="irc-black">&lt;melwin&gt; The activate with 4 arguments is invoked by the interpreter when a method is activated... And it's the standard implementation of this in TypeCheckingJavaMethod that does argument evaluation and validation - and then calls the activate with 6 methods passing in the evaluated and validated arguments and receiver.</span><br />
+<span class="irc-date">[17:28]</span> <span class="irc-green">* azoic (n=azoic@nat/sun/x-9193b4425784482b) has left #ioke</span><br />
+<span class="irc-date">[17:30]</span> <span class="irc-green">* naeu (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[17:34]</span> <span class="irc-black">&lt;naeu&gt; so obama is now in...</span><br />
+<span class="irc-date">[17:39]</span> <span class="irc-black">&lt;melwin&gt; Who?</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;naeu&gt; i heard that the worst job in the america had been given to a black man</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;naeu&gt; they just have no respect..</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[17:42]</span> <span class="irc-black">&lt;naeu&gt; actually, I thought that his speech was really inspiring</span><br />
+<span class="irc-date">[17:45]</span> <span class="irc-black">&lt;felipero&gt; melwin, ok. I got it</span><br />
+<span class="irc-date">[17:45]</span> <span class="irc-black">&lt;felipero&gt; what matters is not override the activate with 6 arguments, but is NOT override the activate with 4 arguments.</span><br />
+<span class="irc-date">[17:46]</span> <span class="irc-black">&lt;felipero&gt; cool... got it now. =)</span><br />
+<span class="irc-date">[17:46]</span> <span class="irc-black">&lt;melwin&gt; Well... Of course it's not meaningful to do both!</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;melwin&gt; It just gives you the option to do what you need - with standard functionality for the common case.</span><br />
+<span class="irc-date">[17:52]</span> <span class="irc-black">&lt;felipero&gt; very cool...</span><br />
+<span class="irc-date">[18:04]</span> <span class="irc-black">&lt;naeu&gt; ah nice, just tested the receiver of List#each successfully :-)</span><br />
+<span class="irc-date">[18:04]</span> <span class="irc-black">&lt;naeu&gt; i'm slowly getting my head around this java stuff</span><br />
+<span class="irc-date">[18:06]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[18:07]</span> <span class="irc-black">&lt;naeu&gt; right i'm off out now</span><br />
+<span class="irc-date">[18:07]</span> <span class="irc-black">&lt;naeu&gt; chat in a bit</span><br />
+<span class="irc-date">[18:12]</span> <span class="irc-black">&lt;naeu&gt; i just ran all the tests and it blew up spectacularly</span><br />
+<span class="irc-date">[18:12]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://gist.github.com/49580">http://gist.github.com/49580</a></span><br />
+<span class="irc-date">[18:12]</span> <span class="irc-black">&lt;naeu&gt; my list tests passed fine</span><br />
+<span class="irc-date">[18:13]</span> <span class="irc-black">&lt;naeu&gt; this was just trying to run them all</span><br />
+<span class="irc-date">[18:13]</span> <span class="irc-black">&lt;naeu&gt; anyway i pushed the branch to melwin/list-type-checks</span><br />
+<span class="irc-date">[18:13]</span> <span class="irc-black">&lt;naeu&gt; see if someone else can reproduce it...</span><br />
+<span class="irc-date">[18:13]</span> <span class="irc-black">&lt;naeu&gt; cheerio</span><br />
+<span class="irc-date">[18:13]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit ()</span><br />
+<span class="irc-date">[18:13]</span> <span class="irc-black">&lt;melwin&gt; Hehe...</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-green">* azoic (n=azoic@nat/sun/x-5ae98aa0eba02aec) has joined #ioke</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-182.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:50]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-182.vc-graz.ac.at) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[19:55]</span> <span class="irc-brown">-christel- [Global Notice] Hi all, it would appear one of our sponsors are having some issues with their connectivity. As a result we've lost one of our client (leaf) servers along with services. We hope to have things back to normal asap. </span><br />
+<span class="irc-date">[20:13]</span> <span class="irc-brown">-christel- [Global Notice] Hi all, Everything is back to normal now (services included) -- bgp issues with uunet as the cause of the problem. Apologies for the inconvenience and have a good day.</span><br />
+<span class="irc-date">[20:36]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:36]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[20:37]</span> <span class="irc-black">&lt;naeu&gt; evening</span><br />
+<span class="irc-date">[20:38]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-211.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[20:43]</span> <span class="irc-green">* olabini (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[20:43]</span> <span class="irc-green">* IokeHurricane sets mode +o olabini </span><br />
+<span class="irc-date">[20:43]</span> <span class="irc-black">&lt;olabini&gt; evening, people</span><br />
+<span class="irc-date">[20:43]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[20:47]</span> <span class="irc-black">&lt;olabini&gt; how is everything going?</span><br />
+<span class="irc-date">[20:47]</span> <span class="irc-black">&lt;melwin&gt; I've been working at least...</span><br />
+<span class="irc-date">[20:47]</span> <span class="irc-black">&lt;naeu&gt; hey olabini</span><br />
+<span class="irc-date">[20:47]</span> <span class="irc-black">&lt;naeu&gt; boom: <a href="http://gist.github.com/49580">http://gist.github.com/49580</a></span><br />
+<span class="irc-date">[20:47]</span> <span class="irc-black">&lt;naeu&gt; I must have added a memory leak</span><br />
+<span class="irc-date">[20:49]</span> <span class="irc-black">&lt;olabini&gt; WOW.</span><br />
+<span class="irc-date">[20:49]</span> <span class="irc-black">&lt;olabini&gt; that is interesting</span><br />
+<span class="irc-date">[20:50]</span> <span class="irc-black">&lt;olabini&gt; how the h*ck did you manage that? =)</span><br />
+<span class="irc-date">[20:50]</span> <span class="irc-black">&lt;olabini&gt; it's some infinite recursion of some kind that adds for ever</span><br />
+<span class="irc-date">[20:50]</span> <span class="irc-black">&lt;olabini&gt; but where it happens is a harder question</span><br />
+<span class="irc-date">[20:50]</span> <span class="irc-black">&lt;olabini&gt; how much code have you added to get this behavior?</span><br />
+<span class="irc-date">[20:51]</span> <span class="irc-black">&lt;melwin&gt; I haven't seen that.</span><br />
+<span class="irc-date">[20:54]</span> <span class="irc-black">&lt;naeu&gt; i think it's just my implementation of List#each</span><br />
+<span class="irc-date">[20:54]</span> <span class="irc-black">&lt;naeu&gt; hold on...</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://gist.github.com/49658">http://gist.github.com/49658</a></span><br />
+<span class="irc-date">[20:58]</span> <span class="irc-black">&lt;melwin&gt; What have you done with it?</span><br />
+<span class="irc-date">[20:58]</span> <span class="irc-black">&lt;naeu&gt; there is a branch with this code in: melwin/list-type-checks</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-black">&lt;naeu&gt; melwin: i couldn't use your helper methods because each shouldn't evaluate its arguments</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-black">&lt;melwin&gt; You can still use: runtime.list.convertToThis(....) if you want to.</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-black">&lt;naeu&gt; so I just did this:</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-black">&lt;naeu&gt; Object onAsList = on;</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-black">&lt;naeu&gt;                     if(!(IokeObject.data(onAsList) instanceof IokeList)) {</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-black">&lt;naeu&gt;                       onAsList = IokeObject.convertTo(context.runtime.list, onAsList, true, null, message, context);</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-black">&lt;naeu&gt;                     }</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-black">&lt;naeu&gt;                     </span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-black">&lt;naeu&gt;                     List&lt;Object&gt; ls = ((IokeList)IokeObject.data(onAsList)).list;</span><br />
+<span class="irc-date">[21:00]</span> <span class="irc-black">&lt;olabini&gt; hmm. how very odd.</span><br />
+<span class="irc-date">[21:00]</span> <span class="irc-black">&lt;olabini&gt; sorry, Sam. I really can't explain that</span><br />
+<span class="irc-date">[21:00]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[21:00]</span> <span class="irc-black">&lt;naeu&gt; oddly the list specs all pass fine</span><br />
+<span class="irc-date">[21:00]</span> <span class="irc-black">&lt;naeu&gt; it's just when running the whole suite that this happens</span><br />
+<span class="irc-date">[21:00]</span> <span class="irc-black">&lt;melwin&gt; Aha...</span><br />
+<span class="irc-date">[21:01]</span> <span class="irc-black">&lt;naeu&gt; did the electricity just flicker back on in Sweden?</span><br />
+<span class="irc-date">[21:02]</span> <span class="irc-black">&lt;melwin&gt; Was it off?</span><br />
+<span class="irc-date">[21:02]</span> <span class="irc-black">&lt;naeu&gt; :-p</span><br />
+<span class="irc-date">[21:03]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[21:03]</span> <span class="irc-black">&lt;olabini&gt; so, it's another spec that uses some list each behavior that is subtly different</span><br />
+<span class="irc-date">[21:03]</span> <span class="irc-black">&lt;melwin&gt; naeu: Dude... list-type-checks works fine for me.</span><br />
+<span class="irc-date">[21:04]</span> <span class="irc-black">&lt;olabini&gt; melwin: I like separate branches, actually. it makes it really clean what to merge</span><br />
+<span class="irc-date">[21:04]</span> <span class="irc-black">&lt;naeu&gt; running the entire suite?</span><br />
+<span class="irc-date">[21:04]</span> <span class="irc-black">&lt;melwin&gt; olabini: So keep doing the way I am?</span><br />
+<span class="irc-date">[21:04]</span> <span class="irc-black">&lt;melwin&gt; naeu: Yeah.</span><br />
+<span class="irc-date">[21:04]</span> <span class="irc-black">&lt;olabini&gt; melwin: I'm fine with it if you don't think it's too much work</span><br />
+<span class="irc-date">[21:04]</span> <span class="irc-black">&lt;olabini&gt; you could do it in one branch that I just keep remerging too.</span><br />
+<span class="irc-date">[21:04]</span> <span class="irc-black">&lt;melwin&gt; No problem. Just thought you might think it silly.</span><br />
+<span class="irc-date">[21:05]</span> <span class="irc-black">&lt;olabini&gt; nope</span><br />
+<span class="irc-date">[21:05]</span> <span class="irc-black">&lt;olabini&gt; github makes it so insanely easy to cooperate about this.</span><br />
+<span class="irc-date">[21:05]</span> <span class="irc-black">&lt;melwin&gt; Once you've pulled I think I will clean out a few of the old branches.</span><br />
+<span class="irc-date">[21:05]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[21:05]</span> <span class="irc-black">&lt;olabini&gt; sure</span><br />
+<span class="irc-date">[21:05]</span> <span class="irc-black">&lt;melwin&gt; Yeah!</span><br />
+<span class="irc-date">[21:05]</span> <span class="irc-black">&lt;olabini&gt; I'll tell</span><br />
+<span class="irc-date">[21:05]</span> <span class="irc-black">&lt;melwin&gt; I love Git.</span><br />
+<span class="irc-date">[21:06]</span> <span class="irc-black">&lt;naeu&gt; me too</span><br />
+<span class="irc-date">[21:06]</span> <span class="irc-black">&lt;melwin&gt; naeu: So what's wrong, then...? Hmm....</span><br />
+<span class="irc-date">[21:06]</span> <span class="irc-black">&lt;naeu&gt; i'll try running the spec suite with java 5</span><br />
+<span class="irc-date">[21:06]</span> <span class="irc-black">&lt;melwin&gt; You sure you're running a clean checkout of melwin/list-type-checks?</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-black">&lt;melwin&gt; I'm on 1.6.0_10...</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-black">&lt;olabini&gt; I use soylatte</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-black">&lt;melwin&gt; I prefer real milk.</span><br />
+<span class="irc-date">[21:08]</span> <span class="irc-black">&lt;melwin&gt; Grande caramel frappuchino(tm), please!</span><br />
+<span class="irc-date">[21:08]</span> <span class="irc-black">&lt;melwin&gt; Gotta get myself a Mac...</span><br />
+<span class="irc-date">[21:08]</span> <span class="irc-black">&lt;naeu&gt; i prefer my milk in my tea</span><br />
+<span class="irc-date">[21:09]</span> <span class="irc-black">&lt;melwin&gt; I thought limeys did lemon, eh?</span><br />
+<span class="irc-date">[21:09]</span> <span class="irc-black">&lt;melwin&gt; Guess it depends on the tea....</span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-black">&lt;melwin&gt; But you have tea in a coffee shop over there, I guess... :)</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;naeu&gt; the limey thing is an ancient trait - it was when we used to give sailors limes so they wouldn't get vitamin c deficiency</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-black">&lt;melwin&gt; Ummm... Yes... I know... But I was talking about lemons in tea... :)</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-black">&lt;naeu&gt; olabini: what are the advantages of soylatte?</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-black">&lt;melwin&gt; Or "lemon" rather... :{</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-black">&lt;melwin&gt; :]</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-black">&lt;naeu&gt; :-p</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-green">* HeMan (n=jimmy@ssh.southpole.se) has left #ioke</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-black">&lt;naeu&gt; no, just normal cow's milk</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-black">&lt;naeu&gt; and some put sugar in too</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-black">&lt;naeu&gt; although i find that a little strange</span><br />
+<span class="irc-date">[21:13]</span> <span class="irc-black">&lt;melwin&gt; The use of "limey" was just a bonus derogatory label...</span><br />
+<span class="irc-date">[21:13]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[21:13]</span> <span class="irc-black">&lt;melwin&gt; You on earl?</span><br />
+<span class="irc-date">[21:13]</span> <span class="irc-black">&lt;melwin&gt; Or what's your cuppa?</span><br />
+<span class="irc-date">[21:13]</span> <span class="irc-black">&lt;naeu&gt; hmm, still seems to blow up on java 5</span><br />
+<span class="irc-date">[21:14]</span> <span class="irc-black">&lt;naeu&gt; melwin: aaarrrgh earl grey is *not* my cup of tea</span><br />
+<span class="irc-date">[21:14]</span> <span class="irc-black">&lt;naeu&gt; i like a nice healthy mix of darjeeling and assam</span><br />
+<span class="irc-date">[21:14]</span> <span class="irc-black">&lt;naeu&gt; earl grey tastes like kissing a smoker</span><br />
+<span class="irc-date">[21:15]</span> <span class="irc-black">&lt;melwin&gt; Hahaha... I prefer a mix of lapsang and a nice big-leaf oolong...</span><br />
+<span class="irc-date">[21:16]</span> <span class="irc-black">&lt;melwin&gt; I don't like the bergamot in earl grey...</span><br />
+<span class="irc-date">[21:16]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[21:17]</span> <span class="irc-black">&lt;melwin&gt; And I don't smoke. :]</span><br />
+<span class="irc-date">[21:17]</span> <span class="irc-black">&lt;melwin&gt; Man, I don't get this. What's up with your box, I ask...</span><br />
+<span class="irc-date">[21:19]</span> <span class="irc-black">&lt;naeu&gt; i don't smoke either</span><br />
+<span class="irc-date">[21:19]</span> <span class="irc-black">&lt;melwin&gt; Maybe smoking would help with this OOM....</span><br />
+<span class="irc-date">[21:20]</span> <span class="irc-black">&lt;naeu&gt; finding out that The Netherlands hadn't yet introduced the smoking ban was one of my worst discoveries when I arrived here</span><br />
+<span class="irc-date">[21:20]</span> <span class="irc-black">&lt;naeu&gt; OOM?</span><br />
+<span class="irc-date">[21:20]</span> <span class="irc-black">&lt;melwin&gt; OutOfMemory...</span><br />
+<span class="irc-date">[21:20]</span> <span class="irc-black">&lt;naeu&gt; ah</span><br />
+<span class="irc-date">[21:21]</span> <span class="irc-black">&lt;melwin&gt; Does bumping the heap size help?</span><br />
+<span class="irc-date">[21:21]</span> <span class="irc-black">&lt;naeu&gt; i'm pulling a fresh clone of melwin just in case</span><br />
+<span class="irc-date">[21:21]</span> <span class="irc-black">&lt;naeu&gt; how do i alter the heap size?</span><br />
+<span class="irc-date">[21:22]</span> <span class="irc-black">&lt;olabini&gt; -J-Xmx512m</span><br />
+<span class="irc-date">[21:22]</span> <span class="irc-black">&lt;olabini&gt; naeu: it's much faster, and doesn't have some of the bugs the Java 6 preview on mac has</span><br />
+<span class="irc-date">[21:22]</span> <span class="irc-black">&lt;olabini&gt; melwin: I've merged everything. thanks!</span><br />
+<span class="irc-date">[21:24]</span> <span class="irc-black">&lt;naeu&gt; ok, downloading soylatte</span><br />
+<span class="irc-date">[21:27]</span> <span class="irc-black">&lt;olabini&gt; naeu: but I doubt that is your problem, though</span><br />
+<span class="irc-date">[21:27]</span> <span class="irc-black">&lt;olabini&gt; so, guys, I gotta work on the guide now, so I'll be unavailable for the rest of the evening</span><br />
+<span class="irc-date">[21:27]</span> <span class="irc-black">&lt;olabini&gt; talk to you later</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-black">&lt;naeu&gt; good luck with that :-)</span><br />
+<span class="irc-date">[21:31]</span> <span class="irc-black">&lt;melwin&gt; Have fun.</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-black">&lt;naeu&gt; ok, trying soylatte...</span><br />
+<span class="irc-date">[21:44]</span> <span class="irc-black">&lt;naeu&gt; wow, the tests just get slower and slower...</span><br />
+<span class="irc-date">[21:44]</span> <span class="irc-black">&lt;melwin&gt; You 1000% certain your checkout clean?</span><br />
+<span class="irc-date">[21:44]</span> <span class="irc-black">&lt;melwin&gt; is...</span><br />
+<span class="irc-date">[21:44]</span> <span class="irc-black">&lt;naeu&gt; indeed</span><br />
+<span class="irc-date">[21:44]</span> <span class="irc-black">&lt;naeu&gt; i nuked the entire directory</span><br />
+<span class="irc-date">[21:45]</span> <span class="irc-black">&lt;naeu&gt; and recloned it</span><br />
+<span class="irc-date">[21:45]</span> <span class="irc-black">&lt;naeu&gt; which means, actually i'll be on master</span><br />
+<span class="irc-date">[21:45]</span> <span class="irc-black">&lt;melwin&gt; Still OOM?</span><br />
+<span class="irc-date">[21:45]</span> <span class="irc-black">&lt;naeu&gt; which makes things stranger still</span><br />
+<span class="irc-date">[21:45]</span> <span class="irc-black">&lt;naeu&gt; no OOM yet</span><br />
+<span class="irc-date">[21:45]</span> <span class="irc-black">&lt;melwin&gt; Uuuuuuh...</span><br />
+<span class="irc-date">[21:45]</span> <span class="irc-black">&lt;naeu&gt; but it's grnding to a halt</span><br />
+<span class="irc-date">[21:45]</span> <span class="irc-black">&lt;melwin&gt; I run all tests in 10 seconds on my laptop.</span><br />
+<span class="irc-date">[21:45]</span> <span class="irc-black">&lt;naeu&gt; wow</span><br />
+<span class="irc-date">[21:46]</span> <span class="irc-black">&lt;naeu&gt; OOM</span><br />
+<span class="irc-date">[21:46]</span> <span class="irc-black">&lt;naeu&gt; BUILD FAILED</span><br />
+<span class="irc-date">[21:46]</span> <span class="irc-black">&lt;naeu&gt; Total time: 8 minutes 47 seconds</span><br />
+<span class="irc-date">[21:46]</span> <span class="irc-black">&lt;naeu&gt; maybe i should reboot</span><br />
+<span class="irc-date">[21:46]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[21:51]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[21:51]</span> <span class="irc-black">&lt;melwin&gt; I'm doing Dict now...</span><br />
+<span class="irc-date">[21:52]</span> <span class="irc-black">&lt;naeu&gt; ok now it worked pretty fast</span><br />
+<span class="irc-date">[21:52]</span> <span class="irc-black">&lt;naeu&gt; strange</span><br />
+<span class="irc-date">[21:52]</span> <span class="irc-black">&lt;naeu&gt; what command are you using to run the full test suite?</span><br />
+<span class="irc-date">[21:52]</span> <span class="irc-black">&lt;melwin&gt; ant</span><br />
+<span class="irc-date">[21:52]</span> <span class="irc-black">&lt;melwin&gt; Short and sweet.</span><br />
+<span class="irc-date">[21:52]</span> <span class="irc-black">&lt;naeu&gt; hmm, till takes me 40 seconds</span><br />
+<span class="irc-date">[21:53]</span> <span class="irc-black">&lt;naeu&gt; *still</span><br />
+<span class="irc-date">[21:54]</span> <span class="irc-black">&lt;melwin&gt; Odd... You running this on your Apple?</span><br />
+<span class="irc-date">[21:54]</span> <span class="irc-black">&lt;melwin&gt; .... IPhone? :)</span><br />
+<span class="irc-date">[21:54]</span> <span class="irc-black">&lt;naeu&gt; haha</span><br />
+<span class="irc-date">[21:55]</span> <span class="irc-black">&lt;naeu&gt; do you run with a bigger heap size than the default?</span><br />
+<span class="irc-date">[21:55]</span> <span class="irc-black">&lt;melwin&gt; No.</span><br />
+<span class="irc-date">[21:55]</span> <span class="irc-black">&lt;melwin&gt; Standard script and settings.</span><br />
+<span class="irc-date">[21:56]</span> <span class="irc-black">&lt;cv&gt; takes 55s on my macbookpro</span><br />
+<span class="irc-date">[21:56]</span> <span class="irc-black">&lt;cv&gt; so that sounds about right</span><br />
+<span class="irc-date">[21:56]</span> <span class="irc-black">&lt;cv&gt; coverage is another matter</span><br />
+<span class="irc-date">[21:56]</span> <span class="irc-black">&lt;cv&gt; :)</span><br />
+<span class="irc-date">[21:57]</span> <span class="irc-black">&lt;naeu&gt; i wonder why it's sooo much slower on a mac</span><br />
+<span class="irc-date">[21:58]</span> <span class="irc-black">&lt;naeu&gt; it's not like i don't have decent hardware</span><br />
+<span class="irc-date">[21:58]</span> <span class="irc-black">&lt;naeu&gt; 2.5 GHz Core 2 Duo</span><br />
+<span class="irc-date">[21:58]</span> <span class="irc-black">&lt;felipero&gt; I got 1min and 10 secs...</span><br />
+<span class="irc-date">[21:58]</span> <span class="irc-black">&lt;felipero&gt; including build the jar</span><br />
+<span class="irc-date">[21:58]</span> <span class="irc-black">&lt;felipero&gt; I'm in Ubuntu</span><br />
+<span class="irc-date">[21:59]</span> <span class="irc-black">&lt;naeu&gt; you're running Ubuntu on your MacBook Pro?</span><br />
+<span class="irc-date">[21:59]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-211.vc-graz.ac.at) has left #ioke</span><br />
+<span class="irc-date">[22:00]</span> <span class="irc-black">&lt;melwin&gt; What are we talking about? I'm talking about the time only for the unit tests as run when doing "ant".</span><br />
+<span class="irc-date">[22:01]</span> <span class="irc-black">&lt;felipero&gt; who said I have a MacBook?</span><br />
+<span class="irc-date">[22:01]</span> <span class="irc-black">&lt;naeu&gt; ah i'm getting confused</span><br />
+<span class="irc-date">[22:01]</span> <span class="irc-black">&lt;naeu&gt; cv has a macbook pro</span><br />
+<span class="irc-date">[22:01]</span> <span class="irc-black">&lt;naeu&gt; as do i</span><br />
+<span class="irc-date">[22:02]</span> <span class="irc-black">&lt;naeu&gt; and felipero is using ubuntu</span><br />
+<span class="irc-date">[22:02]</span> <span class="irc-black">&lt;felipero&gt; I don't (and I am Felipe)</span><br />
+<span class="irc-date">[22:02]</span> <span class="irc-black">&lt;felipero&gt; =)</span><br />
+<span class="irc-date">[22:02]</span> <span class="irc-black">&lt;naeu&gt; and melwin just gets crazy fast times</span><br />
+<span class="irc-date">[22:02]</span> <span class="irc-black">&lt;olabini&gt; wow. bad times</span><br />
+<span class="irc-date">[22:02]</span> <span class="irc-black">&lt;olabini&gt; ispec test</span><br />
+<span class="irc-date">[22:02]</span> <span class="irc-black">&lt;olabini&gt; runs in 15-18s for me</span><br />
+<span class="irc-date">[22:02]</span> <span class="irc-black">&lt;felipero&gt; melwin, how do you run just the tests?</span><br />
+<span class="irc-date">[22:02]</span> <span class="irc-black">&lt;melwin&gt; ant</span><br />
+<span class="irc-date">[22:03]</span> <span class="irc-black">&lt;felipero&gt; my ant also builds a jar file</span><br />
+<span class="irc-date">[22:03]</span> <span class="irc-black">&lt;felipero&gt; as well as compile everything</span><br />
+<span class="irc-date">[22:03]</span> <span class="irc-black">&lt;felipero&gt; are you using "ant test"</span><br />
+<span class="irc-date">[22:03]</span> <span class="irc-black">&lt;CIA-48&gt; ioke: Ola Bini gh-pages * r7685cb9 / guide.html : Add todos for all major things that need to be added, and fix loads of minor mistakes - <a href="http://tinyurl.com/8hbkdj">http://tinyurl.com/8hbkdj</a></span><br />
+<span class="irc-date">[22:03]</span> <span class="irc-black">&lt;felipero&gt; olabini, ispec test -&gt; 25sec</span><br />
+<span class="irc-date">[22:03]</span> <span class="irc-black">&lt;melwin&gt; It reports the test time separately though, if you look closely.</span><br />
+<span class="irc-date">[22:03]</span> <span class="irc-black">&lt;cv&gt; real	0m36.769s ; macbookpro doing time ispec test</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-black">&lt;felipero&gt; oh.. ok melwin ... didn't notice</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-black">&lt;olabini&gt; cv: yeah, it takes longer if you measure outside time</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-black">&lt;olabini&gt; but ispec reports time itself, too</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-black">&lt;olabini&gt; that is without the loading time, of course</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-black">&lt;olabini&gt; just the running time of the tests</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-black">&lt;naeu&gt; woah</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-black">&lt;naeu&gt; Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-black">&lt;melwin&gt;      [java] Finished in 11.74 seconds</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-black">&lt;melwin&gt;      [java]</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-black">&lt;melwin&gt;      [java] 2513 examples, 0 failures</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-black">&lt;melwin&gt; Full compile in 31 seconds.</span><br />
+<span class="irc-date">[22:05]</span> <span class="irc-black">&lt;cv&gt; melwin: you have way more tests than i do -- i'm at 2482</span><br />
+<span class="irc-date">[22:05]</span> <span class="irc-black">&lt;naeu&gt; melwin: ah, i'm seeing similar numbers</span><br />
+<span class="irc-date">[22:05]</span> <span class="irc-black">&lt;melwin&gt; cv: You not on Ola's master?</span><br />
+<span class="irc-date">[22:05]</span> <span class="irc-black">&lt;naeu&gt; cv: 2513 is the current tally of olabini/master</span><br />
+<span class="irc-date">[22:06]</span> <span class="irc-black">&lt;felipero&gt; ok.. now I got 17 sec using ant</span><br />
+<span class="irc-date">[22:06]</span> <span class="irc-black">&lt;felipero&gt; just for unit tests</span><br />
+<span class="irc-date">[22:06]</span> <span class="irc-black">&lt;felipero&gt; 42 sec for the whole thing</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;felipero&gt; where do I find the number of tests?</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;naeu&gt; felipero: it reports it at the end of the output</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;naeu&gt; [java] Finished in 14.3 seconds</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;naeu&gt;      [java]</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;naeu&gt;      [java] 2487 examples, 0 failures</span><br />
+<span class="irc-date">[22:08]</span> <span class="irc-black">&lt;naeu&gt; (that's the number of tests on my list fixing branch)</span><br />
+<span class="irc-date">[22:08]</span> <span class="irc-black">&lt;felipero&gt; yeah.. I just realize that my bash has some black colors in a black background</span><br />
+<span class="irc-date">[22:08]</span> <span class="irc-black">&lt;cv&gt; oh what the hell, i've merged it all wrong</span><br />
+<span class="irc-date">[22:09]</span> <span class="irc-black">&lt;felipero&gt; ok.. 2482 tests</span><br />
+<span class="irc-date">[22:12]</span> <span class="irc-black">&lt;felipero&gt; after a good pull from ola's master</span><br />
+<span class="irc-date">[22:13]</span> <span class="irc-black">&lt;felipero&gt; 2513 tests</span><br />
+<span class="irc-date">[22:13]</span> <span class="irc-black">&lt;felipero&gt; 18 sec</span><br />
+<span class="irc-date">[22:13]</span> <span class="irc-black">&lt;naeu&gt; felipero: perfect :-)</span><br />
+<span class="irc-date">[22:13]</span> <span class="irc-black">&lt;felipero&gt; naeu, just like plain old street fighter =)</span><br />
+<span class="irc-date">[22:14]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[22:16]</span> <span class="irc-black">&lt;melwin&gt; How are you boys getting along with the type checking code? Any problems?</span><br />
+<span class="irc-date">[22:17]</span> <span class="irc-black">&lt;felipero&gt; I'm about to leave work now</span><br />
+<span class="irc-date">[22:17]</span> <span class="irc-black">&lt;felipero&gt; so, once I get at home I'll kick some ClassCast ass.. =)</span><br />
+<span class="irc-date">[22:17]</span> <span class="irc-black">&lt;melwin&gt; Cool!</span><br />
+<span class="irc-date">[22:17]</span> <span class="irc-black">&lt;melwin&gt; You working on Range, eh?</span><br />
+<span class="irc-date">[22:18]</span> <span class="irc-black">&lt;felipero&gt; Range and Text</span><br />
+<span class="irc-date">[22:18]</span> <span class="irc-black">&lt;felipero&gt; I've already started Text iwth the other approach, so I can keep it</span><br />
+<span class="irc-date">[22:18]</span> <span class="irc-black">&lt;naeu&gt; i'm still pottering about with List</span><br />
+<span class="irc-date">[22:18]</span> <span class="irc-black">&lt;felipero&gt; are you finishing List today naeu?</span><br />
+<span class="irc-date">[22:19]</span> <span class="irc-black">&lt;felipero&gt; melwin, what are you working on?</span><br />
+<span class="irc-date">[22:19]</span> <span class="irc-black">&lt;melwin&gt; Dict right now... I've done some others as you see in Ola's master.</span><br />
+<span class="irc-date">[22:19]</span> <span class="irc-black">&lt;felipero&gt; If I finish Range an Text I should knwo what I can work on</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;felipero&gt; see you later guys...</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt; felipero: i'm not sure how much longer i can keep awake</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt; but i aim to finish it as soon as possible</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt; but i'm going pretty slowly with it</span><br />
+<span class="irc-date">[22:21]</span> <span class="irc-black">&lt;felipero&gt; naeu, I'm just asking because I'm used to work till late, so you guys probably won't be here</span><br />
+<span class="irc-date">[22:21]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[22:21]</span> <span class="irc-black">&lt;felipero&gt; and I don't want redo anything</span><br />
+<span class="irc-date">[22:21]</span> <span class="irc-black">&lt;felipero&gt; now I'm leaving.. see you later</span><br />
+<span class="irc-date">[22:21]</span> <span class="irc-black">&lt;naeu&gt; ok, well if you leave list to me then that's cool</span><br />
+<span class="irc-date">[22:21]</span> <span class="irc-black">&lt;naeu&gt; cheerio!</span><br />
+<span class="irc-date">[22:21]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[22:21]</span> <span class="irc-black">&lt;melwin&gt; Cheers!</span><br />
+<span class="irc-date">[22:22]</span> <span class="irc-navy">* felipero (n=felipe@189-55-18-206-nd.cpe.vivax.com.br) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[22:26]</span> <span class="irc-black">&lt;melwin&gt; Dict done.</span><br />
+<span class="irc-date">[22:36]</span> <span class="irc-black">&lt;naeu&gt; melwin: super</span><br />
+<span class="irc-date">[22:39]</span> <span class="irc-black">&lt;melwin&gt; Looking at File and IO now...</span><br />
+<span class="irc-date">[22:57]</span> <span class="irc-black">&lt;melwin&gt; File and IO done.</span><br />
+<span class="irc-date">[23:14]</span> <span class="irc-black">&lt;naeu&gt; melwin: cor, you're speedy</span><br />
+<span class="irc-date">[23:14]</span> <span class="irc-black">&lt;melwin&gt; Call me Gonzales.</span><br />
+<span class="irc-date">[23:14]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[23:14]</span> <span class="irc-black">&lt;naeu&gt; ok, Gonzales it is</span><br />
+<span class="irc-date">[23:15]</span> <span class="irc-black">&lt;naeu&gt; are you using the new checkReceiverTypeOn matcher?</span><br />
+<span class="irc-date">[23:15]</span> <span class="irc-black">&lt;melwin&gt; Yes.</span><br />
+<span class="irc-date">[23:15]</span> <span class="irc-black">&lt;naeu&gt; cool</span><br />
+<span class="irc-date">[23:15]</span> <span class="irc-black">&lt;naeu&gt; i just converted all my tests to that format</span><br />
+<span class="irc-date">[23:15]</span> <span class="irc-black">&lt;melwin&gt; Good!</span><br />
+<span class="irc-date">[23:15]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[23:17]</span> <span class="irc-black">&lt;melwin&gt; Trying to figure out if it's possible to get an incorrect receiver for DefaultMacro methods...</span><br />
+<span class="irc-date">[23:17]</span> <span class="irc-black">&lt;melwin&gt; Ahh... Got it...</span><br />
+<span class="irc-date">[23:25]</span> <span class="irc-green">* felipero (n=felipe@189.55.73.254) has joined #ioke</span><br />
+<span class="irc-date">[23:26]</span> <span class="irc-black">&lt;felipero&gt; hi all</span><br />
+<span class="irc-date">[23:26]</span> <span class="irc-brick">* felipero is back</span><br />
+<span class="irc-date">[23:27]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[23:31]</span> <span class="irc-black">&lt;naeu&gt; melwin: hey there</span><br />
+<span class="irc-date">[23:31]</span> <span class="irc-black">&lt;melwin&gt; 'sup?</span><br />
+<span class="irc-date">[23:31]</span> <span class="irc-black">&lt;naeu&gt; just looking at your fix for List#+</span><br />
+<span class="irc-date">[23:31]</span> <span class="irc-black">&lt;naeu&gt; you don't seem to be using much of your fancy helper stuff</span><br />
+<span class="irc-date">[23:31]</span> <span class="irc-black">&lt;naeu&gt; is there a reason for this?</span><br />
+<span class="irc-date">[23:32]</span> <span class="irc-black">&lt;melwin&gt; Ah, yes. Don't mind that... That was a mistake.</span><br />
+<span class="irc-date">[23:32]</span> <span class="irc-black">&lt;melwin&gt; I never meant to submit that, but I got it into the branch Ola pulled.</span><br />
+<span class="irc-date">[23:32]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[23:32]</span> <span class="irc-black">&lt;melwin&gt; Just fix it as it should be - don't mind whatever I've done</span><br />
+<span class="irc-date">[23:32]</span> <span class="irc-black">&lt;melwin&gt; Sorry.</span><br />
+<span class="irc-date">[23:32]</span> <span class="irc-black">&lt;naeu&gt; that's ok</span><br />
+<span class="irc-date">[23:33]</span> <span class="irc-black">&lt;naeu&gt; it's always good to ask</span><br />
+<span class="irc-date">[23:33]</span> <span class="irc-black">&lt;melwin&gt; Yes - I forgot about that one.</span><br />
+<span class="irc-date">[23:37]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[23:44]</span> <span class="irc-black">&lt;naeu&gt; right, i've pushed a few more fixes</span><br />
+<span class="irc-date">[23:44]</span> <span class="irc-black">&lt;naeu&gt; and now it's time for me to go to bed :-)</span><br />
+<span class="irc-date">[23:47]</span> <span class="irc-black">&lt;melwin&gt; Nighty night!</span><br />
+<span class="irc-date">[23:49]</span> <span class="irc-black">&lt;naeu&gt; cheerio??</span><br />
+<span class="irc-date">[23:49]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[23:50]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[23:52]</span> <span class="irc-black">&lt;felipero&gt; guys, what the === cell from range should expect as argument?</span><br />
+<span class="irc-date">[23:53]</span> <span class="irc-black">&lt;cv&gt; another range or an int?</span><br />
+<span class="irc-date">[23:54]</span> <span class="irc-black">&lt;felipero&gt; yes... so I think I have to call wichMustMimic twice... right?</span><br />
+<span class="irc-date">[23:57]</span> <span class="irc-black">&lt;melwin&gt; You can't do that...</span><br />
+<span class="irc-date">[23:57]</span> <span class="irc-black">&lt;felipero&gt; why not?</span><br />
+<span class="irc-date">[23:57]</span> <span class="irc-black">&lt;melwin&gt; If you need to take more than one argument type you need to check it manually or convert.</span><br />
+<span class="irc-date">[23:58]</span> <span class="irc-black">&lt;felipero&gt; but the witchMustMimic just add to a mustMimic list</span><br />
+<span class="irc-date">[23:58]</span> <span class="irc-black">&lt;felipero&gt; I was thinking in a method like:</span><br />
+<span class="irc-date">[23:58]</span> <span class="irc-black">&lt;melwin&gt; But I don't think you need a type check on the argument.</span><br />
+<span class="irc-date">[23:58]</span> <span class="irc-black">&lt;felipero&gt; orCouldMimic(Object mimic)</span><br />
+<span class="irc-date">[23:59]</span> <span class="irc-black">&lt;melwin&gt; Only on the receiver.</span><br />
+<span class="irc-date">[23:59]</span> <span class="irc-black">&lt;melwin&gt; Why do you need a type check on the argument for ===?</span><br />
+<span class="irc-date">[23:59]</span> <span class="irc-black">&lt;melwin&gt; What argument does the code break for currently?</span><br />

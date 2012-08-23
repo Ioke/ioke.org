@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Kind: DefaultBehavior</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="../.././dokgen-style.css" type="text/css" media="screen" />
+    <script language="JavaScript" type="text/javascript">
+    // <![CDATA[
+
+        function toggleSource( id )
+        {
+          var elem
+          var link
+
+          if( document.getElementById )
+          {
+            elem = document.getElementById( id )
+            link = document.getElementById( "l_" + id )
+          }
+          else if ( document.all )
+          {
+            elem = eval( "document.all." + id )
+            link = eval( "document.all.l_" + id )
+          }
+          else
+            return false;
+
+          if( elem.style.display == "block" )
+          {
+            elem.style.display = "none"
+            link.innerHTML = "show source"
+          }
+          else
+          {
+            elem.style.display = "block"
+            link.innerHTML = "hide source"
+          }
+        }
+
+        function openCode( url )
+        {
+          window.open( url, "SOURCE_CODE", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=480,width=750" ).focus();
+        }
+      // ]]>
+    </script>
+  </head>
+
+  <body>
+    <table border='0' cellpadding='0' cellspacing='0' width="100%" class='banner'>
+      <tr>
+        <td>
+          <table width="100%" border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+              <td class="file-title" colspan="2">
+                <span class="file-title-prefix">Kind</span>
+                <br />
+                Number Integer
+              </td>
+              <td align="right">
+                <table cellspacing="0" cellpadding="2">
+                  <tr>
+                    <td>Main mimic:</td>
+                    <td>
+                      <a href="../../kinds/Number/Rational.html">Number Rational</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <div id="bodyContent">
+      <div id="content">
+        <div class="description">
+          <p>
+An integral number
+          </p>
+        </div>
+
+        <div class="sectiontitle">Mimics</div>
+        <ul>
+          <li><a href="../../kinds/Number/Rational.html">Number Rational</a></li>
+        </ul>
+
+        <div class="sectiontitle">Inactive cells</div>
+        <ul>
+          <li><a href="#C00399">kind</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Active cells</div>
+        <ul>
+          <li><a href="#C00400">%(dividend)</a></li>
+<li><a href="#C00403">&(other)</a></li>
+<li><a href="#C00406">&lt;&lt;(other)</a></li>
+<li><a href="#C00407">&gt;&gt;(other)</a></li>
+<li><a href="#C00405">^(other)</a></li>
+<li><a href="#C00411">char()</a></li>
+<li><a href="#C00401">div(dividend)</a></li>
+<li><a href="#C00402">divmod(dividend)</a></li>
+<li><a href="#C00413">even?()</a></li>
+<li><a href="#C00412">odd?()</a></li>
+<li><a href="#C00409">pred()</a></li>
+<li><a href="#C00408">succ()</a></li>
+<li><a href="#C00410">times([argumentNameOrCode], [code] nil)</a></li>
+<li><a href="#C00404">|(other)</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Specs</div>
+        <div class="specs">
+          
+        </div>
+
+        <div class="sectiontitle">Inactive cells (details)</div>
+                <div class="cell">
+          <a name="C00399"></a>
+          <table border="0" cellpadding="5">
+            <tr valign="top">
+              <td class="cell-name">kind</td>
+              <td>=</td>
+              <td class="cell-value">"Number Integer"</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div class="sectiontitle">Active cells (details)</div>
+                <div class="cell">
+          <div class="title">
+          <a name="C00400"></a><b>%</b>(dividend)
+          </div>
+          <div class="description">
+            <p>returns the modulo of this number and the argument</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00403"></a><b>&</b>(other)
+          </div>
+          <div class="description">
+            <p>returns this number bitwise and the argument</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00406"></a><b>&lt;&lt;</b>(other)
+          </div>
+          <div class="description">
+            <p>returns this number left shifted by the argument</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00407"></a><b>&gt;&gt;</b>(other)
+          </div>
+          <div class="description">
+            <p>returns this number right shifted by the argument</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00405"></a><b>^</b>(other)
+          </div>
+          <div class="description">
+            <p>returns this number bitwise xor the argument</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00411"></a><b>char</b>()
+          </div>
+          <div class="description">
+            <p>Returns a Text that represents the character with the same character code of this number</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00401"></a><b>div</b>(dividend)
+          </div>
+          <div class="description">
+            <p>returns how many times the first number can be divided by the second one</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00402"></a><b>divmod</b>(dividend)
+          </div>
+          <div class="description">
+            <p>returns a tuple of how many times the first number can be divided by the second one, and the remainder</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00413"></a><b>even?</b>()
+          </div>
+          <div class="description">
+            <p>Returns true if this number is even, false otherwise</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00413_source')" id="l_C00413_source">show source</a> ]</p>
+            <div id="C00413_source" class="dyn-source">
+<pre>
+method(
+  (@ %(2)) ==(0) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00412"></a><b>odd?</b>()
+          </div>
+          <div class="description">
+            <p>Returns true if this number is odd, false otherwise</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00412_source')" id="l_C00412_source">show source</a> ]</p>
+            <div id="C00412_source" class="dyn-source">
+<pre>
+method(
+  (@ %(2)) !=(0) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00409"></a><b>pred</b>()
+          </div>
+          <div class="description">
+            <p>Returns the predecessor of this number</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00408"></a><b>succ</b>()
+          </div>
+          <div class="description">
+            <p>Returns the successor of this number</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00410"></a><b>times</b>([argumentNameOrCode], [code] nil)
+          </div>
+          <div class="description">
+            <p>Expects one or two arguments. If one argument is given, executes it as many times as the value of the receiving number. If two arguments are given, the first will be an unevaluated name that will receive the current loop value on each repitition. the iteration length is limited to the positive maximum of a Java int</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00404"></a><b>|</b>(other)
+          </div>
+          <div class="description">
+            <p>returns this number bitwise or the argument</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>

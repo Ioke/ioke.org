@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Kind: DefaultBehavior</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href=".././dokgen-style.css" type="text/css" media="screen" />
+    <script language="JavaScript" type="text/javascript">
+    // <![CDATA[
+
+        function toggleSource( id )
+        {
+          var elem
+          var link
+
+          if( document.getElementById )
+          {
+            elem = document.getElementById( id )
+            link = document.getElementById( "l_" + id )
+          }
+          else if ( document.all )
+          {
+            elem = eval( "document.all." + id )
+            link = eval( "document.all.l_" + id )
+          }
+          else
+            return false;
+
+          if( elem.style.display == "block" )
+          {
+            elem.style.display = "none"
+            link.innerHTML = "show source"
+          }
+          else
+          {
+            elem.style.display = "block"
+            link.innerHTML = "hide source"
+          }
+        }
+
+        function openCode( url )
+        {
+          window.open( url, "SOURCE_CODE", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=480,width=750" ).focus();
+        }
+      // ]]>
+    </script>
+  </head>
+
+  <body>
+    <table border='0' cellpadding='0' cellspacing='0' width="100%" class='banner'>
+      <tr>
+        <td>
+          <table width="100%" border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+              <td class="file-title" colspan="2">
+                <span class="file-title-prefix">Kind</span>
+                <br />
+                Hook
+              </td>
+              <td align="right">
+                <table cellspacing="0" cellpadding="2">
+                  <tr>
+                    <td>Main mimic:</td>
+                    <td>
+                      <a href="../kinds/Origin.html">Origin</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <div id="bodyContent">
+      <div id="content">
+        <div class="description">
+          <p>
+A hook allow you to observe what happens to a specific object. All hooks have Hook in their mimic chain.
+          </p>
+        </div>
+
+        <div class="sectiontitle">Mimics</div>
+        <ul>
+          <li><a href="../kinds/Origin.html">Origin</a></li>
+        </ul>
+
+        <div class="sectiontitle">Inactive cells</div>
+        <ul>
+          <li><a href="#C001195">kind</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Active cells</div>
+        <ul>
+          <li><a href="#C001199">cellAdded(obj, sym)</a></li>
+<li><a href="#C001200">cellChanged(obj, sym, originalValue)</a></li>
+<li><a href="#C001201">cellRemoved(obj, sym, originalValue)</a></li>
+<li><a href="#C001202">cellUndefined(obj, sym, originalValue)</a></li>
+<li><a href="#C001197">connectedObjects()</a></li>
+<li><a href="#C001198">hook!(objectToHookInto)</a></li>
+<li><a href="#C001196">into(firstConnected, +restConnected)</a></li>
+<li><a href="#C001203">mimicAdded(obj, newMimic)</a></li>
+<li><a href="#C001204">mimicRemoved(obj, removedMimic)</a></li>
+<li><a href="#C001206">mimicked(obj, newMimicker)</a></li>
+<li><a href="#C001205">mimicsChanged(obj, changedMimic)</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Specs</div>
+        <div class="specs">
+          
+        </div>
+
+        <div class="sectiontitle">Inactive cells (details)</div>
+                <div class="cell">
+          <a name="C001195"></a>
+          <table border="0" cellpadding="5">
+            <tr valign="top">
+              <td class="cell-name">kind</td>
+              <td>=</td>
+              <td class="cell-value">"Hook"</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div class="sectiontitle">Active cells (details)</div>
+                <div class="cell">
+          <div class="title">
+          <a name="C001199"></a><b>cellAdded</b>(obj, sym)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C001199_source')" id="l_C001199_source">show source</a> ]</p>
+            <div id="C001199_source" class="dyn-source">
+<pre>
+method(obj, sym, 
+  nil)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C001200"></a><b>cellChanged</b>(obj, sym, originalValue)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C001200_source')" id="l_C001200_source">show source</a> ]</p>
+            <div id="C001200_source" class="dyn-source">
+<pre>
+method(obj, sym, originalValue, 
+  nil)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C001201"></a><b>cellRemoved</b>(obj, sym, originalValue)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C001201_source')" id="l_C001201_source">show source</a> ]</p>
+            <div id="C001201_source" class="dyn-source">
+<pre>
+method(obj, sym, originalValue, 
+  nil)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C001202"></a><b>cellUndefined</b>(obj, sym, originalValue)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C001202_source')" id="l_C001202_source">show source</a> ]</p>
+            <div id="C001202_source" class="dyn-source">
+<pre>
+method(obj, sym, originalValue, 
+  nil)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C001197"></a><b>connectedObjects</b>()
+          </div>
+          <div class="description">
+            <p>returns the objects this hook is connected to</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C001198"></a><b>hook!</b>(objectToHookInto)
+          </div>
+          <div class="description">
+            <p>Takes one argument and will add that to the list of connected objects</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C001196"></a><b>into</b>(firstConnected, +restConnected)
+          </div>
+          <div class="description">
+            <p>Takes one or more arguments to hook into and returns a new Hook connected to them.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C001203"></a><b>mimicAdded</b>(obj, newMimic)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C001203_source')" id="l_C001203_source">show source</a> ]</p>
+            <div id="C001203_source" class="dyn-source">
+<pre>
+method(obj, newMimic, 
+  nil)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C001204"></a><b>mimicRemoved</b>(obj, removedMimic)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C001204_source')" id="l_C001204_source">show source</a> ]</p>
+            <div id="C001204_source" class="dyn-source">
+<pre>
+method(obj, removedMimic, 
+  nil)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C001206"></a><b>mimicked</b>(obj, newMimicker)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C001206_source')" id="l_C001206_source">show source</a> ]</p>
+            <div id="C001206_source" class="dyn-source">
+<pre>
+method(obj, newMimicker, 
+  nil)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C001205"></a><b>mimicsChanged</b>(obj, changedMimic)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C001205_source')" id="l_C001205_source">show source</a> ]</p>
+            <div id="C001205_source" class="dyn-source">
+<pre>
+method(obj, changedMimic, 
+  nil)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>

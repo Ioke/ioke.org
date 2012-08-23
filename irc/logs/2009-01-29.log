@@ -1,0 +1,148 @@
+<span class="irc-date">[0:33]</span> <span class="irc-green">* bguthrie_ (n=bguthrie@67.97.218.226) has joined #ioke</span><br />
+<span class="irc-date">[0:53]</span> <span class="irc-navy">* bguthrie_ (n=bguthrie@67.97.218.226) Quit ()</span><br />
+<span class="irc-date">[0:57]</span> <span class="irc-green">* bguthrie (n=bguthrie@67.97.218.226) has joined #ioke</span><br />
+<span class="irc-date">[1:05]</span> <span class="irc-navy">* bguthrie (n=bguthrie@67.97.218.226) Quit ()</span><br />
+<span class="irc-date">[1:54]</span> <span class="irc-green">* junebug (n=azoic@adsl-76-220-109-134.dsl.pltn13.sbcglobal.net) has joined #ioke</span><br />
+<span class="irc-date">[3:24]</span> <span class="irc-navy">* junebug (n=azoic@adsl-76-220-109-134.dsl.pltn13.sbcglobal.net) Quit ()</span><br />
+<span class="irc-date">[7:12]</span> <span class="irc-black">&lt;olabini&gt; melwin: seems like you had a great time. sorry I didn't come along. didn't feel to great after my talks were done</span><br />
+<span class="irc-date">[8:04]</span> <span class="irc-black">&lt;melwin&gt; olabini: No probs - was great to see you though - and your talks were interesting too!</span><br />
+<span class="irc-date">[8:04]</span> <span class="irc-black">&lt;melwin&gt; I'm going up north over the weekend so won't check in for a while.</span><br />
+<span class="irc-date">[8:07]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:10]</span> <span class="irc-black">&lt;naeu&gt; olabini: I updated the geshi syntax highlighting last night</span><br />
+<span class="irc-date">[8:10]</span> <span class="irc-black">&lt;naeu&gt; it's already quite a bit improved over the version currently running in the wiki</span><br />
+<span class="irc-date">[8:10]</span> <span class="irc-black">&lt;naeu&gt; although there is more work to be done on it</span><br />
+<span class="irc-date">[8:13]</span> <span class="irc-navy">* olabini (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[8:16]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[8:19]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit ("Leaving")</span><br />
+<span class="irc-date">[8:41]</span> <span class="irc-green">* naeu (n=sam@h253136.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:01]</span> <span class="irc-green">* olabini (n=ola@194.132.20.9) has joined #ioke</span><br />
+<span class="irc-date">[9:01]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[9:05]</span> <span class="irc-black">&lt;olabini&gt; naeu: cool. so tell me, how do I add that stuff to the global geshi-file? where should it go?</span><br />
+<span class="irc-date">[9:05]</span> <span class="irc-black">&lt;olabini&gt; I didn't see it make a difference in the places I tried</span><br />
+<span class="irc-date">[9:05]</span> <span class="irc-black">&lt;naeu&gt; ok, well you just need to replace ioke.php with the one in melwin/gushigeshi</span><br />
+<span class="irc-date">[9:06]</span> <span class="irc-black">&lt;olabini&gt; oh yeah?</span><br />
+<span class="irc-date">[9:06]</span> <span class="irc-black">&lt;olabini&gt; no global changes then?</span><br />
+<span class="irc-date">[9:06]</span> <span class="irc-black">&lt;naeu&gt; :-p</span><br />
+<span class="irc-date">[9:06]</span> <span class="irc-black">&lt;naeu&gt; well i've been testing it locally with a simple php file</span><br />
+<span class="irc-date">[9:06]</span> <span class="irc-black">&lt;naeu&gt; $language = 'ioke';</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-black">&lt;naeu&gt; $source = 'some ioke source code';</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-black">&lt;naeu&gt; $geshi = new GeSHi($source, $language);</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-black">&lt;naeu&gt; $geshi-&gt;set_overall_style('font-family: \'DejaVu Sans Mono\', \'Bitstream Vera Sans Mono\', Consolas, \'Andale Mono WT\', \'Andale Mono\', \'Lucida Console\', \'Lucida Sans Typewriter\', \'Liberation Mono\', \'Nimbus Mono L\', Monaco, \'Courier New\', Courier, monospace; background-color: #000000; color: white;', true);</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-black">&lt;naeu&gt; I haven't figured out to set that style in the ioke.php file itself</span><br />
+<span class="irc-date">[9:13]</span> <span class="irc-black">&lt;olabini&gt; hmm. and it doesn't work to set it in the  global geshi.php either</span><br />
+<span class="irc-date">[9:13]</span> <span class="irc-black">&lt;olabini&gt; =/</span><br />
+<span class="irc-date">[9:13]</span> <span class="irc-black">&lt;olabini&gt; is it necessary?</span><br />
+<span class="irc-date">[9:13]</span> <span class="irc-black">&lt;olabini&gt; I'm merging the geshi and tm stuff you have outstanding</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;olabini&gt; naeu: new version of ioke.php uploaded to mediawiki</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@nat/sun/x-c471f2da9028214a) has joined #ioke</span><br />
+<span class="irc-date">[9:46]</span> <span class="irc-brick">* olabini is reading wikipedia articles on data structures...</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;olabini&gt; hmm. a splay tree might be what we need. possibly...</span><br />
+<span class="irc-date">[9:53]</span> <span class="irc-green">* naeu_ (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:53]</span> <span class="irc-navy">* HeMan (n=jimmy@193.12.106.19) Quit ("Coyote finally caught me")</span><br />
+<span class="irc-date">[9:53]</span> <span class="irc-navy">* naeu (n=sam@h253136.upc-h.chello.nl) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[10:09]</span> <span class="irc-black">&lt;olabini&gt; I wonder if it would be possible to create a linked trie</span><br />
+<span class="irc-date">[10:17]</span> <span class="irc-black">&lt;naeu_&gt; olabini: sorry I was pulled away from my desk for a while</span><br />
+<span class="irc-date">[10:17]</span> <span class="irc-black">&lt;naeu_&gt; the overall syle is only necessary if you want the code to be on a black background</span><br />
+<span class="irc-date">[10:17]</span> <span class="irc-black">&lt;naeu_&gt; I quite like it</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;naeu_&gt; could you give mediawiki a kick?</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;naeu_&gt; the new ioke.php doesn't seem to have taken affect</span><br />
+<span class="irc-date">[10:19]</span> <span class="irc-black">&lt;olabini&gt; strange</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;naeu_&gt; the numbers don't seem to be highlighting correctly</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;naeu_&gt; and regexps still seem to act like comments</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;olabini&gt; well, I merged the last version from melwins repo and added that</span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;naeu_&gt; weird</span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;olabini&gt; and it's the latest version.</span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;olabini&gt; so I'm not sure why it doesn't work</span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;olabini&gt; as far as I know, it updates immediately</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;olabini&gt; oh, wait</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;olabini&gt; it doesnt</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;olabini&gt; it's loaded using require_once</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;olabini&gt; sigh</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;naeu_&gt; :-)</span><br />
+<span class="irc-date">[10:26]</span> <span class="irc-black">&lt;olabini&gt; I'll see if I have to restart the apache or something ugly like that</span><br />
+<span class="irc-date">[10:26]</span> <span class="irc-black">&lt;olabini&gt; =(</span><br />
+<span class="irc-date">[10:26]</span> <span class="irc-black">&lt;olabini&gt; that shouldn't be necessary, of course</span><br />
+<span class="irc-date">[10:26]</span> <span class="irc-black">&lt;naeu_&gt; sure</span><br />
+<span class="irc-date">[10:26]</span> <span class="irc-black">&lt;olabini&gt; even if require_once is used, the php code should be loaded on every request, I think</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;naeu_&gt; unless mediawiki is caching stuff?</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-black">&lt;naeu_&gt; ah, there we go</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-black">&lt;olabini&gt; hmm.</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-black">&lt;olabini&gt; that looks really bad</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-black">&lt;naeu_&gt; numbers look good</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-black">&lt;olabini&gt; go down to the regexps sections</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-black">&lt;olabini&gt; that looks ... =/</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-black">&lt;naeu_&gt; i still haven't looked at regexps</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-black">&lt;naeu_&gt; or symbols</span><br />
+<span class="irc-date">[10:31]</span> <span class="irc-black">&lt;olabini&gt; ok</span><br />
+<span class="irc-date">[10:31]</span> <span class="irc-black">&lt;olabini&gt; well, the problem is that some highlightings are intruding on the names of other identifiers</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;olabini&gt; I got the black background working, but that looks really bad too</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;olabini&gt; take a look now</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;naeu_&gt; haha</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;naeu_&gt; missing text!</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;naeu_&gt; and the borders are too small</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;olabini&gt; I'm going to back that out for now</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;naeu_&gt; yeah</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;naeu_&gt; definitely</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;naeu_&gt; Geshi is a pain to work with</span><br />
+<span class="irc-date">[10:34]</span> <span class="irc-black">&lt;naeu_&gt; but I'll look into the regexps and symbols as soon as possible</span><br />
+<span class="irc-date">[10:34]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[10:35]</span> <span class="irc-black">&lt;naeu_&gt; weird, that text doesn't disappear on my version</span><br />
+<span class="irc-date">[10:35]</span> <span class="irc-black">&lt;naeu_&gt; it seems like the wiki is defaulting text to black</span><br />
+<span class="irc-date">[10:35]</span> <span class="irc-black">&lt;naeu_&gt; whereas i have it defaulting to white</span><br />
+<span class="irc-date">[10:35]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[11:11]</span> <span class="irc-black">&lt;naeu_&gt; the main problem is that it's not trivial to work with Geshi</span><br />
+<span class="irc-date">[11:11]</span> <span class="irc-black">&lt;naeu_&gt; all the regexps interact with each other in seemingly unpredictable ways :-(</span><br />
+<span class="irc-date">[11:56]</span> <span class="irc-green">* caboom (n=caboom@77-221.static.ikomline.net) has joined #ioke</span><br />
+<span class="irc-date">[12:11]</span> <span class="irc-black">&lt;olabini&gt; I believe you</span><br />
+<span class="irc-date">[12:13]</span> <span class="irc-black">&lt;naeu_&gt; for example, I can't get the colon in :"foo"</span><br />
+<span class="irc-date">[12:13]</span> <span class="irc-black">&lt;naeu_&gt; to highlight</span><br />
+<span class="irc-date">[12:13]</span> <span class="irc-black">&lt;naeu_&gt; whilst getting :: to highlight as an operator</span><br />
+<span class="irc-date">[12:15]</span> <span class="irc-black">&lt;naeu_&gt; i'm going to do some real work now ;-)</span><br />
+<span class="irc-date">[12:15]</span> <span class="irc-black">&lt;naeu_&gt; just pushed some minor improvements</span><br />
+<span class="irc-date">[12:17]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[12:18]</span> <span class="irc-black">&lt;olabini&gt; do you have negative lookbehind in geshi?</span><br />
+<span class="irc-date">[12:18]</span> <span class="irc-black">&lt;olabini&gt; it should be fairly easy to highlight the : if the previous character is not a colon</span><br />
+<span class="irc-date">[12:18]</span> <span class="irc-black">&lt;naeu_&gt; i can't get any look ahead or behinds working</span><br />
+<span class="irc-date">[12:19]</span> <span class="irc-black">&lt;naeu_&gt; it also appears that the default string matcher eats the " char</span><br />
+<span class="irc-date">[12:19]</span> <span class="irc-black">&lt;naeu_&gt; and i still haven't figured out how to alter matcher precedence - if that's even possible</span><br />
+<span class="irc-date">[12:20]</span> <span class="irc-black">&lt;naeu_&gt; geshi appears to implement its own crude form of look ahead and behind</span><br />
+<span class="irc-date">[12:20]</span> <span class="irc-black">&lt;naeu_&gt; but it's as frustrating as hell</span><br />
+<span class="irc-date">[12:20]</span> <span class="irc-black">&lt;naeu_&gt; anyway, luncheon time</span><br />
+<span class="irc-date">[12:24]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[12:24]</span> <span class="irc-black">&lt;olabini&gt; ok</span><br />
+<span class="irc-date">[12:24]</span> <span class="irc-black">&lt;olabini&gt; maybe geshi isn't the best alternative?</span><br />
+<span class="irc-date">[12:43]</span> <span class="irc-green">* HeMan (n=jimmy@193.12.106.19) has joined #ioke</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-green">* felipero (n=felipe@189-55-18-206-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;felipero&gt; Hi All</span><br />
+<span class="irc-date">[13:16]</span> <span class="irc-black">&lt;felipero&gt; olabini, could you pull my last text type checking changes? It is here: <a href="http://github.com/felipero/ioke/tree/text-type-checking">http://github.com/felipero/ioke/tree/text-type-checking</a></span><br />
+<span class="irc-date">[13:50]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@nat/sun/x-c471f2da9028214a) Quit ("Leaving")</span><br />
+<span class="irc-date">[14:40]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: you are quiet, aren't you?</span><br />
+<span class="irc-date">[14:40]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: ;-)</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-black">&lt;naeu_&gt; olabini: sssh, don't wake him up ;-)</span><br />
+<span class="irc-date">[17:06]</span> <span class="irc-navy">* olabini (n=ola@194.132.20.9) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-navy">* naeu_ (n=sam@mail.innovationfactory.nl) Quit ()</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-navy">* felipero (n=felipe@189-55-18-206-nd.cpe.vivax.com.br) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[18:00]</span> <span class="irc-green">* felipero (n=felipe@189-55-18-206-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[19:22]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:31]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[20:48]</span> <span class="irc-green">* olabini (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[20:48]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[20:49]</span> <span class="irc-black">&lt;olabini&gt; wow. this place grows almost everytime I go here</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[21:31]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-44.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[21:50]</span> <span class="irc-black">&lt;Tsion&gt; olabini: I think the mention on the GitHub blog helped :P (that's how I heard about Ioke)</span><br />
+<span class="irc-date">[22:08]</span> <span class="irc-black">&lt;olabini&gt; awesome</span><br />
+<span class="irc-date">[22:27]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit ("Leaving")</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-navy">* felipero (n=felipe@189-55-18-206-nd.cpe.vivax.com.br) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[22:45]</span> <span class="irc-green">* bguthrie (n=bguthrie@glo2.manheim.com) has joined #ioke</span><br />
+<span class="irc-date">[22:46]</span> <span class="irc-green">* bguthrie_ (n=bguthrie@67.97.218.226) has joined #ioke</span><br />
+<span class="irc-date">[22:46]</span> <span class="irc-navy">* bguthrie (n=bguthrie@glo2.manheim.com) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[22:46]</span> <span class="irc-green">* bguthrie (n=bguthrie@glo2.manheim.com) has joined #ioke</span><br />
+<span class="irc-date">[23:02]</span> <span class="irc-navy">* bguthrie_ (n=bguthrie@67.97.218.226) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[23:27]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[23:28]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[23:30]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-44.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[23:47]</span> <span class="irc-green">* olabini` (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[23:47]</span> <span class="irc-green">* IokeHurricane sets mode +o olabini` </span><br />
+<span class="irc-date">[23:56]</span> <span class="irc-navy">* bguthrie (n=bguthrie@glo2.manheim.com) Quit ()</span><br />
+<span class="irc-date">[23:57]</span> <span class="irc-navy">* olabini (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />

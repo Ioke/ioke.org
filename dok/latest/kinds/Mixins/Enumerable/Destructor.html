@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Kind: DefaultBehavior</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="../../.././dokgen-style.css" type="text/css" media="screen" />
+    <script language="JavaScript" type="text/javascript">
+    // <![CDATA[
+
+        function toggleSource( id )
+        {
+          var elem
+          var link
+
+          if( document.getElementById )
+          {
+            elem = document.getElementById( id )
+            link = document.getElementById( "l_" + id )
+          }
+          else if ( document.all )
+          {
+            elem = eval( "document.all." + id )
+            link = eval( "document.all.l_" + id )
+          }
+          else
+            return false;
+
+          if( elem.style.display == "block" )
+          {
+            elem.style.display = "none"
+            link.innerHTML = "show source"
+          }
+          else
+          {
+            elem.style.display = "block"
+            link.innerHTML = "hide source"
+          }
+        }
+
+        function openCode( url )
+        {
+          window.open( url, "SOURCE_CODE", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=480,width=750" ).focus();
+        }
+      // ]]>
+    </script>
+  </head>
+
+  <body>
+    <table border='0' cellpadding='0' cellspacing='0' width="100%" class='banner'>
+      <tr>
+        <td>
+          <table width="100%" border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+              <td class="file-title" colspan="2">
+                <span class="file-title-prefix">Kind</span>
+                <br />
+                Mixins Enumerable Destructor
+              </td>
+              <td align="right">
+                <table cellspacing="0" cellpadding="2">
+                  <tr>
+                    <td>Main mimic:</td>
+                    <td>
+                      <a href="../../../kinds/Origin.html">Origin</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <div id="bodyContent">
+      <div id="content">
+        <div class="description">
+          <p>
+
+          </p>
+        </div>
+
+        <div class="sectiontitle">Mimics</div>
+        <ul>
+          <li><a href="../../../kinds/Origin.html">Origin</a></li>
+        </ul>
+
+        <div class="sectiontitle">Inactive cells</div>
+        <ul>
+          <li><a href="#C00682">kind</a></li>
+<li><a href="#C00678">nested?</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Active cells</div>
+        <ul>
+          <li><a href="#C00677">argumentNamesFromMappers()</a></li>
+<li><a href="#C00676">createMappersFrom(arguments)</a></li>
+<li><a href="#C00679">from(arg)</a></li>
+<li><a href="#C00680">mapValue(value, ms, result [])</a></li>
+<li><a href="#C00681">unpack(value)</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Specs</div>
+        <div class="specs">
+          
+        </div>
+
+        <div class="sectiontitle">Inactive cells (details)</div>
+                <div class="cell">
+          <a name="C00682"></a>
+          <table border="0" cellpadding="5">
+            <tr valign="top">
+              <td class="cell-name">kind</td>
+              <td>=</td>
+              <td class="cell-value">"Mixins Enumerable Destructor"</td>
+            </tr>
+          </table>
+        </div>
+        <div class="cell">
+          <a name="C00678"></a>
+          <table border="0" cellpadding="5">
+            <tr valign="top">
+              <td class="cell-name">nested?</td>
+              <td>=</td>
+              <td class="cell-value">false</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div class="sectiontitle">Active cells (details)</div>
+                <div class="cell">
+          <div class="title">
+          <a name="C00677"></a><b>argumentNamesFromMappers</b>()
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00677_source')" id="l_C00677_source">show source</a> ]</p>
+            <div id="C00677_source" class="dyn-source">
+<pre>
+method(
+  mappers flatMap(arguments))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00676"></a><b>createMappersFrom</b>(arguments)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00676_source')" id="l_C00676_source">show source</a> ]</p>
+            <div id="C00676_source" class="dyn-source">
+<pre>
+method(arguments, 
+  arguments map(x, Mapper from(x)) tap(m, 
+    if(m [](-(1)) mimics?(Mapper Ignore), 
+      m [](-(1)) last? = true)))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00679"></a><b>from</b>(arg)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00679_source')" id="l_C00679_source">show source</a> ]</p>
+            <div id="C00679_source" class="dyn-source">
+<pre>
+method(arg, 
+  newD = mimic 
+  if(arg name ==(:("")), 
+    newD mappers = createMappersFrom(arg arguments) 
+    newD argNames = newD argumentNamesFromMappers 
+    newD nested? = true, 
+    newD argNames = [](arg) 
+    ) 
+  newD 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00680"></a><b>mapValue</b>(value, ms, result [])
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00680_source')" id="l_C00680_source">show source</a> ]</p>
+            <div id="C00680_source" class="dyn-source">
+<pre>
+method(value, ms, result [], 
+  value = value asTuple asList 
+  if((ms length &lt;(value length) &&(!(ms [](-(1)) mimics?(Mapper Ignore)))) ||(
+      value length &lt;(ms length)), 
+    error!(Condition Error DestructuringMismatch) 
+    ) 
+  ms zip(value) fold(result, values, mapperAndValue, 
+    mapperAndValue first assign(values, mapperAndValue second)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00681"></a><b>unpack</b>(value)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00681_source')" id="l_C00681_source">show source</a> ]</p>
+            <div id="C00681_source" class="dyn-source">
+<pre>
+method(value, 
+  if(nested?, 
+    mapValue(cell(:value), mappers), 
+    list(cell(:value))) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,222 @@
+<span class="irc-date">[1:05]</span> <span class="irc-navy">* wavis (i=4526d11e@gateway/web/ajax/mibbit.com/x-81b554395f2c1cb4) Quit ("<a href="http://www.mibbit.com">http://www.mibbit.com</a> ajax IRC Client")</span><br />
+<span class="irc-date">[1:32]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[7:29]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[7:36]</span> <span class="irc-black">&lt;olabini&gt; morning</span><br />
+<span class="irc-date">[8:05]</span> <span class="irc-black">&lt;olabini&gt; wavis: depends on which each you're looking for. most of them are in Java</span><br />
+<span class="irc-date">[8:10]</span> <span class="irc-green">* Narnach_ (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:24]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[8:25]</span> <span class="irc-green">* Narnach_ is now known as Narnach</span><br />
+<span class="irc-date">[13:21]</span> <span class="irc-green">* naeu (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[13:22]</span> <span class="irc-black">&lt;naeu&gt; olabini: you should write a blog post explaining how html.ik works :-)</span><br />
+<span class="irc-date">[13:23]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[13:54]</span> <span class="irc-black">&lt;olabini&gt; yeah, I will</span><br />
+<span class="irc-date">[13:54]</span> <span class="irc-black">&lt;olabini&gt; it's pretty simple, really</span><br />
+<span class="irc-date">[13:55]</span> <span class="irc-black">&lt;naeu&gt; yeah, i'm just working through it</span><br />
+<span class="irc-date">[13:55]</span> <span class="irc-black">&lt;naeu&gt; you only added blank_slate recently :-)</span><br />
+<span class="irc-date">[13:57]</span> <span class="irc-black">&lt;olabini&gt; yaeh,</span><br />
+<span class="irc-date">[13:57]</span> <span class="irc-black">&lt;olabini&gt; it wasn't too hard, you know</span><br />
+<span class="irc-date">[13:57]</span> <span class="irc-black">&lt;olabini&gt; the blank slate implementation is also just a few lines</span><br />
+<span class="irc-date">[13:58]</span> <span class="irc-black">&lt;naeu&gt; i need to look up the semantics of currentMessage</span><br />
+<span class="irc-date">[13:59]</span> <span class="irc-black">&lt;naeu&gt; ah very cool</span><br />
+<span class="irc-date">[14:02]</span> <span class="irc-black">&lt;naeu&gt; is pass similar to method_missing</span><br />
+<span class="irc-date">[14:02]</span> <span class="irc-black">&lt;naeu&gt; if it isn't then this giving up coffee business is seriously affecting my brains ;-)</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;naeu&gt; two things I still don't get:</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;naeu&gt; 1) what the affect of passing a string to currentMessage is (i.e. currentMessage "&lt;h1&gt;hello&lt;/h1&gt;")</span><br />
+<span class="irc-date">[14:05]</span> <span class="irc-black">&lt;naeu&gt; 2) how the strings get stored so that they are available for println</span><br />
+<span class="irc-date">[14:16]</span> <span class="irc-black">&lt;naeu&gt; hmm, it seems that blank slate objects *require* the definition of the fn to call currentMessage</span><br />
+<span class="irc-date">[14:16]</span> <span class="irc-black">&lt;naeu&gt; for example, bs = BlankSlate create(fn(bs, bs pass = method("hi")))</span><br />
+<span class="irc-date">[14:16]</span> <span class="irc-black">&lt;naeu&gt; blows up</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;olabini&gt; the reason is that since it's a REAL blank slate</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;olabini&gt; the call to create the text fails</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;olabini&gt; the "hi" turns into a call to internal:createText</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;olabini&gt; but since it's a blank slate it can't resolve it</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;olabini&gt; so you need to scope all literals to something</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;olabini&gt; I use currentMessage for that</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;naeu&gt; ok</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;naeu&gt; so why is it that the blank slate removes all mimics *after* the callback is called?</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;naeu&gt; and how do the strings get stored in the BlankSlate such that they are available for println?</span><br />
+<span class="irc-date">[14:30]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[14:30]</span> <span class="irc-black">&lt;olabini&gt; because otherwise you couldn't add any new cells</span><br />
+<span class="irc-date">[14:31]</span> <span class="irc-black">&lt;olabini&gt; because the = cell is in one of the mimics</span><br />
+<span class="irc-date">[14:31]</span> <span class="irc-black">&lt;olabini&gt; not sure what the second question mea</span><br />
+<span class="irc-date">[14:31]</span> <span class="irc-black">&lt;olabini&gt; means</span><br />
+<span class="irc-date">[14:31]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[14:32]</span> <span class="irc-black">&lt;naeu&gt; i'm just wondering how bs println works</span><br />
+<span class="irc-date">[14:32]</span> <span class="irc-black">&lt;naeu&gt; sorry</span><br />
+<span class="irc-date">[14:33]</span> <span class="irc-black">&lt;naeu&gt; test1 println</span><br />
+<span class="irc-date">[14:33]</span> <span class="irc-black">&lt;olabini&gt; test1 println?</span><br />
+<span class="irc-date">[14:33]</span> <span class="irc-black">&lt;naeu&gt; it's in html.ik</span><br />
+<span class="irc-date">[14:33]</span> <span class="irc-black">&lt;olabini&gt; well, the result of test1 is just a text</span><br />
+<span class="irc-date">[14:33]</span> <span class="irc-black">&lt;olabini&gt; right?</span><br />
+<span class="irc-date">[14:33]</span> <span class="irc-black">&lt;naeu&gt; yeah, sure</span><br />
+<span class="irc-date">[14:33]</span> <span class="irc-black">&lt;olabini&gt; every call to pass returns a new text</span><br />
+<span class="irc-date">[14:34]</span> <span class="irc-black">&lt;olabini&gt; and they're then put together into the final text that's returned</span><br />
+<span class="irc-date">[14:34]</span> <span class="irc-black">&lt;naeu&gt;  bs = BlankSlate create(fn(bs, bs pass = method(+args, +:attrs, currentMessage "hi"))). bs sam(bs fred(bs ted)) ;=&gt; "hi"</span><br />
+<span class="irc-date">[14:35]</span> <span class="irc-black">&lt;naeu&gt; aaahhh</span><br />
+<span class="irc-date">[14:35]</span> <span class="irc-black">&lt;naeu&gt; i'm with it now</span><br />
+<span class="irc-date">[14:35]</span> <span class="irc-black">&lt;naeu&gt; it's the evaluation of the args</span><br />
+<span class="irc-date">[14:36]</span> <span class="irc-black">&lt;naeu&gt; is %:[ %s=\"%s\"%] a way of formatting Dicts?</span><br />
+<span class="irc-date">[14:40]</span> <span class="irc-black">&lt;naeu&gt; bs = BlankSlate create(fn(bs, bs pass = method(+args, +:attrs, currentMessage "%s" format("hi")))) ;=&gt; stack overflow</span><br />
+<span class="irc-date">[14:40]</span> <span class="irc-black">&lt;naeu&gt; bs = BlankSlate create(fn(bs, bs pass = method(+args, +:attrs, currentMessage "#{1}"))) ;=&gt; stack overflow</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-black">&lt;naeu&gt; are they because strings and numbers aren't available to the blank slate?</span><br />
+<span class="irc-date">[14:42]</span> <span class="irc-black">&lt;naeu&gt; (sorry for 1000 questions)</span><br />
+<span class="irc-date">[14:47]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[14:47]</span> <span class="irc-black">&lt;olabini&gt; numbers need to be scoped</span><br />
+<span class="irc-date">[14:48]</span> <span class="irc-black">&lt;olabini&gt; interpolation is a bit tricky too</span><br />
+<span class="irc-date">[15:03]</span> <span class="irc-black">&lt;olabini&gt; well. the servlet seems to work fine now</span><br />
+<span class="irc-date">[15:03]</span> <span class="irc-black">&lt;olabini&gt; yay</span><br />
+<span class="irc-date">[15:07]</span> <span class="irc-black">&lt;naeu&gt; yay]</span><br />
+<span class="irc-date">[15:07]</span> <span class="irc-black">&lt;naeu&gt; nice that you got quoted in the guardian too</span><br />
+<span class="irc-date">[15:07]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[15:14]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[15:15]</span> <span class="irc-black">&lt;olabini&gt; yes, that was a pretty good article</span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-black">&lt;naeu&gt; yeah, it's nice</span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-black">&lt;naeu&gt; "People are not learning new languages to escape from platforms, rather they are trying to find new ways of doing things better on the existing platforms," says Bini.</span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[15:18]</span> <span class="irc-black">&lt;naeu&gt; although i'm not so sure about this quote from Barilla: "Dynamic languages are like third parties in the American political system. They exist less to win than to affect the issues brought up by the mainstream,"</span><br />
+<span class="irc-date">[15:27]</span> <span class="irc-black">&lt;naeu&gt; just added dict format specifier to the guide</span><br />
+<span class="irc-date">[15:29]</span> <span class="irc-black">&lt;olabini&gt; yeah, don't like that quote</span><br />
+<span class="irc-date">[15:29]</span> <span class="irc-black">&lt;olabini&gt; yeah, that's good</span><br />
+<span class="irc-date">[15:37]</span> <span class="irc-black">&lt;naeu&gt; i still don't get why passing a Text to currentMessage returns that Text</span><br />
+<span class="irc-date">[15:38]</span> <span class="irc-black">&lt;olabini&gt; hm</span><br />
+<span class="irc-date">[15:38]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[15:38]</span> <span class="irc-black">&lt;olabini&gt; because if you do</span><br />
+<span class="irc-date">[15:38]</span> <span class="irc-black">&lt;olabini&gt;   currentMessage "foo"</span><br />
+<span class="irc-date">[15:38]</span> <span class="irc-black">&lt;olabini&gt; that is the same as</span><br />
+<span class="irc-date">[15:38]</span> <span class="irc-black">&lt;olabini&gt;   currentMessage internal:createText("foo")</span><br />
+<span class="irc-date">[15:39]</span> <span class="irc-black">&lt;olabini&gt; right?</span><br />
+<span class="irc-date">[15:39]</span> <span class="irc-black">&lt;olabini&gt; so it's just calling internal:createText on something I know has it.</span><br />
+<span class="irc-date">[15:39]</span> <span class="irc-black">&lt;naeu&gt; ok, I get the expansion of "foo" to internal:createText("foo")</span><br />
+<span class="irc-date">[15:39]</span> <span class="irc-black">&lt;naeu&gt; i just don't get what currentMessage is doing</span><br />
+<span class="irc-date">[15:40]</span> <span class="irc-black">&lt;naeu&gt; in Ruby currentMessage is only available in method_missing as the first param as a symbol</span><br />
+<span class="irc-date">[15:40]</span> <span class="irc-black">&lt;naeu&gt; here i'm guessing it's the actual message object that's currently executing</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;naeu&gt; however, if the actual message that's currently executing doesn't exist, and pass is defined, I don't quite get the semantics of calling a Text message on the currentMessage</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;naeu&gt; from within the pass method</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;olabini&gt; currentMessage is a cell in any method activation</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;naeu&gt; (I clearly don't get it because my language for describing this is dreadful ;-)</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;olabini&gt; but if I don't scope the call to internal:createText</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;olabini&gt; it will invoke on the blankslate</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;olabini&gt; which doesn't have any mimics</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;olabini&gt; so it will fail</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;naeu&gt; sure, i get that bit</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;olabini&gt; so I need to take an object that is available and call internal:createText on that object instead</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;naeu&gt; but can you expand what you mean by scoping in this context</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;olabini&gt; currentMessage is available in any method call</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;olabini&gt; hmm?</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;olabini&gt; I'm not sure what you don't understand actually</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-black">&lt;naeu&gt; hmmm</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-black">&lt;naeu&gt; i can see that calling internal:createText on currentMessage will work</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-black">&lt;naeu&gt; I just don't understand what passing Texts to currentMessage actually does</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-black">&lt;naeu&gt; i.e. why does it just return the Text</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-black">&lt;olabini&gt; I'm not passing texts to currentmessage</span><br />
+<span class="irc-date">[15:45]</span> <span class="irc-black">&lt;olabini&gt; at all</span><br />
+<span class="irc-date">[15:45]</span> <span class="irc-black">&lt;naeu&gt; and not do something like invoke the currentMessage</span><br />
+<span class="irc-date">[15:45]</span> <span class="irc-black">&lt;olabini&gt; I'm invoking the method internal:createText on currentMessage. and the result of the pass-method is the return value of that method call</span><br />
+<span class="irc-date">[15:45]</span> <span class="irc-black">&lt;naeu&gt; ok that's what i don't yet understand</span><br />
+<span class="irc-date">[15:45]</span> <span class="irc-black">&lt;naeu&gt; and that makes complete sense</span><br />
+<span class="irc-date">[15:46]</span> <span class="irc-black">&lt;naeu&gt; man, all this stuff is a complete mindfuck ;-)</span><br />
+<span class="irc-date">[15:46]</span> <span class="irc-black">&lt;naeu&gt; we need to think of good ways of explaining this stuff if other people are to get it easily</span><br />
+<span class="irc-date">[15:50]</span> <span class="irc-black">&lt;naeu&gt; it's just the same as something like this:</span><br />
+<span class="irc-date">[15:50]</span> <span class="irc-black">&lt;naeu&gt; foo = method() 1 "sam" {} nil [] 1 true</span><br />
+<span class="irc-date">[15:53]</span> <span class="irc-black">&lt;martido&gt; naeu: lol ;) I know what you mean. "mindfuck" is a great term for that ...</span><br />
+<span class="irc-date">[15:53]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[15:53]</span> <span class="irc-black">&lt;naeu&gt; essentially it's a totally different way of thinking about things</span><br />
+<span class="irc-date">[15:54]</span> <span class="irc-black">&lt;martido&gt; yeah</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-black">&lt;martido&gt; btw, that line of code that you wrote above is a mindfuck as well ;)</span><br />
+<span class="irc-date">[15:58]</span> <span class="irc-black">&lt;naeu&gt; martido: yeah, it's the same concept as the stuff inside html.ik in IKanServe</span><br />
+<span class="irc-date">[15:59]</span> <span class="irc-black">&lt;naeu&gt; the point is that if a message isn't found in the current context, it's looked up in the object's mimics</span><br />
+<span class="irc-date">[15:59]</span> <span class="irc-black">&lt;naeu&gt; all those things are available in Ground (or at least in Ground's mimics)</span><br />
+<span class="irc-date">[15:59]</span> <span class="irc-black">&lt;naeu&gt; so they're just found there and not in the foo object</span><br />
+<span class="irc-date">[16:00]</span> <span class="irc-black">&lt;martido&gt; yeah, I get that, but I didn't know that there's a method called 1... or is the message actually internal</span><br />
+<span class="irc-date">[16:00]</span> <span class="irc-black">&lt;martido&gt; :createNumber</span><br />
+<span class="irc-date">[16:00]</span> <span class="irc-black">&lt;martido&gt; right?</span><br />
+<span class="irc-date">[16:00]</span> <span class="irc-black">&lt;martido&gt; yeah that must be it</span><br />
+<span class="irc-date">[16:01]</span> <span class="irc-black">&lt;naeu&gt; hmmm: internal:createNumber(1) ;=&gt; nil</span><br />
+<span class="irc-date">[16:01]</span> <span class="irc-black">&lt;martido&gt; but nil "sam" =&gt; "sam" ;)</span><br />
+<span class="irc-date">[16:02]</span> <span class="irc-black">&lt;naeu&gt; yeah, it's the last message</span><br />
+<span class="irc-date">[16:02]</span> <span class="irc-black">&lt;martido&gt; but I though the above would return 1</span><br />
+<span class="irc-date">[16:02]</span> <span class="irc-black">&lt;olabini&gt; martido: it doesn't, because internal:createNumber takes a raw Java string</span><br />
+<span class="irc-date">[16:02]</span> <span class="irc-black">&lt;naeu&gt; me too, which means I don't yet fully grok numbers in ioke</span><br />
+<span class="irc-date">[16:03]</span> <span class="irc-black">&lt;olabini&gt; and creates a new number from that</span><br />
+<span class="irc-date">[16:03]</span> <span class="irc-black">&lt;olabini&gt; it's not meant to be used like that</span><br />
+<span class="irc-date">[16:03]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[16:03]</span> <span class="irc-black">&lt;martido&gt; ah right and you can't do that in Ioke</span><br />
+<span class="irc-date">[16:03]</span> <span class="irc-black">&lt;naeu&gt; olabini: can you create a raw java string from within ioke?</span><br />
+<span class="irc-date">[16:03]</span> <span class="irc-black">&lt;martido&gt; I mean write a raw Java string</span><br />
+<span class="irc-date">[16:03]</span> <span class="irc-black">&lt;martido&gt; ;)</span><br />
+<span class="irc-date">[16:09]</span> <span class="irc-black">&lt;olabini&gt; yeah, that's not the way you create a number</span><br />
+<span class="irc-date">[16:09]</span> <span class="irc-black">&lt;olabini&gt; basically you do something akin to parseInt etc</span><br />
+<span class="irc-date">[16:09]</span> <span class="irc-black">&lt;olabini&gt; naeu: and yeah, you can.</span><br />
+<span class="irc-date">[16:09]</span> <span class="irc-black">&lt;olabini&gt; java:lang:String new("foo")</span><br />
+<span class="irc-date">[16:09]</span> <span class="irc-black">&lt;olabini&gt; should work</span><br />
+<span class="irc-date">[16:10]</span> <span class="irc-black">&lt;martido&gt; ah I forgot Java integration is there now ;)</span><br />
+<span class="irc-date">[16:10]</span> <span class="irc-black">&lt;naeu&gt; internal:createNumber(java:lang:String new("1"))</span><br />
+<span class="irc-date">[16:10]</span> <span class="irc-black">&lt;martido&gt; does that work?</span><br />
+<span class="irc-date">[16:10]</span> <span class="irc-black">&lt;naeu&gt; yep</span><br />
+<span class="irc-date">[16:11]</span> <span class="irc-black">&lt;martido&gt; cool</span><br />
+<span class="irc-date">[16:11]</span> <span class="irc-black">&lt;olabini&gt; should work</span><br />
+<span class="irc-date">[16:11]</span> <span class="irc-black">&lt;olabini&gt; can't guarantee it right now</span><br />
+<span class="irc-date">[16:11]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[16:12]</span> <span class="irc-black">&lt;naeu&gt; although internal:createNumber(java:lang:String new("1.0")) totally explodes</span><br />
+<span class="irc-date">[16:14]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[16:14]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[16:14]</span> <span class="irc-black">&lt;olabini&gt; the only way I KNOW you can send arguments to createNumber</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-black">&lt;olabini&gt; is by doing something like what I'm doing in my parser combinator library</span><br />
+<span class="irc-date">[16:18]</span> <span class="irc-black">&lt;naeu&gt; but doesn't your parser thingy just override internal:createNumber</span><br />
+<span class="irc-date">[16:18]</span> <span class="irc-black">&lt;olabini&gt; yep. look at it</span><br />
+<span class="irc-date">[16:19]</span> <span class="irc-black">&lt;naeu&gt; i am :-)</span><br />
+<span class="irc-date">[16:19]</span> <span class="irc-black">&lt;naeu&gt;     internal:createNumber = method(raw, IParse NumberParser with(context: self, number: super(raw)))</span><br />
+<span class="irc-date">[16:19]</span> <span class="irc-black">&lt;naeu&gt; you're just extracting the raw argument</span><br />
+<span class="irc-date">[16:19]</span> <span class="irc-black">&lt;naeu&gt; and throwing it at your NumberParser</span><br />
+<span class="irc-date">[16:31]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[16:31]</span> <span class="irc-black">&lt;olabini&gt; well, actually</span><br />
+<span class="irc-date">[16:31]</span> <span class="irc-black">&lt;olabini&gt; taking the raw argument</span><br />
+<span class="irc-date">[16:31]</span> <span class="irc-black">&lt;olabini&gt; throwing it at the real implementation of internal:createNumber - with the super-call</span><br />
+<span class="irc-date">[17:04]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[17:05]</span> <span class="irc-black">&lt;naeu&gt; ah, sure</span><br />
+<span class="irc-date">[17:07]</span> <span class="irc-black">&lt;naeu&gt; so how come this blows up:</span><br />
+<span class="irc-date">[17:07]</span> <span class="irc-black">&lt;naeu&gt; internal:createNumber = method(raw, super(raw) + 10)</span><br />
+<span class="irc-date">[17:11]</span> <span class="irc-black">&lt;naeu&gt; interestingly, this works:</span><br />
+<span class="irc-date">[17:11]</span> <span class="irc-black">&lt;naeu&gt; internal:createNumber = method(raw, super(raw) + super(java:lang:String new("10")))</span><br />
+<span class="irc-date">[17:13]</span> <span class="irc-black">&lt;naeu&gt; is that a recursive issue</span><br />
+<span class="irc-date">[17:14]</span> <span class="irc-black">&lt;naeu&gt; i.e. is the number literal 10 in the above example simply converting to a internal:createNumber message which calls the method within which it sits</span><br />
+<span class="irc-date">[17:14]</span> <span class="irc-black">&lt;naeu&gt; therefore is the actual real internal:createNumber message is only available through super?</span><br />
+<span class="irc-date">[17:52]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit ()</span><br />
+<span class="irc-date">[17:53]</span> <span class="irc-green">* naeu (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[17:56]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit (Client Quit)</span><br />
+<span class="irc-date">[18:15]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit ()</span><br />
+<span class="irc-date">[19:02]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-245.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[19:04]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[19:04]</span> <span class="irc-black">&lt;olabini&gt; the problem is that internal:createNumber is defined on InternalBehavior.</span><br />
+<span class="irc-date">[19:04]</span> <span class="irc-black">&lt;olabini&gt; you redefined it further down the chain</span><br />
+<span class="irc-date">[20:04]</span> <span class="irc-green">* martido (n=martin@dslb-088-066-196-231.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[20:29]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-245.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[20:30]</span> <span class="irc-green">* k (n=kar8nga@f-68.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[20:30]</span> <span class="irc-green">* k is now known as Guest15366</span><br />
+<span class="irc-date">[21:23]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[21:48]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[22:13]</span> <span class="irc-navy">* Guest15366 (n=kar8nga@f-68.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[22:36]</span> <span class="irc-black">&lt;martido&gt; hey all, I was just wondering if there's a way to "copy" a particular message in a message chain, i.e. get a copy of that message with the next pointer set to nil?</span><br />
+<span class="irc-date">[22:39]</span> <span class="irc-black">&lt;martido&gt; that would be useful if you have a long message chain (in a macro for example) and want to copy some of those messages and combine them in other ways as provided by the original chain</span><br />
+<span class="irc-date">[22:40]</span> <span class="irc-black">&lt;martido&gt; what I'm doing right now is a deepCopy of a chain that starts with the message that I want to copy and then manually set the next pointer of the clone to nil</span><br />
+<span class="irc-date">[22:40]</span> <span class="irc-black">&lt;martido&gt; that's a bit tedious though ... I'm sure there's another way, but I don't see it ;)</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;olabini&gt; you could always use mimic</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;olabini&gt; that won't currently preserve file and line numbers</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;olabini&gt; but it should</span><br />
+<span class="irc-date">[22:43]</span> <span class="irc-black">&lt;olabini&gt; so if you're on it, you could write a test case, and fix the issue in ioke.lang.Message.cloneData</span><br />
+<span class="irc-date">[22:43]</span> <span class="irc-black">&lt;olabini&gt; ...</span><br />
+<span class="irc-date">[22:43]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[22:43]</span> <span class="irc-black">&lt;olabini&gt; for reference</span><br />
+<span class="irc-date">[22:43]</span> <span class="irc-black">&lt;olabini&gt; mimic will use the java method cloneData to copy the "native" parts of an IokeObject</span><br />
+<span class="irc-date">[22:50]</span> <span class="irc-black">&lt;martido&gt; just tried it ... that really works ;) just out of curiosity: why does mimic not preserve the next pointer?</span><br />
+<span class="irc-date">[22:50]</span> <span class="irc-black">&lt;martido&gt; yeah I could try to fix that issue</span><br />
+<span class="irc-date">[22:50]</span> <span class="irc-black">&lt;martido&gt; so cloneData fails to copy the file and line numbers?</span><br />
+<span class="irc-date">[22:51]</span> <span class="irc-black">&lt;martido&gt; oh well ... regarding my first question ... it's a new object ... so forget the question ;)</span><br />
+<span class="irc-date">[22:52]</span> <span class="irc-black">&lt;martido&gt; do you think copy functionality would warrant an additional method on Message?</span><br />
+<span class="irc-date">[23:08]</span> <span class="irc-black">&lt;martido&gt; bed time unfortunately. tomorrow will be a hard day at work. will check in again tomorrow. good night ...</span><br />
+<span class="irc-date">[23:08]</span> <span class="irc-navy">* martido (n=martin@dslb-088-066-196-231.pools.arcor-ip.net) Quit ()</span><br />

@@ -1,0 +1,297 @@
+<span class="irc-date">[1:19]</span> <span class="irc-navy">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) Quit ("Ex-Chat")</span><br />
+<span class="irc-date">[1:20]</span> <span class="irc-green">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[1:22]</span> <span class="irc-navy">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) Quit (Client Quit)</span><br />
+<span class="irc-date">[2:50]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[9:29]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-99.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[9:40]</span> <span class="irc-green">* petrik (n=petrik@a82-95-189-230.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[10:53]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[10:57]</span> <span class="irc-black">&lt;naeu&gt; morning all</span><br />
+<span class="irc-date">[11:15]</span> <span class="irc-black">&lt;olabini&gt; morning</span><br />
+<span class="irc-date">[11:19]</span> <span class="irc-black">&lt;naeu&gt; morning ola</span><br />
+<span class="irc-date">[11:20]</span> <span class="irc-black">&lt;olabini&gt; how are you doing? still cold?</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;naeu&gt; yep :-(</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;olabini&gt; that sucks</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;olabini&gt; when will you get that fixed?</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;naeu&gt; indeed</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;naeu&gt; maybe tuesday</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;olabini&gt; k</span><br />
+<span class="irc-date">[11:22]</span> <span class="irc-black">&lt;naeu&gt; i have a few questions</span><br />
+<span class="irc-date">[11:22]</span> <span class="irc-black">&lt;olabini&gt; k. hit me</span><br />
+<span class="irc-date">[11:22]</span> <span class="irc-black">&lt;naeu&gt; (if that's ok)</span><br />
+<span class="irc-date">[11:22]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;naeu&gt; ok, firstly a simple one</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;naeu&gt; i'm now using emacs</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;naeu&gt; and I've started tweaking the colours</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;naeu&gt; but one thing i noticed is that #! lines aren't styled as comments</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;naeu&gt; and I couldn't work out how to add that to the major mode</span><br />
+<span class="irc-date">[11:26]</span> <span class="irc-black">&lt;naeu&gt; and I have no idea how you can have mimiced kinds as dark blue on black ;-) but that's just a subjective matter</span><br />
+<span class="irc-date">[11:30]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[11:30]</span> <span class="irc-black">&lt;olabini&gt; well, you're right about #!</span><br />
+<span class="irc-date">[11:30]</span> <span class="irc-black">&lt;olabini&gt; the reason is quite simple</span><br />
+<span class="irc-date">[11:30]</span> <span class="irc-black">&lt;olabini&gt; if you have more than three lines of Ioke in a script with a shebang, you're probably doing something wrong</span><br />
+<span class="irc-date">[11:30]</span> <span class="irc-black">&lt;olabini&gt; =P</span><br />
+<span class="irc-date">[11:31]</span> <span class="irc-black">&lt;olabini&gt; blue works very well for me, but I can see how that would be hard for older members of the public... =)</span><br />
+<span class="irc-date">[11:31]</span> <span class="irc-black">&lt;naeu&gt; but the shebang should still be styled as a comment :-p</span><br />
+<span class="irc-date">[11:31]</span> <span class="irc-black">&lt;olabini&gt; sure</span><br />
+<span class="irc-date">[11:31]</span> <span class="irc-black">&lt;olabini&gt; true</span><br />
+<span class="irc-date">[11:31]</span> <span class="irc-black">&lt;olabini&gt; shouldn't be to hard, really</span><br />
+<span class="irc-date">[11:31]</span> <span class="irc-black">&lt;naeu&gt; ok, second question...</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;naeu&gt; are the concepts of encapsulation much more diluted in Ioke</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;olabini&gt; I would say it need to be added to ioke-font-lock-keywords</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;olabini&gt; yes, definitely</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;olabini&gt; specifically, since I don't really have private/protected/public things</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;naeu&gt; exactly</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;olabini&gt; if you REALLY need to hide something, there are two ways</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;naeu&gt; which makes it quite hard to do delegation</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;naeu&gt; and to hide stuff from external objects</span><br />
+<span class="irc-date">[11:33]</span> <span class="irc-black">&lt;olabini&gt; the first one is a soft hide - and we talked about that in Amsterdam - adding methods and things like that to other methods</span><br />
+<span class="irc-date">[11:33]</span> <span class="irc-black">&lt;olabini&gt; the second is a hard one, where you can use a closure around a let-form to create things that aren't visible outside</span><br />
+<span class="irc-date">[11:33]</span> <span class="irc-black">&lt;naeu&gt; ah ok</span><br />
+<span class="irc-date">[11:33]</span> <span class="irc-black">&lt;olabini&gt; I'm not sure exactly what you mean by those two points. the first one - I don't see the difficulty with it</span><br />
+<span class="irc-date">[11:33]</span> <span class="irc-black">&lt;olabini&gt; the second point I'm not sure I want it to be possible to do, except with the closures</span><br />
+<span class="irc-date">[11:33]</span> <span class="irc-black">&lt;naeu&gt; well for example</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;naeu&gt; i am writing a super basic templating library</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;naeu&gt; just because its interesting</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;olabini&gt; sure</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;naeu&gt; and i have a template object</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;naeu&gt; which includes a parser object</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;naeu&gt; hmm</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;naeu&gt; let me get this right</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;naeu&gt; actually, i think the long story of this is that the differences made me totally rethink my design</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;olabini&gt; yeah, definitely</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;olabini&gt; and that is actually the point</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;naeu&gt; yeah, i'm just realising that now</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;olabini&gt; in a language like Scheme, you don't really have any hiding except for lexical closures</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-black">&lt;olabini&gt; and that makes your organization very different.</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-black">&lt;olabini&gt; I've always found it easier to work in that context than in the things Java makes you do</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-black">&lt;naeu&gt; yeah, i can see that</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-black">&lt;olabini&gt; I hate different levels of private/protected/etc</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-black">&lt;naeu&gt; my problem was that i had a source object</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-black">&lt;olabini&gt; and I want to get away from that</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-black">&lt;naeu&gt; and i wanted a source method that just pulled the raw source from the source object</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;naeu&gt; in ruby:</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;naeu&gt; def source ; @source.source ; end</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;naeu&gt; I mean, it's a contrived example</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;olabini&gt;  it's very contrived. =)</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;naeu&gt; and led me to redesign</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;olabini&gt; my immediate reaction is that your naming of your core objects probably are bad</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;naeu&gt; yeah exactly</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;naeu&gt; i first changed it to internalSource</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;olabini&gt; what does that mean?</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;naeu&gt; to separate external and internal cells by name</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;olabini&gt; if you want to do that, use namespacing</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;olabini&gt; colons in the name</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;naeu&gt; but that was just awful ;-)</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;olabini&gt; I meant the word "source"</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;olabini&gt; what does it mean?</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;naeu&gt; and then i decided that the source object wasn't a source, but a parser</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;olabini&gt; in the different context</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;olabini&gt; ah, right</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;naeu&gt; it takes text</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;naeu&gt; and then tokenises it</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;naeu&gt; validates it</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;naeu&gt; and then will turn it into a tree</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;naeu&gt; (which is out of the realms of parsers, but these things are blurred anyhow)</span><br />
+<span class="irc-date">[11:40]</span> <span class="irc-black">&lt;naeu&gt; which then leads me to my last question</span><br />
+<span class="irc-date">[11:40]</span> <span class="irc-black">&lt;naeu&gt; I have a text that i want to tokenise</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;naeu&gt; I have regexps that define a set of particular tokens</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;olabini&gt; actually</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;olabini&gt; that's not a parser</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;naeu&gt; blah blah blah [~foo] jabba jabba jabba [~bar] drone drone</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;naeu&gt; that's a lexer</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;olabini&gt; that's a lexer</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;olabini&gt; or a scanner</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;olabini&gt; or a tokenizer</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[11:42]</span> <span class="irc-black">&lt;naeu&gt; i know</span><br />
+<span class="irc-date">[11:42]</span> <span class="irc-black">&lt;naeu&gt; the parser name came from the fact i was using it to validate the syntax of the text</span><br />
+<span class="irc-date">[11:42]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[11:43]</span> <span class="irc-black">&lt;naeu&gt; ["blah blah blah", "[~foo]", "jabba jabba jabba", "[~bar]", "drone drone"]</span><br />
+<span class="irc-date">[11:43]</span> <span class="irc-black">&lt;naeu&gt; i want this list of tokens initially</span><br />
+<span class="irc-date">[11:43]</span> <span class="irc-black">&lt;naeu&gt; the problem is how to do it</span><br />
+<span class="irc-date">[11:43]</span> <span class="irc-black">&lt;naeu&gt; if i use Text#split it throws away the matching tokens</span><br />
+<span class="irc-date">[11:45]</span> <span class="irc-black">&lt;naeu&gt; is it something worth adding to Text, or just something I should build myself?</span><br />
+<span class="irc-date">[11:45]</span> <span class="irc-black">&lt;naeu&gt; or should i use a proper lexer tool for it?</span><br />
+<span class="irc-date">[11:45]</span> <span class="irc-black">&lt;naeu&gt; maybe an Ioke lexer would be a nice thing to have?</span><br />
+<span class="irc-date">[11:48]</span> <span class="irc-black">&lt;naeu&gt; or perhaps just an ANTLR wrapper in Ioke?</span><br />
+<span class="irc-date">[11:48]</span> <span class="irc-black">&lt;naeu&gt; would that be possible with the current Java integration capabilities?</span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-black">&lt;naeu&gt; regarding the #! hightlighting</span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-black">&lt;naeu&gt; I imagine I need to add something like:</span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-black">&lt;naeu&gt;     '("\A#!.*\Z" 1 ioke-font-lock-comment-face)</span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-black">&lt;naeu&gt; to the definition of ioke-font-lock-keywords</span><br />
+<span class="irc-date">[12:02]</span> <span class="irc-black">&lt;naeu&gt; however, i'm not sure if the regexp is valid in this context, what the integer stands for, and whether there is a default comment face reference or whether i need to create a new one</span><br />
+<span class="irc-date">[12:02]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[12:02]</span> <span class="irc-black">&lt;naeu&gt; so basically i have no idea ;-)</span><br />
+<span class="irc-date">[12:07]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-99.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[12:10]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[12:10]</span> <span class="irc-black">&lt;olabini&gt; I think it would be fine, except for the \Z</span><br />
+<span class="irc-date">[12:11]</span> <span class="irc-black">&lt;olabini&gt; that stands for end of all text, not end of line</span><br />
+<span class="irc-date">[12:11]</span> <span class="irc-black">&lt;olabini&gt; the 1 stands for which group to highlight</span><br />
+<span class="irc-date">[12:11]</span> <span class="irc-black">&lt;olabini&gt; the 1 is everything</span><br />
+<span class="irc-date">[12:11]</span> <span class="irc-black">&lt;olabini&gt; the lexing part</span><br />
+<span class="irc-date">[12:11]</span> <span class="irc-black">&lt;olabini&gt; well, something like stringscanner using regexps would probably be the best thing</span><br />
+<span class="irc-date">[12:12]</span> <span class="irc-black">&lt;naeu&gt; so, in that case wouldn't \A represent the start of all text, i.e. the beginning of the file?</span><br />
+<span class="irc-date">[12:12]</span> <span class="irc-black">&lt;naeu&gt; does emacs give you access to the entire file</span><br />
+<span class="irc-date">[12:13]</span> <span class="irc-black">&lt;naeu&gt; TextMate breaks it into lines</span><br />
+<span class="irc-date">[12:22]</span> <span class="irc-green">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[12:32]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-193.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[12:39]</span> <span class="irc-black">&lt;olabini&gt; yes, \A is the start of everything</span><br />
+<span class="irc-date">[12:39]</span> <span class="irc-black">&lt;olabini&gt; ^ is the start of a line</span><br />
+<span class="irc-date">[12:39]</span> <span class="irc-black">&lt;olabini&gt; and no, Emacs doesn't generally let you match against the whole text.</span><br />
+<span class="irc-date">[12:40]</span> <span class="irc-black">&lt;olabini&gt; but the model is a bit complicated</span><br />
+<span class="irc-date">[12:46]</span> <span class="irc-black">&lt;mozinator&gt; sorry for this beginner question, I downloaded the latest ioke from github, installed java ruby ant and mercurial</span><br />
+<span class="irc-date">[12:46]</span> <span class="irc-black">&lt;mozinator&gt; when I try to do a build with ant, i get the following error</span><br />
+<span class="irc-date">[12:46]</span> <span class="irc-black">&lt;mozinator&gt; generate_filters:</span><br />
+<span class="irc-date">[12:46]</span> <span class="irc-black">&lt;mozinator&gt;      [exec] fatal: Not a git repository</span><br />
+<span class="irc-date">[12:46]</span> <span class="irc-black">&lt;mozinator&gt;      [exec] abort: There is no Mercurial repository here (.hg not found)!</span><br />
+<span class="irc-date">[12:46]</span> <span class="irc-black">&lt;mozinator&gt;      [exec] -:9: private method `split' called for nil:NilClass (NoMethodError)</span><br />
+<span class="irc-date">[12:46]</span> <span class="irc-black">&lt;mozinator&gt;      [exec] Result: 1</span><br />
+<span class="irc-date">[12:47]</span> <span class="irc-black">&lt;olabini&gt; wait, what did you actually do?</span><br />
+<span class="irc-date">[12:47]</span> <span class="irc-black">&lt;olabini&gt; you don't need mercurial if you're using github</span><br />
+<span class="irc-date">[12:47]</span> <span class="irc-black">&lt;olabini&gt; it won't work correctly if you download a generated tar.gz from github directly</span><br />
+<span class="irc-date">[12:47]</span> <span class="irc-black">&lt;mozinator&gt; when I tried to build ioke by invoking the command ant I got that message</span><br />
+<span class="irc-date">[12:47]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[12:48]</span> <span class="irc-black">&lt;olabini&gt; so clone the repository instead of downloading a tarball</span><br />
+<span class="irc-date">[12:48]</span> <span class="irc-black">&lt;mozinator&gt; so I tried a git clone git://github.com/olabini/ioke.git and also got errors</span><br />
+<span class="irc-date">[12:49]</span> <span class="irc-black">&lt;mozinator&gt; hmm, now it's working, I was getting some HTTP errors</span><br />
+<span class="irc-date">[12:50]</span> <span class="irc-black">&lt;olabini&gt; that's probably up to your ISP =/</span><br />
+<span class="irc-date">[12:51]</span> <span class="irc-black">&lt;olabini&gt; it should work to clone</span><br />
+<span class="irc-date">[12:51]</span> <span class="irc-black">&lt;olabini&gt; and that's the best way if you want to build it yourself</span><br />
+<span class="irc-date">[12:51]</span> <span class="irc-black">&lt;mozinator&gt; going to try it right now</span><br />
+<span class="irc-date">[12:51]</span> <span class="irc-black">&lt;olabini&gt; great</span><br />
+<span class="irc-date">[12:52]</span> <span class="irc-black">&lt;mozinator&gt; yup, great it works, thanks ola</span><br />
+<span class="irc-date">[12:52]</span> <span class="irc-black">&lt;olabini&gt; no worries</span><br />
+<span class="irc-date">[13:00]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-193.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[13:16]</span> <span class="irc-green">* olabini` (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[13:16]</span> <span class="irc-green">* IokeHurricane sets mode +o olabini` </span><br />
+<span class="irc-date">[13:17]</span> <span class="irc-black">&lt;mozinator&gt; ioke working, now for emacs.. when trying to use inferior ioke I get a strange error, I made a screenshot <a href="http://tinypic.com/view.php?pic=2iktu1k&amp;s=5">http://tinypic.com/view.php?pic=2iktu1k&amp;s=5</a></span><br />
+<span class="irc-date">[13:19]</span> <span class="irc-black">&lt;olabini`&gt; I don't see the error</span><br />
+<span class="irc-date">[13:19]</span> <span class="irc-black">&lt;mozinator&gt; in the left window, in the red bar</span><br />
+<span class="irc-date">[13:20]</span> <span class="irc-black">&lt;mozinator&gt; I tried to start inf ioke with M-x inferior-ioke-mode and then .... nothing</span><br />
+<span class="irc-date">[13:20]</span> <span class="irc-black">&lt;olabini`&gt; hmm</span><br />
+<span class="irc-date">[13:20]</span> <span class="irc-black">&lt;olabini`&gt; well</span><br />
+<span class="irc-date">[13:20]</span> <span class="irc-black">&lt;olabini`&gt; you should start it with "run-ioke"</span><br />
+<span class="irc-date">[13:20]</span> <span class="irc-black">&lt;olabini`&gt; inferior-ioke-mode is the mode that is used once ioke is running</span><br />
+<span class="irc-date">[13:20]</span> <span class="irc-black">&lt;olabini`&gt; you should never start it from scratch</span><br />
+<span class="irc-date">[13:20]</span> <span class="irc-black">&lt;olabini`&gt; that is how most inferior modes work</span><br />
+<span class="irc-date">[13:22]</span> <span class="irc-black">&lt;mozinator&gt; sorry for the basic questions, I just started learning emacs + ioke, and I am just trying to copy what works for me with clojure to ioke :)</span><br />
+<span class="irc-date">[13:23]</span> <span class="irc-black">&lt;mozinator&gt; got the ioke shell running in emacs now, great :)</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;olabini`&gt; no worries</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;olabini`&gt; =)</span><br />
+<span class="irc-date">[13:25]</span> <span class="irc-black">&lt;olabini`&gt; the Emacs ioke support is basically quite raw.</span><br />
+<span class="irc-date">[13:25]</span> <span class="irc-black">&lt;olabini`&gt; just stuff I want. =)</span><br />
+<span class="irc-date">[13:25]</span> <span class="irc-black">&lt;olabini`&gt; and have the energy to implement</span><br />
+<span class="irc-date">[13:26]</span> <span class="irc-black">&lt;olabini`&gt; I still plan to make it much better, by implementing an antlr-elisp backend so I can generate a parser for it</span><br />
+<span class="irc-date">[13:26]</span> <span class="irc-black">&lt;olabini`&gt; that's half way done</span><br />
+<span class="irc-date">[13:26]</span> <span class="irc-navy">* olabini (n=ola@c-2f4de155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[13:26]</span> <span class="irc-green">* olabini` (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[13:27]</span> <span class="irc-black">&lt;mozinator&gt; cool, I did see you in the list with target languages for antlr</span><br />
+<span class="irc-date">[13:27]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[13:27]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[13:29]</span> <span class="irc-black">&lt;mozinator&gt; an antlr-elisp backend is also useful for lots of different languages, really cool</span><br />
+<span class="irc-date">[13:29]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[13:29]</span> <span class="irc-black">&lt;olabini&gt; that was the point of creating a general solution</span><br />
+<span class="irc-date">[13:31]</span> <span class="irc-black">&lt;mozinator&gt; btw, is it possible to send a "block" of code to the ioke shell in emacs ?</span><br />
+<span class="irc-date">[13:31]</span> <span class="irc-black">&lt;olabini&gt; well. I think there is something like it, but it doesn't work very well at the moment since the shell doesn't know about parsing</span><br />
+<span class="irc-date">[13:33]</span> <span class="irc-black">&lt;mozinator&gt; so what is a good "edit code" --&gt; "try code" workflow in emacs ?</span><br />
+<span class="irc-date">[13:33]</span> <span class="irc-black">&lt;mozinator&gt; using an build file ?</span><br />
+<span class="irc-date">[13:34]</span> <span class="irc-black">&lt;olabini&gt; well.</span><br />
+<span class="irc-date">[13:35]</span> <span class="irc-black">&lt;olabini&gt; that depends on the size of your app</span><br />
+<span class="irc-date">[13:35]</span> <span class="irc-black">&lt;mozinator&gt; just for learning...</span><br />
+<span class="irc-date">[13:35]</span> <span class="irc-black">&lt;olabini&gt; I generally try to work at the prompt most of the time</span><br />
+<span class="irc-date">[13:36]</span> <span class="irc-black">&lt;mozinator&gt; so, edit an file, save and then load the file in the ioke shell, and run it ?</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;olabini&gt; well, no</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;olabini&gt; I generally just develop directly in the shell</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;olabini&gt; and then copy it the more finished pieces into a file</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-black">&lt;mozinator&gt; okay, great, I think I have everything to get going with ioke :), going to give it a try, thanks again ola</span><br />
+<span class="irc-date">[13:39]</span> <span class="irc-black">&lt;olabini&gt; no worries. good luck!</span><br />
+<span class="irc-date">[13:43]</span> <span class="irc-black">&lt;naeu&gt; mozinator: good luck :-)</span><br />
+<span class="irc-date">[13:44]</span> <span class="irc-black">&lt;mozinator&gt; naeu: thanks</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;naeu&gt; off out for a cycle ride</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;naeu&gt; see everyone later</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;mozinator&gt; have fun!</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;naeu&gt; and i'll look into porting Ruby's StringScanner to Ioke</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;naeu&gt; cheerio</span><br />
+<span class="irc-date">[14:05]</span> <span class="irc-black">&lt;olabini&gt; cool</span><br />
+<span class="irc-date">[14:07]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-navy">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[16:00]</span> <span class="irc-green">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[17:02]</span> <span class="irc-black">&lt;naeu&gt; hey ola</span><br />
+<span class="irc-date">[17:02]</span> <span class="irc-black">&lt;naeu&gt; what's the pattern behind the filenames in src/builtin</span><br />
+<span class="irc-date">[17:03]</span> <span class="irc-black">&lt;naeu&gt; and, perhaps more importantly, is TextScanner something you see belonging in the main distribution?</span><br />
+<span class="irc-date">[17:26]</span> <span class="irc-navy">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[17:39]</span> <span class="irc-green">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:52]</span> <span class="irc-green">* adakkak (n=adakkak@gres110.lis.illinois.edu) has joined #ioke</span><br />
+<span class="irc-date">[19:18]</span> <span class="irc-black">&lt;olabini&gt; naeu: well. there is no real pattern, except to spread the filenames wide enough to allow other insertions</span><br />
+<span class="irc-date">[19:18]</span> <span class="irc-black">&lt;olabini&gt; and yes, a TextScanner is definitely something for the main distribution</span><br />
+<span class="irc-date">[19:18]</span> <span class="irc-black">&lt;olabini&gt; although its proper place should be in lib/ioke</span><br />
+<span class="irc-date">[19:18]</span> <span class="irc-black">&lt;olabini&gt; and it shouldn't be loaded by default. just like strscan</span><br />
+<span class="irc-date">[19:18]</span> <span class="irc-black">&lt;naeu&gt; ok, I'll look at strscan</span><br />
+<span class="irc-date">[19:19]</span> <span class="irc-black">&lt;naeu&gt; also, have we adopted a default name for initializer like constructs?</span><br />
+<span class="irc-date">[19:19]</span> <span class="irc-black">&lt;naeu&gt; i.e create</span><br />
+<span class="irc-date">[19:22]</span> <span class="irc-black">&lt;olabini&gt; uhm</span><br />
+<span class="irc-date">[19:22]</span> <span class="irc-black">&lt;olabini&gt; you know that we have initialize in the system now?</span><br />
+<span class="irc-date">[19:23]</span> <span class="irc-black">&lt;olabini&gt; <a href="http://ioke.org/wiki/index.php/Guide#Origin">http://ioke.org/wiki/index.php/Guide#Origin</a></span><br />
+<span class="irc-date">[19:23]</span> <span class="irc-black">&lt;naeu&gt; oh we do?</span><br />
+<span class="irc-date">[19:23]</span> <span class="irc-black">&lt;olabini&gt; have been there since aspects were added</span><br />
+<span class="irc-date">[19:24]</span> <span class="irc-black">&lt;naeu&gt; nice :-)</span><br />
+<span class="irc-date">[19:24]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[19:24]</span> <span class="irc-black">&lt;olabini&gt; takes the arguments given to mimic and uses them for initialize instead.</span><br />
+<span class="irc-date">[19:24]</span> <span class="irc-black">&lt;olabini&gt; should work fine</span><br />
+<span class="irc-date">[19:25]</span> <span class="irc-black">&lt;naeu&gt; splendid</span><br />
+<span class="irc-date">[19:38]</span> <span class="irc-black">&lt;naeu&gt; olabini: where is strscan and what is it?</span><br />
+<span class="irc-date">[19:40]</span> <span class="irc-black">&lt;naeu&gt; and by putting TextScanner in lib/ioke I'm assuming it won't be loaded up by default</span><br />
+<span class="irc-date">[19:42]</span> <span class="irc-black">&lt;olabini&gt; it's a library implemented in C in Ruby</span><br />
+<span class="irc-date">[19:42]</span> <span class="irc-black">&lt;olabini&gt; you load it by doing require 'strscan'</span><br />
+<span class="irc-date">[19:42]</span> <span class="irc-black">&lt;olabini&gt; main class is StringScanner</span><br />
+<span class="irc-date">[19:42]</span> <span class="irc-black">&lt;olabini&gt; should be loads of rdoc on the net</span><br />
+<span class="irc-date">[19:43]</span> <span class="irc-black">&lt;naeu&gt; ah ok</span><br />
+<span class="irc-date">[19:43]</span> <span class="irc-black">&lt;naeu&gt; yeah i've been looking at StringScanner</span><br />
+<span class="irc-date">[19:44]</span> <span class="irc-black">&lt;naeu&gt; it looks just what i need to implement my simple template lexer</span><br />
+<span class="irc-date">[20:03]</span> <span class="irc-black">&lt;naeu&gt; olabini: where should i put the spec file?</span><br />
+<span class="irc-date">[20:03]</span> <span class="irc-black">&lt;naeu&gt; i'm putting the TextScanner in lib/ioke/text_scanner.ik</span><br />
+<span class="irc-date">[20:04]</span> <span class="irc-black">&lt;naeu&gt; the only other things in lib/ioke are the debugger, ispec and dokgen</span><br />
+<span class="irc-date">[20:04]</span> <span class="irc-black">&lt;naeu&gt; and I can't find specs for them</span><br />
+<span class="irc-date">[20:06]</span> <span class="irc-black">&lt;naeu&gt; perhaps there should be a test/lib directory</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-black">&lt;naeu&gt; if I try putting the spec in test/ I can't seem to run it without getting the following exception:</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-black">&lt;naeu&gt; *** - java.lang.ClassNotFoundException: shouldRun? (Condition Error JavaException)</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-black">&lt;naeu&gt; hmm, let me rebuild ioke and try again</span><br />
+<span class="irc-date">[20:23]</span> <span class="irc-black">&lt;naeu&gt; hmm, i'm getting a test failure:</span><br />
+<span class="irc-date">[20:23]</span> <span class="irc-black">&lt;naeu&gt; [java] 'Mixins Enumerable join with no arguments should convert a list with multiple elements to a flat string of all its elements as text' FAILED</span><br />
+<span class="irc-date">[20:23]</span> <span class="irc-black">&lt;naeu&gt;      [java] expected "24135" to == "12345" (ISpec ExpectationNotMet)</span><br />
+<span class="irc-date">[20:40]</span> <span class="irc-black">&lt;naeu&gt; olabini: that fail is on the stock OS X leopard 1.6 JVM</span><br />
+<span class="irc-date">[20:40]</span> <span class="irc-black">&lt;naeu&gt; under soylatte it works perfectly fine</span><br />
+<span class="irc-date">[21:18]</span> <span class="irc-black">&lt;olabini&gt; eh.</span><br />
+<span class="irc-date">[21:18]</span> <span class="irc-black">&lt;olabini&gt; it's a bad test that depends on hash ordering</span><br />
+<span class="irc-date">[21:18]</span> <span class="irc-black">&lt;olabini&gt; I didnt look at that when I merged</span><br />
+<span class="irc-date">[21:18]</span> <span class="irc-black">&lt;olabini&gt; stupid ola</span><br />
+<span class="irc-date">[21:19]</span> <span class="irc-black">&lt;olabini&gt; and yeah, where the tests should be is an open question, really</span><br />
+<span class="irc-date">[21:21]</span> <span class="irc-black">&lt;olabini&gt; fixed that now</span><br />
+<span class="irc-date">[21:21]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r77814ce / test/enumerable_spec.ik : Remove test that depend on set ordering - <a href="http://bit.ly/RVqm9">http://bit.ly/RVqm9</a></span><br />
+<span class="irc-date">[21:27]</span> <span class="irc-black">&lt;naeu&gt; olabini: so how do i make the tests not throw *** - java.lang.ClassNotFoundException: shouldRun? (Condition Error JavaException)</span><br />
+<span class="irc-date">[21:31]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-72.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-black">&lt;naeu&gt; i'm clearly doing something stupid</span><br />
+<span class="irc-date">[21:48]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[22:29]</span> <span class="irc-black">&lt;naeu&gt; for the record, if I run:</span><br />
+<span class="irc-date">[22:29]</span> <span class="irc-black">&lt;naeu&gt; bin/ioke test/lib/text_scanner_spec.ik</span><br />
+<span class="irc-date">[22:29]</span> <span class="irc-black">&lt;naeu&gt; I now get:</span><br />
+<span class="irc-date">[22:29]</span> <span class="irc-black">&lt;naeu&gt; *** - couldn't find cell 'shouldRun?' on 'ISpec_0x5AFB36E5' (Condition Error NoSuchCell)</span><br />
+<span class="irc-date">[22:29]</span> <span class="irc-black">&lt;naeu&gt; bedtime now</span><br />
+<span class="irc-date">[22:29]</span> <span class="irc-black">&lt;naeu&gt; i'll look into it further tomorrow</span><br />
+<span class="irc-date">[22:29]</span> <span class="irc-black">&lt;naeu&gt; night all</span><br />
+<span class="irc-date">[22:34]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-72.vc-graz.ac.at) Quit (Connection timed out)</span><br />
+<span class="irc-date">[22:35]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[22:47]</span> <span class="irc-navy">* petrik (n=petrik@a82-95-189-230.adsl.xs4all.nl) Quit ()</span><br />
+<span class="irc-date">[23:49]</span> <span class="irc-black">&lt;embro1001&gt; So I've been digging around in the tests/examples for a bit now... Is there any way to do mixins ruby-style? like, build up an object A, and then B do(include A), and bind A's methods into B?</span><br />
+<span class="irc-date">[23:51]</span> <span class="irc-black">&lt;embro1001&gt; or somehow shove A into B's cell lookup, with the ground being in B's context?</span><br />
+<span class="irc-date">[23:52]</span> <span class="irc-navy">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[23:58]</span> <span class="irc-navy">* adakkak (n=adakkak@gres110.lis.illinois.edu) Quit ("Ex-Chat")</span><br />

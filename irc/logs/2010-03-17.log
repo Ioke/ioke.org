@@ -1,0 +1,37 @@
+<span class="irc-date">[0:10]</span> <span class="irc-navy">* olabini (~ola@75.40.149.33) Quit (Ping timeout: 260 seconds)</span><br />
+<span class="irc-date">[4:22]</span> <span class="irc-navy">* Raynes (~Raynes@unaffiliated/raynes) Quit (Ping timeout: 248 seconds)</span><br />
+<span class="irc-date">[4:43]</span> <span class="irc-green">* Raynes (~Raynes@unaffiliated/raynes) has joined #ioke</span><br />
+<span class="irc-date">[6:29]</span> <span class="irc-green">* jdp (~justin@75.97.120.11.res-cmts.senj.ptd.net) has joined #ioke</span><br />
+<span class="irc-date">[12:22]</span> <span class="irc-green">* Raynes- (~Raynes@dialup-4.252.8.220.Dial1.Atlanta1.Level3.net) has joined #ioke</span><br />
+<span class="irc-date">[12:22]</span> <span class="irc-navy">* Raynes (~Raynes@unaffiliated/raynes) Quit (Disconnected by services)</span><br />
+<span class="irc-date">[12:23]</span> <span class="irc-green">* Raynes- is now known as Raynes</span><br />
+<span class="irc-date">[12:23]</span> <span class="irc-navy">* Raynes (~Raynes@dialup-4.252.8.220.Dial1.Atlanta1.Level3.net) Quit (Changing host)</span><br />
+<span class="irc-date">[12:23]</span> <span class="irc-green">* Raynes (~Raynes@unaffiliated/raynes) has joined #ioke</span><br />
+<span class="irc-date">[12:49]</span> <span class="irc-green">* klien (~malick@host-196-201-90-212.afnet.net) has joined #ioke</span><br />
+<span class="irc-date">[12:49]</span> <span class="irc-green">* klien (~malick@host-196-201-90-212.afnet.net) has left #ioke</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-green">* olabini (~ola@75.40.149.100) has joined #ioke</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-green">* ChanServ sets mode +o olabini</span><br />
+<span class="irc-date">[14:38]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: how are you today, then?</span><br />
+<span class="irc-date">[14:38]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: that was poking fun at how pcs get syntax errors and fatal errors</span><br />
+<span class="irc-date">[14:38]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: indeed it was</span><br />
+<span class="irc-date">[14:38]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: Lol :) no, it was judge</span><br />
+<span class="irc-date">[14:39]</span> <span class="irc-black">&lt;Raynes&gt; Hehe.</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-black">&lt;Raynes&gt; We need an evalbot.</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-black">&lt;Raynes&gt; And users, for that matters.</span><br />
+<span class="irc-date">[14:43]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[14:43]</span> <span class="irc-black">&lt;olabini&gt; well, neither of those are exactly hard.</span><br />
+<span class="irc-date">[14:44]</span> <span class="irc-black">&lt;olabini&gt; or well. maybe.</span><br />
+<span class="irc-date">[14:44]</span> <span class="irc-black">&lt;olabini&gt; evalbot is easy</span><br />
+<span class="irc-date">[14:44]</span> <span class="irc-black">&lt;Raynes&gt; Evalbot is easy. Sandboxing isn't. I was looking at that stuff today. Made my head hurt.</span><br />
+<span class="irc-date">[14:45]</span> <span class="irc-black">&lt;Raynes&gt; I guess that's because I don't know Java. I can /sorta/ read Java. I can read it enough to use it from Clojure and Ioke, most of the time.</span><br />
+<span class="irc-date">[15:07]</span> <span class="irc-black">&lt;olabini&gt; Raynes: well. Ioke sandboxing is much easier, in fact.</span><br />
+<span class="irc-date">[15:07]</span> <span class="irc-black">&lt;olabini&gt; since there are no global</span><br />
+<span class="irc-date">[15:07]</span> <span class="irc-black">&lt;olabini&gt; no globals</span><br />
+<span class="irc-date">[15:07]</span> <span class="irc-black">&lt;olabini&gt; of course, it still has to be done</span><br />
+<span class="irc-date">[15:07]</span> <span class="irc-black">&lt;olabini&gt; it's an interesting challenge though</span><br />
+<span class="irc-date">[20:24]</span> <span class="irc-navy">* Raynes (~Raynes@unaffiliated/raynes) Quit (Ping timeout: 256 seconds)</span><br />
+<span class="irc-date">[20:30]</span> <span class="irc-navy">* olabini (~ola@75.40.149.100) Quit (Ping timeout: 276 seconds)</span><br />
+<span class="irc-date">[20:41]</span> <span class="irc-green">* chr1s (chris@punt.slashpunt.org) has joined #ioke</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-black">&lt;jdp&gt; hey all, before i go posting this anywhere it would be nice if someone could look it over</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-black">&lt;jdp&gt; an ioke tutorial i wrote, in code annotation style: <a href="http://jdp.github.com/biild/">http://jdp.github.com/biild/</a></span><br />
+<span class="irc-date">[21:50]</span> <span class="irc-navy">* jdp (~justin@75.97.120.11.res-cmts.senj.ptd.net) Quit (Remote host closed the connection)</span><br />

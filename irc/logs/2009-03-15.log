@@ -1,0 +1,54 @@
+<span class="irc-date">[0:23]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-44.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[1:14]</span> <span class="irc-green">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) has joined #ioke</span><br />
+<span class="irc-date">[1:20]</span> <span class="irc-navy">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) Quit ()</span><br />
+<span class="irc-date">[2:03]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[8:35]</span> <span class="irc-navy">* RobL__ (n=RobL@roblally.plus.com) Quit ()</span><br />
+<span class="irc-date">[8:38]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[8:40]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-61.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[9:28]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit (No route to host)</span><br />
+<span class="irc-date">[9:34]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[11:04]</span> <span class="irc-black">&lt;olabini&gt; someone gave me the idea that we should have code kata in the Wiki</span><br />
+<span class="irc-date">[11:04]</span> <span class="irc-black">&lt;olabini&gt; that seems like a good plan, so I thought we might get that done.</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-green">* k (n=kar8nga@e-172.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-61.vc-graz.ac.at) Quit (Nick collision from services.)</span><br />
+<span class="irc-date">[11:22]</span> <span class="irc-green">* k is now known as kar8nga</span><br />
+<span class="irc-date">[12:16]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-172.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[13:45]</span> <span class="irc-green">* martido (n=martin@dslb-088-067-181-223.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[13:46]</span> <span class="irc-black">&lt;martido&gt; olabini: sounds like a good idea. what do you have in mind exactly?</span><br />
+<span class="irc-date">[13:48]</span> <span class="irc-black">&lt;martido&gt; btw, I ran into a "problem" recently with macros. I'm sure there's a solution, but I guess I was too dumb to find it =)</span><br />
+<span class="irc-date">[13:49]</span> <span class="irc-black">&lt;martido&gt; I wanted to pass a text as part of the arguments to a macro</span><br />
+<span class="irc-date">[13:49]</span> <span class="irc-black">&lt;martido&gt; How do I get to that text inside the macro?</span><br />
+<span class="irc-date">[13:49]</span> <span class="irc-black">&lt;martido&gt; All I was able to get was the message, namely internal:createText</span><br />
+<span class="irc-date">[13:50]</span> <span class="irc-black">&lt;martido&gt; tried a few things, but couldn't work it out</span><br />
+<span class="irc-date">[13:50]</span> <span class="irc-black">&lt;martido&gt; does anybody know how to do that?</span><br />
+<span class="irc-date">[14:11]</span> <span class="irc-black">&lt;olabini&gt; well, if you pass text, you need to evaluate that message</span><br />
+<span class="irc-date">[14:11]</span> <span class="irc-black">&lt;olabini&gt; to create the text itself</span><br />
+<span class="irc-date">[14:11]</span> <span class="irc-black">&lt;olabini&gt; internal:createText is the unevaluated message to create the text</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;martido&gt; ah thanks very much ... I thought it had to be something along that lines</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[15:00]</span> <span class="irc-black">&lt;martido&gt; hmm... need a bit more help ;)</span><br />
+<span class="irc-date">[15:01]</span> <span class="irc-black">&lt;martido&gt; I'm trying to write Ruby's case statement as a macro in Ioke as an exercise</span><br />
+<span class="irc-date">[15:01]</span> <span class="irc-black">&lt;martido&gt; I have something like when "x" : "y"</span><br />
+<span class="irc-date">[15:02]</span> <span class="irc-black">&lt;martido&gt; to get the text for "x" in the macro I tried something like</span><br />
+<span class="irc-date">[15:02]</span> <span class="irc-black">&lt;martido&gt; msg = call arguments first</span><br />
+<span class="irc-date">[15:03]</span> <span class="irc-black">&lt;martido&gt; msg next evaluateOn(call ground)</span><br />
+<span class="irc-date">[15:03]</span> <span class="irc-black">&lt;martido&gt; but that evaluates the whole message chain until the end</span><br />
+<span class="irc-date">[15:04]</span> <span class="irc-black">&lt;martido&gt; however, all I want is evaluating the message internal:createText for "x"</span><br />
+<span class="irc-date">[15:04]</span> <span class="irc-black">&lt;martido&gt; I hope I'm making sense?</span><br />
+<span class="irc-date">[15:05]</span> <span class="irc-black">&lt;martido&gt; I tried to fiddle around with the message chain, e.g. copying the message chain and the setting the next pointer to nil on the copy to just get "x", but that didn't really work out well either</span><br />
+<span class="irc-date">[15:05]</span> <span class="irc-black">&lt;martido&gt; I'm sure I'm missing something obvious here</span><br />
+<span class="irc-date">[15:07]</span> <span class="irc-black">&lt;martido&gt; oh well the latter did work, but is there an easier way?</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-243.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[16:11]</span> <span class="irc-navy">* martido (n=martin@dslb-088-067-181-223.pools.arcor-ip.net) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[16:19]</span> <span class="irc-green">* martido (n=martin@dslb-088-067-181-223.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[16:47]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-243.vc-graz.ac.at) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[17:21]</span> <span class="irc-black">&lt;olabini&gt; hmm. well. look at the implementation for "case"</span><br />
+<span class="irc-date">[17:21]</span> <span class="irc-black">&lt;olabini&gt; something like that, but in Ioke</span><br />
+<span class="irc-date">[17:22]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:32]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[20:24]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit ()</span><br />
+<span class="irc-date">[20:46]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-115.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[21:33]</span> <span class="irc-navy">* martido (n=martin@dslb-088-067-181-223.pools.arcor-ip.net) Quit ()</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-115.vc-graz.ac.at) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[22:41]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />

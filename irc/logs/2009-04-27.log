@@ -1,0 +1,105 @@
+<span class="irc-date">[3:54]</span> <span class="irc-green">* hsuh (n=user@c925a569.virtua.com.br) has joined #ioke</span><br />
+<span class="irc-date">[4:58]</span> <span class="irc-navy">* hsuh (n=user@c925a569.virtua.com.br) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[5:20]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-14.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[6:11]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-14.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[7:14]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[7:51]</span> <span class="irc-green">* exlibris_ (n=exlibris@port-87-193-165-87.static.qsc.de) has joined #ioke</span><br />
+<span class="irc-date">[7:56]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[14:44]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-251-116-041.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[14:45]</span> <span class="irc-black">&lt;olabini&gt; naeu: hey. seems like you aren't the only one having trouble with class variables</span><br />
+<span class="irc-date">[14:45]</span> <span class="irc-black">&lt;olabini&gt; actually, I think I figured out one thing that might be the cause for your problem</span><br />
+<span class="irc-date">[14:45]</span> <span class="irc-black">&lt;olabini&gt; or. it's not a finished thought, but it's the start of one</span><br />
+<span class="irc-date">[14:46]</span> <span class="irc-black">&lt;naeu&gt; well it's not really a problem I was having, but a colleagues, and the problem was fixed by me saying "don't use class variables". However, it didn't stop me being intrigued with the behaviour</span><br />
+<span class="irc-date">[14:46]</span> <span class="irc-black">&lt;naeu&gt; and therefore I'm really interested in any thoughts you have on the matter</span><br />
+<span class="irc-date">[15:07]</span> <span class="irc-black">&lt;naeu&gt; and then silence ensued...</span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-black">&lt;olabini&gt; the behavior you and me talked about</span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-black">&lt;olabini&gt;  ... and this is just a guess, btw ...</span><br />
+<span class="irc-date">[15:18]</span> <span class="irc-black">&lt;olabini&gt; can definitely be related to the fact that some aspects of constants and classes are actually captured at parse time</span><br />
+<span class="irc-date">[15:18]</span> <span class="irc-black">&lt;olabini&gt; so, for example, when you refer to a class name inside of a block, that class name will generally be evaluated from the constant chain where the block is defined</span><br />
+<span class="irc-date">[15:18]</span> <span class="irc-black">&lt;olabini&gt; and I'm wondering if the @@ variables work the same way</span><br />
+<span class="irc-date">[15:19]</span> <span class="irc-black">&lt;olabini&gt; that when you refer to one, a node will be created that captures the constant chain outside</span><br />
+<span class="irc-date">[15:19]</span> <span class="irc-black">&lt;olabini&gt; that could mean different things if there are metaclasses or not, for example</span><br />
+<span class="irc-date">[15:21]</span> <span class="irc-black">&lt;olabini&gt; yep, looking at the JRuby interpreter, it seems ClassVarAssgn and ilk uses the static scope</span><br />
+<span class="irc-date">[15:23]</span> <span class="irc-black">&lt;naeu&gt; interesting</span><br />
+<span class="irc-date">[15:23]</span> <span class="irc-black">&lt;naeu&gt; doesn't feel like like it adheres to POLS</span><br />
+<span class="irc-date">[15:25]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[15:25]</span> <span class="irc-black">&lt;olabini&gt; no, not really</span><br />
+<span class="irc-date">[15:25]</span> <span class="irc-black">&lt;naeu&gt; in my head it only feels like the two sensible motivations for understanding the actual implementation of a language (apart from general curiosity) should be to understand memory and processor characteristics</span><br />
+<span class="irc-date">[15:25]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[15:25]</span> <span class="irc-black">&lt;naeu&gt; as much as it possible, the language itself should describe the behaviour, not the implementation</span><br />
+<span class="irc-date">[15:25]</span> <span class="irc-black">&lt;olabini&gt; rigt</span><br />
+<span class="irc-date">[15:25]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[15:26]</span> <span class="irc-black">&lt;naeu&gt; otherwise behaviour becomes very difficult to understand</span><br />
+<span class="irc-date">[15:27]</span> <span class="irc-black">&lt;naeu&gt; I would posit that very few Ruby programmers fully understand how constants are looked up</span><br />
+<span class="irc-date">[15:27]</span> <span class="irc-black">&lt;naeu&gt; never mind class variables</span><br />
+<span class="irc-date">[15:27]</span> <span class="irc-black">&lt;naeu&gt; never mind method lookup :-)</span><br />
+<span class="irc-date">[15:28]</span> <span class="irc-black">&lt;naeu&gt; all of these aspects don't seem to be defined very well by the language, rather they are much better defined by the implementation</span><br />
+<span class="irc-date">[15:29]</span> <span class="irc-black">&lt;naeu&gt; which, I believe, makes understanding it a matter of understanding the implementation - a level of understanding very few programmers attain (or even wish to)</span><br />
+<span class="irc-date">[15:33]</span> <span class="irc-black">&lt;olabini&gt; absolutely</span><br />
+<span class="irc-date">[15:33]</span> <span class="irc-black">&lt;olabini&gt; I totally agree</span><br />
+<span class="irc-date">[15:33]</span> <span class="irc-black">&lt;olabini&gt; Ruby is a very complicated language under the covers</span><br />
+<span class="irc-date">[15:34]</span> <span class="irc-black">&lt;naeu&gt; hmm, that felt good to say</span><br />
+<span class="irc-date">[15:34]</span> <span class="irc-black">&lt;naeu&gt; nice to get stuff off your chest now and then</span><br />
+<span class="irc-date">[15:35]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;naeu&gt; btw, thanks for sending your regards through kat</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;olabini&gt; no worries</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;olabini&gt; hope you had fun</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;naeu&gt; yeah, i cycled her to my place on Friday</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-black">&lt;naeu&gt; where Susanna and I cooked a meal</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-black">&lt;olabini&gt; nice</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-black">&lt;naeu&gt; tonight is the Spring Source conference party</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-black">&lt;naeu&gt; I think I might gate crash it</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[15:46]</span> <span class="irc-black">&lt;olabini&gt; ah hehe</span><br />
+<span class="irc-date">[15:46]</span> <span class="irc-black">&lt;olabini&gt; "is that really THE Rod Johnson?"</span><br />
+<span class="irc-date">[15:46]</span> <span class="irc-black">&lt;olabini&gt; =P</span><br />
+<span class="irc-date">[15:48]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini master * rd6e73f2 / src/ikj/grammar/ioke.g : Remove empty lexer fragments, since GAE/Js verifier just doesn't like them - <a href="http://bit.ly/9eNex">http://bit.ly/9eNex</a></span><br />
+<span class="irc-date">[15:51]</span> <span class="irc-black">&lt;naeu&gt; i know!</span><br />
+<span class="irc-date">[15:51]</span> <span class="irc-black">&lt;naeu&gt; i don't believe it is...</span><br />
+<span class="irc-date">[15:51]</span> <span class="irc-black">&lt;naeu&gt; he must be a faker</span><br />
+<span class="irc-date">[15:53]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[15:54]</span> <span class="irc-black">&lt;naeu&gt; btw, did you take a peek at my ioke additions?</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;olabini&gt; haven't yet, sorry</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;olabini&gt; ... been slightly more busy than usual</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;naeu&gt; no need to apologise</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;naeu&gt; they're only tiny anway</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;naeu&gt; *anyway</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-black">&lt;naeu&gt; and you wrote most of one of them :-)</span><br />
+<span class="irc-date">[15:59]</span> <span class="irc-green">* Narnach_ (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[16:08]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit ()</span><br />
+<span class="irc-date">[16:09]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-251-116-041.chello.nl) Quit ()</span><br />
+<span class="irc-date">[16:16]</span> <span class="irc-navy">* Narnach_ (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[16:19]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[16:20]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[16:20]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-green">* martido (n=martin@dslb-088-065-206-231.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;martido&gt; @olabini: out of curiosity, why would emtpy lexer fragments be a problem to the GAE/J verifier?</span><br />
+<span class="irc-date">[17:40]</span> <span class="irc-black">&lt;olabini&gt; because Antlr generates a method with an empty try-block followed by an empty finally block</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;olabini&gt; this generates pretty funky bytecode with all java compilers I've tried</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;olabini&gt; and GAE/J doesn't verify it</span><br />
+<span class="irc-date">[17:42]</span> <span class="irc-black">&lt;martido&gt; ah ok, thanks, makes you wonder what's so "dangerous" about that</span><br />
+<span class="irc-date">[17:42]</span> <span class="irc-black">&lt;martido&gt; how did you find out?</span><br />
+<span class="irc-date">[17:43]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[17:44]</span> <span class="irc-black">&lt;olabini&gt; well, the log says the method in question doesn't verify</span><br />
+<span class="irc-date">[17:44]</span> <span class="irc-black">&lt;olabini&gt; after that I've been in private consultation with some google people</span><br />
+<span class="irc-date">[17:45]</span> <span class="irc-black">&lt;martido&gt; =) yeah it helps talking to the people who did that stuff</span><br />
+<span class="irc-date">[17:48]</span> <span class="irc-black">&lt;martido&gt; btw, I got some questions regarding tuples ... got a few minutes?</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;olabini&gt; sure - won't be able to answer much right now, but write (or mail to the list) your questions, and I'll answer laterish</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;olabini&gt; if they're stuff that might be interesting to others, take it to the list</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[17:50]</span> <span class="irc-black">&lt;martido&gt; you're right, that's better. I'll do that =)</span><br />
+<span class="irc-date">[18:24]</span> <span class="irc-navy">* exlibris_ (n=exlibris@port-87-193-165-87.static.qsc.de) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[19:23]</span> <span class="irc-navy">* martido (n=martin@dslb-088-065-206-231.pools.arcor-ip.net) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[19:26]</span> <span class="irc-green">* martido (n=martin@dslb-088-065-206-231.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[20:18]</span> <span class="irc-navy">* martido (n=martin@dslb-088-065-206-231.pools.arcor-ip.net) Quit ()</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-green">* felipero (n=Felipe@189-55-18-206-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[21:13]</span> <span class="irc-navy">* felipero (n=Felipe@189-55-18-206-nd.cpe.vivax.com.br) Quit (Client Quit)</span><br />
+<span class="irc-date">[21:13]</span> <span class="irc-green">* felipero (n=quassel@189-55-18-206-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[21:15]</span> <span class="irc-navy">* felipero (n=quassel@189-55-18-206-nd.cpe.vivax.com.br) Quit (Client Quit)</span><br />
+<span class="irc-date">[23:56]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />

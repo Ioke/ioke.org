@@ -1,0 +1,56 @@
+<span class="irc-date">[7:09]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit ()</span><br />
+<span class="irc-date">[7:47]</span> <span class="irc-green">* skanev (n=aquarius@85-130-17-25.2073237509.ddns.cablebg.net) has joined #ioke</span><br />
+<span class="irc-date">[7:49]</span> <span class="irc-green">* khaase (n=khaase@141.89.226.149) has joined #ioke</span><br />
+<span class="irc-date">[8:16]</span> <span class="irc-green">* skanev_ (n=aquarius@78-83-99-48.spectrumnet.bg) has joined #ioke</span><br />
+<span class="irc-date">[8:23]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:23]</span> <span class="irc-black">&lt;naeu&gt; morning</span><br />
+<span class="irc-date">[8:35]</span> <span class="irc-navy">* skanev (n=aquarius@85-130-17-25.2073237509.ddns.cablebg.net) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[8:44]</span> <span class="irc-black">&lt;olabini&gt; morning!</span><br />
+<span class="irc-date">[8:47]</span> <span class="irc-black">&lt;naeu&gt; all of this AST discussion is confusing the hell out of me</span><br />
+<span class="irc-date">[8:48]</span> <span class="irc-black">&lt;naeu&gt; good/bad/efficient/an API/homoiconicity/something to hide/something that should be free to change/powerful/scary/</span><br />
+<span class="irc-date">[8:48]</span> <span class="irc-black">&lt;naeu&gt; it seems that everyone has a different opinion on the matter</span><br />
+<span class="irc-date">[8:49]</span> <span class="irc-black">&lt;naeu&gt;  particularly with respect to the value and usage of ASTs</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-black">&lt;olabini&gt; yeah, well</span><br />
+<span class="irc-date">[8:55]</span> <span class="irc-black">&lt;olabini&gt; the first problem is the confusion between Lisp-like ASTs and complicated ASTs</span><br />
+<span class="irc-date">[8:55]</span> <span class="irc-black">&lt;olabini&gt; Ruby and Groovy, and most other languages in existence fall firmly in the place of complicated ASTs</span><br />
+<span class="irc-date">[8:55]</span> <span class="irc-black">&lt;olabini&gt; while Lisp, Ioke, Smalltalk, Io and Prolog fall firmly in the camp of "simple" ASTs</span><br />
+<span class="irc-date">[8:56]</span> <span class="irc-black">&lt;olabini&gt; where a simple AST generally has maximum five or six types of nodes</span><br />
+<span class="irc-date">[8:56]</span> <span class="irc-black">&lt;olabini&gt; while the complicated ones are up in the range of 100-200 types of AST nodes</span><br />
+<span class="irc-date">[8:56]</span> <span class="irc-black">&lt;olabini&gt; when you have that complicated syntax, it makes sense to do specialization of nodes, and try to figure out things at parse time</span><br />
+<span class="irc-date">[8:56]</span> <span class="irc-black">&lt;olabini&gt; typical example</span><br />
+<span class="irc-date">[8:57]</span> <span class="irc-black">&lt;olabini&gt; JRuby has introduced several kinds of Call and FCall nodes, based on how many arguments are given</span><br />
+<span class="irc-date">[8:57]</span> <span class="irc-black">&lt;olabini&gt; this makes it easier for both the interpreter and the compiler to execute efficiently</span><br />
+<span class="irc-date">[8:57]</span> <span class="irc-black">&lt;olabini&gt; that kind of optimization would have been very hard to do if we had tied JRuby down to some AST transformation tool, like Groovy does</span><br />
+<span class="irc-date">[8:58]</span> <span class="irc-black">&lt;olabini&gt; the difference is that Lisp or Ioke could easily add a real complicated AST under the covers - but since the surface operations are so easy, it could still support those AST manipulations</span><br />
+<span class="irc-date">[9:02]</span> <span class="irc-black">&lt;naeu&gt; hmmm, that's the kind of argument I was forming in my head based on people's discussion</span><br />
+<span class="irc-date">[9:02]</span> <span class="irc-black">&lt;naeu&gt; I'm guessing the Groovy AST is similarly complicated to Ruby</span><br />
+<span class="irc-date">[9:02]</span> <span class="irc-black">&lt;naeu&gt; *Ruby's</span><br />
+<span class="irc-date">[9:04]</span> <span class="irc-black">&lt;naeu&gt; so, I totally agree that having such a complicated AST (100-200 nodes) would indicate that it's a bad idea to expose it</span><br />
+<span class="irc-date">[9:05]</span> <span class="irc-black">&lt;naeu&gt; particularly when using a modified AST depending on the environment can optimise performance</span><br />
+<span class="irc-date">[9:05]</span> <span class="irc-black">&lt;naeu&gt; however, would it not be possible to have a generic AST - at a higher level of abstraction from the implementation-optimised AST</span><br />
+<span class="irc-date">[9:06]</span> <span class="irc-black">&lt;naeu&gt; an AST that can be formalised and shared across implementations</span><br />
+<span class="irc-date">[9:06]</span> <span class="irc-black">&lt;naeu&gt; or even expose a useful subset of the AST</span><br />
+<span class="irc-date">[9:13]</span> <span class="irc-black">&lt;olabini&gt; well, that was what ParseTree tried to do</span><br />
+<span class="irc-date">[9:14]</span> <span class="irc-black">&lt;olabini&gt; the problem is first that how you slice those things you will lose information</span><br />
+<span class="irc-date">[9:14]</span> <span class="irc-black">&lt;olabini&gt; what information you can lose depend on the application</span><br />
+<span class="irc-date">[9:14]</span> <span class="irc-black">&lt;olabini&gt; and second, it is a high overhead to support that generic AST for a language with such an AST</span><br />
+<span class="irc-date">[9:14]</span> <span class="irc-black">&lt;olabini&gt; also, Groovy's AST is more complicated than Ruby's</span><br />
+<span class="irc-date">[9:15]</span> <span class="irc-black">&lt;olabini&gt; the reason is that they have to support all Java syntax plus all Groovy syntax</span><br />
+<span class="irc-date">[9:15]</span> <span class="irc-black">&lt;naeu&gt; so are you saying that in languages like Ruby, exposing the AST will never be a reasonable option?</span><br />
+<span class="irc-date">[9:19]</span> <span class="irc-black">&lt;olabini&gt; I don't think it's a good idea</span><br />
+<span class="irc-date">[9:19]</span> <span class="irc-black">&lt;olabini&gt; which is why I would like Ruby to get a bit simpler</span><br />
+<span class="irc-date">[9:19]</span> <span class="irc-black">&lt;olabini&gt; remove many of the complications in the AST and so on</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;naeu&gt; interesting</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;naeu&gt; i guess we're discussing partly in the context of the performance/flexible compromise</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;naeu&gt; on of my main gripes with Ruby is that as soon as you want to do some non-trivial metaprogramming it gets very messy very quickly</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;naeu&gt; i was wondering whether opening up a shared AST might help with that matter</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;naeu&gt; but perhaps I was wrong</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;naeu&gt; and now I'm wondering whether there is a solution at all - or whether what I'm seeing is a real hard boundary of a Ruby-like language implementation approach</span><br />
+<span class="irc-date">[9:59]</span> <span class="irc-green">* Stivo (n=Miranda@adsl-89-217-60-206.adslplus.ch) has joined #ioke</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-navy">* skanev_ (n=aquarius@78-83-99-48.spectrumnet.bg) Quit ()</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-navy">* khaase (n=khaase@141.89.226.149) Quit ("Leaving...")</span><br />
+<span class="irc-date">[14:43]</span> <span class="irc-green">* khaase (n=khaase@141.89.226.149) has joined #ioke</span><br />
+<span class="irc-date">[15:03]</span> <span class="irc-navy">* khaase (n=khaase@141.89.226.149) Quit ("Leaving...")</span><br />
+<span class="irc-date">[16:30]</span> <span class="irc-navy">* Stivo (n=Miranda@adsl-89-217-60-206.adslplus.ch) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[22:03]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />

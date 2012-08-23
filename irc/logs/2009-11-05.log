@@ -1,0 +1,16 @@
+<span class="irc-date">[3:28]</span> <span class="irc-navy">* erg (n=erg@69.93.127.154) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[3:28]</span> <span class="irc-navy">* IokeHurricane (n=IokeHurr@8.12.35.212) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[3:28]</span> <span class="irc-navy">* CIA-9 (n=CIA@208.69.182.149) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[3:28]</span> <span class="irc-green">* IokeHurricane (n=IokeHurr@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[3:28]</span> <span class="irc-green">* CIA-9 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[3:28]</span> <span class="irc-green">* erg (n=erg@69.93.127.154) has joined #ioke</span><br />
+<span class="irc-date">[6:38]</span> <span class="irc-green">* kar8nga (n=kar8nga@jol13-1-82-66-176-74.fbx.proxad.net) has joined #ioke</span><br />
+<span class="irc-date">[6:49]</span> <span class="irc-navy">* kar8nga (n=kar8nga@jol13-1-82-66-176-74.fbx.proxad.net) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[11:06]</span> <span class="irc-green">* pdelgallego (n=pdelgall@42.Red-217-125-2.staticIP.rima-tde.net) has joined #ioke</span><br />
+<span class="irc-date">[11:51]</span> <span class="irc-black">&lt;CIA-9&gt; ioke: Ola Bini master * r8446f79 / maven/ikj-lib/pom.xml : Fix the distribution thingy - <a href="http://bit.ly/1MBzvE">http://bit.ly/1MBzvE</a></span><br />
+<span class="irc-date">[12:17]</span> <span class="irc-green">* felipero (n=Felipe@187.2.0.61) has joined #ioke</span><br />
+<span class="irc-date">[16:28]</span> <span class="irc-black">&lt;CIA-9&gt; ioke: Ola Bini master * rfae8d78 / (src/builtin/F32_sequence.ik test/sequence_spec.ik): Add Sequence#indexed - <a href="http://bit.ly/KDKNA">http://bit.ly/KDKNA</a></span><br />
+<span class="irc-date">[16:28]</span> <span class="irc-black">&lt;CIA-9&gt; ioke: Ola Bini master * r72d46df / (6 files in 4 dirs): Make it possible to coerce one-character strings into chars in Java integration - <a href="http://bit.ly/3RsEeZ">http://bit.ly/3RsEeZ</a></span><br />
+<span class="irc-date">[16:39]</span> <span class="irc-black">&lt;CIA-9&gt; ioke: Ola Bini master * rb5daff4 / (4 files in 4 dirs): Add support for composing lexical blocks together - <a href="http://bit.ly/gurUf">http://bit.ly/gurUf</a></span><br />
+<span class="irc-date">[16:48]</span> <span class="irc-black">&lt;CIA-9&gt; ioke: Ola Bini master * r06dccbe / (3 files in 3 dirs): Make functional composition easier - <a href="http://bit.ly/2O1ZDr">http://bit.ly/2O1ZDr</a></span><br />
+<span class="irc-date">[16:49]</span> <span class="irc-black">&lt;CIA-9&gt; ioke: Ola Bini master * r185391f / examples/misc/lastFib.ik : Add a fib example - <a href="http://bit.ly/4miESi">http://bit.ly/4miESi</a></span><br />

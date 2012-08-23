@@ -1,0 +1,164 @@
+<span class="irc-date">[1:04]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[14:11]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-128.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[16:01]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-128.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[16:34]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini master * r9d634bb / (3 files in 3 dirs): Add unicode mathematical operators as Ioke letters - this means they can be used like any other message - <a href="http://bit.ly/19TVdw">http://bit.ly/19TVdw</a></span><br />
+<span class="irc-date">[17:45]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[17:46]</span> <span class="irc-black">&lt;naeu&gt; olabini: just noticed that the current master fails one spec</span><br />
+<span class="irc-date">[17:46]</span> <span class="irc-black">&lt;naeu&gt; ' Message rewrite! should rewrite a very simple message chain' FAILED</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;naeu&gt; looks like it's expecting the message objects to identical rather than equivalent</span><br />
+<span class="irc-date">[17:48]</span> <span class="irc-black">&lt;olabini&gt; oops</span><br />
+<span class="irc-date">[17:48]</span> <span class="irc-black">&lt;olabini&gt; that shouldn't have been pushed</span><br />
+<span class="irc-date">[17:48]</span> <span class="irc-black">&lt;olabini&gt; sorry about that</span><br />
+<span class="irc-date">[17:48]</span> <span class="irc-black">&lt;olabini&gt; will fix</span><br />
+<span class="irc-date">[17:48]</span> <span class="irc-black">&lt;naeu&gt; it's ok :-)</span><br />
+<span class="irc-date">[17:48]</span> <span class="irc-black">&lt;naeu&gt; just thought i'd point it out</span><br />
+<span class="irc-date">[17:48]</span> <span class="irc-black">&lt;olabini&gt; yeah, thanks</span><br />
+<span class="irc-date">[17:48]</span> <span class="irc-black">&lt;olabini&gt; stupid of me</span><br />
+<span class="irc-date">[17:53]</span> <span class="irc-black">&lt;olabini&gt; ok, pushed it now</span><br />
+<span class="irc-date">[17:53]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini master * r15fde60 / (3 files in 3 dirs): Add operator level support for ???, ??? and ???. - <a href="http://bit.ly/dXB92">http://bit.ly/dXB92</a></span><br />
+<span class="irc-date">[17:53]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini master * r66e3e24 / (src/builtin/A20_comparing.ik test/operators_spec.ik): Add implementations for ???, ??? and ???. - <a href="http://bit.ly/d33bo">http://bit.ly/d33bo</a></span><br />
+<span class="irc-date">[17:53]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini master * r977c04d / test/rewrite_spec.ik : Make pending spec of the rewrite stuff - <a href="http://bit.ly/agjmV">http://bit.ly/agjmV</a></span><br />
+<span class="irc-date">[18:08]</span> <span class="irc-green">* martido (n=martin@dslb-088-065-195-165.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[18:10]</span> <span class="irc-black">&lt;martido&gt; @olabini: hi, just noticed that the ioke build currently fails on windows</span><br />
+<span class="irc-date">[18:10]</span> <span class="irc-black">&lt;martido&gt; tried to paste the error into a gist, but the site seems to have problemes</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-black">&lt;martido&gt; the errors are all of the same kind: Condition Error Invocation TooManyArguments in ' parsing strange characters unicode mathematical operator: ? should parse it correctly'</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-black">&lt;martido&gt; didn't expect these arguments: [ISpec ShouldContext] given to '?' (Condition Error Invocation TooManyArguments)</span><br />
+<span class="irc-date">[18:12]</span> <span class="irc-black">&lt;martido&gt; x ?(should) ==(42) [parsing_spec.ik:1084:10]</span><br />
+<span class="irc-date">[18:13]</span> <span class="irc-black">&lt;martido&gt; same here parsing_spec.ik:1116:10 and here parsing_spec.ik:1124:10</span><br />
+<span class="irc-date">[18:13]</span> <span class="irc-black">&lt;martido&gt; thought I'd let you know</span><br />
+<span class="irc-date">[18:18]</span> <span class="irc-black">&lt;naeu&gt; martido: yeah, I'm getting those too</span><br />
+<span class="irc-date">[18:20]</span> <span class="irc-black">&lt;martido&gt; naeu: ah, so they're not specifically Windows related</span><br />
+<span class="irc-date">[18:21]</span> <span class="irc-black">&lt;martido&gt; you never know with that crappy OS ;)</span><br />
+<span class="irc-date">[18:21]</span> <span class="irc-black">&lt;naeu&gt; no, I don't believe so</span><br />
+<span class="irc-date">[18:21]</span> <span class="irc-black">&lt;naeu&gt; and Windows isn't that likely to get in the way for these kinds of things</span><br />
+<span class="irc-date">[18:21]</span> <span class="irc-black">&lt;naeu&gt; it's more likely to be minor differences in JVM implementation</span><br />
+<span class="irc-date">[18:22]</span> <span class="irc-black">&lt;naeu&gt; but in this case we're both seeing the same error across platforms</span><br />
+<span class="irc-date">[18:25]</span> <span class="irc-black">&lt;martido&gt; yes, you're right of course. I just read something about 'strange unicode characters' in the error message and I was immediately thinking about Windows ;)</span><br />
+<span class="irc-date">[18:28]</span> <span class="irc-black">&lt;naeu&gt; haha</span><br />
+<span class="irc-date">[18:28]</span> <span class="irc-black">&lt;naeu&gt; Ola is adding some cool aliases in the form of meaningful mathematical symbols</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-black">&lt;naeu&gt; and with meaningful I mean under common mathematical parlance</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-black">&lt;naeu&gt; (I only say this because I'm currently reading a book about G??del's Theorem which blows apart the concepts of truth and meaning in Mathematics)</span><br />
+<span class="irc-date">[18:31]</span> <span class="irc-black">&lt;martido&gt; yeah, I've browsed through the changes on github ... that's really cool ... e.g. i've always wanted to use the proper mathematical symbol for "not equal to" instead of != in my source code</span><br />
+<span class="irc-date">[18:31]</span> <span class="irc-black">&lt;naeu&gt; me too</span><br />
+<span class="irc-date">[18:31]</span> <span class="irc-black">&lt;martido&gt; what's the book about? trying to remember what G?del's Therom says ...</span><br />
+<span class="irc-date">[18:31]</span> <span class="irc-black">&lt;naeu&gt; although it's not so simple to type ;-)</span><br />
+<span class="irc-date">[18:31]</span> <span class="irc-black">&lt;martido&gt; that's right ;)</span><br />
+<span class="irc-date">[18:32]</span> <span class="irc-black">&lt;naeu&gt; basically the theorem blew away the notion that the axiomatic method could explore all of Mathematics</span><br />
+<span class="irc-date">[18:33]</span> <span class="irc-black">&lt;martido&gt; ah I think I remember ... didn't he prove that you couldn't prove everything or something like that?</span><br />
+<span class="irc-date">[18:33]</span> <span class="irc-black">&lt;naeu&gt; and that consistency isn't achievable</span><br />
+<span class="irc-date">[18:33]</span> <span class="irc-black">&lt;naeu&gt; if you have a sufficiently expressive set of axioms and rules</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;naeu&gt; i.e. you could never state that theorems A and not A wouldn't occur</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;naeu&gt; which totally fucked up Russell and Whitehead's belief that the PM would act as a foundation for all of mathematics in the future</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;naeu&gt; (exactly the kind of claim that's waiting to be destroyed)</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;martido&gt; hard stuff... hmm think I've gotta read up on that; it's been a long time since I've been exposed to that kind of mathematics</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;martido&gt; what's the book called?</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;naeu&gt; yeah, I'm not a Maths guy</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;martido&gt; me neither</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;naeu&gt; but I love the concepts</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://www.amazon.co.uk/Godels-Proof-Douglas-R-Hofstadter/dp/0814758169/ref=sr_1_2?ie=UTF8&amp;s=books&amp;qid=1242384608&amp;sr=8-2">http://www.amazon.co.uk/Godels-Proof-Douglas-R-Hofstadter/dp/0814758169/ref=sr_1_2?ie=UTF8&amp;s=books&amp;qid=1242384608&amp;sr=8-2</a></span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;martido&gt; thanks</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;naeu&gt; I see it more as the philosophy of language rather than mathematics</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-black">&lt;martido&gt; why? what does it have to do with language?</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-black">&lt;martido&gt; cool, the customer reviews are promising ... and it's not expensive either</span><br />
+<span class="irc-date">[18:40]</span> <span class="irc-black">&lt;naeu&gt; good question</span><br />
+<span class="irc-date">[18:41]</span> <span class="irc-black">&lt;naeu&gt; i see this stuff as the purest form of a particular strand of language</span><br />
+<span class="irc-date">[18:41]</span> <span class="irc-black">&lt;naeu&gt; and it's great to see that it has limitations</span><br />
+<span class="irc-date">[18:42]</span> <span class="irc-black">&lt;naeu&gt; i.e. language can't be copied with the axiomatic method</span><br />
+<span class="irc-date">[18:42]</span> <span class="irc-black">&lt;naeu&gt; which then leads on the the importance of abstraction</span><br />
+<span class="irc-date">[18:42]</span> <span class="irc-black">&lt;naeu&gt; and exploration through mapping</span><br />
+<span class="irc-date">[18:44]</span> <span class="irc-black">&lt;martido&gt; ok, i see ... at least i think i do ;)</span><br />
+<span class="irc-date">[18:44]</span> <span class="irc-black">&lt;naeu&gt; i rarely see things clearly too</span><br />
+<span class="irc-date">[18:44]</span> <span class="irc-black">&lt;martido&gt; hmm, what exactly do you mean by 'language can't be copied'?</span><br />
+<span class="irc-date">[18:45]</span> <span class="irc-black">&lt;naeu&gt; sorry, that wasn't very clear</span><br />
+<span class="irc-date">[18:46]</span> <span class="irc-black">&lt;naeu&gt; I mean you can't emulate current language through the axiomatic methods of mathematics</span><br />
+<span class="irc-date">[18:46]</span> <span class="irc-black">&lt;naeu&gt; there are parts of language which the axiomatic method just can't reach</span><br />
+<span class="irc-date">[18:46]</span> <span class="irc-black">&lt;naeu&gt; btw, where abouts are you from?</span><br />
+<span class="irc-date">[18:46]</span> <span class="irc-black">&lt;martido&gt; ok, that it makes it a bit more clear</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-black">&lt;martido&gt; i'm from munich, germany</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-black">&lt;naeu&gt; oh cool</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-black">&lt;naeu&gt; how far is that from berlin?</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-black">&lt;martido&gt; about 550 km i think</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-black">&lt;naeu&gt; yeah, just looking it up</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-black">&lt;naeu&gt; looong way</span><br />
+<span class="irc-date">[18:48]</span> <span class="irc-black">&lt;naeu&gt; close to Switzerland</span><br />
+<span class="irc-date">[18:48]</span> <span class="irc-black">&lt;martido&gt; yeah ;) going on a long train ride on monday</span><br />
+<span class="irc-date">[18:48]</span> <span class="irc-black">&lt;naeu&gt; I have friends in N??rnberg</span><br />
+<span class="irc-date">[18:48]</span> <span class="irc-black">&lt;martido&gt; ah, that's not so far ... N?rnberg's a really nice city</span><br />
+<span class="irc-date">[18:48]</span> <span class="irc-black">&lt;martido&gt; Switzerland's about 3 hours away I guess</span><br />
+<span class="irc-date">[18:49]</span> <span class="irc-black">&lt;naeu&gt; nice</span><br />
+<span class="irc-date">[18:49]</span> <span class="irc-black">&lt;martido&gt; yes ;)</span><br />
+<span class="irc-date">[18:49]</span> <span class="irc-black">&lt;naeu&gt; I'm in Amsterdam right now</span><br />
+<span class="irc-date">[18:49]</span> <span class="irc-black">&lt;naeu&gt; but it's likely I'll be moving to Cambridge within the next year</span><br />
+<span class="irc-date">[18:50]</span> <span class="irc-black">&lt;martido&gt; yeah, I think I've read about that on the logs ... you're wife/girlfriend's applying for a PhD there, right?</span><br />
+<span class="irc-date">[18:54]</span> <span class="irc-black">&lt;martido&gt; ok, I've gotta go unfortunately ... party time ;)</span><br />
+<span class="irc-date">[18:54]</span> <span class="irc-black">&lt;martido&gt; see you, naeu</span><br />
+<span class="irc-date">[18:54]</span> <span class="irc-black">&lt;naeu&gt; cheerio</span><br />
+<span class="irc-date">[18:54]</span> <span class="irc-black">&lt;naeu&gt; and yes, Susanna (my wife) is going to do a Ph.D. there</span><br />
+<span class="irc-date">[18:55]</span> <span class="irc-black">&lt;martido&gt; that's cool ... bet it wasn't that easy to get there</span><br />
+<span class="irc-date">[18:56]</span> <span class="irc-black">&lt;naeu&gt; no, she did amazingly well :-)</span><br />
+<span class="irc-date">[18:56]</span> <span class="irc-black">&lt;naeu&gt; I'm really proud of her</span><br />
+<span class="irc-date">[18:56]</span> <span class="irc-black">&lt;martido&gt; you really should be!</span><br />
+<span class="irc-date">[18:58]</span> <span class="irc-black">&lt;martido&gt; ok, now it's really time for me... my girlfriend's starting to call me 'nerd' and "punish" me with angry stares =)</span><br />
+<span class="irc-date">[18:59]</span> <span class="irc-black">&lt;martido&gt; bis bald (German for 'see you soon')</span><br />
+<span class="irc-date">[18:59]</span> <span class="irc-navy">* martido (n=martin@dslb-088-065-195-165.pools.arcor-ip.net) Quit ()</span><br />
+<span class="irc-date">[19:01]</span> <span class="irc-green">* basu (i=c65264b9@gateway/web/ajax/mibbit.com/x-446b9130accad0b1) has joined #ioke</span><br />
+<span class="irc-date">[19:17]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-87.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[19:48]</span> <span class="irc-black">&lt;olabini&gt; blah</span><br />
+<span class="irc-date">[19:48]</span> <span class="irc-black">&lt;olabini&gt; I'm stupid</span><br />
+<span class="irc-date">[19:48]</span> <span class="irc-black">&lt;olabini&gt; that's what's wrong</span><br />
+<span class="irc-date">[19:48]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini master * rb9158eb / test/parsing_spec.ik : The obligatory Ola Is Stupid-commit - <a href="http://bit.ly/64CsQ">http://bit.ly/64CsQ</a></span><br />
+<span class="irc-date">[19:49]</span> <span class="irc-black">&lt;naeu&gt; ""When you are overwhelmed with the complexity of a design, the way that you control that complexity is to pick a new design language and the purpose of the new design language will be to highlight different aspects of the system. It'll suppress some kinds of details and emphasise other kinds of details."</span><br />
+<span class="irc-date">[19:49]</span> <span class="irc-black">&lt;naeu&gt; I love coming across these kinds of quotes</span><br />
+<span class="irc-date">[19:50]</span> <span class="irc-black">&lt;naeu&gt; 10 points to someone that can guess the author...</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;olabini&gt; nice</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;olabini&gt; hofstadter?</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-black">&lt;naeu&gt; nope</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-black">&lt;olabini&gt; knuth?</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-black">&lt;olabini&gt; dennet?</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-black">&lt;naeu&gt; nope</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-black">&lt;olabini&gt; hm</span><br />
+<span class="irc-date">[19:53]</span> <span class="irc-black">&lt;naeu&gt; give in?</span><br />
+<span class="irc-date">[19:53]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[19:53]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[19:53]</span> <span class="irc-black">&lt;naeu&gt; Abelson</span><br />
+<span class="irc-date">[19:53]</span> <span class="irc-black">&lt;olabini&gt; ah, right</span><br />
+<span class="irc-date">[19:54]</span> <span class="irc-black">&lt;olabini&gt; of course</span><br />
+<span class="irc-date">[19:54]</span> <span class="irc-black">&lt;naeu&gt; SICP lecture 1</span><br />
+<span class="irc-date">[19:54]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[19:54]</span> <span class="irc-black">&lt;naeu&gt; 1a actually</span><br />
+<span class="irc-date">[19:54]</span> <span class="irc-black">&lt;olabini&gt; I realize that now</span><br />
+<span class="irc-date">[19:54]</span> <span class="irc-black">&lt;olabini&gt; I actually recognize it from the book, now that nyou mentioned it</span><br />
+<span class="irc-date">[19:54]</span> <span class="irc-brick">* olabini is ashamed</span><br />
+<span class="irc-date">[19:54]</span> <span class="irc-black">&lt;naeu&gt; the third technique they introduce for abstraction</span><br />
+<span class="irc-date">[19:54]</span> <span class="irc-black">&lt;naeu&gt; the others being black box abstraction and conventional interfaces</span><br />
+<span class="irc-date">[19:56]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[20:24]</span> <span class="irc-green">* embro1001 (n=sintaks@c-24-18-177-51.hsd1.wa.comcast.net) has joined #ioke</span><br />
+<span class="irc-date">[20:26]</span> <span class="irc-black">&lt;naeu&gt; Haha, this is good: <a href="http://twitter.com/jawn_b/statuses/1860081865">http://twitter.com/jawn_b/statuses/1860081865</a></span><br />
+<span class="irc-date">[20:26]</span> <span class="irc-black">&lt;naeu&gt; there must be a lot of these people about</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;naeu&gt; olabini: what are the primitives of Ioke?</span><br />
+<span class="irc-date">[20:33]</span> <span class="irc-black">&lt;naeu&gt; i.e. would you call a regexp or a number a primitive?</span><br />
+<span class="irc-date">[20:35]</span> <span class="irc-black">&lt;naeu&gt; or might it be cells, objects and messages?</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;olabini&gt; good question</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;olabini&gt; The real primitives is hard to define</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;olabini&gt; literals are defined as messages in themselves, so not really primitive</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;naeu&gt; it would be an interesting exercise</span><br />
+<span class="irc-date">[20:57]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[20:57]</span> <span class="irc-black">&lt;olabini&gt; a metacircular interpreter would be really nice</span><br />
+<span class="irc-date">[20:57]</span> <span class="irc-black">&lt;olabini&gt; I'm thinking about writing one</span><br />
+<span class="irc-date">[20:57]</span> <span class="irc-black">&lt;olabini&gt; just for testing purposes, of course.</span><br />
+<span class="irc-date">[20:57]</span> <span class="irc-black">&lt;olabini&gt; it is definitely possible</span><br />
+<span class="irc-date">[20:57]</span> <span class="irc-black">&lt;naeu&gt; the three questions that should be answered are: 1) what are the primitives, 2) what are the means of combination, 3) what are the means of abstraction?</span><br />
+<span class="irc-date">[20:58]</span> <span class="irc-black">&lt;naeu&gt; which is why I suggested cells, objects and messages as the primitives</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-black">&lt;naeu&gt; although you're then stuck to defining everything in turns of them</span><br />
+<span class="irc-date">[21:00]</span> <span class="irc-black">&lt;naeu&gt; so 2 might be defined as two consecutive messages succ to the object returned by the message 0 to the object return by the message Ground</span><br />
+<span class="irc-date">[21:00]</span> <span class="irc-black">&lt;naeu&gt; but this is just a guess on my behalf</span><br />
+<span class="irc-date">[21:00]</span> <span class="irc-black">&lt;naeu&gt; i'm primarily interested in what you have to say on this matter :-)</span><br />
+<span class="irc-date">[21:03]</span> <span class="irc-navy">* basu (i=c65264b9@gateway/web/ajax/mibbit.com/x-446b9130accad0b1) Quit (Client Quit)</span><br />
+<span class="irc-date">[21:05]</span> <span class="irc-navy">* embro1001 (n=sintaks@c-24-18-177-51.hsd1.wa.comcast.net) Quit (Client Quit)</span><br />
+<span class="irc-date">[21:15]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-87.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[22:31]</span> <span class="irc-green">* embro1001 (n=sintaks@c-24-18-177-51.hsd1.wa.comcast.net) has joined #ioke</span><br />
+<span class="irc-date">[22:54]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[23:48]</span> <span class="irc-navy">* embro1001 (n=sintaks@c-24-18-177-51.hsd1.wa.comcast.net) Quit (Client Quit)</span><br />

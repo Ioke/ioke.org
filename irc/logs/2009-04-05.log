@@ -1,0 +1,83 @@
+<span class="irc-date">[1:58]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit (Client Quit)</span><br />
+<span class="irc-date">[5:07]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[7:16]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-16.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[7:48]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-16.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[8:01]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit (Client Quit)</span><br />
+<span class="irc-date">[10:06]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-88.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-green">* k (n=kar8nga@j-27.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-88.vc-graz.ac.at) Quit (Nick collision from services.)</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-green">* k is now known as kar8nga</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-navy">* kar8nga (n=kar8nga@j-27.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;olabini&gt; well. I think there might be a release today already</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[15:06]</span> <span class="irc-green">* martido (n=martin@dslb-088-066-198-048.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[15:07]</span> <span class="irc-black">&lt;martido&gt; @olabini: sounds great! however, I get 2 errors when running the tests on windows</span><br />
+<span class="irc-date">[15:09]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * ra692319 / (build.xml docs/release_announcement_E): Update everything for the Ioke E release - <a href="http://bit.ly/14ndh">http://bit.ly/14ndh</a></span><br />
+<span class="irc-date">[15:11]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini gh-pages * r904dd73 / (3 files): Add Ioke E release binaries - <a href="http://bit.ly/ys2wM">http://bit.ly/ys2wM</a></span><br />
+<span class="irc-date">[15:11]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini gh-pages * rb05d287 / (121 files in 20 dirs): Add Ioke E reference documentation - <a href="http://bit.ly/ldI9s">http://bit.ly/ldI9s</a></span><br />
+<span class="irc-date">[15:11]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini gh-pages * r322bb8b / (download.html index.html): Update pages for the release - <a href="http://bit.ly/Ptx7">http://bit.ly/Ptx7</a></span><br />
+<span class="irc-date">[15:26]</span> <span class="irc-black">&lt;olabini&gt; martido: oh, that was slightly too late</span><br />
+<span class="irc-date">[15:26]</span> <span class="irc-black">&lt;olabini&gt; martido: what errors?</span><br />
+<span class="irc-date">[15:26]</span> <span class="irc-black">&lt;martido&gt; ;) just realized that</span><br />
+<span class="irc-date">[15:26]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * ra9d3eee / (4 files in 4 dirs): Update to the next snapshot version - <a href="http://bit.ly/28DInF">http://bit.ly/28DInF</a></span><br />
+<span class="irc-date">[15:26]</span> <span class="irc-black">&lt;martido&gt; have just pulled in the latest changes and will try again</span><br />
+<span class="irc-date">[15:26]</span> <span class="irc-black">&lt;olabini&gt; martido: ok, give me the errors and I'll see if I can fix it quickly</span><br />
+<span class="irc-date">[15:29]</span> <span class="irc-black">&lt;martido&gt; ola, I've c&amp;p the errors here <a href="http://gist.github.com/90457">http://gist.github.com/90457</a></span><br />
+<span class="irc-date">[15:29]</span> <span class="irc-black">&lt;olabini&gt; thanks</span><br />
+<span class="irc-date">[15:30]</span> <span class="irc-black">&lt;martido&gt; sure</span><br />
+<span class="irc-date">[15:30]</span> <span class="irc-black">&lt;olabini&gt; hmm. that is weird</span><br />
+<span class="irc-date">[15:30]</span> <span class="irc-black">&lt;olabini&gt; what JVM are you on?</span><br />
+<span class="irc-date">[15:31]</span> <span class="irc-black">&lt;martido&gt; sun 1.6 update 13</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-black">&lt;olabini&gt; k</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[15:33]</span> <span class="irc-black">&lt;martido&gt; do the errors mean anything to you?</span><br />
+<span class="irc-date">[15:34]</span> <span class="irc-black">&lt;olabini&gt; well, one of them is due to some clumsiness in a test</span><br />
+<span class="irc-date">[15:34]</span> <span class="irc-black">&lt;olabini&gt; I'll do a quick fix for now</span><br />
+<span class="irc-date">[15:35]</span> <span class="irc-black">&lt;olabini&gt; the other one is more troubling</span><br />
+<span class="irc-date">[15:37]</span> <span class="irc-black">&lt;martido&gt; you mean the array one?</span><br />
+<span class="irc-date">[15:37]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * r0eb67cd / (test/ispec_spec.ik test/java_ground_spec.ik): Quickfix some failures on windows - <a href="http://bit.ly/2trZXS">http://bit.ly/2trZXS</a></span><br />
+<span class="irc-date">[15:37]</span> <span class="irc-black">&lt;martido&gt; btw, sorry for being so late with that, but I usually just do a jar-notest to get there more quickly ...</span><br />
+<span class="irc-date">[15:37]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[15:37]</span> <span class="irc-black">&lt;olabini&gt; anyway</span><br />
+<span class="irc-date">[15:37]</span> <span class="irc-black">&lt;olabini&gt; I'm doing a quickfix for it now</span><br />
+<span class="irc-date">[15:38]</span> <span class="irc-black">&lt;olabini&gt; these seem to fail because of something strange</span><br />
+<span class="irc-date">[15:38]</span> <span class="irc-black">&lt;olabini&gt; so I think the E release is fine anyway</span><br />
+<span class="irc-date">[15:38]</span> <span class="irc-black">&lt;olabini&gt; I won't update the binaries, since the tests aren't there anyway</span><br />
+<span class="irc-date">[15:38]</span> <span class="irc-black">&lt;martido&gt; ok</span><br />
+<span class="irc-date">[15:38]</span> <span class="irc-black">&lt;olabini&gt; I will just fix these and retag them</span><br />
+<span class="irc-date">[15:39]</span> <span class="irc-black">&lt;martido&gt; I'll test it as soon as you're done</span><br />
+<span class="irc-date">[15:40]</span> <span class="irc-black">&lt;martido&gt; now there's only one error ... the first one</span><br />
+<span class="irc-date">[15:40]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * rb789611 / (4 files in 3 dirs): Fix some errors with Windows, play back to 0.3.0 for tagging of release - <a href="http://bit.ly/4aMK4w">http://bit.ly/4aMK4w</a></span><br />
+<span class="irc-date">[15:40]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[15:40]</span> <span class="irc-black">&lt;olabini&gt; fixed that now</span><br />
+<span class="irc-date">[15:41]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini refs/tags/IOKE_E_IKJ_0_3_0 * ra9d3eee / (4 files in 4 dirs): Update to the next snapshot version - <a href="http://bit.ly/28DInF">http://bit.ly/28DInF</a></span><br />
+<span class="irc-date">[15:41]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini refs/tags/IOKE_E_IKJ_0_3_0 * r0eb67cd / (test/ispec_spec.ik test/java_ground_spec.ik): Quickfix some failures on windows - <a href="http://bit.ly/2trZXS">http://bit.ly/2trZXS</a></span><br />
+<span class="irc-date">[15:41]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini refs/tags/IOKE_E_IKJ_0_3_0 * rb789611 / (4 files in 3 dirs): Fix some errors with Windows, play back to 0.3.0 for tagging of release - <a href="http://bit.ly/4aMK4w">http://bit.ly/4aMK4w</a></span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * ra67ec4b / (build.xml src/builtin/D50_runtime.ik test/runtime_spec.ik): Go back to Ioke P 0.4.0-snapshot - <a href="http://bit.ly/3icZy">http://bit.ly/3icZy</a></span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;olabini&gt; ok, I'll call it done for now</span><br />
+<span class="irc-date">[15:46]</span> <span class="irc-black">&lt;martido&gt; tests are fine now ... that was fast ;)</span><br />
+<span class="irc-date">[15:47]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[17:17]</span> <span class="irc-green">* hsuh (n=user@c925a569.virtua.com.br) has joined #ioke</span><br />
+<span class="irc-date">[17:18]</span> <span class="irc-black">&lt;hsuh&gt; so... should account.ik on github fail on ioke E or i did something wrong? :)</span><br />
+<span class="irc-date">[18:00]</span> <span class="irc-black">&lt;martido&gt; hsuh: it should work ... what's the failure you get?</span><br />
+<span class="irc-date">[18:00]</span> <span class="irc-black">&lt;hsuh&gt; iik&gt; (load "/Users/hugoschmitt/play/ioke/account.iik")</span><br />
+<span class="irc-date">[18:00]</span> <span class="irc-black">&lt;hsuh&gt; *** - couldn't find cell 'load' on 'Origin_0x1C831' (Condition Error NoSuchCell)</span><br />
+<span class="irc-date">[18:00]</span> <span class="irc-black">&lt;hsuh&gt;  </span><br />
+<span class="irc-date">[18:01]</span> <span class="irc-black">&lt;hsuh&gt; more of an emacs problem i guess (i'm using ink-ioke.el)</span><br />
+<span class="irc-date">[18:05]</span> <span class="irc-black">&lt;olabini&gt; what?</span><br />
+<span class="irc-date">[18:05]</span> <span class="irc-black">&lt;olabini&gt; load?</span><br />
+<span class="irc-date">[18:05]</span> <span class="irc-black">&lt;olabini&gt; why are you using a lisp function inside of IIk?</span><br />
+<span class="irc-date">[18:08]</span> <span class="irc-black">&lt;hsuh&gt; C-c C-l runs the command ioke-load-file</span><br />
+<span class="irc-date">[18:08]</span> <span class="irc-black">&lt;hsuh&gt;  </span><br />
+<span class="irc-date">[18:17]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[19:00]</span> <span class="irc-black">&lt;olabini&gt; ??</span><br />
+<span class="irc-date">[19:02]</span> <span class="irc-black">&lt;olabini&gt; ah, right</span><br />
+<span class="irc-date">[19:02]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[19:02]</span> <span class="irc-black">&lt;olabini&gt; that part of the inf-ioke.el mode hasn't been updated at all</span><br />
+<span class="irc-date">[19:02]</span> <span class="irc-black">&lt;olabini&gt; I recommend you generally run scripts from the command line</span><br />
+<span class="irc-date">[19:02]</span> <span class="irc-black">&lt;olabini&gt; or use "use" as described in the programming guide</span><br />
+<span class="irc-date">[19:07]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-116.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[19:28]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[20:12]</span> <span class="irc-navy">* martido (n=martin@dslb-088-066-198-048.pools.arcor-ip.net) Quit ()</span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-116.vc-graz.ac.at) Quit (Read error: 145 (Connection timed out))</span><br />
+<span class="irc-date">[21:54]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit ("Leaving")</span><br />

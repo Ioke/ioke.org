@@ -1,0 +1,214 @@
+<span class="irc-date">[0:49]</span> <span class="irc-green">* [azoic] (n=azoic@adsl-75-36-188-124.dsl.pltn13.sbcglobal.net) has joined #ioke</span><br />
+<span class="irc-date">[0:50]</span> <span class="irc-green">* [azoic] (n=azoic@adsl-75-36-188-124.dsl.pltn13.sbcglobal.net) has left #ioke</span><br />
+<span class="irc-date">[5:58]</span> <span class="irc-black">&lt;olabini&gt; HeMan: what OS are you on?</span><br />
+<span class="irc-date">[6:10]</span> <span class="irc-green">* bguthrie (n=bguthrie@148.sub-75-197-43.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[6:11]</span> <span class="irc-black">&lt;bguthrie&gt; anyone else getting an error in JavaGround import spec?</span><br />
+<span class="irc-date">[6:12]</span> <span class="irc-black">&lt;olabini&gt; bguthrie: nope. what error?</span><br />
+<span class="irc-date">[6:12]</span> <span class="irc-black">&lt;bguthrie&gt; my changes to ispec run-by-line were working      [java] Condition Error NoSuchCell in 'JavaGround import should simply import a named class with an argument'</span><br />
+<span class="irc-date">[6:12]</span> <span class="irc-black">&lt;bguthrie&gt;      [java] couldn't find cell 'java:util:NavigableMap' on 'Ground' (Condition Error NoSuchCell)</span><br />
+<span class="irc-date">[6:13]</span> <span class="irc-black">&lt;olabini&gt; oh shit</span><br />
+<span class="irc-date">[6:13]</span> <span class="irc-black">&lt;olabini&gt; I'm stupid</span><br />
+<span class="irc-date">[6:13]</span> <span class="irc-black">&lt;olabini&gt; you're on Java 5, right?</span><br />
+<span class="irc-date">[6:13]</span> <span class="irc-black">&lt;bguthrie&gt; that seems unlikely :D</span><br />
+<span class="irc-date">[6:13]</span> <span class="irc-black">&lt;bguthrie&gt; yeah, do I need to upgrade</span><br />
+<span class="irc-date">[6:13]</span> <span class="irc-black">&lt;bguthrie&gt; ?</span><br />
+<span class="irc-date">[6:13]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[6:13]</span> <span class="irc-black">&lt;olabini&gt; no</span><br />
+<span class="irc-date">[6:13]</span> <span class="irc-black">&lt;olabini&gt; it's just that I wanted to use some names in java.util that weren't likely to clash</span><br />
+<span class="irc-date">[6:13]</span> <span class="irc-black">&lt;olabini&gt; but I never thought about checking that they existed in Java 5 too</span><br />
+<span class="irc-date">[6:14]</span> <span class="irc-black">&lt;olabini&gt; can't actually fix it right now, since I have other changes locally</span><br />
+<span class="irc-date">[6:14]</span> <span class="irc-black">&lt;bguthrie&gt; ok, then I'm going to push up to github and issue a pull request :D</span><br />
+<span class="irc-date">[6:14]</span> <span class="irc-black">&lt;bguthrie&gt; ignore the mocking stuff for the time being</span><br />
+<span class="irc-date">[6:14]</span> <span class="irc-black">&lt;olabini&gt; k</span><br />
+<span class="irc-date">[6:14]</span> <span class="irc-black">&lt;bguthrie&gt; but ispec supports run by line and I've added the corresponding commands in a naive way to the tmplugin</span><br />
+<span class="irc-date">[6:14]</span> <span class="irc-black">&lt;olabini&gt; you can fix it by just changing Navigable to Abstract in the failing tests</span><br />
+<span class="irc-date">[6:14]</span> <span class="irc-black">&lt;olabini&gt; oh. cool!</span><br />
+<span class="irc-date">[6:15]</span> <span class="irc-black">&lt;bguthrie&gt; should work by individual spec or entire describe context</span><br />
+<span class="irc-date">[6:15]</span> <span class="irc-black">&lt;olabini&gt; nice</span><br />
+<span class="irc-date">[6:16]</span> <span class="irc-black">&lt;bguthrie&gt; ended up changing the way specs get run a bit - a describe context has a run method with the same signature as an example (new entity) and it'll just walk its way down the test tree</span><br />
+<span class="irc-date">[6:16]</span> <span class="irc-black">&lt;olabini&gt; ah</span><br />
+<span class="irc-date">[6:16]</span> <span class="irc-black">&lt;olabini&gt; interesting</span><br />
+<span class="irc-date">[6:16]</span> <span class="irc-black">&lt;olabini&gt; that sounds good</span><br />
+<span class="irc-date">[6:17]</span> <span class="irc-brick">* olabini is heading to work now</span><br />
+<span class="irc-date">[6:17]</span> <span class="irc-black">&lt;olabini&gt; ttyl</span><br />
+<span class="irc-date">[6:17]</span> <span class="irc-black">&lt;bguthrie&gt; obviously if it sucks let me know :D</span><br />
+<span class="irc-date">[6:17]</span> <span class="irc-navy">* olabini (n=ola@c-d64ce155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit ("ERC Version 5.1.4 (IRC client for Emacs)")</span><br />
+<span class="irc-date">[6:17]</span> <span class="irc-black">&lt;bguthrie&gt; later!</span><br />
+<span class="irc-date">[6:19]</span> <span class="irc-black">&lt;bguthrie&gt; oh yeah! also added a flag to run tests without color :)</span><br />
+<span class="irc-date">[6:23]</span> <span class="irc-navy">* bguthrie (n=bguthrie@148.sub-75-197-43.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[6:24]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[7:19]</span> <span class="irc-green">* olabini (n=ola@194.132.20.9) has joined #ioke</span><br />
+<span class="irc-date">[7:19]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[7:37]</span> <span class="irc-green">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) has joined #ioke</span><br />
+<span class="irc-date">[7:38]</span> <span class="irc-navy">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[8:27]</span> <span class="irc-navy">* skaar (n=skaar@substruction.net) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[8:28]</span> <span class="irc-green">* skaar (n=skaar@substruction.net) has joined #ioke</span><br />
+<span class="irc-date">[8:37]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-green">* naeu (n=sam@h253136.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;martido&gt; naeu: hey sam, how's the ispec thing coming along?</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;naeu&gt; hey martido</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;naeu&gt; I've not had chance to do anything except work, and write tutorial slides recently</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;naeu&gt; :-(</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;martido&gt; the ruby/jruby thing you're doing? read about it in the logs...</span><br />
+<span class="irc-date">[9:51]</span> <span class="irc-black">&lt;naeu&gt; although I'm not entirely sure what you mean :-)</span><br />
+<span class="irc-date">[9:52]</span> <span class="irc-black">&lt;martido&gt; what exactly are you not sure about? ;)</span><br />
+<span class="irc-date">[9:53]</span> <span class="irc-black">&lt;martido&gt; oh I think I know ... doh!!! sorry... thought you're doing the ispec stuff... now that I think about it, that was bguthrie...</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-black">&lt;naeu&gt; you mean the mocking stuff?</span><br />
+<span class="irc-date">[9:55]</span> <span class="irc-black">&lt;martido&gt; I mean the enhancement to ispec to support run-by-line</span><br />
+<span class="irc-date">[9:55]</span> <span class="irc-black">&lt;naeu&gt; oh, i wasn't aware of that :-)</span><br />
+<span class="irc-date">[10:03]</span> <span class="irc-black">&lt;martido&gt; ah... then ... what about the mocking stuff? ;)</span><br />
+<span class="irc-date">[10:05]</span> <span class="irc-black">&lt;naeu&gt; have you seen <a href="http://www.reddit.com/r/Ioke/">http://www.reddit.com/r/Ioke/</a></span><br />
+<span class="irc-date">[10:07]</span> <span class="irc-black">&lt;martido&gt; yep. very cool that you set that up ...</span><br />
+<span class="irc-date">[10:07]</span> <span class="irc-black">&lt;naeu&gt; there should be a link to the mocking stuff in there</span><br />
+<span class="irc-date">[10:11]</span> <span class="irc-black">&lt;martido&gt; dammit ... am I drunk? ;) could have sworn that you started the mocking stuff</span><br />
+<span class="irc-date">[10:11]</span> <span class="irc-black">&lt;martido&gt; hmm... seems I need couple of more hours to properly wake up</span><br />
+<span class="irc-date">[10:13]</span> <span class="irc-black">&lt;naeu&gt; haha, twas not me!</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;martido&gt; yeah, just noticed when looking at the link on reddit ... sorry guys</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;martido&gt; anyway, another try</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;martido&gt; was just reading the discussion you had with ola on ruby blocks and Ioke LexicalBlocks yesterday</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;olabini&gt; bguthrie has finished the ispec by-line stuff, but I haven't merged it yet.</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;martido&gt; quick question if you don't mind</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;martido&gt; I'm not a ruby wizard, but a block in Ruby is not *really* a closure because it dosn't need any free variables? Is that about right?</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;olabini&gt; he's still working on the mocking stuff</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;olabini&gt; martido: the other way around</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;olabini&gt; you can almost treat it as if a Ruby block actually contained free variables with EVERY name possible.</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;olabini&gt; except for those explicitly bound</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;olabini&gt; so, yeah, it is most often a closure.</span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;martido&gt; ola: ah I see. so in the strictest sense a ruby block must not necessarily be a closure, but is mostly used as one</span><br />
+<span class="irc-date">[10:26]</span> <span class="irc-black">&lt;olabini&gt; yeah.</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; if you refrain from using any variables outside, create no bindings, use no evals and don't return or use redo/break and stuff like that, it won't be a closure</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; or rather</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; it will still be a closure in MRI</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; but it is indistinguishable from a non-closure since it doesn't actually use its captured context</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-black">&lt;olabini&gt; in JRuby we utilize this for optimizations of different kinds</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-black">&lt;martido&gt; for example?</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-black">&lt;olabini&gt; we can transform some local scopes into using Java member variables or local variables when we can prove there is no capture used</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-black">&lt;olabini&gt; when doing JIT compilation</span><br />
+<span class="irc-date">[10:30]</span> <span class="irc-black">&lt;olabini&gt; otherwise we have to keep an expensive data structure around for this purpose</span><br />
+<span class="irc-date">[10:30]</span> <span class="irc-black">&lt;olabini&gt; so in JRuby, a method will generally compile into much better code if that method doesn't use any blocks, or only uses very simple blocks</span><br />
+<span class="irc-date">[10:31]</span> <span class="irc-black">&lt;martido&gt; so you don't have to keep a copy of the context around</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;olabini&gt; exactly</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;olabini&gt; and we can compile the method to something that more closely resembles a Java method</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;olabini&gt; which means hotspot can optimize it even more</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;martido&gt; interesting stuff ... still so much more to learn ;)</span><br />
+<span class="irc-date">[10:35]</span> <span class="irc-black">&lt;naeu&gt; martido: indeed, for me too :-)</span><br />
+<span class="irc-date">[10:35]</span> <span class="irc-black">&lt;olabini&gt; there always is</span><br />
+<span class="irc-date">[10:35]</span> <span class="irc-black">&lt;martido&gt; yeah</span><br />
+<span class="irc-date">[10:37]</span> <span class="irc-black">&lt;martido&gt; another question if I may</span><br />
+<span class="irc-date">[10:37]</span> <span class="irc-black">&lt;martido&gt; you mentioned yesterday that "a Lexical scope is almost always an abstract concept that is never fully realized in a programming language"</span><br />
+<span class="irc-date">[10:37]</span> <span class="irc-black">&lt;martido&gt; what does that mean?</span><br />
+<span class="irc-date">[10:38]</span> <span class="irc-black">&lt;naeu&gt; I think he means it's only an implicit concept</span><br />
+<span class="irc-date">[10:38]</span> <span class="irc-black">&lt;naeu&gt; i.e. not something you can manipulate and control</span><br />
+<span class="irc-date">[10:38]</span> <span class="irc-black">&lt;naeu&gt; but that's just my guess :-)</span><br />
+<span class="irc-date">[10:38]</span> <span class="irc-black">&lt;martido&gt; ;) but it makes sense</span><br />
+<span class="irc-date">[10:40]</span> <span class="irc-black">&lt;naeu&gt; I think all this stuff is fascinating</span><br />
+<span class="irc-date">[10:41]</span> <span class="irc-black">&lt;martido&gt; most definitely! can't get enough of this (gf thinks I'm mad)</span><br />
+<span class="irc-date">[10:42]</span> <span class="irc-black">&lt;naeu&gt; my wife too</span><br />
+<span class="irc-date">[10:42]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[10:45]</span> <span class="irc-black">&lt;martido&gt; well they've gotta live with that ... hopefully ;)</span><br />
+<span class="irc-date">[10:45]</span> <span class="irc-black">&lt;naeu&gt; fingers crossed!</span><br />
+<span class="irc-date">[11:02]</span> <span class="irc-black">&lt;olabini&gt; naeu: no, that's not what I meant</span><br />
+<span class="irc-date">[11:02]</span> <span class="irc-black">&lt;olabini&gt; the distinction you're talking about is whether something is first class or not</span><br />
+<span class="irc-date">[11:02]</span> <span class="irc-black">&lt;olabini&gt; which is different</span><br />
+<span class="irc-date">[11:03]</span> <span class="irc-black">&lt;olabini&gt; what I meant was that the way comp sci people talk about lexical scopes doesn't match exactly to any real data structures in either the implementation or the language itself</span><br />
+<span class="irc-date">[11:03]</span> <span class="irc-black">&lt;olabini&gt; so talking about lexical scope is mostly an abstraction of the several subtly different ways that languages and implementations handle this</span><br />
+<span class="irc-date">[11:11]</span> <span class="irc-navy">* HeMan (n=jimmy@193.12.106.19) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[11:11]</span> <span class="irc-green">* HeMan (n=jimmy@193.12.106.19) has joined #ioke</span><br />
+<span class="irc-date">[11:13]</span> <span class="irc-black">&lt;naeu&gt; olabini: ah ok, sorry for miss-paraphrasing you :-)</span><br />
+<span class="irc-date">[11:15]</span> <span class="irc-black">&lt;olabini&gt; no worries</span><br />
+<span class="irc-date">[11:15]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[11:15]</span> <span class="irc-black">&lt;naeu&gt; although i think it's great that we're talking about these issues</span><br />
+<span class="irc-date">[11:15]</span> <span class="irc-black">&lt;naeu&gt; hopefully more people will come in contact with these concepts as a result</span><br />
+<span class="irc-date">[11:49]</span> <span class="irc-black">&lt;martido&gt; naeu: i think so as well</span><br />
+<span class="irc-date">[11:49]</span> <span class="irc-black">&lt;martido&gt; ola, thanks for clarifying</span><br />
+<span class="irc-date">[13:00]</span> <span class="irc-navy">* olabini (n=ola@194.132.20.9) Quit ("ERC Version 5.1.4 (IRC client for Emacs)")</span><br />
+<span class="irc-date">[14:40]</span> <span class="irc-green">* olabini (n=ola@c-d64ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[14:40]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[15:35]</span> <span class="irc-black">&lt;martido&gt; just had a discussion with some guys at work who are of the opinion that 1.) it's a complete waste of time to learn and study different programming languages and 2.) why the heck anybody would use a different language than java for serious development work ... grr... stubborn people!!</span><br />
+<span class="irc-date">[15:35]</span> <span class="irc-black">&lt;martido&gt; sorry guys ;) had to get that off my chest</span><br />
+<span class="irc-date">[15:51]</span> <span class="irc-black">&lt;naeu&gt; martido: man, I totally understand where you're coming from</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-black">&lt;naeu&gt; luckily not all developers are like your colleagues</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-black">&lt;naeu&gt; although sadly a lot are</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-black">&lt;olabini&gt; there will always be ignorant bigots in the world</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-black">&lt;olabini&gt; no matter what field</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-black">&lt;naeu&gt; olabini: it seems that programming attracts more than its fair share</span><br />
+<span class="irc-date">[15:53]</span> <span class="irc-black">&lt;naeu&gt; btw, how are you feeling these days?</span><br />
+<span class="irc-date">[15:53]</span> <span class="irc-black">&lt;naeu&gt; will you still be up for coming to Amsterdam?</span><br />
+<span class="irc-date">[15:54]</span> <span class="irc-black">&lt;olabini&gt; yes, I will. don't worry about that</span><br />
+<span class="irc-date">[15:54]</span> <span class="irc-black">&lt;naeu&gt; i'm not worrying about that, I'm worrying about you :-)</span><br />
+<span class="irc-date">[15:54]</span> <span class="irc-black">&lt;naeu&gt; it's not nice to hear that you're not feeling tip-top</span><br />
+<span class="irc-date">[15:55]</span> <span class="irc-black">&lt;olabini&gt; but I'm not a 100 % that I will release Ioke E by the 23rd</span><br />
+<span class="irc-date">[15:55]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[15:55]</span> <span class="irc-black">&lt;olabini&gt; I'll be OK</span><br />
+<span class="irc-date">[15:55]</span> <span class="irc-black">&lt;naeu&gt; do you have enough java integration stuff done to get some rudimentary JRuby &lt;-&gt; Ioke stuff running?</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;olabini&gt; soon</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;naeu&gt; that would be the icing on the cake :-)</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;olabini&gt; I'll start working on interface implementation and class extension soon</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;olabini&gt; after that the Java integration is basically finished</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-black">&lt;olabini&gt; so yeah, some JRuby integration will happen soon</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-black">&lt;olabini&gt; it should be fairly easy, even</span><br />
+<span class="irc-date">[15:58]</span> <span class="irc-black">&lt;naeu&gt; they'll go wild for that</span><br />
+<span class="irc-date">[15:59]</span> <span class="irc-black">&lt;naeu&gt; :)</span><br />
+<span class="irc-date">[16:01]</span> <span class="irc-black">&lt;Narnach&gt; I can imagine JRuby integration would make Ioke a lot more accessible for Ruby programmers</span><br />
+<span class="irc-date">[16:03]</span> <span class="irc-black">&lt;naeu&gt; Narnach: yeah, it would open up the possibility of wrapping Ruby gems with Ioke</span><br />
+<span class="irc-date">[16:03]</span> <span class="irc-black">&lt;Narnach&gt; that is a nice way to get access to libraries</span><br />
+<span class="irc-date">[16:21]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[16:23]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-84.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[16:40]</span> <span class="irc-navy">* naeu (n=sam@h253136.upc-h.chello.nl) Quit ()</span><br />
+<span class="irc-date">[16:50]</span> <span class="irc-green">* bguthrie (n=bguthrie@189.sub-75-196-141.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[17:13]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-84.vc-graz.ac.at) Quit (Read error: 145 (Connection timed out))</span><br />
+<span class="irc-date">[17:28]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[17:56]</span> <span class="irc-green">* adakkak (n=adakkak@ppp-70-225-166-147.dsl.chmpil.ameritech.net) has joined #ioke</span><br />
+<span class="irc-date">[18:23]</span> <span class="irc-black">&lt;martido&gt; just playing around a bit with the Java integration support</span><br />
+<span class="irc-date">[18:24]</span> <span class="irc-black">&lt;martido&gt; I have something like 'java:lang:Math abs(-10) &gt; 5', but there's an error saying that cell '&gt;' could not be found</span><br />
+<span class="irc-date">[18:24]</span> <span class="irc-black">&lt;martido&gt; anything I'm missing?</span><br />
+<span class="irc-date">[18:25]</span> <span class="irc-black">&lt;martido&gt; java:lang:Math abs(-5) has the kind java:lang:Long</span><br />
+<span class="irc-date">[18:25]</span> <span class="irc-black">&lt;martido&gt; can I convert this somehow to a Number Rational or Number Integer?</span><br />
+<span class="irc-date">[18:31]</span> <span class="irc-black">&lt;martido&gt; gotta go. will check in again later...</span><br />
+<span class="irc-date">[18:31]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has left #ioke</span><br />
+<span class="irc-date">[18:33]</span> <span class="irc-navy">* bguthrie (n=bguthrie@189.sub-75-196-141.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[18:40]</span> <span class="irc-black">&lt;olabini&gt; yeah, you need to call asRational on the result</span><br />
+<span class="irc-date">[18:41]</span> <span class="irc-black">&lt;olabini&gt; I haven't actually made that stuff implicit yet - will take that later</span><br />
+<span class="irc-date">[18:41]</span> <span class="irc-black">&lt;olabini&gt; so right now you need to convert into the core types</span><br />
+<span class="irc-date">[18:41]</span> <span class="irc-black">&lt;olabini&gt; of course, if you just siwtch, it will work</span><br />
+<span class="irc-date">[18:41]</span> <span class="irc-black">&lt;olabini&gt; switch</span><br />
+<span class="irc-date">[18:41]</span> <span class="irc-black">&lt;olabini&gt; 5 &lt; java:lang:Math abs(-10)</span><br />
+<span class="irc-date">[18:41]</span> <span class="irc-black">&lt;olabini&gt; since &lt; will actually try asRational before giving up</span><br />
+<span class="irc-date">[18:42]</span> <span class="irc-black">&lt;olabini&gt; at least I think it will work. =)</span><br />
+<span class="irc-date">[19:21]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:08]</span> <span class="irc-navy">* adakkak (n=adakkak@ppp-70-225-166-147.dsl.chmpil.ameritech.net) Quit ("Leaving")</span><br />
+<span class="irc-date">[20:13]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-88.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[20:49]</span> <span class="irc-green">* bguthrie (n=bguthrie@19.sub-75-198-80.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-black">&lt;melwin&gt; Happy 1234567890!</span><br />
+<span class="irc-date">[22:12]</span> <span class="irc-black">&lt;naeu&gt; melwin: Happy 1234567890 to you too!</span><br />
+<span class="irc-date">[22:12]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;naeu&gt; although we're not quite there yet i think</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://coolepochcountdown.com/">http://coolepochcountdown.com/</a></span><br />
+<span class="irc-date">[22:19]</span> <span class="irc-black">&lt;melwin&gt; Gotta sleep before then... Flying to Turkey tomorrow for a one week training.</span><br />
+<span class="irc-date">[22:21]</span> <span class="irc-black">&lt;naeu&gt; ooh nice</span><br />
+<span class="irc-date">[22:21]</span> <span class="irc-black">&lt;naeu&gt; you train turkeys?</span><br />
+<span class="irc-date">[22:22]</span> <span class="irc-black">&lt;naeu&gt; or you're joining a turkey train?</span><br />
+<span class="irc-date">[22:22]</span> <span class="irc-black">&lt;melwin&gt; Hehehe... Only as a hobby.</span><br />
+<span class="irc-date">[22:22]</span> <span class="irc-black">&lt;naeu&gt; :-p</span><br />
+<span class="irc-date">[22:22]</span> <span class="irc-black">&lt;melwin&gt; It's a Code Camp!</span><br />
+<span class="irc-date">[22:22]</span> <span class="irc-black">&lt;melwin&gt; At a resort... :P</span><br />
+<span class="irc-date">[22:22]</span> <span class="irc-brick">* melwin is looking forward to the warmth.</span><br />
+<span class="irc-date">[22:23]</span> <span class="irc-black">&lt;naeu&gt; oooh nice</span><br />
+<span class="irc-date">[22:23]</span> <span class="irc-black">&lt;naeu&gt; i like the sound of that</span><br />
+<span class="irc-date">[22:30]</span> <span class="irc-black">&lt;melwin&gt; Could be worse!</span><br />
+<span class="irc-date">[23:07]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-88.vc-graz.ac.at) has left #ioke</span><br />
+<span class="irc-date">[23:11]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[23:30]</span> <span class="irc-black">&lt;bguthrie&gt; happy epoch time!</span><br />
+<span class="irc-date">[23:31]</span> <span class="irc-black">&lt;bguthrie&gt; err, epoch time + 1234567890</span><br />
+<span class="irc-date">[23:32]</span> <span class="irc-navy">* bguthrie (n=bguthrie@19.sub-75-198-80.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[23:51]</span> <span class="irc-green">* martido (n=martin@dslb-092-074-117-224.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[23:56]</span> <span class="irc-black">&lt;martido&gt; took me a little bit longer to finish my beer ;)</span><br />
+<span class="irc-date">[23:56]</span> <span class="irc-black">&lt;martido&gt; anyway, thanks ola</span><br />
+<span class="irc-date">[23:57]</span> <span class="irc-black">&lt;martido&gt; i tried the things that you mentioned above</span><br />
+<span class="irc-date">[23:57]</span> <span class="irc-black">&lt;martido&gt; i take you meant that i should call it like so: java:lang:Math abs(-10) asRational &gt; 5?</span><br />
+<span class="irc-date">[23:58]</span> <span class="irc-black">&lt;martido&gt; That didn't work unfortunately. message is: couldn't find cell 'asRational' on 'Ground'</span><br />
+<span class="irc-date">[23:58]</span> <span class="irc-black">&lt;martido&gt; then i tried it the other way around: 5 &lt; java:lang:Math abs(-10)</span><br />
+<span class="irc-date">[23:59]</span> <span class="irc-black">&lt;martido&gt; that gives me a ClassCastException: java.lang.Long cannot be cast to ioke.lang.IokeObject</span><br />

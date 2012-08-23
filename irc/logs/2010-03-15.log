@@ -1,0 +1,18 @@
+<span class="irc-date">[21:03]</span> <span class="irc-brown">-leguin.freenode.net- *** Looking up your hostname...</span><br />
+<span class="irc-date">[21:03]</span> <span class="irc-brown">-leguin.freenode.net- *** Checking Ident</span><br />
+<span class="irc-date">[21:03]</span> <span class="irc-brown">-leguin.freenode.net- *** No Ident response</span><br />
+<span class="irc-date">[21:03]</span> <span class="irc-brown">-leguin.freenode.net- *** Couldn't look up your hostname</span><br />
+<span class="irc-date">[21:03]</span> <span class="irc-red">[frigg VERSION]</span><br />
+<span class="irc-date">[21:03]</span> <span class="irc-green">* IokeStormBot (~PircBot@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[21:03]</span> <span class="irc-green">* Topic is 'Ioke - a dynamic programming language for the JVM | <a href="http://ioke.org">http://ioke.org</a> | Logs <a href="http://ioke.org/irc/logs'">http://ioke.org/irc/logs'</a></span><br />
+<span class="irc-date">[21:03]</span> <span class="irc-green">* Set by olabini on Thu Jan 22 13:02:32 GMT 2009</span><br />
+<span class="irc-date">[21:13]</span> <span class="irc-black">&lt;olabini&gt; Raynes: reloading is implemented</span><br />
+<span class="irc-date">[21:13]</span> <span class="irc-black">&lt;olabini&gt; you do it by doing:</span><br />
+<span class="irc-date">[21:13]</span> <span class="irc-black">&lt;olabini&gt;   use reload("the/file.ik")</span><br />
+<span class="irc-date">[21:13]</span> <span class="irc-black">&lt;olabini&gt; look at the specs for more info</span><br />
+<span class="irc-date">[21:13]</span> <span class="irc-black">&lt;Raynes&gt; olabini: I just noticed that. Awesome. :)</span><br />
+<span class="irc-date">[22:16]</span> <span class="irc-navy">* Raynes (~Raynes@unaffiliated/raynes) Quit (Quit: Leaving)</span><br />
+<span class="irc-date">[22:18]</span> <span class="irc-green">* Raynes (~Raynes@unaffiliated/raynes) has joined #ioke</span><br />
+<span class="irc-date">[23:16]</span> <span class="irc-navy">* olabini (~ola@75.40.149.74) Quit (Ping timeout: 258 seconds)</span><br />
+<span class="irc-date">[23:49]</span> <span class="irc-green">* olabini (~ola@24-136-23-5.mart-ubr1.chi-mart.il.cable.rcn.com) has joined #ioke</span><br />
+<span class="irc-date">[23:49]</span> <span class="irc-green">* ChanServ sets mode +o olabini</span><br />

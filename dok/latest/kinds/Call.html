@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Kind: DefaultBehavior</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href=".././dokgen-style.css" type="text/css" media="screen" />
+    <script language="JavaScript" type="text/javascript">
+    // <![CDATA[
+
+        function toggleSource( id )
+        {
+          var elem
+          var link
+
+          if( document.getElementById )
+          {
+            elem = document.getElementById( id )
+            link = document.getElementById( "l_" + id )
+          }
+          else if ( document.all )
+          {
+            elem = eval( "document.all." + id )
+            link = eval( "document.all.l_" + id )
+          }
+          else
+            return false;
+
+          if( elem.style.display == "block" )
+          {
+            elem.style.display = "none"
+            link.innerHTML = "show source"
+          }
+          else
+          {
+            elem.style.display = "block"
+            link.innerHTML = "hide source"
+          }
+        }
+
+        function openCode( url )
+        {
+          window.open( url, "SOURCE_CODE", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=480,width=750" ).focus();
+        }
+      // ]]>
+    </script>
+  </head>
+
+  <body>
+    <table border='0' cellpadding='0' cellspacing='0' width="100%" class='banner'>
+      <tr>
+        <td>
+          <table width="100%" border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+              <td class="file-title" colspan="2">
+                <span class="file-title-prefix">Kind</span>
+                <br />
+                Call
+              </td>
+              <td align="right">
+                <table cellspacing="0" cellpadding="2">
+                  <tr>
+                    <td>Main mimic:</td>
+                    <td>
+                      <a href="../kinds/Origin.html">Origin</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <div id="bodyContent">
+      <div id="content">
+        <div class="description">
+          <p>
+A call is the runtime structure that includes the specific information for a call, that is available inside a DefaultMacro.
+          </p>
+        </div>
+
+        <div class="sectiontitle">Mimics</div>
+        <ul>
+          <li><a href="../kinds/Origin.html">Origin</a></li>
+        </ul>
+
+        <div class="sectiontitle">Inactive cells</div>
+        <ul>
+          <li><a href="#C00928">kind</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Active cells</div>
+        <ul>
+          <li><a href="#C00938">activateValue(value, newSelf nil, +:valuesToAdd)</a></li>
+<li><a href="#C00939">activateValueWithCachedArguments(value, newSelf nil, +:valuesToAdd)</a></li>
+<li><a href="#C00940">argAt(n)</a></li>
+<li><a href="#C00929">arguments()</a></li>
+<li><a href="#C00932">currentContext()</a></li>
+<li><a href="#C00934">evaluatedArguments()</a></li>
+<li><a href="#C00930">ground()</a></li>
+<li><a href="#C00933">message()</a></li>
+<li><a href="#C00931">receiver()</a></li>
+<li><a href="#C00935">resendToMethod(cellName)</a></li>
+<li><a href="#C00936">resendToReceiver(newReceiver)</a></li>
+<li><a href="#C00937">resendToValue(value, newSelf nil)</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Specs</div>
+        <div class="specs">
+          
+        </div>
+
+        <div class="sectiontitle">Inactive cells (details)</div>
+                <div class="cell">
+          <a name="C00928"></a>
+          <table border="0" cellpadding="5">
+            <tr valign="top">
+              <td class="cell-name">kind</td>
+              <td>=</td>
+              <td class="cell-value">"Call"</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div class="sectiontitle">Active cells (details)</div>
+                <div class="cell">
+          <div class="title">
+          <a name="C00938"></a><b>activateValue</b>(value, newSelf nil, +:valuesToAdd)
+          </div>
+          <div class="description">
+            <p>uhm. this one isn't too bad.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00939"></a><b>activateValueWithCachedArguments</b>(value, newSelf nil, +:valuesToAdd)
+          </div>
+          <div class="description">
+            <p>I really ought to write documentation for these methods, but I don't know how to describe what they do.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00940"></a><b>argAt</b>(n)
+          </div>
+          <div class="description">
+            <p>evaluates and returns the argument at 'n'. this is just a short hand for 'call message evalArgAt(n, call ground)'</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00940_source')" id="l_C00940_source">show source</a> ]</p>
+            <div id="C00940_source" class="dyn-source">
+<pre>
+method(n, 
+  message evalArgAt(n, ground))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00929"></a><b>arguments</b>()
+          </div>
+          <div class="description">
+            <p>returns a list of all the unevaluated arguments</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00932"></a><b>currentContext</b>()
+          </div>
+          <div class="description">
+            <p>returns the currently executing context</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00934"></a><b>evaluatedArguments</b>()
+          </div>
+          <div class="description">
+            <p>returns a list of the result of evaluating all the arguments to this call</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00930"></a><b>ground</b>()
+          </div>
+          <div class="description">
+            <p>returns the ground of the place this call originated</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00933"></a><b>message</b>()
+          </div>
+          <div class="description">
+            <p>returns the message that started this call</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00931"></a><b>receiver</b>()
+          </div>
+          <div class="description">
+            <p>returns the receiver of the call</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00935"></a><b>resendToMethod</b>(cellName)
+          </div>
+          <div class="description">
+            <p>takes one evaluated text or symbol argument and resends the current message to that method/macro on the current receiver.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00936"></a><b>resendToReceiver</b>(newReceiver)
+          </div>
+          <div class="description">
+            <p>takes one evaluated object and resends the current message with that object as the new receiver</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00937"></a><b>resendToValue</b>(value, newSelf nil)
+          </div>
+          <div class="description">
+            <p>uhm. this is a strange one. really.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>

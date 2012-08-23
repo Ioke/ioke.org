@@ -1,0 +1,195 @@
+<span class="irc-date">[0:50]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[2:32]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[2:37]</span> <span class="irc-green">* embro1001 is now known as sintaks</span><br />
+<span class="irc-date">[3:34]</span> <span class="irc-navy">* sintaks (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[4:30]</span> <span class="irc-green">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) has joined #ioke</span><br />
+<span class="irc-date">[6:01]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[6:38]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit ("Leaving")</span><br />
+<span class="irc-date">[6:38]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[6:40]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[7:08]</span> <span class="irc-green">* cirquitz (n=cirquitz@203.199.114.33) has joined #ioke</span><br />
+<span class="irc-date">[7:43]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[8:13]</span> <span class="irc-green">* naeu (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:15]</span> <span class="irc-black">&lt;olabini&gt; morning Sam.</span><br />
+<span class="irc-date">[8:16]</span> <span class="irc-black">&lt;naeu&gt; morning</span><br />
+<span class="irc-date">[8:17]</span> <span class="irc-black">&lt;olabini&gt; do you have easter breaks too?</span><br />
+<span class="irc-date">[8:19]</span> <span class="irc-black">&lt;naeu&gt; in england we do</span><br />
+<span class="irc-date">[8:19]</span> <span class="irc-black">&lt;naeu&gt; but in holland today is a work day</span><br />
+<span class="irc-date">[8:19]</span> <span class="irc-black">&lt;naeu&gt; :-(</span><br />
+<span class="irc-date">[8:19]</span> <span class="irc-black">&lt;naeu&gt; oh, and i'm sorry I've not made much progress with ioke stuff - I've been helping Susanna apply for a Cambridge PhD</span><br />
+<span class="irc-date">[8:20]</span> <span class="irc-black">&lt;olabini&gt; ah, right</span><br />
+<span class="irc-date">[8:20]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[8:20]</span> <span class="irc-black">&lt;olabini&gt; don't worry about it</span><br />
+<span class="irc-date">[8:20]</span> <span class="irc-black">&lt;olabini&gt; I'm working on a side project, letting Ioke be quiet for a few days</span><br />
+<span class="irc-date">[8:20]</span> <span class="irc-black">&lt;naeu&gt; you're always working on side projects ;-)</span><br />
+<span class="irc-date">[8:21]</span> <span class="irc-black">&lt;olabini&gt; but when I get back to Ioke proper, the first thing I'll do is take a look at the ast transformations</span><br />
+<span class="irc-date">[8:21]</span> <span class="irc-black">&lt;naeu&gt; i was amazed when you pulled the Google thing out of your sleeve</span><br />
+<span class="irc-date">[8:21]</span> <span class="irc-black">&lt;olabini&gt; yep, you're right. I have way too many of those projects</span><br />
+<span class="irc-date">[8:21]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[8:21]</span> <span class="irc-black">&lt;olabini&gt; yeah. that was funny.</span><br />
+<span class="irc-date">[8:21]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[8:21]</span> <span class="irc-black">&lt;olabini&gt; I like being able to pull surprises like that.</span><br />
+<span class="irc-date">[8:21]</span> <span class="irc-black">&lt;naeu&gt; cool that Hendrik got it running</span><br />
+<span class="irc-date">[8:21]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[8:21]</span> <span class="irc-black">&lt;olabini&gt; that's nice</span><br />
+<span class="irc-date">[8:21]</span> <span class="irc-black">&lt;olabini&gt; of course, the problem is still there for Google.</span><br />
+<span class="irc-date">[8:22]</span> <span class="irc-black">&lt;olabini&gt; apparently, javac creates some very strange bytecode for empty finally-blocks</span><br />
+<span class="irc-date">[8:22]</span> <span class="irc-black">&lt;olabini&gt; which GAE doesn't handle</span><br />
+<span class="irc-date">[8:26]</span> <span class="irc-black">&lt;olabini&gt; so I'm not sure how Hendrik managed to do it</span><br />
+<span class="irc-date">[8:29]</span> <span class="irc-black">&lt;slava&gt; you're writing a paper about ioke?</span><br />
+<span class="irc-date">[8:32]</span> <span class="irc-black">&lt;olabini&gt; slava: no</span><br />
+<span class="irc-date">[8:33]</span> <span class="irc-black">&lt;olabini&gt; I don't think it's time for that, for a while</span><br />
+<span class="irc-date">[8:33]</span> <span class="irc-black">&lt;olabini&gt; Sam, maybe you should write one?</span><br />
+<span class="irc-date">[8:33]</span> <span class="irc-black">&lt;olabini&gt; the sociological implications of using more expressive languages</span><br />
+<span class="irc-date">[8:33]</span> <span class="irc-black">&lt;slava&gt; oh, I misread</span><br />
+<span class="irc-date">[8:33]</span> <span class="irc-black">&lt;slava&gt; "when I get back to Ioke proper,"</span><br />
+<span class="irc-date">[8:34]</span> <span class="irc-black">&lt;slava&gt; I read proper as paper :-)</span><br />
+<span class="irc-date">[8:35]</span> <span class="irc-black">&lt;naeu&gt; olabini: I'd love to write something related to Ioke</span><br />
+<span class="irc-date">[8:35]</span> <span class="irc-black">&lt;naeu&gt; I wonder what kind of audience would be interested in it</span><br />
+<span class="irc-date">[8:47]</span> <span class="irc-black">&lt;olabini&gt; ah. =)</span><br />
+<span class="irc-date">[8:47]</span> <span class="irc-black">&lt;olabini&gt; naeu: well. POPL or something like that might be interesting.</span><br />
+<span class="irc-date">[9:00]</span> <span class="irc-black">&lt;naeu&gt; yeah, sure</span><br />
+<span class="irc-date">[9:02]</span> <span class="irc-black">&lt;naeu&gt; should be fun to try and write something</span><br />
+<span class="irc-date">[9:02]</span> <span class="irc-black">&lt;naeu&gt; i like their idea of pearls</span><br />
+<span class="irc-date">[9:02]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[9:03]</span> <span class="irc-black">&lt;naeu&gt; i wonder if ioke's enumerable implementation qualifies as an interesting topic</span><br />
+<span class="irc-date">[9:04]</span> <span class="irc-black">&lt;naeu&gt; it would certainly be possible to make that into an elegant essay</span><br />
+<span class="irc-date">[9:10]</span> <span class="irc-black">&lt;olabini&gt; hm. maybe, yeah</span><br />
+<span class="irc-date">[10:38]</span> <span class="irc-black">&lt;naeu&gt; olabini: are you tracking slava's points about REPLs in dynamic languages in #JRuby?</span><br />
+<span class="irc-date">[10:43]</span> <span class="irc-navy">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) Quit ()</span><br />
+<span class="irc-date">[10:46]</span> <span class="irc-green">* skaar_ (n=skaar@substruction.net) has joined #ioke</span><br />
+<span class="irc-date">[10:49]</span> <span class="irc-navy">* skaar (n=skaar@substruction.net) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[10:50]</span> <span class="irc-black">&lt;olabini&gt; naeu: no, I've missed that. =/</span><br />
+<span class="irc-date">[10:50]</span> <span class="irc-black">&lt;naeu&gt; from around <a href="http://logs.jruby.org/jruby/2009-04-10.html#T09-50-52">http://logs.jruby.org/jruby/2009-04-10.html#T09-50-52</a></span><br />
+<span class="irc-date">[10:51]</span> <span class="irc-black">&lt;olabini&gt; ok.</span><br />
+<span class="irc-date">[10:51]</span> <span class="irc-navy">* olabini (n=ola@c-0b4de155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit ("ERC Version 5.1.4 (IRC client for Emacs)")</span><br />
+<span class="irc-date">[10:52]</span> <span class="irc-green">* olabini (n=ola@85.225.77.11) has joined #ioke</span><br />
+<span class="irc-date">[10:52]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[10:52]</span> <span class="irc-black">&lt;naeu&gt; did clicking that link kill your emacs?</span><br />
+<span class="irc-date">[10:52]</span> <span class="irc-black">&lt;naeu&gt; :-p</span><br />
+<span class="irc-date">[10:52]</span> <span class="irc-black">&lt;slava&gt; hehe</span><br />
+<span class="irc-date">[10:53]</span> <span class="irc-black">&lt;olabini&gt; hehe.</span><br />
+<span class="irc-date">[10:53]</span> <span class="irc-black">&lt;olabini&gt; nope</span><br />
+<span class="irc-date">[10:53]</span> <span class="irc-black">&lt;olabini&gt; I made a mistake when I cleaned up buffers, and stopped the irc buffer</span><br />
+<span class="irc-date">[10:53]</span> <span class="irc-black">&lt;olabini&gt; =/</span><br />
+<span class="irc-date">[10:53]</span> <span class="irc-black">&lt;olabini&gt; stupidness</span><br />
+<span class="irc-date">[11:15]</span> <span class="irc-navy">* cirquitz (n=cirquitz@203.199.114.33) Quit (No route to host)</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;olabini&gt; naeu: haven't read everything yet. but so far I disagree with Slava. =)</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;naeu&gt; I thought as much</span><br />
+<span class="irc-date">[11:25]</span> <span class="irc-black">&lt;naeu&gt; but he does raise interesting points</span><br />
+<span class="irc-date">[11:25]</span> <span class="irc-black">&lt;naeu&gt; that are certainly worth considering</span><br />
+<span class="irc-date">[11:26]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[11:27]</span> <span class="irc-black">&lt;slava&gt; what do you disagree with?</span><br />
+<span class="irc-date">[11:27]</span> <span class="irc-black">&lt;olabini&gt; HAHA. I have reached an important milestone in my secret project</span><br />
+<span class="irc-date">[11:27]</span> <span class="irc-black">&lt;olabini&gt; now everything rest are just details</span><br />
+<span class="irc-date">[11:27]</span> <span class="irc-black">&lt;olabini&gt; slava: give me a few seconds to read through the rest of the discussion first.</span><br />
+<span class="irc-date">[11:29]</span> <span class="irc-black">&lt;olabini&gt; a small aside: I find the expressiveness gains of Ruby over Java are quite large.</span><br />
+<span class="irc-date">[11:29]</span> <span class="irc-black">&lt;olabini&gt; definitely not "minimal"</span><br />
+<span class="irc-date">[11:29]</span> <span class="irc-black">&lt;naeu&gt; I totally agree</span><br />
+<span class="irc-date">[11:30]</span> <span class="irc-black">&lt;naeu&gt; Just look at the Java implementations of Dwemthy's Array</span><br />
+<span class="irc-date">[11:30]</span> <span class="irc-black">&lt;slava&gt; both are stuck in the dark ages of language design IMO :)</span><br />
+<span class="irc-date">[11:31]</span> <span class="irc-black">&lt;olabini&gt; slava: of course. but Java is in the 1100's and Ruby is in the 1500's... Ruby has got the equivalent of Gutenberg at least</span><br />
+<span class="irc-date">[11:31]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[11:31]</span> <span class="irc-black">&lt;olabini&gt; anyway. lets see.</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;olabini&gt; first, the way Ruby developers generally use IRb is by doing incremental additions to classes</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;olabini&gt; most Ruby devs doesn't actually load files from IRb</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;olabini&gt; so in this case you're right - Ruby devs aren't as inclined to develop their whole application in IRb as CL or Smalltalk devs would do</span><br />
+<span class="irc-date">[11:33]</span> <span class="irc-black">&lt;slava&gt; well CL has similar issues with the REPL</span><br />
+<span class="irc-date">[11:33]</span> <span class="irc-black">&lt;naeu&gt; I wish Ruby was nicer to develop with in irb</span><br />
+<span class="irc-date">[11:33]</span> <span class="irc-black">&lt;naeu&gt; I get frustrated having to cut and paste all the time</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;slava&gt; in factor I press F2 and the REPL reloads every source file I've changed</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;olabini&gt; there are several reasons for this, but I think the main one is because Ruby is a sequentially executing language. that's one of the things that make Ruby's metaprogramming work so well</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;slava&gt; in the right order, removing obsolete definitions</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;naeu&gt; but then for larger things I really use tests a lot now</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;olabini&gt; but it makes it hard to reload stuff like that</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;olabini&gt; slava: well, the difference is that in Ruby you don't really have "definitions" as such</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;naeu&gt; slava: how does that affect the code that you've generated in the REPL?</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;slava&gt; naeu: for the most part it doesn't</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;olabini&gt; to a degree I agree that you're right about the Ruby REPL. it could be more useful, but you would need to remove many of the advantages that make Ruby a nice language to achieve it</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;slava&gt; reallyA?</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-black">&lt;slava&gt; what would you need to remove?</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-black">&lt;slava&gt; factor has a ton of meta-programming, more than ruby, and it doesn't cause any issues for the module system</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;slava&gt; I understand changing ruby _now_ would be difficult</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;slava&gt; but from a purely language design standpoint, none of these REPL issues are inherent</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;olabini&gt; I'm not sure I totally understand the Factor meta-programming, but I've gotten the impression that it works a bit differently then Ruby's</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;olabini&gt; it's pretty common to define new methods and code based on Strings that are created at runtime</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;olabini&gt; there is no compile time stage</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;olabini&gt; if you look at Smalltalk</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;slava&gt; we don't have to define things based on strings, because you can build ASTs</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;slava&gt; but you can do this at runtime too</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;olabini&gt; many of the things that made it easy to live in an image, was that smalltalk devs restricted their use of metaprogramming</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;olabini&gt; because their tools couldn't manage well with things like that</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;olabini&gt; so Smalltalk can do lots of neat stuff, but it's mostly not used at all</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;olabini&gt; yeah, and Ruby can't build AST's</span><br />
+<span class="irc-date">[11:40]</span> <span class="irc-black">&lt;olabini&gt; and of course, the distinction between open and define of class is also interesting</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;olabini&gt; in most cases you want to be able to open up a class without caring if it has been defined ro not</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;olabini&gt; or</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;olabini&gt; that means your files can be loaded in any order</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;slava&gt; open classes are just like generic functions though</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;olabini&gt; and it means one thing less that the dev need to keep in mind</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;olabini&gt; yeah, to a degree.</span><br />
+<span class="irc-date">[11:44]</span> <span class="irc-black">&lt;slava&gt; so do you think my approach to module system design has merit?</span><br />
+<span class="irc-date">[11:51]</span> <span class="irc-black">&lt;olabini&gt; absolutely</span><br />
+<span class="irc-date">[11:51]</span> <span class="irc-black">&lt;olabini&gt; i'm just not sure how compatible it is with how people work with Ruby</span><br />
+<span class="irc-date">[11:51]</span> <span class="irc-black">&lt;olabini&gt; and how compatible it is with what people like about Ruby.</span><br />
+<span class="irc-date">[11:55]</span> <span class="irc-black">&lt;naeu&gt; olabini: so, from the perspective of Ioke how does this discourse fare? Have you started to think about how you work with Ioke, particularly in terms of how you might use the REPL</span><br />
+<span class="irc-date">[11:58]</span> <span class="irc-black">&lt;olabini&gt; to be honest, no, I haven't.</span><br />
+<span class="irc-date">[11:58]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[11:58]</span> <span class="irc-black">&lt;olabini&gt; I've been approacing Ioke more like a file based language</span><br />
+<span class="irc-date">[11:59]</span> <span class="irc-black">&lt;olabini&gt; and I think I would have designed it quite differently if I want that kind of integration with the REPL that you are describing</span><br />
+<span class="irc-date">[11:59]</span> <span class="irc-black">&lt;slava&gt; what do you mean by a file-based language?</span><br />
+<span class="irc-date">[13:06]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[13:14]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[13:17]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[13:18]</span> <span class="irc-navy">* CIA-28 (n=CIA@208.69.182.149.simpli.biz) Quit ()</span><br />
+<span class="irc-date">[13:20]</span> <span class="irc-green">* CIA-8 (n=CIA@208.69.182.149.simpli.biz) has joined #ioke</span><br />
+<span class="irc-date">[13:31]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@nat/sun/x-234424485b56d84f) has joined #ioke</span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;naeu&gt; does koop mean anything in Swedish?</span><br />
+<span class="irc-date">[14:24]</span> <span class="irc-black">&lt;naeu&gt; is it the same as in Dutch (buy)</span><br />
+<span class="irc-date">[14:28]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@nat/sun/x-234424485b56d84f) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[14:30]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[15:20]</span> <span class="irc-black">&lt;slava&gt; naeu: sounds similar to the russian word for buy</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-green">* bguthrie (n=bguthrie@119.sub-75-199-8.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[16:07]</span> <span class="irc-green">* RobL__ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[16:13]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[16:16]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[16:22]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit ("Leaving")</span><br />
+<span class="irc-date">[16:23]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@nat/sun/x-35adad8c5bf27bd1) has joined #ioke</span><br />
+<span class="irc-date">[16:56]</span> <span class="irc-black">&lt;olabini&gt; no</span><br />
+<span class="irc-date">[16:56]</span> <span class="irc-black">&lt;olabini&gt; koop is short for kooperativ</span><br />
+<span class="irc-date">[16:56]</span> <span class="irc-black">&lt;olabini&gt; which is basically a commune of people helping each other economically.</span><br />
+<span class="irc-date">[16:56]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@nat/sun/x-35adad8c5bf27bd1) Quit ("Leaving")</span><br />
+<span class="irc-date">[17:07]</span> <span class="irc-navy">* bguthrie (n=bguthrie@119.sub-75-199-8.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[17:16]</span> <span class="irc-green">* bguthrie (n=bguthrie@7.sub-75-197-74.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[17:19]</span> <span class="irc-green">* bguthrie_ (n=bguthrie@253.sub-75-197-110.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[17:34]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;bguthrie_&gt; just pushed latest mocking stuff</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;olabini&gt; awesome</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;olabini&gt; I'll take a look after this weekends serious amount of partying</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;bguthrie_&gt; hahahaha</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;bguthrie_&gt; sweet</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;bguthrie_&gt; you can now specifically multiple complex mock specifications in the same call to receive, which is something that always irritated me about mocha</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;bguthrie_&gt; and any expectations that come after the receive call are applied to all mocks specified within it</span><br />
+<span class="irc-date">[17:37]</span> <span class="irc-black">&lt;bguthrie_&gt; foo expects(bar(5), bar(6)) never</span><br />
+<span class="irc-date">[17:37]</span> <span class="irc-black">&lt;bguthrie_&gt; foo expects(bar(4) andReturn(5), bar(7) atLeastOnce andReturn(8))</span><br />
+<span class="irc-date">[17:37]</span> <span class="irc-black">&lt;olabini&gt; fantastic. good work!</span><br />
+<span class="irc-date">[17:39]</span> <span class="irc-black">&lt;bguthrie_&gt; thanks dude. nice work on ioke! I really enjoy using it. though I get myself tangled up in macros sometimes. :)</span><br />
+<span class="irc-date">[17:39]</span> <span class="irc-black">&lt;bguthrie_&gt; have fun partying!</span><br />
+<span class="irc-date">[17:48]</span> <span class="irc-navy">* bguthrie (n=bguthrie@7.sub-75-197-74.myvzw.com) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[18:07]</span> <span class="irc-navy">* bguthrie_ (n=bguthrie@253.sub-75-197-110.myvzw.com) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[18:08]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:18]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[19:24]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[20:08]</span> <span class="irc-navy">* RobL__ (n=RobL@roblally.plus.com) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[20:30]</span> <span class="irc-green">* bguthrie (n=bguthrie@123.sub-70-208-126.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit ("Leaving")</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-green">* bguthrie_ (n=bguthrie@26.sub-70-211-31.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[21:23]</span> <span class="irc-navy">* bguthrie (n=bguthrie@123.sub-70-208-126.myvzw.com) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[21:43]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has left #ioke</span><br />
+<span class="irc-date">[21:53]</span> <span class="irc-navy">* bguthrie_ (n=bguthrie@26.sub-70-211-31.myvzw.com) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[22:21]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[22:52]</span> <span class="irc-green">* bguthrie (n=bguthrie@173.sub-75-196-223.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[22:53]</span> <span class="irc-navy">* bguthrie (n=bguthrie@173.sub-75-196-223.myvzw.com) Quit (Client Quit)</span><br />

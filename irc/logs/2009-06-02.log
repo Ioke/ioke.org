@@ -1,0 +1,79 @@
+<span class="irc-date">[0:47]</span> <span class="irc-green">* donizetti (n=donizett@201-13-8-158.dsl.telesp.net.br) has joined #ioke</span><br />
+<span class="irc-date">[0:47]</span> <span class="irc-navy">* donizetti (n=donizett@201-13-8-158.dsl.telesp.net.br) Quit (Client Quit)</span><br />
+<span class="irc-date">[1:25]</span> <span class="irc-navy">* chr1s (i=chris@punt.slashpunt.org) Quit (leguin.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[1:26]</span> <span class="irc-green">* chr1s (i=chris@punt.slashpunt.org) has joined #ioke</span><br />
+<span class="irc-date">[4:37]</span> <span class="irc-navy">* chr1s (i=chris@punt.slashpunt.org) Quit (leguin.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[4:37]</span> <span class="irc-navy">* IokeHurricane (n=IokeHurr@8.12.35.212) Quit (leguin.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[4:37]</span> <span class="irc-navy">* CIA-8 (n=CIA@208.69.182.149.simpli.biz) Quit (leguin.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[4:37]</span> <span class="irc-green">* IokeHurricane (n=IokeHurr@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[4:37]</span> <span class="irc-green">* chr1s (i=chris@punt.slashpunt.org) has joined #ioke</span><br />
+<span class="irc-date">[4:37]</span> <span class="irc-green">* CIA-8 (n=CIA@208.69.182.149.simpli.biz) has joined #ioke</span><br />
+<span class="irc-date">[4:45]</span> <span class="irc-red">[freenode-connect VERSION]</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-navy">* chr1s (i=chris@punt.slashpunt.org) Quit (leguin.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-navy">* IokeHurricane (n=IokeHurr@8.12.35.212) Quit (leguin.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-navy">* CIA-8 (n=CIA@208.69.182.149.simpli.biz) Quit (leguin.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-green">* IokeHurricane (n=IokeHurr@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-green">* chr1s (i=chris@punt.slashpunt.org) has joined #ioke</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-green">* CIA-8 (n=CIA@208.69.182.149.simpli.biz) has joined #ioke</span><br />
+<span class="irc-date">[8:56]</span> <span class="irc-red">[freenode-connect VERSION]</span><br />
+<span class="irc-date">[10:57]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[11:28]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[12:29]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[13:13]</span> <span class="irc-green">* naeu (n=sam@h149206.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[13:57]</span> <span class="irc-black">&lt;martido&gt; lol ... just got an email with this subject: [ioke-scm] SALE 80% 0FF on Pfizer! Ola seems to have changed his employer ;)</span><br />
+<span class="irc-date">[14:33]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-127.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-green">* donizetti (n=donizett@187.37.198.20) has joined #ioke</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-black">&lt;donizetti&gt; hello guys</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-black">&lt;donizetti&gt; naeu: are you busy?</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-black">&lt;naeu&gt; donizetti: hey there</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-black">&lt;donizetti&gt; naeu : if not i would like to ask you something! he</span><br />
+<span class="irc-date">[14:38]</span> <span class="irc-black">&lt;naeu&gt; go ahead...</span><br />
+<span class="irc-date">[14:38]</span> <span class="irc-black">&lt;naeu&gt; although don't assume I can answer it ;-)</span><br />
+<span class="irc-date">[14:39]</span> <span class="irc-black">&lt;donizetti&gt; I've been going through a little problem with ioke</span><br />
+<span class="irc-date">[14:39]</span> <span class="irc-black">&lt;donizetti&gt; I was trying to implement an example to show at my talk</span><br />
+<span class="irc-date">[14:40]</span> <span class="irc-black">&lt;donizetti&gt; and to show a little of Java Integration I decided to use java.util.Date and java.text.SimpleDateFormat!</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-black">&lt;naeu&gt; ok, well I should first up say I haven't done any Java integration stuff yet</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-black">&lt;donizetti&gt; but when I instanciate an java.text.SimpleDateFormat new and try to call the format method i receive an signal that the method format does not exist on the class SimpleDateFormat!</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-black">&lt;donizetti&gt; :(</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-black">&lt;naeu&gt; do you have a gist of your code?</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[14:43]</span> <span class="irc-black">&lt;donizetti&gt; dateFormat = java:text:SimpleDateFormat new("dd/MM/yyyy")</span><br />
+<span class="irc-date">[14:43]</span> <span class="irc-black">&lt;donizetti&gt; dateFormat.format(java:util:Date new)</span><br />
+<span class="irc-date">[14:43]</span> <span class="irc-black">&lt;donizetti&gt; just this lines can show you what I'm talking about!</span><br />
+<span class="irc-date">[14:44]</span> <span class="irc-black">&lt;donizetti&gt; I don't know if i'm doing a mistake or if ioke has a bug on java integration!</span><br />
+<span class="irc-date">[14:45]</span> <span class="irc-black">&lt;donizetti&gt; ioke claim that it can't find a cell called 'format' that is a method on the java api!</span><br />
+<span class="irc-date">[14:54]</span> <span class="irc-black">&lt;naeu&gt; what would the equivalent code in Java look like?</span><br />
+<span class="irc-date">[14:56]</span> <span class="irc-black">&lt;donizetti&gt; SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");</span><br />
+<span class="irc-date">[14:56]</span> <span class="irc-black">&lt;donizetti&gt; dateFormat(new Date());</span><br />
+<span class="irc-date">[14:56]</span> <span class="irc-black">&lt;naeu&gt; ok</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-black">&lt;naeu&gt; well Ioke can see the format cell:</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-black">&lt;naeu&gt; f = java:text:SimpleDateFormat new("dd/MM/yyyy")</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-black">&lt;naeu&gt; cells = f cellNames(true) sort - Origin cellNames(true)</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-black">&lt;naeu&gt; cells grep(#/format/)</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-black">&lt;naeu&gt; +&gt; [:"field:formatData", :"field:formatData=", :format, :formatToCharacterIterator]</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-black">&lt;naeu&gt; but I can't seem to call it without explosions happening</span><br />
+<span class="irc-date">[14:58]</span> <span class="irc-black">&lt;donizetti&gt; so</span><br />
+<span class="irc-date">[14:58]</span> <span class="irc-black">&lt;donizetti&gt; ioke can see the cell :format</span><br />
+<span class="irc-date">[14:58]</span> <span class="irc-black">&lt;donizetti&gt; but</span><br />
+<span class="irc-date">[14:59]</span> <span class="irc-black">&lt;donizetti&gt; this cell is an method overloaded in the java api!</span><br />
+<span class="irc-date">[14:59]</span> <span class="irc-black">&lt;donizetti&gt; there are 2 methods on the java api!</span><br />
+<span class="irc-date">[15:00]</span> <span class="irc-black">&lt;donizetti&gt; the class SimpleDateFormat is a subclass of DateFormat, SimpleDateFormat has a method called format that receives 3 parameters and his superclass has a method called format that receive just one parameter (the one i'm trying to call)!</span><br />
+<span class="irc-date">[15:02]</span> <span class="irc-black">&lt;donizetti&gt; :(</span><br />
+<span class="irc-date">[15:03]</span> <span class="irc-black">&lt;donizetti&gt; i will send an email to the ioke group!</span><br />
+<span class="irc-date">[15:03]</span> <span class="irc-black">&lt;donizetti&gt; thanks naeu</span><br />
+<span class="irc-date">[15:03]</span> <span class="irc-black">&lt;donizetti&gt; i need to levae right now</span><br />
+<span class="irc-date">[15:03]</span> <span class="irc-black">&lt;donizetti&gt; have a meeting!</span><br />
+<span class="irc-date">[15:03]</span> <span class="irc-black">&lt;donizetti&gt; ttyl</span><br />
+<span class="irc-date">[15:03]</span> <span class="irc-navy">* donizetti (n=donizett@187.37.198.20) Quit ()</span><br />
+<span class="irc-date">[15:26]</span> <span class="irc-navy">* naeu (n=sam@h149206.upc-h.chello.nl) Quit ()</span><br />
+<span class="irc-date">[15:45]</span> <span class="irc-green">* donizetti (n=donizett@187.37.198.20) has joined #ioke</span><br />
+<span class="irc-date">[15:47]</span> <span class="irc-navy">* donizetti (n=donizett@187.37.198.20) Quit (Client Quit)</span><br />
+<span class="irc-date">[15:51]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[16:13]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit ()</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-127.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[16:34]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[17:26]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-213.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[17:58]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-213.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-191.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-191.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[21:44]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />

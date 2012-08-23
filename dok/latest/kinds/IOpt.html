@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Kind: DefaultBehavior</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href=".././dokgen-style.css" type="text/css" media="screen" />
+    <script language="JavaScript" type="text/javascript">
+    // <![CDATA[
+
+        function toggleSource( id )
+        {
+          var elem
+          var link
+
+          if( document.getElementById )
+          {
+            elem = document.getElementById( id )
+            link = document.getElementById( "l_" + id )
+          }
+          else if ( document.all )
+          {
+            elem = eval( "document.all." + id )
+            link = eval( "document.all.l_" + id )
+          }
+          else
+            return false;
+
+          if( elem.style.display == "block" )
+          {
+            elem.style.display = "none"
+            link.innerHTML = "show source"
+          }
+          else
+          {
+            elem.style.display = "block"
+            link.innerHTML = "hide source"
+          }
+        }
+
+        function openCode( url )
+        {
+          window.open( url, "SOURCE_CODE", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=480,width=750" ).focus();
+        }
+      // ]]>
+    </script>
+  </head>
+
+  <body>
+    <table border='0' cellpadding='0' cellspacing='0' width="100%" class='banner'>
+      <tr>
+        <td>
+          <table width="100%" border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+              <td class="file-title" colspan="2">
+                <span class="file-title-prefix">Kind</span>
+                <br />
+                IOpt
+              </td>
+              <td align="right">
+                <table cellspacing="0" cellpadding="2">
+                  <tr>
+                    <td>Main mimic:</td>
+                    <td>
+                      <a href="../kinds/Origin.html">Origin</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <div id="bodyContent">
+      <div id="content">
+        <div class="description">
+          <p>
+
+          </p>
+        </div>
+
+        <div class="sectiontitle">Mimics</div>
+        <ul>
+          <li><a href="../kinds/Origin.html">Origin</a></li>
+        </ul>
+
+        <div class="sectiontitle">Inactive cells</div>
+        <ul>
+          <li><a href="#C00246">kind</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Active cells</div>
+        <ul>
+          <li><a href="#C00304">[](arg)</a></li>
+<li><a href="#C00305">[]=(...)</a></li>
+<li><a href="#C00310">asText()</a></li>
+<li><a href="#C00311">help(...)</a></li>
+<li><a href="#C00300">initialize()</a></li>
+<li><a href="#C00303">iopt:get(arg)</a></li>
+<li><a href="#C00301">iopt:ion(arg)</a></li>
+<li><a href="#C00302">iopt:key(arg)</a></li>
+<li><a href="#C00306">on(...)</a></li>
+<li><a href="#C00307">on=(...)</a></li>
+<li><a href="#C00309">parse(argv, +:krest)</a></li>
+<li><a href="#C00308">parse!(argv, errorUnknownOptions: true, +:krest)</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Specs</div>
+        <div class="specs">
+          
+        </div>
+
+        <div class="sectiontitle">Inactive cells (details)</div>
+                <div class="cell">
+          <a name="C00246"></a>
+          <table border="0" cellpadding="5">
+            <tr valign="top">
+              <td class="cell-name">kind</td>
+              <td>=</td>
+              <td class="cell-value">"IOpt"</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div class="sectiontitle">Active cells (details)</div>
+                <div class="cell">
+          <div class="title">
+          <a name="C00304"></a><b>[]</b>(arg)
+          </div>
+          <div class="description">
+            <p>Return the action handling the option given as argument</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00304_source')" id="l_C00304_source">show source</a> ]</p>
+            <div id="C00304_source" class="dyn-source">
+<pre>
+method(arg, 
+  if(h = iopt:get(arg), if(h cell?(:action), h action)))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00305"></a><b>[]=</b>(...)
+          </div>
+          <div class="description">
+            <p>Create an action that handles the options given as indeces.
+    This RHS action can be one of several things:
+
+    nil - Will unregister the options from this object.
+    Symbol - Will create an Action CellActivation that will activate the cell with
+             that name upon execution.
+    :@     - Will create an Action CellAssignment that will store the required
+             option argument on the named cell.
+             e.g. :@here will store its value in cell(:here)
+    Text   - Will create an alias for the RHS option.
+    Action - Will register the action to handle options.
+    Message - Will create an Action MessageEvaluation that will evaluate the
+              message given on the action receiver.
+    value  - Will create an Action ValueActivation that will activate the given
+             value, this can anything like Method, LexicalContext, Macros, etc.
+    </p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00305_source')" id="l_C00305_source">show source</a> ]</p>
+            <div id="C00305_source" class="dyn-source">
+<pre>
+macro(
+  options = list 
+  call arguments butLast each(i, a, 
+    a = call argAt(i) 
+    unless(m = iopt:ion(a), 
+      error!(MalformedOption, text: "Not a valid option: #{a}", option: a)) 
+    options &lt;&lt;(m option)) 
+  action = call arguments last 
+  action = if(action name ==(:(":@")) &&(action next) &&(action next next nil?), 
+      Action CellAssignment mimic(action next name), 
+      call argAt(call arguments length -(1))) 
+  case(cell(:action) kind, 
+    "nil", options each(o, iopt:actions [](o) = nil) 
+    return, 
+    "Symbol", 
+    if(action asText [](0 ..(0)) ==("@"), 
+      action = Action CellAssignment mimic(:(action asText [](1 ..(-(1))))), 
+      action = Action CellActivation mimic(action)), 
+    "Text", 
+    o = iopt:ion(action) 
+    unless(o, 
+      signal!(MalformedOption, text: "Not a valid option: #{action}", option: action)) 
+    unless(action = iopt:actions [](o option), 
+      signal!(NoActionForOption, 
+        text: "No action registered for option #{o option}", option: o option)), 
+    "Message", 
+    action = Action MessageEvaluation mimic(action), 
+    unless(cell(:action) mimics?(Action), 
+      action = Action ValueActivation mimic(cell(:action)))) 
+  action iopt = self 
+  if(@ cell("iopt:receiver"), action receiver = iopt:receiver) 
+  options each(o, action options &lt;&lt;(o) 
+    iopt:actions [](o) = action) 
+  action)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00310"></a><b>asText</b>()
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00310_source')" id="l_C00310_source">show source</a> ]</p>
+            <div id="C00310_source" class="dyn-source">
+<pre>
+method(
+  help(:plain) asText)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00311"></a><b>help</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00311_source')" id="l_C00311_source">show source</a> ]</p>
+            <div id="C00311_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      1), 
+    
+    format = call argAt(
+        0) 
+    
+    iopt:help [](format), 
+    argCount &gt;=(
+      1), 
+    
+    format = call argAt(
+        0) 
+    body = call arguments [](
+        1 ..(-(1))) 
+    
+    name = (format asText [](0 ..(0)) upper) +(format asText [](1 ..(-(1)))) 
+    msg = ('(mimic) &lt;&lt;(Message wrap(self))) 
+    body each(a, msg &lt;&lt;(a)) 
+    iopt:help [](format) = msg sendTo(IOpt Help cell(name)), 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00300"></a><b>initialize</b>()
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00300_source')" id="l_C00300_source">show source</a> ]</p>
+            <div id="C00300_source" class="dyn-source">
+<pre>
+method(
+  @ iopt:receiver = nil 
+  @ iopt:actions = dict 
+  @ iopt:help = dict(plain: IOpt Help Plain Simple mimic(self)) 
+  @ initialize = method)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00303"></a><b>iopt:get</b>(arg)
+          </div>
+          <div class="description">
+            <p>Return the handler for option</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00303_source')" id="l_C00303_source">show source</a> ]</p>
+            <div id="C00303_source" class="dyn-source">
+<pre>
+method(arg, 
+  if(handler = iopt:ion(arg), 
+    if(handler action = iopt:actions [](handler option), 
+      unless(handler action mimics?(IOpt Action), 
+        signal!(NoActionForOption, text: "Not a valid action for #{arg}", 
+          option: arg, value: handler action))) 
+    handler))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00301"></a><b>iopt:ion</b>(arg)
+          </div>
+          <div class="description">
+            <p>If the argument is a valid option name, it MUST return
+    an object with the following cells:
+
+    short: an string like '-' if it is a short option, otherwise nil.
+           this value must be '-' or whatever prefix you use for short options.
+    option e.g. '-f', '--foo'. this value will be used to look for the
+           the option action by the iopt:get method.
+    immediate: if non-nil indicates this option has an immediate value,
+               for example in --foo=bar the inlined value should be bar
+               for short options like -l22 it should be 22.
+
+    If the argument is not a valid option name, return nil.
+
+    IOpt imposes no restriction on how an option looks like, by default
+    this method handles traditional unix style options. -f --foo.
+    But you can easily change that and have your options look like you
+    want for example like Mike tasks or windows /? style options if you
+    override this method.
+    </p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00301_source')" id="l_C00301_source">show source</a> ]</p>
+            <div id="C00301_source" class="dyn-source">
+<pre>
+method(arg, 
+  if(m = #/^-({long}-)?({name}[\w_-]+)(=({immediate}.+))?$/ match(arg), 
+    if(m long nil? &&(m immediate nil?) &&(m name length &gt;(1)), 
+      m immediate = m name [](1 ..(-(1))) 
+      m name = m name [](0 ..(0))) 
+    m short = if(m long, nil, "-") 
+    m option = if(m long, "--", "-") +(m name) 
+    m))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00302"></a><b>iopt:key</b>(arg)
+          </div>
+          <div class="description">
+            <p>Return non-nil if the argument is an option keyword.
+    If non-nil, the object should have the following cells defined:
+
+    name: The keyword name
+    immediate: The value if it has been provided with the keyword.
+
+    </p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00302_source')" id="l_C00302_source">show source</a> ]</p>
+            <div id="C00302_source" class="dyn-source">
+<pre>
+method(arg, 
+  #/({name}[\w_-]+):({immediate}.+)?$/ match(arg))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00306"></a><b>on</b>(...)
+          </div>
+          <div class="description">
+            <p>You can use this to create actions having an object as receiver.
+
+    - If the first arguments are options, the remaining arguments
+      will be used to create a LexicalBlock which will be the action handler.
+      These lexical blocks can access '@' and 'self' cells that reference
+      the action receiver. (in this case the iopt object itself)
+
+         on(\"-h\", \"--help\", \"Show help\", @println. System exit)
+
+    - If only given one argument, will return a mimic of self, having
+      the given argument as receiver for all actions created with it.
+
+         opts = IOpt on(myApp)
+         opts on(\"--me\", \"Print myApp\", @println)
+         opts on(\"--path\", \"Set the path cell on myApp\", :@path)
+         opts on(\"-f\", \"Call method doSomething on myApp\", :doSomething)
+
+     - If the first argument is an object the remaining arguments
+       are used to create a lexicalBlock to handle the action, having
+       the first argument as receiver.
+
+          on(myApp, \"-v\", \"Print myApp version\", @version println)
+    </p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00306_source')" id="l_C00306_source">show source</a> ]</p>
+            <div id="C00306_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  if(
+    argCount ==(
+      0), 
+    
+    
+    self, 
+    if(
+      argCount ==(
+        1), 
+      
+      receiver = call argAt(
+          0) 
+      
+      other = @ mimic 
+      other iopt:receiver = cell(:receiver) 
+      other, 
+      if(
+        argCount &gt;=(
+          1), 
+        
+        receiver = call argAt(
+            0) 
+        args = call arguments [](
+            1 ..(-(1))) 
+        
+        options = list 
+        docs = list 
+        body = nil 
+        action = nil 
+        if(cell(:receiver) kind?("Text"), 
+          unless(handler = iopt:ion(receiver), 
+            signal!(MalformedOption, text: "Not a valid option: #{receiver}", option: receiver)) 
+          receiver = nil 
+          options &lt;&lt;(handler option)) 
+        while(
+          list(:("internal:createText"), :("internal:concatenateText")) include?(args first name) &&(args first last ==(args first)), 
+          txt = args first evaluateOn(call ground) 
+          if(handler = iopt:ion(txt), 
+            options &lt;&lt;(handler option), 
+            docs &lt;&lt;(txt)) 
+          args = args rest) 
+        body = if(args last symbol?, 
+            if(args last name ==(:(":@")), 
+              :("@#{args last next name}"), call argAt(call arguments length -(1))), 
+            if(args last name ==(:cachedResult), 
+              args last evaluateOn(call ground), 
+              args inject('(fn), m, a, m &lt;&lt;(a)) evaluateOn(call ground))) 
+        action = options inject(cell(:body), a, f, @ [](f) = cell(:a)) 
+        if(docs empty?, 
+          if(cell(:body) documentation, action documentation = cell(:body) documentation), 
+          action documentation = docs join("\n")) 
+        if(cell(:receiver), action receiver = cell(:receiver)) 
+        action 
+        , 
+        error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)))) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00307"></a><b>on=</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00307_source')" id="l_C00307_source">show source</a> ]</p>
+            <div id="C00307_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount &gt;=(
+      2), 
+    
+    first = call arguments [](
+        0) 
+    second = call arguments [](
+        1) 
+    rest = call arguments [](
+        2 ..(-(1))) 
+    
+    msg = call arguments butLast inject('(on), m, a, m &lt;&lt;(a)) 
+    msg &lt;&lt;(Message wrap(call argAt(call arguments length -(1)))) 
+    msg evaluateOn(call ground, call receiver), 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00309"></a><b>parse</b>(argv, +:krest)
+          </div>
+          <div class="description">
+            <p>Just parse the command line, don't execute actions.
+
+    If you need to do advanced stuff, like validate mutual exclusive options, or handle
+    unknown options in some way, executing only some actions under certain conditions,
+    then this method is for you.
+
+    See CommandLine initialize for a list of keyword arguments</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00309_source')" id="l_C00309_source">show source</a> ]</p>
+            <div id="C00309_source" class="dyn-source">
+<pre>
+method(argv, +:krest, 
+  CommandLine mimic(self, argv, *(krest)))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00308"></a><b>parse!</b>(argv, errorUnknownOptions: true, +:krest)
+          </div>
+          <div class="description">
+            <p>Execute the options specified on argv.
+
+    This method will first obtain the actions for each option present on argv,
+    consume option arguments for each of them according to their arity.
+
+    The argument given to this method will be stored at cell argv on this object.
+    Elements from argv not consumed by any option will be available at
+    programArguments cell on this object.
+
+    After processing the command line, each action will be executed by priority.
+
+    See CommandLine initialize for a list of keyword arguments
+    </p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00308_source')" id="l_C00308_source">show source</a> ]</p>
+            <div id="C00308_source" class="dyn-source">
+<pre>
+method(argv, errorUnknownOptions: true, +:krest, 
+  cmd = CommandLine mimic(self, argv, *(krest)) 
+  @ argv = cmd argv 
+  @ programArguments = cmd programArguments 
+  @ rest = cmd rest 
+  if(errorUnknownOptions &&(!(cmd unknownOptions empty?)), 
+    error!(UnknownOption, text: "Unknown options: %[%s %]" format(cmd unknownOptions))) 
+  cmd execute 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>

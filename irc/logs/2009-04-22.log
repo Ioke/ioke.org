@@ -1,0 +1,61 @@
+<span class="irc-date">[0:33]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[0:47]</span> <span class="irc-navy">* mozinator (n=mozinato@ftest.info) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[3:09]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[7:08]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini master * r48db4ad / (3 files in 3 dirs): Fix bug #232, don't blow up when printing invalid code that uses internal calls - <a href="http://bit.ly/TuPWl">http://bit.ly/TuPWl</a></span><br />
+<span class="irc-date">[7:08]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini master * red89ac5 / docs/release_announcement_E_ikc : Add the release announcement for ikc - <a href="http://bit.ly/m52PY">http://bit.ly/m52PY</a></span><br />
+<span class="irc-date">[7:12]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[7:24]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini master * rfb4b701 / (4 files in 4 dirs): Fix bug #237 - <a href="http://bit.ly/LqMO7">http://bit.ly/LqMO7</a></span><br />
+<span class="irc-date">[7:34]</span> <span class="irc-green">* exlibris (n=exlibris@port-87-193-165-87.static.qsc.de) has joined #ioke</span><br />
+<span class="irc-date">[7:38]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini master * r2b671ba / (3 files in 3 dirs): Fix bug #234. - <a href="http://bit.ly/171yb9">http://bit.ly/171yb9</a></span><br />
+<span class="irc-date">[7:47]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini master * r0255cf4 / (3 files in 3 dirs): Fix bug #231 - <a href="http://bit.ly/7giUF">http://bit.ly/7giUF</a></span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[8:32]</span> <span class="irc-green">* naeu (n=sam@62.194.36.36) has joined #ioke</span><br />
+<span class="irc-date">[8:40]</span> <span class="irc-green">* cirquitz (n=cirquitz@203.199.114.33) has joined #ioke</span><br />
+<span class="irc-date">[10:01]</span> <span class="irc-green">* naeu_ (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-navy">* naeu (n=sam@62.194.36.36) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[10:11]</span> <span class="irc-green">* olabini (n=ola@122.166.5.191) has joined #ioke</span><br />
+<span class="irc-date">[10:11]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;naeu_&gt; olabini: thanks for the fixes</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;naeu_&gt; oh, and it's really cool that you're concurrently maintaining ikc and ikj</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;olabini&gt; hey</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-black">&lt;olabini&gt; so, Sam</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-black">&lt;olabini&gt; was I right that it was a bug in your test case?</span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;naeu_&gt; ooh, where's the message?</span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;olabini&gt; It's in the closing of that bug</span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;olabini&gt; the bug said that this:</span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;olabini&gt; Text sam = method("#{sam}")</span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;olabini&gt; "foo" sam</span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;olabini&gt; causes a problem</span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;olabini&gt; that's not very strange, since you have a recursive invocation of sam</span><br />
+<span class="irc-date">[10:26]</span> <span class="irc-black">&lt;naeu_&gt; haha, yes you're totally right</span><br />
+<span class="irc-date">[10:26]</span> <span class="irc-brick">* naeu_ slaps head</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; no worries</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; the other bugs were totally valid, of course</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;naeu_&gt; sorry for taking your time on that matter</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-black">&lt;olabini&gt; no worries</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-black">&lt;olabini&gt; it took me about 10 seconds to see the problem</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-black">&lt;olabini&gt; so no time lost</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[11:06]</span> <span class="irc-navy">* olabini (n=ola@122.166.5.191) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[12:35]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini master * rea479c2 / (6 files in 5 dirs): Fix a bug and update version numbers for release - <a href="http://bit.ly/mImfL">http://bit.ly/mImfL</a></span><br />
+<span class="irc-date">[12:38]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini master * r415d076 / (5 files in 4 dirs): Update versions to next snapshot versions - <a href="http://bit.ly/zaUlV">http://bit.ly/zaUlV</a></span><br />
+<span class="irc-date">[12:45]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini gh-pages * r80b1f85 / (110 files in 20 dirs): Update pages for the ikj 0.3.1 and ikc 0.1.1 releases - <a href="http://bit.ly/t09DV">http://bit.ly/t09DV</a></span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-navy">* cirquitz (n=cirquitz@203.199.114.33) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[14:24]</span> <span class="irc-navy">* naeu_ (n=sam@mail.innovationfactory.nl) Quit ()</span><br />
+<span class="irc-date">[15:22]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[15:33]</span> <span class="irc-navy">* exlibris (n=exlibris@port-87-193-165-87.static.qsc.de) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[15:35]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[15:35]</span> <span class="irc-green">* exlibris (n=exlibris@port-87-193-165-87.static.qsc.de) has joined #ioke</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit ()</span><br />
+<span class="irc-date">[16:49]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit ()</span><br />
+<span class="irc-date">[17:48]</span> <span class="irc-green">* cirquitz (n=cirquitz@203.199.114.33) has joined #ioke</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-navy">* cirquitz (n=cirquitz@203.199.114.33) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[18:32]</span> <span class="irc-green">* kar8nga (n=kar8nga@f-76.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[19:40]</span> <span class="irc-green">* felipero (n=Felipe@201.82.63.95) has joined #ioke</span><br />
+<span class="irc-date">[20:25]</span> <span class="irc-green">* k (n=kar8nga@e-60.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[20:25]</span> <span class="irc-green">* k is now known as Guest49992</span><br />
+<span class="irc-date">[20:34]</span> <span class="irc-navy">* kar8nga (n=kar8nga@f-76.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-navy">* Guest49992 (n=kar8nga@e-60.vc-graz.ac.at) Quit (Connection timed out)</span><br />
+<span class="irc-date">[22:18]</span> <span class="irc-navy">* felipero (n=Felipe@201.82.63.95) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[23:47]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />

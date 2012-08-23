@@ -1,0 +1,205 @@
+<span class="irc-date">[6:26]</span> <span class="irc-black">&lt;bguthrie&gt; I get OutOfMemoryErrors at the weirdest times when I muck around with ISpec internals</span><br />
+<span class="irc-date">[9:08]</span> <span class="irc-green">* martido (n=martin@dslb-088-067-185-097.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[9:09]</span> <span class="irc-black">&lt;martido&gt; good morning (at least in this part of the world)</span><br />
+<span class="irc-date">[9:10]</span> <span class="irc-black">&lt;martido&gt; bguthrie: same for me except that it happens not only with ispec but also when just playing around in the REPL</span><br />
+<span class="irc-date">[9:10]</span> <span class="irc-black">&lt;bguthrie&gt; 'morning martido</span><br />
+<span class="irc-date">[9:11]</span> <span class="irc-black">&lt;bguthrie&gt; with ispec I've been running on the assumption that causing a weird error to be signaled causes ispec to blow up since it's trying to capture test failures</span><br />
+<span class="irc-date">[9:12]</span> <span class="irc-black">&lt;bguthrie&gt; but since the errors seem to occur even during the test construction phase it seems unlikely</span><br />
+<span class="irc-date">[9:12]</span> <span class="irc-black">&lt;bguthrie&gt; ah well</span><br />
+<span class="irc-date">[9:13]</span> <span class="irc-black">&lt;bguthrie&gt; it's 4:15 AM in US - Atlanta and I can't believe I'm still up</span><br />
+<span class="irc-date">[9:13]</span> <span class="irc-black">&lt;martido&gt; hmm ... don't know enough about the Ioke internals to point my finger at the problem</span><br />
+<span class="irc-date">[9:14]</span> <span class="irc-black">&lt;martido&gt; ;) it's 10:15 AM in Germany ... it started snowing last night ... beautiful morning</span><br />
+<span class="irc-date">[9:16]</span> <span class="irc-black">&lt;bguthrie&gt; very nice! where in germany do you live?</span><br />
+<span class="irc-date">[9:16]</span> <span class="irc-green">* slava (n=slava@li13-154.members.linode.com) has left #ioke</span><br />
+<span class="irc-date">[9:16]</span> <span class="irc-black">&lt;martido&gt; in the south, Munich to be exact</span><br />
+<span class="irc-date">[9:19]</span> <span class="irc-black">&lt;martido&gt; so you're still up at 4:20 AM? there's nothing like a night of hacking ;)</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-black">&lt;bguthrie&gt; I visited Munich a couple of years ago, it's a beautiful city</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-black">&lt;bguthrie&gt; and great beer :D</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-black">&lt;bguthrie&gt; yeah, I'm trying to get ISpec to run specs targeted by line</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-black">&lt;bguthrie&gt; and hoping to clean up the internals a bit in the process</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;martido&gt; yeah, it's a really nice city ... been there on a business trip</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;martido&gt; ?</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;martido&gt; speaking of beer: my head's still painfully throbbing ;)</span><br />
+<span class="irc-date">[9:24]</span> <span class="irc-black">&lt;martido&gt; sorry if I'm being dumb, but what do mean by running specs targeted by line?</span><br />
+<span class="irc-date">[9:27]</span> <span class="irc-black">&lt;bguthrie&gt; just personal--my sister went to school for a semester near Frankfurt, and my gf had a friend in Munich, and I had some friends in Vienna--so all around :)</span><br />
+<span class="irc-date">[9:27]</span> <span class="irc-black">&lt;bguthrie&gt; just want to be able to run one specific test instead of having to run all of them at once</span><br />
+<span class="irc-date">[9:28]</span> <span class="irc-black">&lt;bguthrie&gt; and by line so that I can highlight a single line in my text editor and tell it to go run the spec that I'm hovering over</span><br />
+<span class="irc-date">[9:28]</span> <span class="irc-black">&lt;martido&gt; very cool! hope you had a nice time around here. it's always nice to know people in other parts of the world ... good excuse to see the world ;)</span><br />
+<span class="irc-date">[9:29]</span> <span class="irc-black">&lt;bguthrie&gt; it is! I just wish my German was better :P</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-brick">* FiXato hands bguthrie a German study book</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;martido&gt; ;)</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;bguthrie&gt; verily</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;FiXato&gt; although, the best way to actually learn a language would be to live there :)</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;martido&gt; that's right. there's no better way ...</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;bguthrie&gt; well, that's the trouble; my family lived in Vienna when I was younger but we moved to the States when I was 12 or so and I've lost most of it</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;FiXato&gt; in the mean time I'm still learning Norwegian through my gf and an open university</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;bguthrie&gt; I should really go back and study it again!</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;bguthrie&gt; Norwegian sounds like fun</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;FiXato&gt; it is :)</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;martido&gt; so you lived 12 years in Austria? Vienna's also a nice city, but you've got to get used to people's attitude ;)</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;bguthrie&gt; 7 years - 5 through 12, and yes, they do get a bit prickly there ;)</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;martido&gt; Sometimes I watch Norwegian athletes (Biathlon,...) give interviews on TV and sometimes I think I can understand what they're saying ;)</span><br />
+<span class="irc-date">[9:34]</span> <span class="irc-black">&lt;bguthrie&gt; hehe</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;martido&gt; but it might be my imagination ;)</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;FiXato&gt; benefit of learning Norwegian is that I'll also be understanding quite a bit more of Swedish ;p</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;martido&gt; are they closely related? Swedish and Norwegian?</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;martido&gt; the language I mean</span><br />
+<span class="irc-date">[9:36]</span> <span class="irc-black">&lt;FiXato&gt; probably related the same way as Dutch and German</span><br />
+<span class="irc-date">[9:36]</span> <span class="irc-black">&lt;FiXato&gt; olabini might be able to answer it better though ;p</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;martido&gt; ah ok, so close enough to probably pick one word or the other</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;FiXato&gt; yeah</span><br />
+<span class="irc-date">[9:38]</span> <span class="irc-black">&lt;martido&gt; bguthrie: before I forget, that ispec thing sounds really interesting ... hope you can get it to run!</span><br />
+<span class="irc-date">[9:38]</span> <span class="irc-black">&lt;bguthrie&gt; martido: thanks! it's looking good right now actually</span><br />
+<span class="irc-date">[9:39]</span> <span class="irc-black">&lt;bguthrie&gt; just need to ensure that the correct context gets printed out</span><br />
+<span class="irc-date">[9:39]</span> <span class="irc-black">&lt;FiXato&gt; jag ??r / jeg er; tack / takk. the basics look a lot the same ;p</span><br />
+<span class="irc-date">[9:39]</span> <span class="irc-black">&lt;bguthrie&gt; ... and then add run commands to the Textmate bundle</span><br />
+<span class="irc-date">[9:39]</span> <span class="irc-black">&lt;bguthrie&gt; ... and then add an HTML formatter so Textmate output looks pretty</span><br />
+<span class="irc-date">[9:39]</span> <span class="irc-black">&lt;bguthrie&gt; ... and then get back to the mocking framework I was trying to write before I got distracted :)</span><br />
+<span class="irc-date">[9:39]</span> <span class="irc-black">&lt;FiXato&gt; lol</span><br />
+<span class="irc-date">[9:40]</span> <span class="irc-black">&lt;bguthrie&gt; I bet an HTML DSL would be fun too</span><br />
+<span class="irc-date">[9:40]</span> <span class="irc-black">&lt;martido&gt; oops, you're in for a few more nights of hacking I think ;)</span><br />
+<span class="irc-date">[9:40]</span> <span class="irc-black">&lt;bguthrie&gt; div(id: "foo", class: "bar", span(id: "span-foo", "This is some text."))</span><br />
+<span class="irc-date">[9:41]</span> <span class="irc-black">&lt;martido&gt; FiXato: ja, looks really close. in writing at least. but then there's the pronounciation and you might get lost ;)</span><br />
+<span class="irc-date">[9:41]</span> <span class="irc-black">&lt;martido&gt; bguthrie: that an idea of your's? or have you actually tried it out?</span><br />
+<span class="irc-date">[9:41]</span> <span class="irc-black">&lt;bguthrie&gt; just an idea</span><br />
+<span class="irc-date">[9:42]</span> <span class="irc-black">&lt;martido&gt; looks cool, anyway! might be worth a try</span><br />
+<span class="irc-date">[9:45]</span> <span class="irc-black">&lt;martido&gt; btw, I should really get myself a Mac ;) I'm still working with the e Editor on Windows (just imported the Ioke bundle), but unfortunately it does not support all the Textmate functions ...</span><br />
+<span class="irc-date">[9:53]</span> <span class="irc-black">&lt;martido&gt; gotta go for now. gf starts looking a bit indignant ;)</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-green">* martido (n=martin@dslb-088-067-185-097.pools.arcor-ip.net) has left #ioke</span><br />
+<span class="irc-date">[9:56]</span> <span class="irc-black">&lt;bguthrie&gt; aright, just pushed up to github</span><br />
+<span class="irc-date">[9:56]</span> <span class="irc-black">&lt;bguthrie&gt; mocking support broken for now</span><br />
+<span class="irc-date">[9:56]</span> <span class="irc-black">&lt;bguthrie&gt; dokgen probably needs work</span><br />
+<span class="irc-date">[9:57]</span> <span class="irc-black">&lt;bguthrie&gt; and it's possible that there are ISpec edge cases that still need work :D</span><br />
+<span class="irc-date">[9:57]</span> <span class="irc-black">&lt;bguthrie&gt; doing a full spec run and things look good so far though</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;bguthrie&gt; olabini: take a look when you sober up and let me know what you think :)</span><br />
+<span class="irc-date">[9:59]</span> <span class="irc-black">&lt;bguthrie&gt; also, is anyone else getting a java heap error running the LexicalBlock tests?</span><br />
+<span class="irc-date">[9:59]</span> <span class="irc-black">&lt;bguthrie&gt; probably just me</span><br />
+<span class="irc-date">[9:59]</span> <span class="irc-black">&lt;bguthrie&gt; sigh</span><br />
+<span class="irc-date">[9:59]</span> <span class="irc-black">&lt;bguthrie&gt; bedtime!</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;bguthrie&gt; so I lied</span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;bguthrie&gt; ispec will run my spec when I use the path relative to my current directory</span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;bguthrie&gt; but not when I use the absolute pathname</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;bguthrie&gt; which is weird because it's just a use()</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;bguthrie&gt; or is that a known wrinkle?</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;olabini&gt; nope. it should work</span><br />
+<span class="irc-date">[11:30]</span> <span class="irc-black">&lt;olabini&gt; not sure about the other things</span><br />
+<span class="irc-date">[11:30]</span> <span class="irc-black">&lt;olabini&gt; and for the record, there are really two norwegian languages</span><br />
+<span class="irc-date">[11:30]</span> <span class="irc-black">&lt;olabini&gt; one of them is very close to Swedish, the other is closer to Danish</span><br />
+<span class="irc-date">[11:30]</span> <span class="irc-black">&lt;olabini&gt; but they are close enough that most norwegians understand most swedish, and the other way around</span><br />
+<span class="irc-date">[11:45]</span> <span class="irc-black">&lt;olabini&gt; if you get OOME</span><br />
+<span class="irc-date">[11:45]</span> <span class="irc-black">&lt;olabini&gt; try compiling with</span><br />
+<span class="irc-date">[11:45]</span> <span class="irc-black">&lt;olabini&gt; ant jar-notest</span><br />
+<span class="irc-date">[11:45]</span> <span class="irc-black">&lt;olabini&gt; and then run 'ispec test'</span><br />
+<span class="irc-date">[11:46]</span> <span class="irc-black">&lt;olabini&gt; if you only get the OOME when ant is running, you need to create a .antrc that sets ANT_OPTS</span><br />
+<span class="irc-date">[11:46]</span> <span class="irc-black">&lt;olabini&gt; mine looks like this:</span><br />
+<span class="irc-date">[11:46]</span> <span class="irc-black">&lt;olabini&gt; export ANT_OPTS=-Xmx512m</span><br />
+<span class="irc-date">[11:46]</span> <span class="irc-black">&lt;olabini&gt; but that is probably too large</span><br />
+<span class="irc-date">[11:46]</span> <span class="irc-black">&lt;olabini&gt; you will notice that the memory default in the ioke scripts are actually larger than 64</span><br />
+<span class="irc-date">[13:14]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[13:46]</span> <span class="irc-navy">* olabini (n=ola@c-d64ce155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[13:50]</span> <span class="irc-green">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[13:51]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[14:45]</span> <span class="irc-green">* olabini (n=ola@c-d64ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[14:45]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[14:46]</span> <span class="irc-black">&lt;olabini&gt; neat. as it turns out, Java integration can use regular Java cast syntax</span><br />
+<span class="irc-date">[14:46]</span> <span class="irc-black">&lt;olabini&gt; so if you have two methods foo(int) and foo(short)</span><br />
+<span class="irc-date">[14:46]</span> <span class="irc-black">&lt;olabini&gt; you can call the one taking a short by doing:</span><br />
+<span class="irc-date">[14:46]</span> <span class="irc-black">&lt;olabini&gt; foo((short)123)</span><br />
+<span class="irc-date">[14:46]</span> <span class="irc-black">&lt;olabini&gt; writing the code for it right now, and it's pretty easy</span><br />
+<span class="irc-date">[14:46]</span> <span class="irc-black">&lt;olabini&gt; works the same as splatting, really</span><br />
+<span class="irc-date">[14:48]</span> <span class="irc-black">&lt;naeu_&gt; olabini: nice :-)</span><br />
+<span class="irc-date">[15:07]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-126.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[15:14]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r037b964 / (2 files in 2 dirs): Make it possible to choose among overloads using casts - <a href="http://bit.ly/Gdw0">http://bit.ly/Gdw0</a></span><br />
+<span class="irc-date">[15:20]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r1959b52 / (2 files in 2 dirs): Add boolean to available casts - <a href="http://bit.ly/pqeLd">http://bit.ly/pqeLd</a></span><br />
+<span class="irc-date">[17:20]</span> <span class="irc-brick">* olabini is considering using Paranamer, so you can actually invoke methods with keyword arguments...</span><br />
+<span class="irc-date">[17:38]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r7991ad3 / (3 files in 3 dirs): Add some of the tests for Java instance method calling - <a href="http://bit.ly/FVpc">http://bit.ly/FVpc</a></span><br />
+<span class="irc-date">[17:38]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r4548ba6 / test/java_ground_spec.ik : Flesh out loads of test of coercing - <a href="http://bit.ly/15sTBb">http://bit.ly/15sTBb</a></span><br />
+<span class="irc-date">[17:38]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r440c47a / (2 files in 2 dirs): Add tests for static methods too - <a href="http://bit.ly/CRSOP">http://bit.ly/CRSOP</a></span><br />
+<span class="irc-date">[17:38]</span> <span class="irc-black">&lt;olabini&gt; hm. Java integration is coming along really well. next step will be to add aliases for Java-bean style stuff</span><br />
+<span class="irc-date">[17:38]</span> <span class="irc-black">&lt;olabini&gt; I have started to think about the whole interface/implementing classes stuff.</span><br />
+<span class="irc-date">[17:39]</span> <span class="irc-black">&lt;olabini&gt; and I'm wondering if it might make sense to make a clean division between Ioke objects</span><br />
+<span class="irc-date">[17:39]</span> <span class="irc-black">&lt;olabini&gt; that would make it a bit easier to implement it, and since the models are different enough, maybe it's ok</span><br />
+<span class="irc-date">[17:39]</span> <span class="irc-black">&lt;olabini&gt; I'm taking inspiration from Clojure for this</span><br />
+<span class="irc-date">[17:40]</span> <span class="irc-black">&lt;olabini&gt; comments and thoughts?</span><br />
+<span class="irc-date">[17:44]</span> <span class="irc-black">&lt;bguthrie&gt; do you have any code you can throw out? not sure what you mean by a clean division</span><br />
+<span class="irc-date">[17:45]</span> <span class="irc-black">&lt;olabini&gt; eh</span><br />
+<span class="irc-date">[17:45]</span> <span class="irc-black">&lt;olabini&gt; well.</span><br />
+<span class="irc-date">[17:45]</span> <span class="irc-black">&lt;olabini&gt; the problem is that I can't allow any Ioke object to become a Java object</span><br />
+<span class="irc-date">[17:46]</span> <span class="irc-black">&lt;olabini&gt; so basically, I'm thinking about just having a magic method that takes one or several Java interfaces/classes and returns a proxy object that is an implementation of those types</span><br />
+<span class="irc-date">[17:46]</span> <span class="irc-black">&lt;olabini&gt; this means that you can't take an Ioke object and say that it implements an interface</span><br />
+<span class="irc-date">[17:46]</span> <span class="irc-black">&lt;olabini&gt; instead you will have to use delegation of some kind</span><br />
+<span class="irc-date">[17:46]</span> <span class="irc-black">&lt;olabini&gt; it should be fairly intuitive.</span><br />
+<span class="irc-date">[17:46]</span> <span class="irc-black">&lt;olabini&gt; but I haven't started with code examples yet, so it's hard to give example</span><br />
+<span class="irc-date">[17:46]</span> <span class="irc-black">&lt;olabini&gt; s</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;olabini&gt; take a look at the section on "proxy" here: <a href="http://clojure.org/java_interop">http://clojure.org/java_interop</a></span><br />
+<span class="irc-date">[17:48]</span> <span class="irc-black">&lt;bguthrie&gt; reading now</span><br />
+<span class="irc-date">[17:50]</span> <span class="irc-black">&lt;bguthrie&gt; it's kind of a pity that you can't get at protected or super</span><br />
+<span class="irc-date">[17:50]</span> <span class="irc-black">&lt;bguthrie&gt; but it doesn't seem terribly onerous</span><br />
+<span class="irc-date">[17:54]</span> <span class="irc-black">&lt;olabini&gt; hmm?</span><br />
+<span class="irc-date">[17:55]</span> <span class="irc-black">&lt;olabini&gt; how do you mean?</span><br />
+<span class="irc-date">[17:55]</span> <span class="irc-black">&lt;olabini&gt; that can be solved, of course</span><br />
+<span class="irc-date">[17:56]</span> <span class="irc-black">&lt;bguthrie&gt; "Note that while method fns can be provided to override protected methods, they have no other access to protected members, nor to super, as these capabilities cannot be proxied."</span><br />
+<span class="irc-date">[17:56]</span> <span class="irc-black">&lt;olabini&gt; yeah, I know</span><br />
+<span class="irc-date">[17:57]</span> <span class="irc-black">&lt;olabini&gt; but I don't agree</span><br />
+<span class="irc-date">[17:57]</span> <span class="irc-black">&lt;olabini&gt; protected members is really easy to proxy</span><br />
+<span class="irc-date">[17:57]</span> <span class="irc-black">&lt;olabini&gt; I think, at least</span><br />
+<span class="irc-date">[17:57]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[17:57]</span> <span class="irc-black">&lt;olabini&gt; we'll see</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;bguthrie&gt; hey ola, could you take a look at fn_spec line 459?</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;bguthrie&gt; they read "should should" and I think that's what was causing my test run to break</span><br />
+<span class="irc-date">[18:00]</span> <span class="irc-black">&lt;bguthrie&gt; hmm, nope. never m ind.</span><br />
+<span class="irc-date">[18:32]</span> <span class="irc-navy">* Tsion (n=scott@botters/staff/tsion) Quit (Read error: 54 (Connection reset by peer))</span><br />
+<span class="irc-date">[18:33]</span> <span class="irc-green">* Tsion (n=scott@216.65.175.101) has joined #ioke</span><br />
+<span class="irc-date">[18:43]</span> <span class="irc-navy">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[18:43]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:44]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 54 (Connection reset by peer))</span><br />
+<span class="irc-date">[18:45]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:49]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Connection reset by peer)</span><br />
+<span class="irc-date">[18:49]</span> <span class="irc-green">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:52]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-126.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[19:01]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-151.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[19:32]</span> <span class="irc-black">&lt;bguthrie&gt; for the life of me I can't figure out why signalling an error in my branch of ispec occasionally causes a java heap exception via StringBuilder</span><br />
+<span class="irc-date">[19:33]</span> <span class="irc-black">&lt;olabini&gt; strange</span><br />
+<span class="irc-date">[19:33]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[19:33]</span> <span class="irc-black">&lt;bguthrie&gt; there are a few specs that cause it but there's nothing special about them</span><br />
+<span class="irc-date">[19:33]</span> <span class="irc-black">&lt;olabini&gt; StringBuilder isn't used in many places</span><br />
+<span class="irc-date">[19:33]</span> <span class="irc-black">&lt;olabini&gt; only Text#format I think</span><br />
+<span class="irc-date">[19:34]</span> <span class="irc-black">&lt;bguthrie&gt; fn_spec line 459 triggers it on should signal(Condition Error NoSuchCell) but there are other specs that expect that same signal and run without a hitch</span><br />
+<span class="irc-date">[19:40]</span> <span class="irc-black">&lt;bguthrie&gt; hey ola, it's definitely stuck in an infinite loop reporting a java exception (Runtime.java line 537); I'm printing out the STEs getting added, does the following loop make any sense to you? <a href="http://gist.github.com/60473">http://gist.github.com/60473</a></span><br />
+<span class="irc-date">[19:44]</span> <span class="irc-black">&lt;olabini&gt; hm. interesting</span><br />
+<span class="irc-date">[19:45]</span> <span class="irc-black">&lt;olabini&gt; oh, right</span><br />
+<span class="irc-date">[19:45]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[19:45]</span> <span class="irc-black">&lt;olabini&gt; nothing obvious right now</span><br />
+<span class="irc-date">[19:45]</span> <span class="irc-black">&lt;olabini&gt; those "should should" are bad</span><br />
+<span class="irc-date">[19:46]</span> <span class="irc-black">&lt;olabini&gt; but that's probably not the problem</span><br />
+<span class="irc-date">[19:47]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r2e9e1a9 / test/fn_spec.ik : Remove bad repetition of should. Shouldn't make much difference though. - <a href="http://bit.ly/yUIa">http://bit.ly/yUIa</a></span><br />
+<span class="irc-date">[19:47]</span> <span class="irc-black">&lt;olabini&gt; the problem is that when it's reporting that it can't find a cell</span><br />
+<span class="irc-date">[19:47]</span> <span class="irc-black">&lt;olabini&gt; and if it can't find a cell while doing the reporting, it might go into an infinite loop</span><br />
+<span class="irc-date">[19:47]</span> <span class="irc-black">&lt;olabini&gt; the way I try to find that is by going into IokeObject, in perform and getCell I think it is, before NoSuchCell is trying to be signalled</span><br />
+<span class="irc-date">[19:47]</span> <span class="irc-black">&lt;olabini&gt; at that point I just print the name of the cell that can't be found</span><br />
+<span class="irc-date">[19:48]</span> <span class="irc-black">&lt;olabini&gt; that generally helps pinpoint where the loop is</span><br />
+<span class="irc-date">[19:48]</span> <span class="irc-black">&lt;olabini&gt; ... I might try to add some kind of loop detection based on that - at some point</span><br />
+<span class="irc-date">[19:48]</span> <span class="irc-black">&lt;olabini&gt; it's generally a bad implementation somewhere, but it's hard to detect</span><br />
+<span class="irc-date">[19:54]</span> <span class="irc-black">&lt;bguthrie&gt; hmm, thanks for the tips</span><br />
+<span class="irc-date">[19:54]</span> <span class="irc-black">&lt;bguthrie&gt; yeah it's not the should should as far as I can tell - taking it out doesn't do much good</span><br />
+<span class="irc-date">[20:13]</span> <span class="irc-green">* bguthrie_ (n=bguthrie@c-24-30-76-226.hsd1.ga.comcast.net) has joined #ioke</span><br />
+<span class="irc-date">[20:15]</span> <span class="irc-green">* bguthrie__ (n=bguthrie@c-24-30-76-226.hsd1.ga.comcast.net) has joined #ioke</span><br />
+<span class="irc-date">[20:30]</span> <span class="irc-navy">* bguthrie (n=bguthrie@c-24-30-76-226.hsd1.ga.comcast.net) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-navy">* bguthrie_ (n=bguthrie@c-24-30-76-226.hsd1.ga.comcast.net) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[21:17]</span> <span class="irc-navy">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[21:22]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-green">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[21:38]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Connection reset by peer)</span><br />
+<span class="irc-date">[21:51]</span> <span class="irc-green">* wavis (n=wavis@adsl-69-106-240-45.dsl.pltn13.pacbell.net) has joined #ioke</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-black">&lt;wavis&gt; I'm getting a stack overflow just referencing JavaGround</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-black">&lt;wavis&gt; <a href="http://dark-code.bulix.org/fj60g3-69723">http://dark-code.bulix.org/fj60g3-69723</a></span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;wavis&gt; are people aware of this? does it happen elsewhere?</span><br />
+<span class="irc-date">[22:33]</span> <span class="irc-black">&lt;wavis&gt; Ioke E ikj 0.3.0-snapshot [2009-02-08 22:11 -- 928:31775cb8ba88]</span><br />
+<span class="irc-date">[22:34]</span> <span class="irc-black">&lt;wavis&gt; Java(TM) SE Runtime Environment (build 1.6.0_06-b02)</span><br />
+<span class="irc-date">[22:36]</span> <span class="irc-navy">* wavis (n=wavis@adsl-69-106-240-45.dsl.pltn13.pacbell.net) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[22:37]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-151.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[23:01]</span> <span class="irc-black">&lt;olabini&gt; it's known. things are in development at the moment.</span><br />
+<span class="irc-date">[23:01]</span> <span class="irc-black">&lt;olabini&gt; sorry</span><br />
+<span class="irc-date">[23:22]</span> <span class="irc-green">* iSteps (n=iain@88-107-5-252.dynamic.dsl.as9105.com) has joined #ioke</span><br />
+<span class="irc-date">[23:25]</span> <span class="irc-green">* iSteps (n=iain@88-107-5-252.dynamic.dsl.as9105.com) has left #ioke</span><br />
+<span class="irc-date">[23:55]</span> <span class="irc-navy">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />

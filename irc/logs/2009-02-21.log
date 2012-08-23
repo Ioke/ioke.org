@@ -1,0 +1,152 @@
+<span class="irc-date">[0:07]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[0:33]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-27.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[1:37]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[3:24]</span> <span class="irc-green">* bguthrie (n=bguthrie@84.sub-75-207-132.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[4:46]</span> <span class="irc-navy">* bguthrie (n=bguthrie@84.sub-75-207-132.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[5:47]</span> <span class="irc-green">* bguthrie (n=bguthrie@130.sub-75-207-204.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[6:21]</span> <span class="irc-green">* bguthrie_ (n=bguthrie@130.sub-75-207-204.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[6:27]</span> <span class="irc-navy">* bguthrie_ (n=bguthrie@130.sub-75-207-204.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[6:32]</span> <span class="irc-navy">* bguthrie (n=bguthrie@130.sub-75-207-204.myvzw.com) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[6:32]</span> <span class="irc-green">* bguthrie_ (n=bguthrie@77.sub-70-195-187.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[7:59]</span> <span class="irc-navy">* bguthrie_ (n=bguthrie@77.sub-70-195-187.myvzw.com) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[9:12]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:39]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-green">* protoscript (n=jay@c-69-248-249-247.hsd1.nj.comcast.net) has joined #ioke</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;protoscript&gt; greetings gentlefolks</span><br />
+<span class="irc-date">[10:39]</span> <span class="irc-black">&lt;protoscript&gt; i was wondering if there was a vim mode for ioke</span><br />
+<span class="irc-date">[10:42]</span> <span class="irc-green">* olabini (n=ola@c-1a4ee155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[10:42]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[10:43]</span> <span class="irc-black">&lt;olabini&gt; protoscript: no, not yet. as far as I know, no one of the current Ioke people are using Vi.</span><br />
+<span class="irc-date">[10:43]</span> <span class="irc-black">&lt;olabini&gt; care to create one? =)</span><br />
+<span class="irc-date">[10:43]</span> <span class="irc-black">&lt;protoscript&gt; once i learn vimscript well enough, perhaps</span><br />
+<span class="irc-date">[10:43]</span> <span class="irc-black">&lt;protoscript&gt; :]</span><br />
+<span class="irc-date">[10:43]</span> <span class="irc-black">&lt;protoscript&gt; olabini I am really enjoying playing with ioke, so thanks mate</span><br />
+<span class="irc-date">[10:44]</span> <span class="irc-black">&lt;protoscript&gt; i'm a fan of Io and its been interesting learning all of the differences</span><br />
+<span class="irc-date">[10:59]</span> <span class="irc-black">&lt;olabini&gt; glad to hear it</span><br />
+<span class="irc-date">[11:49]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[13:16]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-138.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[13:28]</span> <span class="irc-green">* bguthrie (n=bguthrie@253.sub-75-206-9.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[13:42]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[15:19]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit ("Leaving")</span><br />
+<span class="irc-date">[15:22]</span> <span class="irc-navy">* bguthrie (n=bguthrie@253.sub-75-206-9.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[16:23]</span> <span class="irc-green">* k2 (n=kar8nga@e-137.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[16:23]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-138.vc-graz.ac.at) Quit (Nick collision from services.)</span><br />
+<span class="irc-date">[16:23]</span> <span class="irc-green">* k2 is now known as kar8nga</span><br />
+<span class="irc-date">[16:35]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit ()</span><br />
+<span class="irc-date">[16:49]</span> <span class="irc-green">* k2 (n=kar8nga@j-53.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[16:49]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-137.vc-graz.ac.at) Quit (Nick collision from services.)</span><br />
+<span class="irc-date">[16:49]</span> <span class="irc-green">* k2 is now known as kar8nga</span><br />
+<span class="irc-date">[17:45]</span> <span class="irc-black">&lt;naeu&gt; olabini: howdy</span><br />
+<span class="irc-date">[18:02]</span> <span class="irc-green">* bguthrie (n=bguthrie@33.sub-75-207-33.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[18:07]</span> <span class="irc-black">&lt;naeu&gt; melwin: hey matey-jim</span><br />
+<span class="irc-date">[18:21]</span> <span class="irc-green">* bguthrie_ (n=bguthrie@33.sub-75-207-33.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[18:22]</span> <span class="irc-navy">* bguthrie (n=bguthrie@33.sub-75-207-33.myvzw.com) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[18:31]</span> <span class="irc-black">&lt;olabini&gt; naeu: hello Sam</span><br />
+<span class="irc-date">[18:31]</span> <span class="irc-black">&lt;naeu&gt; olabini: do you have any last requests for Monday?</span><br />
+<span class="irc-date">[18:32]</span> <span class="irc-black">&lt;naeu&gt; also, do you have any plans for the afternoon?</span><br />
+<span class="irc-date">[18:32]</span> <span class="irc-black">&lt;naeu&gt; TTY asked if I could show you around</span><br />
+<span class="irc-date">[18:32]</span> <span class="irc-black">&lt;naeu&gt; is that something you'd like to do?</span><br />
+<span class="irc-date">[18:33]</span> <span class="irc-black">&lt;naeu&gt; or would you prefer to do hotel-room hacking?</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;olabini&gt; nope, no last requests</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;olabini&gt; depends on my health on monday</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;naeu&gt; I can gather a small and interesting group of people and we could tour around and sit in cafes etc.</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;olabini&gt; if I'm better, I would like to see amsterdam</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;naeu&gt; drink coffee and chat</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;olabini&gt; and that would be very nice</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;olabini&gt; but I really won't know until Monday morning about that</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-navy">* bguthrie_ (n=bguthrie@33.sub-75-207-33.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;naeu&gt; ok :-)</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;olabini&gt; I have a quite important meeting 6-7</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;olabini&gt; but that's it</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;naeu&gt; ok :-)</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;olabini&gt; we should probably trade numbers, btw. could you mail me yours?</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;naeu&gt; that means we should take an early dinner</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;olabini&gt; sounds like a plan</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;olabini&gt; oh. btw. 35 minutes .... that will be tight. =)</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;naeu&gt; TTY asked me to come and meet you at 12</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;olabini&gt; perfect</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;naeu&gt; yeah, 35 minutes is really sucky</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;olabini&gt; it's ok.</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;naeu&gt; 50 is better</span><br />
+<span class="irc-date">[18:35]</span> <span class="irc-black">&lt;naeu&gt; i'm sure you could eat into the breaks</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;olabini&gt; I have something like 20 slides right now, where 5-6 of them are place holders for live coding</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;naeu&gt; live coding is the way forward</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;olabini&gt; anyway, I'm off for now</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;naeu&gt; and if you can start off with a ruby context</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;naeu&gt; and take them to an ioke context</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;naeu&gt; that would be a dream :-)</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;olabini&gt; yeah, I'll probably do something like that</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;naeu&gt; ok, cheerio</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;olabini&gt; I have a nice example of 5 lines of Ruby code</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;olabini&gt; and the AST that those lines become</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;naeu&gt; hehehe</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;olabini&gt; and then the equivalent for Ioke</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-black">&lt;naeu&gt; brilliant</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-black">&lt;naeu&gt; that's exactly what's needed</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-black">&lt;olabini&gt; that's going to show how far Ruby is from being homoiconic</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-black">&lt;naeu&gt; yeah</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-black">&lt;olabini&gt; but yeah, I think I have it under control now</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-black">&lt;naeu&gt; and it's really topical given all the Ruby AST hacking stuff going on at the moment</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-black">&lt;olabini&gt; and lets plan for seeing Amsterdam and meeting nice people</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-black">&lt;naeu&gt; e.g. Braithwaite's andand stuff</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-black">&lt;olabini&gt; that sounds like fun</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-black">&lt;olabini&gt; that stuff isn't even a question with Ioke</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-black">&lt;olabini&gt; anyway</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-black">&lt;olabini&gt; bye</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-black">&lt;naeu&gt; but yes, let's try and have a nice time</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-black">&lt;naeu&gt; and we'll make it relaxing for you as much as possible</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-black">&lt;naeu&gt; take care</span><br />
+<span class="irc-date">[18:58]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[19:54]</span> <span class="irc-navy">* protoscript (n=jay@c-69-248-249-247.hsd1.nj.comcast.net) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[20:20]</span> <span class="irc-green">* bguthrie (n=bguthrie@218.sub-70-195-238.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[20:23]</span> <span class="irc-green">* k2 (n=kar8nga@e-120.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[20:23]</span> <span class="irc-navy">* kar8nga (n=kar8nga@j-53.vc-graz.ac.at) Quit (Nick collision from services.)</span><br />
+<span class="irc-date">[20:23]</span> <span class="irc-green">* k2 is now known as kar8nga</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-green">* bguthrie_ (n=bguthrie@218.sub-70-195-238.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[20:57]</span> <span class="irc-navy">* bguthrie (n=bguthrie@218.sub-70-195-238.myvzw.com) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[21:03]</span> <span class="irc-green">* bguthrie (n=bguthrie@adsl-75-37-101-105.dsl.chcgil.sbcglobal.net) has joined #ioke</span><br />
+<span class="irc-date">[21:08]</span> <span class="irc-navy">* bguthrie (n=bguthrie@adsl-75-37-101-105.dsl.chcgil.sbcglobal.net) Quit (Client Quit)</span><br />
+<span class="irc-date">[21:17]</span> <span class="irc-green">* bguthrie (n=bguthrie@adsl-75-37-101-105.dsl.chcgil.sbcglobal.net) has joined #ioke</span><br />
+<span class="irc-date">[21:22]</span> <span class="irc-navy">* bguthrie_ (n=bguthrie@218.sub-70-195-238.myvzw.com) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[21:40]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[21:57]</span> <span class="irc-green">* bguthrie_ (n=bguthrie@dhcp-165-124-229-112.medill.northwestern.edu) has joined #ioke</span><br />
+<span class="irc-date">[21:57]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-120.vc-graz.ac.at) Quit (Connection timed out)</span><br />
+<span class="irc-date">[22:14]</span> <span class="irc-navy">* bguthrie (n=bguthrie@adsl-75-37-101-105.dsl.chcgil.sbcglobal.net) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-39.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[22:44]</span> <span class="irc-black">&lt;andreaja&gt; that sounds pretty cool, will there be videos available online?</span><br />
+<span class="irc-date">[22:47]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[23:20]</span> <span class="irc-black">&lt;olabini&gt; naeu: andreaja asks if there will be any videos available. you know?</span><br />
+<span class="irc-date">[23:21]</span> <span class="irc-black">&lt;naeu&gt; I was thinking about that this afternoon</span><br />
+<span class="irc-date">[23:21]</span> <span class="irc-black">&lt;naeu&gt; I'm not sure if anything has been organised</span><br />
+<span class="irc-date">[23:21]</span> <span class="irc-black">&lt;naeu&gt; and I'm trying to figure out where to get a camera from</span><br />
+<span class="irc-date">[23:21]</span> <span class="irc-black">&lt;naeu&gt; I have a mini video camera which might suffice</span><br />
+<span class="irc-date">[23:22]</span> <span class="irc-black">&lt;naeu&gt; would you be able to record your screen?</span><br />
+<span class="irc-date">[23:22]</span> <span class="irc-black">&lt;olabini&gt; good question</span><br />
+<span class="irc-date">[23:22]</span> <span class="irc-black">&lt;olabini&gt; might be possible to find some program to do it</span><br />
+<span class="irc-date">[23:23]</span> <span class="irc-black">&lt;olabini&gt; not sure how people generally do that</span><br />
+<span class="irc-date">[23:23]</span> <span class="irc-black">&lt;naeu&gt; me neither :-)</span><br />
+<span class="irc-date">[23:23]</span> <span class="irc-black">&lt;naeu&gt; all the options I know of cost money</span><br />
+<span class="irc-date">[23:23]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[23:24]</span> <span class="irc-black">&lt;naeu&gt; but I imagine, expert equipment not forthcoming, that you recording your screen, a mic somewhere (which I have) and a little video camera would be enough</span><br />
+<span class="irc-date">[23:25]</span> <span class="irc-black">&lt;naeu&gt; although my mic is totally new, and I'm yet to use it properly, so it might be a bit hit and miss</span><br />
+<span class="irc-date">[23:25]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[23:28]</span> <span class="irc-black">&lt;naeu&gt; Jing looks to be free: <a href="http://www.jingproject.com/">http://www.jingproject.com/</a></span><br />
+<span class="irc-date">[23:29]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-39.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[23:32]</span> <span class="irc-black">&lt;andreaja&gt; slides and audio would be great</span><br />
+<span class="irc-date">[23:32]</span> <span class="irc-black">&lt;andreaja&gt; well, screencast with audio</span><br />
+<span class="irc-date">[23:34]</span> <span class="irc-black">&lt;olabini&gt; slides will be no problem</span><br />
+<span class="irc-date">[23:34]</span> <span class="irc-black">&lt;olabini&gt; but it won't be highly useful either - since lots of my explanations will be based around live coding</span><br />
+<span class="irc-date">[23:44]</span> <span class="irc-black">&lt;naeu&gt; olabini: Jing seems to capture both the screen and mic well</span><br />
+<span class="irc-date">[23:44]</span> <span class="irc-black">&lt;naeu&gt; the free version saves to a flash movie</span><br />
+<span class="irc-date">[23:55]</span> <span class="irc-black">&lt;naeu&gt; anyway, it's bedtime for me</span><br />
+<span class="irc-date">[23:55]</span> <span class="irc-black">&lt;naeu&gt; night night</span><br />
+<span class="irc-date">[23:55]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />

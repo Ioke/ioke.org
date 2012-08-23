@@ -1,0 +1,132 @@
+<span class="irc-date">[5:03]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[7:05]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[7:31]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[10:03]</span> <span class="irc-green">* naeu (n=sam@h155233.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[13:00]</span> <span class="irc-green">* donizetti (n=donizett@187.37.206.68) has joined #ioke</span><br />
+<span class="irc-date">[13:00]</span> <span class="irc-black">&lt;donizetti&gt; hi guys!</span><br />
+<span class="irc-date">[13:04]</span> <span class="irc-black">&lt;naeu&gt; donizetti: hey there</span><br />
+<span class="irc-date">[13:06]</span> <span class="irc-black">&lt;donizetti&gt; naeu : hi</span><br />
+<span class="irc-date">[13:06]</span> <span class="irc-black">&lt;naeu&gt; how's things?</span><br />
+<span class="irc-date">[13:06]</span> <span class="irc-black">&lt;donizetti&gt; pretty good about you?</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;donizetti&gt; how about you?</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;donizetti&gt; did you see one of last Ola's twitts?</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;donizetti&gt; about what to do next with ioke?</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;donizetti&gt; !</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-black">&lt;naeu&gt; yep</span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-black">&lt;donizetti&gt; i've been thinking about ioke been static typed!</span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-black">&lt;donizetti&gt; and get really confused! hehe</span><br />
+<span class="irc-date">[13:17]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[13:17]</span> <span class="irc-black">&lt;naeu&gt; I'm really interested in Ola's ideas regarding tree rewriting</span><br />
+<span class="irc-date">[13:17]</span> <span class="irc-black">&lt;donizetti&gt; yeah I liked that too!</span><br />
+<span class="irc-date">[13:21]</span> <span class="irc-black">&lt;donizetti&gt; what was your last twettie about?</span><br />
+<span class="irc-date">[13:22]</span> <span class="irc-black">&lt;naeu&gt; you mean this one: "Really appreciating the subtle improvements of Menlo over DejaVu Sans Mono."</span><br />
+<span class="irc-date">[13:22]</span> <span class="irc-black">&lt;donizetti&gt; yeah!</span><br />
+<span class="irc-date">[13:22]</span> <span class="irc-black">&lt;donizetti&gt; i'm following you on twitter! :P</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;naeu&gt; well they're both fonts</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;naeu&gt; DejaVu Sans Mono is a slight modification of Bitstream Vera Sans Mono - both open source fonts</span><br />
+<span class="irc-date">[13:25]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://en.wikipedia.org/wiki/DejaVu_fonts">http://en.wikipedia.org/wiki/DejaVu_fonts</a></span><br />
+<span class="irc-date">[13:25]</span> <span class="irc-black">&lt;donizetti&gt; cool!</span><br />
+<span class="irc-date">[13:25]</span> <span class="irc-black">&lt;naeu&gt; DejaVu Sans Mono was my favourite fixed width font for a while now</span><br />
+<span class="irc-date">[13:26]</span> <span class="irc-black">&lt;naeu&gt; however, Apple came along and polished it a little and created Menlo</span><br />
+<span class="irc-date">[13:28]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://blog.expandrive.com/2009/06/15/menlo-vera-sans-mono-comparison/">http://blog.expandrive.com/2009/06/15/menlo-vera-sans-mono-comparison/</a></span><br />
+<span class="irc-date">[13:28]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://arstechnica.com/apple/news/2009/06/font-changes-coming-to-mac-os-x-snow-leopard.ars">http://arstechnica.com/apple/news/2009/06/font-changes-coming-to-mac-os-x-snow-leopard.ars</a></span><br />
+<span class="irc-date">[13:29]</span> <span class="irc-black">&lt;donizetti&gt; yeah</span><br />
+<span class="irc-date">[13:29]</span> <span class="irc-black">&lt;donizetti&gt; melon is really nice!</span><br />
+<span class="irc-date">[13:30]</span> <span class="irc-black">&lt;donizetti&gt; what do you use to program?</span><br />
+<span class="irc-date">[13:30]</span> <span class="irc-black">&lt;naeu&gt; melon? :-p</span><br />
+<span class="irc-date">[13:30]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[13:30]</span> <span class="irc-black">&lt;donizetti&gt; hehe</span><br />
+<span class="irc-date">[13:30]</span> <span class="irc-black">&lt;donizetti&gt; menlo</span><br />
+<span class="irc-date">[13:30]</span> <span class="irc-black">&lt;donizetti&gt; sorry</span><br />
+<span class="irc-date">[13:30]</span> <span class="irc-black">&lt;naeu&gt; I use emacs</span><br />
+<span class="irc-date">[13:31]</span> <span class="irc-black">&lt;donizetti&gt; \O/</span><br />
+<span class="irc-date">[13:31]</span> <span class="irc-black">&lt;donizetti&gt; can you give me a few tips about it?</span><br />
+<span class="irc-date">[13:31]</span> <span class="irc-black">&lt;naeu&gt; yeah, stick with it</span><br />
+<span class="irc-date">[13:31]</span> <span class="irc-black">&lt;naeu&gt; I found it *really* hard at first</span><br />
+<span class="irc-date">[13:31]</span> <span class="irc-black">&lt;donizetti&gt; i thinking about given it a try!</span><br />
+<span class="irc-date">[13:31]</span> <span class="irc-black">&lt;naeu&gt; what OS do you use?</span><br />
+<span class="irc-date">[13:31]</span> <span class="irc-black">&lt;donizetti&gt; mac! =D</span><br />
+<span class="irc-date">[13:32]</span> <span class="irc-black">&lt;donizetti&gt; so i used to textmate!</span><br />
+<span class="irc-date">[13:32]</span> <span class="irc-black">&lt;naeu&gt; ok, well I've been having a lot of luck with the combination of the latest cvs nightlies of emacs 23 and the emacs starter kit</span><br />
+<span class="irc-date">[13:32]</span> <span class="irc-black">&lt;donizetti&gt; I mean not that much cos I still like to do java code with the eclipse!</span><br />
+<span class="irc-date">[13:32]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://atomized.org/wp-content/cocoa-emacs-nightly/">http://atomized.org/wp-content/cocoa-emacs-nightly/</a></span><br />
+<span class="irc-date">[13:32]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://github.com/technomancy/emacs-starter-kit/tree/master">http://github.com/technomancy/emacs-starter-kit/tree/master</a></span><br />
+<span class="irc-date">[13:32]</span> <span class="irc-black">&lt;naeu&gt; clone the starter kit to ~/.emacs.d</span><br />
+<span class="irc-date">[13:33]</span> <span class="irc-black">&lt;naeu&gt; then inside create a file with the same name as your username with an .el extension</span><br />
+<span class="irc-date">[13:33]</span> <span class="irc-black">&lt;naeu&gt; (i.e. I have sam.el)</span><br />
+<span class="irc-date">[13:33]</span> <span class="irc-black">&lt;donizetti&gt; i do already have it installed!</span><br />
+<span class="irc-date">[13:34]</span> <span class="irc-black">&lt;naeu&gt; if you use github, you'd be best to fork it</span><br />
+<span class="irc-date">[13:34]</span> <span class="irc-black">&lt;naeu&gt; and clone your fork</span><br />
+<span class="irc-date">[13:34]</span> <span class="irc-black">&lt;naeu&gt; mine is here: <a href="http://github.com/samaaron/emacs-starter-kit/tree/master">http://github.com/samaaron/emacs-starter-kit/tree/master</a></span><br />
+<span class="irc-date">[13:34]</span> <span class="irc-black">&lt;donizetti&gt; cool</span><br />
+<span class="irc-date">[13:34]</span> <span class="irc-black">&lt;naeu&gt; great....</span><br />
+<span class="irc-date">[13:34]</span> <span class="irc-black">&lt;naeu&gt; well you're most of the way there then</span><br />
+<span class="irc-date">[13:35]</span> <span class="irc-black">&lt;donizetti&gt; so</span><br />
+<span class="irc-date">[13:35]</span> <span class="irc-black">&lt;donizetti&gt; I've decided to try it out, cos I heard that a lot of guys use that</span><br />
+<span class="irc-date">[13:36]</span> <span class="irc-black">&lt;donizetti&gt; when I was doing scheme, ioke or ruby i felt a little confused about what use</span><br />
+<span class="irc-date">[13:36]</span> <span class="irc-black">&lt;naeu&gt; cool</span><br />
+<span class="irc-date">[13:36]</span> <span class="irc-black">&lt;donizetti&gt; I've using textmate till now</span><br />
+<span class="irc-date">[13:36]</span> <span class="irc-black">&lt;donizetti&gt; but i don't like it that much</span><br />
+<span class="irc-date">[13:36]</span> <span class="irc-black">&lt;naeu&gt; yeah TextMate is nice</span><br />
+<span class="irc-date">[13:36]</span> <span class="irc-black">&lt;donizetti&gt; is emacs a good alternative?</span><br />
+<span class="irc-date">[13:36]</span> <span class="irc-black">&lt;naeu&gt; although I just got annoyed with the lack up updates</span><br />
+<span class="irc-date">[13:36]</span> <span class="irc-black">&lt;naeu&gt; emacs doesn't look as polished</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;donizetti&gt; if i don't like it I will use vi!</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;naeu&gt; and in some ways (to my eyes) seems a little rougher round the edges in areas</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;naeu&gt; however, it's a ton more powerful</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;naeu&gt; and the stuff to learn and make use of is overwhelming</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;naeu&gt; which means that there's always room for improvement</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;naeu&gt; which is what I like</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-black">&lt;naeu&gt; and bare in mind, emacs and TextMate are currently the only two editors with Ioke highlighting support at the moment</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-black">&lt;donizetti&gt; yeah I saw it on Ola's talk!</span><br />
+<span class="irc-date">[13:39]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[13:39]</span> <span class="irc-black">&lt;donizetti&gt; i will try it</span><br />
+<span class="irc-date">[13:39]</span> <span class="irc-black">&lt;donizetti&gt; looking forward</span><br />
+<span class="irc-date">[13:39]</span> <span class="irc-black">&lt;donizetti&gt; hehe</span><br />
+<span class="irc-date">[13:39]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[13:39]</span> <span class="irc-black">&lt;naeu&gt; let me know how you get along</span><br />
+<span class="irc-date">[13:39]</span> <span class="irc-black">&lt;donizetti&gt; sorry sam</span><br />
+<span class="irc-date">[13:39]</span> <span class="irc-black">&lt;donizetti&gt; but the github link you sent me is about?</span><br />
+<span class="irc-date">[13:40]</span> <span class="irc-black">&lt;donizetti&gt; i didn't get it! :(</span><br />
+<span class="irc-date">[13:40]</span> <span class="irc-black">&lt;naeu&gt; the emacs starter kit</span><br />
+<span class="irc-date">[13:40]</span> <span class="irc-black">&lt;naeu&gt; do you have that?</span><br />
+<span class="irc-date">[13:41]</span> <span class="irc-black">&lt;donizetti&gt;  i just forked it!</span><br />
+<span class="irc-date">[13:42]</span> <span class="irc-black">&lt;donizetti&gt; give a minute and i'll clone it!</span><br />
+<span class="irc-date">[13:42]</span> <span class="irc-black">&lt;donizetti&gt; ok</span><br />
+<span class="irc-date">[13:42]</span> <span class="irc-black">&lt;donizetti&gt; now I have it!</span><br />
+<span class="irc-date">[13:44]</span> <span class="irc-black">&lt;naeu&gt; ok, put it in ~/.emacs.d</span><br />
+<span class="irc-date">[13:44]</span> <span class="irc-black">&lt;naeu&gt; so next time you launch emacs it should have a lot of useful defaults</span><br />
+<span class="irc-date">[13:44]</span> <span class="irc-black">&lt;donizetti&gt; =D</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;donizetti&gt; sam</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;donizetti&gt; what do I do to use the ioke suport on emacs?</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;donizetti&gt; I just have to copy the .el files from share/emacs?</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;donizetti&gt; to ~/emacs.d?</span><br />
+<span class="irc-date">[14:44]</span> <span class="irc-black">&lt;naeu&gt; donizetti: if you have a look at my emacs starter kit fork (<a href="http://github.com/samaaron/emacs-starter-kit/tree/master)">http://github.com/samaaron/emacs-starter-kit/tree/master)</a> you can see I've put inf-ioke.el and ioke-mode.el inside the vendor directory</span><br />
+<span class="irc-date">[14:44]</span> <span class="irc-black">&lt;naeu&gt; and then I have the following code in my personal emacs config file (sam.el)</span><br />
+<span class="irc-date">[14:44]</span> <span class="irc-black">&lt;naeu&gt; ;;ioke mode</span><br />
+<span class="irc-date">[14:44]</span> <span class="irc-black">&lt;naeu&gt; (autoload 'ioke-mode "ioke-mode")</span><br />
+<span class="irc-date">[14:44]</span> <span class="irc-black">&lt;naeu&gt; (autoload 'run-ioke "inf-ioke" nil t)</span><br />
+<span class="irc-date">[14:44]</span> <span class="irc-black">&lt;naeu&gt; (add-to-list 'auto-mode-alist '("\\.ik$" . ioke-mode))</span><br />
+<span class="irc-date">[15:00]</span> <span class="irc-black">&lt;donizetti&gt; thanks sam!</span><br />
+<span class="irc-date">[15:00]</span> <span class="irc-black">&lt;donizetti&gt; I was just making a mess with the username.el file!</span><br />
+<span class="irc-date">[15:00]</span> <span class="irc-black">&lt;donizetti&gt; i was trying to use a different username!</span><br />
+<span class="irc-date">[15:08]</span> <span class="irc-black">&lt;donizetti&gt; ok</span><br />
+<span class="irc-date">[15:08]</span> <span class="irc-black">&lt;donizetti&gt; i'm really confused with all this</span><br />
+<span class="irc-date">[15:08]</span> <span class="irc-black">&lt;donizetti&gt; heheh</span><br />
+<span class="irc-date">[15:08]</span> <span class="irc-black">&lt;donizetti&gt; but it's working</span><br />
+<span class="irc-date">[15:09]</span> <span class="irc-black">&lt;donizetti&gt; i'll need a few more hours playing with it!</span><br />
+<span class="irc-date">[15:14]</span> <span class="irc-black">&lt;donizetti&gt; which version of emacs are you using</span><br />
+<span class="irc-date">[15:14]</span> <span class="irc-black">&lt;donizetti&gt; ?</span><br />
+<span class="irc-date">[15:34]</span> <span class="irc-black">&lt;naeu&gt; i'm using version 23, specifically the cvs build from last night: <a href="http://atomized.org/wp-content/cocoa-emacs-nightly/Cocoa%20Emacs%2023.0.94%20CVS%202009-06-19.zip">http://atomized.org/wp-content/cocoa-emacs-nightly/Cocoa%20Emacs%2023.0.94%20CVS%202009-06-19.zip</a></span><br />
+<span class="irc-date">[16:37]</span> <span class="irc-black">&lt;donizetti&gt; naeu: emacs rocks! =D</span><br />
+<span class="irc-date">[16:39]</span> <span class="irc-green">* donizetti_ (n=donizett@187.37.206.68) has joined #ioke</span><br />
+<span class="irc-date">[16:48]</span> <span class="irc-navy">* naeu (n=sam@h155233.upc-h.chello.nl) Quit ()</span><br />
+<span class="irc-date">[16:48]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-35.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[16:52]</span> <span class="irc-navy">* donizetti_ (n=donizett@187.37.206.68) Quit ()</span><br />
+<span class="irc-date">[16:52]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-35.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[17:03]</span> <span class="irc-navy">* donizetti (n=donizett@187.37.206.68) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[18:02]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-154.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:16]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[18:22]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-154.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[18:53]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />

@@ -1,0 +1,86 @@
+<span class="irc-date">[1:10]</span> <span class="irc-green">* adakkak (n=adakkak@ppp-70-225-168-236.dsl.chmpil.ameritech.net) has joined #ioke</span><br />
+<span class="irc-date">[6:38]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[6:59]</span> <span class="irc-navy">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[7:41]</span> <span class="irc-green">* olabini (n=ola@194.132.20.9) has joined #ioke</span><br />
+<span class="irc-date">[7:41]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[8:21]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[9:11]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-251-055-193.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:27]</span> <span class="irc-navy">* adakkak (n=adakkak@ppp-70-225-168-236.dsl.chmpil.ameritech.net) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-navy">* caboom (n=caboom@77-221.static.ikomline.net) Quit ()</span><br />
+<span class="irc-date">[10:46]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[11:09]</span> <span class="irc-green">* naeu_ (n=sam@dhcp-077-251-055-193.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[11:25]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-251-055-193.chello.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[11:30]</span> <span class="irc-green">* nenorbot (n=nix@bzq-219-145-16.static.bezeqint.net) has joined #ioke</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-black">&lt;martido&gt; hey, for those who were at the Amsterdam presentation the day before yesterday ... how was it?</span><br />
+<span class="irc-date">[13:40]</span> <span class="irc-black">&lt;naeu_&gt; martido: hey</span><br />
+<span class="irc-date">[13:40]</span> <span class="irc-black">&lt;naeu_&gt; it was really good</span><br />
+<span class="irc-date">[13:41]</span> <span class="irc-black">&lt;naeu_&gt; sadly Ola didn't really have enough time to cover everything</span><br />
+<span class="irc-date">[13:41]</span> <span class="irc-black">&lt;naeu_&gt; but meeting him in a cafe beforehand provided a real opportunity for him to show us some really cool stuff :-)</span><br />
+<span class="irc-date">[13:41]</span> <span class="irc-navy">* olabini (n=ola@194.132.20.9) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[13:47]</span> <span class="irc-black">&lt;martido&gt; sounds awesome ;)</span><br />
+<span class="irc-date">[13:47]</span> <span class="irc-black">&lt;martido&gt; so you're an expert now? ;)</span><br />
+<span class="irc-date">[13:48]</span> <span class="irc-black">&lt;martido&gt; I've taken a look at the photos you posted ... there were a lot of presentations, right?</span><br />
+<span class="irc-date">[13:57]</span> <span class="irc-black">&lt;Narnach&gt; martido: there were 5 or 6 presentations that night</span><br />
+<span class="irc-date">[14:00]</span> <span class="irc-black">&lt;martido&gt; ah ok. quite a lot. how long did Ola have time for the Ioke presentation then? What did people say? Did they like it?</span><br />
+<span class="irc-date">[14:02]</span> <span class="irc-black">&lt;naeu_&gt; martido: I only heard positive feedback :-)</span><br />
+<span class="irc-date">[14:02]</span> <span class="irc-black">&lt;naeu_&gt; people seemed really impressed</span><br />
+<span class="irc-date">[14:02]</span> <span class="irc-black">&lt;martido&gt; very cool ... and they should ;)</span><br />
+<span class="irc-date">[14:02]</span> <span class="irc-black">&lt;naeu_&gt; although the only concerns were that it wasn't yet ready - but we all know that</span><br />
+<span class="irc-date">[14:02]</span> <span class="irc-black">&lt;Narnach&gt; I think Ola had an hour or less?</span><br />
+<span class="irc-date">[14:03]</span> <span class="irc-black">&lt;Narnach&gt; then again, the 2 hour demo in the cafe covered a lot more :D</span><br />
+<span class="irc-date">[14:03]</span> <span class="irc-black">&lt;martido&gt; an hour is good enough I think ... you seldom get more e.g. on conferences</span><br />
+<span class="irc-date">[14:03]</span> <span class="irc-black">&lt;martido&gt; man ... 2 hours ... great ... would have loved to be there</span><br />
+<span class="irc-date">[14:31]</span> <span class="irc-black">&lt;naeu_&gt; yeah, the cafe was definitely a lot of fun</span><br />
+<span class="irc-date">[14:49]</span> <span class="irc-green">* vincenz (n=vincenz@li23-146.members.linode.com) has left #ioke</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[16:34]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-197.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[16:58]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-197.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[17:30]</span> <span class="irc-green">* adakkak (n=adakkak@gres110.lis.illinois.edu) has joined #ioke</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-navy">* adakkak (n=adakkak@gres110.lis.illinois.edu) Quit (Client Quit)</span><br />
+<span class="irc-date">[17:39]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has left #ioke</span><br />
+<span class="irc-date">[18:03]</span> <span class="irc-green">* kar8nga (n=kar8nga@f-3.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:06]</span> <span class="irc-navy">* nenorbot (n=nix@bzq-219-145-16.static.bezeqint.net) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[18:51]</span> <span class="irc-navy">* naeu_ (n=sam@dhcp-077-251-055-193.chello.nl) Quit ()</span><br />
+<span class="irc-date">[19:17]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[19:28]</span> <span class="irc-navy">* kar8nga (n=kar8nga@f-3.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[19:44]</span> <span class="irc-green">* adakkak (n=adakkak@gres110.lis.illinois.edu) has joined #ioke</span><br />
+<span class="irc-date">[20:16]</span> <span class="irc-black">&lt;naeu&gt; good evening all</span><br />
+<span class="irc-date">[20:16]</span> <span class="irc-black">&lt;Narnach&gt; naeu: good evening</span><br />
+<span class="irc-date">[20:17]</span> <span class="irc-black">&lt;naeu&gt; Narnach: hey there</span><br />
+<span class="irc-date">[20:17]</span> <span class="irc-black">&lt;naeu&gt; have you ever sat with a cooker in the middle of your living room?</span><br />
+<span class="irc-date">[20:18]</span> <span class="irc-black">&lt;Narnach&gt; I don't recall doing that</span><br />
+<span class="irc-date">[20:18]</span> <span class="irc-black">&lt;Narnach&gt; boiler still dead?</span><br />
+<span class="irc-date">[20:18]</span> <span class="irc-black">&lt;naeu&gt; no, this is my first time</span><br />
+<span class="irc-date">[20:18]</span> <span class="irc-black">&lt;naeu&gt; and yep, totally dead</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-black">&lt;Narnach&gt; any idea when it will be up and running again?</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-black">&lt;naeu&gt; susanna is pretty ill, so i'm trying my best to restore some heat into the house</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-black">&lt;naeu&gt; i have no idea :-(</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-black">&lt;Narnach&gt; auch... that is a bad combo</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-black">&lt;naeu&gt; definitely</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-black">&lt;Narnach&gt; wish her well from me</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-black">&lt;naeu&gt; luckily she's out now at her Dutch course</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-black">&lt;naeu&gt; so she's in the warm</span><br />
+<span class="irc-date">[20:20]</span> <span class="irc-black">&lt;naeu&gt; i'm just trying to make it better for her return</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-navy">* adakkak (n=adakkak@gres110.lis.illinois.edu) Quit ("Ex-Chat")</span><br />
+<span class="irc-date">[21:20]</span> <span class="irc-black">&lt;naeu&gt; olabini: is it possible to initiate Ioke code from Java yet?</span><br />
+<span class="irc-date">[21:26]</span> <span class="irc-black">&lt;olabini&gt; well.</span><br />
+<span class="irc-date">[21:26]</span> <span class="irc-black">&lt;olabini&gt; it's a bit tricky, but yes, of course you can do that</span><br />
+<span class="irc-date">[21:26]</span> <span class="irc-black">&lt;olabini&gt; take a look at ioke.lang.Runtime.init(), at the end, to see how to call Ioke code</span><br />
+<span class="irc-date">[21:26]</span> <span class="irc-black">&lt;naeu&gt; you see, i'm writing a fun bit of code to communicate with some external hardware</span><br />
+<span class="irc-date">[21:27]</span> <span class="irc-black">&lt;naeu&gt; i have a simple dsl-like structure which can convert itself to c++ code, and then I compile it and wrap stdin/out with open3 - all in Ruby</span><br />
+<span class="irc-date">[21:27]</span> <span class="irc-black">&lt;olabini&gt; hehe. neat</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-black">&lt;naeu&gt; the thing is, it would be more fun in Ioke, although it's probably not possible yet</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-black">&lt;naeu&gt; due to no concurrency and no IO libs</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-black">&lt;naeu&gt; so I've been wondering whether I can do the IO stuff in Ruby and the DSL stuff in Ioke</span><br />
+<span class="irc-date">[21:29]</span> <span class="irc-black">&lt;naeu&gt; so, obviously I'd need a way of executing the Ioke code from JRuby,</span><br />
+<span class="irc-date">[21:30]</span> <span class="irc-black">&lt;naeu&gt; I'd also need to build a basic templating engine in Ioke too</span><br />
+<span class="irc-date">[21:30]</span> <span class="irc-black">&lt;naeu&gt; although I wonder what your opinion of templating engines is...</span><br />
+<span class="irc-date">[21:30]</span> <span class="irc-black">&lt;naeu&gt; my current Ruby impl uses erb</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-black">&lt;naeu&gt; would you be happy with an erb style templating lib in Ioke - or would you prefer a different approach?</span><br />
+<span class="irc-date">[21:46]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[22:09]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[22:09]</span> <span class="irc-black">&lt;olabini&gt; hard question</span><br />
+<span class="irc-date">[22:10]</span> <span class="irc-black">&lt;olabini&gt; on principle, I'm opposed to the ERb approach</span><br />
+<span class="irc-date">[22:10]</span> <span class="irc-black">&lt;olabini&gt; in practice, it tends to be very practical</span><br />
+<span class="irc-date">[22:10]</span> <span class="irc-black">&lt;olabini&gt; ... =)</span><br />

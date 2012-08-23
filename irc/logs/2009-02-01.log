@@ -1,0 +1,120 @@
+<span class="irc-date">[0:25]</span> <span class="irc-navy">* bguthrie (n=bguthrie@196.sub-75-206-46.myvzw.com) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[0:42]</span> <span class="irc-green">* bguthrie (n=bguthrie@58.sub-75-207-34.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[1:07]</span> <span class="irc-black">&lt;olabini&gt; bguthrie: well, I decided to not go for that kind of metadata, since cells fills the same function, mostly</span><br />
+<span class="irc-date">[1:08]</span> <span class="irc-black">&lt;olabini&gt; say for methods - you can attach any data to it, really</span><br />
+<span class="irc-date">[1:08]</span> <span class="irc-black">&lt;olabini&gt; I'm not sure what the distinction for metadata would be</span><br />
+<span class="irc-date">[1:08]</span> <span class="irc-black">&lt;olabini&gt; in fact, what is counted as metadata is different for each primitive type - what is metadata for a number might not be metadata for an Origin mimic</span><br />
+<span class="irc-date">[1:08]</span> <span class="irc-black">&lt;bguthrie&gt; olabini: well, do cells have cells?  can you refer to the cell object as a distinct entity from the thing it represents?</span><br />
+<span class="irc-date">[1:09]</span> <span class="irc-black">&lt;olabini&gt; I thought about having Clojure style metadata first, but when I started looking at it, what I could do was the same as without it</span><br />
+<span class="irc-date">[1:09]</span> <span class="irc-black">&lt;olabini&gt; and no, no cells specifically.</span><br />
+<span class="irc-date">[1:09]</span> <span class="irc-black">&lt;olabini&gt; but that's not how Clojure works either</span><br />
+<span class="irc-date">[1:09]</span> <span class="irc-black">&lt;olabini&gt; clojure attaches metadata to that specific reference, which means that even if you assign it to another name, that metadata will remain</span><br />
+<span class="irc-date">[1:10]</span> <span class="irc-black">&lt;olabini&gt; what you're talking about is something different, and should probably be done by convention. ie, the metadata for cell foo will be found in cell metadata:foo</span><br />
+<span class="irc-date">[1:10]</span> <span class="irc-black">&lt;olabini&gt; or something</span><br />
+<span class="irc-date">[1:11]</span> <span class="irc-black">&lt;olabini&gt; cv: if you can pull that off, I would be really impressed. it would be a nice trick to allow Ioke to become totally self hosting --- really easy</span><br />
+<span class="irc-date">[1:11]</span> <span class="irc-black">&lt;bguthrie&gt; hmm, interesting</span><br />
+<span class="irc-date">[1:11]</span> <span class="irc-black">&lt;olabini&gt; kinda like Squek slang</span><br />
+<span class="irc-date">[1:13]</span> <span class="irc-black">&lt;bguthrie&gt; do you define method as a macro?  how does the method docstring get stored?</span><br />
+<span class="irc-date">[1:14]</span> <span class="irc-black">&lt;bguthrie&gt; I think at one point I knew where it was defined :)</span><br />
+<span class="irc-date">[1:14]</span> <span class="irc-black">&lt;bguthrie&gt; ahh, as an ivar on the java class, yes?</span><br />
+<span class="irc-date">[1:15]</span> <span class="irc-black">&lt;bguthrie&gt; hmm no</span><br />
+<span class="irc-date">[2:34]</span> <span class="irc-navy">* bguthrie (n=bguthrie@58.sub-75-207-34.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[5:58]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[6:09]</span> <span class="irc-green">* bguthrie (n=bguthrie@197.sub-75-207-95.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[6:13]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[10:38]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-82.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[11:22]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-82.vc-graz.ac.at) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;olabini&gt; bguthrie: yes</span><br />
+<span class="irc-date">[11:25]</span> <span class="irc-black">&lt;olabini&gt; IokeObject has a member called documentation</span><br />
+<span class="irc-date">[11:25]</span> <span class="irc-black">&lt;olabini&gt; it's not only method-like objects that can have documentation, but any kind of Ioke object</span><br />
+<span class="irc-date">[11:25]</span> <span class="irc-black">&lt;olabini&gt; and 'method' could definitely be defined as a macro that generates a macro, but I haven't done it that way</span><br />
+<span class="irc-date">[11:44]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[12:25]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[13:28]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-162.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[13:55]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[15:01]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[16:09]</span> <span class="irc-navy">* olabini (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[16:30]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has left #ioke</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-green">* olabini (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[16:44]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[17:15]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-162.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[17:21]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-navy">* bguthrie (n=bguthrie@197.sub-75-207-95.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-green">* bguthrie (n=bguthrie@216.sub-75-207-107.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[18:43]</span> <span class="irc-green">* olabini` (n=ola@80.251.192.3) has joined #ioke</span><br />
+<span class="irc-date">[19:00]</span> <span class="irc-navy">* olabini (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[19:26]</span> <span class="irc-navy">* olabini` (n=ola@80.251.192.3) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[19:37]</span> <span class="irc-green">* bguthrie_ (n=bguthrie@216.sub-75-207-107.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[19:37]</span> <span class="irc-navy">* bguthrie (n=bguthrie@216.sub-75-207-107.myvzw.com) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[19:43]</span> <span class="irc-green">* olabini (n=ola@cust-IP-10.data.tre.se) has joined #ioke</span><br />
+<span class="irc-date">[19:43]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[19:46]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[19:47]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[19:47]</span> <span class="irc-black">&lt;melwin&gt; Dudes.</span><br />
+<span class="irc-date">[19:47]</span> <span class="irc-black">&lt;bguthrie_&gt; Dude.</span><br />
+<span class="irc-date">[19:47]</span> <span class="irc-black">&lt;bguthrie_&gt; Like, woah.</span><br />
+<span class="irc-date">[19:48]</span> <span class="irc-black">&lt;melwin&gt; Totally!</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-black">&lt;naeu&gt; hello there</span><br />
+<span class="irc-date">[19:53]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-84.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[19:54]</span> <span class="irc-black">&lt;bguthrie_&gt; Anyone work on anything cool recently?</span><br />
+<span class="irc-date">[19:54]</span> <span class="irc-black">&lt;olabini&gt; nope, just the regular boring stuff. =)</span><br />
+<span class="irc-date">[19:54]</span> <span class="irc-black">&lt;bguthrie_&gt; I'm trying to decide if a all to foo = mock(...) should look like a call to with (foo = mock(foo: bar)) or use a plain old hash (foo = mock(:foo =&gt; "bar"))</span><br />
+<span class="irc-date">[19:54]</span> <span class="irc-black">&lt;bguthrie_&gt; haha</span><br />
+<span class="irc-date">[19:55]</span> <span class="irc-black">&lt;bguthrie_&gt; But I haven't had much chance to poke around in the last few days.</span><br />
+<span class="irc-date">[19:55]</span> <span class="irc-black">&lt;bguthrie_&gt; *shrug*</span><br />
+<span class="irc-date">[19:55]</span> <span class="irc-black">&lt;bguthrie_&gt; The Mocha internals seems really clean to me, in case anyone was looking for an example of a Ruby library that does something complicated in a really straightforward way.</span><br />
+<span class="irc-date">[19:55]</span> <span class="irc-black">&lt;olabini&gt; well. the deciding thing I generally use to decide is this: can the key ever be anything else than a Symbol. in that case, use Pairs. otherwise use keywords</span><br />
+<span class="irc-date">[19:56]</span> <span class="irc-black">&lt;olabini&gt; nice</span><br />
+<span class="irc-date">[19:57]</span> <span class="irc-black">&lt;olabini&gt; I hate the way Java integrated varargs</span><br />
+<span class="irc-date">[19:57]</span> <span class="irc-black">&lt;bguthrie_&gt; Hmm, ok.  Seems like keywords are the way to go then.</span><br />
+<span class="irc-date">[19:57]</span> <span class="irc-black">&lt;bguthrie_&gt; I hate how Java integrates most things :D</span><br />
+<span class="irc-date">[19:58]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[20:00]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[20:12]</span> <span class="irc-black">&lt;olabini&gt; working on Java argument definitions</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[20:23]</span> <span class="irc-black">&lt;naeu&gt; olabini: from the sounds of it, the java integration stuff is being more troublesome than you initially thought</span><br />
+<span class="irc-date">[20:25]</span> <span class="irc-black">&lt;olabini&gt; nah, not really</span><br />
+<span class="irc-date">[20:25]</span> <span class="irc-black">&lt;olabini&gt; it's just taking some time</span><br />
+<span class="irc-date">[20:25]</span> <span class="irc-black">&lt;olabini&gt; I want it to be more or less right</span><br />
+<span class="irc-date">[20:25]</span> <span class="irc-black">&lt;naeu&gt; oh ok :-)</span><br />
+<span class="irc-date">[20:25]</span> <span class="irc-black">&lt;olabini&gt; ... the only real trouble is the skew between the object models</span><br />
+<span class="irc-date">[20:26]</span> <span class="irc-black">&lt;naeu&gt; what's proving the most troublesome part?</span><br />
+<span class="irc-date">[20:26]</span> <span class="irc-black">&lt;olabini&gt; and I'll take a look at how Rhino does it later</span><br />
+<span class="irc-date">[20:26]</span> <span class="irc-black">&lt;naeu&gt; could you explain what you mean by skew?</span><br />
+<span class="irc-date">[20:26]</span> <span class="irc-black">&lt;olabini&gt; well, how do you handle subclassing?</span><br />
+<span class="irc-date">[20:26]</span> <span class="irc-black">&lt;olabini&gt; take HashMap</span><br />
+<span class="irc-date">[20:27]</span> <span class="irc-black">&lt;olabini&gt; the super class of HashMap is Object, among other things</span><br />
+<span class="irc-date">[20:27]</span> <span class="irc-black">&lt;olabini&gt; but the methods of HashMap is implemented on the class HashMap - which in turn is also an Object</span><br />
+<span class="irc-date">[20:27]</span> <span class="irc-black">&lt;olabini&gt; that's ok</span><br />
+<span class="irc-date">[20:27]</span> <span class="irc-black">&lt;olabini&gt; but class HashMap inherits from class Class</span><br />
+<span class="irc-date">[20:27]</span> <span class="irc-black">&lt;olabini&gt; which means that an instance of HashMap will in fact have java.lang.Class as one of its mimics</span><br />
+<span class="irc-date">[20:28]</span> <span class="irc-black">&lt;naeu&gt; ah ok</span><br />
+<span class="irc-date">[20:28]</span> <span class="irc-black">&lt;naeu&gt; so are you trying to work out how best to model Java's class hierarchy on top of Ioke's mimic system?</span><br />
+<span class="irc-date">[20:29]</span> <span class="irc-black">&lt;naeu&gt; i.e. implement Java's class heirarchy in Ioke, then map the two together...</span><br />
+<span class="irc-date">[20:29]</span> <span class="irc-black">&lt;naeu&gt; or am i misunderstanding the situation?</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;olabini&gt; well, no, not really</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;olabini&gt; I'm just ignoring it</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;naeu&gt; oh ok :-)</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;olabini&gt; for now, at least</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;olabini&gt; but I haven't started modelling static methods</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;olabini&gt; which might be even more interesting. =/</span><br />
+<span class="irc-date">[20:33]</span> <span class="irc-black">&lt;naeu&gt; so right now you're just trying to model standard java objects?</span><br />
+<span class="irc-date">[20:33]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[20:41]</span> <span class="irc-black">&lt;naeu&gt; to what extent does jruby model java's class hierarchy and static methods?</span><br />
+<span class="irc-date">[20:43]</span> <span class="irc-green">* felipero (n=felipe@189-55-78-144-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[20:49]</span> <span class="irc-black">&lt;olabini&gt; well, my thinking is that it should model it completely.</span><br />
+<span class="irc-date">[20:49]</span> <span class="irc-black">&lt;olabini&gt; the same</span><br />
+<span class="irc-date">[20:49]</span> <span class="irc-black">&lt;olabini&gt; as much as possible</span><br />
+<span class="irc-date">[21:00]</span> <span class="irc-navy">* bguthrie_ (n=bguthrie@216.sub-75-207-107.myvzw.com) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[21:51]</span> <span class="irc-green">* bguthrie (n=bguthrie@36.sub-70-195-185.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[21:52]</span> <span class="irc-navy">* felipero (n=felipe@189-55-78-144-nd.cpe.vivax.com.br) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-navy">* bguthrie (n=bguthrie@36.sub-70-195-185.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[22:14]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-84.vc-graz.ac.at) has left #ioke</span><br />
+<span class="irc-date">[22:17]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[23:47]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit ()</span><br />

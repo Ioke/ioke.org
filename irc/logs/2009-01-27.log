@@ -1,0 +1,1047 @@
+<span class="irc-date">[2:31]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[3:05]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has left #ioke</span><br />
+<span class="irc-date">[3:44]</span> <span class="irc-navy">* olabini (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit ("ERC Version 5.1.4 (IRC client for Emacs)")</span><br />
+<span class="irc-date">[3:50]</span> <span class="irc-green">* bguthrie (n=bguthrie@128.sub-75-200-222.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[3:50]</span> <span class="irc-black">&lt;bguthrie&gt; hey, anyone around?</span><br />
+<span class="irc-date">[3:51]</span> <span class="irc-black">&lt;bguthrie&gt; had a question about the with() macro but will go ahead and ping the list if no one's here</span><br />
+<span class="irc-date">[3:51]</span> <span class="irc-black">&lt;bguthrie&gt; you crazy europeans and your time zones</span><br />
+<span class="irc-date">[4:03]</span> <span class="irc-navy">* bguthrie (n=bguthrie@128.sub-75-200-222.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[4:05]</span> <span class="irc-green">* bguthrie (n=bguthrie@165.sub-75-200-94.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[4:29]</span> <span class="irc-navy">* bguthrie (n=bguthrie@165.sub-75-200-94.myvzw.com) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[4:29]</span> <span class="irc-green">* bguthrie (n=bguthrie@165.sub-75-200-94.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[4:33]</span> <span class="irc-green">* bguthrie_ (n=bguthrie@172.sub-70-223-165.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[4:47]</span> <span class="irc-navy">* bguthrie (n=bguthrie@165.sub-75-200-94.myvzw.com) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[4:48]</span> <span class="irc-green">* bguthrie (n=bguthrie@165.sub-75-200-94.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[4:55]</span> <span class="irc-navy">* bguthrie_ (n=bguthrie@172.sub-70-223-165.myvzw.com) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[5:01]</span> <span class="irc-navy">* bguthrie (n=bguthrie@165.sub-75-200-94.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[5:11]</span> <span class="irc-navy">* Disconnected.</span><br />
+<span class="irc-date">[6:50]</span> <span class="irc-green">* IokeStormBot (n=PircBot@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[6:50]</span> <span class="irc-green">* Topic is 'Ioke - a dynamic programming language for the JVM | <a href="http://ioke.org">http://ioke.org</a> | Logs <a href="http://ioke.org/irc/logs'">http://ioke.org/irc/logs'</a></span><br />
+<span class="irc-date">[6:50]</span> <span class="irc-green">* Set by olabini on Thu Jan 22 13:02:32 GMT 2009</span><br />
+<span class="irc-date">[6:50]</span> <span class="irc-green">* IokeStormBot (n=PircBot@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[6:50]</span> <span class="irc-green">* Topic is 'Ioke - a dynamic programming language for the JVM | <a href="http://ioke.org">http://ioke.org</a> | Logs <a href="http://ioke.org/irc/logs'">http://ioke.org/irc/logs'</a></span><br />
+<span class="irc-date">[6:50]</span> <span class="irc-green">* Set by olabini on Thu Jan 22 13:02:32 GMT 2009</span><br />
+<span class="irc-date">[6:51]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[6:52]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[6:52]</span> <span class="irc-black">&lt;olabini&gt; sadly, this will continue until I manage to get op back here</span><br />
+<span class="irc-date">[6:53]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[6:54]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[6:55]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[6:56]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[6:57]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[6:58]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[6:59]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:00]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:01]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:02]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:03]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:03]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[7:03]</span> <span class="irc-black">&lt;olabini&gt; morning, Carlos</span><br />
+<span class="irc-date">[7:03]</span> <span class="irc-black">&lt;olabini&gt; we are sadly opless at the moment</span><br />
+<span class="irc-date">[7:04]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:05]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:06]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:07]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:08]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:08]</span> <span class="irc-black">&lt;cv&gt; and IokeHurricane is being a demanding child</span><br />
+<span class="irc-date">[7:08]</span> <span class="irc-black">&lt;cv&gt; :)</span><br />
+<span class="irc-date">[7:09]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:10]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:10]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[7:10]</span> <span class="irc-black">&lt;olabini&gt; the irc network restarted tonight</span><br />
+<span class="irc-date">[7:10]</span> <span class="irc-black">&lt;olabini&gt; so everyone kinda lost op</span><br />
+<span class="irc-date">[7:10]</span> <span class="irc-black">&lt;olabini&gt; sigh</span><br />
+<span class="irc-date">[7:11]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:12]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:13]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:14]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:14]</span> <span class="irc-black">&lt;cv&gt; that's alright, i'm pretty sure nobody's planning a hostile takeover of the channel</span><br />
+<span class="irc-date">[7:14]</span> <span class="irc-black">&lt;cv&gt; hehe</span><br />
+<span class="irc-date">[7:15]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:15]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[7:15]</span> <span class="irc-black">&lt;olabini&gt; cv: cool stuff with the unicode things, btw.</span><br />
+<span class="irc-date">[7:16]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:16]</span> <span class="irc-black">&lt;cv&gt; cheers!</span><br />
+<span class="irc-date">[7:17]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:18]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:18]</span> <span class="irc-green">* brunner (n=chris@68-119-87-106.dhcp.mtgm.al.charter.com) has joined #ioke</span><br />
+<span class="irc-date">[7:18]</span> <span class="irc-black">&lt;cv&gt; i'm gonna have a go at the unicode tr-29 later this week, see how that works out</span><br />
+<span class="irc-date">[7:18]</span> <span class="irc-black">&lt;cv&gt; i shouldn't have read that, now i'm never going to feel ok about splitting a string... ever</span><br />
+<span class="irc-date">[7:18]</span> <span class="irc-black">&lt;olabini&gt; nice</span><br />
+<span class="irc-date">[7:18]</span> <span class="irc-black">&lt;olabini&gt; fun</span><br />
+<span class="irc-date">[7:18]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[7:18]</span> <span class="irc-black">&lt;olabini&gt; splitting is dangerous, yes.</span><br />
+<span class="irc-date">[7:18]</span> <span class="irc-green">* brunner (n=chris@68-119-87-106.dhcp.mtgm.al.charter.com) has left #ioke</span><br />
+<span class="irc-date">[7:18]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:19]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:20]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:20]</span> <span class="irc-black">&lt;bguthrie_&gt; haha hey all</span><br />
+<span class="irc-date">[7:20]</span> <span class="irc-black">&lt;bguthrie_&gt; it is so fucking late in the US</span><br />
+<span class="irc-date">[7:21]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:22]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:22]</span> <span class="irc-black">&lt;olabini&gt; hey</span><br />
+<span class="irc-date">[7:22]</span> <span class="irc-black">&lt;olabini&gt; well, I was up fucking early in Sweden</span><br />
+<span class="irc-date">[7:22]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[7:22]</span> <span class="irc-black">&lt;olabini&gt; why are you up so late anyway?</span><br />
+<span class="irc-date">[7:22]</span> <span class="irc-black">&lt;bguthrie_&gt; was doing overdue expenses</span><br />
+<span class="irc-date">[7:22]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[7:22]</span> <span class="irc-black">&lt;olabini&gt; that's fun, aint' it?</span><br />
+<span class="irc-date">[7:22]</span> <span class="irc-black">&lt;olabini&gt; =_</span><br />
+<span class="irc-date">[7:22]</span> <span class="irc-black">&lt;bguthrie_&gt; oh yeah</span><br />
+<span class="irc-date">[7:22]</span> <span class="irc-black">&lt;bguthrie_&gt; but it's all done now and I feel better</span><br />
+<span class="irc-date">[7:22]</span> <span class="irc-black">&lt;olabini&gt; Notes and expenses is really what I love most about working for TW</span><br />
+<span class="irc-date">[7:22]</span> <span class="irc-black">&lt;bguthrie_&gt; probably should have started doing them before midnight</span><br />
+<span class="irc-date">[7:22]</span> <span class="irc-black">&lt;bguthrie_&gt; but you know, whatever</span><br />
+<span class="irc-date">[7:23]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[7:23]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:23]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[7:23]</span> <span class="irc-black">&lt;olabini&gt; btw, did you see Byrne is leaving?</span><br />
+<span class="irc-date">[7:23]</span> <span class="irc-black">&lt;bguthrie_&gt; yeah I saw that</span><br />
+<span class="irc-date">[7:23]</span> <span class="irc-black">&lt;olabini&gt; sucks</span><br />
+<span class="irc-date">[7:23]</span> <span class="irc-black">&lt;bguthrie_&gt; not cool</span><br />
+<span class="irc-date">[7:23]</span> <span class="irc-black">&lt;olabini&gt; very</span><br />
+<span class="irc-date">[7:23]</span> <span class="irc-black">&lt;bguthrie_&gt; DRW doesn't strike me as particularly awesome, but they keep hiring people I want to work with</span><br />
+<span class="irc-date">[7:23]</span> <span class="irc-black">&lt;bguthrie_&gt; which sucks</span><br />
+<span class="irc-date">[7:24]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:24]</span> <span class="irc-black">&lt;bguthrie_&gt; anyway I should head to bed now</span><br />
+<span class="irc-date">[7:24]</span> <span class="irc-black">&lt;bguthrie_&gt; but awesome job on ioke S ola, and you too cv</span><br />
+<span class="irc-date">[7:25]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:25]</span> <span class="irc-black">&lt;bguthrie_&gt; love using it :D</span><br />
+<span class="irc-date">[7:25]</span> <span class="irc-black">&lt;bguthrie_&gt; 'night</span><br />
+<span class="irc-date">[7:25]</span> <span class="irc-navy">* bguthrie_ (n=bguthrie@172.sub-70-223-165.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[7:25]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:25]</span> <span class="irc-black">&lt;olabini&gt; night</span><br />
+<span class="irc-date">[7:26]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:27]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:27]</span> <span class="irc-black">&lt;cv&gt; thanks brian!</span><br />
+<span class="irc-date">[7:28]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:29]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:29]</span> <span class="irc-black">&lt;cv&gt; this is weird</span><br />
+<span class="irc-date">[7:30]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:30]</span> <span class="irc-black">&lt;cv&gt; afal:~ pathall$ git clone   <a href="http://github.com/olabini/ioke/tree/master">http://github.com/olabini/ioke/tree/master</a> ioke</span><br />
+<span class="irc-date">[7:31]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:32]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:32]</span> <span class="irc-black">&lt;cv&gt; Initialized empty Git repository in /Users/pathall/ioke/.git/</span><br />
+<span class="irc-date">[7:32]</span> <span class="irc-black">&lt;olabini&gt; eh?</span><br />
+<span class="irc-date">[7:33]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:33]</span> <span class="irc-black">&lt;olabini&gt; cv: what's the problem with that?</span><br />
+<span class="irc-date">[7:33]</span> <span class="irc-black">&lt;cv&gt; fatal: <a href="http://github.com/olabini/ioke/tree/master/info/refs">http://github.com/olabini/ioke/tree/master/info/refs</a> not found: did you run git update-server-info on the server?</span><br />
+<span class="irc-date">[7:33]</span> <span class="irc-black">&lt;olabini&gt; wow, that's strange</span><br />
+<span class="irc-date">[7:33]</span> <span class="irc-black">&lt;cv&gt; oh, wrong url... nm</span><br />
+<span class="irc-date">[7:33]</span> <span class="irc-black">&lt;cv&gt; needs to be git clone git://github.com/olabini/ioke.git</span><br />
+<span class="irc-date">[7:33]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[7:33]</span> <span class="irc-black">&lt;cv&gt; not whatever pat just tried :P</span><br />
+<span class="irc-date">[7:33]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[7:34]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:35]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:36]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:37]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:38]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:39]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:40]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:41]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:42]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:42]</span> <span class="irc-black">&lt;olabini&gt; well. time to head out to the JFokus conference</span><br />
+<span class="irc-date">[7:43]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:44]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:45]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:46]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:46]</span> <span class="irc-black">&lt;cv&gt; have fun!</span><br />
+<span class="irc-date">[7:47]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:48]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:49]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:50]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:51]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:52]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:53]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:54]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:55]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:56]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:56]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit ("bye!")</span><br />
+<span class="irc-date">[7:56]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:57]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:58]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[7:59]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:00]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:00]</span> <span class="irc-navy">* olabini (n=ola@host90-152-71-187.ipv4.regusnet.com) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[8:00]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:01]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:02]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:03]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:04]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:05]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:05]</span> <span class="irc-green">* olabini (n=ola@cust-IP-11.data.tre.se) has joined #ioke</span><br />
+<span class="irc-date">[8:05]</span> <span class="irc-black">&lt;olabini&gt; hi again</span><br />
+<span class="irc-date">[8:06]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:06]</span> <span class="irc-black">&lt;melwin&gt; Hehe...</span><br />
+<span class="irc-date">[8:06]</span> <span class="irc-black">&lt;melwin&gt; We all need to part?</span><br />
+<span class="irc-date">[8:06]</span> <span class="irc-black">&lt;olabini&gt; not really</span><br />
+<span class="irc-date">[8:06]</span> <span class="irc-black">&lt;melwin&gt; Is there no chanserv to handle ops for registered channels?</span><br />
+<span class="irc-date">[8:06]</span> <span class="irc-black">&lt;olabini&gt; azoic will be able to give op when he arrives</span><br />
+<span class="irc-date">[8:06]</span> <span class="irc-black">&lt;olabini&gt; he registered the channel before I had time to do it</span><br />
+<span class="irc-date">[8:06]</span> <span class="irc-black">&lt;olabini&gt; but he doesn't seem to be up yet</span><br />
+<span class="irc-date">[8:07]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:07]</span> <span class="irc-black">&lt;melwin&gt; That's fresh of him...</span><br />
+<span class="irc-date">[8:07]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[8:07]</span> <span class="irc-black">&lt;olabini&gt; melwin: so, where do work from Stockholm or Kista too?</span><br />
+<span class="irc-date">[8:08]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:08]</span> <span class="irc-black">&lt;melwin&gt; Yeah Kista sometimes. But I go around to different customers a lot...</span><br />
+<span class="irc-date">[8:08]</span> <span class="irc-black">&lt;melwin&gt; Like now! Gotta go! :)</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;melwin&gt; Talk to you laters or see you tomorrow! :)</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;olabini&gt; see you</span><br />
+<span class="irc-date">[8:10]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:11]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:11]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit ("Leaving")</span><br />
+<span class="irc-date">[8:11]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:12]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:13]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:14]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:15]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:16]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:17]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:18]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:19]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:20]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:21]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:22]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:23]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:23]</span> <span class="irc-black">&lt;olabini&gt; GAH</span><br />
+<span class="irc-date">[8:23]</span> <span class="irc-black">&lt;olabini&gt; we</span><br />
+<span class="irc-date">[8:23]</span> <span class="irc-black">&lt;olabini&gt; well, at least he keeps the conversation up</span><br />
+<span class="irc-date">[8:23]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: right?</span><br />
+<span class="irc-date">[8:23]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: good point</span><br />
+<span class="irc-date">[8:24]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:25]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:26]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:27]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:28]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:29]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:30]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:31]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:32]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:33]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:34]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:35]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:36]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:37]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:38]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:39]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:40]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:41]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:42]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:43]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:44]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:45]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:46]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:47]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:48]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:49]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:50]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:51]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:52]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:53]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:55]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:56]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:57]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:58]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[8:58]</span> <span class="irc-green">* naeu (n=sam@i113124.upc-i.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:59]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:00]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:00]</span> <span class="irc-navy">* naeu (n=sam@i113124.upc-i.chello.nl) Quit (Client Quit)</span><br />
+<span class="irc-date">[9:00]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:01]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:02]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:03]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:04]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:05]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:06]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:08]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:09]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:10]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:11]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:12]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:13]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:14]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:15]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:16]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:17]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:18]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:19]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-green">* olabini` (n=ola@80.251.192.3) has joined #ioke</span><br />
+<span class="irc-date">[9:21]</span> <span class="irc-navy">* olabini (n=ola@cust-IP-11.data.tre.se) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[9:21]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:21]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-green">* olabini` (n=ola@80.251.192.3) has left #ioke</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-green">* olabini (n=ola@80.251.192.3) has joined #ioke</span><br />
+<span class="irc-date">[9:24]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:26]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:27]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:28]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:29]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:34]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:36]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-green">* olabini` (n=ola@cust-IP-11.data.tre.se) has joined #ioke</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-green">* olabini` (n=ola@cust-IP-11.data.tre.se) has left #ioke</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:38]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:39]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:40]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:40]</span> <span class="irc-green">* naeu (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:41]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:41]</span> <span class="irc-black">&lt;naeu&gt; morning :-)</span><br />
+<span class="irc-date">[9:42]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:44]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:45]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:46]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:46]</span> <span class="irc-black">&lt;naeu&gt; IokeHurricane: stop whining</span><br />
+<span class="irc-date">[9:46]</span> <span class="irc-black">&lt;IokeHurricane&gt; naeu: well...there was one chick left over</span><br />
+<span class="irc-date">[9:46]</span> <span class="irc-navy">* olabini (n=ola@80.251.192.3) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[9:46]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:47]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:48]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:51]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:52]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:53]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-green">* olabini (n=ola@cust-IP-11.data.tre.se) has joined #ioke</span><br />
+<span class="irc-date">[9:55]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:56]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:57]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[9:59]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:01]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:02]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:03]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:03]</span> <span class="irc-black">&lt;naeu&gt; IokeHurricane: please be quiet</span><br />
+<span class="irc-date">[10:03]</span> <span class="irc-black">&lt;IokeHurricane&gt; naeu: You know, the one where you have to put creatively shaped wooden pegs in corresponding holes</span><br />
+<span class="irc-date">[10:04]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:05]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:06]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:07]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:08]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:09]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:11]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:12]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:13]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:17]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:19]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: you're getting annoying</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: looks like you're well on your way</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;olabini&gt; azoic: op me, please.</span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;naeu&gt; olabini: you're joining in with this ridiculous charade too ;-)</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;naeu&gt; olabini: for the love of life, could you tell me what the hell i'm doing wrong here: <a href="http://gist.github.com/53270">http://gist.github.com/53270</a></span><br />
+<span class="irc-date">[10:26]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-black">&lt;olabini&gt; naeu: good question</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-black">&lt;olabini&gt; not entirely sure at the moment. look at the parsed code and see</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-black">&lt;olabini&gt; but I recommend you to do it differently anyway</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-black">&lt;olabini&gt; instead of the inject, do:</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-black">&lt;naeu&gt; what approach would you take?</span><br />
+<span class="irc-date">[10:30]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:30]</span> <span class="irc-black">&lt;naeu&gt; IokeHurricane: shut up!</span><br />
+<span class="irc-date">[10:30]</span> <span class="irc-black">&lt;IokeHurricane&gt; naeu: haha rofl</span><br />
+<span class="irc-date">[10:30]</span> <span class="irc-black">&lt;olabini&gt; "%[%s#{separator}%]%s" format(self[0..-2], self[-1])</span><br />
+<span class="irc-date">[10:30]</span> <span class="irc-black">&lt;olabini&gt; looks right?</span><br />
+<span class="irc-date">[10:31]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:31]</span> <span class="irc-black">&lt;naeu&gt; i've no idea how that works ;-)</span><br />
+<span class="irc-date">[10:31]</span> <span class="irc-black">&lt;olabini&gt; you know Ruby % or sprintf, right?</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;olabini&gt; well, this is exactly like that, except that %[ expects something Enumerable, and will use everything between the start %[ and end %], and repeat it over and over again</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;naeu&gt; i havent' used % in ruby, but i know sprintf</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;olabini&gt; well, % and sprintf are the same, basically</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;olabini&gt; in Ruby oyu can do</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;olabini&gt; "%s: %d" % ["foo", 123]</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;naeu&gt; ah ok :-)</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;naeu&gt; i never knew that</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;olabini&gt; ah, ok</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;olabini&gt; it's a standard technique for formatting output</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[10:34]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:34]</span> <span class="irc-black">&lt;naeu&gt; is it ok to add join to list?</span><br />
+<span class="irc-date">[10:35]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:35]</span> <span class="irc-black">&lt;olabini&gt; naeu: well, actually. it should be enumerable, right?</span><br />
+<span class="irc-date">[10:35]</span> <span class="irc-black">&lt;olabini&gt; so define it in terms of enumerable instead.</span><br />
+<span class="irc-date">[10:35]</span> <span class="irc-black">&lt;naeu&gt; yeah, you're absolutely right</span><br />
+<span class="irc-date">[10:36]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:36]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: no!</span><br />
+<span class="irc-date">[10:36]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: yeah. a hundred thousand people telling me to fuck off</span><br />
+<span class="irc-date">[10:37]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:38]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:39]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:40]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:41]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:42]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:42]</span> <span class="irc-navy">* olabini (n=ola@cust-IP-11.data.tre.se) Quit ("ERC Version 5.1.4 (IRC client for Emacs)")</span><br />
+<span class="irc-date">[10:42]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:43]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:44]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:45]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:46]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:47]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:48]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:49]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:50]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:51]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:52]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:53]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:54]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:55]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:56]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:57]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:58]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:59]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:00]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:01]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:02]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:03]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:04]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:05]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:06]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:07]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:08]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:09]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:10]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:11]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:12]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:13]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:14]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:15]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:16]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:17]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:18]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:19]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:20]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:22]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:25]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:26]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:27]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:28]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:29]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:30]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:31]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:33]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:40]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:42]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:43]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:44]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:45]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:46]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:47]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:48]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:49]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:50]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:51]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:52]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:53]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:54]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:55]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:56]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:57]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:58]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[11:59]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:00]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:02]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:03]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:04]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:05]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:06]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:07]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:08]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:09]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:10]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:11]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:12]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:13]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:14]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:15]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:16]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:17]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:18]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:19]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:20]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:21]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:22]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:23]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:24]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:25]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:26]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:27]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:28]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:29]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:30]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:31]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:32]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:33]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:34]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:35]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:36]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:37]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:38]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:39]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:40]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:42]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:43]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:44]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:45]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:46]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:47]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:48]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:49]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:50]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:51]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:52]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:53]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:54]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:55]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:56]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:57]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:57]</span> <span class="irc-green">* olabini (n=ola@80.251.192.2) has joined #ioke</span><br />
+<span class="irc-date">[12:57]</span> <span class="irc-black">&lt;olabini&gt; azoic: you online?</span><br />
+<span class="irc-date">[12:58]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[12:59]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:00]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:01]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:02]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:04]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:05]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:05]</span> <span class="irc-black">&lt;naeu&gt; olabini: how would you be happy for join to be written in terms of enumerable</span><br />
+<span class="irc-date">[13:05]</span> <span class="irc-black">&lt;naeu&gt; is inject still not the preferred choice?</span><br />
+<span class="irc-date">[13:06]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:09]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:09]</span> <span class="irc-black">&lt;naeu&gt; I'd like to be able to do something like this: "%[%s#{separator}%]$s" format(take(count - 1), last)</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:11]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:13]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:13]</span> <span class="irc-black">&lt;olabini&gt; naeu: you don't need inject</span><br />
+<span class="irc-date">[13:13]</span> <span class="irc-black">&lt;olabini&gt; actually</span><br />
+<span class="irc-date">[13:13]</span> <span class="irc-black">&lt;naeu&gt; but because we only have each</span><br />
+<span class="irc-date">[13:13]</span> <span class="irc-black">&lt;naeu&gt; it's not possible to jump to the last element</span><br />
+<span class="irc-date">[13:13]</span> <span class="irc-black">&lt;olabini&gt; well, you do have Enumerable</span><br />
+<span class="irc-date">[13:13]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[13:13]</span> <span class="irc-black">&lt;olabini&gt; ?</span><br />
+<span class="irc-date">[13:13]</span> <span class="irc-black">&lt;naeu&gt; i'm putting this on enumerable</span><br />
+<span class="irc-date">[13:13]</span> <span class="irc-black">&lt;olabini&gt; yes.</span><br />
+<span class="irc-date">[13:13]</span> <span class="irc-black">&lt;olabini&gt; so what is the problem?</span><br />
+<span class="irc-date">[13:14]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:14]</span> <span class="irc-black">&lt;naeu&gt; i don't know how to get to the last element</span><br />
+<span class="irc-date">[13:14]</span> <span class="irc-black">&lt;naeu&gt; without doing a lot of work</span><br />
+<span class="irc-date">[13:14]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[13:14]</span> <span class="irc-black">&lt;olabini&gt; actually, you know what you can do?</span><br />
+<span class="irc-date">[13:14]</span> <span class="irc-black">&lt;olabini&gt; you can implement a new Enumerable method for this</span><br />
+<span class="irc-date">[13:15]</span> <span class="irc-black">&lt;naeu&gt; last?</span><br />
+<span class="irc-date">[13:15]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:15]</span> <span class="irc-black">&lt;olabini&gt; no</span><br />
+<span class="irc-date">[13:15]</span> <span class="irc-black">&lt;olabini&gt; splitWhen</span><br />
+<span class="irc-date">[13:15]</span> <span class="irc-black">&lt;naeu&gt; remainder?</span><br />
+<span class="irc-date">[13:15]</span> <span class="irc-black">&lt;olabini&gt; but actually, you're not thinking</span><br />
+<span class="irc-date">[13:15]</span> <span class="irc-black">&lt;olabini&gt; the solution is easy...</span><br />
+<span class="irc-date">[13:15]</span> <span class="irc-black">&lt;naeu&gt; as in the opposite of the first method</span><br />
+<span class="irc-date">[13:16]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:16]</span> <span class="irc-black">&lt;olabini&gt; let(theList, self asList, "%[%s#{separator}%]$s" format(theList[0...-1], theList[-1]))</span><br />
+<span class="irc-date">[13:16]</span> <span class="irc-black">&lt;olabini&gt; splitWhen is a combination of dropWhile and takeWhile</span><br />
+<span class="irc-date">[13:16]</span> <span class="irc-black">&lt;olabini&gt; look it up in the Scala docs</span><br />
+<span class="irc-date">[13:17]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:17]</span> <span class="irc-black">&lt;naeu&gt; so the sollution is to turn the enumerable into a list</span><br />
+<span class="irc-date">[13:17]</span> <span class="irc-black">&lt;olabini&gt; one solution, yes</span><br />
+<span class="irc-date">[13:18]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:18]</span> <span class="irc-black">&lt;olabini&gt; but in fact, in this case it might be the most efficient to just use each and manually put the result together</span><br />
+<span class="irc-date">[13:19]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:20]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:21]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:22]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:23]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:25]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:26]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:27]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:27]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r44eb520 / src/grammar/ioke.g : Make it possible to use dollar signs inside of identifiers - <a href="http://tinyurl.com/cw2pyg">http://tinyurl.com/cw2pyg</a></span><br />
+<span class="irc-date">[13:28]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:29]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:30]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:31]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:32]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:33]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:34]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:35]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:36]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:37]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:39]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:40]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:40]</span> <span class="irc-navy">* olabini (n=ola@80.251.192.2) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[13:40]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:41]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:42]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:43]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:44]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:45]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:46]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:47]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:48]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:49]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:50]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:51]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:52]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:53]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:54]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:55]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:56]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:57]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:58]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[13:59]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:00]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:01]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:02]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:03]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:05]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:06]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:07]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:08]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:09]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:10]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:11]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:14]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:15]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:15]</span> <span class="irc-green">* olabini (n=ola@cust-IP-11.data.tre.se) has joined #ioke</span><br />
+<span class="irc-date">[14:16]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:17]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:21]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:24]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:25]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:26]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:26]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit (Read error: 54 (Connection reset by peer))</span><br />
+<span class="irc-date">[14:26]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:28]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:29]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:30]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:31]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:32]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:33]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:34]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:35]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:36]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:38]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:39]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:40]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:42]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:43]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:44]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:45]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:46]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:47]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:48]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:49]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:50]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:51]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:52]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:53]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:54]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:55]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:56]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:58]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:59]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:00]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:01]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:02]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:03]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:04]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:05]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:06]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:07]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:08]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:09]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:10]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:11]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:12]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:13]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:14]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:15]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:16]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:18]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:19]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:20]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:21]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:22]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:23]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:24]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:25]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:26]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:27]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:28]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:29]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:30]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:31]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:33]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:34]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:35]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:36]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:37]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:38]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:39]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:40]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:41]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:45]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:46]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:47]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:48]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:49]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:50]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:51]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:53]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:54]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:55]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:58]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:59]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:00]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:01]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:02]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:03]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:04]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:05]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:07]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:08]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:09]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:10]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:11]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:11]</span> <span class="irc-navy">* olabini (n=ola@cust-IP-11.data.tre.se) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[16:11]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:12]</span> <span class="irc-green">* naeu (n=sam@i113124.upc-i.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[16:12]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:13]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:14]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:16]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:17]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:17]</span> <span class="irc-black">&lt;naeu&gt; "op me, op me, oh op me"</span><br />
+<span class="irc-date">[16:17]</span> <span class="irc-black">&lt;naeu&gt; "op me if you think that you've heard this one before"</span><br />
+<span class="irc-date">[16:17]</span> <span class="irc-black">&lt;naeu&gt; "nothing changes..."</span><br />
+<span class="irc-date">[16:18]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:19]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:20]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:21]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:22]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:22]</span> <span class="irc-green">* naeu_ (n=sam@h253136.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[16:23]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:24]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:25]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:26]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:28]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:28]</span> <span class="irc-green">* olabini (n=ola@host90-152-71-187.ipv4.regusnet.com) has joined #ioke</span><br />
+<span class="irc-date">[16:29]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:30]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:31]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-black">&lt;naeu_&gt; "op op and away!"</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-black">&lt;olabini&gt; heh</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-black">&lt;naeu_&gt; i have to try and keep sane</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-black">&lt;naeu_&gt; "op, in the name of law... before you break my heart..."</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-black">&lt;naeu_&gt; olabini: i pushed my attempt at adding Enumerable#join</span><br />
+<span class="irc-date">[16:34]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:34]</span> <span class="irc-black">&lt;naeu_&gt; i'd be interested in your opinions</span><br />
+<span class="irc-date">[16:34]</span> <span class="irc-black">&lt;olabini&gt; cool</span><br />
+<span class="irc-date">[16:34]</span> <span class="irc-black">&lt;olabini&gt; will look later</span><br />
+<span class="irc-date">[16:34]</span> <span class="irc-black">&lt;naeu_&gt; i've also updated the TM bundle too</span><br />
+<span class="irc-date">[16:34]</span> <span class="irc-black">&lt;olabini&gt; right now in a pretty massive refactoring</span><br />
+<span class="irc-date">[16:34]</span> <span class="irc-black">&lt;naeu_&gt; nice</span><br />
+<span class="irc-date">[16:34]</span> <span class="irc-black">&lt;naeu_&gt; what are you messing with?</span><br />
+<span class="irc-date">[16:35]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:35]</span> <span class="irc-black">&lt;olabini&gt; what is needed to get the basic Java support in</span><br />
+<span class="irc-date">[16:35]</span> <span class="irc-black">&lt;naeu_&gt; olabini: ahhh, very cool</span><br />
+<span class="irc-date">[16:35]</span> <span class="irc-black">&lt;olabini&gt; first step, IokeObject.as(Object) =&gt; IokeOBject.as(Object, IokeObject context)</span><br />
+<span class="irc-date">[16:36]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:36]</span> <span class="irc-black">&lt;naeu_&gt; nice</span><br />
+<span class="irc-date">[16:36]</span> <span class="irc-black">&lt;naeu_&gt; so you can wrap arbitrary java objects</span><br />
+<span class="irc-date">[16:36]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[16:37]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:37]</span> <span class="irc-black">&lt;naeu_&gt; shut up op-a-lot</span><br />
+<span class="irc-date">[16:37]</span> <span class="irc-black">&lt;naeu_&gt; oh, and another thing that's cool is the Amsterdam.rb meeting is 'sold out'</span><br />
+<span class="irc-date">[16:37]</span> <span class="irc-black">&lt;naeu_&gt; although we're not actually selling anything</span><br />
+<span class="irc-date">[16:37]</span> <span class="irc-black">&lt;naeu_&gt; :-)</span><br />
+<span class="irc-date">[16:38]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:38]</span> <span class="irc-black">&lt;olabini&gt; cool</span><br />
+<span class="irc-date">[16:38]</span> <span class="irc-navy">* naeu (n=sam@i113124.upc-i.chello.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[16:38]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:39]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:39]</span> <span class="irc-black">&lt;naeu_&gt; so there should be about 60 people there</span><br />
+<span class="irc-date">[16:39]</span> <span class="irc-black">&lt;naeu_&gt; :-)</span><br />
+<span class="irc-date">[16:40]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:40]</span> <span class="irc-black">&lt;naeu_&gt; all wanting to know how fast ioke is...</span><br />
+<span class="irc-date">[16:40]</span> <span class="irc-black">&lt;naeu_&gt; maybe you should just optimise the shit out of fib</span><br />
+<span class="irc-date">[16:40]</span> <span class="irc-black">&lt;naeu_&gt; that would shut about 90% of the complainers up i reckon ;-)</span><br />
+<span class="irc-date">[16:40]</span> <span class="irc-black">&lt;naeu_&gt; hehe</span><br />
+<span class="irc-date">[16:41]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:41]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[16:41]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * raef58b5 / (4 files in 2 dirs): Add initial JavaGround - <a href="http://tinyurl.com/a9lled">http://tinyurl.com/a9lled</a></span><br />
+<span class="irc-date">[16:41]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * re4314f2 / (15 files in 3 dirs): Start serious work on Java integration - first step refactor all calls to IokeObject.as - <a href="http://tinyurl.com/dzhcp3">http://tinyurl.com/dzhcp3</a></span><br />
+<span class="irc-date">[16:41]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r82e5a50 / (23 files): More refactoring of the as-method - <a href="http://tinyurl.com/cqpd48">http://tinyurl.com/cqpd48</a></span><br />
+<span class="irc-date">[16:42]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r782ae2f / (3 files in 2 dirs): More refactoring of the as-method - <a href="http://tinyurl.com/al4vsq">http://tinyurl.com/al4vsq</a></span><br />
+<span class="irc-date">[16:42]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:42]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * rbd13c3f / (13 files in 3 dirs): Finalize the refactoring and make the build pass again - <a href="http://tinyurl.com/aqfy4w">http://tinyurl.com/aqfy4w</a></span><br />
+<span class="irc-date">[16:43]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:44]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:45]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:46]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:47]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:48]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:49]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:50]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:51]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:52]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:53]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:54]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:55]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:55]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[16:56]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:56]</span> <span class="irc-black">&lt;melwin&gt; Gawd, this still going on.</span><br />
+<span class="irc-date">[16:56]</span> <span class="irc-black">&lt;melwin&gt; azoic: Thought you could gain op...?</span><br />
+<span class="irc-date">[16:56]</span> <span class="irc-black">&lt;naeu_&gt; op it!</span><br />
+<span class="irc-date">[16:57]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:57]</span> <span class="irc-black">&lt;naeu_&gt; azoic doesn't seem to be about</span><br />
+<span class="irc-date">[16:57]</span> <span class="irc-black">&lt;melwin&gt; 'sup 'sam?</span><br />
+<span class="irc-date">[16:57]</span> <span class="irc-black">&lt;naeu_&gt; i'm being driven opping mad</span><br />
+<span class="irc-date">[16:58]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:58]</span> <span class="irc-black">&lt;melwin&gt; Yeah... Bit of a nag, that bot.</span><br />
+<span class="irc-date">[16:58]</span> <span class="irc-black">&lt;melwin&gt; The tutorials gain acceptance?</span><br />
+<span class="irc-date">[16:58]</span> <span class="irc-black">&lt;naeu_&gt; the abstracts were loved</span><br />
+<span class="irc-date">[16:58]</span> <span class="irc-black">&lt;naeu_&gt; :-)</span><br />
+<span class="irc-date">[16:58]</span> <span class="irc-black">&lt;naeu_&gt; now it's just a matter of waiting to see if there are any bums on seats</span><br />
+<span class="irc-date">[16:59]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:59]</span> <span class="irc-black">&lt;naeu_&gt; i.e. will people sign up?</span><br />
+<span class="irc-date">[16:59]</span> <span class="irc-black">&lt;melwin&gt; I thought The Man had to approve it or something...?</span><br />
+<span class="irc-date">[17:00]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[17:01]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[17:02]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[17:03]</span> <span class="irc-black">&lt;melwin&gt; IokeHurricane: NO!</span><br />
+<span class="irc-date">[17:03]</span> <span class="irc-black">&lt;IokeHurricane&gt; melwin: mac users, i swear to god...</span><br />
+<span class="irc-date">[17:03]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[17:04]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[17:04]</span> <span class="irc-green">* ChanServ sets mode +o IokeHurricane </span><br />
+<span class="irc-date">[17:04]</span> <span class="irc-green">* IokeHurricane sets mode +o olabini </span><br />
+<span class="irc-date">[17:05]</span> <span class="irc-black">&lt;olabini&gt; YAY</span><br />
+<span class="irc-date">[17:05]</span> <span class="irc-black">&lt;melwin&gt; There we go.</span><br />
+<span class="irc-date">[17:05]</span> <span class="irc-black">&lt;azoic&gt; sorry I was away, I'll transfer ownership to you olabini in a few hours when I have time</span><br />
+<span class="irc-date">[17:05]</span> <span class="irc-black">&lt;olabini&gt; azoic: that would be really nice. thanks!</span><br />
+<span class="irc-date">[17:05]</span> <span class="irc-black">&lt;azoic&gt; np</span><br />
+<span class="irc-date">[17:05]</span> <span class="irc-black">&lt;melwin&gt; For only $500... ;P</span><br />
+<span class="irc-date">[17:05]</span> <span class="irc-black">&lt;azoic&gt; hehe</span><br />
+<span class="irc-date">[17:05]</span> <span class="irc-black">&lt;olabini&gt; haha</span><br />
+<span class="irc-date">[17:06]</span> <span class="irc-black">&lt;azoic&gt; you should be able to op yoruself though</span><br />
+<span class="irc-date">[17:06]</span> <span class="irc-black">&lt;azoic&gt; if you are identified to nickserv</span><br />
+<span class="irc-date">[17:07]</span> <span class="irc-black">&lt;olabini&gt; tried to, but it didn't work</span><br />
+<span class="irc-date">[17:07]</span> <span class="irc-black">&lt;azoic&gt; I thought I had set it up like that</span><br />
+<span class="irc-date">[17:07]</span> <span class="irc-black">&lt;azoic&gt; weird</span><br />
+<span class="irc-date">[17:07]</span> <span class="irc-black">&lt;melwin&gt; olabini: Where you at? I thought you were at the conference?</span><br />
+<span class="irc-date">[17:07]</span> <span class="irc-black">&lt;olabini&gt; melwin: yeah, at the office a bit. conference over - waiting for dinner to start</span><br />
+<span class="irc-date">[17:07]</span> <span class="irc-black">&lt;melwin&gt; Ah, ok... Any good today?</span><br />
+<span class="irc-date">[17:07]</span> <span class="irc-black">&lt;melwin&gt; I got mixed feelings based on your tweets.</span><br />
+<span class="irc-date">[17:09]</span> <span class="irc-black">&lt;olabini&gt; yeah, ok.</span><br />
+<span class="irc-date">[17:09]</span> <span class="irc-black">&lt;olabini&gt; not fantastic, but I'm not easily swayed</span><br />
+<span class="irc-date">[17:09]</span> <span class="irc-black">&lt;melwin&gt; Hehe, we got a critic amongst us.</span><br />
+<span class="irc-date">[17:10]</span> <span class="irc-black">&lt;melwin&gt; Stupid question that you might know: Would gettting rid of generics for our special map give a performance advantage? To avoid any unnecessary type checks inserted by the compiler and only do explicit casts where absolutely needed..?</span><br />
+<span class="irc-date">[17:11]</span> <span class="irc-black">&lt;naeu_&gt; woah, the quietness is deafening!</span><br />
+<span class="irc-date">[17:11]</span> <span class="irc-black">&lt;melwin&gt; naeu: Sssh...</span><br />
+<span class="irc-date">[17:11]</span> <span class="irc-black">&lt;naeu_&gt; sssftp</span><br />
+<span class="irc-date">[17:11]</span> <span class="irc-black">&lt;melwin&gt; I know it does type erasure, but there will be implicit casts in more places when using generics...</span><br />
+<span class="irc-date">[17:12]</span> <span class="irc-black">&lt;melwin&gt; Or - we might not need that at all as we might set key and value type as well.</span><br />
+<span class="irc-date">[17:13]</span> <span class="irc-black">&lt;olabini&gt; possibly, but probably no real difference</span><br />
+<span class="irc-date">[17:13]</span> <span class="irc-black">&lt;melwin&gt; Optimization by specialization, so to speak.</span><br />
+<span class="irc-date">[17:13]</span> <span class="irc-black">&lt;azoic&gt; olabini: check your IM from me. You need to perform a command</span><br />
+<span class="irc-date">[17:13]</span> <span class="irc-black">&lt;olabini&gt; k</span><br />
+<span class="irc-date">[17:13]</span> <span class="irc-black">&lt;olabini&gt; azoic: thanks</span><br />
+<span class="irc-date">[17:13]</span> <span class="irc-black">&lt;melwin&gt; olabini: Ok, just curious.</span><br />
+<span class="irc-date">[17:13]</span> <span class="irc-black">&lt;azoic&gt; yw</span><br />
+<span class="irc-date">[17:14]</span> <span class="irc-black">&lt;azoic&gt; make ioke kickass ;)</span><br />
+<span class="irc-date">[17:15]</span> <span class="irc-black">&lt;melwin&gt; azoic: Any other trademarked resources you've acquired? :P</span><br />
+<span class="irc-date">[17:15]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[17:15]</span> <span class="irc-black">&lt;azoic&gt; melwin: I own #io too</span><br />
+<span class="irc-date">[17:15]</span> <span class="irc-black">&lt;melwin&gt; Heheh. Smart thinking.</span><br />
+<span class="irc-date">[17:15]</span> <span class="irc-black">&lt;azoic&gt; I am getting rich</span><br />
+<span class="irc-date">[17:15]</span> <span class="irc-black">&lt;azoic&gt; ;)</span><br />
+<span class="irc-date">[17:15]</span> <span class="irc-black">&lt;melwin&gt; Sweet.</span><br />
+<span class="irc-date">[17:15]</span> <span class="irc-black">&lt;melwin&gt; W00p!</span><br />
+<span class="irc-date">[17:16]</span> <span class="irc-black">&lt;azoic&gt; no I guess I don't anymore</span><br />
+<span class="irc-date">[17:16]</span> <span class="irc-black">&lt;azoic&gt; I had to drag steve kicking and screaming to IRC</span><br />
+<span class="irc-date">[17:16]</span> <span class="irc-black">&lt;azoic&gt; But I think I still have the channel password there</span><br />
+<span class="irc-date">[17:17]</span> <span class="irc-black">&lt;melwin&gt; Sneaky.</span><br />
+<span class="irc-date">[17:17]</span> <span class="irc-black">&lt;melwin&gt; Then hit them when interest peaks.</span><br />
+<span class="irc-date">[17:17]</span> <span class="irc-black">&lt;azoic&gt; no. just agreed upon terms ;)</span><br />
+<span class="irc-date">[17:18]</span> <span class="irc-black">&lt;azoic&gt; haha no</span><br />
+<span class="irc-date">[17:18]</span> <span class="irc-black">&lt;azoic&gt; people can always move to #ioke-lang and stuff</span><br />
+<span class="irc-date">[17:18]</span> <span class="irc-black">&lt;azoic&gt; like ruby people</span><br />
+<span class="irc-date">[17:19]</span> <span class="irc-black">&lt;melwin&gt; Hehe, yeah. But it will always sting a little.</span><br />
+<span class="irc-date">[17:20]</span> <span class="irc-black">&lt;olabini&gt; man. this Java stuff will be a bit complicated...</span><br />
+<span class="irc-date">[17:20]</span> <span class="irc-black">&lt;olabini&gt; not as easy as I assumed</span><br />
+<span class="irc-date">[17:21]</span> <span class="irc-black">&lt;melwin&gt; What's the plan, batman?</span><br />
+<span class="irc-date">[17:21]</span> <span class="irc-black">&lt;olabini&gt; (I'm starting out with getting the inheritence hierarchy correct, which is why it gets harder)</span><br />
+<span class="irc-date">[17:21]</span> <span class="irc-black">&lt;olabini&gt; will give up now and think about it</span><br />
+<span class="irc-date">[17:21]</span> <span class="irc-black">&lt;azoic&gt; melwin: wanna chan squat ? #Q and #pure aren't taken ;)</span><br />
+<span class="irc-date">[17:21]</span> <span class="irc-black">&lt;azoic&gt; maybe #potion isn't either</span><br />
+<span class="irc-date">[17:21]</span> <span class="irc-black">&lt;azoic&gt; go ahead ;)</span><br />
+<span class="irc-date">[17:21]</span> <span class="irc-black">&lt;melwin&gt; Hehehe. Not for me. Don't have the patience. :]</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-black">&lt;melwin&gt; Join me for further discussion in #chansquatters</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-black">&lt;melwin&gt; ;P</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-black">&lt;azoic&gt; haha</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-black">&lt;melwin&gt; IT'S ALL MINE!</span><br />
+<span class="irc-date">[17:25]</span> <span class="irc-black">&lt;naeu_&gt; gah, i'm running against more limitations in the tm bundle</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;naeu_&gt; melwin: how did you get along with the geshi stuff?</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;naeu_&gt; want a hand with that?</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;melwin&gt; naeu_: Please... Currently I'm not getting anywhere with something else. Instead of not getting anywhere with the GeSHi stuff.</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;naeu_&gt; haha</span><br />
+<span class="irc-date">[17:40]</span> <span class="irc-navy">* olabini (n=ola@host90-152-71-187.ipv4.regusnet.com) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[17:40]</span> <span class="irc-black">&lt;naeu_&gt; melwin: where's the latest and greatest version?</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;melwin&gt; Grab the one from Ola - I hit the wall before getting anywhere useful with the regexp.</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;melwin&gt; You saw what I did, but it was pathetic.</span><br />
+<span class="irc-date">[17:44]</span> <span class="irc-black">&lt;naeu_&gt; ok</span><br />
+<span class="irc-date">[17:44]</span> <span class="irc-black">&lt;naeu_&gt; i'm at it</span><br />
+<span class="irc-date">[17:46]</span> <span class="irc-black">&lt;naeu_&gt; melwin: what's the quickest way to get a testbed up and running?</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;melwin&gt; Uhh... Well... It's a PHP library, so I guess it should be possibly to just use it with PHP directly and run from the command line.</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;melwin&gt; It's a bit messy setting up wordpress or similar just for this.</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;melwin&gt; So now's your chance to learn some PHP... :P</span><br />
+<span class="irc-date">[17:48]</span> <span class="irc-black">&lt;naeu_&gt; jesus</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;melwin&gt; No, Martin.</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-black">&lt;naeu_&gt; yey, i have highlighted php</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-black">&lt;melwin&gt; Hehe.... Switching from an ArrayList to just an array changed the time for 50 million cell lookups in a 6-deep mimic chain from:</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-black">&lt;melwin&gt; Average: 2151</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-black">&lt;melwin&gt; Median: 2047</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-black">&lt;melwin&gt; Std dev: 185</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-black">&lt;melwin&gt; To:</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-black">&lt;melwin&gt; Average: 606</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-black">&lt;melwin&gt; Median: 602</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-black">&lt;melwin&gt; Std dev: 31</span><br />
+<span class="irc-date">[18:28]</span> <span class="irc-green">* kar8nga (n=kar8nga@f-115.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:28]</span> <span class="irc-black">&lt;melwin&gt; Much more than I anticipated...</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-black">&lt;naeu_&gt; yey, not i have (okish) highlighted ioke</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-black">&lt;melwin&gt; Not?</span><br />
+<span class="irc-date">[18:30]</span> <span class="irc-black">&lt;naeu_&gt; that's massive improvements</span><br />
+<span class="irc-date">[18:30]</span> <span class="irc-black">&lt;naeu_&gt; what's the difference in terms of expressiveness?</span><br />
+<span class="irc-date">[18:31]</span> <span class="irc-black">&lt;melwin&gt; Well, none... Just a bit more manual code to handle adding and removing links in Java.</span><br />
+<span class="irc-date">[18:32]</span> <span class="irc-black">&lt;melwin&gt; But it's not that much.</span><br />
+<span class="irc-date">[18:32]</span> <span class="irc-black">&lt;melwin&gt; Just that I thought it wouldn't matter too much - but a profile session showed that there were lots of crap going on in the ArrayList.</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-black">&lt;naeu_&gt; :-)</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-black">&lt;naeu_&gt; ok, all the operators are now correctly highlighted</span><br />
+<span class="irc-date">[18:48]</span> <span class="irc-black">&lt;naeu_&gt; and i removed an erroneous comment matcher</span><br />
+<span class="irc-date">[18:48]</span> <span class="irc-black">&lt;melwin&gt; Nice!</span><br />
+<span class="irc-date">[18:48]</span> <span class="irc-black">&lt;melwin&gt; The #?</span><br />
+<span class="irc-date">[18:50]</span> <span class="irc-black">&lt;naeu_&gt; yep</span><br />
+<span class="irc-date">[18:50]</span> <span class="irc-black">&lt;naeu_&gt; and the /* */</span><br />
+<span class="irc-date">[18:51]</span> <span class="irc-black">&lt;naeu_&gt; just pushed it</span><br />
+<span class="irc-date">[18:54]</span> <span class="irc-black">&lt;melwin&gt; Cool. As you saw I didn't really spend too much time on it... :] Not like your l33t bundle...!</span><br />
+<span class="irc-date">[19:01]</span> <span class="irc-navy">* kar8nga (n=kar8nga@f-115.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[19:08]</span> <span class="irc-navy">* naeu_ (n=sam@h253136.upc-h.chello.nl) Quit (Connection timed out)</span><br />
+<span class="irc-date">[19:21]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:48]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[20:49]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[21:03]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-176.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[21:58]</span> <span class="irc-green">* olabini (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[21:58]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[22:01]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: op me! =)</span><br />
+<span class="irc-date">[22:01]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: xd</span><br />
+<span class="irc-date">[22:03]</span> <span class="irc-black">&lt;melwin&gt; olabini!</span><br />
+<span class="irc-date">[22:03]</span> <span class="irc-black">&lt;olabini&gt; hey melwin</span><br />
+<span class="irc-date">[22:03]</span> <span class="irc-black">&lt;melwin&gt; IokeHurricane: Ola is here!</span><br />
+<span class="irc-date">[22:03]</span> <span class="irc-black">&lt;IokeHurricane&gt; melwin: I went to the snackbar with a couple of mates today</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-black">&lt;melwin&gt; How was the dinner?</span><br />
+<span class="irc-date">[22:05]</span> <span class="irc-black">&lt;olabini&gt; pretty good. F12 is always nice, you know</span><br />
+<span class="irc-date">[22:05]</span> <span class="irc-black">&lt;olabini&gt; now I'm pretty tired, though</span><br />
+<span class="irc-date">[22:06]</span> <span class="irc-black">&lt;naeu&gt; me too</span><br />
+<span class="irc-date">[22:06]</span> <span class="irc-black">&lt;naeu&gt; i had a late night last night</span><br />
+<span class="irc-date">[22:06]</span> <span class="irc-black">&lt;naeu&gt; i've been making good progress with Geshi though</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;naeu&gt; I just need another session with it and it should be mostly done</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;naeu&gt; $geshi-&gt;set_overall_style('font-family: \'DejaVu Sans Mono\', \'Bitstream Vera Sans Mono\', Consolas, \'Andale Mono WT\', \'Andale Mono\', \'Lucida Console\', \'Lucida Sans Typewriter\', \'Liberation Mono\', \'Nimbus Mono L\', Monaco, \'Courier New\', Courier, monospace; background-color: #000000; color: white;', true);</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;naeu&gt; can someone set that on the server?</span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-black">&lt;olabini&gt; good work</span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-black">&lt;olabini&gt; eh?</span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-black">&lt;olabini&gt; does it need to be set on the server? that sucks</span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-black">&lt;olabini&gt; so it shouldn't be part of the ioke.php ?</span><br />
+<span class="irc-date">[22:12]</span> <span class="irc-black">&lt;melwin&gt; olabini: mn-trees?</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-176.vc-graz.ac.at) has left #ioke</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[22:16]</span> <span class="irc-black">&lt;naeu&gt; olabini: yeah, that's what i meant</span><br />
+<span class="irc-date">[22:16]</span> <span class="irc-black">&lt;naeu&gt; sorry</span><br />
+<span class="irc-date">[22:16]</span> <span class="irc-black">&lt;naeu&gt; argh, i'm confusing myself</span><br />
+<span class="irc-date">[22:16]</span> <span class="irc-black">&lt;naeu&gt; I haven't yet managed to work out how to set these variables as part of ioke.php</span><br />
+<span class="irc-date">[22:17]</span> <span class="irc-black">&lt;naeu&gt; so they need to go into the main php file that initialises geshi</span><br />
+<span class="irc-date">[22:24]</span> <span class="irc-black">&lt;naeu&gt; night night all</span><br />
+<span class="irc-date">[22:24]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[23:37]</span> <span class="irc-navy">* vincenz (n=vincenz@li23-146.members.linode.com) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[23:41]</span> <span class="irc-green">* vincenz (n=vincenz@li23-146.members.linode.com) has joined #ioke</span><br />
+<span class="irc-date">[23:44]</span> <span class="irc-navy">* vincenz (n=vincenz@li23-146.members.linode.com) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[23:44]</span> <span class="irc-green">* vincenz (n=vincenz@li23-146.members.linode.com) has joined #ioke</span><br />

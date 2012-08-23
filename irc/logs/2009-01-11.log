@@ -1,0 +1,56 @@
+<span class="irc-date">[0:36]</span> <span class="irc-navy">* Melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit ("Leaving")</span><br />
+<span class="irc-date">[9:13]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;naeu&gt; hmm, I guess it's just me and the bots today :-)</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;naeu&gt; hello bots!</span><br />
+<span class="irc-date">[10:41]</span> <span class="irc-black">&lt;olabini&gt; well, if you count me as a bot</span><br />
+<span class="irc-date">[10:41]</span> <span class="irc-black">&lt;olabini&gt; =P</span><br />
+<span class="irc-date">[10:41]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: hello!</span><br />
+<span class="irc-date">[10:42]</span> <span class="irc-black">&lt;olabini&gt; at some point I want to rewrite the bots in Ioke. that would be a fun exercise.</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-navy">* IokeHurricane (n=IokeHurr@8.12.35.212) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-green">* IokeHurricane (n=IokeHurr@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-green">* olabini sets mode +o IokeHurricane </span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;olabini&gt; !seen naeu</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini, naeu is right here!</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: hello there</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: if there were an audiobook of Christopher Walken reading the Bible it would probably be #1 on iTunes</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;olabini&gt; !reddit</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: ok let me do something</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;naeu&gt; I'm here :-)</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;naeu&gt; I was poking around in the grammar</span><br />
+<span class="irc-date">[11:39]</span> <span class="irc-black">&lt;naeu&gt; but right now I'm going to go skating :-)</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;naeu&gt; and when I return I'm going to sort out Identifier boundaries in the TextMate bundle</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;naeu&gt; it still doesn't correctly deal with identifiers like sam!while</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;naeu&gt; (not that you'd normally use that as an identifier)</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;naeu&gt; which the grammar allows</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;naeu&gt; it's also interesting that you can do this:</span><br />
+<span class="irc-date">[11:41]</span> <span class="irc-black">&lt;naeu&gt; :a = 1</span><br />
+<span class="irc-date">[11:42]</span> <span class="irc-black">&lt;naeu&gt; which creates a cell :":a" with the value 1 :-)</span><br />
+<span class="irc-date">[11:42]</span> <span class="irc-black">&lt;naeu&gt; anyway, cheerio for now :-)</span><br />
+<span class="irc-date">[11:48]</span> <span class="irc-navy">* IokeHurricane (n=IokeHurr@8.12.35.212) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[11:49]</span> <span class="irc-green">* IokeHurricane (n=IokeHurr@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[11:49]</span> <span class="irc-green">* olabini sets mode +o IokeHurricane </span><br />
+<span class="irc-date">[11:49]</span> <span class="irc-black">&lt;olabini&gt; !reddit</span><br />
+<span class="irc-date">[11:53]</span> <span class="irc-black">&lt;IokeHurricane&gt; IokeStorm: HERE'S A REAL CATGIRL</span><br />
+<span class="irc-date">[12:08]</span> <span class="irc-navy">* IokeHurricane (n=IokeHurr@8.12.35.212) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[12:11]</span> <span class="irc-green">* IokeHurricane (n=IokeHurr@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[12:11]</span> <span class="irc-green">* olabini sets mode +o IokeHurricane </span><br />
+<span class="irc-date">[12:12]</span> <span class="irc-black">&lt;olabini&gt; !bbc</span><br />
+<span class="irc-date">[12:15]</span> <span class="irc-black">&lt;olabini&gt; !reddit</span><br />
+<span class="irc-date">[12:16]</span> <span class="irc-black">&lt;IokeHurricane&gt; IokeHurricane: i'm gonna make a media player that plays EVERYTHING, for FREE, and can rip to EVERY common type of media without DRM.</span><br />
+<span class="irc-date">[12:16]</span> <span class="irc-black">&lt;olabini&gt; !reddit</span><br />
+<span class="irc-date">[12:17]</span> <span class="irc-black">&lt;olabini&gt; !reddit</span><br />
+<span class="irc-date">[12:21]</span> <span class="irc-black">&lt;olabini&gt; !talkz</span><br />
+<span class="irc-date">[12:22]</span> <span class="irc-black">&lt;olabini&gt; !reddit</span><br />
+<span class="irc-date">[12:22]</span> <span class="irc-black">&lt;olabini&gt; !reddit</span><br />
+<span class="irc-date">[12:27]</span> <span class="irc-black">&lt;olabini&gt; blast it</span><br />
+<span class="irc-date">[12:37]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[13:02]</span> <span class="irc-black">&lt;olabini&gt; !seen naeu</span><br />
+<span class="irc-date">[13:02]</span> <span class="irc-black">&lt;IokeHurricane&gt; naeu (n=sam@dhcp-077-248-060-144.chello.nl) was last seen quitting from #ioke 25 minutes ago stating ().</span><br />
+<span class="irc-date">[15:10]</span> <span class="irc-black">&lt;CIA-40&gt; ioke: Ola Bini master * r5294d3e / docs/cane : Add information/plans about cane - <a href="http://tinyurl.com/93jmg3">http://tinyurl.com/93jmg3</a></span><br />
+<span class="irc-date">[15:10]</span> <span class="irc-green">* GitHub95 (n=GitHub95@129.177.74.65.static.xc88.engineyard.com) has joined #ioke</span><br />
+<span class="irc-date">[15:10]</span> <span class="irc-black">&lt;GitHub95&gt; ioke: Ola Bini master SHA1-5294d3e</span><br />
+<span class="irc-date">[15:10]</span> <span class="irc-black">&lt;GitHub95&gt; Add information/plans about cane</span><br />
+<span class="irc-date">[15:10]</span> <span class="irc-black">&lt;GitHub95&gt; <a href="http://tinyurl.com/93jmg3">http://tinyurl.com/93jmg3</a></span><br />
+<span class="irc-date">[15:10]</span> <span class="irc-green">* GitHub95 (n=GitHub95@129.177.74.65.static.xc88.engineyard.com) has left #ioke</span><br />
+<span class="irc-date">[21:44]</span> <span class="irc-green">* Melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[23:24]</span> <span class="irc-navy">* Melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit ("Leaving")</span><br />

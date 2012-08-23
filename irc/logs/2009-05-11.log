@@ -1,0 +1,159 @@
+<span class="irc-date">[0:20]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit ()</span><br />
+<span class="irc-date">[6:44]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit ("Leaving")</span><br />
+<span class="irc-date">[7:25]</span> <span class="irc-green">* olabini (n=ola@217.40.10.35) has left #ioke</span><br />
+<span class="irc-date">[7:44]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[7:49]</span> <span class="irc-green">* olabini (n=ola@93-97-45-26.zone5.bethere.co.uk) has joined #ioke</span><br />
+<span class="irc-date">[7:49]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[7:56]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-251-116-041.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[7:57]</span> <span class="irc-black">&lt;naeu&gt; morning, morning</span><br />
+<span class="irc-date">[7:57]</span> <span class="irc-black">&lt;olabini&gt; hi there</span><br />
+<span class="irc-date">[7:57]</span> <span class="irc-black">&lt;olabini&gt; Sam, you pinged me the other day</span><br />
+<span class="irc-date">[7:58]</span> <span class="irc-black">&lt;olabini&gt; what did you have in mind?</span><br />
+<span class="irc-date">[7:58]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[8:04]</span> <span class="irc-black">&lt;naeu&gt; I was just trying to fully grok the example in your first blog post</span><br />
+<span class="irc-date">[8:05]</span> <span class="irc-black">&lt;naeu&gt; I did my time-old mistake - try and understand the code before reading on</span><br />
+<span class="irc-date">[8:06]</span> <span class="irc-black">&lt;naeu&gt; so I was wondering what the OrParser was doing there :-)</span><br />
+<span class="irc-date">[8:07]</span> <span class="irc-black">&lt;naeu&gt; and I was having a little trouble understanding the 'with' cell - it seems it's not defined anywhere in the Guide</span><br />
+<span class="irc-date">[8:08]</span> <span class="irc-black">&lt;olabini&gt; aha</span><br />
+<span class="irc-date">[8:08]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[8:08]</span> <span class="irc-black">&lt;olabini&gt; ah, sorry, with is really simple</span><br />
+<span class="irc-date">[8:08]</span> <span class="irc-black">&lt;naeu&gt; yeah, I think I worked it out</span><br />
+<span class="irc-date">[8:08]</span> <span class="irc-black">&lt;olabini&gt; it creates a new mimic, then sets all the cells given as keyword arguments</span><br />
+<span class="irc-date">[8:08]</span> <span class="irc-black">&lt;olabini&gt; foo = Origin with(bar: 42, foo: 43)</span><br />
+<span class="irc-date">[8:08]</span> <span class="irc-black">&lt;naeu&gt; it just defines cells on the fly from the dict</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;olabini&gt; is the same as</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;olabini&gt; foo = Origin mimic</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;olabini&gt; foo bar = 42</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;olabini&gt; foo foo = 43</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;naeu&gt; cool, i thought as much</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;olabini&gt; you can see the definition in A10_defaultBehavior.ik</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;olabini&gt;   newObject = mimic</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;olabini&gt;   call arguments each(arg,</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;olabini&gt;     if(arg keyword?,</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;olabini&gt;       newObject cell(arg name asText[0..0-2]) = arg next evaluateOn(call ground),</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;olabini&gt;       newObject doMessage(arg)))</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;olabini&gt;   newObject)</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[8:10]</span> <span class="irc-black">&lt;olabini&gt; it also allow you to do the same thing as "do"</span><br />
+<span class="irc-date">[8:10]</span> <span class="irc-black">&lt;naeu&gt; ah, great, thanks</span><br />
+<span class="irc-date">[8:10]</span> <span class="irc-black">&lt;olabini&gt; so you can both set new properties and execute stuff in there</span><br />
+<span class="irc-date">[8:10]</span> <span class="irc-black">&lt;olabini&gt; maybe I should write something about it</span><br />
+<span class="irc-date">[8:10]</span> <span class="irc-black">&lt;naeu&gt; yeah, a little post contrasting with and do would be nice</span><br />
+<span class="irc-date">[8:10]</span> <span class="irc-black">&lt;olabini&gt; but it's one of those things that if I start writing about them, there are about a 100 more functions like that</span><br />
+<span class="irc-date">[8:10]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[8:10]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[8:10]</span> <span class="irc-black">&lt;olabini&gt; ok, will think about that</span><br />
+<span class="irc-date">[8:10]</span> <span class="irc-black">&lt;olabini&gt; what did you like my philosophy post?</span><br />
+<span class="irc-date">[8:10]</span> <span class="irc-green">* mozinator (n=mozinato@195-241-109-215.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:10]</span> <span class="irc-black">&lt;olabini&gt; I was slightly drunk while writing it, so it could be bad</span><br />
+<span class="irc-date">[8:11]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[8:11]</span> <span class="irc-black">&lt;naeu&gt; one thing I found slightly confusing was your use of context in the BaseParser even though it's defined in one of the mimics</span><br />
+<span class="irc-date">[8:11]</span> <span class="irc-black">&lt;naeu&gt; I think I found it even more confusing because it was within the 'with' clause, and I wondered if it had a special meaning</span><br />
+<span class="irc-date">[8:12]</span> <span class="irc-black">&lt;naeu&gt; i.e. something like context in a macro</span><br />
+<span class="irc-date">[8:12]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit ()</span><br />
+<span class="irc-date">[8:12]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[8:12]</span> <span class="irc-black">&lt;olabini&gt; the reason is that the context is an instance of ParserContext</span><br />
+<span class="irc-date">[8:12]</span> <span class="irc-black">&lt;olabini&gt; and all the parsers need to have access to it, so you need to add it as a property to all of them</span><br />
+<span class="irc-date">[8:13]</span> <span class="irc-black">&lt;olabini&gt; and no, it doesn't have any special meaning at all</span><br />
+<span class="irc-date">[8:13]</span> <span class="irc-black">&lt;naeu&gt; (oh and I'm just about to read the philosophy post (I liked all the others so far - you did a really great job of defining the hierarchy even *without* a diagram))</span><br />
+<span class="irc-date">[8:13]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[8:13]</span> <span class="irc-black">&lt;olabini&gt; good</span><br />
+<span class="irc-date">[8:13]</span> <span class="irc-black">&lt;olabini&gt; I was thinking about doing a diagram, but that would have been such a PITA</span><br />
+<span class="irc-date">[8:13]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[8:13]</span> <span class="irc-black">&lt;naeu&gt; you can always ask me to do diagrams :-)</span><br />
+<span class="irc-date">[8:14]</span> <span class="irc-black">&lt;naeu&gt; ok, one last question before I read the philosophy post</span><br />
+<span class="irc-date">[8:14]</span> <span class="irc-black">&lt;naeu&gt; regarding evaluateOn</span><br />
+<span class="irc-date">[8:15]</span> <span class="irc-black">&lt;naeu&gt; why does it need two arguments?</span><br />
+<span class="irc-date">[8:16]</span> <span class="irc-black">&lt;naeu&gt; is it a chain or something?</span><br />
+<span class="irc-date">[8:16]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[8:16]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[8:16]</span> <span class="irc-black">&lt;olabini&gt; well,</span><br />
+<span class="irc-date">[8:16]</span> <span class="irc-black">&lt;olabini&gt; evaluateOn doesn't need two arguments</span><br />
+<span class="irc-date">[8:16]</span> <span class="irc-black">&lt;olabini&gt; but those two arguments are the "ground" and the "receiver"</span><br />
+<span class="irc-date">[8:16]</span> <span class="irc-black">&lt;naeu&gt; ok..</span><br />
+<span class="irc-date">[8:16]</span> <span class="irc-black">&lt;olabini&gt; respectively</span><br />
+<span class="irc-date">[8:17]</span> <span class="irc-black">&lt;naeu&gt; ah, so it's like send</span><br />
+<span class="irc-date">[8:17]</span> <span class="irc-black">&lt;olabini&gt; in most cases you want them to be the same, but in some cases you don't</span><br />
+<span class="irc-date">[8:17]</span> <span class="irc-black">&lt;olabini&gt; well, no</span><br />
+<span class="irc-date">[8:17]</span> <span class="irc-black">&lt;naeu&gt; ack</span><br />
+<span class="irc-date">[8:17]</span> <span class="irc-black">&lt;olabini&gt; send doesn't allow you to set both the ground AND the receiver</span><br />
+<span class="irc-date">[8:17]</span> <span class="irc-black">&lt;naeu&gt; yeah, sure</span><br />
+<span class="irc-date">[8:17]</span> <span class="irc-black">&lt;naeu&gt; hmm, i'm having trouble understanding what that means</span><br />
+<span class="irc-date">[8:18]</span> <span class="irc-black">&lt;martido&gt; hey guys, sorry for chiming in on this ... in which cases would you want the ground be different from the receiver?</span><br />
+<span class="irc-date">[8:18]</span> <span class="irc-black">&lt;naeu&gt; given a receiver R, what would change with different grounds?</span><br />
+<span class="irc-date">[8:18]</span> <span class="irc-black">&lt;naeu&gt; martido: you're not chiming in, you're joining the discussion :-)</span><br />
+<span class="irc-date">[8:19]</span> <span class="irc-black">&lt;olabini&gt; well, it only matters if you have arguments or a message chain</span><br />
+<span class="irc-date">[8:19]</span> <span class="irc-black">&lt;olabini&gt; say that you have this message: "foo(x, y)"</span><br />
+<span class="irc-date">[8:19]</span> <span class="irc-black">&lt;martido&gt; naeu: oh thanks ;)</span><br />
+<span class="irc-date">[8:19]</span> <span class="irc-black">&lt;olabini&gt; if you have receiver R and ground G</span><br />
+<span class="irc-date">[8:20]</span> <span class="irc-black">&lt;olabini&gt; then foo will be sent to R, while x and y will be sent to G</span><br />
+<span class="irc-date">[8:20]</span> <span class="irc-black">&lt;olabini&gt; in the same manner, if you have a terminator in the message, the message after the terminator will be on G, not R.</span><br />
+<span class="irc-date">[8:22]</span> <span class="irc-black">&lt;martido&gt; ah ok, makes sense</span><br />
+<span class="irc-date">[8:22]</span> <span class="irc-black">&lt;olabini&gt; it's not necessary in most cases - but it is part of the internal runtime model, and as such something I want to have exposed</span><br />
+<span class="irc-date">[8:23]</span> <span class="irc-black">&lt;naeu&gt; that makes a lot of sense</span><br />
+<span class="irc-date">[8:24]</span> <span class="irc-black">&lt;naeu&gt; ola, what does this mean: "Ioke values the thing on the right, but values the thing on the left much more."</span><br />
+<span class="irc-date">[8:26]</span> <span class="irc-black">&lt;olabini&gt; on the left and right of the "over" statements</span><br />
+<span class="irc-date">[8:26]</span> <span class="irc-black">&lt;olabini&gt; you know, the headlines</span><br />
+<span class="irc-date">[8:26]</span> <span class="irc-black">&lt;naeu&gt; oh, and this sentence deserves a blog post all of its own: "The side effect is of course that Ioke is not a fast language at all. But I believe it is one of the most expressive you can find - at least if you measure expressiveness the way I do."</span><br />
+<span class="irc-date">[8:27]</span> <span class="irc-black">&lt;naeu&gt; ahhh</span><br />
+<span class="irc-date">[8:28]</span> <span class="irc-black">&lt;martido&gt; a last sentence to the above: sometimes the Ioke sources got me a bit confused because of the different things like receiver, context, ground passed to the various methods. when debugging I noticed that most of the time those were the same. now I think I understand it a little bit ;) hopefully ...</span><br />
+<span class="irc-date">[8:29]</span> <span class="irc-black">&lt;naeu&gt; also, a side thought (having read the essay on abstraction in metamagical themas) how direct an isomorphism is there between Ioke and the concepts of entity and role and abstraction?</span><br />
+<span class="irc-date">[8:32]</span> <span class="irc-black">&lt;naeu&gt; how do you define first class concepts?</span><br />
+<span class="irc-date">[8:37]</span> <span class="irc-black">&lt;naeu&gt; the philosophical post is nice too</span><br />
+<span class="irc-date">[8:38]</span> <span class="irc-black">&lt;naeu&gt; I hope it starts a productive discussion</span><br />
+<span class="irc-date">[8:38]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[8:47]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit ()</span><br />
+<span class="irc-date">[9:01]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[9:02]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit (Client Quit)</span><br />
+<span class="irc-date">[9:53]</span> <span class="irc-black">&lt;naeu&gt; olabini: btw, thanks for Text#evaluateEscapes :-)</span><br />
+<span class="irc-date">[9:53]</span> <span class="irc-black">&lt;naeu&gt; it works perfectly</span><br />
+<span class="irc-date">[9:56]</span> <span class="irc-black">&lt;olabini&gt; good</span><br />
+<span class="irc-date">[9:56]</span> <span class="irc-black">&lt;olabini&gt; it wasn't too hard to implement</span><br />
+<span class="irc-date">[9:56]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:57]</span> <span class="irc-black">&lt;olabini&gt; you noticed that I merged your stuff too?</span><br />
+<span class="irc-date">[9:57]</span> <span class="irc-black">&lt;olabini&gt; and I added a new spec for eval</span><br />
+<span class="irc-date">[9:57]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;naeu&gt; yeah, i noticed that too</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;naeu&gt; thanks</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;naeu&gt; oh, and sorry for missing the eval spec</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;naeu&gt; what did you think of my camelCase implementation?</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;naeu&gt; I was expecting you to edit my code...</span><br />
+<span class="irc-date">[10:09]</span> <span class="irc-green">* exlibris (n=exlibris@port-87-193-165-87.static.qsc.de) has joined #ioke</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;olabini&gt; no, I was at the airport</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;olabini&gt; it seemed to be functional</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;olabini&gt; it can always be refactored later</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;naeu&gt; sure :-)</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;naeu&gt; I was just hoping to learn from such a refactoring</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;olabini&gt; your learning will have to wait</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;naeu&gt; indeed</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;olabini&gt; and I can't guarantee I would have changed anything either</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;olabini&gt; =P</span><br />
+<span class="irc-date">[10:19]</span> <span class="irc-black">&lt;olabini&gt; why does Kat say we have gossipped about her?</span><br />
+<span class="irc-date">[10:19]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[10:19]</span> <span class="irc-black">&lt;naeu&gt; haha, i have no idea</span><br />
+<span class="irc-date">[10:19]</span> <span class="irc-black">&lt;naeu&gt; we can make something up</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;naeu&gt; she asked me what I was doing earlier, I replied saying I was workign on a boring website and chatting with you</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;olabini&gt; hahaha</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;naeu&gt; but I didn't elaborate on the conversation itself</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://twitter.com/frednecksec/statuses/1758276712">http://twitter.com/frednecksec/statuses/1758276712</a></span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;olabini&gt; yeah, noticed that one</span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[10:38]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[11:03]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[12:16]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[13:04]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-251-116-041.chello.nl) Quit ()</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit ()</span><br />
+<span class="irc-date">[16:40]</span> <span class="irc-navy">* exlibris (n=exlibris@port-87-193-165-87.static.qsc.de) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[16:59]</span> <span class="irc-green">* vborja (n=vborja@189.143.111.16) has joined #ioke</span><br />
+<span class="irc-date">[17:02]</span> <span class="irc-navy">* olabini (n=ola@93-97-45-26.zone5.bethere.co.uk) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:20]</span> <span class="irc-green">* kar8nga (n=kar8nga@f-61.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[20:09]</span> <span class="irc-navy">* kar8nga (n=kar8nga@f-61.vc-graz.ac.at) Quit (Read error: 54 (Connection reset by peer))</span><br />
+<span class="irc-date">[21:49]</span> <span class="irc-navy">* vborja (n=vborja@189.143.111.16) Quit ("Leaving")</span><br />
+<span class="irc-date">[23:27]</span> <span class="irc-green">* olabini (n=ola@217.40.10.35) has joined #ioke</span><br />
+<span class="irc-date">[23:27]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />

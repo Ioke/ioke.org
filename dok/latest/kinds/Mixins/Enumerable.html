@@ -1,0 +1,4148 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Kind: DefaultBehavior</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="../.././dokgen-style.css" type="text/css" media="screen" />
+    <script language="JavaScript" type="text/javascript">
+    // <![CDATA[
+
+        function toggleSource( id )
+        {
+          var elem
+          var link
+
+          if( document.getElementById )
+          {
+            elem = document.getElementById( id )
+            link = document.getElementById( "l_" + id )
+          }
+          else if ( document.all )
+          {
+            elem = eval( "document.all." + id )
+            link = eval( "document.all.l_" + id )
+          }
+          else
+            return false;
+
+          if( elem.style.display == "block" )
+          {
+            elem.style.display = "none"
+            link.innerHTML = "show source"
+          }
+          else
+          {
+            elem.style.display = "block"
+            link.innerHTML = "hide source"
+          }
+        }
+
+        function openCode( url )
+        {
+          window.open( url, "SOURCE_CODE", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=480,width=750" ).focus();
+        }
+      // ]]>
+    </script>
+  </head>
+
+  <body>
+    <table border='0' cellpadding='0' cellspacing='0' width="100%" class='banner'>
+      <tr>
+        <td>
+          <table width="100%" border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+              <td class="file-title" colspan="2">
+                <span class="file-title-prefix">Kind</span>
+                <br />
+                Mixins Enumerable
+              </td>
+              <td align="right">
+                <table cellspacing="0" cellpadding="2">
+                  <tr>
+                    <td>Main mimic:</td>
+                    <td>
+                      <a href="../../kinds/Mixins.html">Mixins</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <div id="bodyContent">
+      <div id="content">
+        <div class="description">
+          <p>
+adds lots of helpful methods that can be done on enumerable methods. based on the 'each' method being available on the self.
+          </p>
+        </div>
+
+        <div class="sectiontitle">Mimics</div>
+        <ul>
+          <li><a href="../../kinds/Mixins.html">Mixins</a></li>
+        </ul>
+
+        <div class="sectiontitle">Inactive cells</div>
+        <ul>
+          <li><a href="#C00605">kind</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Active cells</div>
+        <ul>
+          <li><a href="#C00622">all?(...)</a></li>
+<li><a href="#C00615">any?(...)</a></li>
+<li><a href="#C00606">asList()</a></li>
+<li><a href="#C00607">asTuple()</a></li>
+<li><a href="#C00685">collect(...)</a></li>
+<li><a href="#C00689">collect:dict(...)</a></li>
+<li><a href="#C00686">collect:list(...)</a></li>
+<li><a href="#C00688">collect:set(...)</a></li>
+<li><a href="#C00691">collectFn(+blocks)</a></li>
+<li><a href="#C00693">collectFn:dict(+blocks)</a></li>
+<li><a href="#C00692">collectFn:set(+blocks)</a></li>
+<li><a href="#C00624">count(...)</a></li>
+<li><a href="#C00656">cycle(...)</a></li>
+<li><a href="#C00694">detect(...)</a></li>
+<li><a href="#C00653">drop(howMany)</a></li>
+<li><a href="#C00654">drop:dict(howMany)</a></li>
+<li><a href="#C00655">drop:set(howMany)</a></li>
+<li><a href="#C00636">dropWhile(...)</a></li>
+<li><a href="#C00637">dropWhile:dict(...)</a></li>
+<li><a href="#C00638">dropWhile:set(...)</a></li>
+<li><a href="#C00683">eachCons(...)</a></li>
+<li><a href="#C00684">eachSlice(...)</a></li>
+<li><a href="#C00698">filter(...)</a></li>
+<li><a href="#C00700">filter:dict(...)</a></li>
+<li><a href="#C00702">filter:set(...)</a></li>
+<li><a href="#C00618">find(...)</a></li>
+<li><a href="#C00697">findAll(...)</a></li>
+<li><a href="#C00699">findAll:dict(...)</a></li>
+<li><a href="#C00701">findAll:set(...)</a></li>
+<li><a href="#C00640">findIndex(...)</a></li>
+<li><a href="#C00646">first(howMany nil)</a></li>
+<li><a href="#C00647">first:dict(howMany)</a></li>
+<li><a href="#C00648">first:set(howMany)</a></li>
+<li><a href="#C00643">flatMap(...)</a></li>
+<li><a href="#C00645">flatMap:dict(...)</a></li>
+<li><a href="#C00690">flatMap:list(...)</a></li>
+<li><a href="#C00644">flatMap:set(...)</a></li>
+<li><a href="#C00696">fold(...)</a></li>
+<li><a href="#C00659">grep(...)</a></li>
+<li><a href="#C00660">grep:set(...)</a></li>
+<li><a href="#C00663">group()</a></li>
+<li><a href="#C00639">groupBy(...)</a></li>
+<li><a href="#C00649">include?(toFind)</a></li>
+<li><a href="#C00642">inject(...)</a></li>
+<li><a href="#C00661">join(separator "")</a></li>
+<li><a href="#C00609">map(...)</a></li>
+<li><a href="#C00611">map:dict(...)</a></li>
+<li><a href="#C00687">map:list(...)</a></li>
+<li><a href="#C00610">map:set(...)</a></li>
+<li><a href="#C00612">mapFn(+blocks)</a></li>
+<li><a href="#C00613">mapFn:dict(+blocks)</a></li>
+<li><a href="#C00614">mapFn:set(+blocks)</a></li>
+<li><a href="#C00625">max(...)</a></li>
+<li><a href="#C00703">member?(toFind)</a></li>
+<li><a href="#C00626">min(...)</a></li>
+<li><a href="#C00616">none?(...)</a></li>
+<li><a href="#C00623">one?(...)</a></li>
+<li><a href="#C00630">partition(...)</a></li>
+<li><a href="#C00632">partition:dict(...)</a></li>
+<li><a href="#C00631">partition:set(...)</a></li>
+<li><a href="#C00695">reduce(...)</a></li>
+<li><a href="#C00627">reject(...)</a></li>
+<li><a href="#C00628">reject:dict(...)</a></li>
+<li><a href="#C00629">reject:set(...)</a></li>
+<li><a href="#C00619">select(...)</a></li>
+<li><a href="#C00620">select:dict(...)</a></li>
+<li><a href="#C00621">select:set(...)</a></li>
+<li><a href="#C00617">some(...)</a></li>
+<li><a href="#C00608">sort()</a></li>
+<li><a href="#C00641">sortBy(...)</a></li>
+<li><a href="#C00662">sum()</a></li>
+<li><a href="#C00650">take(howMany)</a></li>
+<li><a href="#C00651">take:dict(howMany)</a></li>
+<li><a href="#C00652">take:set(howMany)</a></li>
+<li><a href="#C00633">takeWhile(...)</a></li>
+<li><a href="#C00635">takeWhile:dict(...)</a></li>
+<li><a href="#C00634">takeWhile:set(...)</a></li>
+<li><a href="#C00657">zip(+listsAndFns)</a></li>
+<li><a href="#C00658">zip:set(+lists)</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Specs</div>
+        <div class="specs">
+          
+        </div>
+
+        <div class="sectiontitle">Inactive cells (details)</div>
+                <div class="cell">
+          <a name="C00605"></a>
+          <table border="0" cellpadding="5">
+            <tr valign="top">
+              <td class="cell-name">kind</td>
+              <td>=</td>
+              <td class="cell-value">"Mixins Enumerable"</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div class="sectiontitle">Active cells (details)</div>
+                <div class="cell">
+          <div class="title">
+          <a name="C00622"></a><b>all?</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero, one or two arguments. if zero arguments, returns false if any of the elements yielded by each is false, otherwise true. if one argument, expects it to be a message chain. if that message chain, when applied to the current element returns a false value, the method returns false. finally, if two arguments are given, the first argument is an unevaluated name and the second is a code element. these will together be turned into a lexical block and tested against the values in this element. if it returns false for any element, this method returns false, otherwise true.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00622_source')" id="l_C00622_source">show source</a> ]</p>
+            <div id="C00622_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    
+    
+    self each(n, 
+      x = cell(:n) 
+      unless(cell(:x), 
+        return(false))) 
+    true, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    
+    
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      unless(cell(:x), 
+        return(false))) 
+    true, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    
+    
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      unless(cell(:x), 
+        return(false))) 
+    true, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00615"></a><b>any?</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero, one or two arguments. if zero arguments, returns true if any of the elements yielded by each is true, otherwise false. if one argument, expects it to be a message chain. if that message chain, when applied to the current element returns a true value, the method returns true. finally, if two arguments are given, the first argument is an unevaluated name and the second is a code element. these will together be turned into a lexical block and tested against the values in this element. if it returns true for any element, this method returns true, otherwise false.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00615_source')" id="l_C00615_source">show source</a> ]</p>
+            <div id="C00615_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  if(
+    argCount ==(
+      0), 
+    
+    
+    
+    
+    self each(n, 
+      x = cell(:n) 
+      if(cell(:x), 
+        return(true))) 
+    false, 
+    if(
+      argCount ==(
+        1), 
+      
+      theCode = call arguments [](
+          0) 
+      
+      
+      
+      self each(n, 
+        x = theCode evaluateOn(call ground, cell(:n)) 
+        if(cell(:x), 
+          return(true))) 
+      false, 
+      if(
+        argCount ==(
+          2), 
+        
+        argName = call arguments [](
+            0) 
+        theCode = call arguments [](
+            1) 
+        
+        
+        
+        destructor = Destructor from(argName) 
+        lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+        self each(n, 
+          x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+          if(cell(:x), 
+            return(true))) 
+        false, 
+        error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)))) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00606"></a><b>asList</b>()
+          </div>
+          <div class="description">
+            <p>will return a list created from calling each on the receiver until everything has been yielded. if a more efficient version is possible of this, the object should implement it, since other Enumerable methods will use this for some operations. note that asList is not required to return a new list</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00606_source')" id="l_C00606_source">show source</a> ]</p>
+            <div id="C00606_source" class="dyn-source">
+<pre>
+method(
+  result = list 
+  self each(n, result &lt;&lt;(cell(:n))) 
+  result)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00607"></a><b>asTuple</b>()
+          </div>
+          <div class="description">
+            <p>will return a tuple created from calling each on the receiver until everything has been yielded. </p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00607_source')" id="l_C00607_source">show source</a> ]</p>
+            <div id="C00607_source" class="dyn-source">
+<pre>
+method(
+  tuple(*(asList)))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00685"></a><b>collect</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00685_source')" id="l_C00685_source">show source</a> ]</p>
+            <div id="C00685_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  if(
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = list 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      result &lt;&lt;(cell(:x))) 
+    result, 
+    if(
+      argCount ==(
+        2), 
+      
+      argName = call arguments [](
+          0) 
+      theCode = call arguments [](
+          1) 
+      
+      result = list 
+      destructor = Destructor from(argName) 
+      lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+      self each(n, 
+        x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+        result &lt;&lt;(cell(:x))) 
+      result, 
+      error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext))) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00689"></a><b>collect:dict</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00689_source')" id="l_C00689_source">show source</a> ]</p>
+            <div id="C00689_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = dict 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(cell(:x) kind ==("Pair"), 
+        result [](x key) = x value, 
+        result [](cell(:x)) = nil)) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = dict 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(cell(:x) kind ==("Pair"), 
+        result [](x key) = x value, 
+        result [](cell(:x)) = nil)) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00686"></a><b>collect:list</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00686_source')" id="l_C00686_source">show source</a> ]</p>
+            <div id="C00686_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  if(
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = list 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      result &lt;&lt;(cell(:x))) 
+    result, 
+    if(
+      argCount ==(
+        2), 
+      
+      argName = call arguments [](
+          0) 
+      theCode = call arguments [](
+          1) 
+      
+      result = list 
+      destructor = Destructor from(argName) 
+      lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+      self each(n, 
+        x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+        result &lt;&lt;(cell(:x))) 
+      result, 
+      error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext))) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00688"></a><b>collect:set</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00688_source')" id="l_C00688_source">show source</a> ]</p>
+            <div id="C00688_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = set 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      result &lt;&lt;(cell(:x))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = set 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      result &lt;&lt;(cell(:x))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00691"></a><b>collectFn</b>(+blocks)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00691_source')" id="l_C00691_source">show source</a> ]</p>
+            <div id="C00691_source" class="dyn-source">
+<pre>
+method(+blocks, 
+  result = list 
+  self each(n, 
+    current = cell(:n) 
+    blocks each(b, current = cell(:b) call(cell(:current))) 
+    result &lt;&lt;(current)) 
+  result)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00693"></a><b>collectFn:dict</b>(+blocks)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00693_source')" id="l_C00693_source">show source</a> ]</p>
+            <div id="C00693_source" class="dyn-source">
+<pre>
+method(+blocks, 
+  result = dict 
+  self each(n, 
+    current = cell(:n) 
+    blocks each(b, current = cell(:b) call(cell(:current))) 
+    if(cell(:current) mimics?(Pair), 
+      result [](current key) = current value, 
+      result [](cell(:current)) = nil) 
+    ) 
+  result)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00692"></a><b>collectFn:set</b>(+blocks)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00692_source')" id="l_C00692_source">show source</a> ]</p>
+            <div id="C00692_source" class="dyn-source">
+<pre>
+method(+blocks, 
+  result = set 
+  self each(n, 
+    current = cell(:n) 
+    blocks each(b, current = cell(:b) call(cell(:current))) 
+    result &lt;&lt;(current)) 
+  result)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00624"></a><b>count</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero, one or two arguments. if zero arguments, returns the number of elements in the collection. if one argument, expects it to be a message chain. if that message chain, that will be used as a predicate. returns the number of elements where the predicate returns true. finally, if two arguments are given, the first argument is an unevaluated name and the second is a code element. these will together be turned into a lexical block and used as a predicate, and the result will be the number of elements matching the predicate.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00624_source')" id="l_C00624_source">show source</a> ]</p>
+            <div id="C00624_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    result = 0 
+    argLength = call arguments length 
+    self each(n, 
+      x = cell(:n) 
+      if(cell(:x) ||(argLength ==(0)), 
+        ++(result))) 
+    result, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = 0 
+    argLength = call arguments length 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(cell(:x) ||(argLength ==(0)), 
+        ++(result))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = 0 
+    argLength = call arguments length 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(cell(:x) ||(argLength ==(0)), 
+        ++(result))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00656"></a><b>cycle</b>(...)
+          </div>
+          <div class="description">
+            <p>takes one or two arguments and cycles over the elements of this collection. the cycling will be done by calling each once and collecting the result, and then using this to continue cycling. if one argument is given, it should be a message chain to apply. if two arguments are given, they will be turned into a lexical block and applied. if the collection is empty, returns nil.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00656_source')" id="l_C00656_source">show source</a> ]</p>
+            <div id="C00656_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    internal = list 
+    self each(n, 
+      internal &lt;&lt;(cell(:n)) 
+      theCode evaluateOn(call ground, cell(:n))) 
+    if(internal empty?, return(nil)) 
+    loop(internal each(x, theCode evaluateOn(call ground, cell(:x)))), 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    internal = list 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      internal &lt;&lt;(cell(:n)) 
+      lexicalCode call(*(destructor unpack(cell(:n))))) 
+    if(internal empty?, return(nil)) 
+    loop(internal each(x, lexicalCode call(*(destructor unpack(cell(:x)))))), 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00694"></a><b>detect</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00694_source')" id="l_C00694_source">show source</a> ]</p>
+            <div id="C00694_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  if(
+    argCount ==(
+      0), 
+    
+    
+    
+    
+    self each(n, 
+      x = cell(:n) 
+      if(cell(:x), 
+        return(cell(:n)))) 
+    nil, 
+    if(
+      argCount ==(
+        1), 
+      
+      theCode = call arguments [](
+          0) 
+      
+      
+      
+      self each(n, 
+        x = theCode evaluateOn(call ground, cell(:n)) 
+        if(cell(:x), 
+          return(cell(:n)))) 
+      nil, 
+      if(
+        argCount ==(
+          2), 
+        
+        argName = call arguments [](
+            0) 
+        theCode = call arguments [](
+            1) 
+        
+        
+        
+        destructor = Destructor from(argName) 
+        lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+        self each(n, 
+          x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+          if(cell(:x), 
+            return(cell(:n)))) 
+        nil, 
+        error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)))) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00653"></a><b>drop</b>(howMany)
+          </div>
+          <div class="description">
+            <p>takes one argument and returns a list of all the elements in this object except for how many that should be avoided.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00653_source')" id="l_C00653_source">show source</a> ]</p>
+            <div id="C00653_source" class="dyn-source">
+<pre>
+method(howMany, 
+  result = list 
+  currentCount = howMany 
+  self each(n, 
+    if(currentCount &gt;(0), 
+      --(currentCount), 
+      result &lt;&lt;(cell(:n)))) 
+  result)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00654"></a><b>drop:dict</b>(howMany)
+          </div>
+          <div class="description">
+            <p>takes one argument and returns a dict of all the elements in this object except for how many that should be avoided.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00654_source')" id="l_C00654_source">show source</a> ]</p>
+            <div id="C00654_source" class="dyn-source">
+<pre>
+method(howMany, 
+  result = dict 
+  currentCount = howMany 
+  self each(n, 
+    if(currentCount &gt;(0), 
+      --(currentCount), 
+      if(cell(:n) mimics?(Pair), 
+        result [](n key) = n value, 
+        result [](cell(:n)) = nil))) 
+  result)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00655"></a><b>drop:set</b>(howMany)
+          </div>
+          <div class="description">
+            <p>takes one argument and returns a set of all the elements in this object except for how many that should be avoided.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00655_source')" id="l_C00655_source">show source</a> ]</p>
+            <div id="C00655_source" class="dyn-source">
+<pre>
+method(howMany, 
+  result = set 
+  currentCount = howMany 
+  self each(n, 
+    if(currentCount &gt;(0), 
+      --(currentCount), 
+      result &lt;&lt;(cell(:n)))) 
+  result)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00636"></a><b>dropWhile</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero, one or two arguments. it will evaluate a predicate once for each element, and avoid all the elements until the predicate returns false for the first time, then it will start collecting data. if zero arguments, the predicate is the element itself. if one argument, expects it to be a message chain to apply as a predicate. if two arguments are given, the first argument is an unevaluated name and the second is a code element. these will together be turned into a lexical block and used as the predicate.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00636_source')" id="l_C00636_source">show source</a> ]</p>
+            <div id="C00636_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    result = list 
+    collecting = false 
+    self each(n, 
+      x = cell(:n) 
+      if(collecting, 
+        result &lt;&lt;(cell(:n)), 
+        unless(cell(:x), 
+          collecting = true 
+          result &lt;&lt;(cell(:n))))) 
+    result, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = list 
+    collecting = false 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(collecting, 
+        result &lt;&lt;(cell(:n)), 
+        unless(cell(:x), 
+          collecting = true 
+          result &lt;&lt;(cell(:n))))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = list 
+    collecting = false 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(collecting, 
+        result &lt;&lt;(cell(:n)), 
+        unless(cell(:x), 
+          collecting = true 
+          result &lt;&lt;(cell(:n))))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00637"></a><b>dropWhile:dict</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero, one or two arguments. it will evaluate a predicate once for each element, and avoid all the elements until the predicate returns false for the first time, then it will start collecting data. if zero arguments, the predicate is the element itself. if one argument, expects it to be a message chain to apply as a predicate. if two arguments are given, the first argument is an unevaluated name and the second is a code element. these will together be turned into a lexical block and used as the predicate.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00637_source')" id="l_C00637_source">show source</a> ]</p>
+            <div id="C00637_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    result = dict 
+    collecting = false 
+    self each(n, 
+      x = cell(:n) 
+      if(collecting, 
+        if(cell(:n) mimics?(Pair), 
+          result [](n key) = n value, 
+          result [](cell(:n)) = nil), 
+        unless(cell(:x), 
+          collecting = true 
+          if(cell(:n) mimics?(Pair), 
+            result [](n key) = n value, 
+            result [](cell(:n)) = nil)))) 
+    result, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = dict 
+    collecting = false 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(collecting, 
+        if(cell(:n) mimics?(Pair), 
+          result [](n key) = n value, 
+          result [](cell(:n)) = nil), 
+        unless(cell(:x), 
+          collecting = true 
+          if(cell(:n) mimics?(Pair), 
+            result [](n key) = n value, 
+            result [](cell(:n)) = nil)))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = dict 
+    collecting = false 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(collecting, 
+        if(cell(:n) mimics?(Pair), 
+          result [](n key) = n value, 
+          result [](cell(:n)) = nil), 
+        unless(cell(:x), 
+          collecting = true 
+          if(cell(:n) mimics?(Pair), 
+            result [](n key) = n value, 
+            result [](cell(:n)) = nil)))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00638"></a><b>dropWhile:set</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero, one or two arguments. it will evaluate a predicate once for each element, and avoid all the elements until the predicate returns false for the first time, then it will start collecting data. if zero arguments, the predicate is the element itself. if one argument, expects it to be a message chain to apply as a predicate. if two arguments are given, the first argument is an unevaluated name and the second is a code element. these will together be turned into a lexical block and used as the predicate.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00638_source')" id="l_C00638_source">show source</a> ]</p>
+            <div id="C00638_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    result = set 
+    collecting = false 
+    self each(n, 
+      x = cell(:n) 
+      if(collecting, 
+        result &lt;&lt;(cell(:n)), 
+        unless(cell(:x), 
+          collecting = true 
+          result &lt;&lt;(cell(:n))))) 
+    result, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = set 
+    collecting = false 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(collecting, 
+        result &lt;&lt;(cell(:n)), 
+        unless(cell(:x), 
+          collecting = true 
+          result &lt;&lt;(cell(:n))))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = set 
+    collecting = false 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(collecting, 
+        result &lt;&lt;(cell(:n)), 
+        unless(cell(:x), 
+          collecting = true 
+          result &lt;&lt;(cell(:n))))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00683"></a><b>eachCons</b>(...)
+          </div>
+          <div class="description">
+            <p>takes one, two or three arguments. if one argument, assumes this to be a message chain and the cons length to be two. if two arguments, expects the first to be the cons length and the second to be the message chain. if three, expects the first to be the cons length, the second to be a variable name and the third to be a message chain. will yield lists of length consLength counting from the beginning of the enumerable</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00683_source')" id="l_C00683_source">show source</a> ]</p>
+            <div id="C00683_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      1), 
+    
+    code = call arguments [](
+        0) 
+    
+    consLength = 2 
+    ary = list 
+    
+    self each(n, 
+      if(ary length ==(consLength), 
+        ary shift!) 
+      ary push!(n) 
+      if(ary length ==(consLength), 
+        code evaluateOn(call ground, ary mimic)) 
+      ) 
+    self 
+    , 
+    argCount ==(
+      2), 
+    
+    consLength = call argAt(
+        0) 
+    code = call arguments [](
+        1) 
+    
+    ary = list 
+    
+    self each(n, 
+      if(ary length ==(consLength), 
+        ary shift!) 
+      ary push!(n) 
+      if(ary length ==(consLength), 
+        code evaluateOn(call ground, ary mimic)) 
+      ) 
+    self 
+    , 
+    argCount ==(
+      3), 
+    
+    consLength = call argAt(
+        0) 
+    argName = call arguments [](
+        1) 
+    code = call arguments [](
+        2) 
+    
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(code)), call ground) 
+    ary = list 
+    
+    self each(n, 
+      if(ary length ==(consLength), 
+        ary shift!) 
+      ary push!(n) 
+      if(ary length ==(consLength), 
+        lexicalCode call(*(destructor unpack(ary mimic)))) 
+      ) 
+    self 
+    , 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00684"></a><b>eachSlice</b>(...)
+          </div>
+          <div class="description">
+            <p>takes one, two or three arguments. if one argument, assumes this to be a message chain and the slice length to be two. if two arguments, expects the first to be the slice length and the second to be the message chain. if three, expects the first to be the slice length, the second to be a variable name and the third to be a message chain. will yield lists of length sliceLength counting from the beginning of the enumerable</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00684_source')" id="l_C00684_source">show source</a> ]</p>
+            <div id="C00684_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      1), 
+    
+    code = call arguments [](
+        0) 
+    
+    sliceLength = 2 
+    ary = list 
+    
+    self each(n, 
+      ary push!(n) 
+      if(ary length ==(sliceLength), 
+        code evaluateOn(call ground, ary) 
+        ary = list) 
+      ) 
+    if(ary length &gt;(0), code evaluateOn(call ground, ary)) 
+    self 
+    , 
+    argCount ==(
+      2), 
+    
+    sliceLength = call argAt(
+        0) 
+    code = call arguments [](
+        1) 
+    
+    ary = list 
+    
+    self each(n, 
+      ary push!(n) 
+      if(ary length ==(sliceLength), 
+        code evaluateOn(call ground, ary) 
+        ary = list) 
+      ) 
+    if(ary length &gt;(0), code evaluateOn(call ground, ary)) 
+    self 
+    , 
+    argCount ==(
+      3), 
+    
+    sliceLength = call argAt(
+        0) 
+    argName = call arguments [](
+        1) 
+    code = call arguments [](
+        2) 
+    
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(code)), call ground) 
+    ary = list 
+    
+    self each(n, 
+      ary push!(n) 
+      if(ary length ==(sliceLength), 
+        lexicalCode call(*(destructor unpack(ary))) 
+        ary = list) 
+      ) 
+    if(ary length &gt;(0), lexicalCode call(*(destructor unpack(ary)))) 
+    self 
+    , 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00698"></a><b>filter</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00698_source')" id="l_C00698_source">show source</a> ]</p>
+            <div id="C00698_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    result = list 
+    self each(n, 
+      x = cell(:n) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = list 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = list 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00700"></a><b>filter:dict</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00700_source')" id="l_C00700_source">show source</a> ]</p>
+            <div id="C00700_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    result = dict 
+    self each(n, 
+      x = cell(:n) 
+      if(cell(:x), 
+        if(cell(:n) mimics?(Pair), 
+          result [](n key) = n value, 
+          result [](cell(:n)) = nil))) 
+    result, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = dict 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(cell(:x), 
+        if(cell(:n) mimics?(Pair), 
+          result [](n key) = n value, 
+          result [](cell(:n)) = nil))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = dict 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(cell(:x), 
+        if(cell(:n) mimics?(Pair), 
+          result [](n key) = n value, 
+          result [](cell(:n)) = nil))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00702"></a><b>filter:set</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00702_source')" id="l_C00702_source">show source</a> ]</p>
+            <div id="C00702_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    result = set 
+    self each(n, 
+      x = cell(:n) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = set 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = set 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00618"></a><b>find</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero, one or two arguments. if zero arguments, returns the first element that is true, otherwise nil. if one argument, expects it to be a message chain. if that message chain, when applied to the current element returns a true value, the corresponding element is returned. finally, if two arguments are given, the first argument is an unevaluated name and the second is a code element. these will together be turned into a lexical block and tested against the values in this element. if it returns true for any element, the element will be retuend, otherwise nil.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00618_source')" id="l_C00618_source">show source</a> ]</p>
+            <div id="C00618_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  if(
+    argCount ==(
+      0), 
+    
+    
+    
+    
+    self each(n, 
+      x = cell(:n) 
+      if(cell(:x), 
+        return(cell(:n)))) 
+    nil, 
+    if(
+      argCount ==(
+        1), 
+      
+      theCode = call arguments [](
+          0) 
+      
+      
+      
+      self each(n, 
+        x = theCode evaluateOn(call ground, cell(:n)) 
+        if(cell(:x), 
+          return(cell(:n)))) 
+      nil, 
+      if(
+        argCount ==(
+          2), 
+        
+        argName = call arguments [](
+            0) 
+        theCode = call arguments [](
+            1) 
+        
+        
+        
+        destructor = Destructor from(argName) 
+        lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+        self each(n, 
+          x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+          if(cell(:x), 
+            return(cell(:n)))) 
+        nil, 
+        error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)))) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00697"></a><b>findAll</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00697_source')" id="l_C00697_source">show source</a> ]</p>
+            <div id="C00697_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    result = list 
+    self each(n, 
+      x = cell(:n) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = list 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = list 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00699"></a><b>findAll:dict</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00699_source')" id="l_C00699_source">show source</a> ]</p>
+            <div id="C00699_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    result = dict 
+    self each(n, 
+      x = cell(:n) 
+      if(cell(:x), 
+        if(cell(:n) mimics?(Pair), 
+          result [](n key) = n value, 
+          result [](cell(:n)) = nil))) 
+    result, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = dict 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(cell(:x), 
+        if(cell(:n) mimics?(Pair), 
+          result [](n key) = n value, 
+          result [](cell(:n)) = nil))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = dict 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(cell(:x), 
+        if(cell(:n) mimics?(Pair), 
+          result [](n key) = n value, 
+          result [](cell(:n)) = nil))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00701"></a><b>findAll:set</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00701_source')" id="l_C00701_source">show source</a> ]</p>
+            <div id="C00701_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    result = set 
+    self each(n, 
+      x = cell(:n) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = set 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = set 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00640"></a><b>findIndex</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero, one or two arguments. if zero arguments, returns the index of the first element that is true, otherwise nil. if one argument, expects it to be a message chain. if that message chain, when applied to the current element returns a true value, the corresponding element index is returned. finally, if two arguments are given, the first argument is an unevaluated name and the second is a code element. these will together be turned into a lexical block and tested against the values in this element. if it returns true for any element, the element index will be returned, otherwise nil.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00640_source')" id="l_C00640_source">show source</a> ]</p>
+            <div id="C00640_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  if(
+    argCount ==(
+      0), 
+    
+    
+    self each(ix, n, if(cell(:n), return(ix))) 
+    nil, 
+    if(
+      argCount ==(
+        1), 
+      
+      theCode = call arguments [](
+          0) 
+      
+      self each(ix, n, if(theCode evaluateOn(call ground, cell(:n)), return(ix))) 
+      nil, 
+      if(
+        argCount ==(
+          2), 
+        
+        argName = call arguments [](
+            0) 
+        theCode = call arguments [](
+            1) 
+        
+        destructor = Destructor from(argName) 
+        lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+        self each(ix, n, if(lexicalCode call(*(destructor unpack(cell(:n)))), return(ix))) 
+        nil, 
+        error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)))) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00646"></a><b>first</b>(howMany nil)
+          </div>
+          <div class="description">
+            <p>takes one optional argument. if no argument is given, first will return the first element in the collection, or nil if no such element exists. if an argument is given, it should be a number describing how many elements to get. the return value will be a list in that case</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00646_source')" id="l_C00646_source">show source</a> ]</p>
+            <div id="C00646_source" class="dyn-source">
+<pre>
+method(howMany nil, 
+  if(howMany, 
+    result = list 
+    self each(n, 
+      if(howMany ==(0), return(result)) 
+      --(howMany) 
+      result &lt;&lt;(cell(:n))) 
+    return(result), 
+    self each(n, return(cell(:n))) 
+    return(nil)))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00647"></a><b>first:dict</b>(howMany)
+          </div>
+          <div class="description">
+            <p>takes one argument. the argument should be a number describing how many elements to get. the return value will be a dict</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00647_source')" id="l_C00647_source">show source</a> ]</p>
+            <div id="C00647_source" class="dyn-source">
+<pre>
+method(howMany, 
+  result = dict 
+  self each(n, 
+    if(howMany ==(0), return(result)) 
+    --(howMany) 
+    if(cell(:n) mimics?(Pair), 
+      result [](n key) = n value, 
+      result [](cell(:n)) = nil)) 
+  return(result))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00648"></a><b>first:set</b>(howMany)
+          </div>
+          <div class="description">
+            <p>takes one argument. the argument should be a number describing how many elements to get. the return value will be a set</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00648_source')" id="l_C00648_source">show source</a> ]</p>
+            <div id="C00648_source" class="dyn-source">
+<pre>
+method(howMany, 
+  result = set 
+  self each(n, 
+    if(howMany ==(0), return(result)) 
+    --(howMany) 
+    result &lt;&lt;(cell(:n))) 
+  return(result))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00643"></a><b>flatMap</b>(...)
+          </div>
+          <div class="description">
+            <p>expects to get the same kind of arguments as map, and that each map operation returns a list. these lists will then be folded into a single list.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00643_source')" id="l_C00643_source">show source</a> ]</p>
+            <div id="C00643_source" class="dyn-source">
+<pre>
+macro(
+  call resendToMethod("map") fold(+))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00645"></a><b>flatMap:dict</b>(...)
+          </div>
+          <div class="description">
+            <p>expects to get the same kind of arguments as map:dict, and that each map operation returns a dict for key. these dicts will then be folded into a single dict.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00645_source')" id="l_C00645_source">show source</a> ]</p>
+            <div id="C00645_source" class="dyn-source">
+<pre>
+macro(
+  call resendToMethod("map:dict") fold({}, sum, arg, 
+    arg key each(val, 
+      sum [](val key) = val value) 
+    sum) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00690"></a><b>flatMap:list</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00690_source')" id="l_C00690_source">show source</a> ]</p>
+            <div id="C00690_source" class="dyn-source">
+<pre>
+macro(
+  call resendToMethod("map") fold(+))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00644"></a><b>flatMap:set</b>(...)
+          </div>
+          <div class="description">
+            <p>expects to get the same kind of arguments as map:set, and that each map operation returns a set. these sets will then be folded into a single set.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00644_source')" id="l_C00644_source">show source</a> ]</p>
+            <div id="C00644_source" class="dyn-source">
+<pre>
+macro(
+  call resendToMethod("map:set") fold(+))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00696"></a><b>fold</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00696_source')" id="l_C00696_source">show source</a> ]</p>
+            <div id="C00696_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  if(
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    theCode = theCode deepCopy 
+    elementName = genSym 
+    theCode last &lt;&lt;(message(elementName)) 
+    sum = nil 
+    self each(i, n, 
+      if(i ==(0), 
+        sum = cell(:n), 
+        call ground cell(elementName) = cell(:n) 
+        sum = theCode evaluateOn(call ground, cell(:sum)))) 
+    return(cell(:sum)), 
+    if(
+      argCount ==(
+        2), 
+      
+      argName = call arguments [](
+          0) 
+      theCode = call arguments [](
+          1) 
+      
+      elementName = argName name 
+      sum = nil 
+      self each(i, n, 
+        if(i ==(0), 
+          sum = cell(:n), 
+          call ground cell(elementName) = cell(:n) 
+          sum = theCode evaluateOn(call ground, cell(:sum)))) 
+      return(cell(:sum)), 
+      if(
+        argCount ==(
+          3), 
+        
+        sumArgName = call arguments [](
+            0) 
+        argName = call arguments [](
+            1) 
+        theCode = call arguments [](
+            2) 
+        
+        destructor = Destructor from(argName) 
+        lexicalCode = LexicalBlock createFrom(list(sumArgName) +(destructor argNames) +(list(theCode)), call ground) 
+        sum = nil 
+        self each(i, n, 
+          if(i ==(0), 
+            sum = cell(:n), 
+            sum = lexicalCode call(cell(:sum), *(destructor unpack(cell(:n)))))) 
+        return(cell(:sum)), 
+        if(
+          argCount ==(
+            4), 
+          
+          sum = call argAt(
+              0) 
+          sumArgName = call arguments [](
+              1) 
+          argName = call arguments [](
+              2) 
+          theCode = call arguments [](
+              3) 
+          
+          destructor = Destructor from(argName) 
+          lexicalCode = LexicalBlock createFrom(list(sumArgName) +(destructor argNames) +(list(theCode)), call ground) 
+          self each(n, 
+            sum = lexicalCode call(cell(:sum), *(destructor unpack(cell(:n))))) 
+          return(cell(:sum)), 
+          error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext))))) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00659"></a><b>grep</b>(...)
+          </div>
+          <div class="description">
+            <p>takes one, two or three arguments. grep will first find any elements in the collection matching the first argument with '==='. if two or three arguments are given, these will be used to transform the matching object and then add the transformed version instead of the original element to the result list. the two argument version expects the second argument to be a message chain, and the three argument version expects it to be something that can be turned into a lexical block</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00659_source')" id="l_C00659_source">show source</a> ]</p>
+            <div id="C00659_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      1), 
+    
+    matchingAgainst = call argAt(
+        0) 
+    
+    result = list 
+    self each(n, 
+      if(matchingAgainst ===(cell(:n)), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    matchingAgainst = call argAt(
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = list 
+    self each(n, 
+      if(matchingAgainst ===(cell(:n)), 
+        result &lt;&lt;(theCode evaluateOn(call ground, cell(:n))))) 
+    result, 
+    argCount ==(
+      3), 
+    
+    matchingAgainst = call argAt(
+        0) 
+    argName = call arguments [](
+        1) 
+    theCode = call arguments [](
+        2) 
+    
+    destructor = Destructor from(argName) 
+    result = list 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      if(matchingAgainst ===(cell(:n)), 
+        result &lt;&lt;(lexicalCode call(*(destructor unpack(cell(:n))))))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00660"></a><b>grep:set</b>(...)
+          </div>
+          <div class="description">
+            <p>takes one, two or three arguments. grep will first find any elements in the collection matching the first argument with '==='. if two or three arguments are given, these will be used to transform the matching object and then add the transformed version instead of the original element to the result set. the two argument version expects the second argument to be a message chain, and the three argument version expects it to be something that can be turned into a lexical block</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00660_source')" id="l_C00660_source">show source</a> ]</p>
+            <div id="C00660_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      1), 
+    
+    matchingAgainst = call argAt(
+        0) 
+    
+    result = set 
+    self each(n, 
+      if(matchingAgainst ===(cell(:n)), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    matchingAgainst = call argAt(
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = set 
+    self each(n, 
+      if(matchingAgainst ===(cell(:n)), 
+        result &lt;&lt;(theCode evaluateOn(call ground, cell(:n))))) 
+    result, 
+    argCount ==(
+      3), 
+    
+    matchingAgainst = call argAt(
+        0) 
+    argName = call arguments [](
+        1) 
+    theCode = call arguments [](
+        2) 
+    
+    destructor = Destructor from(argName) 
+    result = set 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      if(matchingAgainst ===(cell(:n)), 
+        result &lt;&lt;(lexicalCode call(*(destructor unpack(cell(:n))))))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00663"></a><b>group</b>()
+          </div>
+          <div class="description">
+            <p>returns a dict where all the keys are distinct elements in the enumerable, and each value is a list of all the values that are equivalent</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00663_source')" id="l_C00663_source">show source</a> ]</p>
+            <div id="C00663_source" class="dyn-source">
+<pre>
+method(
+  groupBy)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00639"></a><b>groupBy</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero, one or two arguments. it will evaluate all the elements in the enumerable and return a dictionary where the keys will be the result of evaluating the arguments and the value will be a list of all the original values that match that key.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00639_source')" id="l_C00639_source">show source</a> ]</p>
+            <div id="C00639_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    result = dict 
+    self each(n, 
+      x = cell(:n) 
+      if(result key?(cell(:x)), 
+        result [](cell(:x)) &lt;&lt;(cell(:n)), 
+        result [](cell(:x)) = list(cell(:n)))) 
+    result, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = dict 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(result key?(cell(:x)), 
+        result [](cell(:x)) &lt;&lt;(cell(:n)), 
+        result [](cell(:x)) = list(cell(:n)))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = dict 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(result key?(cell(:x)), 
+        result [](cell(:x)) &lt;&lt;(cell(:n)), 
+        result [](cell(:x)) = list(cell(:n)))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00649"></a><b>include?</b>(toFind)
+          </div>
+          <div class="description">
+            <p>takes one argument and returns true if this element is in the collection. comparisons is done with ==.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00649_source')" id="l_C00649_source">show source</a> ]</p>
+            <div id="C00649_source" class="dyn-source">
+<pre>
+method(toFind, 
+  self each(n, 
+    if(toFind ==(cell(:n)), 
+      return(true))) 
+  return(false))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00642"></a><b>inject</b>(...)
+          </div>
+          <div class="description">
+            <p>takes one, two, three or four arguments. all versions need an initial sum, code to execute, a place to put the current sum in the code, and a place to stick the current element of the enumerable. if one argument, it has to be a message chain. this message chain will be applied on the current sum. the element will be appended to the argument list of the last message send in the chain. the initial sum is the first element, and the code will be executed once less than the size of the enumerable due to this. if two arguments given, the first argument is the name of the variable to put the current element in, and the message will still be sent to the sum - and the initial sum works the same way as for one argument. when three arguments are given, the whole thing will be turned into a lexical closure, where the first argument is the name of the sum variable, the second argument is the name of the element variable, and the last argument is the code. when given four arguments, the only difference is that the first argument will be evaluated as the initial sum.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00642_source')" id="l_C00642_source">show source</a> ]</p>
+            <div id="C00642_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  if(
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    theCode = theCode deepCopy 
+    elementName = genSym 
+    theCode last &lt;&lt;(message(elementName)) 
+    sum = nil 
+    self each(i, n, 
+      if(i ==(0), 
+        sum = cell(:n), 
+        call ground cell(elementName) = cell(:n) 
+        sum = theCode evaluateOn(call ground, cell(:sum)))) 
+    return(cell(:sum)), 
+    if(
+      argCount ==(
+        2), 
+      
+      argName = call arguments [](
+          0) 
+      theCode = call arguments [](
+          1) 
+      
+      elementName = argName name 
+      sum = nil 
+      self each(i, n, 
+        if(i ==(0), 
+          sum = cell(:n), 
+          call ground cell(elementName) = cell(:n) 
+          sum = theCode evaluateOn(call ground, cell(:sum)))) 
+      return(cell(:sum)), 
+      if(
+        argCount ==(
+          3), 
+        
+        sumArgName = call arguments [](
+            0) 
+        argName = call arguments [](
+            1) 
+        theCode = call arguments [](
+            2) 
+        
+        destructor = Destructor from(argName) 
+        lexicalCode = LexicalBlock createFrom(list(sumArgName) +(destructor argNames) +(list(theCode)), call ground) 
+        sum = nil 
+        self each(i, n, 
+          if(i ==(0), 
+            sum = cell(:n), 
+            sum = lexicalCode call(cell(:sum), *(destructor unpack(cell(:n)))))) 
+        return(cell(:sum)), 
+        if(
+          argCount ==(
+            4), 
+          
+          sum = call argAt(
+              0) 
+          sumArgName = call arguments [](
+              1) 
+          argName = call arguments [](
+              2) 
+          theCode = call arguments [](
+              3) 
+          
+          destructor = Destructor from(argName) 
+          lexicalCode = LexicalBlock createFrom(list(sumArgName) +(destructor argNames) +(list(theCode)), call ground) 
+          self each(n, 
+            sum = lexicalCode call(cell(:sum), *(destructor unpack(cell(:n))))) 
+          return(cell(:sum)), 
+          error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext))))) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00661"></a><b>join</b>(separator "")
+          </div>
+          <div class="description">
+            <p>returns a string created by converting each element of the array to text, separated by an optional separator</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00661_source')" id="l_C00661_source">show source</a> ]</p>
+            <div id="C00661_source" class="dyn-source">
+<pre>
+method(separator "", 
+  result = "" 
+  self each(index, n, 
+    +=(result, (n asText)) 
+    if(index &lt;(count -(1)), +=(result, separator))) 
+  result)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00609"></a><b>map</b>(...)
+          </div>
+          <div class="description">
+            <p>takes one or two arguments. if one argument is given, it will be evaluated as a message chain on each element in the enumerable, and then the result will be collected in a new List. if two arguments are given, the first one should be an unevaluated argument name, which will be bound inside the scope of executing the second piece of code. it's important to notice that the one argument form will establish no context, while the two argument form establishes a new lexical closure.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00609_source')" id="l_C00609_source">show source</a> ]</p>
+            <div id="C00609_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  if(
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = list 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      result &lt;&lt;(cell(:x))) 
+    result, 
+    if(
+      argCount ==(
+        2), 
+      
+      argName = call arguments [](
+          0) 
+      theCode = call arguments [](
+          1) 
+      
+      result = list 
+      destructor = Destructor from(argName) 
+      lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+      self each(n, 
+        x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+        result &lt;&lt;(cell(:x))) 
+      result, 
+      error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext))) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00611"></a><b>map:dict</b>(...)
+          </div>
+          <div class="description">
+            <p>takes one or two arguments. if one argument is given, it will be evaluated as a message chain on each element in the enumerable, and then the result will be collected in a new Dict. if the message chain returns a pair, that pair will be used as key and value. if it's something else, that value will be the key, and the value for it will be nil. if two arguments are given, the first one should be an unevaluated argument name, which will be bound inside the scope of executing the second piece of code. it's important to notice that the one argument form will establish no context, while the two argument form establishes a new lexical closure.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00611_source')" id="l_C00611_source">show source</a> ]</p>
+            <div id="C00611_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = dict 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(cell(:x) kind ==("Pair"), 
+        result [](x key) = x value, 
+        result [](cell(:x)) = nil)) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = dict 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(cell(:x) kind ==("Pair"), 
+        result [](x key) = x value, 
+        result [](cell(:x)) = nil)) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00687"></a><b>map:list</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00687_source')" id="l_C00687_source">show source</a> ]</p>
+            <div id="C00687_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  if(
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = list 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      result &lt;&lt;(cell(:x))) 
+    result, 
+    if(
+      argCount ==(
+        2), 
+      
+      argName = call arguments [](
+          0) 
+      theCode = call arguments [](
+          1) 
+      
+      result = list 
+      destructor = Destructor from(argName) 
+      lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+      self each(n, 
+        x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+        result &lt;&lt;(cell(:x))) 
+      result, 
+      error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext))) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00610"></a><b>map:set</b>(...)
+          </div>
+          <div class="description">
+            <p>takes one or two arguments. if one argument is given, it will be evaluated as a message chain on each element in the enumerable, and then the result will be collected in a new Set. if two arguments are given, the first one should be an unevaluated argument name, which will be bound inside the scope of executing the second piece of code. it's important to notice that the one argument form will establish no context, while the two argument form establishes a new lexical closure.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00610_source')" id="l_C00610_source">show source</a> ]</p>
+            <div id="C00610_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = set 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      result &lt;&lt;(cell(:x))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = set 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      result &lt;&lt;(cell(:x))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00612"></a><b>mapFn</b>(+blocks)
+          </div>
+          <div class="description">
+            <p>takes zero or more arguments that evaluates to lexical blocks. these blocks should all take one argument. these blocks will be chained together and applied on each element in the receiver. the final result will be collected into a list. the evaluation happens left-to-right, meaning the first method invoked will be the first argument.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00612_source')" id="l_C00612_source">show source</a> ]</p>
+            <div id="C00612_source" class="dyn-source">
+<pre>
+method(+blocks, 
+  result = list 
+  self each(n, 
+    current = cell(:n) 
+    blocks each(b, current = cell(:b) call(cell(:current))) 
+    result &lt;&lt;(current)) 
+  result)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00613"></a><b>mapFn:dict</b>(+blocks)
+          </div>
+          <div class="description">
+            <p>takes zero or more arguments that evaluates to lexical blocks. these blocks should all take one argument. these blocks will be chained together and applied on each element in the receiver. the final result will be collected into a dict. the evaluation happens left-to-right, meaning the first method invoked will be the first argument.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00613_source')" id="l_C00613_source">show source</a> ]</p>
+            <div id="C00613_source" class="dyn-source">
+<pre>
+method(+blocks, 
+  result = dict 
+  self each(n, 
+    current = cell(:n) 
+    blocks each(b, current = cell(:b) call(cell(:current))) 
+    if(cell(:current) mimics?(Pair), 
+      result [](current key) = current value, 
+      result [](cell(:current)) = nil) 
+    ) 
+  result)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00614"></a><b>mapFn:set</b>(+blocks)
+          </div>
+          <div class="description">
+            <p>takes zero or more arguments that evaluates to lexical blocks. these blocks should all take one argument. these blocks will be chained together and applied on each element in the receiver. the final result will be collected into a set. the evaluation happens left-to-right, meaning the first method invoked will be the first argument.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00614_source')" id="l_C00614_source">show source</a> ]</p>
+            <div id="C00614_source" class="dyn-source">
+<pre>
+method(+blocks, 
+  result = set 
+  self each(n, 
+    current = cell(:n) 
+    blocks each(b, current = cell(:b) call(cell(:current))) 
+    result &lt;&lt;(current)) 
+  result)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00625"></a><b>max</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero, one or two arguments. if zero arguments, returns the maximum elemnt ackording to the <=> ordering. if one argument, expects it to be a message chain. if that message chain, that will be used as a transform to create the element to compare with. finally, if two arguments are given, the first argument is an unevaluated name and the second is a code element. these will together be turned into a lexical block and used as the transformer for comparison. the result will always be an element from the collection, or nil if the collection is empty.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00625_source')" id="l_C00625_source">show source</a> ]</p>
+            <div id="C00625_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    theMax = nil 
+    theMaxVal = nil 
+    self each(n, 
+      x = cell(:n) 
+      if(theMax nil?, 
+        theMax = cell(:n) 
+        theMaxVal = cell(:x), 
+        if(theMaxVal &lt;(cell(:x)), 
+          theMax = cell(:n) 
+          theMaxVal = cell(:x)))) 
+    theMax, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    theMax = nil 
+    theMaxVal = nil 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(theMax nil?, 
+        theMax = cell(:n) 
+        theMaxVal = cell(:x), 
+        if(theMaxVal &lt;(cell(:x)), 
+          theMax = cell(:n) 
+          theMaxVal = cell(:x)))) 
+    theMax, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    theMax = nil 
+    theMaxVal = nil 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(theMax nil?, 
+        theMax = cell(:n) 
+        theMaxVal = cell(:x), 
+        if(theMaxVal &lt;(cell(:x)), 
+          theMax = cell(:n) 
+          theMaxVal = cell(:x)))) 
+    theMax, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00703"></a><b>member?</b>(toFind)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00703_source')" id="l_C00703_source">show source</a> ]</p>
+            <div id="C00703_source" class="dyn-source">
+<pre>
+method(toFind, 
+  self each(n, 
+    if(toFind ==(cell(:n)), 
+      return(true))) 
+  return(false))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00626"></a><b>min</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero, one or two arguments. if zero arguments, returns the minimum elemnt ackording to the <=> ordering. if one argument, expects it to be a message chain. if that message chain, that will be used as a transform to create the element to compare with. finally, if two arguments are given, the first argument is an unevaluated name and the second is a code element. these will together be turned into a lexical block and used as the transformer for comparison. the result will always be an element from the collection, or nil if the collection is empty.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00626_source')" id="l_C00626_source">show source</a> ]</p>
+            <div id="C00626_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    theMin = nil 
+    theMinVal = nil 
+    self each(n, 
+      x = cell(:n) 
+      if(theMin nil?, 
+        theMin = cell(:n) 
+        theMinVal = cell(:x), 
+        if(theMinVal &gt;(cell(:x)), 
+          theMin = cell(:n) 
+          theMinVal = cell(:x)))) 
+    theMin, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    theMin = nil 
+    theMinVal = nil 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(theMin nil?, 
+        theMin = cell(:n) 
+        theMinVal = cell(:x), 
+        if(theMinVal &gt;(cell(:x)), 
+          theMin = cell(:n) 
+          theMinVal = cell(:x)))) 
+    theMin, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    theMin = nil 
+    theMinVal = nil 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(theMin nil?, 
+        theMin = cell(:n) 
+        theMinVal = cell(:x), 
+        if(theMinVal &gt;(cell(:x)), 
+          theMin = cell(:n) 
+          theMinVal = cell(:x)))) 
+    theMin, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00616"></a><b>none?</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero, one or two arguments. if zero arguments, returns false if any of the elements yielded by each is true, otherwise true. if one argument, expects it to be a message chain. if that message chain, when applied to the current element returns a true value, the method returns false. finally, if two arguments are given, the first argument is an unevaluated name and the second is a code element. these will together be turned into a lexical block and tested against the values in this element. if it returns true for any element, this method returns false, otherwise true.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00616_source')" id="l_C00616_source">show source</a> ]</p>
+            <div id="C00616_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    
+    
+    self each(n, 
+      x = cell(:n) 
+      if(cell(:x), 
+        return(false))) 
+    true, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    
+    
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(cell(:x), 
+        return(false))) 
+    true, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    
+    
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(cell(:x), 
+        return(false))) 
+    true, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00623"></a><b>one?</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero, one or two arguments. if zero arguments, returns true if exactly one of the elements is true, otherwise false. if one argument, expects it to be a message chain that will be used as a predicate. if that predicate returns true for exactly one element, returns true, otherwise false. finally, if two arguments are given, the first argument is an unevaluated name and the second is a code element. these will together be turned into a lexical block and tested against the values in this element. if it returns true for exactly one element, returns true, otherwise false</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00623_source')" id="l_C00623_source">show source</a> ]</p>
+            <div id="C00623_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    result = false 
+    self each(n, 
+      x = cell(:n) 
+      if(cell(:x), 
+        if(result, 
+          return(false), 
+          result = true))) 
+    result, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = false 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(cell(:x), 
+        if(result, 
+          return(false), 
+          result = true))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = false 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(cell(:x), 
+        if(result, 
+          return(false), 
+          result = true))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00630"></a><b>partition</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero, one or two arguments. if zero arguments, will return a list containing two list, where the first list contains all true values, and the second all the false values. if one argument is given, it will be used as a predicate message chain, and the return lists will be based on the result of this predicate. finally, if three arguments are given, they will be turned into a lexical block and used as a predicate to determine the result value.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00630_source')" id="l_C00630_source">show source</a> ]</p>
+            <div id="C00630_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    resultTrue = list 
+    resultFalse = list 
+    self each(n, 
+      x = cell(:n) 
+      if(cell(:x), resultTrue, resultFalse) &lt;&lt;(cell(:n))) 
+    list(resultTrue, resultFalse), 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    resultTrue = list 
+    resultFalse = list 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(cell(:x), resultTrue, resultFalse) &lt;&lt;(cell(:n))) 
+    list(resultTrue, resultFalse), 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    resultTrue = list 
+    resultFalse = list 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(cell(:x), resultTrue, resultFalse) &lt;&lt;(cell(:n))) 
+    list(resultTrue, resultFalse), 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00632"></a><b>partition:dict</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero, one or two arguments. if zero arguments, will return a list containing two dicts, where the first dict contains all true values, and the second all the false values. if one argument is given, it will be used as a predicate message chain, and the return dicts will be based on the result of this predicate. finally, if three arguments are given, they will be turned into a lexical block and used as a predicate to determine the result value.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00632_source')" id="l_C00632_source">show source</a> ]</p>
+            <div id="C00632_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    resultTrue = dict 
+    resultFalse = dict 
+    self each(n, 
+      x = cell(:n) 
+      place = if(cell(:x), resultTrue, resultFalse) 
+      if(cell(:n) mimics?(Pair), 
+        place [](n key) = n value, 
+        place [](cell(:n)) = nil)) 
+    list(resultTrue, resultFalse), 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    resultTrue = dict 
+    resultFalse = dict 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      place = if(cell(:x), resultTrue, resultFalse) 
+      if(cell(:n) mimics?(Pair), 
+        place [](n key) = n value, 
+        place [](cell(:n)) = nil)) 
+    list(resultTrue, resultFalse), 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    resultTrue = dict 
+    resultFalse = dict 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      place = if(cell(:x), resultTrue, resultFalse) 
+      if(cell(:n) mimics?(Pair), 
+        place [](n key) = n value, 
+        place [](cell(:n)) = nil)) 
+    list(resultTrue, resultFalse), 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00631"></a><b>partition:set</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero, one or two arguments. if zero arguments, will return a list containing two sets, where the first set contains all true values, and the second all the false values. if one argument is given, it will be used as a predicate message chain, and the return sets will be based on the result of this predicate. finally, if three arguments are given, they will be turned into a lexical block and used as a predicate to determine the result value.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00631_source')" id="l_C00631_source">show source</a> ]</p>
+            <div id="C00631_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    resultTrue = set 
+    resultFalse = set 
+    self each(n, 
+      x = cell(:n) 
+      if(cell(:x), resultTrue, resultFalse) &lt;&lt;(cell(:n))) 
+    list(resultTrue, resultFalse), 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    resultTrue = set 
+    resultFalse = set 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(cell(:x), resultTrue, resultFalse) &lt;&lt;(cell(:n))) 
+    list(resultTrue, resultFalse), 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    resultTrue = set 
+    resultFalse = set 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(cell(:x), resultTrue, resultFalse) &lt;&lt;(cell(:n))) 
+    list(resultTrue, resultFalse), 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00695"></a><b>reduce</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00695_source')" id="l_C00695_source">show source</a> ]</p>
+            <div id="C00695_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  if(
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    theCode = theCode deepCopy 
+    elementName = genSym 
+    theCode last &lt;&lt;(message(elementName)) 
+    sum = nil 
+    self each(i, n, 
+      if(i ==(0), 
+        sum = cell(:n), 
+        call ground cell(elementName) = cell(:n) 
+        sum = theCode evaluateOn(call ground, cell(:sum)))) 
+    return(cell(:sum)), 
+    if(
+      argCount ==(
+        2), 
+      
+      argName = call arguments [](
+          0) 
+      theCode = call arguments [](
+          1) 
+      
+      elementName = argName name 
+      sum = nil 
+      self each(i, n, 
+        if(i ==(0), 
+          sum = cell(:n), 
+          call ground cell(elementName) = cell(:n) 
+          sum = theCode evaluateOn(call ground, cell(:sum)))) 
+      return(cell(:sum)), 
+      if(
+        argCount ==(
+          3), 
+        
+        sumArgName = call arguments [](
+            0) 
+        argName = call arguments [](
+            1) 
+        theCode = call arguments [](
+            2) 
+        
+        destructor = Destructor from(argName) 
+        lexicalCode = LexicalBlock createFrom(list(sumArgName) +(destructor argNames) +(list(theCode)), call ground) 
+        sum = nil 
+        self each(i, n, 
+          if(i ==(0), 
+            sum = cell(:n), 
+            sum = lexicalCode call(cell(:sum), *(destructor unpack(cell(:n)))))) 
+        return(cell(:sum)), 
+        if(
+          argCount ==(
+            4), 
+          
+          sum = call argAt(
+              0) 
+          sumArgName = call arguments [](
+              1) 
+          argName = call arguments [](
+              2) 
+          theCode = call arguments [](
+              3) 
+          
+          destructor = Destructor from(argName) 
+          lexicalCode = LexicalBlock createFrom(list(sumArgName) +(destructor argNames) +(list(theCode)), call ground) 
+          self each(n, 
+            sum = lexicalCode call(cell(:sum), *(destructor unpack(cell(:n))))) 
+          return(cell(:sum)), 
+          error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext))))) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00627"></a><b>reject</b>(...)
+          </div>
+          <div class="description">
+            <p>takes one or two arguments. if one argument is given, it will be applied as a message chain as a predicate. those elements that doesn't the predicate will be returned. if two arguments are given, they will be turned into a lexical block and used as a predicate to choose the elements that doesn't match.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00627_source')" id="l_C00627_source">show source</a> ]</p>
+            <div id="C00627_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    result = list 
+    self each(n, 
+      x = cell(:n) 
+      unless(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = list 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      unless(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = list 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      unless(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00628"></a><b>reject:dict</b>(...)
+          </div>
+          <div class="description">
+            <p>takes one or two arguments. if one argument is given, it will be applied as a message chain as a predicate. those elements that doesn't the predicate will be returned. if two arguments are given, they will be turned into a lexical block and used as a predicate to choose the elements that doesn't match.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00628_source')" id="l_C00628_source">show source</a> ]</p>
+            <div id="C00628_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    result = dict 
+    self each(n, 
+      x = cell(:n) 
+      unless(cell(:x), 
+        if(cell(:n) mimics?(Pair), 
+          result [](n key) = n value, 
+          result [](cell(:n)) = nil))) 
+    result, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = dict 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      unless(cell(:x), 
+        if(cell(:n) mimics?(Pair), 
+          result [](n key) = n value, 
+          result [](cell(:n)) = nil))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = dict 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      unless(cell(:x), 
+        if(cell(:n) mimics?(Pair), 
+          result [](n key) = n value, 
+          result [](cell(:n)) = nil))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00629"></a><b>reject:set</b>(...)
+          </div>
+          <div class="description">
+            <p>takes one or two arguments. if one argument is given, it will be applied as a message chain as a predicate. those elements that doesn't the predicate will be returned. if two arguments are given, they will be turned into a lexical block and used as a predicate to choose the elements that doesn't match.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00629_source')" id="l_C00629_source">show source</a> ]</p>
+            <div id="C00629_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    result = set 
+    self each(n, 
+      x = cell(:n) 
+      unless(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = set 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      unless(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = set 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      unless(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00619"></a><b>select</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero, one or two arguments. if zero arguments, will return a list with all the values that are true in the original collection. if one argument is given, it will be applied as a message chain, that should be a predicate. those elements that match the predicate will be returned. if two arguments are given, they will be turned into a lexical block and used as a predicate to choose elements.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00619_source')" id="l_C00619_source">show source</a> ]</p>
+            <div id="C00619_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    result = list 
+    self each(n, 
+      x = cell(:n) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = list 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = list 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00620"></a><b>select:dict</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero, one or two arguments. if zero arguments, will return a dict with all the values that are true in the original collection. if one argument is given, it will be applied as a message chain, that should be a predicate. those elements that match the predicate will be returned. if two arguments are given, they will be turned into a lexical block and used as a predicate to choose elements.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00620_source')" id="l_C00620_source">show source</a> ]</p>
+            <div id="C00620_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    result = dict 
+    self each(n, 
+      x = cell(:n) 
+      if(cell(:x), 
+        if(cell(:n) mimics?(Pair), 
+          result [](n key) = n value, 
+          result [](cell(:n)) = nil))) 
+    result, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = dict 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(cell(:x), 
+        if(cell(:n) mimics?(Pair), 
+          result [](n key) = n value, 
+          result [](cell(:n)) = nil))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = dict 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(cell(:x), 
+        if(cell(:n) mimics?(Pair), 
+          result [](n key) = n value, 
+          result [](cell(:n)) = nil))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00621"></a><b>select:set</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero, one or two arguments. if zero arguments, will return a set with all the values that are true in the original collection. if one argument is given, it will be applied as a message chain, that should be a predicate. those elements that match the predicate will be returned. if two arguments are given, they will be turned into a lexical block and used as a predicate to choose elements.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00621_source')" id="l_C00621_source">show source</a> ]</p>
+            <div id="C00621_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    result = set 
+    self each(n, 
+      x = cell(:n) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = set 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = set 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00617"></a><b>some</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero, one or two arguments. if zero arguments, returns the first element that is true, otherwise false. if one argument, expects it to be a message chain. if that message chain, when applied to the current element returns a true value, that value is return. finally, if two arguments are given, the first argument is an unevaluated name and the second is a code element. these will together be turned into a lexical block and tested against the values in this element. if it returns true for any element, that value will be returned, otherwise false.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00617_source')" id="l_C00617_source">show source</a> ]</p>
+            <div id="C00617_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    
+    
+    self each(n, 
+      x = cell(:n) 
+      if(cell(:x), 
+        return(it))) 
+    false, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    
+    
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(cell(:x), 
+        return(it))) 
+    false, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    
+    
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(cell(:x), 
+        return(it))) 
+    false, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00608"></a><b>sort</b>()
+          </div>
+          <div class="description">
+            <p>will return a sorted list of all the entries of this enumerable object</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00608_source')" id="l_C00608_source">show source</a> ]</p>
+            <div id="C00608_source" class="dyn-source">
+<pre>
+method(
+  self asList sort)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00641"></a><b>sortBy</b>(...)
+          </div>
+          <div class="description">
+            <p>takes one or two arguments that are used to transform the objects into something that can be sorted, then sorts based on that. if one argument, that argument is handled as a message chain, and if two arguments it will be turned into a lexical block and used.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00641_source')" id="l_C00641_source">show source</a> ]</p>
+            <div id="C00641_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  if(
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    map(x, list(theCode evaluateOn(call ground, cell(:x)), cell(:x))) sort map(second), 
+    if(
+      argCount ==(
+        2), 
+      
+      argName = call arguments [](
+          0) 
+      theCode = call arguments [](
+          1) 
+      
+      destructor = Destructor from(argName) 
+      lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+      map(x, list(lexicalCode call(*(destructor unpack(cell(:x)))), cell(:x))) sort map(second), 
+      error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext))) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00662"></a><b>sum</b>()
+          </div>
+          <div class="description">
+            <p>returns an object created by summing all objects in the enumerable using the + operator. the default value for an empty enumerable will be nil.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00662_source')" id="l_C00662_source">show source</a> ]</p>
+            <div id="C00662_source" class="dyn-source">
+<pre>
+method(
+  inject(+))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00650"></a><b>take</b>(howMany)
+          </div>
+          <div class="description">
+            <p>takes one argument and returns a list with as many elements from the collection, or all elements if the requested number is larger than the size.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00650_source')" id="l_C00650_source">show source</a> ]</p>
+            <div id="C00650_source" class="dyn-source">
+<pre>
+method(howMany, 
+  self first(howMany))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00651"></a><b>take:dict</b>(howMany)
+          </div>
+          <div class="description">
+            <p>takes one argument and returns a dict with as many elements from the collection, or all elements if the requested number is larger than the size.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00651_source')" id="l_C00651_source">show source</a> ]</p>
+            <div id="C00651_source" class="dyn-source">
+<pre>
+method(howMany, 
+  self first:dict(howMany))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00652"></a><b>take:set</b>(howMany)
+          </div>
+          <div class="description">
+            <p>takes one argument and returns a set with as many elements from the collection, or all elements if the requested number is larger than the size.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00652_source')" id="l_C00652_source">show source</a> ]</p>
+            <div id="C00652_source" class="dyn-source">
+<pre>
+method(howMany, 
+  self first:set(howMany))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00633"></a><b>takeWhile</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero, one or two arguments. it will evaluate a predicate once for each element, and collect all the elements until the predicate returns false for the first time. at that point the collected list will be returned. if zero arguments, the predicate is the element itself. if one argument, expects it to be a message chain to apply as a predicate. if two arguments are given, the first argument is an unevaluated name and the second is a code element. these will together be turned into a lexical block and used as the predicate.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00633_source')" id="l_C00633_source">show source</a> ]</p>
+            <div id="C00633_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    result = list 
+    self each(n, 
+      x = cell(:n) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)), 
+        return(result))) 
+    result, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = list 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)), 
+        return(result))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = list 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)), 
+        return(result))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00635"></a><b>takeWhile:dict</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero, one or two arguments. it will evaluate a predicate once for each element, and collect all the elements until the predicate returns false for the first time. at that point the collected dict will be returned. if zero arguments, the predicate is the element itself. if one argument, expects it to be a message chain to apply as a predicate. if two arguments are given, the first argument is an unevaluated name and the second is a code element. these will together be turned into a lexical block and used as the predicate.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00635_source')" id="l_C00635_source">show source</a> ]</p>
+            <div id="C00635_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    result = dict 
+    self each(n, 
+      x = cell(:n) 
+      if(cell(:x), 
+        if(cell(:n) mimics?(Pair), 
+          result [](n key) = n value, 
+          result [](cell(:n)) = nil), 
+        return(result))) 
+    result, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = dict 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(cell(:x), 
+        if(cell(:n) mimics?(Pair), 
+          result [](n key) = n value, 
+          result [](cell(:n)) = nil), 
+        return(result))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = dict 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(cell(:x), 
+        if(cell(:n) mimics?(Pair), 
+          result [](n key) = n value, 
+          result [](cell(:n)) = nil), 
+        return(result))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00634"></a><b>takeWhile:set</b>(...)
+          </div>
+          <div class="description">
+            <p>takes zero, one or two arguments. it will evaluate a predicate once for each element, and collect all the elements until the predicate returns false for the first time. at that point the collected set will be returned. if zero arguments, the predicate is the element itself. if one argument, expects it to be a message chain to apply as a predicate. if two arguments are given, the first argument is an unevaluated name and the second is a code element. these will together be turned into a lexical block and used as the predicate.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00634_source')" id="l_C00634_source">show source</a> ]</p>
+            <div id="C00634_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      0), 
+    
+    
+    result = set 
+    self each(n, 
+      x = cell(:n) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)), 
+        return(result))) 
+    result, 
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    result = set 
+    self each(n, 
+      x = theCode evaluateOn(call ground, cell(:n)) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)), 
+        return(result))) 
+    result, 
+    argCount ==(
+      2), 
+    
+    argName = call arguments [](
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    result = set 
+    destructor = Destructor from(argName) 
+    lexicalCode = LexicalBlock createFrom(destructor argNames +(list(theCode)), call ground) 
+    self each(n, 
+      x = lexicalCode call(*(destructor unpack(cell(:n)))) 
+      if(cell(:x), 
+        result &lt;&lt;(cell(:n)), 
+        return(result))) 
+    result, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00657"></a><b>zip</b>(+listsAndFns)
+          </div>
+          <div class="description">
+            <p>takes zero or more arguments, where all arguments should be a list, except that the last might also be a lexical block. zip will create a list of lists, where each internal list is a combination of the current element, and the corresponding elements from all the lists. if the lists are shorter than this collection, nils will be supplied. if a lexical block is provided, it will be called with each list created, and if that's the case nil will be returned from zip</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00657_source')" id="l_C00657_source">show source</a> ]</p>
+            <div id="C00657_source" class="dyn-source">
+<pre>
+method(+listsAndFns, 
+  theFn = listsAndFns last 
+  if(cell(:theFn) &&((cell(:theFn) mimics?(LexicalBlock))), 
+    listsAndFns = listsAndFns [](0 ..(0 -(2))) 
+    listsAndFns map!(x, 
+      if(x mimics?(Sequence), 
+        x, 
+        x seq)) 
+    self each(n, 
+      internal = list(cell(:n)) 
+      listsAndFns each(n2, 
+        val = if(n2 next?, n2 next, nil) 
+        internal &lt;&lt;(cell(:val))) 
+      cell(:theFn) call(internal)) 
+    nil, 
+    listsAndFns map!(x, 
+      if(x mimics?(Sequence), 
+        x, 
+        x seq)) 
+    result = list 
+    self each(n, 
+      internal = list(cell(:n)) 
+      listsAndFns each(n2, 
+        val = if(n2 next?, n2 next, nil) 
+        internal &lt;&lt;(cell(:val))) 
+      result &lt;&lt;(internal)) 
+    result))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00658"></a><b>zip:set</b>(+lists)
+          </div>
+          <div class="description">
+            <p>takes zero or more arguments, where all arguments should be lists or sequences. zip:set will create a list of set, where each internal set is a combination of the current element, and the corresponding elements from all the lists. if the lists are shorter than this collection, nils will be supplied.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00658_source')" id="l_C00658_source">show source</a> ]</p>
+            <div id="C00658_source" class="dyn-source">
+<pre>
+method(+lists, 
+  lists map!(x, 
+    if(x mimics?(Sequence), 
+      x, 
+      x seq)) 
+  result = list 
+  self each(n, 
+    internal = set(cell(:n)) 
+    lists each(n2, 
+      val = if(n2 next?, n2 next, nil) 
+      internal &lt;&lt;(cell(:val))) 
+    result &lt;&lt;(internal)) 
+  result)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>

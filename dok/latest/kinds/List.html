@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Kind: DefaultBehavior</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href=".././dokgen-style.css" type="text/css" media="screen" />
+    <script language="JavaScript" type="text/javascript">
+    // <![CDATA[
+
+        function toggleSource( id )
+        {
+          var elem
+          var link
+
+          if( document.getElementById )
+          {
+            elem = document.getElementById( id )
+            link = document.getElementById( "l_" + id )
+          }
+          else if ( document.all )
+          {
+            elem = eval( "document.all." + id )
+            link = eval( "document.all.l_" + id )
+          }
+          else
+            return false;
+
+          if( elem.style.display == "block" )
+          {
+            elem.style.display = "none"
+            link.innerHTML = "show source"
+          }
+          else
+          {
+            elem.style.display = "block"
+            link.innerHTML = "hide source"
+          }
+        }
+
+        function openCode( url )
+        {
+          window.open( url, "SOURCE_CODE", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=480,width=750" ).focus();
+        }
+      // ]]>
+    </script>
+  </head>
+
+  <body>
+    <table border='0' cellpadding='0' cellspacing='0' width="100%" class='banner'>
+      <tr>
+        <td>
+          <table width="100%" border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+              <td class="file-title" colspan="2">
+                <span class="file-title-prefix">Kind</span>
+                <br />
+                List
+              </td>
+              <td align="right">
+                <table cellspacing="0" cellpadding="2">
+                  <tr>
+                    <td>Main mimic:</td>
+                    <td>
+                      <a href="../kinds/Mixins/Sequenced.html">Mixins Sequenced</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <div id="bodyContent">
+      <div id="content">
+        <div class="description">
+          <p>
+A list is a collection of objects that can change size
+          </p>
+        </div>
+
+        <div class="sectiontitle">Mimics</div>
+        <ul>
+          <li><a href="../kinds/Mixins/Sequenced.html">Mixins Sequenced</a></li><li><a href="../kinds/Origin.html">Origin</a></li>
+        </ul>
+
+        <div class="sectiontitle">Inactive cells</div>
+        <ul>
+          <li><a href="#C00726">kind</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Active cells</div>
+        <ul>
+          <li><a href="#C00781">*(sepOrRep)</a></li>
+<li><a href="#C00745">+(otherList)</a></li>
+<li><a href="#C00746">-(otherList)</a></li>
+<li><a href="#C00734">&lt;&lt;(value)</a></li>
+<li><a href="#C00732">&lt;=&gt;(other)</a></li>
+<li><a href="#C00728">==(other)</a></li>
+<li><a href="#C00775">===(other)</a></li>
+<li><a href="#C00774">?&(...)</a></li>
+<li><a href="#C00773">?|(...)</a></li>
+<li><a href="#C00752">[](...)</a></li>
+<li><a href="#C00755">[]=(...)</a></li>
+<li><a href="#C00735">append!(value)</a></li>
+<li><a href="#C00771">asList()</a></li>
+<li><a href="#C00777">assoc(obj)</a></li>
+<li><a href="#C00751">at(index)</a></li>
+<li><a href="#C00754">at=(index, value)</a></li>
+<li><a href="#C00770">butLast(n 1)</a></li>
+<li><a href="#C00788">choose(quantity nil)</a></li>
+<li><a href="#C00741">clear!()</a></li>
+<li><a href="#C00764">collect!(...)</a></li>
+<li><a href="#C00776">compact()</a></li>
+<li><a href="#C00759">compact!()</a></li>
+<li><a href="#C00744">concat!(otherList)</a></li>
+<li><a href="#C00733">each([indexOrArgOrCode] nil, [argOrCode] nil, [code] nil)</a></li>
+<li><a href="#C00742">empty?()</a></li>
+<li><a href="#C00780">flatten()</a></li>
+<li><a href="#C00761">flatten!()</a></li>
+<li><a href="#C00727">hash()</a></li>
+<li><a href="#C00772">ifEmpty(...)</a></li>
+<li><a href="#C00743">include?(object)</a></li>
+<li><a href="#C00782">index(obj)</a></li>
+<li><a href="#C00753">insert!(index, +objects)</a></li>
+<li><a href="#C00729">inspect()</a></li>
+<li><a href="#C00762">join(separator )</a></li>
+<li><a href="#C00768">last()</a></li>
+<li><a href="#C00750">length(...)</a></li>
+<li><a href="#C00763">map!([argOrCode], [code] nil)</a></li>
+<li><a href="#C00730">notice()</a></li>
+<li><a href="#C00786">pick(quantity nil)</a></li>
+<li><a href="#C00787">pick!(quantity nil)</a></li>
+<li><a href="#C00739">pop!()</a></li>
+<li><a href="#C00737">prepend!(value)</a></li>
+<li><a href="#C00736">push!(...)</a></li>
+<li><a href="#C00784">random()</a></li>
+<li><a href="#C00785">randomIndex()</a></li>
+<li><a href="#C00778">rassoc(obj)</a></li>
+<li><a href="#C00757">remove!(element, +elements)</a></li>
+<li><a href="#C00756">removeAt!(indexOrRange)</a></li>
+<li><a href="#C00758">removeFirst!(element, +elements)</a></li>
+<li><a href="#C00765">removeIf!([argOrCode], [code] nil)</a></li>
+<li><a href="#C00769">rest()</a></li>
+<li><a href="#C00779">reverse()</a></li>
+<li><a href="#C00760">reverse!()</a></li>
+<li><a href="#C00783">rindex(obj)</a></li>
+<li><a href="#C00766">second()</a></li>
+<li><a href="#C00731">seq()</a></li>
+<li><a href="#C00740">shift!()</a></li>
+<li><a href="#C00789">shuffle()</a></li>
+<li><a href="#C00790">shuffle!()</a></li>
+<li><a href="#C00749">size()</a></li>
+<li><a href="#C00747">sort()</a></li>
+<li><a href="#C00748">sort!()</a></li>
+<li><a href="#C00767">third()</a></li>
+<li><a href="#C00738">unshift!(...)</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Specs</div>
+        <div class="specs">
+          
+        </div>
+
+        <div class="sectiontitle">Inactive cells (details)</div>
+                <div class="cell">
+          <a name="C00726"></a>
+          <table border="0" cellpadding="5">
+            <tr valign="top">
+              <td class="cell-name">kind</td>
+              <td>=</td>
+              <td class="cell-value">"List"</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div class="sectiontitle">Active cells (details)</div>
+                <div class="cell">
+          <div class="title">
+          <a name="C00781"></a><b>*</b>(sepOrRep)
+          </div>
+          <div class="description">
+            <p>takes either a text or a number. if given a text, it works like join, while if it gets a number, it will return a new list repeated as many times as the number argument</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00781_source')" id="l_C00781_source">show source</a> ]</p>
+            <div id="C00781_source" class="dyn-source">
+<pre>
+method(sepOrRep, 
+  if(sepOrRep mimics?(Text), 
+    self join(sepOrRep), 
+    result = list 
+    sepOrRep times(result concat!(self)) 
+    result))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00745"></a><b>+</b>(otherList)
+          </div>
+          <div class="description">
+            <p>returns a new list that contains the receivers elements and the elements of the list sent in as the argument.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00746"></a><b>-</b>(otherList)
+          </div>
+          <div class="description">
+            <p>returns a new list that contains all the elements from the receivers list, except for those that are in the argument list</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00734"></a><b>&lt;&lt;</b>(value)
+          </div>
+          <div class="description">
+            <p>takes one argument and adds it at the end of the list, and then returns the list</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00732"></a><b>&lt;=&gt;</b>(other)
+          </div>
+          <div class="description">
+            <p>Compares this object against the argument. The comparison is only based on the elements inside the lists, which are in turn compared using <=>.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00728"></a><b>==</b>(other)
+          </div>
+          <div class="description">
+            <p>returns true if the left hand side list is equal to the right hand side list.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00775"></a><b>===</b>(other)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00775_source')" id="l_C00775_source">show source</a> ]</p>
+            <div id="C00775_source" class="dyn-source">
+<pre>
+method(other, 
+  if(self same?(
+      []), 
+    Reflector other:mimics?(cell(:other), 
+      []), 
+    bind(rescue(Condition Error, fn(c, false)), 
+      self ==(
+        other))))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00774"></a><b>?&</b>(...)
+          </div>
+          <div class="description">
+            <p>if this list is not empty, returns the result of evaluating the argument, otherwise returns the list</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00774_source')" id="l_C00774_source">show source</a> ]</p>
+            <div id="C00774_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      1), 
+    
+    then = call arguments [](
+        0) 
+    
+    unless(empty?, 
+      call argAt(0), 
+      self), 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00773"></a><b>?|</b>(...)
+          </div>
+          <div class="description">
+            <p>if this list is empty, returns the result of evaluating the argument, otherwise returns the list</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00773_source')" id="l_C00773_source">show source</a> ]</p>
+            <div id="C00773_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      1), 
+    
+    then = call arguments [](
+        0) 
+    
+    if(empty?, 
+      call argAt(0), 
+      self), 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00752"></a><b>[]</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00755"></a><b>[]=</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00735"></a><b>append!</b>(value)
+          </div>
+          <div class="description">
+            <p>takes one argument and adds it at the end of the list, and then returns the list</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00771"></a><b>asList</b>()
+          </div>
+          <div class="description">
+            <p>returns this list</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00771_source')" id="l_C00771_source">show source</a> ]</p>
+            <div id="C00771_source" class="dyn-source">
+<pre>
+method(
+  self)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00777"></a><b>assoc</b>(obj)
+          </div>
+          <div class="description">
+            <p>takes an object, and returns the first list in this list that has that object as its first element. if it can't be found, returns nil.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00777_source')" id="l_C00777_source">show source</a> ]</p>
+            <div id="C00777_source" class="dyn-source">
+<pre>
+method(obj, 
+  self find(el, 
+    el mimics?(List) &&(el length &gt;(0)) &&(el [](0) ==(obj))))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00751"></a><b>at</b>(index)
+          </div>
+          <div class="description">
+            <p>takes one argument, the index of the element to be returned. can be negative, and will in that case return indexed from the back of the list. if the index is outside the bounds of the list, will return nil. the argument can also be a range, and will in that case interpret the first index as where to start, and the second the end. the end can be negative and will in that case be from the end. if the first argument is negative, or after the second, an empty list will be returned. if the end point is larger than the list, the size of the list will be used as the end point.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00754"></a><b>at=</b>(index, value)
+          </div>
+          <div class="description">
+            <p>takes two arguments, the index of the element to set, and the value to set. the index can be negative and will in that case set indexed from the end of the list. if the index is larger than the current size, the list will be expanded with nils. an exception will be raised if a abs(negative index) is larger than the size.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00770"></a><b>butLast</b>(n 1)
+          </div>
+          <div class="description">
+            <p>returns all the entries in the list, except for the 'n' last one, where 'n' is an optional argument that defaults to 1.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00770_source')" id="l_C00770_source">show source</a> ]</p>
+            <div id="C00770_source" class="dyn-source">
+<pre>
+method(n 1, 
+  end = length -(n) 
+  if(end &lt;(0) ||(empty?), 
+    DefaultBehavior [], 
+    [](0 ...(end))))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00788"></a><b>choose</b>(quantity nil)
+          </div>
+          <div class="description">
+            <p>chooses a random element from the list. If a quantity is specified it returns a sequence of random elements each chosen from the complete list (and therefore may contain duplicates)</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00788_source')" id="l_C00788_source">show source</a> ]</p>
+            <div id="C00788_source" class="dyn-source">
+<pre>
+method(quantity nil, 
+  if(quantity, 
+    outerList = self 
+    left = quantity 
+    Sequence with(
+      next?: fnx(left &gt;(0)), 
+      next: fnx(--(left) 
+        outerList random)), 
+    random))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00741"></a><b>clear!</b>()
+          </div>
+          <div class="description">
+            <p>will remove all the entries from the list, and then returns the list</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00764"></a><b>collect!</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00776"></a><b>compact</b>()
+          </div>
+          <div class="description">
+            <p>returns a new list that is a mimic of the current list, except that all nils are removed from it</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00776_source')" id="l_C00776_source">show source</a> ]</p>
+            <div id="C00776_source" class="dyn-source">
+<pre>
+method(
+  newList = self mimic 
+  newList compact! 
+  newList)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00759"></a><b>compact!</b>()
+          </div>
+          <div class="description">
+            <p>removes all nils in this list, and then returns the list</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00744"></a><b>concat!</b>(otherList)
+          </div>
+          <div class="description">
+            <p>adds the elements in the argument list to the current list, and then returns that list</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00733"></a><b>each</b>([indexOrArgOrCode] nil, [argOrCode] nil, [code] nil)
+          </div>
+          <div class="description">
+            <p>takes either one or two or three arguments. if one argument is given, it should be a message chain that will be sent to each object in the list. the result will be thrown away. if two arguments are given, the first is an unevaluated name that will be set to each of the values in the list in succession, and then the second argument will be evaluated in a scope with that argument in it. if three arguments is given, the first one is an unevaluated name that will be set to the index of each element, and the other two arguments are the name of the argument for the value, and the actual code. the code will evaluate in a lexical context, and if the argument name is available outside the context, it will be shadowed. the method will return the list.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00742"></a><b>empty?</b>()
+          </div>
+          <div class="description">
+            <p>returns true if this list is empty, false otherwise</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00780"></a><b>flatten</b>()
+          </div>
+          <div class="description">
+            <p>returns a new list that is a mimic of the current list, with all elements flattened in it</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00780_source')" id="l_C00780_source">show source</a> ]</p>
+            <div id="C00780_source" class="dyn-source">
+<pre>
+method(
+  newList = self mimic 
+  newList flatten! 
+  newList)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00761"></a><b>flatten!</b>()
+          </div>
+          <div class="description">
+            <p>flattens all lists in this list recursively, then returns it</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00727"></a><b>hash</b>()
+          </div>
+          <div class="description">
+            <p>returns a hash for the list</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00772"></a><b>ifEmpty</b>(...)
+          </div>
+          <div class="description">
+            <p>if this list is empty, returns the result of evaluating the argument, otherwise returns the list</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00772_source')" id="l_C00772_source">show source</a> ]</p>
+            <div id="C00772_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      1), 
+    
+    then = call arguments [](
+        0) 
+    
+    if(empty?, 
+      call argAt(0), 
+      self), 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00743"></a><b>include?</b>(object)
+          </div>
+          <div class="description">
+            <p>returns true if the receiver includes the evaluated argument, otherwise false</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00782"></a><b>index</b>(obj)
+          </div>
+          <div class="description">
+            <p>takes an object and returns the index of the first occurance of that object in this list, or nil if it doesn't exist</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00782_source')" id="l_C00782_source">show source</a> ]</p>
+            <div id="C00782_source" class="dyn-source">
+<pre>
+method(obj, 
+  self each(index, element, 
+    if(element ==(obj), 
+      return(index))) 
+  nil)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00753"></a><b>insert!</b>(index, +objects)
+          </div>
+          <div class="description">
+            <p>takes an index and zero or more objects to insert at that point. the index can be negative to index from the end of the list. if the index is positive and larger than the size of the list, the list will be filled with nils inbetween.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00729"></a><b>inspect</b>()
+          </div>
+          <div class="description">
+            <p>Returns a text inspection of the object</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00762"></a><b>join</b>(separator )
+          </div>
+          <div class="description">
+            <p>returns a text composed of the asText representation of all elements in the list, separated by the separator. the separator defaults to an empty text.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00768"></a><b>last</b>()
+          </div>
+          <div class="description">
+            <p>returns the last element of this list, or nil of the list is empty</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00768_source')" id="l_C00768_source">show source</a> ]</p>
+            <div id="C00768_source" class="dyn-source">
+<pre>
+method(
+  if(empty?, nil, [](0 -(1))))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00750"></a><b>length</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00763"></a><b>map!</b>([argOrCode], [code] nil)
+          </div>
+          <div class="description">
+            <p>takes one or two arguments, and will then use these arguments as code to transform each element in this list. the transform happens in place. finally the method will return the receiver.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00730"></a><b>notice</b>()
+          </div>
+          <div class="description">
+            <p>Returns a brief text inspection of the object</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00786"></a><b>pick</b>(quantity nil)
+          </div>
+          <div class="description">
+            <p>picks a random element from the list. If a quantity is specified it returns a list of that size picked randomly which is a subset of the original list. If the specified quantity is greater than the length of the list, the returned list will be padded with nils.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00786_source')" id="l_C00786_source">show source</a> ]</p>
+            <div id="C00786_source" class="dyn-source">
+<pre>
+method(quantity nil, 
+  if(quantity, 
+    result = list 
+    notPicked = self mimic 
+    quantity times(
+      result &lt;&lt;(notPicked removeAt!(System randomNumber %((notPicked length))))) 
+    result, 
+    random))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00787"></a><b>pick!</b>(quantity nil)
+          </div>
+          <div class="description">
+            <p>picks and removes a random element from the list. If a quantity is specified it modifies the list by removing that many random elements and returning them in a new list. If the specified quantity is greater than the length of the list, the returned list will be padded with nils.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00787_source')" id="l_C00787_source">show source</a> ]</p>
+            <div id="C00787_source" class="dyn-source">
+<pre>
+method(quantity nil, 
+  if(quantity, 
+    result = list 
+    quantity times(
+      if(length &gt;(0), 
+        result &lt;&lt;(removeAt!(randomIndex)), 
+        result &lt;&lt;(nil))) 
+    result, 
+    removeAt!(randomIndex)))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00739"></a><b>pop!</b>()
+          </div>
+          <div class="description">
+            <p>removes the last element from the list and returns it. returns nil if the list is empty.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00737"></a><b>prepend!</b>(value)
+          </div>
+          <div class="description">
+            <p>takes one argument and adds it at the beginning of the list, and then returns the list</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00736"></a><b>push!</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00784"></a><b>random</b>()
+          </div>
+          <div class="description">
+            <p>returns a random element from the list. Returns nil if the list is empty.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00784_source')" id="l_C00784_source">show source</a> ]</p>
+            <div id="C00784_source" class="dyn-source">
+<pre>
+method(
+  if(length &gt;(0), 
+    [](System randomNumber %(length)), 
+    nil))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00785"></a><b>randomIndex</b>()
+          </div>
+          <div class="description">
+            <p>returns the index of a random element from the list. Returns nil if the list is empty.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00785_source')" id="l_C00785_source">show source</a> ]</p>
+            <div id="C00785_source" class="dyn-source">
+<pre>
+method(
+  if(length &gt;(0), 
+    System randomNumber %(length), 
+    nil))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00778"></a><b>rassoc</b>(obj)
+          </div>
+          <div class="description">
+            <p>takes an object, and returns the first list in this list that has that object as its second element. if it can't be found, returns nil.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00778_source')" id="l_C00778_source">show source</a> ]</p>
+            <div id="C00778_source" class="dyn-source">
+<pre>
+method(obj, 
+  self find(el, 
+    el mimics?(List) &&(el length &gt;(1)) &&(el [](1) ==(obj))))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00757"></a><b>remove!</b>(element, +elements)
+          </div>
+          <div class="description">
+            <p>takes one or more arguments. removes all occurrences of the provided arguments from the list and returns the updated list. if an argument is not contained, the list remains unchanged. sending this method to an empty list has no effect.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00756"></a><b>removeAt!</b>(indexOrRange)
+          </div>
+          <div class="description">
+            <p>takes as argument the index of the element to be removed and returns it. can be negative and will in that case index from the back of the list. if the index is outside the bounds of the list, will return nil. the argument can also be a range, and will in that case remove the sublist beginning at the first index and extending to the position in the list specified by the second index (inclusive or exclusive depending on the range). the end of the range can be negative and will in that case index from the back of the list. if the start of the range is negative, or greater than the end, an empty list will be returned. if the end index exceeds the bounds of the list, its size will be used instead.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00758"></a><b>removeFirst!</b>(element, +elements)
+          </div>
+          <div class="description">
+            <p>takes one or more arguments. removes the first occurrence of the provided arguments from the list and returns the updated list. if an argument is not contained, the list remains unchanged. arguments that are provided multiple times are treated as distinct elements. sending this message to an empty list has no effect.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00765"></a><b>removeIf!</b>([argOrCode], [code] nil)
+          </div>
+          <div class="description">
+            <p>takes one or two arguments, and will then use these arguments as code to decide what elements should be removed from the list. the method will return the receiver.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00769"></a><b>rest</b>()
+          </div>
+          <div class="description">
+            <p>returns a list that contains all entries except for the first one, or the empty list if this list is empty.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00769_source')" id="l_C00769_source">show source</a> ]</p>
+            <div id="C00769_source" class="dyn-source">
+<pre>
+method(
+  if(empty?, 
+    DefaultBehavior [], 
+    [](1 ..(0 -(1)))))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00779"></a><b>reverse</b>()
+          </div>
+          <div class="description">
+            <p>returns a new list that is a mimic of the current list, except that the order of all elements are reversed</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00779_source')" id="l_C00779_source">show source</a> ]</p>
+            <div id="C00779_source" class="dyn-source">
+<pre>
+method(
+  newList = self mimic 
+  newList reverse! 
+  newList)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00760"></a><b>reverse!</b>()
+          </div>
+          <div class="description">
+            <p>reverses the elements in this list, then returns it</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00783"></a><b>rindex</b>(obj)
+          </div>
+          <div class="description">
+            <p>takes an object and returns the index of the last occurance of that object in this list, or nil if it doesn't exist</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00783_source')" id="l_C00783_source">show source</a> ]</p>
+            <div id="C00783_source" class="dyn-source">
+<pre>
+method(obj, 
+  ((self size -(1)) ..(0)) each(index, 
+    if(self [](index) ==(obj), 
+      return(index))) 
+  nil)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00766"></a><b>second</b>()
+          </div>
+          <div class="description">
+            <p>returns the second element of this list, or nil of the list has less than two entries</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00766_source')" id="l_C00766_source">show source</a> ]</p>
+            <div id="C00766_source" class="dyn-source">
+<pre>
+method(
+  [](1))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00731"></a><b>seq</b>()
+          </div>
+          <div class="description">
+            <p>returns a new sequence to iterate over this list</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00740"></a><b>shift!</b>()
+          </div>
+          <div class="description">
+            <p>removes the first element from the list and returns it. returns nil if the list is empty.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00789"></a><b>shuffle</b>()
+          </div>
+          <div class="description">
+            <p>return a new list containing the same elements as the original list with their positions distributed randomly.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00789_source')" id="l_C00789_source">show source</a> ]</p>
+            <div id="C00789_source" class="dyn-source">
+<pre>
+method(
+  pick(length))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00790"></a><b>shuffle!</b>()
+          </div>
+          <div class="description">
+            <p>shuffles the list by randomly distributing the position of its elements</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00790_source')" id="l_C00790_source">show source</a> ]</p>
+            <div id="C00790_source" class="dyn-source">
+<pre>
+method(
+  notPicked = self mimic 
+  notPicked length times(index, 
+    randomIndex = System randomNumber %((notPicked length)) 
+    [](index) = notPicked removeAt!(randomIndex)) 
+  self)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00749"></a><b>size</b>()
+          </div>
+          <div class="description">
+            <p>returns the size of this list</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00747"></a><b>sort</b>()
+          </div>
+          <div class="description">
+            <p>returns a new sorted version of this list</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00748"></a><b>sort!</b>()
+          </div>
+          <div class="description">
+            <p>sorts this list in place and then returns it</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00767"></a><b>third</b>()
+          </div>
+          <div class="description">
+            <p>returns the third element of this list, or nil of the list has less than three entries</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00767_source')" id="l_C00767_source">show source</a> ]</p>
+            <div id="C00767_source" class="dyn-source">
+<pre>
+method(
+  [](2))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00738"></a><b>unshift!</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>

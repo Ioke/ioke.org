@@ -1,0 +1,135 @@
+<span class="irc-date">[8:08]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:41]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r494efcf / (2 files in 2 dirs): Fix problem so that restricted packages also can be integrated - <a href="http://bit.ly/BemZJ">http://bit.ly/BemZJ</a></span><br />
+<span class="irc-date">[8:52]</span> <span class="irc-green">* naeu (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:12]</span> <span class="irc-green">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-green">* olabini (n=ola@80.251.192.3) has joined #ioke</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-black">&lt;olabini&gt; hi people</span><br />
+<span class="irc-date">[9:28]</span> <span class="irc-black">&lt;mozinator&gt; hi olabini</span><br />
+<span class="irc-date">[9:29]</span> <span class="irc-black">&lt;naeu&gt; hey there</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;mozinator&gt; hi sam</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;naeu&gt; hey fabian</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;mozinator&gt; learning actively clojure for fun and profit :)</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;naeu&gt; olabini: I have some more regexp woes ;-)</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;naeu&gt; mozinator: cool :-)</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;mozinator&gt; the real cool thing I like about clojure is the inferior-lisp mode in emacs, its a really nice way to code</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;mozinator&gt; write a little bit code, load it in the repl, play with it, change it, load it again, play with it :)</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;olabini&gt; mm</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;olabini&gt; that's nice</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;olabini&gt; Clojure is nice, overall</span><br />
+<span class="irc-date">[9:36]</span> <span class="irc-black">&lt;olabini&gt; naeu: of course you do, because you hate me</span><br />
+<span class="irc-date">[9:36]</span> <span class="irc-black">&lt;olabini&gt; naeu: want to take over responsibility for the regexp subsystem? =)</span><br />
+<span class="irc-date">[9:36]</span> <span class="irc-black">&lt;naeu&gt; olabini: noooooo</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;mozinator&gt; :D</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;naeu&gt; i wouldn't have the first clue about it ;-)</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;naeu&gt; but your assumption is incorrect, I don't hate you</span><br />
+<span class="irc-date">[9:38]</span> <span class="irc-black">&lt;naeu&gt; in fact, I highly respect you</span><br />
+<span class="irc-date">[9:39]</span> <span class="irc-black">&lt;naeu&gt; although i do believe that in some situations you would be better to replace 'lesser' with 'different' ;-)</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-black">&lt;naeu&gt; ok, the first issue with regexps  is that Regexp#inspect doesn't spit out parser friendly Texts: <a href="http://gist.github.com/84018">http://gist.github.com/84018</a></span><br />
+<span class="irc-date">[9:44]</span> <span class="irc-black">&lt;naeu&gt; and the second issue is that regexps created with interpolation aren't comparable with standard regexps:</span><br />
+<span class="irc-date">[9:44]</span> <span class="irc-black">&lt;naeu&gt; expected #/(?-ixmus:\[#)(?-ixmus:\w+)(?-ixmus:])/ to === #/\[#\w+]/ (ISpec ExpectationNotMet)</span><br />
+<span class="irc-date">[9:53]</span> <span class="irc-green">* Narnach_ (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;olabini&gt; true</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;olabini&gt; I know that doesn't happen</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[9:59]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[9:59]</span> <span class="irc-black">&lt;olabini&gt; that's true</span><br />
+<span class="irc-date">[9:59]</span> <span class="irc-black">&lt;olabini&gt; and sadly, the comparison issue is that way because there is really no other way of handling it</span><br />
+<span class="irc-date">[9:59]</span> <span class="irc-black">&lt;olabini&gt; .... but, now that I think about it. it would probably be possible to fix the comparison in the jregex library</span><br />
+<span class="irc-date">[9:59]</span> <span class="irc-black">&lt;olabini&gt; will think about that</span><br />
+<span class="irc-date">[9:59]</span> <span class="irc-black">&lt;naeu&gt; cool</span><br />
+<span class="irc-date">[9:59]</span> <span class="irc-black">&lt;olabini&gt; the inspect issue is easier to fix, of course</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;naeu&gt; sure ;-)</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;olabini&gt; can you register two bugs for it?</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;olabini&gt; and thanks for hitting on the regexp support</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;naeu&gt; i was going to ask you whether you wanted bugs made of these</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;olabini&gt; it's the only way to get all these kinks out</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[10:01]</span> <span class="irc-black">&lt;naeu&gt; and i haven't really started doing anything serious with the regexps yet ;-)</span><br />
+<span class="irc-date">[10:01]</span> <span class="irc-black">&lt;naeu&gt; i've only almost taught Tik to validate templates</span><br />
+<span class="irc-date">[10:02]</span> <span class="irc-black">&lt;naeu&gt; then i'll add some nice error feedback</span><br />
+<span class="irc-date">[10:02]</span> <span class="irc-black">&lt;naeu&gt; and then i'll work on the actual eval part ;-)</span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-black">&lt;olabini&gt; that should be the easier part</span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-black">&lt;naeu&gt; i think so too :-)</span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[10:11]</span> <span class="irc-black">&lt;naeu&gt; kenai is a bit frustration</span><br />
+<span class="irc-date">[10:11]</span> <span class="irc-black">&lt;naeu&gt; *frustrating</span><br />
+<span class="irc-date">[10:12]</span> <span class="irc-black">&lt;naeu&gt; when i'm in the ioke project and i want to enter a new bug, why do i have to search for ioke again?</span><br />
+<span class="irc-date">[10:12]</span> <span class="irc-black">&lt;olabini&gt; yeah, I know</span><br />
+<span class="irc-date">[10:12]</span> <span class="irc-black">&lt;olabini&gt; I've wondered about that</span><br />
+<span class="irc-date">[10:12]</span> <span class="irc-black">&lt;naeu&gt; and what do the priorities mean?</span><br />
+<span class="irc-date">[10:12]</span> <span class="irc-black">&lt;naeu&gt; is priority 5 high priority, or 1?</span><br />
+<span class="irc-date">[10:13]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[10:13]</span> <span class="irc-black">&lt;olabini&gt; no idea</span><br />
+<span class="irc-date">[10:13]</span> <span class="irc-black">&lt;olabini&gt; I don't care about it anyway, so you can disregard it</span><br />
+<span class="irc-date">[10:13]</span> <span class="irc-black">&lt;olabini&gt; I interpret p1 as high</span><br />
+<span class="irc-date">[10:13]</span> <span class="irc-black">&lt;naeu&gt; and what does platform actually mean?</span><br />
+<span class="irc-date">[10:13]</span> <span class="irc-black">&lt;naeu&gt; surely it should be architecture?</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;olabini&gt; I guess</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;naeu&gt; hmm, now i have to work on communicating with an ldap server from a rails app</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;naeu&gt; all new stuff to me</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;olabini&gt; that's pretty easy though</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;olabini&gt; won't take you long</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;olabini&gt; I recommend net/ldap</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;olabini&gt; it's a pure Ruby library that is available as a gem</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;naeu&gt; ah ok</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;olabini&gt; I think it's called ruby-net-ldap in rubygems</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;naeu&gt; i was just compiling ruby-ldap</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;olabini&gt; ldap is cool</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;olabini&gt; ruby-ldap kinda sucks</span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;naeu&gt; well, it was last updated in 2006...</span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;naeu&gt; is ldap like a giant dict?</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;naeu&gt; with nested dicts</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;naeu&gt; sort of a tree structure?</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;olabini&gt; it's an hierarchical database</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;olabini&gt; sort of</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;olabini&gt; not exactly nested dicts</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;olabini&gt; there is soeth</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;olabini&gt; there is something called object classes that define what attributes can be added</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;olabini&gt; and attributes can have several values</span><br />
+<span class="irc-date">[10:38]</span> <span class="irc-black">&lt;naeu&gt; interesting :-)</span><br />
+<span class="irc-date">[10:38]</span> <span class="irc-black">&lt;naeu&gt; well i'm fetching results</span><br />
+<span class="irc-date">[10:39]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[10:39]</span> <span class="irc-black">&lt;olabini&gt; it's good for security and certificate handling</span><br />
+<span class="irc-date">[11:26]</span> <span class="irc-navy">* olabini (n=ola@80.251.192.3) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[14:14]</span> <span class="irc-green">* zabbai` (n=user@189.143.190.51) has joined #ioke</span><br />
+<span class="irc-date">[14:32]</span> <span class="irc-navy">* zabbai (n=user@189.143.28.187) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[16:24]</span> <span class="irc-navy">* zabbai` (n=user@189.143.190.51) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[16:25]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit ()</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-navy">* Narnach_ (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[16:31]</span> <span class="irc-green">* martido (n=martin@dslb-088-066-197-084.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[16:35]</span> <span class="irc-black">&lt;martido&gt; very nice, ola ;) <a href="http://www.infoq.com/news/2009/03/Evolving-JVM-Ola-Bini">http://www.infoq.com/news/2009/03/Evolving-JVM-Ola-Bini</a></span><br />
+<span class="irc-date">[16:37]</span> <span class="irc-black">&lt;martido&gt; I just wonder ... how long did it take you to learn all that stuff?!? I'm always kinda perplexed to see what's out there that I have no idea about...</span><br />
+<span class="irc-date">[16:37]</span> <span class="irc-black">&lt;martido&gt; but someday I will ;)</span><br />
+<span class="irc-date">[16:45]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[16:56]</span> <span class="irc-green">* oopsamba (i=t7DS@201.78.150.15) has joined #ioke</span><br />
+<span class="irc-date">[16:58]</span> <span class="irc-green">* oopsamba (i=t7DS@201.78.150.15) has left #ioke</span><br />
+<span class="irc-date">[18:06]</span> <span class="irc-black">&lt;martido&gt; just realized that this presentation's from 2008 ... well ... anyway ;)</span><br />
+<span class="irc-date">[18:06]</span> <span class="irc-black">&lt;martido&gt; up-to-date news from InfoQ</span><br />
+<span class="irc-date">[18:37]</span> <span class="irc-green">* zabbai (n=user@189.143.190.51) has joined #ioke</span><br />
+<span class="irc-date">[19:22]</span> <span class="irc-green">* donizetti (n=donizett@201-0-206-97.dial-up.telesp.net.br) has joined #ioke</span><br />
+<span class="irc-date">[19:49]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-60.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[20:04]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[20:41]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-60.vc-graz.ac.at) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-60.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[21:15]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-60.vc-graz.ac.at) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[21:42]</span> <span class="irc-navy">* martido (n=martin@dslb-088-066-197-084.pools.arcor-ip.net) Quit ()</span><br />
+<span class="irc-date">[22:08]</span> <span class="irc-navy">* donizetti (n=donizett@201-0-206-97.dial-up.telesp.net.br) Quit ()</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-green">* olabini (n=ola@c-304fe155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[22:23]</span> <span class="irc-green">* donizetti (n=donizett@201-0-206-97.dial-up.telesp.net.br) has joined #ioke</span><br />
+<span class="irc-date">[22:24]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[22:48]</span> <span class="irc-navy">* donizetti (n=donizett@201-0-206-97.dial-up.telesp.net.br) Quit ()</span><br />
+<span class="irc-date">[23:37]</span> <span class="irc-navy">* zabbai (n=user@189.143.190.51) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[23:43]</span> <span class="irc-green">* zabbai (n=user@189.143.190.51) has joined #ioke</span><br />

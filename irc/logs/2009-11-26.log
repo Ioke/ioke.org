@@ -1,0 +1,45 @@
+<span class="irc-date">[2:14]</span> <span class="irc-green">* richcollins (n=richcoll@adsl-190-182-200.asm.bellsouth.net) has joined #ioke</span><br />
+<span class="irc-date">[2:47]</span> <span class="irc-navy">* olabini (n=ola@212.107.147.30) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[2:47]</span> <span class="irc-navy">* erg (n=erg@li13-154.members.linode.com) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[2:47]</span> <span class="irc-navy">* IokeHurricane (n=IokeHurr@8.12.35.212) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[2:47]</span> <span class="irc-navy">* CIA-21 (n=CIA@208.69.182.149) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[2:47]</span> <span class="irc-navy">* richcollins (n=richcoll@adsl-190-182-200.asm.bellsouth.net) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[3:13]</span> <span class="irc-green">* olabini (n=ola@212.107.147.30) has joined #ioke</span><br />
+<span class="irc-date">[3:13]</span> <span class="irc-green">* CIA-21 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[3:13]</span> <span class="irc-green">* erg (n=erg@li13-154.members.linode.com) has joined #ioke</span><br />
+<span class="irc-date">[3:13]</span> <span class="irc-green">* IokeHurricane (n=IokeHurr@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[3:13]</span> <span class="irc-navy">* olabini (n=ola@212.107.147.30) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[3:13]</span> <span class="irc-navy">* erg (n=erg@li13-154.members.linode.com) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[3:13]</span> <span class="irc-navy">* IokeHurricane (n=IokeHurr@8.12.35.212) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[3:13]</span> <span class="irc-navy">* CIA-21 (n=CIA@208.69.182.149) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[3:15]</span> <span class="irc-green">* olabini (n=ola@212.107.147.30) has joined #ioke</span><br />
+<span class="irc-date">[3:15]</span> <span class="irc-green">* CIA-21 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[3:15]</span> <span class="irc-green">* erg (n=erg@li13-154.members.linode.com) has joined #ioke</span><br />
+<span class="irc-date">[3:15]</span> <span class="irc-green">* IokeHurricane (n=IokeHurr@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[3:20]</span> <span class="irc-red">[freenode-connect VERSION]</span><br />
+<span class="irc-date">[3:38]</span> <span class="irc-navy">* olabini (n=ola@212.107.147.30) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[3:38]</span> <span class="irc-navy">* erg (n=erg@li13-154.members.linode.com) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[3:38]</span> <span class="irc-navy">* IokeHurricane (n=IokeHurr@8.12.35.212) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[3:38]</span> <span class="irc-navy">* CIA-21 (n=CIA@208.69.182.149) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[3:39]</span> <span class="irc-green">* olabini (n=ola@212.107.147.30) has joined #ioke</span><br />
+<span class="irc-date">[3:39]</span> <span class="irc-green">* erg (n=erg@li13-154.members.linode.com) has joined #ioke</span><br />
+<span class="irc-date">[3:39]</span> <span class="irc-green">* IokeHurricane (n=IokeHurr@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[3:39]</span> <span class="irc-green">* CIA-21 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[7:12]</span> <span class="irc-black">&lt;CIA-21&gt; ioke: Ola Bini master * r3c02da6 / (src/builtin/D30_dict.ik test/dict_spec.ik): Add support for Dict#mergeWith - <a href="http://bit.ly/6LQzxP">http://bit.ly/6LQzxP</a></span><br />
+<span class="irc-date">[9:10]</span> <span class="irc-green">* naeu (n=sam@h253124.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[10:17]</span> <span class="irc-black">&lt;CIA-21&gt; ioke: Ola Bini master * rcfedc78 / (src/builtin/F32_sequence.ik test/sequence_spec.ik): Add support for Sequence#+ - <a href="http://bit.ly/6usu6j">http://bit.ly/6usu6j</a></span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;CIA-21&gt; ioke: Ola Bini master * r29c392c / (src/builtin/F32_sequence.ik test/sequence_spec.ik): Add the infinity Sequence - <a href="http://bit.ly/7UnEKG">http://bit.ly/7UnEKG</a></span><br />
+<span class="irc-date">[11:22]</span> <span class="irc-navy">* naeu (n=sam@h253124.upc-h.chello.nl) Quit ()</span><br />
+<span class="irc-date">[13:32]</span> <span class="irc-green">* felipero (n=Felipe@187.2.4.172) has joined #ioke</span><br />
+<span class="irc-date">[13:57]</span> <span class="irc-green">* jdp (n=gu@75.97.120.11) has joined #ioke</span><br />
+<span class="irc-date">[15:00]</span> <span class="irc-navy">* jdp (n=gu@75.97.120.11) Quit ()</span><br />
+<span class="irc-date">[15:20]</span> <span class="irc-green">* richcollins (n=richcoll@adsl-190-182-200.asm.bellsouth.net) has joined #ioke</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-navy">* richcollins (n=richcoll@adsl-190-182-200.asm.bellsouth.net) Quit ()</span><br />
+<span class="irc-date">[16:36]</span> <span class="irc-green">* kar8nga (n=kar8nga@82.66.176.74) has joined #ioke</span><br />
+<span class="irc-date">[18:16]</span> <span class="irc-navy">* kar8nga (n=kar8nga@82.66.176.74) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[19:31]</span> <span class="irc-navy">* felipero (n=Felipe@187.2.4.172) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[19:59]</span> <span class="irc-green">* richcollins (n=richcoll@74.190.214.172) has joined #ioke</span><br />
+<span class="irc-date">[20:16]</span> <span class="irc-green">* _richcollins (n=richcoll@adsl-190-188-19.asm.bellsouth.net) has joined #ioke</span><br />
+<span class="irc-date">[20:23]</span> <span class="irc-navy">* _richcollins (n=richcoll@adsl-190-188-19.asm.bellsouth.net) Quit ()</span><br />
+<span class="irc-date">[20:24]</span> <span class="irc-navy">* richcollins (n=richcoll@74.190.214.172) Quit (Read error: 145 (Connection timed out))</span><br />
+<span class="irc-date">[23:50]</span> <span class="irc-green">* pdelgallego (n=pdelgall@42.Red-217-125-2.staticIP.rima-tde.net) has joined #ioke</span><br />

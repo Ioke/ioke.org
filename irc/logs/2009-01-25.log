@@ -1,0 +1,467 @@
+<span class="irc-date">[0:00]</span> <span class="irc-black">&lt;cv&gt; sounds good, since in java you can still call static methods from an instance method</span><br />
+<span class="irc-date">[0:00]</span> <span class="irc-black">&lt;melwin&gt; Right.</span><br />
+<span class="irc-date">[0:07]</span> <span class="irc-black">&lt;cv&gt; if you're calling "foo" script (to find out what's the Unicode script for this text), should it return:</span><br />
+<span class="irc-date">[0:07]</span> <span class="irc-black">&lt;cv&gt; 1) the script for 'f'</span><br />
+<span class="irc-date">[0:07]</span> <span class="irc-black">&lt;cv&gt; 2) a list of scripts for 'f', 'o' and 'o'</span><br />
+<span class="irc-date">[0:08]</span> <span class="irc-black">&lt;cv&gt; 3) blow up (if so, with which condition?)</span><br />
+<span class="irc-date">[0:09]</span> <span class="irc-black">&lt;melwin&gt; Hehe... Umm...</span><br />
+<span class="irc-date">[0:09]</span> <span class="irc-black">&lt;melwin&gt; Well... I would expect a list if you call it on a Text....</span><br />
+<span class="irc-date">[0:11]</span> <span class="irc-black">&lt;cv&gt; makes my life easier :)</span><br />
+<span class="irc-date">[0:11]</span> <span class="irc-black">&lt;cv&gt; but that begs the question... should that be on Text?</span><br />
+<span class="irc-date">[0:12]</span> <span class="irc-black">&lt;melwin&gt; I find it strange that a function operating on a text only would care about the first char.</span><br />
+<span class="irc-date">[0:12]</span> <span class="irc-black">&lt;melwin&gt; What are the alternatives?</span><br />
+<span class="irc-date">[0:12]</span> <span class="irc-black">&lt;cv&gt; putting it on Decimal :(</span><br />
+<span class="irc-date">[0:12]</span> <span class="irc-black">&lt;cv&gt; so you can do "foo"[0] script (== :Latin)</span><br />
+<span class="irc-date">[0:13]</span> <span class="irc-black">&lt;cv&gt; python and ruby suffer from the same problem, there's no object to represent a single character</span><br />
+<span class="irc-date">[0:16]</span> <span class="irc-black">&lt;melwin&gt; Ugh... Tricky...</span><br />
+<span class="irc-date">[0:26]</span> <span class="irc-black">&lt;cv&gt; i think i'm gonna go with 3, blowing up with a Condition Error</span><br />
+<span class="irc-date">[0:44]</span> <span class="irc-black">&lt;melwin&gt; How'sit going?</span><br />
+<span class="irc-date">[0:50]</span> <span class="irc-black">&lt;cv&gt; all good, just adding more tests</span><br />
+<span class="irc-date">[0:54]</span> <span class="irc-black">&lt;melwin&gt; Mmm... There's that...</span><br />
+<span class="irc-date">[0:54]</span> <span class="irc-black">&lt;melwin&gt; Confession: I haven't written a single test for this yet! Gah!</span><br />
+<span class="irc-date">[0:54]</span> <span class="irc-black">&lt;cv&gt; it turned out pretty simple actually</span><br />
+<span class="irc-date">[0:55]</span> <span class="irc-black">&lt;cv&gt; just one big case statement</span><br />
+<span class="irc-date">[0:55]</span> <span class="irc-black">&lt;cv&gt; (and i mean big)</span><br />
+<span class="irc-date">[0:57]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[1:02]</span> <span class="irc-black">&lt;melwin&gt; Dude...</span><br />
+<span class="irc-date">[1:03]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; map = java("java.util.HashMap") new</span><br />
+<span class="irc-date">[1:03]</span> <span class="irc-black">&lt;melwin&gt; map = java("java.util.HashMap") new</span><br />
+<span class="irc-date">[1:03]</span> <span class="irc-black">&lt;melwin&gt; +&gt;  JavaClass_0x19F8018:</span><br />
+<span class="irc-date">[1:03]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; map put("foobar", "boofar")</span><br />
+<span class="irc-date">[1:03]</span> <span class="irc-black">&lt;melwin&gt; map put("foobar", "boofar")</span><br />
+<span class="irc-date">[1:03]</span> <span class="irc-black">&lt;melwin&gt; +&gt; nil</span><br />
+<span class="irc-date">[1:03]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; map get("foobar")</span><br />
+<span class="irc-date">[1:03]</span> <span class="irc-black">&lt;melwin&gt; map get("foobar")</span><br />
+<span class="irc-date">[1:03]</span> <span class="irc-black">&lt;melwin&gt; +&gt; "boofar"</span><br />
+<span class="irc-date">[1:04]</span> <span class="irc-brick">* cv wept</span><br />
+<span class="irc-date">[1:05]</span> <span class="irc-black">&lt;melwin&gt; What say you?</span><br />
+<span class="irc-date">[1:06]</span> <span class="irc-black">&lt;cv&gt; it's beautiful :)</span><br />
+<span class="irc-date">[1:07]</span> <span class="irc-black">&lt;cv&gt; that's enough to write OpenGL games, y'know</span><br />
+<span class="irc-date">[1:07]</span> <span class="irc-black">&lt;cv&gt; or a web framework :P</span><br />
+<span class="irc-date">[1:07]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[1:08]</span> <span class="irc-black">&lt;melwin&gt; It doesn't really convert all types between java and ioke...</span><br />
+<span class="irc-date">[1:08]</span> <span class="irc-black">&lt;melwin&gt; Yet... :)</span><br />
+<span class="irc-date">[1:08]</span> <span class="irc-black">&lt;melwin&gt; Handles strings and ints right now...</span><br />
+<span class="irc-date">[1:09]</span> <span class="irc-black">&lt;melwin&gt; But the trickiest part is finding the correct overloaded method...</span><br />
+<span class="irc-date">[1:09]</span> <span class="irc-black">&lt;melwin&gt; Just basing dispatch on arity is a bit lame.</span><br />
+<span class="irc-date">[1:10]</span> <span class="irc-black">&lt;cv&gt; well, 80-20 rule</span><br />
+<span class="irc-date">[1:15]</span> <span class="irc-black">&lt;melwin&gt; Mmm...</span><br />
+<span class="irc-date">[1:18]</span> <span class="irc-black">&lt;cv&gt; i take back the OpenGL games (they'd need floats and doubles)</span><br />
+<span class="irc-date">[1:18]</span> <span class="irc-black">&lt;cv&gt; but web frameworks are definitely possible, heh</span><br />
+<span class="irc-date">[1:19]</span> <span class="irc-black">&lt;cv&gt; java("org.mortbay.jetty.Server") new? :)</span><br />
+<span class="irc-date">[1:19]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[1:26]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; import("java.util.HashMap")</span><br />
+<span class="irc-date">[1:26]</span> <span class="irc-black">&lt;melwin&gt; +&gt;  Ground HashMap_0xE96550:</span><br />
+<span class="irc-date">[1:26]</span> <span class="irc-black">&lt;melwin&gt;   kind                         = "Ground HashMap"</span><br />
+<span class="irc-date">[1:26]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; map = HashMap new. map put("foobar", "boofar")</span><br />
+<span class="irc-date">[1:26]</span> <span class="irc-black">&lt;melwin&gt; +&gt; nil</span><br />
+<span class="irc-date">[1:26]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; map size</span><br />
+<span class="irc-date">[1:26]</span> <span class="irc-black">&lt;melwin&gt; +&gt; 1</span><br />
+<span class="irc-date">[1:26]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; map get("foobar")</span><br />
+<span class="irc-date">[1:26]</span> <span class="irc-black">&lt;melwin&gt; +&gt; "boofar"</span><br />
+<span class="irc-date">[1:26]</span> <span class="irc-black">&lt;melwin&gt; It's pretty nice.. :)</span><br />
+<span class="irc-date">[1:30]</span> <span class="irc-black">&lt;cv&gt; w00t!</span><br />
+<span class="irc-date">[1:30]</span> <span class="irc-black">&lt;cv&gt; it is</span><br />
+<span class="irc-date">[1:44]</span> <span class="irc-black">&lt;melwin&gt; Oops... GF forcing me to go to sleep.</span><br />
+<span class="irc-date">[1:44]</span> <span class="irc-black">&lt;melwin&gt; I'll check this in tomorrow after I've added some tests...</span><br />
+<span class="irc-date">[1:45]</span> <span class="irc-black">&lt;cv&gt; wicked dude</span><br />
+<span class="irc-date">[1:45]</span> <span class="irc-black">&lt;cv&gt; nice work</span><br />
+<span class="irc-date">[1:45]</span> <span class="irc-black">&lt;melwin&gt; Thanks - you too!</span><br />
+<span class="irc-date">[1:45]</span> <span class="irc-black">&lt;melwin&gt; Night...!</span><br />
+<span class="irc-date">[1:45]</span> <span class="irc-black">&lt;cv&gt; night!</span><br />
+<span class="irc-date">[4:27]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-green">* olabini (n=ola@80.73.62.222) has joined #ioke</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-green">* IokeHurricane sets mode +o olabini </span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;melwin&gt; Hey.</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;olabini&gt; hello</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;olabini&gt; just read through the logs</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;olabini&gt; I do have some ideas for Java integration that isn't in any documents, sadly</span><br />
+<span class="irc-date">[10:26]</span> <span class="irc-black">&lt;olabini&gt; and the docs are a bit dates</span><br />
+<span class="irc-date">[10:26]</span> <span class="irc-black">&lt;olabini&gt; dated</span><br />
+<span class="irc-date">[10:26]</span> <span class="irc-black">&lt;olabini&gt; I think I'll put that framework in place this week</span><br />
+<span class="irc-date">[10:26]</span> <span class="irc-black">&lt;melwin&gt; Hehe, cool. I was just playing around.</span><br />
+<span class="irc-date">[10:26]</span> <span class="irc-black">&lt;olabini&gt; also, there is a slight problem with sandboxing objects</span><br />
+<span class="irc-date">[10:26]</span> <span class="irc-black">&lt;olabini&gt; as you have noticed</span><br />
+<span class="irc-date">[10:26]</span> <span class="irc-black">&lt;melwin&gt; Mmm.</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; the problem is that most kinds actually mimic Origin, which mimics Ground</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; so the way to do it, is to create something that mimics Base</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; and then evaluate stuff on it.</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; but the problem is all the types</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;melwin&gt; Yeah...</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; so you want to implement a delegating</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; object</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; so you can say something like</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-black">&lt;olabini&gt; HiddenGround List = Delegator to(List, :length, :"[]")</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-black">&lt;olabini&gt; or something like that</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-black">&lt;olabini&gt; I know it's doable, but it's a bit tricky</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-black">&lt;olabini&gt; especially since you can't allow the use of regular methods and macros inside of the sandbox</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-black">&lt;melwin&gt; Ugh! Yeah - it's messy work that.</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-black">&lt;melwin&gt; So what's the plan for java interop?</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-black">&lt;olabini&gt; but it is doable, and I think it is pretty generic work</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-black">&lt;olabini&gt; well. it's a bit complicated.</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-black">&lt;olabini&gt; I need to work on my presentations for JFokus now, but after that I'll attack Java interop</span><br />
+<span class="irc-date">[10:30]</span> <span class="irc-black">&lt;olabini&gt; the hard part will be to subclass existing abstract classes and things like that</span><br />
+<span class="irc-date">[10:30]</span> <span class="irc-black">&lt;olabini&gt; I know from my JRuby experience that this is tricky to do well</span><br />
+<span class="irc-date">[10:31]</span> <span class="irc-black">&lt;melwin&gt; No kidding.</span><br />
+<span class="irc-date">[11:19]</span> <span class="irc-black">&lt;melwin&gt; This is fun. :)</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;melwin&gt; Sweet...</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; import("java.lang.Integer")</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;melwin&gt; +&gt;  Ground Integer_0x1F12985:</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;melwin&gt;   kind                         = "Ground Integer"</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; Integer new(1234)</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;melwin&gt; +&gt; 1234</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; Integer new("1234")</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;melwin&gt; +&gt; 1234</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; Integer new("12345")</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;melwin&gt; +&gt; 12345</span><br />
+<span class="irc-date">[11:21]</span> <span class="irc-black">&lt;melwin&gt; I know I'm just wasting my time - but it's entertaining coding.</span><br />
+<span class="irc-date">[11:22]</span> <span class="irc-black">&lt;melwin&gt; Now overload resolution works based on passed Ioke kinds... (for some at least) :)</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; import("java.lang.StringBuilder")</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;melwin&gt; +&gt;  Ground StringBuilder_0x1CE946E:</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;melwin&gt;   kind                         = "Ground StringBuilder"</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; sb = StringBuilder new</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;melwin&gt; +&gt;  Ground StringBuilder_0x1441992:</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; sb append("Test value: ")</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;melwin&gt; +&gt;  Ground StringBuilder_0x1827F02:</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; sb append(1234 * 2);</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-black">&lt;melwin&gt; +&gt;  Ground StringBuilder_0x180CDA2:</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; sb toString</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;melwin&gt; +&gt; "Test value: 2468"</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; JavaClass["java.lang.Integer"] parseInt("42")</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;melwin&gt; +&gt; 42</span><br />
+<span class="irc-date">[11:54]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; map = JavaClass["java.util.HashMap"] new. map put("Int 1", JavaClass["java.lang.Integer"] parseInt("1234"))</span><br />
+<span class="irc-date">[11:54]</span> <span class="irc-black">&lt;melwin&gt; +&gt; nil</span><br />
+<span class="irc-date">[11:54]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; map toString</span><br />
+<span class="irc-date">[11:54]</span> <span class="irc-black">&lt;melwin&gt; +&gt; "{Int 1=1234}"</span><br />
+<span class="irc-date">[11:56]</span> <span class="irc-black">&lt;melwin&gt; Back later - going to look at apartments... :)</span><br />
+<span class="irc-date">[13:00]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[13:09]</span> <span class="irc-black">&lt;cv&gt; howdy all</span><br />
+<span class="irc-date">[13:22]</span> <span class="irc-black">&lt;melwin&gt; Hey.</span><br />
+<span class="irc-date">[13:46]</span> <span class="irc-black">&lt;cv&gt; is it just me, or does github seem a little confused?</span><br />
+<span class="irc-date">[13:46]</span> <span class="irc-black">&lt;cv&gt; my rss feeds say ola applied a bunch of stuff to master, and git agrees</span><br />
+<span class="irc-date">[13:46]</span> <span class="irc-black">&lt;cv&gt; but i can't see that by navigating to the pages in GH</span><br />
+<span class="irc-date">[13:55]</span> <span class="irc-black">&lt;olabini&gt; cv: yep, I've noticed that too</span><br />
+<span class="irc-date">[13:55]</span> <span class="irc-black">&lt;olabini&gt; very strange</span><br />
+<span class="irc-date">[13:55]</span> <span class="irc-black">&lt;olabini&gt; I applied some stuff</span><br />
+<span class="irc-date">[13:56]</span> <span class="irc-black">&lt;cv&gt; oh well, maybe it's just a cache expiry thing :)</span><br />
+<span class="irc-date">[13:58]</span> <span class="irc-black">&lt;cv&gt; melwin: how's that java integration stuff coming along?</span><br />
+<span class="irc-date">[13:59]</span> <span class="irc-black">&lt;melwin&gt; cv: Fine, fine. But it's really just for my own amusement. Ola will be putting something in place for this week.</span><br />
+<span class="irc-date">[13:59]</span> <span class="irc-black">&lt;cv&gt; ah i see</span><br />
+<span class="irc-date">[13:59]</span> <span class="irc-black">&lt;cv&gt; cool</span><br />
+<span class="irc-date">[13:59]</span> <span class="irc-black">&lt;melwin&gt; I've been playing with the overload resolution today.</span><br />
+<span class="irc-date">[14:00]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[14:00]</span> <span class="irc-black">&lt;melwin&gt; But all in all I'm quite happy with what I've managed to do. :)</span><br />
+<span class="irc-date">[14:03]</span> <span class="irc-black">&lt;naeu&gt; afternoon all</span><br />
+<span class="irc-date">[14:03]</span> <span class="irc-black">&lt;cv&gt; hey naeu</span><br />
+<span class="irc-date">[14:03]</span> <span class="irc-black">&lt;melwin&gt; Hullu!</span><br />
+<span class="irc-date">[14:03]</span> <span class="irc-black">&lt;naeu&gt; cv: that must be the biggest case statement in history ;-)</span><br />
+<span class="irc-date">[14:03]</span> <span class="irc-black">&lt;naeu&gt; great stuff though :-)</span><br />
+<span class="irc-date">[14:03]</span> <span class="irc-black">&lt;cv&gt; thankfully i didn't get to write it =)</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;cv&gt; i'm still reading through the unicode spec... there's so much good stuff in there</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; import("java.lang.StringBuilder")</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;melwin&gt; +&gt;  Ground StringBuilder_0x12D0266:</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;melwin&gt;   kind                         = "Ground StringBuilder"</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; sb = StringBuilder new</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;melwin&gt; +&gt;  Ground StringBuilder_0xA7634:</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; sb append("Test value: ")</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;melwin&gt; +&gt;  Ground StringBuilder_0x16FA896:</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; sb append(1234 * 2)</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;melwin&gt; +&gt;  Ground StringBuilder_0x10ECA9F:</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;melwin&gt; iik&gt; sb toString</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-black">&lt;melwin&gt; +&gt; "Test value: 2468"</span><br />
+<span class="irc-date">[14:05]</span> <span class="irc-black">&lt;melwin&gt; Works pretty well. :]</span><br />
+<span class="irc-date">[14:05]</span> <span class="irc-black">&lt;naeu&gt; melwin: yeah i read the logs</span><br />
+<span class="irc-date">[14:05]</span> <span class="irc-black">&lt;naeu&gt; looks like you're having fun :-)</span><br />
+<span class="irc-date">[14:05]</span> <span class="irc-black">&lt;melwin&gt; It _IS_ fun!</span><br />
+<span class="irc-date">[14:05]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[14:06]</span> <span class="irc-black">&lt;naeu&gt; I'm just jealous because I don't have the foggiest idea how to start coding up something like that :-)</span><br />
+<span class="irc-date">[14:06]</span> <span class="irc-black">&lt;melwin&gt; It's pure entertainment - just fun fiddling with the code base.</span><br />
+<span class="irc-date">[14:06]</span> <span class="irc-black">&lt;naeu&gt; I'm currently reading a Msc paper on Multiagent Resource Allocation</span><br />
+<span class="irc-date">[14:06]</span> <span class="irc-black">&lt;naeu&gt; it's actually more interesting than it sounds :-)</span><br />
+<span class="irc-date">[14:07]</span> <span class="irc-black">&lt;melwin&gt; olabini: I want to hack on something useful now! :) Any pointers?</span><br />
+<span class="irc-date">[14:07]</span> <span class="irc-black">&lt;melwin&gt; naeu: Ooh.. Sounds fancy.</span><br />
+<span class="irc-date">[14:07]</span> <span class="irc-black">&lt;naeu&gt; I discovered <a href="http://www.illc.uva.nl/logic_tea/">http://www.illc.uva.nl/logic_tea/</a></span><br />
+<span class="irc-date">[14:07]</span> <span class="irc-black">&lt;naeu&gt; I really need to meet more people here in Amsterdam</span><br />
+<span class="irc-date">[14:08]</span> <span class="irc-black">&lt;melwin&gt; That sounds interesting!</span><br />
+<span class="irc-date">[14:08]</span> <span class="irc-black">&lt;olabini&gt; naeu: that is really fun stuff.</span><br />
+<span class="irc-date">[14:08]</span> <span class="irc-black">&lt;olabini&gt; melwin: hmm.</span><br />
+<span class="irc-date">[14:08]</span> <span class="irc-black">&lt;naeu&gt; I'm still trying to parse the set theory</span><br />
+<span class="irc-date">[14:09]</span> <span class="irc-black">&lt;naeu&gt; my brain currently works functionally ;-)</span><br />
+<span class="irc-date">[14:09]</span> <span class="irc-black">&lt;olabini&gt; melwin: well, if you can code up a cool, really fast multi-linked map implementation, that would be useful</span><br />
+<span class="irc-date">[14:09]</span> <span class="irc-black">&lt;olabini&gt; haven't found any interesting white papers on something like that</span><br />
+<span class="irc-date">[14:09]</span> <span class="irc-black">&lt;naeu&gt; it's why I was talking yesterday about {} being a literal for dicts not sets</span><br />
+<span class="irc-date">[14:09]</span> <span class="irc-black">&lt;naeu&gt; it's a shame it's not sets :-)</span><br />
+<span class="irc-date">[14:09]</span> <span class="irc-black">&lt;melwin&gt; We care about performance now? ;P</span><br />
+<span class="irc-date">[14:10]</span> <span class="irc-black">&lt;olabini&gt; naeu: yeah. I know. but you know that if you just do {1,2,3,4} you will get the same as {1 =&gt; nil, 2=&gt;nil, 3=&gt;nil, 4=&gt;nil}</span><br />
+<span class="irc-date">[14:10]</span> <span class="irc-black">&lt;olabini&gt; which will work as a set</span><br />
+<span class="irc-date">[14:10]</span> <span class="irc-black">&lt;olabini&gt; to a degree</span><br />
+<span class="irc-date">[14:10]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[14:10]</span> <span class="irc-black">&lt;melwin&gt; olabini: Exactly where you want to use it?</span><br />
+<span class="irc-date">[14:10]</span> <span class="irc-black">&lt;olabini&gt; but naeu, if you really want to do something about it, feel free to add #{} as a syntax for sets</span><br />
+<span class="irc-date">[14:10]</span> <span class="irc-black">&lt;melwin&gt; Cell lookup or something?</span><br />
+<span class="irc-date">[14:10]</span> <span class="irc-black">&lt;naeu&gt; olabini: did you see my crazy ideas yesterday?</span><br />
+<span class="irc-date">[14:11]</span> <span class="irc-black">&lt;olabini&gt; melwin: well, sooner or later I need it for cell lookup, because the whole structure of several independent hashmaps is not good</span><br />
+<span class="irc-date">[14:11]</span> <span class="irc-black">&lt;naeu&gt; melwin just told me to eat some chicken soup</span><br />
+<span class="irc-date">[14:11]</span> <span class="irc-black">&lt;olabini&gt; I want the lookup strategy for cells to be embedded in the data structure</span><br />
+<span class="irc-date">[14:11]</span> <span class="irc-black">&lt;melwin&gt; Right.</span><br />
+<span class="irc-date">[14:11]</span> <span class="irc-black">&lt;naeu&gt; which is difficult being a vegetarian ;-)</span><br />
+<span class="irc-date">[14:11]</span> <span class="irc-black">&lt;olabini&gt; that would make more interesting hooks much easier to implement too</span><br />
+<span class="irc-date">[14:11]</span> <span class="irc-black">&lt;olabini&gt; naeu: yeah, that doesn't happen to me anymore, after over 10 years as vegetarian</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;olabini&gt; naeu: which one of the crazy ideas?</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;naeu&gt; haha</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;melwin&gt; So "layered" but still mutable maps... Hmm...</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;olabini&gt; I can't keep track of them all</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;olabini&gt; melwin: yeah, something like that</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;naeu&gt; I just started thinking about set literals</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;naeu&gt; and wondered which languages supported them</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;olabini&gt; that also allows you to change the tree structure after the fact</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;olabini&gt; naeu: Clojure</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;naeu&gt; which then led me to consider a set as being a special form of dict</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;melwin&gt; I was first thinking of Rich Hickey's work on persistent structures... But they are of course more for immutable situations...</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;olabini&gt; and a few obscure languages</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;naeu&gt; where all the elements of the dict point to themselves</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-black">&lt;olabini&gt; melwin: yep. I've thought about that too, but as you say, they are immutable. Ioke need to have those maps be the same identity, but still mutable</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-black">&lt;olabini&gt; naeu: yep. you can do something like that</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-black">&lt;melwin&gt; Interesting....</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-black">&lt;olabini&gt; of course, that sucks if you want to implement functionality for sets but not dicts</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-black">&lt;olabini&gt; or the other way around</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-black">&lt;olabini&gt; which is why new syntax might be the right way</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-black">&lt;olabini&gt; I don't have any one-character alternative for it</span><br />
+<span class="irc-date">[14:14]</span> <span class="irc-black">&lt;naeu&gt; which would then lead to such craziness as {1,2,3 =&gt; :hi, 5}[3] ;=&gt; 'hi</span><br />
+<span class="irc-date">[14:14]</span> <span class="irc-black">&lt;olabini&gt; but #{1,2,3,4,5} might be good enough</span><br />
+<span class="irc-date">[14:14]</span> <span class="irc-black">&lt;olabini&gt; I've been using the #-something for other stuff</span><br />
+<span class="irc-date">[14:14]</span> <span class="irc-black">&lt;naeu&gt; and {1,2,3 =&gt; :hi, 5}[1] ;=&gt; 1</span><br />
+<span class="irc-date">[14:14]</span> <span class="irc-black">&lt;olabini&gt; naeu: yeah. which feels a bit nasty, really.</span><br />
+<span class="irc-date">[14:14]</span> <span class="irc-black">&lt;olabini&gt; shouldn't mix stuff like that</span><br />
+<span class="irc-date">[14:14]</span> <span class="irc-black">&lt;naeu&gt; i know</span><br />
+<span class="irc-date">[14:14]</span> <span class="irc-black">&lt;naeu&gt; hence the crazy label :-</span><br />
+<span class="irc-date">[14:14]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[14:14]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[14:14]</span> <span class="irc-black">&lt;melwin&gt; I've just read Introduction to Algorithms and The Algorithm Design Manual, so I guess this is a suitable next step.. :P</span><br />
+<span class="irc-date">[14:14]</span> <span class="irc-black">&lt;naeu&gt; it's just nice to throw ideas about</span><br />
+<span class="irc-date">[14:15]</span> <span class="irc-black">&lt;naeu&gt; but having a set literal would be really nice</span><br />
+<span class="irc-date">[14:15]</span> <span class="irc-black">&lt;naeu&gt; olabini: I pushed a couple of gh-pages fixes that skaar pointed out yesterday</span><br />
+<span class="irc-date">[14:15]</span> <span class="irc-black">&lt;naeu&gt; to melwin/gh-pages-corrections</span><br />
+<span class="irc-date">[14:16]</span> <span class="irc-black">&lt;cv&gt; naeu: set(1,2,3,4)?</span><br />
+<span class="irc-date">[14:16]</span> <span class="irc-black">&lt;naeu&gt; I also created a spec for the dict with defaults thing yesterday melwin/add-dict-ass-with-defaults-spec</span><br />
+<span class="irc-date">[14:16]</span> <span class="irc-black">&lt;cv&gt; how's that better than #{1,2,3,4}?</span><br />
+<span class="irc-date">[14:16]</span> <span class="irc-black">&lt;naeu&gt; cv: yeah, that's nice on its own, but when you nest them</span><br />
+<span class="irc-date">[14:16]</span> <span class="irc-black">&lt;naeu&gt; set(set(["bob"], ["sam"]), set(["sam"], ["bob"]))</span><br />
+<span class="irc-date">[14:17]</span> <span class="irc-black">&lt;olabini&gt; cool</span><br />
+<span class="irc-date">[14:17]</span> <span class="irc-black">&lt;olabini&gt; naeu: I ignored that test</span><br />
+<span class="irc-date">[14:17]</span> <span class="irc-black">&lt;olabini&gt; it gives false impressions</span><br />
+<span class="irc-date">[14:17]</span> <span class="irc-black">&lt;naeu&gt; olabini: ok :-)</span><br />
+<span class="irc-date">[14:17]</span> <span class="irc-black">&lt;olabini&gt; I added a comment about why</span><br />
+<span class="irc-date">[14:17]</span> <span class="irc-black">&lt;naeu&gt; ooh</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;olabini&gt; melwin: and yeah, that might be suitable</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;olabini&gt; I wonder where I've put all my algorithm books</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;olabini&gt; ...</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;naeu&gt; hmmm, how do i get notified about comments?</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;cv&gt; naeu: i put the github rss feed in notify.me and added that to adium</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;cv&gt; naeu: i get a nice little growl everytime something interesting happens to any projects i'm following on github</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;naeu&gt; cv: nice</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;olabini&gt; cv: I'm just using netnewswire for everything on github</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;olabini&gt; and netnewswire uses growl, of course</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-black">&lt;naeu&gt; i just added my private feed to nnw</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-black">&lt;cv&gt; nice... the reason i chose not to use NNW or google reader is that i don't want those notifications to be persistent, so if i'm not around for a couple of days i don't have to deal with 8000 of them :)</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-black">&lt;naeu&gt; not sure why i hadn't done that before now</span><br />
+<span class="irc-date">[14:21]</span> <span class="irc-black">&lt;olabini&gt; cv: I do like them persistent</span><br />
+<span class="irc-date">[14:21]</span> <span class="irc-black">&lt;olabini&gt; the same way with twitter. I'm a bit obsessive that way</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;olabini&gt; "what if I missed something hugely important"? =)</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;cv&gt; it'd get reposted on slashdot or someone would re-share it anyway ;)</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;cv&gt; can always count on /. for week-old news :P</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;naeu&gt; olabini: wow, so when you append something to an uninitialised dict value that has a default, you actually append to the default?</span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;melwin&gt; olabini: We prioritize searching over inserting, eh?</span><br />
+<span class="irc-date">[14:26]</span> <span class="irc-black">&lt;olabini&gt; naeu: yep. exactly like Ruby</span><br />
+<span class="irc-date">[14:26]</span> <span class="irc-black">&lt;naeu&gt; that's an aspect of Ruby I didn't know :-)</span><br />
+<span class="irc-date">[14:26]</span> <span class="irc-black">&lt;olabini&gt; except that I want withDefault to be able to take code too:</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;olabini&gt; withDefault([]) will return the [] just created</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;olabini&gt; while</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;olabini&gt; withDefault(h,k,[]) will execute the code every time a default value is needed</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;olabini&gt; just like Ruby's</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;olabini&gt; Hash.new do |h,k|</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;olabini&gt; end</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;olabini&gt; melwin: yep, definitely</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;olabini&gt; cv: I don't trust /. at all</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;melwin&gt; Right.</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;naeu&gt; ok, so all non-initialised values *share* the same default</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;olabini&gt; ok, fellas. ttyl. I'm flying back to Stockholm.</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;olabini&gt; naeu: yeah</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;olabini&gt; bye</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-green">* olabini (n=ola@80.73.62.222) has left #ioke</span><br />
+<span class="irc-date">[14:28]</span> <span class="irc-black">&lt;naeu&gt; ah ok</span><br />
+<span class="irc-date">[14:28]</span> <span class="irc-black">&lt;naeu&gt; you learn a new thing every day :-)</span><br />
+<span class="irc-date">[14:38]</span> <span class="irc-black">&lt;melwin&gt; Hmm.. Linked maps... Interesting challenge...</span><br />
+<span class="irc-date">[14:39]</span> <span class="irc-black">&lt;cv&gt; isn't there a LinkedHashMap in the std api?</span><br />
+<span class="irc-date">[14:39]</span> <span class="irc-black">&lt;melwin&gt; That's a different thing.</span><br />
+<span class="irc-date">[14:39]</span> <span class="irc-black">&lt;melwin&gt; That maintains a linked list together with the hashmap to ensure stability when iterating..</span><br />
+<span class="irc-date">[14:42]</span> <span class="irc-black">&lt;cv&gt; ah right, so i'm thicker than imagined</span><br />
+<span class="irc-date">[14:42]</span> <span class="irc-black">&lt;cv&gt; by linked maps you mean maps that have maps as values?</span><br />
+<span class="irc-date">[14:42]</span> <span class="irc-black">&lt;melwin&gt; Hehe, no, the names are confusing.. :)</span><br />
+<span class="irc-date">[14:42]</span> <span class="irc-black">&lt;melwin&gt; No - it's a map that is sort of layered on top of another map. It's mainly for the cell lookup.</span><br />
+<span class="irc-date">[14:43]</span> <span class="irc-black">&lt;melwin&gt; Like, if it's not in the main map, check the map of the mimic, etc...</span><br />
+<span class="irc-date">[14:48]</span> <span class="irc-black">&lt;cv&gt; ChainedLookupMap?</span><br />
+<span class="irc-date">[14:49]</span> <span class="irc-black">&lt;melwin&gt; You got one of those?</span><br />
+<span class="irc-date">[14:51]</span> <span class="irc-black">&lt;naeu&gt; I like reading a paper that's been formatted with LaTeX :-)</span><br />
+<span class="irc-date">[14:53]</span> <span class="irc-black">&lt;cv&gt; melwin, sorta -- <a href="http://code.activestate.com/recipes/305268/">http://code.activestate.com/recipes/305268/</a></span><br />
+<span class="irc-date">[14:55]</span> <span class="irc-black">&lt;melwin&gt; Mmmm, what Ola is looking for is a data structure with this capability built in, where the chaining is a fundamental part of it - to make it as fast as possible.</span><br />
+<span class="irc-date">[14:55]</span> <span class="irc-black">&lt;melwin&gt; What is done there is basically how Ioke works right now - just programmatic chaining of multiple (hash)maps.</span><br />
+<span class="irc-date">[15:00]</span> <span class="irc-black">&lt;melwin&gt; But I'm not sure there is a data structure that has a faster expected search time than HashMaps, even if you chain them programmatically.</span><br />
+<span class="irc-date">[15:23]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[16:14]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-black">&lt;cv&gt; just a quick thing for the log: this is a fantastic source of examples to implement in ioke in case you're trying to learn (or want to find bugs) <a href="http://www.rosettacode.org/wiki/Category:Solutions_by_Programming_Task">http://www.rosettacode.org/wiki/Category:Solutions_by_Programming_Task</a></span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit (Client Quit)</span><br />
+<span class="irc-date">[18:00]</span> <span class="irc-black">&lt;skaar&gt; guide typo: "it's a bit easier to describe than mathods" in the macros section</span><br />
+<span class="irc-date">[18:20]</span> <span class="irc-black">&lt;naeu&gt; skaar: thanks :-)</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-navy">* CIA-7 (n=CIA@208.69.182.149) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[18:39]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[18:47]</span> <span class="irc-green">* CIA-7 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[19:24]</span> <span class="irc-black">&lt;cv&gt; compiling ghc is torturous</span><br />
+<span class="irc-date">[19:33]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:42]</span> <span class="irc-green">* olabini (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[20:42]</span> <span class="irc-green">* IokeHurricane sets mode +o olabini </span><br />
+<span class="irc-date">[20:51]</span> <span class="irc-black">&lt;cv&gt; olabini: good flight? :)</span><br />
+<span class="irc-date">[20:51]</span> <span class="irc-black">&lt;naeu&gt; melwin: you about?</span><br />
+<span class="irc-date">[20:52]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-23.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[20:52]</span> <span class="irc-black">&lt;olabini&gt; cv: compiling GHC is so painful it took me three tries before I had the stamina to let it finish</span><br />
+<span class="irc-date">[20:53]</span> <span class="irc-black">&lt;olabini&gt; cv: pretty good. it was together with Stella, which makes it much better.</span><br />
+<span class="irc-date">[20:53]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[20:54]</span> <span class="irc-black">&lt;naeu&gt; olabini: on our flight back to Amsterdam just after we got married, the airline messed up the seating and placed us apart</span><br />
+<span class="irc-date">[20:54]</span> <span class="irc-black">&lt;naeu&gt; Susanna wasn't a happy bunny!</span><br />
+<span class="irc-date">[20:57]</span> <span class="irc-black">&lt;olabini&gt; sucky</span><br />
+<span class="irc-date">[20:58]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-23.vc-graz.ac.at) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[20:58]</span> <span class="irc-black">&lt;cv&gt; so, now ghc compiled</span><br />
+<span class="irc-date">[20:58]</span> <span class="irc-black">&lt;cv&gt; but my ports installation has gone funny and won't let me install pandoc</span><br />
+<span class="irc-date">[20:58]</span> <span class="irc-black">&lt;cv&gt; GRRR.</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-black">&lt;cv&gt; [administrator@bacon ~]$ sudo port install pandoc -v</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-black">&lt;cv&gt; Warning: Group file could not be located.</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-black">&lt;cv&gt; Error: Unable to execute port: can't read "universal_archs": no such variable</span><br />
+<span class="irc-date">[21:06]</span> <span class="irc-black">&lt;cv&gt; ha! macports 1.7.0 was released recently, thus breaking a bunch of stuff for those who sync'd and didn't update the distro</span><br />
+<span class="irc-date">[21:14]</span> <span class="irc-black">&lt;cv&gt; victory!</span><br />
+<span class="irc-date">[21:14]</span> <span class="irc-black">&lt;cv&gt; olabini: i'm converting the guide to wiki markup</span><br />
+<span class="irc-date">[21:15]</span> <span class="irc-black">&lt;cv&gt; is it cool if we stick it in the wiki and collaborate from there?</span><br />
+<span class="irc-date">[21:15]</span> <span class="irc-black">&lt;cv&gt; or do you prefer having it under source control together with the codebase?</span><br />
+<span class="irc-date">[21:29]</span> <span class="irc-black">&lt;melwin&gt; naeu: 'sup?</span><br />
+<span class="irc-date">[21:29]</span> <span class="irc-black">&lt;naeu&gt; melwin: I'd appreciate some help bro</span><br />
+<span class="irc-date">[21:29]</span> <span class="irc-black">&lt;melwin&gt; Tell me!</span><br />
+<span class="irc-date">[21:30]</span> <span class="irc-black">&lt;naeu&gt; how can we create a shared writing slate</span><br />
+<span class="irc-date">[21:30]</span> <span class="irc-black">&lt;melwin&gt; Umm... What you want to do?</span><br />
+<span class="irc-date">[21:51]</span> <span class="irc-black">&lt;olabini&gt; cv: no wiki markup, please</span><br />
+<span class="irc-date">[21:52]</span> <span class="irc-black">&lt;olabini&gt; just simple html, with code highlighting from Emacs</span><br />
+<span class="irc-date">[21:52]</span> <span class="irc-black">&lt;olabini&gt; I haven't ever seen a wiki highlighting I trust</span><br />
+<span class="irc-date">[21:55]</span> <span class="irc-black">&lt;olabini&gt; or .... hmm. maybe wiki, but I still want it in version control</span><br />
+<span class="irc-date">[21:55]</span> <span class="irc-black">&lt;olabini&gt; and the syntax hightlighting should be done from the emacs mode</span><br />
+<span class="irc-date">[21:55]</span> <span class="irc-black">&lt;olabini&gt; not sure how to put that together exactly</span><br />
+<span class="irc-date">[21:58]</span> <span class="irc-black">&lt;cv&gt; i think you can get geshi to work on mediawiki relatively easily, if it's not there already</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-black">&lt;cv&gt; a solution to keep it in git/hg would be to export the wiki every now and then</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-black">&lt;cv&gt; although mediawiki is pretty decent at versioning stuff</span><br />
+<span class="irc-date">[22:05]</span> <span class="irc-black">&lt;olabini&gt; hmm.</span><br />
+<span class="irc-date">[22:05]</span> <span class="irc-black">&lt;olabini&gt; ok.</span><br />
+<span class="irc-date">[22:05]</span> <span class="irc-black">&lt;olabini&gt; the one thing I dislike about it is this</span><br />
+<span class="irc-date">[22:06]</span> <span class="irc-black">&lt;olabini&gt; and I know it's irrational</span><br />
+<span class="irc-date">[22:06]</span> <span class="irc-black">&lt;olabini&gt; but in all language projects I've seen, the stuff in the wiki feels less authorative</span><br />
+<span class="irc-date">[22:06]</span> <span class="irc-black">&lt;olabini&gt; even if its an official wiki, people doesn't seem to use it as much</span><br />
+<span class="irc-date">[22:06]</span> <span class="irc-black">&lt;olabini&gt; and look in it</span><br />
+<span class="irc-date">[22:06]</span> <span class="irc-black">&lt;olabini&gt; and I know several languages with guides outside, and inside wikies</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;olabini&gt; and I've seen that people go to the outside guides much more often, because there's a feeling that it is more up-to-date, more real, etc</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;olabini&gt; also, I want the view for the guide to be as clean as possible</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;olabini&gt; and mediawiki just doesn't get much cleaner than what I've done already</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;olabini&gt; so I'm in two minds about it, really</span><br />
+<span class="irc-date">[22:08]</span> <span class="irc-black">&lt;cv&gt; would a mediawiki -&gt; latex -&gt; pdf export help make it look more official? :)</span><br />
+<span class="irc-date">[22:09]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[22:09]</span> <span class="irc-black">&lt;olabini&gt; I don't want pdf, that's taking it too far the other way</span><br />
+<span class="irc-date">[22:09]</span> <span class="irc-black">&lt;cv&gt; i agree with you with wikis for languages looking a bit shoddy most of the time</span><br />
+<span class="irc-date">[22:09]</span> <span class="irc-black">&lt;olabini&gt; so it lacks approachability</span><br />
+<span class="irc-date">[22:09]</span> <span class="irc-black">&lt;cv&gt; but since ioke's going for monthly releases</span><br />
+<span class="irc-date">[22:09]</span> <span class="irc-black">&lt;cv&gt; and there's a lot of ground to cover</span><br />
+<span class="irc-date">[22:09]</span> <span class="irc-black">&lt;olabini&gt; yeah. you're right</span><br />
+<span class="irc-date">[22:09]</span> <span class="irc-black">&lt;cv&gt; i'm just scared the docs aren't gonna keep up</span><br />
+<span class="irc-date">[22:10]</span> <span class="irc-black">&lt;olabini&gt; go ahead and convert it, and I'll see about getting GeShi in there.</span><br />
+<span class="irc-date">[22:10]</span> <span class="irc-black">&lt;cv&gt; cool</span><br />
+<span class="irc-date">[22:10]</span> <span class="irc-black">&lt;olabini&gt; thanks.</span><br />
+<span class="irc-date">[22:10]</span> <span class="irc-black">&lt;olabini&gt; I'm still not entirely comfortable about it, but it feels like an irrational fear</span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-black">&lt;olabini&gt; cv: mail me your username etc on mediawiki, and I'll make you an admin so you can tweak common.css and so on.\</span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-black">&lt;olabini&gt; you can be responsible for the wiki if you want. =)</span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-black">&lt;olabini&gt; it's a very glamorous job!</span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-black">&lt;cv&gt; there ya go</span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-black">&lt;cv&gt; <a href="http://ioke.org/wiki/index.php/Guide">http://ioke.org/wiki/index.php/Guide</a></span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-black">&lt;cv&gt; doesn't look too bad, see :)</span><br />
+<span class="irc-date">[22:12]</span> <span class="irc-black">&lt;cv&gt; plus you get that nice little ToC for free</span><br />
+<span class="irc-date">[22:12]</span> <span class="irc-black">&lt;olabini&gt; well, except that the ToC really goes too deep</span><br />
+<span class="irc-date">[22:12]</span> <span class="irc-black">&lt;olabini&gt; just look at chapter 8</span><br />
+<span class="irc-date">[22:13]</span> <span class="irc-black">&lt;olabini&gt; some tasteful highlighting on that, and I think it will be fine. thanks</span><br />
+<span class="irc-date">[22:14]</span> <span class="irc-black">&lt;cv&gt; np, thanks to pandoc</span><br />
+<span class="irc-date">[22:14]</span> <span class="irc-black">&lt;cv&gt; and thanks to mahnve for suggesting it :P</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;olabini&gt; never trust Marcus! =)</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt; so, I tried adding a literal syntax for set</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt; #{1,2,3,4}</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt;  #{} should have kind("Set")</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt; passes</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt; #{1,2,3,4,5} should == set(1,2,3,4,5)</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt; passes</span><br />
+<span class="irc-date">[22:22]</span> <span class="irc-black">&lt;naeu&gt; (#{1,2,3,4,5} &lt;&lt; 6) should == #{1,2,3,4,5,6}</span><br />
+<span class="irc-date">[22:22]</span> <span class="irc-black">&lt;naeu&gt; passes :-)</span><br />
+<span class="irc-date">[22:37]</span> <span class="irc-black">&lt;cv&gt; naeu: nice!</span><br />
+<span class="irc-date">[22:38]</span> <span class="irc-black">&lt;naeu&gt; cv: thanks</span><br />
+<span class="irc-date">[22:39]</span> <span class="irc-black">&lt;naeu&gt; olabini: are you about?</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;melwin&gt; I'm not getting anything done... Time to sleep!</span><br />
+<span class="irc-date">[22:43]</span> <span class="irc-black">&lt;naeu&gt; melwin: just before you bugger off...</span><br />
+<span class="irc-date">[22:43]</span> <span class="irc-black">&lt;melwin&gt; Yah?</span><br />
+<span class="irc-date">[22:43]</span> <span class="irc-black">&lt;naeu&gt;     |   v='#{' commatedExpression? '}'             -&gt; ^(MESSAGE[$v] Identifier["set"] '{'  commatedExpression?)</span><br />
+<span class="irc-date">[22:43]</span> <span class="irc-black">&lt;naeu&gt;     |   v='#{' commatedExpression? '}'             -&gt; ^(MESSAGE[$v] Identifier["set"] '('  commatedExpression?)</span><br />
+<span class="irc-date">[22:43]</span> <span class="irc-black">&lt;naeu&gt; what's the difference between these two partial ANTLR grammar expressions?</span><br />
+<span class="irc-date">[22:44]</span> <span class="irc-black">&lt;naeu&gt; (and don't be your usual normal self and state the obvious)</span><br />
+<span class="irc-date">[22:44]</span> <span class="irc-black">&lt;melwin&gt; Last '{'</span><br />
+<span class="irc-date">[22:44]</span> <span class="irc-black">&lt;melwin&gt; Hmm.. What are you asking? :)</span><br />
+<span class="irc-date">[22:45]</span> <span class="irc-black">&lt;naeu&gt; well this is my attempt to add a set literal</span><br />
+<span class="irc-date">[22:45]</span> <span class="irc-black">&lt;naeu&gt; #{}</span><br />
+<span class="irc-date">[22:45]</span> <span class="irc-black">&lt;melwin&gt; Right.</span><br />
+<span class="irc-date">[22:45]</span> <span class="irc-black">&lt;naeu&gt; thing is, both of these grammar lines produce a grammar that passes all my specs</span><br />
+<span class="irc-date">[22:46]</span> <span class="irc-black">&lt;naeu&gt; i think it's something to do with the internal AST</span><br />
+<span class="irc-date">[22:46]</span> <span class="irc-black">&lt;naeu&gt; as far as I can tell, it's a grammar rewrite rule</span><br />
+<span class="irc-date">[22:46]</span> <span class="irc-black">&lt;melwin&gt; Ah... Maybe set messages don't care about that '(' or '{'...</span><br />
+<span class="irc-date">[22:46]</span> <span class="irc-black">&lt;naeu&gt; but I'm yet to read the ANTLR book</span><br />
+<span class="irc-date">[22:46]</span> <span class="irc-black">&lt;melwin&gt; Yes...</span><br />
+<span class="irc-date">[22:46]</span> <span class="irc-black">&lt;melwin&gt; But we can't say what the character { or ( is used for by looking at this.</span><br />
+<span class="irc-date">[22:48]</span> <span class="irc-black">&lt;melwin&gt; We then need to check the AST walker or something... And I haven't really looked at that in Ioke.</span><br />
+<span class="irc-date">[22:48]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[22:55]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[22:56]</span> <span class="irc-black">&lt;melwin&gt; naeu: If you check Message.java</span><br />
+<span class="irc-date">[22:57]</span> <span class="irc-black">&lt;melwin&gt; Around line 960.</span><br />
+<span class="irc-date">[22:57]</span> <span class="irc-black">&lt;naeu&gt; damn laptop battery died</span><br />
+<span class="irc-date">[22:57]</span> <span class="irc-black">&lt;naeu&gt; i'm there</span><br />
+<span class="irc-date">[22:58]</span> <span class="irc-black">&lt;melwin&gt; Looks like it never uses that value... But I might be misunderstanding something.</span><br />
+<span class="irc-date">[22:58]</span> <span class="irc-black">&lt;melwin&gt; You tried just randomly changing it to just any letter? :)</span><br />
+<span class="irc-date">[22:59]</span> <span class="irc-black">&lt;naeu&gt; melwin: i'll do that now</span><br />
+<span class="irc-date">[22:59]</span> <span class="irc-black">&lt;naeu&gt; care to suggest a char?</span><br />
+<span class="irc-date">[23:00]</span> <span class="irc-black">&lt;melwin&gt; ??</span><br />
+<span class="irc-date">[23:00]</span> <span class="irc-black">&lt;naeu&gt; that's a nice ring</span><br />
+<span class="irc-date">[23:00]</span> <span class="irc-black">&lt;naeu&gt; who's it for?</span><br />
+<span class="irc-date">[23:00]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[23:01]</span> <span class="irc-black">&lt;naeu&gt; ooh, it goes BOOM</span><br />
+<span class="irc-date">[23:01]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[23:02]</span> <span class="irc-black">&lt;melwin&gt; Well, seems to me that the char should be the same as is used in the construct...</span><br />
+<span class="irc-date">[23:02]</span> <span class="irc-black">&lt;melwin&gt; It seems like it's using it to determine if the message is detached, whatever that means.</span><br />
+<span class="irc-date">[23:02]</span> <span class="irc-black">&lt;melwin&gt; Guess you need to talk to the head honcho....</span><br />
+<span class="irc-date">[23:02]</span> <span class="irc-black">&lt;melwin&gt; I need to crash....!</span><br />
+<span class="irc-date">[23:02]</span> <span class="irc-black">&lt;melwin&gt; Nighty night!</span><br />
+<span class="irc-date">[23:03]</span> <span class="irc-black">&lt;naeu&gt; looks like     #{} should have kind("Set")  passes</span><br />
+<span class="irc-date">[23:03]</span> <span class="irc-black">&lt;naeu&gt; yet     #{1,2,3,4,5} should == set(1,2,3,4,5) boooms</span><br />
+<span class="irc-date">[23:03]</span> <span class="irc-black">&lt;naeu&gt; anyway i need to crash too :-)</span><br />
+<span class="irc-date">[23:03]</span> <span class="irc-black">&lt;melwin&gt; Yes - it seems like it's only used when you provide a comma separated list inside the {}...</span><br />
+<span class="irc-date">[23:04]</span> <span class="irc-black">&lt;melwin&gt; Oh well...</span><br />
+<span class="irc-date">[23:04]</span> <span class="irc-black">&lt;naeu&gt; ah, makes sense</span><br />
+<span class="irc-date">[23:04]</span> <span class="irc-black">&lt;melwin&gt; Sleep tight, etc.</span><br />
+<span class="irc-date">[23:04]</span> <span class="irc-black">&lt;naeu&gt; anyway some puzzles enjoy not being solved for an extra night</span><br />
+<span class="irc-date">[23:04]</span> <span class="irc-black">&lt;naeu&gt; cheerio</span><br />
+<span class="irc-date">[23:04]</span> <span class="irc-black">&lt;melwin&gt; :]</span><br />
+<span class="irc-date">[23:04]</span> <span class="irc-black">&lt;melwin&gt; Zzzzz....</span><br />
+<span class="irc-date">[23:04]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit ("Leaving")</span><br />
+<span class="irc-date">[23:06]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[23:43]</span> <span class="irc-black">&lt;cv&gt; olabini: can you get this installed on the server? <a href="http://www.mediawiki.org/wiki/Extension:SyntaxHighlight_GeSHi">http://www.mediawiki.org/wiki/Extension:SyntaxHighlight_GeSHi</a></span><br />

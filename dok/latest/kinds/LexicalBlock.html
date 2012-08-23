@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Kind: DefaultBehavior</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href=".././dokgen-style.css" type="text/css" media="screen" />
+    <script language="JavaScript" type="text/javascript">
+    // <![CDATA[
+
+        function toggleSource( id )
+        {
+          var elem
+          var link
+
+          if( document.getElementById )
+          {
+            elem = document.getElementById( id )
+            link = document.getElementById( "l_" + id )
+          }
+          else if ( document.all )
+          {
+            elem = eval( "document.all." + id )
+            link = eval( "document.all.l_" + id )
+          }
+          else
+            return false;
+
+          if( elem.style.display == "block" )
+          {
+            elem.style.display = "none"
+            link.innerHTML = "show source"
+          }
+          else
+          {
+            elem.style.display = "block"
+            link.innerHTML = "hide source"
+          }
+        }
+
+        function openCode( url )
+        {
+          window.open( url, "SOURCE_CODE", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=480,width=750" ).focus();
+        }
+      // ]]>
+    </script>
+  </head>
+
+  <body>
+    <table border='0' cellpadding='0' cellspacing='0' width="100%" class='banner'>
+      <tr>
+        <td>
+          <table width="100%" border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+              <td class="file-title" colspan="2">
+                <span class="file-title-prefix">Kind</span>
+                <br />
+                LexicalBlock
+              </td>
+              <td align="right">
+                <table cellspacing="0" cellpadding="2">
+                  <tr>
+                    <td>Main mimic:</td>
+                    <td>
+                      <a href="../kinds/Origin.html">Origin</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <div id="bodyContent">
+      <div id="content">
+        <div class="description">
+          <p>
+A lexical block allows you to delay a computation in a specific lexical context. See DefaultMethod#fn for detailed documentation.
+          </p>
+        </div>
+
+        <div class="sectiontitle">Mimics</div>
+        <ul>
+          <li><a href="../kinds/Origin.html">Origin</a></li>
+        </ul>
+
+        <div class="sectiontitle">Inactive cells</div>
+        <ul>
+          <li><a href="#C00530">kind</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Active cells</div>
+        <ul>
+          <li><a href="#C00546">&(other)</a></li>
+<li><a href="#C00543">-&gt;(other)</a></li>
+<li><a href="#C00545">&lt;-(other)</a></li>
+<li><a href="#C00541">===(other)</a></li>
+<li><a href="#C00536">argumentNames()</a></li>
+<li><a href="#C00534">argumentsCode()</a></li>
+<li><a href="#C00542">arity()</a></li>
+<li><a href="#C00532">call(+[arguments])</a></li>
+<li><a href="#C00533">code()</a></li>
+<li><a href="#C00548">complement()</a></li>
+<li><a href="#C00531">createFrom(messageList, lexicalContext)</a></li>
+<li><a href="#C00540">formattedCode()</a></li>
+<li><a href="#C00538">inspect()</a></li>
+<li><a href="#C00549">iterate(+args)</a></li>
+<li><a href="#C00550">java:coerceCode(javaType, abstractNames)</a></li>
+<li><a href="#C00535">keywords()</a></li>
+<li><a href="#C00537">message()</a></li>
+<li><a href="#C00539">notice()</a></li>
+<li><a href="#C00547">|(other)</a></li>
+<li><a href="#C00544">∘(other)</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Specs</div>
+        <div class="specs">
+          
+        </div>
+
+        <div class="sectiontitle">Inactive cells (details)</div>
+                <div class="cell">
+          <a name="C00530"></a>
+          <table border="0" cellpadding="5">
+            <tr valign="top">
+              <td class="cell-name">kind</td>
+              <td>=</td>
+              <td class="cell-value">"LexicalBlock"</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div class="sectiontitle">Active cells (details)</div>
+                <div class="cell">
+          <div class="title">
+          <a name="C00546"></a><b>&</b>(other)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00546_source')" id="l_C00546_source">show source</a> ]</p>
+            <div id="C00546_source" class="dyn-source">
+<pre>
+method(other, 
+  outsideSelf = self 
+  if(cell?(:activatable) &&(activatable), 
+    fnx(arg, 
+      res1 = cell(:outsideSelf) call(arg) 
+      res2 = cell(:other) call(arg) 
+      res1 &&(res2)), 
+    fn(arg, 
+      res1 = cell(:outsideSelf) call(arg) 
+      res2 = cell(:other) call(arg) 
+      res1 &&(res2))))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00543"></a><b>-&gt;</b>(other)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00543_source')" id="l_C00543_source">show source</a> ]</p>
+            <div id="C00543_source" class="dyn-source">
+<pre>
+method(other, 
+  outsideSelf = self 
+  if(cell?(:activatable) &&(activatable), 
+    fnx(arg, cell(:other) call(cell(:outsideSelf) call(arg))), 
+    fn(arg, cell(:other) call(cell(:outsideSelf) call(arg)))))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00545"></a><b>&lt;-</b>(other)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00545_source')" id="l_C00545_source">show source</a> ]</p>
+            <div id="C00545_source" class="dyn-source">
+<pre>
+method(other, 
+  outsideSelf = self 
+  if(cell?(:activatable) &&(activatable), 
+    fnx(arg, cell(:outsideSelf) call(cell(:other) call(arg))), 
+    fn(arg, cell(:outsideSelf) call(cell(:other) call(arg)))))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00541"></a><b>===</b>(other)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00541_source')" id="l_C00541_source">show source</a> ]</p>
+            <div id="C00541_source" class="dyn-source">
+<pre>
+method(other, 
+  if(self same?(
+      #&lt;LexicalBlock:5D15126E&gt;), 
+    Reflector other:mimics?(cell(:other), 
+      #&lt;LexicalBlock:5D15126E&gt;), 
+    bind(rescue(Condition Error, fn(c, false)), 
+      self call(
+        other))))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00536"></a><b>argumentNames</b>()
+          </div>
+          <div class="description">
+            <p>returns a list of the argument names the positional arguments this block takes</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00534"></a><b>argumentsCode</b>()
+          </div>
+          <div class="description">
+            <p>returns the code for the argument definition</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00542"></a><b>arity</b>()
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00542_source')" id="l_C00542_source">show source</a> ]</p>
+            <div id="C00542_source" class="dyn-source">
+<pre>
+method(
+  Arity fromArgumentsCode(argumentsCode))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00532"></a><b>call</b>(+[arguments])
+          </div>
+          <div class="description">
+            <p>invokes the block with the arguments provided, returning the result of the last expression in the block</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00533"></a><b>code</b>()
+          </div>
+          <div class="description">
+            <p>returns the full code of this lexical block, as a Text</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00548"></a><b>complement</b>()
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00548_source')" id="l_C00548_source">show source</a> ]</p>
+            <div id="C00548_source" class="dyn-source">
+<pre>
+method(
+  outsideSelf = self 
+  if(cell?(:activatable) &&(activatable), 
+    fnx(arg, !(cell(:outsideSelf) call(arg))), 
+    fn(arg, !(cell(:outsideSelf) call(arg)))))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00531"></a><b>createFrom</b>(messageList, lexicalContext)
+          </div>
+          <div class="description">
+            <p>takes two evaluated arguments, where this first one is a list of messages which will be used as the arguments and the code, and the second is the context where this lexical scope should be created in</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00540"></a><b>formattedCode</b>()
+          </div>
+          <div class="description">
+            <p>returns idiomatically formatted code for this lexical block</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00538"></a><b>inspect</b>()
+          </div>
+          <div class="description">
+            <p>Returns a text inspection of the object</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00549"></a><b>iterate</b>(+args)
+          </div>
+          <div class="description">
+            <p>Returns an infinite sequence that will in turn yield args, self(args), self(self(args)), etc</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00549_source')" id="l_C00549_source">show source</a> ]</p>
+            <div id="C00549_source" class="dyn-source">
+<pre>
+method(+args, 
+  Sequence Iterate with(currentValue: args, code: self) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00550"></a><b>java:coerceCode</b>(javaType, abstractNames)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00550_source')" id="l_C00550_source">show source</a> ]</p>
+            <div id="C00550_source" class="dyn-source">
+<pre>
+method(javaType, abstractNames, 
+  proxy = integrate(javaType) mimic 
+  outerSelf = self 
+  abstractNames each(name, 
+    proxy cell(name) = fnx(+(rest), +:(krest), cell(:outerSelf) call(*(rest), *(krest))) 
+    ) 
+  proxy new 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00535"></a><b>keywords</b>()
+          </div>
+          <div class="description">
+            <p>returns a list of the keywords this block takes</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00537"></a><b>message</b>()
+          </div>
+          <div class="description">
+            <p>returns the message chain for this block</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00539"></a><b>notice</b>()
+          </div>
+          <div class="description">
+            <p>Returns a brief text inspection of the object</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00547"></a><b>|</b>(other)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00547_source')" id="l_C00547_source">show source</a> ]</p>
+            <div id="C00547_source" class="dyn-source">
+<pre>
+method(other, 
+  outsideSelf = self 
+  if(cell?(:activatable) &&(activatable), 
+    fnx(arg, 
+      res1 = cell(:outsideSelf) call(arg) 
+      res2 = cell(:other) call(arg) 
+      res1 ||(res2)), 
+    fn(arg, 
+      res1 = cell(:outsideSelf) call(arg) 
+      res2 = cell(:other) call(arg) 
+      res1 ||(res2))))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00544"></a><b>∘</b>(other)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00544_source')" id="l_C00544_source">show source</a> ]</p>
+            <div id="C00544_source" class="dyn-source">
+<pre>
+method(other, 
+  outsideSelf = self 
+  if(cell?(:activatable) &&(activatable), 
+    fnx(arg, cell(:outsideSelf) call(cell(:other) call(arg))), 
+    fn(arg, cell(:outsideSelf) call(cell(:other) call(arg)))))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>

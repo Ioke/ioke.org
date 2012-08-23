@@ -1,0 +1,87 @@
+<span class="irc-date">[0:30]</span> <span class="irc-green">* bguthrie (n=bguthrie@67.97.218.226) has joined #ioke</span><br />
+<span class="irc-date">[0:34]</span> <span class="irc-green">* bguthrie_ (n=bguthrie@glo2.manheim.com) has joined #ioke</span><br />
+<span class="irc-date">[0:34]</span> <span class="irc-black">&lt;cv&gt; hey brian :)</span><br />
+<span class="irc-date">[0:50]</span> <span class="irc-navy">* bguthrie (n=bguthrie@67.97.218.226) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[1:00]</span> <span class="irc-navy">* bguthrie_ (n=bguthrie@glo2.manheim.com) Quit ()</span><br />
+<span class="irc-date">[1:22]</span> <span class="irc-green">* bguthrie (n=bguthrie@c-24-99-5-40.hsd1.ga.comcast.net) has joined #ioke</span><br />
+<span class="irc-date">[1:32]</span> <span class="irc-navy">* bguthrie (n=bguthrie@c-24-99-5-40.hsd1.ga.comcast.net) Quit ()</span><br />
+<span class="irc-date">[1:41]</span> <span class="irc-green">* [azoic] (n=azoic@adsl-75-37-30-217.dsl.pltn13.sbcglobal.net) has joined #ioke</span><br />
+<span class="irc-date">[1:51]</span> <span class="irc-navy">* cv (n=cv@5acb0c77.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[2:54]</span> <span class="irc-green">* bguthrie (n=bguthrie@c-24-99-5-40.hsd1.ga.comcast.net) has joined #ioke</span><br />
+<span class="irc-date">[3:09]</span> <span class="irc-green">* [azoic] (n=azoic@adsl-75-37-30-217.dsl.pltn13.sbcglobal.net) has left #ioke</span><br />
+<span class="irc-date">[4:22]</span> <span class="irc-navy">* bguthrie (n=bguthrie@c-24-99-5-40.hsd1.ga.comcast.net) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[4:31]</span> <span class="irc-green">* bguthrie (n=bguthrie@c-24-99-5-40.hsd1.ga.comcast.net) has joined #ioke</span><br />
+<span class="irc-date">[5:23]</span> <span class="irc-navy">* bguthrie (n=bguthrie@c-24-99-5-40.hsd1.ga.comcast.net) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[7:04]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit ("Leaving")</span><br />
+<span class="irc-date">[7:18]</span> <span class="irc-green">* cv (n=cv@5acb0c77.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[7:42]</span> <span class="irc-navy">* cv (n=cv@5acb0c77.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[9:04]</span> <span class="irc-green">* naeu (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[11:07]</span> <span class="irc-green">* rfgpfeiffer (n=rfgpfeif@141.89.226.149) has joined #ioke</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-navy">* rfgpfeiffer (n=rfgpfeif@141.89.226.149) Quit ()</span><br />
+<span class="irc-date">[11:45]</span> <span class="irc-brown">-christel- [Global Notice] Hi all, I'm going to need to take down services (Nick,Chan,MemoServ etc) for a few moments to apply a tiny little fix. It shouldn't take more than a couple of minutes and I'll let you know when they're back up again. Apologies for the inconvenience and have a good day!</span><br />
+<span class="irc-date">[11:49]</span> <span class="irc-brown">-christel- [Global Notice] Hi all, as promised I return services to you, I'm all done and they're nearly as new! Have a good day and thank you for using freenode.</span><br />
+<span class="irc-date">[12:10]</span> <span class="irc-green">* rfgpfeiffer (n=rfgpfeif@141.89.226.149) has joined #ioke</span><br />
+<span class="irc-date">[12:26]</span> <span class="irc-green">* felipero (n=felipe@189-55-18-206-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[12:27]</span> <span class="irc-black">&lt;felipero&gt; morning guys</span><br />
+<span class="irc-date">[12:28]</span> <span class="irc-black">&lt;naeu&gt; felipero: afternoon here :-)</span><br />
+<span class="irc-date">[12:28]</span> <span class="irc-black">&lt;felipero&gt; =)</span><br />
+<span class="irc-date">[12:28]</span> <span class="irc-black">&lt;naeu&gt; greetings nevertheless!</span><br />
+<span class="irc-date">[12:29]</span> <span class="irc-black">&lt;felipero&gt; olabini, I was wondering if is not possible use a syntax (and a let inside this syntax) to implement the combiners in a case:</span><br />
+<span class="irc-date">[12:48]</span> <span class="irc-black">&lt;olabini&gt; no, you really can't</span><br />
+<span class="irc-date">[12:48]</span> <span class="irc-black">&lt;olabini&gt; the problem is that it will easily fail if some other object implements and</span><br />
+<span class="irc-date">[12:48]</span> <span class="irc-green">* bguthrie (n=bguthrie@c-67-191-149-124.hsd1.ga.comcast.net) has joined #ioke</span><br />
+<span class="irc-date">[12:48]</span> <span class="irc-black">&lt;olabini&gt; like for example boolean values does</span><br />
+<span class="irc-date">[12:49]</span> <span class="irc-black">&lt;olabini&gt; the only way to do it would be to make a gigantic let-statement that modified most objects in the system</span><br />
+<span class="irc-date">[12:49]</span> <span class="irc-black">&lt;olabini&gt; remember that</span><br />
+<span class="irc-date">[12:49]</span> <span class="irc-black">&lt;olabini&gt; 1..5 and 2..3</span><br />
+<span class="irc-date">[12:49]</span> <span class="irc-black">&lt;olabini&gt; is actually</span><br />
+<span class="irc-date">[12:49]</span> <span class="irc-black">&lt;olabini&gt; (1..5) and(2..3)</span><br />
+<span class="irc-date">[12:49]</span> <span class="irc-black">&lt;olabini&gt; which is a message sent to 1..5</span><br />
+<span class="irc-date">[12:53]</span> <span class="irc-navy">* bguthrie (n=bguthrie@c-67-191-149-124.hsd1.ga.comcast.net) Quit (Client Quit)</span><br />
+<span class="irc-date">[12:57]</span> <span class="irc-navy">* rfgpfeiffer (n=rfgpfeif@141.89.226.149) Quit ()</span><br />
+<span class="irc-date">[13:02]</span> <span class="irc-green">* rfgpfeiffer (n=rfgpfeif@141.89.226.149) has joined #ioke</span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-navy">* adakkak (n=adakkak@gres116.lis.illinois.edu) Quit ("Ex-Chat")</span><br />
+<span class="irc-date">[13:14]</span> <span class="irc-black">&lt;felipero&gt; olabini: I was thinking in a "and" cell added to Origin that returns a list that contains self and arg</span><br />
+<span class="irc-date">[13:15]</span> <span class="irc-black">&lt;felipero&gt; this list would be added to AndCombiners components, just like you do.</span><br />
+<span class="irc-date">[13:16]</span> <span class="irc-black">&lt;felipero&gt; so, ofr a while, the original and cells would shadowed. Not sure it is a problem, since, after the let each one (self and arg) could be evaluated.</span><br />
+<span class="irc-date">[13:16]</span> <span class="irc-black">&lt;felipero&gt; but... for sure it is not that simple, like I though in the begin</span><br />
+<span class="irc-date">[13:18]</span> <span class="irc-black">&lt;felipero&gt; or maybe we could use a cell named "and:" to differ from the original "and" that some object could have.</span><br />
+<span class="irc-date">[13:20]</span> <span class="irc-green">* [azoic] (n=azoic@adsl-75-37-30-217.dsl.pltn13.sbcglobal.net) has joined #ioke</span><br />
+<span class="irc-date">[13:45]</span> <span class="irc-black">&lt;olabini&gt; the problem is that if you add it to Origin, there will be no shadowing</span><br />
+<span class="irc-date">[13:45]</span> <span class="irc-black">&lt;olabini&gt; and using something like and: would just be ugly</span><br />
+<span class="irc-date">[14:24]</span> <span class="irc-black">&lt;felipero&gt; yes... I'll think a little more about that. Try somethings later.</span><br />
+<span class="irc-date">[14:49]</span> <span class="irc-green">* [azoic] (n=azoic@adsl-75-37-30-217.dsl.pltn13.sbcglobal.net) has left #ioke</span><br />
+<span class="irc-date">[16:08]</span> <span class="irc-navy">* felipero (n=felipe@189-55-18-206-nd.cpe.vivax.com.br) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[16:38]</span> <span class="irc-black">&lt;naeu&gt; it would be interesting to see what the ioke community would say in response/support of this post: <a href="http://www.codinghorror.com/blog/archives/001223.html">http://www.codinghorror.com/blog/archives/001223.html</a></span><br />
+<span class="irc-date">[16:45]</span> <span class="irc-green">* bguthrie (n=bguthrie@glo2.manheim.com) has joined #ioke</span><br />
+<span class="irc-date">[16:57]</span> <span class="irc-navy">* bguthrie (n=bguthrie@glo2.manheim.com) Quit ()</span><br />
+<span class="irc-date">[16:58]</span> <span class="irc-green">* martido (n=no@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[16:59]</span> <span class="irc-black">&lt;martido&gt; hey all</span><br />
+<span class="irc-date">[17:04]</span> <span class="irc-black">&lt;martido&gt; naeu: thinking about building a sort of HTML generation DSL in Ioke? ;)</span><br />
+<span class="irc-date">[17:04]</span> <span class="irc-black">&lt;naeu&gt; martido: just wondering about the possibilities :-)</span><br />
+<span class="irc-date">[17:09]</span> <span class="irc-black">&lt;martido&gt; yeah would make for a nice challenge</span><br />
+<span class="irc-date">[17:12]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit ()</span><br />
+<span class="irc-date">[17:18]</span> <span class="irc-green">* martido (n=no@213.61.180.190) has left #ioke</span><br />
+<span class="irc-date">[17:52]</span> <span class="irc-green">* bguthrie (n=bguthrie@glo2.manheim.com) has joined #ioke</span><br />
+<span class="irc-date">[18:05]</span> <span class="irc-navy">* rfgpfeiffer (n=rfgpfeif@141.89.226.149) Quit ()</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-navy">* bguthrie (n=bguthrie@glo2.manheim.com) Quit ()</span><br />
+<span class="irc-date">[18:32]</span> <span class="irc-green">* adakkak (n=adakkak@gres116.lis.illinois.edu) has joined #ioke</span><br />
+<span class="irc-date">[19:03]</span> <span class="irc-green">* rfgpfeiffer (n=rfgpfeif@e178236001.adsl.alicedsl.de) has joined #ioke</span><br />
+<span class="irc-date">[19:28]</span> <span class="irc-green">* olabini (n=ola@c-224ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[19:29]</span> <span class="irc-green">* olabini (n=ola@c-224ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[19:29]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[20:22]</span> <span class="irc-green">* rfgpfeiffer_ (n=rfgpfeif@e178253122.adsl.alicedsl.de) has joined #ioke</span><br />
+<span class="irc-date">[20:23]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:40]</span> <span class="irc-navy">* rfgpfeiffer (n=rfgpfeif@e178236001.adsl.alicedsl.de) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[21:44]</span> <span class="irc-green">* bguthrie (n=bguthrie@glo2.manheim.com) has joined #ioke</span><br />
+<span class="irc-date">[21:50]</span> <span class="irc-navy">* bguthrie (n=bguthrie@glo2.manheim.com) Quit ()</span><br />
+<span class="irc-date">[22:13]</span> <span class="irc-green">* bguthrie (n=bguthrie@glo2.manheim.com) has joined #ioke</span><br />
+<span class="irc-date">[22:50]</span> <span class="irc-navy">* bguthrie (n=bguthrie@glo2.manheim.com) Quit ()</span><br />
+<span class="irc-date">[22:54]</span> <span class="irc-navy">* adakkak_ (n=adakkak@c-98-212-194-70.hsd1.il.comcast.net) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[22:55]</span> <span class="irc-green">* adakkak_ (n=adakkak@c-98-212-194-70.hsd1.il.comcast.net) has joined #ioke</span><br />
+<span class="irc-date">[22:58]</span> <span class="irc-green">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[22:59]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Connection reset by peer)</span><br />
+<span class="irc-date">[23:00]</span> <span class="irc-navy">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Client Quit)</span><br />
+<span class="irc-date">[23:16]</span> <span class="irc-navy">* rfgpfeiffer_ (n=rfgpfeif@e178253122.adsl.alicedsl.de) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[23:31]</span> <span class="irc-green">* cv (n=cv@5acb0c77.bb.sky.com) has joined #ioke</span><br />

@@ -1,0 +1,133 @@
+<span class="irc-date">[0:39]</span> <span class="irc-black">&lt;Raynes&gt; olabini: Now we just need that integrate bug fixed. :&gt;</span><br />
+<span class="irc-date">[1:03]</span> <span class="irc-navy">* pdelgallego (~pdelgalle@42.Red-217-125-2.staticIP.rima-tde.net) Quit (Ping timeout: 260 seconds)</span><br />
+<span class="irc-date">[1:16]</span> <span class="irc-green">* pdelgallego (~pdelgalle@42.Red-217-125-2.staticIP.rima-tde.net) has joined #ioke</span><br />
+<span class="irc-date">[1:17]</span> <span class="irc-navy">* pdelgallego (~pdelgalle@42.Red-217-125-2.staticIP.rima-tde.net) Quit (Read error: Connection reset by peer)</span><br />
+<span class="irc-date">[1:19]</span> <span class="irc-navy">* olabini (~ola@24-136-23-5.mart-ubr1.chi-mart.il.cable.rcn.com) Quit (Ping timeout: 245 seconds)</span><br />
+<span class="irc-date">[3:44]</span> <span class="irc-green">* nddrylliog (~nddryllio@dhcp-83-219-110-64.customers.tvtnet.ch) has joined #ioke</span><br />
+<span class="irc-date">[3:44]</span> <span class="irc-green">* nddrylliog (~nddryllio@dhcp-83-219-110-64.customers.tvtnet.ch) has left #ioke</span><br />
+<span class="irc-date">[6:11]</span> <span class="irc-green">* TR2N (email@89-180-137-177.net.novis.pt) has left #ioke</span><br />
+<span class="irc-date">[6:22]</span> <span class="irc-navy">* Raynes (~Raynes@unaffiliated/raynes) Quit (Ping timeout: 276 seconds)</span><br />
+<span class="irc-date">[7:10]</span> <span class="irc-green">* Raynes (~Raynes@unaffiliated/raynes) has joined #ioke</span><br />
+<span class="irc-date">[15:13]</span> <span class="irc-green">* jewel (~jewel@vc-41-29-106-61.umts.vodacom.co.za) has joined #ioke</span><br />
+<span class="irc-date">[15:14]</span> <span class="irc-navy">* Raynes (~Raynes@unaffiliated/raynes) Quit (Ping timeout: 240 seconds)</span><br />
+<span class="irc-date">[15:41]</span> <span class="irc-navy">* jewel (~jewel@vc-41-29-106-61.umts.vodacom.co.za) Quit (Ping timeout: 248 seconds)</span><br />
+<span class="irc-date">[18:04]</span> <span class="irc-green">* olabini (~ola@75.40.149.33) has joined #ioke</span><br />
+<span class="irc-date">[18:04]</span> <span class="irc-green">* ChanServ sets mode +o olabini</span><br />
+<span class="irc-date">[19:23]</span> <span class="irc-black">&lt;olabini&gt; integrate has been fixed to handle PircBot</span><br />
+<span class="irc-date">[19:23]</span> <span class="irc-green">* naeu (~sam@dhcp-077-250-237-109.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:18]</span> <span class="irc-green">* Raynes (~Raynes@unaffiliated/raynes) has joined #ioke</span><br />
+<span class="irc-date">[20:30]</span> <span class="irc-black">&lt;olabini&gt; Raynes: did you see I fixed integrate?</span><br />
+<span class="irc-date">[20:30]</span> <span class="irc-green">* olabini (~ola@75.40.149.33) has left #ioke</span><br />
+<span class="irc-date">[21:22]</span> <span class="irc-green">* olabini (~ola@75.40.149.33) has joined #ioke</span><br />
+<span class="irc-date">[21:22]</span> <span class="irc-green">* ChanServ sets mode +o olabini</span><br />
+<span class="irc-date">[21:42]</span> <span class="irc-black">&lt;naeu&gt; how can I convert text to an integer value?</span><br />
+<span class="irc-date">[21:42]</span> <span class="irc-black">&lt;naeu&gt; there's no "32" toInteger</span><br />
+<span class="irc-date">[21:42]</span> <span class="irc-black">&lt;naeu&gt; or "32" toDecimal toInteger</span><br />
+<span class="irc-date">[21:44]</span> <span class="irc-black">&lt;naeu&gt; for example, if I have the string "4" how can I run a given block 4 times?</span><br />
+<span class="irc-date">[21:44]</span> <span class="irc-black">&lt;naeu&gt; "4" toDecimal times("hi" println) ; clearly doesn't work....</span><br />
+<span class="irc-date">[21:44]</span> <span class="irc-black">&lt;olabini&gt; "32" toRational</span><br />
+<span class="irc-date">[21:45]</span> <span class="irc-black">&lt;naeu&gt; that wasn't obvious</span><br />
+<span class="irc-date">[21:45]</span> <span class="irc-black">&lt;olabini&gt; no, I know</span><br />
+<span class="irc-date">[21:45]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[21:45]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[21:45]</span> <span class="irc-black">&lt;olabini&gt; well.</span><br />
+<span class="irc-date">[21:45]</span> <span class="irc-black">&lt;olabini&gt; Ioke has a numerical tower</span><br />
+<span class="irc-date">[21:45]</span> <span class="irc-black">&lt;naeu&gt; it's essentially 32/1</span><br />
+<span class="irc-date">[21:45]</span> <span class="irc-black">&lt;olabini&gt; no, that's a ratio</span><br />
+<span class="irc-date">[21:46]</span> <span class="irc-black">&lt;olabini&gt; rational numbers can be either integers or ratios</span><br />
+<span class="irc-date">[21:46]</span> <span class="irc-black">&lt;naeu&gt; ah</span><br />
+<span class="irc-date">[21:46]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[21:46]</span> <span class="irc-black">&lt;olabini&gt; basic math this here.</span><br />
+<span class="irc-date">[21:46]</span> <span class="irc-black">&lt;olabini&gt; =P</span><br />
+<span class="irc-date">[21:46]</span> <span class="irc-black">&lt;naeu&gt; yep, true</span><br />
+<span class="irc-date">[21:46]</span> <span class="irc-black">&lt;naeu&gt; but only because of 32/1</span><br />
+<span class="irc-date">[21:47]</span> <span class="irc-black">&lt;naeu&gt; i.e. all rationals where the denominator is 1 are integers</span><br />
+<span class="irc-date">[21:47]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[21:47]</span> <span class="irc-black">&lt;olabini&gt; well, I've been thinking whether I should change the name of that conversion method</span><br />
+<span class="irc-date">[21:47]</span> <span class="irc-black">&lt;olabini&gt; people seem to have trouble finding it</span><br />
+<span class="irc-date">[21:47]</span> <span class="irc-black">&lt;olabini&gt; including me</span><br />
+<span class="irc-date">[21:47]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[21:47]</span> <span class="irc-black">&lt;naeu&gt; i thought that there's no difference between a ratio and a rational</span><br />
+<span class="irc-date">[21:48]</span> <span class="irc-black">&lt;naeu&gt; but anyway, "32" toRational is something I'd never have guessed</span><br />
+<span class="irc-date">[21:48]</span> <span class="irc-black">&lt;naeu&gt; I'd like "32" toInteger</span><br />
+<span class="irc-date">[21:49]</span> <span class="irc-black">&lt;naeu&gt; do you have any design motivation to determine whether a cell is named toFoo or asFoo</span><br />
+<span class="irc-date">[21:49]</span> <span class="irc-black">&lt;naeu&gt; i.e. you have asText</span><br />
+<span class="irc-date">[21:49]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[21:50]</span> <span class="irc-black">&lt;olabini&gt; I had a loose feeling that "as" methods will always work</span><br />
+<span class="irc-date">[21:50]</span> <span class="irc-black">&lt;olabini&gt; "to" involves an explicit conversion</span><br />
+<span class="irc-date">[21:50]</span> <span class="irc-black">&lt;olabini&gt; so it can fail</span><br />
+<span class="irc-date">[21:50]</span> <span class="irc-black">&lt;naeu&gt; ah ok</span><br />
+<span class="irc-date">[21:50]</span> <span class="irc-black">&lt;naeu&gt; so "32".to_int could be "32" asInt and Integer("32") could be "32" toInt</span><br />
+<span class="irc-date">[21:51]</span> <span class="irc-black">&lt;naeu&gt; where, clearly I mean asInteger and toInteger</span><br />
+<span class="irc-date">[21:51]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[21:51]</span> <span class="irc-black">&lt;naeu&gt; and where I'm drawing a comparison to Ruby</span><br />
+<span class="irc-date">[21:52]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[21:52]</span> <span class="irc-black">&lt;olabini&gt; except that I don't have the Text#asInteger versions</span><br />
+<span class="irc-date">[21:52]</span> <span class="irc-black">&lt;olabini&gt; in general I don't like them - they have a tendency to give the wrong result</span><br />
+<span class="irc-date">[21:52]</span> <span class="irc-black">&lt;olabini&gt; also</span><br />
+<span class="irc-date">[21:52]</span> <span class="irc-black">&lt;naeu&gt; or Text#toInteger either</span><br />
+<span class="irc-date">[21:52]</span> <span class="irc-black">&lt;olabini&gt; your comparison is wrong</span><br />
+<span class="irc-date">[21:52]</span> <span class="irc-black">&lt;olabini&gt; "32".to_int would be "32" toInteger</span><br />
+<span class="irc-date">[21:52]</span> <span class="irc-black">&lt;olabini&gt; Integer("32") would be "32" asInteger</span><br />
+<span class="irc-date">[21:53]</span> <span class="irc-black">&lt;naeu&gt; I thought you meant that asInteger wouldn't fail</span><br />
+<span class="irc-date">[21:53]</span> <span class="irc-black">&lt;naeu&gt; Integer("foo") breaks</span><br />
+<span class="irc-date">[21:53]</span> <span class="irc-black">&lt;olabini&gt; well, String#to_int doesn't even exist</span><br />
+<span class="irc-date">[21:53]</span> <span class="irc-black">&lt;naeu&gt; "foo".to_i doesn't</span><br />
+<span class="irc-date">[21:53]</span> <span class="irc-black">&lt;olabini&gt; no</span><br />
+<span class="irc-date">[21:53]</span> <span class="irc-black">&lt;olabini&gt; but to_i is different</span><br />
+<span class="irc-date">[21:53]</span> <span class="irc-black">&lt;naeu&gt; I had meant to_i, sorry</span><br />
+<span class="irc-date">[21:53]</span> <span class="irc-black">&lt;olabini&gt; actually</span><br />
+<span class="irc-date">[21:54]</span> <span class="irc-black">&lt;naeu&gt; to_i is friendly, Integer("foo") is harsh</span><br />
+<span class="irc-date">[21:54]</span> <span class="irc-black">&lt;olabini&gt; these comparisons doesn't make much sense either</span><br />
+<span class="irc-date">[21:54]</span> <span class="irc-black">&lt;olabini&gt; in my world I didn't compare to the Ruby semantics</span><br />
+<span class="irc-date">[21:54]</span> <span class="irc-black">&lt;naeu&gt; fair enough</span><br />
+<span class="irc-date">[21:54]</span> <span class="irc-black">&lt;naeu&gt; i was just trying to understand what you meant by "always work"</span><br />
+<span class="irc-date">[21:54]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[21:55]</span> <span class="irc-black">&lt;olabini&gt; you know, I never sorted those things out exactly</span><br />
+<span class="irc-date">[21:55]</span> <span class="irc-black">&lt;olabini&gt; I think I need to sit down and do something explicit about the different between as* and to*</span><br />
+<span class="irc-date">[21:55]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[21:55]</span> <span class="irc-black">&lt;naeu&gt; that would be a nice blog post</span><br />
+<span class="irc-date">[21:55]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[21:55]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[21:55]</span> <span class="irc-black">&lt;olabini&gt; I wanted "asText" since I want anything to be representable as text</span><br />
+<span class="irc-date">[21:55]</span> <span class="irc-black">&lt;olabini&gt; but Text#toRational because it can fail</span><br />
+<span class="irc-date">[21:56]</span> <span class="irc-black">&lt;naeu&gt; sure</span><br />
+<span class="irc-date">[21:56]</span> <span class="irc-black">&lt;olabini&gt; something with conversions between numbers and decimals</span><br />
+<span class="irc-date">[21:57]</span> <span class="irc-black">&lt;olabini&gt; 32 asDecimal</span><br />
+<span class="irc-date">[21:57]</span> <span class="irc-black">&lt;olabini&gt; but but possible ...</span><br />
+<span class="irc-date">[21:57]</span> <span class="irc-black">&lt;olabini&gt; (1/3) toDecimal</span><br />
+<span class="irc-date">[21:57]</span> <span class="irc-black">&lt;olabini&gt; make sense?</span><br />
+<span class="irc-date">[22:00]</span> <span class="irc-black">&lt;naeu&gt; absolutely</span><br />
+<span class="irc-date">[22:01]</span> <span class="irc-black">&lt;naeu&gt; as 1/3 *can't* be represented asDecimal</span><br />
+<span class="irc-date">[22:01]</span> <span class="irc-black">&lt;naeu&gt; but can be converted to an aproximal decimal form</span><br />
+<span class="irc-date">[22:03]</span> <span class="irc-black">&lt;olabini&gt; exactly</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-black">&lt;naeu&gt; btw, on a completely different tangent, how do you typically go about pulling out the documentation for a given cell?</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-black">&lt;naeu&gt; I've started to enjoy clojures doc function</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-black">&lt;naeu&gt; (doc defn)</span><br />
+<span class="irc-date">[22:05]</span> <span class="irc-black">&lt;naeu&gt; it really aids in the exploration of the language</span><br />
+<span class="irc-date">[22:05]</span> <span class="irc-black">&lt;olabini&gt; cell(:foo) documentation</span><br />
+<span class="irc-date">[22:05]</span> <span class="irc-black">&lt;olabini&gt; it's slightly more verbose of course</span><br />
+<span class="irc-date">[22:10]</span> <span class="irc-black">&lt;naeu&gt; would it be possible to create something similar to clojure's doc function?</span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-black">&lt;naeu&gt; some sort of macro that inspected it's args and returned the documentation</span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-black">&lt;naeu&gt; doc(foo)</span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-black">&lt;Raynes&gt; olabini: Thanks for fixing integrate. :)</span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-black">&lt;Raynes&gt; olabini: Also, I didn't realize that I had mucked things up in the patch. Must have screwed things up ages before and not realized it.</span><br />
+<span class="irc-date">[22:14]</span> <span class="irc-black">&lt;scott_&gt; naeu: how about "Base doc = dmacro([name] self cell(name) documentation)"</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;olabini&gt; scott_: definitely not in Base</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;Raynes&gt; Yeah, I couldn't figure out how to look up method docs either at first. I had to ask.</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;naeu&gt; scott_: would that work for: doc(Number zero?)</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;scott_&gt; naeu: Number doc(zero?) probably</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;olabini&gt; and it will have to be more complicated than that</span><br />
+<span class="irc-date">[22:16]</span> <span class="irc-black">&lt;olabini&gt; you need to do</span><br />
+<span class="irc-date">[22:16]</span> <span class="irc-black">&lt;olabini&gt; dmacro([name] cell(name name))</span><br />
+<span class="irc-date">[22:18]</span> <span class="irc-black">&lt;naeu&gt; would be nice to have though</span><br />
+<span class="irc-date">[22:19]</span> <span class="irc-black">&lt;naeu&gt; just for the REPL at least</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt; anyway, I'll leave you all with that thought  (btw, scott_ thanks for the quick fire try :-))</span><br />
+<span class="irc-date">[22:21]</span> <span class="irc-black">&lt;naeu&gt; (and ola, thanks for the lebonese...)</span><br />
+<span class="irc-date">[22:21]</span> <span class="irc-black">&lt;naeu&gt; cheerio...</span><br />
+<span class="irc-date">[22:21]</span> <span class="irc-navy">* naeu (~sam@dhcp-077-250-237-109.chello.nl) Quit (Quit: naeu)</span><br />
+<span class="irc-date">[22:33]</span> <span class="irc-black">&lt;Raynes&gt; olabini: I'm reforking and starting from scratch. From now on, I'll keep my changes in an experimental branch. This way, if I screw something up...</span><br />
+<span class="irc-date">[22:34]</span> <span class="irc-black">&lt;Raynes&gt; olabini: What did you think of that swing example? There was some redundant code that I'm pretty sure I removed in a further commit, but other than that, was it okay?</span><br />
+<span class="irc-date">[23:38]</span> <span class="irc-black">&lt;olabini&gt; it's nice</span><br />
+<span class="irc-date">[23:39]</span> <span class="irc-black">&lt;olabini&gt; I'm not sure if we need another Swing example in core</span><br />
+<span class="irc-date">[23:39]</span> <span class="irc-black">&lt;Raynes&gt; olabini: Aye, I put it on Rosettacode.</span><br />

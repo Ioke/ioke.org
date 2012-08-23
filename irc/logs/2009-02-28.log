@@ -1,0 +1,133 @@
+<span class="irc-date">[7:59]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-10.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[9:00]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-10.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-navy">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[11:33]</span> <span class="irc-green">* olabini (n=ola@c-2f4de155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[11:33]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[11:33]</span> <span class="irc-black">&lt;olabini&gt; morning, people</span><br />
+<span class="irc-date">[11:56]</span> <span class="irc-green">* martido (n=martin@dslb-088-067-180-028.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[11:57]</span> <span class="irc-black">&lt;martido&gt; good day, folks</span><br />
+<span class="irc-date">[12:14]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[12:14]</span> <span class="irc-black">&lt;naeu&gt; morning, morning</span><br />
+<span class="irc-date">[12:15]</span> <span class="irc-black">&lt;naeu&gt; olabini: is there any chance you could pass your eyeballs over this: <a href="http://heypanda.com/posts/64-Being-Stupid-with-Ioke">http://heypanda.com/posts/64-Being-Stupid-with-Ioke</a></span><br />
+<span class="irc-date">[12:15]</span> <span class="irc-black">&lt;naeu&gt; it would be interesting to see how you might approach this</span><br />
+<span class="irc-date">[12:15]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[12:16]</span> <span class="irc-black">&lt;naeu&gt; there are little things I can see such as:  self addends = [] which could be written as @addends = []</span><br />
+<span class="irc-date">[12:17]</span> <span class="irc-black">&lt;naeu&gt; and how you would handle the redifinition of set</span><br />
+<span class="irc-date">[12:45]</span> <span class="irc-black">&lt;olabini&gt; hey</span><br />
+<span class="irc-date">[12:45]</span> <span class="irc-black">&lt;olabini&gt; I'll take a look at some point</span><br />
+<span class="irc-date">[12:45]</span> <span class="irc-black">&lt;olabini&gt; working on Java integration right now</span><br />
+<span class="irc-date">[12:59]</span> <span class="irc-black">&lt;naeu&gt; yeah, I noticed your tweet</span><br />
+<span class="irc-date">[12:59]</span> <span class="irc-black">&lt;naeu&gt; it sounded implicitly confident :-)</span><br />
+<span class="irc-date">[13:05]</span> <span class="irc-black">&lt;olabini&gt; yeah, well</span><br />
+<span class="irc-date">[13:05]</span> <span class="irc-black">&lt;olabini&gt; it's getting better, at least</span><br />
+<span class="irc-date">[13:05]</span> <span class="irc-black">&lt;olabini&gt; I'm pretty close to have the basic integration stuff working - for a subset at least</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[13:07]</span> <span class="irc-black">&lt;naeu&gt; i imagine that this stuff isn't the kind of thing you have a complete, clean,  working solution for immediately</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;naeu&gt; but is something you have something pragmatic (and working) that you work upon based on experience and need</span><br />
+<span class="irc-date">[13:08]</span> <span class="irc-black">&lt;olabini&gt; yeah. something like that</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-black">&lt;naeu&gt; although i'm sure that's not stopping you look for the clean, working solution ;-)</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-black">&lt;olabini&gt; yeah, I'm not sure there is one</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-black">&lt;olabini&gt; not with the constraints of interacting between the Java and Ioke object models</span><br />
+<span class="irc-date">[13:11]</span> <span class="irc-black">&lt;naeu&gt; sure</span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-black">&lt;naeu&gt; I guess you're working out how you want to be able to interact and optimise based on that</span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-black">&lt;olabini&gt; optimize, no</span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-black">&lt;olabini&gt; but interact is important</span><br />
+<span class="irc-date">[13:13]</span> <span class="irc-black">&lt;naeu&gt; I don't mean optimise as in performanc</span><br />
+<span class="irc-date">[13:13]</span> <span class="irc-black">&lt;naeu&gt; I mean optimise as in optimising the interface for ease of use</span><br />
+<span class="irc-date">[13:13]</span> <span class="irc-black">&lt;olabini&gt; yes</span><br />
+<span class="irc-date">[13:14]</span> <span class="irc-black">&lt;naeu&gt; i.e. making it friction-free for doing the stuff you see as most common and important</span><br />
+<span class="irc-date">[13:15]</span> <span class="irc-black">&lt;naeu&gt; well, good luck with that</span><br />
+<span class="irc-date">[13:15]</span> <span class="irc-black">&lt;naeu&gt; I'm off out with Susanna :-)</span><br />
+<span class="irc-date">[13:15]</span> <span class="irc-black">&lt;naeu&gt; cheerio</span><br />
+<span class="irc-date">[13:16]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[13:25]</span> <span class="irc-black">&lt;olabini&gt; hm. and I think I cracked another piece of the puzzle</span><br />
+<span class="irc-date">[13:25]</span> <span class="irc-black">&lt;olabini&gt; had forgot to implement cloneData for JavaWrappers</span><br />
+<span class="irc-date">[14:10]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * rf862a00 / (2 files in 2 dirs): Add tests for inner classes - <a href="http://bit.ly/av6nR">http://bit.ly/av6nR</a></span><br />
+<span class="irc-date">[14:32]</span> <span class="irc-green">* martido29 (n=martin@dslb-088-067-180-028.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[14:44]</span> <span class="irc-brick">* olabini is feeling better and better about the java integration stuff. it seems to work at least more or less now.</span><br />
+<span class="irc-date">[14:46]</span> <span class="irc-navy">* martido29 (n=martin@dslb-088-067-180-028.pools.arcor-ip.net) Quit ()</span><br />
+<span class="irc-date">[14:46]</span> <span class="irc-green">* martido29 (n=martin@dslb-088-067-180-028.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[14:46]</span> <span class="irc-green">* martido29 (n=martin@dslb-088-067-180-028.pools.arcor-ip.net) has left #ioke</span><br />
+<span class="irc-date">[14:48]</span> <span class="irc-navy">* martido (n=martin@dslb-088-067-180-028.pools.arcor-ip.net) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[14:48]</span> <span class="irc-green">* martido (n=martin@dslb-088-067-180-028.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[15:11]</span> <span class="irc-black">&lt;olabini&gt; CIA really don't want to display my commits here anymore</span><br />
+<span class="irc-date">[15:11]</span> <span class="irc-black">&lt;olabini&gt; =/</span><br />
+<span class="irc-date">[15:11]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: but you still like us, right?</span><br />
+<span class="irc-date">[15:11]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: cut my nails</span><br />
+<span class="irc-date">[15:39]</span> <span class="irc-navy">* martido (n=martin@dslb-088-067-180-028.pools.arcor-ip.net) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r7433391 / CONTRIBUTORS : Add new contributors to file - <a href="http://bit.ly/nERfO">http://bit.ly/nERfO</a></span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-72.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[15:51]</span> <span class="irc-green">* martido (n=martin@dslb-088-067-180-028.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[15:58]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r6180d9b / (4 files in 2 dirs): Make List#=== and Set#=== work with include? instead of ==. - <a href="http://bit.ly/P6ZOe">http://bit.ly/P6ZOe</a></span><br />
+<span class="irc-date">[16:07]</span> <span class="irc-brick">* olabini just sent a status email to the Ioke lists</span><br />
+<span class="irc-date">[16:50]</span> <span class="irc-black">&lt;olabini&gt; it is pretty quiet here nowadays</span><br />
+<span class="irc-date">[18:56]</span> <span class="irc-green">* adakkak (n=adakkak@gres110.lis.illinois.edu) has joined #ioke</span><br />
+<span class="irc-date">[19:28]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-72.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[21:13]</span> <span class="irc-navy">* martido (n=martin@dslb-088-067-180-028.pools.arcor-ip.net) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[21:31]</span> <span class="irc-navy">* adakkak (n=adakkak@gres110.lis.illinois.edu) Quit ("Ex-Chat")</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-green">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[23:07]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[23:08]</span> <span class="irc-black">&lt;naeu&gt; good evening</span><br />
+<span class="irc-date">[23:11]</span> <span class="irc-black">&lt;naeu&gt; anybody about?</span><br />
+<span class="irc-date">[23:14]</span> <span class="irc-black">&lt;mozinator&gt; hi naeu</span><br />
+<span class="irc-date">[23:14]</span> <span class="irc-black">&lt;mozinator&gt; &lt;&lt; fabian</span><br />
+<span class="irc-date">[23:15]</span> <span class="irc-black">&lt;naeu&gt; haha, nice name</span><br />
+<span class="irc-date">[23:15]</span> <span class="irc-black">&lt;mozinator&gt; learning emacs + clojure atm</span><br />
+<span class="irc-date">[23:16]</span> <span class="irc-black">&lt;mozinator&gt; naeu: already comfortable with emacs ?</span><br />
+<span class="irc-date">[23:16]</span> <span class="irc-black">&lt;naeu&gt; getting there</span><br />
+<span class="irc-date">[23:16]</span> <span class="irc-black">&lt;mozinator&gt; naeu: the inferior-lisp mode is absolutely great!</span><br />
+<span class="irc-date">[23:17]</span> <span class="irc-black">&lt;mozinator&gt; naeu: you're also using emacs at work ?</span><br />
+<span class="irc-date">[23:17]</span> <span class="irc-black">&lt;naeu&gt; i would hope so, given that emacs is written in a dialect of lisp!</span><br />
+<span class="irc-date">[23:17]</span> <span class="irc-black">&lt;naeu&gt; yep, I used it all this week</span><br />
+<span class="irc-date">[23:17]</span> <span class="irc-black">&lt;mozinator&gt; cool, the rails plugin any good ?</span><br />
+<span class="irc-date">[23:17]</span> <span class="irc-black">&lt;naeu&gt; haven't tried it</span><br />
+<span class="irc-date">[23:17]</span> <span class="irc-black">&lt;naeu&gt; it's enough work getting used to plain emacs for the time being :-)</span><br />
+<span class="irc-date">[23:18]</span> <span class="irc-black">&lt;naeu&gt; and i never used any TM Rails stuff anyway</span><br />
+<span class="irc-date">[23:18]</span> <span class="irc-black">&lt;naeu&gt; one thing i'm really loving about emacs is the ability to arbitrarily split screens</span><br />
+<span class="irc-date">[23:18]</span> <span class="irc-black">&lt;naeu&gt; both horizontally and vertically</span><br />
+<span class="irc-date">[23:18]</span> <span class="irc-black">&lt;mozinator&gt; vim has that too ;-)</span><br />
+<span class="irc-date">[23:18]</span> <span class="irc-black">&lt;naeu&gt; couple that with winner mode</span><br />
+<span class="irc-date">[23:18]</span> <span class="irc-black">&lt;naeu&gt; and it's great :-)</span><br />
+<span class="irc-date">[23:19]</span> <span class="irc-black">&lt;naeu&gt; yeah, vim is a very nice editor too</span><br />
+<span class="irc-date">[23:19]</span> <span class="irc-black">&lt;mozinator&gt; winner mode ?</span><br />
+<span class="irc-date">[23:19]</span> <span class="irc-black">&lt;mozinator&gt; vim hasnt'</span><br />
+<span class="irc-date">[23:19]</span> <span class="irc-black">&lt;mozinator&gt; the great clojure tooling</span><br />
+<span class="irc-date">[23:19]</span> <span class="irc-black">&lt;naeu&gt; winner mode tracks the state of windows</span><br />
+<span class="irc-date">[23:19]</span> <span class="irc-black">&lt;naeu&gt; so you can have lots of windows open</span><br />
+<span class="irc-date">[23:20]</span> <span class="irc-black">&lt;naeu&gt; focus on one for a moment</span><br />
+<span class="irc-date">[23:20]</span> <span class="irc-black">&lt;naeu&gt; and then revert back to the previous window state</span><br />
+<span class="irc-date">[23:20]</span> <span class="irc-black">&lt;naeu&gt; it's very nice</span><br />
+<span class="irc-date">[23:20]</span> <span class="irc-black">&lt;mozinator&gt; have to see it in action to understand it I guess</span><br />
+<span class="irc-date">[23:21]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[23:21]</span> <span class="irc-black">&lt;mozinator&gt; naeu: do you know emacs has anything like the vim project plugin ?</span><br />
+<span class="irc-date">[23:21]</span> <span class="irc-black">&lt;naeu&gt; what is that?</span><br />
+<span class="irc-date">[23:21]</span> <span class="irc-black">&lt;mozinator&gt; <a href="http://weierophinney.net/matthew/uploads/2008-03-22-VimProject.png">http://weierophinney.net/matthew/uploads/2008-03-22-VimProject.png</a></span><br />
+<span class="irc-date">[23:21]</span> <span class="irc-black">&lt;mozinator&gt; sidebar on the left with the contents of a "project"</span><br />
+<span class="irc-date">[23:22]</span> <span class="irc-black">&lt;naeu&gt; yeah it does</span><br />
+<span class="irc-date">[23:22]</span> <span class="irc-black">&lt;naeu&gt; ecb mode</span><br />
+<span class="irc-date">[23:22]</span> <span class="irc-black">&lt;mozinator&gt; cool, how is it called ?</span><br />
+<span class="irc-date">[23:23]</span> <span class="irc-black">&lt;mozinator&gt; looks good, going to try it</span><br />
+<span class="irc-date">[23:25]</span> <span class="irc-black">&lt;naeu&gt; cool, let me know how it goes</span><br />
+<span class="irc-date">[23:25]</span> <span class="irc-black">&lt;mozinator&gt; naeu: which version do you use ?</span><br />
+<span class="irc-date">[23:25]</span> <span class="irc-black">&lt;naeu&gt; of emacs?</span><br />
+<span class="irc-date">[23:25]</span> <span class="irc-black">&lt;mozinator&gt; of ecb</span><br />
+<span class="irc-date">[23:25]</span> <span class="irc-black">&lt;mozinator&gt; ecb-3.32 or the cvs ?</span><br />
+<span class="irc-date">[23:25]</span> <span class="irc-black">&lt;naeu&gt; i never got it working to my liking</span><br />
+<span class="irc-date">[23:25]</span> <span class="irc-black">&lt;naeu&gt; so i gave up on it</span><br />
+<span class="irc-date">[23:25]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[23:26]</span> <span class="irc-black">&lt;naeu&gt; I decided that I was yakshaving rather than working ;-)</span><br />
+<span class="irc-date">[23:26]</span> <span class="irc-black">&lt;mozinator&gt; yakshaving ?</span><br />
+<span class="irc-date">[23:27]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://projects.csail.mit.edu/gsb/old-archive/gsb-archive/gsb2000-02-11.html">http://projects.csail.mit.edu/gsb/old-archive/gsb-archive/gsb2000-02-11.html</a></span><br />
+<span class="irc-date">[23:28]</span> <span class="irc-black">&lt;mozinator&gt; naeu: then I am a yakshaving expert</span><br />
+<span class="irc-date">[23:29]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[23:31]</span> <span class="irc-black">&lt;mozinator&gt; naeu: apt-get install ecb :')</span><br />
+<span class="irc-date">[23:31]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[23:32]</span> <span class="irc-black">&lt;naeu&gt; sometime i wish macports wasn't completely pants</span><br />
+<span class="irc-date">[23:34]</span> <span class="irc-black">&lt;mozinator&gt; naeu: i tried first to install ecb manually and noticed it being totally broken</span><br />
+<span class="irc-date">[23:35]</span> <span class="irc-black">&lt;mozinator&gt; naeu: it tried to autoinstall some components with broken url's and the fact that the last release at their website is from July 2005 doesn't show that the project is maintained</span><br />
+<span class="irc-date">[23:36]</span> <span class="irc-black">&lt;naeu&gt; ah ok</span><br />
+<span class="irc-date">[23:41]</span> <span class="irc-black">&lt;mozinator&gt; naeu: this one is ok <a href="http://www.emacswiki.org/emacs/download/sr-speedbar.el">http://www.emacswiki.org/emacs/download/sr-speedbar.el</a></span><br />
+<span class="irc-date">[23:43]</span> <span class="irc-black">&lt;naeu&gt; cool</span><br />
+<span class="irc-date">[23:46]</span> <span class="irc-black">&lt;mozinator&gt; naeu: let's use private chat mode instead of spamming the ioke channel with non-ioke related stuff</span><br />

@@ -1,0 +1,48 @@
+<span class="irc-date">[0:36]</span> <span class="irc-green">* bguthrie (n=bguthrie@glo2.manheim.com) has joined #ioke</span><br />
+<span class="irc-date">[0:39]</span> <span class="irc-navy">* bguthrie (n=bguthrie@glo2.manheim.com) Quit (Client Quit)</span><br />
+<span class="irc-date">[1:06]</span> <span class="irc-green">* bguthrie (n=bguthrie@c-24-30-76-226.hsd1.ga.comcast.net) has joined #ioke</span><br />
+<span class="irc-date">[5:25]</span> <span class="irc-navy">* bguthrie (n=bguthrie@c-24-30-76-226.hsd1.ga.comcast.net) Quit ()</span><br />
+<span class="irc-date">[5:26]</span> <span class="irc-green">* bguthrie (n=bguthrie@c-24-30-76-226.hsd1.ga.comcast.net) has joined #ioke</span><br />
+<span class="irc-date">[5:27]</span> <span class="irc-navy">* bguthrie (n=bguthrie@c-24-30-76-226.hsd1.ga.comcast.net) Quit (Client Quit)</span><br />
+<span class="irc-date">[6:45]</span> <span class="irc-green">* olabini (n=ola@c-d14fe155.1110-8-64736c13.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[8:04]</span> <span class="irc-navy">* rush (n=rush@roblally.plus.com) Quit ()</span><br />
+<span class="irc-date">[8:56]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-220.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:06]</span> <span class="irc-green">* naeu (n=sam@h253136.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-navy">* naeu (n=sam@h253136.upc-h.chello.nl) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-220.adsl.xs4all.nl) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-navy">* Tsion (n=scott@botters/staff/tsion) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-navy">* skaar (n=skaar@substruction.net) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-navy">* vincenz (n=vincenz@li23-146.members.linode.com) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-navy">* caboom (n=caboom@77-221.static.ikomline.net) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-navy">* IokeHurricane (n=IokeHurr@8.12.35.212) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-navy">* CIA-7 (n=CIA@208.69.182.149) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[9:47]</span> <span class="irc-brown">-christel- [Global Notice] Hi all, we just lost everything on the other side of the atlantic -- it would appear we've got between our US and EU hubs, we're looking into the issue and hopefully we'll have things back to normal shortly. Apologies for the inconvenience and thank you for using freenode.</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-green">* vincenz (n=vincenz@li23-146.members.linode.com) has joined #ioke</span><br />
+<span class="irc-date">[9:55]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-220.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:55]</span> <span class="irc-green">* IokeHurricane (n=IokeHurr@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[9:55]</span> <span class="irc-green">* CIA-7 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[9:55]</span> <span class="irc-green">* Tsion (n=scott@botters/staff/tsion) has joined #ioke</span><br />
+<span class="irc-date">[9:55]</span> <span class="irc-green">* skaar (n=skaar@substruction.net) has joined #ioke</span><br />
+<span class="irc-date">[9:56]</span> <span class="irc-green">* caboom (n=caboom@77-221.static.ikomline.net) has joined #ioke</span><br />
+<span class="irc-date">[9:56]</span> <span class="irc-green">* naeu (n=sam@h253136.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-navy">* naeu (n=sam@h253136.upc-h.chello.nl) Quit ()</span><br />
+<span class="irc-date">[10:19]</span> <span class="irc-brown">-christel- [Global Notice] Hi all, it would appear we've discovered yet another bug in hyperion, the ircd we run -- how we've managed to use it successfully for so long is now but a great mystery. The network is back up, for now, but in light of this we will be looking at bringing our ircd-change forward, details shall be forthcoming. Please accept my sincere apologies for the instability as of late and thank you for your patience.</span><br />
+<span class="irc-date">[10:56]</span> <span class="irc-brown">-christel- [Global Notice] Hi all, It appears I may have been too harsh on hyperion -- this crash wasn't a segfault after all, but some of hardened gentoo's 'security' measures deciding that our ircd is a threat. More information will be provided on the blog when we have a better picture and know what actions will be taken to prevent this from occuring again. Thank you for using freenode and have a good day!</span><br />
+<span class="irc-date">[11:18]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[11:25]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-220.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[11:48]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[12:56]</span> <span class="irc-green">* naeu (n=sam@h253136.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit ()</span><br />
+<span class="irc-date">[16:36]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[17:02]</span> <span class="irc-navy">* naeu (n=sam@h253136.upc-h.chello.nl) Quit ()</span><br />
+<span class="irc-date">[17:05]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit ()</span><br />
+<span class="irc-date">[17:26]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit ()</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[17:45]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has left #ioke</span><br />
+<span class="irc-date">[18:42]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:39]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-32.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[21:03]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-32.vc-graz.ac.at) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[21:14]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-59.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[21:23]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-59.vc-graz.ac.at) Quit (Read error: 104 (Connection reset by peer))</span><br />

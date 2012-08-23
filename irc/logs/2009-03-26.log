@@ -1,0 +1,198 @@
+<span class="irc-date">[1:17]</span> <span class="irc-navy">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[1:44]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[1:57]</span> <span class="irc-navy">* vborja (n=user@189.143.190.51) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[1:57]</span> <span class="irc-green">* vborja (n=user@189.143.190.51) has joined #ioke</span><br />
+<span class="irc-date">[2:05]</span> <span class="irc-navy">* vborja (n=user@189.143.190.51) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[8:01]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit ("Leaving")</span><br />
+<span class="irc-date">[8:21]</span> <span class="irc-green">* olabini (n=ola@c-304fe155.1110-8-64736c13.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[8:34]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:56]</span> <span class="irc-green">* naeu (n=sam@h36036.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:16]</span> <span class="irc-green">* olabini (n=ola@c-398de155.234-1-64736c10.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[9:16]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[10:49]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[11:55]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit ()</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-green">* donizetti (n=donizett@189.120.169.35) has joined #ioke</span><br />
+<span class="irc-date">[14:04]</span> <span class="irc-green">* Narnach is now known as NarnachAfk</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-navy">* naeu (n=sam@h36036.upc-h.chello.nl) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-navy">* donizetti (n=donizett@189.120.169.35) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-navy">* NarnachAfk (n=narnach@195-241-27-75.ip.telfort.nl) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-navy">* IokeHurricane (n=IokeHurr@8.12.35.212) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-navy">* CIA-7 (n=CIA@208.69.182.149) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-navy">* skaar (n=skaar@substruction.net) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[14:21]</span> <span class="irc-green">* skaar (n=skaar@substruction.net) has joined #ioke</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-green">* naeu (n=sam@h36036.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[14:29]</span> <span class="irc-green">* donizetti (n=donizett@189.120.169.35) has joined #ioke</span><br />
+<span class="irc-date">[14:35]</span> <span class="irc-green">* IokeHurricane (n=IokeHurr@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[14:35]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[14:35]</span> <span class="irc-green">* CIA-7 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[14:36]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[14:36]</span> <span class="irc-navy">* IokeHurricane (n=IokeHurr@8.12.35.212) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[14:36]</span> <span class="irc-navy">* CIA-7 (n=CIA@208.69.182.149) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[14:40]</span> <span class="irc-brown">-tomaw- [Global Notice] Hi all.  One of our server sponsors appears to be having connectivity issues.  Please keep with us while we try to resolve the issues.  Sorry for the inconvenience and thanks for using freenode!</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-green">* IokeHurricane (n=IokeHurr@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-green">* CIA-7 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-navy">* donizetti (n=donizett@189.120.169.35) Quit (Killed by heinlein.freenode.net (Nick collision))</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-green">* donizetti (n=donizett@189.120.169.35) has joined #ioke</span><br />
+<span class="irc-date">[14:47]</span> <span class="irc-navy">* donizetti (n=donizett@189.120.169.35) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[14:47]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[14:47]</span> <span class="irc-navy">* IokeHurricane (n=IokeHurr@8.12.35.212) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[14:47]</span> <span class="irc-navy">* CIA-7 (n=CIA@208.69.182.149) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[14:54]</span> <span class="irc-green">* Narnach_ (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[14:54]</span> <span class="irc-green">* Narnach_ is now known as NarnachBusy</span><br />
+<span class="irc-date">[14:56]</span> <span class="irc-green">* IokeHurricane (n=IokeHurr@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[14:56]</span> <span class="irc-green">* CIA-80 (n=CIA@208.69.182.149.simpli.biz) has joined #ioke</span><br />
+<span class="irc-date">[14:56]</span> <span class="irc-green">* NarnachBusy is now known as Narnach</span><br />
+<span class="irc-date">[14:57]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:58]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:58]</span> <span class="irc-navy">* CIA-80 (n=CIA@208.69.182.149.simpli.biz) Quit (Killed by Md (stuck))</span><br />
+<span class="irc-date">[14:58]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:58]</span> <span class="irc-green">* CIA-28 (n=CIA@208.69.182.149.simpli.biz) has joined #ioke</span><br />
+<span class="irc-date">[14:59]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[14:59]</span> <span class="irc-navy">* CIA-28 (n=CIA@208.69.182.149.simpli.biz) Quit (Excess Flood)</span><br />
+<span class="irc-date">[14:59]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:00]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:01]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:01]</span> <span class="irc-green">* olabini sets mode +o IokeHurricane </span><br />
+<span class="irc-date">[15:09]</span> <span class="irc-black">&lt;olabini&gt; guys. the Hg repository disappears</span><br />
+<span class="irc-date">[15:09]</span> <span class="irc-black">&lt;olabini&gt; hope noone needs it</span><br />
+<span class="irc-date">[15:10]</span> <span class="irc-black">&lt;naeu&gt; i've not heard anyone talking about hg</span><br />
+<span class="irc-date">[15:12]</span> <span class="irc-green">* CIA-28 (n=CIA@208.69.182.149.simpli.biz) has joined #ioke</span><br />
+<span class="irc-date">[15:18]</span> <span class="irc-black">&lt;olabini&gt; good</span><br />
+<span class="irc-date">[15:20]</span> <span class="irc-black">&lt;olabini&gt; naeu: because now it's gone</span><br />
+<span class="irc-date">[15:20]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[15:20]</span> <span class="irc-black">&lt;naeu&gt; hehe</span><br />
+<span class="irc-date">[15:29]</span> <span class="irc-black">&lt;olabini&gt; =</span><br />
+<span class="irc-date">[15:29]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[15:29]</span> <span class="irc-black">&lt;olabini&gt; setting up a kenai mirror of the github repository instead</span><br />
+<span class="irc-date">[15:34]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini gh-pages * ra815692 / download.html : Remove reference to hg and add git mirror instead - <a href="http://bit.ly/E2kw">http://bit.ly/E2kw</a></span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;naeu&gt; is that for backup, or does kenai offer useful tools for combining project management with source code?</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-navy">* CIA-28 (n=CIA@208.69.182.149.simpli.biz) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-green">* CIA-28 (n=CIA@208.69.182.149.simpli.biz) has joined #ioke</span><br />
+<span class="irc-date">[15:46]</span> <span class="irc-black">&lt;olabini&gt; the best feature is email notifications on commits</span><br />
+<span class="irc-date">[15:46]</span> <span class="irc-black">&lt;olabini&gt; also useful for backup I guess, but not main reason</span><br />
+<span class="irc-date">[15:47]</span> <span class="irc-black">&lt;olabini&gt; I just want people that come to the kenai page to have a direct way to download</span><br />
+<span class="irc-date">[15:47]</span> <span class="irc-black">&lt;olabini&gt; the repo</span><br />
+<span class="irc-date">[15:58]</span> <span class="irc-black">&lt;naeu&gt; sure</span><br />
+<span class="irc-date">[16:03]</span> <span class="irc-navy">* CIA-28 (n=CIA@208.69.182.149.simpli.biz) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[16:05]</span> <span class="irc-green">* CIA-28 (n=CIA@208.69.182.149.simpli.biz) has joined #ioke</span><br />
+<span class="irc-date">[16:08]</span> <span class="irc-navy">* CIA-28 (n=CIA@208.69.182.149.simpli.biz) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[16:09]</span> <span class="irc-green">* CIA-28 (n=CIA@208.69.182.149.simpli.biz) has joined #ioke</span><br />
+<span class="irc-date">[16:13]</span> <span class="irc-navy">* CIA-28 (n=CIA@208.69.182.149.simpli.biz) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[16:13]</span> <span class="irc-green">* CIA-28 (n=CIA@208.69.182.149.simpli.biz) has joined #ioke</span><br />
+<span class="irc-date">[16:14]</span> <span class="irc-navy">* CIA-28 (n=CIA@208.69.182.149.simpli.biz) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-green">* CIA-28 (n=CIA@208.69.182.149.simpli.biz) has joined #ioke</span><br />
+<span class="irc-date">[16:29]</span> <span class="irc-navy">* CIA-28 (n=CIA@208.69.182.149.simpli.biz) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[16:29]</span> <span class="irc-green">* CIA-28 (n=CIA@208.69.182.149.simpli.biz) has joined #ioke</span><br />
+<span class="irc-date">[16:30]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[16:46]</span> <span class="irc-navy">* CIA-28 (n=CIA@208.69.182.149.simpli.biz) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[16:49]</span> <span class="irc-green">* CIA-28 (n=CIA@208.69.182.149.simpli.biz) has joined #ioke</span><br />
+<span class="irc-date">[16:52]</span> <span class="irc-navy">* CIA-28 (n=CIA@208.69.182.149.simpli.biz) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[16:58]</span> <span class="irc-navy">* olabini (n=ola@c-398de155.234-1-64736c10.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[17:05]</span> <span class="irc-green">* CIA-28 (n=CIA@208.69.182.149.simpli.biz) has joined #ioke</span><br />
+<span class="irc-date">[17:19]</span> <span class="irc-navy">* CIA-28 (n=CIA@208.69.182.149.simpli.biz) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[17:19]</span> <span class="irc-green">* CIA-28 (n=CIA@208.69.182.149.simpli.biz) has joined #ioke</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-green">* donizetti (n=donizett@189.120.169.35) has joined #ioke</span><br />
+<span class="irc-date">[17:26]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit ()</span><br />
+<span class="irc-date">[17:38]</span> <span class="irc-brown">-tomaw- [Global Notice] Hi again.  One of our hubs had connectivity issues causing some servers and users to be unable to connect to the network, resulting in a rather noisy set of splits.  The issue has been resolved now and we believe there should be no further interruptions.  Thanks!</span><br />
+<span class="irc-date">[17:42]</span> <span class="irc-navy">* naeu (n=sam@h36036.upc-h.chello.nl) Quit ()</span><br />
+<span class="irc-date">[17:56]</span> <span class="irc-green">* donizetti (n=donizett@189.120.169.35) has left #ioke</span><br />
+<span class="irc-date">[18:28]</span> <span class="irc-green">* kar8nga (n=kar8nga@193.171.245.78) has joined #ioke</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[18:39]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[19:01]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[19:01]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[19:35]</span> <span class="irc-green">* felipero (n=Felipe@189-55-18-206-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[19:37]</span> <span class="irc-black">&lt;felipero&gt; Hi All</span><br />
+<span class="irc-date">[19:46]</span> <span class="irc-black">&lt;felipero&gt; olabini: Sam proposed to start with a sinatra like framework... I wonder if it is not what you're doing with IKanServe...</span><br />
+<span class="irc-date">[19:49]</span> <span class="irc-black">&lt;olabini&gt; nah</span><br />
+<span class="irc-date">[19:49]</span> <span class="irc-black">&lt;olabini&gt; go with something sinatra like</span><br />
+<span class="irc-date">[19:49]</span> <span class="irc-black">&lt;olabini&gt; IKanServe is more important in that it provides the IokeServlet</span><br />
+<span class="irc-date">[19:50]</span> <span class="irc-black">&lt;olabini&gt; I didn't mean for IKanServe to become a full web framework</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;felipero&gt; cool...</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;olabini&gt; I don't have enough time to work on a web framework right now anyway</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;olabini&gt; need to get the core Java integration working</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[19:53]</span> <span class="irc-black">&lt;felipero&gt; I already have some people interested in help with ikido... so I think we will have something useful (but simple) varey soon...</span><br />
+<span class="irc-date">[19:58]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * re573d36 / (5 files in 3 dirs): Make integral numbers actually be platonic in concept, so you can add behavior to specific numbers... - <a href="http://bit.ly/127Z7X">http://bit.ly/127Z7X</a></span><br />
+<span class="irc-date">[20:01]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[20:28]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:31]</span> <span class="irc-black">&lt;felipero&gt; Victor Borja found a great logo for ikido...</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;felipero&gt; <a href="http://upload.wikimedia.org/wikipedia/commons/0/0a/Ki_obsolete.svg">http://upload.wikimedia.org/wikipedia/commons/0/0a/Ki_obsolete.svg</a></span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;felipero&gt; it is a kanji for 'Ki'</span><br />
+<span class="irc-date">[20:32]</span> <span class="irc-black">&lt;felipero&gt; so inverting it should be ik ... =)</span><br />
+<span class="irc-date">[20:33]</span> <span class="irc-black">&lt;naeu&gt; cool</span><br />
+<span class="irc-date">[20:33]</span> <span class="irc-black">&lt;naeu&gt; looks nice</span><br />
+<span class="irc-date">[20:37]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[20:39]</span> <span class="irc-black">&lt;olabini&gt; hahaha</span><br />
+<span class="irc-date">[20:39]</span> <span class="irc-black">&lt;olabini&gt; fantastic</span><br />
+<span class="irc-date">[20:40]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://skitch.com/samaaron/bjtc7/skitched-20090326-213932">http://skitch.com/samaaron/bjtc7/skitched-20090326-213932</a></span><br />
+<span class="irc-date">[20:40]</span> <span class="irc-black">&lt;naeu&gt; here's some mucking about with it</span><br />
+<span class="irc-date">[20:46]</span> <span class="irc-black">&lt;felipero&gt; pretty cool... I'll put my artistic side to work tonight and came up with a official logo...</span><br />
+<span class="irc-date">[20:47]</span> <span class="irc-black">&lt;felipero&gt; sounds weird have the logo before have any code... but that's ok</span><br />
+<span class="irc-date">[20:47]</span> <span class="irc-black">&lt;felipero&gt; =)</span><br />
+<span class="irc-date">[20:47]</span> <span class="irc-black">&lt;naeu&gt; that's fine :-)</span><br />
+<span class="irc-date">[20:48]</span> <span class="irc-black">&lt;olabini&gt; that's the right way to do it for marketing oriented programming</span><br />
+<span class="irc-date">[20:48]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[20:48]</span> <span class="irc-black">&lt;naeu&gt; hahaha</span><br />
+<span class="irc-date">[20:48]</span> <span class="irc-black">&lt;olabini&gt; which the world turned into when Rails was released</span><br />
+<span class="irc-date">[20:48]</span> <span class="irc-black">&lt;naeu&gt; this is very true</span><br />
+<span class="irc-date">[20:48]</span> <span class="irc-black">&lt;naeu&gt; maybe we should start organising the first official conference</span><br />
+<span class="irc-date">[20:49]</span> <span class="irc-black">&lt;naeu&gt; who's going to contact O'Reilly?</span><br />
+<span class="irc-date">[20:50]</span> <span class="irc-black">&lt;olabini&gt; hehe. right</span><br />
+<span class="irc-date">[20:50]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[20:52]</span> <span class="irc-black">&lt;felipero&gt; Ola, would you do the keynote?</span><br />
+<span class="irc-date">[20:52]</span> <span class="irc-black">&lt;naeu&gt; felipero: no, not ola</span><br />
+<span class="irc-date">[20:52]</span> <span class="irc-black">&lt;naeu&gt; it needs to be some arrogant kid</span><br />
+<span class="irc-date">[20:53]</span> <span class="irc-black">&lt;felipero&gt; hahaha</span><br />
+<span class="irc-date">[20:53]</span> <span class="irc-black">&lt;naeu&gt; with a mildly irritating voice</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-black">&lt;olabini&gt; i can do that</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-black">&lt;felipero&gt; IokeHurricane sounds good too...</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-black">&lt;IokeHurricane&gt; felipero: Actually, I'm just making shit up off the top of my head. But that sounds like it would be awesome.</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-black">&lt;olabini&gt; I'm good at saying the f word</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: I could have said that</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: it's the nicest gun i have ever shot/owned</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: hahahaha</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: yeah. a hundred thousand people telling me to fuck off</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: that sounds like me, right</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: wait</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: no way</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: you either have everything you want</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: well, I guess I do</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: no i just need random fake gaelic words</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: ah, right. I can do that too. fwan gerwawrg.</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: but the jury sure as hell thinks she did</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: really?</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: The little girl is screaming for something on the little toy display while I'm trying to tell this old woman (Who did not seem to understand that we don't sell lightbulbs.)</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: that sounds horrible.</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: Actually, I'm just making shit up off the top of my head. But that sounds like it would be awesome.</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: you're repeating yourself</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: Yep, Kid comes back the next week and tells us that he did it until he started bleeding but he never came. That will make me laugh till the day I die.</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: I think you need to stop talking now</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: :you...that...jesus christ, i cant think of anything to add to that to make it sound worse!</span><br />
+<span class="irc-date">[20:57]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[20:57]</span> <span class="irc-black">&lt;olabini&gt; I rest my case</span><br />
+<span class="irc-date">[20:57]</span> <span class="irc-black">&lt;felipero&gt; that's what I'm talking about... a great keynote</span><br />
+<span class="irc-date">[20:58]</span> <span class="irc-black">&lt;naeu&gt; Regexp from(#/hi/ inspect)</span><br />
+<span class="irc-date">[20:58]</span> <span class="irc-black">&lt;naeu&gt; what do we expect this to do?</span><br />
+<span class="irc-date">[21:23]</span> <span class="irc-black">&lt;felipero&gt; <a href="http://yfrog.com/4mikidop">http://yfrog.com/4mikidop</a></span><br />
+<span class="irc-date">[21:31]</span> <span class="irc-black">&lt;naeu&gt; 1 or 6 for me :-)</span><br />
+<span class="irc-date">[21:31]</span> <span class="irc-black">&lt;naeu&gt; all lovely though!</span><br />
+<span class="irc-date">[21:34]</span> <span class="irc-black">&lt;felipero&gt; we have 3 votes for 6</span><br />
+<span class="irc-date">[21:34]</span> <span class="irc-black">&lt;felipero&gt; 1 vote for one</span><br />
+<span class="irc-date">[21:34]</span> <span class="irc-black">&lt;felipero&gt; 1 vote for 5</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[21:50]</span> <span class="irc-black">&lt;felipero&gt; makes any sense use the IKanServe as backend to ikido or should I write all over again?</span><br />
+<span class="irc-date">[21:51]</span> <span class="irc-black">&lt;naeu&gt; felipero: i think it makes complete sense :-)</span><br />
+<span class="irc-date">[21:52]</span> <span class="irc-black">&lt;naeu&gt; IKanServe is very rack-like</span><br />
+<span class="irc-date">[21:53]</span> <span class="irc-black">&lt;naeu&gt; which is an excellent foundation for a web app</span><br />
+<span class="irc-date">[22:00]</span> <span class="irc-green">* k (n=kar8nga@m-138.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[22:01]</span> <span class="irc-green">* k is now known as Guest45549</span><br />
+<span class="irc-date">[22:02]</span> <span class="irc-navy">* Guest45549 (n=kar8nga@m-138.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[22:05]</span> <span class="irc-navy">* kar8nga (n=kar8nga@193.171.245.78) Quit (Read error: 145 (Connection timed out))</span><br />
+<span class="irc-date">[22:10]</span> <span class="irc-black">&lt;felipero&gt; nice... then this is the way it will work...</span><br />
+<span class="irc-date">[22:33]</span> <span class="irc-green">* vborja (n=user@189.143.190.51) has joined #ioke</span><br />
+<span class="irc-date">[22:39]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[23:44]</span> <span class="irc-black">&lt;felipero&gt; is there any way to use wildcard in the use() method?</span><br />
+<span class="irc-date">[23:46]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />

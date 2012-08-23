@@ -1,0 +1,19 @@
+<span class="irc-date">[0:13]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[0:16]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[6:45]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-33.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[7:13]</span> <span class="irc-green">* olabini (n=ola@72-254-63-7.client.stsn.net) has left #ioke</span><br />
+<span class="irc-date">[9:02]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit ("Leaving")</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[13:14]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-33.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[16:38]</span> <span class="irc-green">* donizetti (n=donizett@187.37.198.20) has joined #ioke</span><br />
+<span class="irc-date">[16:38]</span> <span class="irc-black">&lt;donizetti&gt; hi guys</span><br />
+<span class="irc-date">[16:57]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini master * r4aaf43a / (3 files in 2 dirs): Fix a ...... slight memory leak in Java integration - <a href="http://bit.ly/2jidxx">http://bit.ly/2jidxx</a></span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-navy">* donizetti (n=donizett@187.37.198.20) Quit ()</span><br />
+<span class="irc-date">[17:51]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-172.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[17:57]</span> <span class="irc-green">* donizetti (n=donizett@187.37.198.20) has joined #ioke</span><br />
+<span class="irc-date">[18:07]</span> <span class="irc-navy">* donizetti (n=donizett@187.37.198.20) Quit ()</span><br />
+<span class="irc-date">[18:30]</span> <span class="irc-green">* donizetti (n=donizett@187.37.198.20) has joined #ioke</span><br />
+<span class="irc-date">[18:31]</span> <span class="irc-navy">* donizetti (n=donizett@187.37.198.20) Quit (Client Quit)</span><br />
+<span class="irc-date">[20:02]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini master * r87e6797 / (4 files in 2 dirs): Fix memory leak by having a real ObjectProxyCache - <a href="http://bit.ly/PvSFU">http://bit.ly/PvSFU</a></span><br />
+<span class="irc-date">[21:33]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-172.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[21:49]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />

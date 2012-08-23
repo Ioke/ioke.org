@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Kind: DefaultBehavior</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href=".././dokgen-style.css" type="text/css" media="screen" />
+    <script language="JavaScript" type="text/javascript">
+    // <![CDATA[
+
+        function toggleSource( id )
+        {
+          var elem
+          var link
+
+          if( document.getElementById )
+          {
+            elem = document.getElementById( id )
+            link = document.getElementById( "l_" + id )
+          }
+          else if ( document.all )
+          {
+            elem = eval( "document.all." + id )
+            link = eval( "document.all.l_" + id )
+          }
+          else
+            return false;
+
+          if( elem.style.display == "block" )
+          {
+            elem.style.display = "none"
+            link.innerHTML = "show source"
+          }
+          else
+          {
+            elem.style.display = "block"
+            link.innerHTML = "hide source"
+          }
+        }
+
+        function openCode( url )
+        {
+          window.open( url, "SOURCE_CODE", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=480,width=750" ).focus();
+        }
+      // ]]>
+    </script>
+  </head>
+
+  <body>
+    <table border='0' cellpadding='0' cellspacing='0' width="100%" class='banner'>
+      <tr>
+        <td>
+          <table width="100%" border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+              <td class="file-title" colspan="2">
+                <span class="file-title-prefix">Kind</span>
+                <br />
+                Dict
+              </td>
+              <td align="right">
+                <table cellspacing="0" cellpadding="2">
+                  <tr>
+                    <td>Main mimic:</td>
+                    <td>
+                      <a href="../kinds/Mixins/Sequenced.html">Mixins Sequenced</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <div id="bodyContent">
+      <div id="content">
+        <div class="description">
+          <p>
+A dictionary is a collection of mappings from one object to another object. The default Dict implementation will use hashing for this.
+          </p>
+        </div>
+
+        <div class="sectiontitle">Mimics</div>
+        <ul>
+          <li><a href="../kinds/Mixins/Sequenced.html">Mixins Sequenced</a></li><li><a href="../kinds/Origin.html">Origin</a></li>
+        </ul>
+
+        <div class="sectiontitle">Inactive cells</div>
+        <ul>
+          <li><a href="#C00791">kind</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Active cells</div>
+        <ul>
+          <li><a href="#C00796">+(...)</a></li>
+<li><a href="#C00793">==(other)</a></li>
+<li><a href="#C00811">===(other)</a></li>
+<li><a href="#C00810">?&(...)</a></li>
+<li><a href="#C00809">?|(...)</a></li>
+<li><a href="#C00807">[](...)</a></li>
+<li><a href="#C00800">[]=(key, value)</a></li>
+<li><a href="#C00808">addKeysAndValues(keys, values)</a></li>
+<li><a href="#C00797">at(key)</a></li>
+<li><a href="#C00806">each([indexOrArgOrCode] nil, [argOrCode] nil, [code] nil)</a></li>
+<li><a href="#C00798">empty?()</a></li>
+<li><a href="#C00792">hash()</a></li>
+<li><a href="#C00802">inspect()</a></li>
+<li><a href="#C00799">key?(key)</a></li>
+<li><a href="#C00804">keys()</a></li>
+<li><a href="#C00795">merge(+pairsAndDicts, +:keywordPairs)</a></li>
+<li><a href="#C00812">mergeWith(...)</a></li>
+<li><a href="#C00803">notice()</a></li>
+<li><a href="#C00805">seq()</a></li>
+<li><a href="#C00801">size()</a></li>
+<li><a href="#C00794">withDefault(defaultValue)</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Specs</div>
+        <div class="specs">
+          
+        </div>
+
+        <div class="sectiontitle">Inactive cells (details)</div>
+                <div class="cell">
+          <a name="C00791"></a>
+          <table border="0" cellpadding="5">
+            <tr valign="top">
+              <td class="cell-name">kind</td>
+              <td>=</td>
+              <td class="cell-value">"Dict"</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div class="sectiontitle">Active cells (details)</div>
+                <div class="cell">
+          <div class="title">
+          <a name="C00796"></a><b>+</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00793"></a><b>==</b>(other)
+          </div>
+          <div class="description">
+            <p>returns true if the left hand side dictionary is equal to the right hand side dictionary.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00811"></a><b>===</b>(other)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00811_source')" id="l_C00811_source">show source</a> ]</p>
+            <div id="C00811_source" class="dyn-source">
+<pre>
+method(other, 
+  if(self same?(
+      {}), 
+    Reflector other:mimics?(cell(:other), 
+      {}), 
+    bind(rescue(Condition Error, fn(c, false)), 
+      self ==(
+        other))))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00810"></a><b>?&</b>(...)
+          </div>
+          <div class="description">
+            <p>if this dict is non-empty, returns the result of evaluating the argument, otherwise returns the dict</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00810_source')" id="l_C00810_source">show source</a> ]</p>
+            <div id="C00810_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    unless(empty?, 
+      call argAt(0), 
+      self), 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00809"></a><b>?|</b>(...)
+          </div>
+          <div class="description">
+            <p>if this dict is empty, returns the result of evaluating the argument, otherwise returns the dict</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00809_source')" id="l_C00809_source">show source</a> ]</p>
+            <div id="C00809_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      1), 
+    
+    theCode = call arguments [](
+        0) 
+    
+    if(empty?, 
+      call argAt(0), 
+      self), 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00807"></a><b>[]</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00800"></a><b>[]=</b>(key, value)
+          </div>
+          <div class="description">
+            <p>takes two arguments, the key of the element to set and the value to set it too. returns the value set</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00808"></a><b>addKeysAndValues</b>(keys, values)
+          </div>
+          <div class="description">
+            <p>zips the keys and the values together into this dict. note that neither keys nor values need to be lists. you can use anything that is iterable with index.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00808_source')" id="l_C00808_source">show source</a> ]</p>
+            <div id="C00808_source" class="dyn-source">
+<pre>
+method(keys, values, 
+  keys each(i, k, 
+    self [](k) = values [](i)) 
+  self)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00797"></a><b>at</b>(key)
+          </div>
+          <div class="description">
+            <p>takes one argument, the key of the element to return. if the key doesn't map to anything in the dict, returns the default value</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00806"></a><b>each</b>([indexOrArgOrCode] nil, [argOrCode] nil, [code] nil)
+          </div>
+          <div class="description">
+            <p>takes either one or two or three arguments. if one argument is given, it should be a message chain that will be sent to each object in the dict. the result will be thrown away. if two arguments are given, the first is an unevaluated name that will be set to each of the entries in the dict in succession, and then the second argument will be evaluated in a scope with that argument in it. if three arguments is given, the first one is an unevaluated name that will be set to the index of each element, and the other two arguments are the name of the argument for the value, and the actual code. the code will evaluate in a lexical context, and if the argument name is available outside the context, it will be shadowed. the method will return the dict. the entries yielded will be mimics of Pair.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00798"></a><b>empty?</b>()
+          </div>
+          <div class="description">
+            <p>returns true if this dict is empty, false otherwise</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00792"></a><b>hash</b>()
+          </div>
+          <div class="description">
+            <p>returns a hash for the dictionary</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00802"></a><b>inspect</b>()
+          </div>
+          <div class="description">
+            <p>Returns a text inspection of the object</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00799"></a><b>key?</b>(key)
+          </div>
+          <div class="description">
+            <p>takes one argument, the key to check if it is in the dict.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00804"></a><b>keys</b>()
+          </div>
+          <div class="description">
+            <p>Returns all the keys of this dict</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00795"></a><b>merge</b>(+pairsAndDicts, +:keywordPairs)
+          </div>
+          <div class="description">
+            <p>creates a new Dict from the arguments provided, combined with the values in the receiver. the arguments provided will override those in the receiver. the rules for arguments are the same as for dict, except that dicts can also be provided. all positional arguments will be added before the keyword arguments.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00812"></a><b>mergeWith</b>(...)
+          </div>
+          <div class="description">
+            <p>merges this dictionary with the first argument using different strategies defined by the second to fourth arguments</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00812_source')" id="l_C00812_source">show source</a> ]</p>
+            <div id="C00812_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      1), 
+    
+    other = call argAt(
+        0) 
+    
+    self merge(other), 
+    argCount ==(
+      2), 
+    
+    other = call argAt(
+        0) 
+    theCode = call arguments [](
+        1) 
+    
+    theCode = theCode deepCopy 
+    rhsName = genSym 
+    theCode last &lt;&lt;(message(rhsName)) 
+    combined = {} 
+    other each(kv, 
+      if(self key?(kv key), 
+        call ground cell(rhsName) = kv value 
+        combined [](kv key) = theCode evaluateOn(call ground, self [](kv key)), 
+        combined [](kv key) = kv value)) 
+    self merge(combined), 
+    argCount ==(
+      3), 
+    
+    other = call argAt(
+        0) 
+    lhsName = call arguments [](
+        1) 
+    theCode = call arguments [](
+        2) 
+    
+    theCode = theCode deepCopy 
+    rhsName = genSym 
+    theCode last &lt;&lt;(message(rhsName)) 
+    combined = {} 
+    other each(kv, 
+      if(self key?(kv key), 
+        call ground cell(lhsName) = self [](kv key) 
+        call ground cell(rhsName) = kv value 
+        combined [](kv key) = theCode evaluateOn(call ground), 
+        combined [](kv key) = kv value)) 
+    self merge(combined), 
+    argCount ==(
+      4), 
+    
+    other = call argAt(
+        0) 
+    lhsName = call arguments [](
+        1) 
+    rhsName = call arguments [](
+        2) 
+    theCode = call arguments [](
+        3) 
+    
+    lexicalCode = LexicalBlock createFrom(list(lhsName, rhsName, theCode), call ground) 
+    combined = {} 
+    other each(kv, 
+      if(self key?(kv key), 
+        combined [](kv key) = lexicalCode(self [](kv key), kv value), 
+        combined [](kv key) = kv value)) 
+    self merge(combined) 
+    , 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00803"></a><b>notice</b>()
+          </div>
+          <div class="description">
+            <p>Returns a brief text inspection of the object</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00805"></a><b>seq</b>()
+          </div>
+          <div class="description">
+            <p>returns a new sequence to iterate over this dictionary</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00801"></a><b>size</b>()
+          </div>
+          <div class="description">
+            <p>Returns the number of pairs contained in this dict.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00794"></a><b>withDefault</b>(defaultValue)
+          </div>
+          <div class="description">
+            <p>takes one argument, that should be a default value, and returns a new mimic of the receiver, with the default value for that new dict set to the argument</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>

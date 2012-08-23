@@ -1,0 +1,160 @@
+<span class="irc-date">[0:34]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[6:46]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[7:33]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:08]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:17]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[8:25]</span> <span class="irc-green">* ynyr (n=ynyr@host217-44-177-41.range217-44.btcentralplus.com) has joined #ioke</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[9:03]</span> <span class="irc-green">* naeu (n=sam@h36036.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:13]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[9:19]</span> <span class="irc-black">&lt;naeu&gt; morning all :-)</span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-black">&lt;martido&gt; morning, sam ;)</span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;Narnach&gt; naeu: good morning</span><br />
+<span class="irc-date">[9:48]</span> <span class="irc-black">&lt;naeu&gt; Narnach: it's my last day in Amsterdam for a week :-)</span><br />
+<span class="irc-date">[9:48]</span> <span class="irc-black">&lt;Narnach&gt; naeu: qcon is next week already?</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;naeu&gt; indeed!</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;Narnach&gt; well, good luck and have fun there!</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;Narnach&gt; You will be missed monday at ACK</span><br />
+<span class="irc-date">[9:51]</span> <span class="irc-green">* olabini (n=ola@c-398de155.234-1-64736c10.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[9:51]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[9:52]</span> <span class="irc-black">&lt;martido&gt; naeu &amp; Narnach: I've never been to qcon; is it good?</span><br />
+<span class="irc-date">[9:52]</span> <span class="irc-black">&lt;Narnach&gt; martido: never been there either</span><br />
+<span class="irc-date">[9:52]</span> <span class="irc-black">&lt;olabini&gt; it's very good</span><br />
+<span class="irc-date">[9:52]</span> <span class="irc-black">&lt;olabini&gt; one of my favorites</span><br />
+<span class="irc-date">[9:52]</span> <span class="irc-black">&lt;olabini&gt; after JAOO</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-black">&lt;martido&gt; hmm ... too bad that my employer won't take the expenses. Been to Devoxx (aka JavaPolis) last year so the money is spent ;)</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-black">&lt;martido&gt; what kinds of talks can you expect there? I mean is there a motto or something?</span><br />
+<span class="irc-date">[10:04]</span> <span class="irc-black">&lt;naeu&gt; martido: it seems to be a healthy mix of academic/enterprise presentations focussed on technical subjects with remarkably little 'selling' and a high technical content</span><br />
+<span class="irc-date">[10:05]</span> <span class="irc-black">&lt;naeu&gt; the motto is quite communistic: "for software developers by software developers"</span><br />
+<span class="irc-date">[10:06]</span> <span class="irc-black">&lt;naeu&gt; there's also a healthy stream of methodology-style talks on agile-like stuff</span><br />
+<span class="irc-date">[10:11]</span> <span class="irc-black">&lt;martido&gt; sounds very cool! I'm jealous ;)</span><br />
+<span class="irc-date">[10:13]</span> <span class="irc-black">&lt;naeu&gt; yeah, it is very cool</span><br />
+<span class="irc-date">[10:13]</span> <span class="irc-black">&lt;naeu&gt; lots of really interesting and nice people there too</span><br />
+<span class="irc-date">[10:13]</span> <span class="irc-black">&lt;naeu&gt; although I agree, it's not quite as good as JAOO</span><br />
+<span class="irc-date">[10:31]</span> <span class="irc-black">&lt;martido&gt; I've never been to JAOO too ... dammit, seems I'm missing all the good conferences</span><br />
+<span class="irc-date">[10:31]</span> <span class="irc-black">&lt;martido&gt; JAOO is the one in Denmark right?</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;naeu&gt; yep</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;olabini&gt; JAOO is really good</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;olabini&gt; I would recommend both QCon and JAOO over devoxx</span><br />
+<span class="irc-date">[10:32]</span> <span class="irc-black">&lt;olabini&gt; devoxx is good, but not in the same class</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-black">&lt;olabini&gt; you can take a look at the schedule here: <a href="http://qconlondon.com/london-2009/schedule/">http://qconlondon.com/london-2009/schedule/</a></span><br />
+<span class="irc-date">[10:47]</span> <span class="irc-black">&lt;martido&gt; thanks! Though it's about 3 times the price of Devoxx which always was a very compelling argument for my employer ;)</span><br />
+<span class="irc-date">[11:23]</span> <span class="irc-navy">* olabini (n=ola@c-398de155.234-1-64736c10.cust.bredbandsbolaget.se) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[12:56]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[12:56]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[14:05]</span> <span class="irc-green">* donizetti (n=donizett@189.120.169.78) has joined #ioke</span><br />
+<span class="irc-date">[14:06]</span> <span class="irc-black">&lt;donizetti&gt; Hi guys.</span><br />
+<span class="irc-date">[14:09]</span> <span class="irc-black">&lt;donizetti&gt; I've been studying ioke for a while, and I'm really enjoying the language.....and I was thinking if there are anything that I can do to help with the project ?</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;olabini&gt; Hi</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;olabini&gt; glad you like it</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;olabini&gt; the first thing you can do is take a look at the Todo page in the wiki</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;olabini&gt; that's more or less what is immediately useful</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-black">&lt;olabini&gt; that's <a href="http://ioke.org/wiki">http://ioke.org/wiki</a></span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-green">* cv (n=cv@201-13-42-136.dsl.telesp.net.br) has joined #ioke</span><br />
+<span class="irc-date">[14:24]</span> <span class="irc-black">&lt;cv&gt; hey kids!</span><br />
+<span class="irc-date">[14:25]</span> <span class="irc-black">&lt;donizetti&gt; hi cv</span><br />
+<span class="irc-date">[14:25]</span> <span class="irc-black">&lt;donizetti&gt; =D</span><br />
+<span class="irc-date">[14:25]</span> <span class="irc-brick">* cv checking out the logs</span><br />
+<span class="irc-date">[14:26]</span> <span class="irc-black">&lt;donizetti&gt; I asked Ola Bini about something that I could help on ioke, and he told me to take a look at the TODO on the site !</span><br />
+<span class="irc-date">[14:26]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has left #ioke</span><br />
+<span class="irc-date">[14:26]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;donizetti&gt; But I think I'll probably try to to something related to refactoring as you were doing !</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;olabini&gt; that sounds cool too</span><br />
+<span class="irc-date">[14:28]</span> <span class="irc-black">&lt;cv&gt; yeah, since you're already doing some work on rfactor, it might make sense to port some of the stuff across</span><br />
+<span class="irc-date">[14:28]</span> <span class="irc-black">&lt;cv&gt; olabini: met donizetti here in sao paulo a few days ago. lucky bugger is paid to work on OSS full time :D</span><br />
+<span class="irc-date">[14:30]</span> <span class="irc-black">&lt;donizetti&gt; =D</span><br />
+<span class="irc-date">[14:31]</span> <span class="irc-black">&lt;olabini&gt; ah, cool</span><br />
+<span class="irc-date">[14:31]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[14:31]</span> <span class="irc-black">&lt;olabini&gt; very nice</span><br />
+<span class="irc-date">[14:31]</span> <span class="irc-black">&lt;martido&gt; donizetti: very cool indeed! on what OSS are you working?</span><br />
+<span class="irc-date">[14:33]</span> <span class="irc-black">&lt;donizetti&gt; rfactor - api of refactoring for ruby , mirror - dsl for java reflection and vraptor - java mvc framework</span><br />
+<span class="irc-date">[14:34]</span> <span class="irc-black">&lt;donizetti&gt; I don't know if it worth but I could translate some stuff for portuguese too !! what do you think ?</span><br />
+<span class="irc-date">[14:35]</span> <span class="irc-black">&lt;martido&gt; cool! i heard about mirror... haven't used it yet though</span><br />
+<span class="irc-date">[14:36]</span> <span class="irc-black">&lt;donizetti&gt; cool ! if you have time try it out and give some feedback !! =D</span><br />
+<span class="irc-date">[14:37]</span> <span class="irc-black">&lt;martido&gt; i will ;)</span><br />
+<span class="irc-date">[14:40]</span> <span class="irc-black">&lt;olabini&gt; I wish I was working on Ioke right now, but at the moment I have some stuff for TW I need to do =/</span><br />
+<span class="irc-date">[14:40]</span> <span class="irc-black">&lt;olabini&gt; annoying stuff</span><br />
+<span class="irc-date">[14:42]</span> <span class="irc-black">&lt;martido&gt; i know what you mean ... writing freaking HttpUnit tests at the moment ... VERY interesting ;)</span><br />
+<span class="irc-date">[14:43]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[14:43]</span> <span class="irc-black">&lt;olabini&gt; well, my stuff is actually supposed to be really interesting</span><br />
+<span class="irc-date">[14:43]</span> <span class="irc-black">&lt;olabini&gt; sadly, it's way secret so I can't talk about it either</span><br />
+<span class="irc-date">[14:43]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[14:44]</span> <span class="irc-black">&lt;martido&gt; to bad ;) you making me curious</span><br />
+<span class="irc-date">[14:44]</span> <span class="irc-black">&lt;martido&gt; too</span><br />
+<span class="irc-date">[14:44]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[14:44]</span> <span class="irc-black">&lt;olabini&gt; in fact, I don't think even cv knows about this. =)</span><br />
+<span class="irc-date">[14:44]</span> <span class="irc-black">&lt;martido&gt; REALLY top secret then</span><br />
+<span class="irc-date">[14:46]</span> <span class="irc-black">&lt;cv&gt; well, i'm not really renowned for knowing what the hell is going on :P</span><br />
+<span class="irc-date">[14:48]</span> <span class="irc-green">* mib_9792ue (i=bde4006b@gateway/web/ajax/mibbit.com/x-c98860043253aed0) has joined #ioke</span><br />
+<span class="irc-date">[14:49]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[14:49]</span> <span class="irc-black">&lt;olabini&gt; cv: I thought you knew everything!</span><br />
+<span class="irc-date">[14:49]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[14:50]</span> <span class="irc-black">&lt;donizetti&gt; I thought this too :P</span><br />
+<span class="irc-date">[14:52]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[14:59]</span> <span class="irc-black">&lt;naeu&gt; olabini: is it likely to be made public one day, or is this thing your'e working on confined to TW staff (and possibly clients)</span><br />
+<span class="irc-date">[15:12]</span> <span class="irc-black">&lt;olabini&gt; yeah, it will be public</span><br />
+<span class="irc-date">[15:18]</span> <span class="irc-navy">* cv (n=cv@201-13-42-136.dsl.telesp.net.br) Quit ("zzzz")</span><br />
+<span class="irc-date">[15:58]</span> <span class="irc-brick">* olabini is merging iopt</span><br />
+<span class="irc-date">[16:00]</span> <span class="irc-black">&lt;olabini&gt; ah, shit</span><br />
+<span class="irc-date">[16:00]</span> <span class="irc-black">&lt;olabini&gt; test failures</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-black">&lt;donizetti&gt; olabini : have you heard about rfactor ?</span><br />
+<span class="irc-date">[16:16]</span> <span class="irc-black">&lt;olabini&gt; vaguely</span><br />
+<span class="irc-date">[16:17]</span> <span class="irc-black">&lt;donizetti&gt; <a href="http://github.com/fabiokung/rfactor/tree/master">http://github.com/fabiokung/rfactor/tree/master</a> - what you think about follow the same way for ioke ? with bundles for emacs, textmate , etc !</span><br />
+<span class="irc-date">[16:18]</span> <span class="irc-black">&lt;olabini&gt; sure</span><br />
+<span class="irc-date">[16:18]</span> <span class="irc-black">&lt;olabini&gt; I do think the patterns will be very different</span><br />
+<span class="irc-date">[16:18]</span> <span class="irc-black">&lt;olabini&gt; since Ioke is all about macros that can abstract structure</span><br />
+<span class="irc-date">[16:19]</span> <span class="irc-black">&lt;olabini&gt; when you can do that, you won't need as much refactoring support</span><br />
+<span class="irc-date">[16:29]</span> <span class="irc-navy">* ynyr (n=ynyr@host217-44-177-41.range217-44.btcentralplus.com) Quit ()</span><br />
+<span class="irc-date">[16:30]</span> <span class="irc-black">&lt;donizetti&gt; I see</span><br />
+<span class="irc-date">[16:30]</span> <span class="irc-green">* ynyr (n=ynyr@host217-44-177-41.range217-44.btcentralplus.com) has joined #ioke</span><br />
+<span class="irc-date">[16:31]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[16:31]</span> <span class="irc-black">&lt;donizetti&gt; have you already coded something for refactoring  on ioke ? or just cv was working on it ?</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-navy">* donizetti (n=donizett@189.120.169.78) Quit ()</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-black">&lt;olabini&gt; no, I haven't done anything</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-black">&lt;olabini&gt; today I think it's time to fix those regexps</span><br />
+<span class="irc-date">[16:39]</span> <span class="irc-navy">* naeu (n=sam@h36036.upc-h.chello.nl) Quit ()</span><br />
+<span class="irc-date">[16:42]</span> <span class="irc-green">* donizetti (n=donizett@189.120.169.78) has joined #ioke</span><br />
+<span class="irc-date">[16:47]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has left #ioke</span><br />
+<span class="irc-date">[16:48]</span> <span class="irc-navy">* ynyr (n=ynyr@host217-44-177-41.range217-44.btcentralplus.com) Quit (Connection timed out)</span><br />
+<span class="irc-date">[17:01]</span> <span class="irc-black">&lt;olabini&gt; netsplit?</span><br />
+<span class="irc-date">[17:03]</span> <span class="irc-black">&lt;donizetti&gt; :(</span><br />
+<span class="irc-date">[17:04]</span> <span class="irc-black">&lt;donizetti&gt; olabini : working on ioke right now ?? I saw your twitte !!! =D</span><br />
+<span class="irc-date">[17:08]</span> <span class="irc-black">&lt;olabini&gt; yeah, I am</span><br />
+<span class="irc-date">[17:08]</span> <span class="irc-black">&lt;olabini&gt; working on Regexp escapes at the moment</span><br />
+<span class="irc-date">[17:08]</span> <span class="irc-black">&lt;olabini&gt; hadn't implemented them</span><br />
+<span class="irc-date">[17:08]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[17:09]</span> <span class="irc-black">&lt;donizetti&gt; olabini : have you give any speech about ioke ??? I will speech on march 24 and have no ideia about what !! :(</span><br />
+<span class="irc-date">[17:14]</span> <span class="irc-black">&lt;olabini&gt; yeah, one speech in Amsterdam</span><br />
+<span class="irc-date">[17:14]</span> <span class="irc-black">&lt;olabini&gt; ask naeu when he comes back online</span><br />
+<span class="irc-date">[17:14]</span> <span class="irc-black">&lt;olabini&gt; I will give a talk on Tuesday too</span><br />
+<span class="irc-date">[17:19]</span> <span class="irc-black">&lt;donizetti&gt; Do you know akita ? He is planing one of the most important event of Brazil.. "Rails Summit", I asked him to try to bring you to speech about ioke  !!! =D</span><br />
+<span class="irc-date">[17:19]</span> <span class="irc-black">&lt;donizetti&gt; *Fabio Akita</span><br />
+<span class="irc-date">[17:22]</span> <span class="irc-black">&lt;olabini&gt; yeah, I know Akita</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-black">&lt;olabini&gt; he did an interview with me about Ioke at QCon SF in November</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-black">&lt;olabini&gt; it's on his stie</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-black">&lt;olabini&gt; site</span><br />
+<span class="irc-date">[17:24]</span> <span class="irc-black">&lt;donizetti&gt; ohh yeaah... sure , i heard this interview , it was because of your interview I decided to learn Common Lisp and Haskell ... :P</span><br />
+<span class="irc-date">[17:28]</span> <span class="irc-black">&lt;olabini&gt; ah, right</span><br />
+<span class="irc-date">[17:28]</span> <span class="irc-black">&lt;olabini&gt; went well?</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;donizetti&gt; yeahhh.... I'm in love with Lisp... =D</span><br />
+<span class="irc-date">[17:38]</span> <span class="irc-black">&lt;olabini&gt; gah</span><br />
+<span class="irc-date">[17:38]</span> <span class="irc-black">&lt;olabini&gt; hitting limits in antlr code size generation</span><br />
+<span class="irc-date">[17:38]</span> <span class="irc-black">&lt;olabini&gt; interesting</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-black">&lt;olabini&gt; fixed most of it</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-black">&lt;olabini&gt; or all, it seem</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-black">&lt;olabini&gt; seems</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-black">&lt;olabini&gt; yay.</span><br />
+<span class="irc-date">[18:12]</span> <span class="irc-black">&lt;donizetti&gt; cool</span><br />
+<span class="irc-date">[18:20]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-72.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-black">&lt;donizetti&gt; is ioke textmate bundle finished ?</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-green">* martido (n=martin@dslb-088-065-197-233.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[18:54]</span> <span class="irc-black">&lt;olabini&gt; good question. I don't know</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-navy">* donizetti (n=donizett@189.120.169.78) Quit ()</span><br />
+<span class="irc-date">[21:44]</span> <span class="irc-green">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[22:08]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-72.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[22:34]</span> <span class="irc-navy">* mib_9792ue (i=bde4006b@gateway/web/ajax/mibbit.com/x-c98860043253aed0) Quit ("<a href="http://www.mibbit.com">http://www.mibbit.com</a> ajax IRC Client")</span><br />
+<span class="irc-date">[22:50]</span> <span class="irc-navy">* martido (n=martin@dslb-088-065-197-233.pools.arcor-ip.net) Quit ()</span><br />
+<span class="irc-date">[23:26]</span> <span class="irc-navy">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) Quit ("Ex-Chat")</span><br />

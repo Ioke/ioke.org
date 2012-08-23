@@ -1,0 +1,149 @@
+<span class="irc-date">[2:06]</span> <span class="irc-green">* donizetti (n=donizett@201-13-15-177.dsl.telesp.net.br) has joined #ioke</span><br />
+<span class="irc-date">[2:47]</span> <span class="irc-navy">* pdelgallego (n=pdelgall@42.Red-217-125-2.staticIP.rima-tde.net) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[3:45]</span> <span class="irc-navy">* IokeHurricane (n=IokeHurr@8.12.35.212) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[3:45]</span> <span class="irc-navy">* CIA-21 (n=CIA@208.69.182.149) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[3:47]</span> <span class="irc-green">* IokeHurricane (n=IokeHurr@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[3:47]</span> <span class="irc-green">* CIA-21 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[3:53]</span> <span class="irc-navy">* donizetti (n=donizett@201-13-15-177.dsl.telesp.net.br) Quit ()</span><br />
+<span class="irc-date">[6:42]</span> <span class="irc-navy">* olabini (n=ola@212.107.147.30) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[8:21]</span> <span class="irc-green">* olabini (n=ola@212.107.147.30) has joined #ioke</span><br />
+<span class="irc-date">[9:57]</span> <span class="irc-green">* donizetti (n=donizett@201-13-15-177.dsl.telesp.net.br) has joined #ioke</span><br />
+<span class="irc-date">[10:11]</span> <span class="irc-navy">* donizetti (n=donizett@201-13-15-177.dsl.telesp.net.br) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[10:11]</span> <span class="irc-navy">* olabini (n=ola@212.107.147.30) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[10:13]</span> <span class="irc-green">* olabini (n=ola@212.107.147.30) has joined #ioke</span><br />
+<span class="irc-date">[10:13]</span> <span class="irc-green">* donizetti (n=donizett@201-13-15-177.dsl.telesp.net.br) has joined #ioke</span><br />
+<span class="irc-date">[11:25]</span> <span class="irc-black">&lt;donizetti&gt; olabini: hi</span><br />
+<span class="irc-date">[11:25]</span> <span class="irc-black">&lt;donizetti&gt; olabini: i think that I will hack the ranges features.</span><br />
+<span class="irc-date">[11:25]</span> <span class="irc-black">&lt;donizetti&gt; is it ok for you?</span><br />
+<span class="irc-date">[11:26]</span> <span class="irc-black">&lt;donizetti&gt; I'll send some emails discussing the details. =D</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;olabini&gt; sure</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;olabini&gt; knock yourself otu</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;olabini&gt; out</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;donizetti&gt; olabini:  thoughtworks hiring process is really hard for people outside the country the are intrested in.</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;donizetti&gt; i've doing the England process but the distance between England and Brazil do not help. Our calls are always bad.</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;donizetti&gt; They could use skype, right?</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;donizetti&gt; :(</span><br />
+<span class="irc-date">[12:07]</span> <span class="irc-navy">* donizetti (n=donizett@201-13-15-177.dsl.telesp.net.br) Quit ()</span><br />
+<span class="irc-date">[12:26]</span> <span class="irc-green">* kar8nga (n=kar8nga@jol13-1-82-66-176-74.fbx.proxad.net) has joined #ioke</span><br />
+<span class="irc-date">[14:16]</span> <span class="irc-navy">* olabini (n=ola@212.107.147.30) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-green">* olabini (n=ola@212.107.147.30) has joined #ioke</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[14:34]</span> <span class="irc-green">* donizetti (n=donizett@187.37.199.195) has joined #ioke</span><br />
+<span class="irc-date">[15:26]</span> <span class="irc-brown">-christel- [Global Notice] Hi all, We're about to perform some memleak related maintenance on a handful of the ircd servers, at the same time we'll be rehubbing a bit. It will be noisy for the next ten minutes or so. Apologies for the inconvenience.</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-navy">* IokeHurricane (n=IokeHurr@8.12.35.212) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-navy">* CIA-21 (n=CIA@208.69.182.149) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-navy">* erg (n=erg@li13-154.members.linode.com) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-navy">* donizetti (n=donizett@187.37.199.195) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-green">* erg (n=erg@li13-154.members.linode.com) has joined #ioke</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-green">* IokeHurricane (n=IokeHurr@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[15:33]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:34]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:34]</span> <span class="irc-green">* CIA-21 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[15:34]</span> <span class="irc-navy">* CIA-21 (n=CIA@208.69.182.149) Quit (calvino.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[15:34]</span> <span class="irc-green">* donizetti (n=donizett@187.37.199.195) has joined #ioke</span><br />
+<span class="irc-date">[15:34]</span> <span class="irc-green">* CIA-8 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[15:35]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:36]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:37]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:38]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:39]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:40]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:41]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:43]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:44]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:45]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:46]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:47]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:48]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:49]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:50]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:51]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-navy">* donizetti (n=donizett@187.37.199.195) Quit ()</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:53]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:54]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:55]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:58]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:59]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:00]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:01]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:02]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:03]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:04]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:05]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:06]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:07]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:08]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:09]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:10]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:11]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:12]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:13]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:14]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:15]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:16]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:17]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:18]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:19]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:20]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:21]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:22]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:23]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:24]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:25]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:26]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:27]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:28]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:29]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:30]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:31]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:34]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:35]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:36]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:37]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:38]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:38]</span> <span class="irc-navy">* kar8nga (n=kar8nga@jol13-1-82-66-176-74.fbx.proxad.net) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[16:38]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:39]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:40]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:41]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:42]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:43]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:44]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:44]</span> <span class="irc-green">* kar8nga (n=kar8nga@jol13-1-82-66-176-74.fbx.proxad.net) has joined #ioke</span><br />
+<span class="irc-date">[16:45]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:46]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:47]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:48]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:49]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:50]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:51]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:52]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:53]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:54]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:55]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:56]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:57]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:58]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[16:59]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[17:00]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[17:01]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[17:02]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[17:03]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[17:04]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[17:05]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[17:06]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[17:07]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[17:07]</span> <span class="irc-green">* olabini sets mode +o IokeHurricane </span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-navy">* kar8nga (n=kar8nga@jol13-1-82-66-176-74.fbx.proxad.net) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[20:29]</span> <span class="irc-green">* kar8nga (n=kar8nga@jol13-1-82-66-176-74.fbx.proxad.net) has joined #ioke</span><br />
+<span class="irc-date">[22:13]</span> <span class="irc-navy">* olabini (n=ola@212.107.147.30) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[22:14]</span> <span class="irc-green">* jdp (n=gu@75.97.120.11.res-cmts.senj.ptd.net) has joined #ioke</span><br />
+<span class="irc-date">[23:10]</span> <span class="irc-navy">* kar8nga (n=kar8nga@jol13-1-82-66-176-74.fbx.proxad.net) Quit (Remote closed the connection)</span><br />

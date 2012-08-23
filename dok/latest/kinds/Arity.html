@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Kind: DefaultBehavior</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href=".././dokgen-style.css" type="text/css" media="screen" />
+    <script language="JavaScript" type="text/javascript">
+    // <![CDATA[
+
+        function toggleSource( id )
+        {
+          var elem
+          var link
+
+          if( document.getElementById )
+          {
+            elem = document.getElementById( id )
+            link = document.getElementById( "l_" + id )
+          }
+          else if ( document.all )
+          {
+            elem = eval( "document.all." + id )
+            link = eval( "document.all.l_" + id )
+          }
+          else
+            return false;
+
+          if( elem.style.display == "block" )
+          {
+            elem.style.display = "none"
+            link.innerHTML = "show source"
+          }
+          else
+          {
+            elem.style.display = "block"
+            link.innerHTML = "hide source"
+          }
+        }
+
+        function openCode( url )
+        {
+          window.open( url, "SOURCE_CODE", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=480,width=750" ).focus();
+        }
+      // ]]>
+    </script>
+  </head>
+
+  <body>
+    <table border='0' cellpadding='0' cellspacing='0' width="100%" class='banner'>
+      <tr>
+        <td>
+          <table width="100%" border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+              <td class="file-title" colspan="2">
+                <span class="file-title-prefix">Kind</span>
+                <br />
+                Arity
+              </td>
+              <td align="right">
+                <table cellspacing="0" cellpadding="2">
+                  <tr>
+                    <td>Main mimic:</td>
+                    <td>
+                      <a href="../kinds/Origin.html">Origin</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <div id="bodyContent">
+      <div id="content">
+        <div class="description">
+          <p>
+Arity provides information about the arguments needed to activate a value.
+          </p>
+        </div>
+
+        <div class="sectiontitle">Mimics</div>
+        <ul>
+          <li><a href="../kinds/Origin.html">Origin</a></li>
+        </ul>
+
+        <div class="sectiontitle">Inactive cells</div>
+        <ul>
+          <li><a href="#C00488">kind</a></li>
+<li><a href="#C00490">taking:everything</a></li>
+<li><a href="#C00489">taking:nothing</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Active cells</div>
+        <ul>
+          <li><a href="#C00507">apply(...)</a></li>
+<li><a href="#C00508">applyOn(...)</a></li>
+<li><a href="#C00509">arguments(message, context: nil, signalErrors: false)</a></li>
+<li><a href="#C00496">asText()</a></li>
+<li><a href="#C00491">from(+[arguments])</a></li>
+<li><a href="#C00497">fromArgumentsCode(argumentsCode)</a></li>
+<li><a href="#C00493">keywords()</a></li>
+<li><a href="#C00494">krest()</a></li>
+<li><a href="#C00501">max()</a></li>
+<li><a href="#C00500">min()</a></li>
+<li><a href="#C00499">optional()</a></li>
+<li><a href="#C00492">positionals(includeOptionals true)</a></li>
+<li><a href="#C00498">required()</a></li>
+<li><a href="#C00495">rest()</a></li>
+<li><a href="#C00505">satisfied?(...)</a></li>
+<li><a href="#C00506">satisfiedOn?(...)</a></li>
+<li><a href="#C00504">takeEverything?()</a></li>
+<li><a href="#C00502">takeKeyword?(keyword)</a></li>
+<li><a href="#C00503">takeNothing?()</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Specs</div>
+        <div class="specs">
+          
+        </div>
+
+        <div class="sectiontitle">Inactive cells (details)</div>
+                <div class="cell">
+          <a name="C00488"></a>
+          <table border="0" cellpadding="5">
+            <tr valign="top">
+              <td class="cell-name">kind</td>
+              <td>=</td>
+              <td class="cell-value">"Arity"</td>
+            </tr>
+          </table>
+        </div>
+        <div class="cell">
+          <a name="C00490"></a>
+          <table border="0" cellpadding="5">
+            <tr valign="top">
+              <td class="cell-name">taking:everything</td>
+              <td>=</td>
+              <td class="cell-value">Arity_0x6328EDF2</td>
+            </tr>
+          </table>
+        </div>
+        <div class="cell">
+          <a name="C00489"></a>
+          <table border="0" cellpadding="5">
+            <tr valign="top">
+              <td class="cell-name">taking:nothing</td>
+              <td>=</td>
+              <td class="cell-value">Arity_0x141DDDBA</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div class="sectiontitle">Active cells (details)</div>
+                <div class="cell">
+          <div class="title">
+          <a name="C00507"></a><b>apply</b>(...)
+          </div>
+          <div class="description">
+            <p>Invoke arguments with this message without evaluating them</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00507_source')" id="l_C00507_source">show source</a> ]</p>
+            <div id="C00507_source" class="dyn-source">
+<pre>
+macro(
+  arguments(call message) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00508"></a><b>applyOn</b>(...)
+          </div>
+          <div class="description">
+            <p>First argument must be an evaluated value, rest is the message arguments. arguments will be evaluated on the first argument.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00508_source')" id="l_C00508_source">show source</a> ]</p>
+            <div id="C00508_source" class="dyn-source">
+<pre>
+macro(
+  on = call argAt(0) 
+  msg = call arguments rest inject('(apply), m, a, m &lt;&lt;(a)) 
+  arguments(msg, context: on) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00509"></a><b>arguments</b>(message, context: nil, signalErrors: false)
+          </div>
+          <div class="description">
+            <p>Obtain arguments from message according to this arity.
+    If a context is given, the arguments will be evaluated on context.
+
+    This method returns an Arguments object, see its documentation for available cells.
+
+    If the message arguments contain an splatted argument and no context is given, an
+    Condition Error Invocation NotSpreadable condition will be signaled.
+    </p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00509_source')" id="l_C00509_source">show source</a> ]</p>
+            <div id="C00509_source" class="dyn-source">
+<pre>
+method(message, context: nil, signalErrors: false, 
+  req = required 
+  o = Arguments mimic(message arguments) 
+  o given = message arguments 
+  arg = nil 
+  signalError = fn(+(r), +:(k), 
+      if(signalErrors, 
+        error!(*(r), *(k), message: message, context: context, 
+          receiver: self, given: arg, info: o))) 
+  addKeyword = fn(key, value, 
+      cond(
+        takeNothing?, o extraKeywords [](key) = value, 
+        takeEverything?, o krest [](key) = value, 
+        keywords include?(key), o keywords [](key) = value, 
+        krest, o krest [](key) = value, 
+        o extraKeywords [](key) = value)) 
+  addPositional = fn(value, 
+      cond(
+        takeNothing?, o extraPositional &lt;&lt;(value), 
+        takeEverything?, o rest &lt;&lt;(value), 
+        o positional length &lt;(positionals(true) length), o positional &lt;&lt;(value), 
+        rest, o rest &lt;&lt;(value), 
+        o extraPositional &lt;&lt;(value))) 
+  message arguments each(arg, 
+    cond(
+      arg keyword?, 
+      name = :(arg name asText [](0 ..(-(2)))) 
+      arg = if(context, arg next evaluateOn(context), arg next) 
+      addKeyword(name, arg), 
+      arg name ==(:("*")) &&(arg arguments length ==(1)), 
+      arg = arg arguments first 
+      if(context, 
+        arg = arg evaluateOn(context) 
+        case(arg 
+          List, 
+          arg each(a, addPositional(a)) 
+          Dict, 
+          arg each(p, addKeyword(p key, p value)) 
+          
+          o notSpreadable &lt;&lt;(arg) 
+          signalError(Condition Error Invocation NotSpreadable)), 
+        o notSpreadable &lt;&lt;(arg) 
+        signalError(Condition Error Invocation NotSpreadable)), 
+      arg = if(context, arg evaluateOn(context), arg) 
+      addPositional(arg) 
+      )) 
+  if(o positional length &lt;(min), 
+    o missing = required [](o positional length ..(-(1))) 
+    o order = -(1) *((o missing length)) 
+    signalError(Condition Error Invocation TooFewArguments, howMany: o missing length), 
+    if((o extraPositional length) +((o extraKeywords size)) &gt;(0), 
+      o order = (o extraPositional length) +((o extraKeywords size)) 
+      if(o extraPositional empty?, 
+        signalError(Condition Error Invocation MismatchedKeywords, howMany: o extraKeywords size), 
+        signalError(Condition Error Invocation TooManyArguments, howMany: o order)), 
+      o order = 0)) 
+  o 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00496"></a><b>asText</b>()
+          </div>
+          <div class="description">
+            <p>returns the text representation of this arity</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00491"></a><b>from</b>(+[arguments])
+          </div>
+          <div class="description">
+            <p>Create an Arity object from the given messages. The list of unevaluated messages given to this method will be used as if they were the arguments part of a DefaultMethod definition.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00497"></a><b>fromArgumentsCode</b>(argumentsCode)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00497_source')" id="l_C00497_source">show source</a> ]</p>
+            <div id="C00497_source" class="dyn-source">
+<pre>
+method(argumentsCode, 
+  case(argumentsCode, 
+    or(nil, ""), taking:nothing, 
+    "...", taking:everything, 
+    msg = Message fromText("from(#{argumentsCode})") 
+    if(msg next, error!("Invalid argumentsCode: " +(argumentsCode))) 
+    msg sendTo(self)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00493"></a><b>keywords</b>()
+          </div>
+          <div class="description">
+            <p>returns the names for keyword arguments</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00494"></a><b>krest</b>()
+          </div>
+          <div class="description">
+            <p>returns the symbol name for the krest argument.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00501"></a><b>max</b>()
+          </div>
+          <div class="description">
+            <p>Return the maximum number of positional arguments. A negative value indicates rest positional arguments.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00501_source')" id="l_C00501_source">show source</a> ]</p>
+            <div id="C00501_source" class="dyn-source">
+<pre>
+method(
+  cond(takeNothing?, 0, 
+    takeEverything?, -(1), 
+    rest, -(1) *((positionals(true) length +(1))), 
+    positionals(true) length) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00500"></a><b>min</b>()
+          </div>
+          <div class="description">
+            <p>Return the minimun number of positional arguments</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00500_source')" id="l_C00500_source">show source</a> ]</p>
+            <div id="C00500_source" class="dyn-source">
+<pre>
+method(
+  positionals(false) length)
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00499"></a><b>optional</b>()
+          </div>
+          <div class="description">
+            <p>Return the names of optional positional arguments.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00499_source')" id="l_C00499_source">show source</a> ]</p>
+            <div id="C00499_source" class="dyn-source">
+<pre>
+method(
+  positionals(true) -(positionals(false)))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00492"></a><b>positionals</b>(includeOptionals true)
+          </div>
+          <div class="description">
+            <p>returns the names for positional arguments</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00498"></a><b>required</b>()
+          </div>
+          <div class="description">
+            <p>Return the names of required positional arguments.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00498_source')" id="l_C00498_source">show source</a> ]</p>
+            <div id="C00498_source" class="dyn-source">
+<pre>
+method(
+  positionals(false))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00495"></a><b>rest</b>()
+          </div>
+          <div class="description">
+            <p>returns the symbol name for the rest argument.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00505"></a><b>satisfied?</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00505_source')" id="l_C00505_source">show source</a> ]</p>
+            <div id="C00505_source" class="dyn-source">
+<pre>
+macro(
+  call resendToMethod(:apply) order ==(0))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00506"></a><b>satisfiedOn?</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00506_source')" id="l_C00506_source">show source</a> ]</p>
+            <div id="C00506_source" class="dyn-source">
+<pre>
+macro(
+  call resendToMethod(:applyOn) order ==(0))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00504"></a><b>takeEverything?</b>()
+          </div>
+          <div class="description">
+            <p>Return true if this arity takes everything. As is the case for macros or created from argumentsCode ... , it's also the arity needed to activate a non-activatable value</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00504_source')" id="l_C00504_source">show source</a> ]</p>
+            <div id="C00504_source" class="dyn-source">
+<pre>
+method(
+  self ==(taking:everything))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00502"></a><b>takeKeyword?</b>(keyword)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00502_source')" id="l_C00502_source">show source</a> ]</p>
+            <div id="C00502_source" class="dyn-source">
+<pre>
+method(keyword, 
+  if(krest, true, 
+    keywords include?(keyword)))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00503"></a><b>takeNothing?</b>()
+          </div>
+          <div class="description">
+            <p>Return true if this arity takes nothing. For things that take no arguments at all.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00503_source')" id="l_C00503_source">show source</a> ]</p>
+            <div id="C00503_source" class="dyn-source">
+<pre>
+method(
+  self ==(taking:nothing))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>

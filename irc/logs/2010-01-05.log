@@ -1,0 +1,21 @@
+<span class="irc-date">[0:15]</span> <span class="irc-navy">* felipero (n=Felipe@187-24-153-145.3g.claro.net.br) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[0:38]</span> <span class="irc-navy">* jdp (n=justin@75.97.120.11.res-cmts.senj.ptd.net) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[0:41]</span> <span class="irc-green">* jdp (n=justin@75.97.120.11.res-cmts.senj.ptd.net) has joined #ioke</span><br />
+<span class="irc-date">[1:08]</span> <span class="irc-navy">* IokeHurricane (n=IokeHurr@8.12.35.212) Quit (holmes.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[1:08]</span> <span class="irc-navy">* CIA-10 (n=CIA@208.69.182.149) Quit (holmes.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[1:08]</span> <span class="irc-navy">* jdp (n=justin@75.97.120.11.res-cmts.senj.ptd.net) Quit (holmes.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[1:08]</span> <span class="irc-navy">* skaar (n=skaar@substruction.net) Quit (holmes.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[1:15]</span> <span class="irc-green">* skaar (n=skaar@substruction.net) has joined #ioke</span><br />
+<span class="irc-date">[1:15]</span> <span class="irc-navy">* skaar (n=skaar@substruction.net) Quit (Success)</span><br />
+<span class="irc-date">[1:16]</span> <span class="irc-green">* jdp (n=justin@75.97.120.11.res-cmts.senj.ptd.net) has joined #ioke</span><br />
+<span class="irc-date">[1:16]</span> <span class="irc-green">* IokeHurricane (n=IokeHurr@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[1:16]</span> <span class="irc-green">* skaar (n=skaar@substruction.net) has joined #ioke</span><br />
+<span class="irc-date">[1:16]</span> <span class="irc-green">* CIA-10 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[1:38]</span> <span class="irc-navy">* jdp (n=justin@75.97.120.11.res-cmts.senj.ptd.net) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[13:39]</span> <span class="irc-green">* felipero (n=Felipe@189.27.40.162) has joined #ioke</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Ola Bini master * rd81e366 / (src/builtin/M05_ignoreErrors.ik test/conditions_spec.ik): Add support for Condition#ignore - <a href="http://bit.ly/7RUyfb">http://bit.ly/7RUyfb</a></span><br />
+<span class="irc-date">[17:10]</span> <span class="irc-green">* pdelgallego (n=pdelgall@1503031482.dhcp.dbnet.dk) has joined #ioke</span><br />
+<span class="irc-date">[18:26]</span> <span class="irc-navy">* pdelgallego (n=pdelgall@1503031482.dhcp.dbnet.dk) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[19:58]</span> <span class="irc-navy">* felipero (n=Felipe@189.27.40.162) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[21:53]</span> <span class="irc-navy">* CIA-10 (n=CIA@208.69.182.149) Quit ()</span><br />
+<span class="irc-date">[22:00]</span> <span class="irc-green">* CIA-11 (n=CIA@208.69.182.149) has joined #ioke</span><br />

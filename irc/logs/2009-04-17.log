@@ -1,0 +1,98 @@
+<span class="irc-date">[5:02]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[5:34]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[5:59]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[7:25]</span> <span class="irc-green">* olabini (n=ola@c-0b4de155.1110-8-64736c13.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[7:52]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[8:17]</span> <span class="irc-green">* naeu (n=sam@h36036.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:22]</span> <span class="irc-green">* exlibris (n=exlibris@port-87-193-165-87.static.qsc.de) has joined #ioke</span><br />
+<span class="irc-date">[8:29]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[9:24]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[10:46]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit ("Leaving")</span><br />
+<span class="irc-date">[10:47]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@nat/sun/x-d7219d7548d430a5) has joined #ioke</span><br />
+<span class="irc-date">[10:57]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[10:57]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[11:29]</span> <span class="irc-black">&lt;naeu&gt; hey ola</span><br />
+<span class="irc-date">[11:29]</span> <span class="irc-black">&lt;naeu&gt; did you see the new github issue system</span><br />
+<span class="irc-date">[11:30]</span> <span class="irc-black">&lt;naeu&gt; looks a lot nicer than kenai's...</span><br />
+<span class="irc-date">[12:00]</span> <span class="irc-black">&lt;olabini&gt; yeah, but it is _very_ limited</span><br />
+<span class="irc-date">[12:00]</span> <span class="irc-black">&lt;olabini&gt; no fields of any kind</span><br />
+<span class="irc-date">[12:04]</span> <span class="irc-black">&lt;naeu&gt; yeah, true</span><br />
+<span class="irc-date">[12:05]</span> <span class="irc-black">&lt;naeu&gt; but the tags are useful</span><br />
+<span class="irc-date">[12:05]</span> <span class="irc-black">&lt;naeu&gt; although I am biased - I think that kenai's bug tracker sucks</span><br />
+<span class="irc-date">[12:07]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[12:07]</span> <span class="irc-black">&lt;olabini&gt; well, the github tracker is worse in my mind - at least for now</span><br />
+<span class="irc-date">[12:12]</span> <span class="irc-black">&lt;naeu&gt; did you see my patch for Origin#eval</span><br />
+<span class="irc-date">[12:12]</span> <span class="irc-black">&lt;olabini&gt; nope</span><br />
+<span class="irc-date">[12:12]</span> <span class="irc-black">&lt;olabini&gt; I haven't spent muh</span><br />
+<span class="irc-date">[12:13]</span> <span class="irc-black">&lt;olabini&gt; much time on ioke this week</span><br />
+<span class="irc-date">[12:14]</span> <span class="irc-black">&lt;naeu&gt; that's ok :-)</span><br />
+<span class="irc-date">[12:14]</span> <span class="irc-black">&lt;naeu&gt; it's good to have a break</span><br />
+<span class="irc-date">[12:15]</span> <span class="irc-black">&lt;naeu&gt; I only have enough time to tinker</span><br />
+<span class="irc-date">[12:16]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[12:16]</span> <span class="irc-black">&lt;olabini&gt; well. I have a break by working hard on other stuff</span><br />
+<span class="irc-date">[12:16]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[12:45]</span> <span class="irc-black">&lt;naeu&gt; yey, my copy of metamagical themas just arrived</span><br />
+<span class="irc-date">[12:45]</span> <span class="irc-black">&lt;naeu&gt; and a copy of Hofstadter's edit of G??del's Proof</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;olabini&gt; nice</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;olabini&gt; the latter I haven't seen</span><br />
+<span class="irc-date">[13:25]</span> <span class="irc-black">&lt;olabini&gt; "metamagical themas" is good reading</span><br />
+<span class="irc-date">[13:46]</span> <span class="irc-black">&lt;naeu&gt; yeah, i bought it on your recommendation :-)</span><br />
+<span class="irc-date">[13:47]</span> <span class="irc-black">&lt;naeu&gt; especially since you said it was a nice collection of essays</span><br />
+<span class="irc-date">[13:47]</span> <span class="irc-black">&lt;naeu&gt; which is exactly the kind of thing i need right now</span><br />
+<span class="irc-date">[13:54]</span> <span class="irc-black">&lt;olabini&gt; mm</span><br />
+<span class="irc-date">[13:55]</span> <span class="irc-black">&lt;olabini&gt; hope you enjoy it</span><br />
+<span class="irc-date">[13:55]</span> <span class="irc-black">&lt;naeu&gt; me too</span><br />
+<span class="irc-date">[13:55]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[15:15]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[15:32]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[15:41]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit ()</span><br />
+<span class="irc-date">[16:09]</span> <span class="irc-green">* donizetti (n=donizett@189.120.172.193) has joined #ioke</span><br />
+<span class="irc-date">[17:00]</span> <span class="irc-navy">* exlibris (n=exlibris@port-87-193-165-87.static.qsc.de) Quit ("Leaving...")</span><br />
+<span class="irc-date">[17:26]</span> <span class="irc-navy">* naeu (n=sam@h36036.upc-h.chello.nl) Quit ()</span><br />
+<span class="irc-date">[17:54]</span> <span class="irc-green">* donizetti_ (n=donizett@189.120.172.193) has joined #ioke</span><br />
+<span class="irc-date">[17:56]</span> <span class="irc-green">* donizetti_ (n=donizett@189.120.172.193) has left #ioke</span><br />
+<span class="irc-date">[18:04]</span> <span class="irc-navy">* donizetti (n=donizett@189.120.172.193) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[18:08]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@nat/sun/x-d7219d7548d430a5) Quit ("Leaving")</span><br />
+<span class="irc-date">[18:09]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@nat/sun/x-a6be1780719a9062) has joined #ioke</span><br />
+<span class="irc-date">[18:09]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@nat/sun/x-a6be1780719a9062) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[18:09]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[18:29]</span> <span class="irc-green">* bguthrie (n=bguthrie@75.40.150.130) has joined #ioke</span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[19:16]</span> <span class="irc-black">&lt;naeu&gt; hey ola, have you read this: <a href="http://github.com/raganwald/homoiconic/blob/master/2009-04-17/eggs.md#readme">http://github.com/raganwald/homoiconic/blob/master/2009-04-17/eggs.md#readme</a></span><br />
+<span class="irc-date">[19:23]</span> <span class="irc-black">&lt;bguthrie&gt; hey, has anyone managed to get additional jars loaded into an ioke runtime? I can't seem to make it happen</span><br />
+<span class="irc-date">[19:23]</span> <span class="irc-black">&lt;bguthrie&gt; exporting CLASSPATH pointing it to the dir I want but the classes aren't showing up</span><br />
+<span class="irc-date">[19:24]</span> <span class="irc-black">&lt;naeu&gt; bguthrie: hey there</span><br />
+<span class="irc-date">[19:24]</span> <span class="irc-black">&lt;naeu&gt; sorry, i haven't played with the java integration stuff yet</span><br />
+<span class="irc-date">[19:24]</span> <span class="irc-black">&lt;bguthrie&gt; naeu: hey, how's it going?</span><br />
+<span class="irc-date">[19:24]</span> <span class="irc-black">&lt;naeu&gt; pretty good</span><br />
+<span class="irc-date">[19:25]</span> <span class="irc-black">&lt;naeu&gt; been having a big fundamental discussion with Susanna about the future</span><br />
+<span class="irc-date">[19:25]</span> <span class="irc-black">&lt;naeu&gt; heavy stuff</span><br />
+<span class="irc-date">[19:25]</span> <span class="irc-black">&lt;naeu&gt; she's got an interview at Cambridge University for a Ph.D.</span><br />
+<span class="irc-date">[19:25]</span> <span class="irc-black">&lt;bguthrie&gt; wow, good stuff</span><br />
+<span class="irc-date">[19:26]</span> <span class="irc-black">&lt;naeu&gt; yeah, although if she gets it it will mean moving back to England</span><br />
+<span class="irc-date">[19:26]</span> <span class="irc-black">&lt;naeu&gt; so that's a big thing</span><br />
+<span class="irc-date">[19:26]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[19:26]</span> <span class="irc-black">&lt;naeu&gt; but it would be amazing if she was offered the scholarship</span><br />
+<span class="irc-date">[19:28]</span> <span class="irc-black">&lt;naeu&gt; how are you doing?</span><br />
+<span class="irc-date">[19:28]</span> <span class="irc-black">&lt;bguthrie&gt; well good luck to her</span><br />
+<span class="irc-date">[19:28]</span> <span class="irc-black">&lt;bguthrie&gt; doing well, no complaints. beautiful day in Chicago</span><br />
+<span class="irc-date">[19:34]</span> <span class="irc-black">&lt;naeu&gt; ooh nice</span><br />
+<span class="irc-date">[19:35]</span> <span class="irc-black">&lt;naeu&gt; it's dark here in Amsterdam</span><br />
+<span class="irc-date">[19:35]</span> <span class="irc-black">&lt;naeu&gt; but we did have a beautiful day :-)</span><br />
+<span class="irc-date">[19:35]</span> <span class="irc-black">&lt;naeu&gt; and I've almost finished writing my Ioke JSON parser</span><br />
+<span class="irc-date">[19:49]</span> <span class="irc-navy">* bguthrie (n=bguthrie@75.40.150.130) Quit ()</span><br />
+<span class="irc-date">[20:11]</span> <span class="irc-green">* bguthrie (n=bguthrie@75.40.150.130) has joined #ioke</span><br />
+<span class="irc-date">[20:13]</span> <span class="irc-black">&lt;naeu&gt; does anyone know if an equivalent of Hash#values exists in Ioke?</span><br />
+<span class="irc-date">[20:13]</span> <span class="irc-black">&lt;naeu&gt; I can't find one</span><br />
+<span class="irc-date">[20:18]</span> <span class="irc-green">* martido (n=martin@dslb-088-065-202-236.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-black">&lt;bguthrie&gt; naeu: not as far as I can tell.</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-black">&lt;bguthrie&gt; would be a good thing to add</span><br />
+<span class="irc-date">[20:30]</span> <span class="irc-black">&lt;naeu&gt; bguthrie: yeah, definitely</span><br />
+<span class="irc-date">[20:47]</span> <span class="irc-navy">* martido (n=martin@dslb-088-065-202-236.pools.arcor-ip.net) Quit ()</span><br />
+<span class="irc-date">[20:55]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[21:09]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[21:16]</span> <span class="irc-navy">* bguthrie (n=bguthrie@75.40.150.130) Quit ()</span><br />
+<span class="irc-date">[21:18]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[21:25]</span> <span class="irc-green">* bguthrie (n=bguthrie@75.40.150.130) has joined #ioke</span><br />
+<span class="irc-date">[21:25]</span> <span class="irc-navy">* bguthrie (n=bguthrie@75.40.150.130) Quit (Client Quit)</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />

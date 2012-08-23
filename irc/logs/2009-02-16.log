@@ -1,0 +1,265 @@
+<span class="irc-date">[0:13]</span> <span class="irc-navy">* bguthrie (n=bguthrie@195.sub-75-199-23.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[1:06]</span> <span class="irc-green">* cv (n=cv@5ad58ae5.bb.sky.com) has left #ioke</span><br />
+<span class="irc-date">[2:48]</span> <span class="irc-green">* protoscript (n=jay@c-69-248-249-247.hsd1.nj.comcast.net) has joined #ioke</span><br />
+<span class="irc-date">[3:43]</span> <span class="irc-green">* nathan_hartman (n=user@adsl-70-240-202-153.dsl.hstntx.swbell.net) has joined #ioke</span><br />
+<span class="irc-date">[3:44]</span> <span class="irc-navy">* nathan_hartman (n=user@adsl-70-240-202-153.dsl.hstntx.swbell.net) Quit (Client Quit)</span><br />
+<span class="irc-date">[7:25]</span> <span class="irc-green">* olabini (n=ola@c-d14fe155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[7:25]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[7:36]</span> <span class="irc-navy">* olabini (n=ola@c-d14fe155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[8:13]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:38]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[8:44]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:45]</span> <span class="irc-black">&lt;Narnach&gt; Good morning!</span><br />
+<span class="irc-date">[8:49]</span> <span class="irc-black">&lt;martido&gt; Good morning, Narnach!</span><br />
+<span class="irc-date">[8:50]</span> <span class="irc-black">&lt;naeu&gt; Narnach: morning :-)</span><br />
+<span class="irc-date">[8:57]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[9:16]</span> <span class="irc-green">* naeu (n=sam@h253136.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-green">* olabini (n=ola@194.132.20.9) has joined #ioke</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[9:42]</span> <span class="irc-green">* olabini (n=ola@194.132.20.9) has left #ioke</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-green">* olabini (n=ola@194.132.20.9) has joined #ioke</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[14:16]</span> <span class="irc-navy">* protoscript (n=jay@c-69-248-249-247.hsd1.nj.comcast.net) Quit ()</span><br />
+<span class="irc-date">[14:56]</span> <span class="irc-green">* travisennis (n=travisen@208.96.144.88) has joined #ioke</span><br />
+<span class="irc-date">[14:56]</span> <span class="irc-green">* travisennis (n=travisen@208.96.144.88) has left #ioke</span><br />
+<span class="irc-date">[15:12]</span> <span class="irc-navy">* olabini (n=ola@194.132.20.9) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-navy">* naeu (n=sam@h253136.upc-h.chello.nl) Quit ()</span><br />
+<span class="irc-date">[17:03]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[17:26]</span> <span class="irc-green">* naeu (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[17:51]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has left #ioke</span><br />
+<span class="irc-date">[17:58]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:02]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-42.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:14]</span> <span class="irc-black">&lt;naeu&gt; Narnach: I just pushed a new version of the tm bundle to melwin/tm_bundle_updates</span><br />
+<span class="irc-date">[18:14]</span> <span class="irc-black">&lt;naeu&gt; I'd be interested to know how it works for you :-)</span><br />
+<span class="irc-date">[18:17]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-42.vc-graz.ac.at) Quit ()</span><br />
+<span class="irc-date">[18:17]</span> <span class="irc-black">&lt;Narnach&gt; naeu: I'll check it out in a bit</span><br />
+<span class="irc-date">[18:17]</span> <span class="irc-black">&lt;naeu&gt; cool</span><br />
+<span class="irc-date">[18:22]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit ()</span><br />
+<span class="irc-date">[18:38]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-42.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[19:31]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[19:38]</span> <span class="irc-green">* olabini (n=ola@c-d14fe155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[19:38]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[19:58]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[19:59]</span> <span class="irc-black">&lt;naeu&gt; evening all</span><br />
+<span class="irc-date">[19:59]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[20:08]</span> <span class="irc-black">&lt;Narnach&gt; naeu: hello again</span><br />
+<span class="irc-date">[20:11]</span> <span class="irc-black">&lt;naeu&gt; hey hey</span><br />
+<span class="irc-date">[20:14]</span> <span class="irc-black">&lt;Narnach&gt; naeu: the tm bundle from melwin/tm_bundle_updates seems to work for me</span><br />
+<span class="irc-date">[20:14]</span> <span class="irc-black">&lt;naeu&gt; smashing :-)</span><br />
+<span class="irc-date">[20:14]</span> <span class="irc-black">&lt;naeu&gt; I tidied it up quite a bit</span><br />
+<span class="irc-date">[20:14]</span> <span class="irc-black">&lt;naeu&gt; and fixed a few bugs</span><br />
+<span class="irc-date">[20:15]</span> <span class="irc-black">&lt;Narnach&gt; bug squashing is always good</span><br />
+<span class="irc-date">[20:15]</span> <span class="irc-black">&lt;naeu&gt; indeed :-)</span><br />
+<span class="irc-date">[20:15]</span> <span class="irc-black">&lt;Narnach&gt; too bad those xml diffs are a nasty thing to read</span><br />
+<span class="irc-date">[20:15]</span> <span class="irc-black">&lt;Narnach&gt; makes it hard to see what happens</span><br />
+<span class="irc-date">[20:15]</span> <span class="irc-black">&lt;naeu&gt; i wish there was a decent way to test this stuff</span><br />
+<span class="irc-date">[20:16]</span> <span class="irc-black">&lt;naeu&gt; yeah, the xml diffs are truly awful</span><br />
+<span class="irc-date">[20:16]</span> <span class="irc-black">&lt;Narnach&gt; re testing: poke us here in #ioke and hope for the best? :)</span><br />
+<span class="irc-date">[20:16]</span> <span class="irc-black">&lt;naeu&gt; i essentially removed a lot of duplication with the interpolated code stuff</span><br />
+<span class="irc-date">[20:17]</span> <span class="irc-black">&lt;naeu&gt; yeah it's good to get other people to try stuff out</span><br />
+<span class="irc-date">[20:17]</span> <span class="irc-black">&lt;naeu&gt; it's just that it's totally easy to add regressions whilst tweaking something out</span><br />
+<span class="irc-date">[20:17]</span> <span class="irc-black">&lt;Narnach&gt; yep</span><br />
+<span class="irc-date">[20:18]</span> <span class="irc-black">&lt;Narnach&gt; bundles are not testable in some way beyond syntax checking, right?</span><br />
+<span class="irc-date">[20:27]</span> <span class="irc-black">&lt;naeu&gt; not right now</span><br />
+<span class="irc-date">[20:28]</span> <span class="irc-black">&lt;naeu&gt; although i think that might change with TM2</span><br />
+<span class="irc-date">[20:28]</span> <span class="irc-black">&lt;Narnach&gt; ok... that would be interesting</span><br />
+<span class="irc-date">[20:31]</span> <span class="irc-black">&lt;naeu&gt; yeah, totally</span><br />
+<span class="irc-date">[20:54]</span> <span class="irc-green">* Narnach_ (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:56]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[21:00]</span> <span class="irc-green">* Narnach_ is now known as Narnach</span><br />
+<span class="irc-date">[21:21]</span> <span class="irc-black">&lt;naeu&gt; does anyone know what the equivalent of /Library/Java/Extensions is for Soylatte?</span><br />
+<span class="irc-date">[21:41]</span> <span class="irc-green">* cv (n=cv@5ad58ae5.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[21:59]</span> <span class="irc-black">&lt;naeu&gt; olabini: are you having doubts about ioke?</span><br />
+<span class="irc-date">[22:05]</span> <span class="irc-black">&lt;Narnach&gt; naeu: are you referring to the no evangelism tweet?</span><br />
+<span class="irc-date">[22:06]</span> <span class="irc-black">&lt;naeu&gt; yep, I am</span><br />
+<span class="irc-date">[22:06]</span> <span class="irc-black">&lt;Narnach&gt; that one got me curious as well</span><br />
+<span class="irc-date">[22:08]</span> <span class="irc-green">* rush (n=rush@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-42.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[22:12]</span> <span class="irc-black">&lt;olabini&gt; naeu: no, don't worry</span><br />
+<span class="irc-date">[22:12]</span> <span class="irc-black">&lt;olabini&gt; no doubts at all</span><br />
+<span class="irc-date">[22:12]</span> <span class="irc-black">&lt;olabini&gt; not from my personal angle</span><br />
+<span class="irc-date">[22:12]</span> <span class="irc-black">&lt;olabini&gt; but I definitely feel I don't want to push it</span><br />
+<span class="irc-date">[22:12]</span> <span class="irc-black">&lt;naeu&gt; olabini: are you just being careful about accidentally overhyping something that's not yet ready</span><br />
+<span class="irc-date">[22:14]</span> <span class="irc-black">&lt;olabini&gt; well, that's part of it</span><br />
+<span class="irc-date">[22:14]</span> <span class="irc-black">&lt;olabini&gt; let's see how to explain this...</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;naeu&gt; are you unable to fully explain it because there are things that are confidential?</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;olabini&gt; I'm glad I'll get to talk about Ioke in Amsterdam, and at TW in London</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;naeu&gt; or is it a matter of conflict?</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;olabini&gt; no, wait. I'm trying to formulate this</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;olabini&gt; it's hard, because I'm tired, quite drunk, and has had a bad day</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[22:15]</span> <span class="irc-black">&lt;olabini&gt; anyway</span><br />
+<span class="irc-date">[22:16]</span> <span class="irc-black">&lt;naeu&gt; have a friendly hug :-)</span><br />
+<span class="irc-date">[22:16]</span> <span class="irc-black">&lt;olabini&gt; I've heard several people lately ask if I'm going to be presenting Ioke at Ruby or Rails conferences</span><br />
+<span class="irc-date">[22:16]</span> <span class="irc-black">&lt;olabini&gt; and I've been told that I should supply proposals for those kind of things</span><br />
+<span class="irc-date">[22:16]</span> <span class="irc-black">&lt;olabini&gt; and I think that this is where I feel slightly ambivalent</span><br />
+<span class="irc-date">[22:16]</span> <span class="irc-black">&lt;olabini&gt; 1. Ioke is not even close to be ready yet</span><br />
+<span class="irc-date">[22:17]</span> <span class="irc-black">&lt;olabini&gt; 2. Ioke has a pretty dissimilar goal to Ruby, but it's been this automatic association because I'm a Ruby person, and also the DSL and metaprogramming features look alike.</span><br />
+<span class="irc-date">[22:17]</span> <span class="irc-black">&lt;olabini&gt; some of the core is similar to Ruby, but for different reasons</span><br />
+<span class="irc-date">[22:18]</span> <span class="irc-black">&lt;naeu&gt; how do you see the goals as being dissimilar?</span><br />
+<span class="irc-date">[22:18]</span> <span class="irc-black">&lt;olabini&gt; 3. The goal of Ioke is much more focused than Ruby's. Matz wanted a language for himself that he could use as a replacement for all his scripting needs</span><br />
+<span class="irc-date">[22:18]</span> <span class="irc-black">&lt;naeu&gt; yes, very true</span><br />
+<span class="irc-date">[22:18]</span> <span class="irc-black">&lt;olabini&gt; that's not exactly what I'm looking for. yes, I hope and think that Ioke will be more suitable for me to use than something like JRuby</span><br />
+<span class="irc-date">[22:18]</span> <span class="irc-black">&lt;olabini&gt; but I'm also more unsure that it's a language that is suited for more people</span><br />
+<span class="irc-date">[22:19]</span> <span class="irc-black">&lt;naeu&gt; I also agree there too</span><br />
+<span class="irc-date">[22:19]</span> <span class="irc-black">&lt;olabini&gt; I've been very specific in the design, trying to be egoistic - design it from my own wants and needs and aestethics</span><br />
+<span class="irc-date">[22:19]</span> <span class="irc-black">&lt;naeu&gt; and please continue to do so</span><br />
+<span class="irc-date">[22:19]</span> <span class="irc-black">&lt;olabini&gt; which means that there is a large possibility that other people trying it will definitely not like it</span><br />
+<span class="irc-date">[22:19]</span> <span class="irc-black">&lt;olabini&gt; and I'm fine with that</span><br />
+<span class="irc-date">[22:19]</span> <span class="irc-black">&lt;olabini&gt; ... I guess what I'm trying to say is that I really don't want to do an Arc.</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;Narnach&gt; :D</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;olabini&gt; and if the choice is overhyping or underhyping, I'm strongly for underhyping</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt; totally</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;olabini&gt; I love talking about it, if people ask for it</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;naeu&gt; can I give you my tuppence worth?</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;olabini&gt; but I'm thinking that I'll try to not push people for it - which is why I feel submitting proposals might not be the best way</span><br />
+<span class="irc-date">[22:20]</span> <span class="irc-black">&lt;olabini&gt; I know I can get sessions at several conferences if I submit a proposal</span><br />
+<span class="irc-date">[22:21]</span> <span class="irc-black">&lt;olabini&gt; but it doesn't feel like the right venues, necessarily</span><br />
+<span class="irc-date">[22:21]</span> <span class="irc-black">&lt;olabini&gt; and not for the right reasons</span><br />
+<span class="irc-date">[22:21]</span> <span class="irc-black">&lt;olabini&gt; yes, Sam, please go ahead. =)</span><br />
+<span class="irc-date">[22:21]</span> <span class="irc-black">&lt;naeu&gt; first up, conferences</span><br />
+<span class="irc-date">[22:21]</span> <span class="irc-black">&lt;naeu&gt; you are Ola Bini - everyone who knows what they're doing will want you speaking at their conference</span><br />
+<span class="irc-date">[22:22]</span> <span class="irc-black">&lt;naeu&gt; so don't submit for anything you don't fancy, and for anything you don't feel is totally suited to your goals</span><br />
+<span class="irc-date">[22:22]</span> <span class="irc-black">&lt;naeu&gt; so please ignore all calls for proprosals unless they match your goals, which brings me to my second point:</span><br />
+<span class="irc-date">[22:22]</span> <span class="irc-black">&lt;naeu&gt; goals!</span><br />
+<span class="irc-date">[22:23]</span> <span class="irc-black">&lt;naeu&gt; Ioke is clearly an experiment</span><br />
+<span class="irc-date">[22:23]</span> <span class="irc-black">&lt;naeu&gt; and that's a great thing</span><br />
+<span class="irc-date">[22:23]</span> <span class="irc-black">&lt;naeu&gt; the thing is, I personally, and I'm sure a lot of other people, are very interested in your hypothesis</span><br />
+<span class="irc-date">[22:24]</span> <span class="irc-black">&lt;naeu&gt; i.e. what is it you're seeking through Ioke</span><br />
+<span class="irc-date">[22:24]</span> <span class="irc-black">&lt;naeu&gt; I believe that is a much more interesting conference presentation than one on Ioke in general</span><br />
+<span class="irc-date">[22:25]</span> <span class="irc-black">&lt;naeu&gt; and yes, use bits of Ioke to explain what you're trying to do</span><br />
+<span class="irc-date">[22:25]</span> <span class="irc-black">&lt;naeu&gt; but I think your goals are much more interesting than the language you're creating in search of them</span><br />
+<span class="irc-date">[22:25]</span> <span class="irc-black">&lt;naeu&gt; and thirdly (and lastly)</span><br />
+<span class="irc-date">[22:25]</span> <span class="irc-black">&lt;naeu&gt; focus on your goals</span><br />
+<span class="irc-date">[22:25]</span> <span class="irc-black">&lt;naeu&gt; don't worry for one second about the popularity (or lack thereof) of Ioke</span><br />
+<span class="irc-date">[22:26]</span> <span class="irc-black">&lt;naeu&gt; communities will create and manage themselves</span><br />
+<span class="irc-date">[22:26]</span> <span class="irc-black">&lt;naeu&gt; all they need is an open dialogue with you which will initially start out of interest in what you're doing</span><br />
+<span class="irc-date">[22:26]</span> <span class="irc-black">&lt;olabini&gt; yep, true, and all things reasoned the way I reason about them myselves</span><br />
+<span class="irc-date">[22:26]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[22:26]</span> <span class="irc-black">&lt;olabini&gt; my geek night in London will not actually be about Ioke only</span><br />
+<span class="irc-date">[22:26]</span> <span class="irc-black">&lt;olabini&gt; but about implementing JVM languages, with extra focus on Ioke</span><br />
+<span class="irc-date">[22:27]</span> <span class="irc-black">&lt;naeu&gt; great!</span><br />
+<span class="irc-date">[22:27]</span> <span class="irc-black">&lt;olabini&gt; I think I'll have to write a blog post about these things a bit more</span><br />
+<span class="irc-date">[22:27]</span> <span class="irc-black">&lt;olabini&gt; concretize my thinking around it</span><br />
+<span class="irc-date">[22:27]</span> <span class="irc-black">&lt;naeu&gt; sure</span><br />
+<span class="irc-date">[22:27]</span> <span class="irc-black">&lt;naeu&gt; but have no problem with hyping your goals</span><br />
+<span class="irc-date">[22:27]</span> <span class="irc-black">&lt;olabini&gt; it's interesting, writing a blog post generally solidifies thinking about stuff</span><br />
+<span class="irc-date">[22:27]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[22:27]</span> <span class="irc-black">&lt;olabini&gt; true</span><br />
+<span class="irc-date">[22:27]</span> <span class="irc-black">&lt;naeu&gt; in fact, I would add extra gusto into that</span><br />
+<span class="irc-date">[22:27]</span> <span class="irc-black">&lt;olabini&gt; true enough</span><br />
+<span class="irc-date">[22:27]</span> <span class="irc-black">&lt;olabini&gt; but actually, I won't need to</span><br />
+<span class="irc-date">[22:28]</span> <span class="irc-black">&lt;olabini&gt; my goals are the star</span><br />
+<span class="irc-date">[22:28]</span> <span class="irc-black">&lt;olabini&gt; stars</span><br />
+<span class="irc-date">[22:28]</span> <span class="irc-black">&lt;Narnach&gt; :)</span><br />
+<span class="irc-date">[22:28]</span> <span class="irc-black">&lt;naeu&gt; just make sure people know that Ioke is an experiment in search of validating your goals</span><br />
+<span class="irc-date">[22:28]</span> <span class="irc-black">&lt;olabini&gt; that was totally ungrammatical, I know</span><br />
+<span class="irc-date">[22:28]</span> <span class="irc-black">&lt;naeu&gt; well tell everyone which stars</span><br />
+<span class="irc-date">[22:28]</span> <span class="irc-black">&lt;naeu&gt; and how you intend to get there</span><br />
+<span class="irc-date">[22:28]</span> <span class="irc-black">&lt;naeu&gt; and let us take a backseat for the ride</span><br />
+<span class="irc-date">[22:28]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[22:28]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[22:29]</span> <span class="irc-black">&lt;naeu&gt; Ola, I have no idea how you feel about yourself</span><br />
+<span class="irc-date">[22:29]</span> <span class="irc-black">&lt;naeu&gt; but from my perspective, you're truly inspiring</span><br />
+<span class="irc-date">[22:29]</span> <span class="irc-black">&lt;rush&gt; olabini: As a newbie here, your comments raise a question for me. Ioke is interesting right now, but if it is to become a real alternative for people, you'd have to give up some control .. probably. And then it might not be what you want it to be. What're your thoughts in that area?</span><br />
+<span class="irc-date">[22:30]</span> <span class="irc-black">&lt;olabini&gt; rush: good question</span><br />
+<span class="irc-date">[22:30]</span> <span class="irc-black">&lt;rush&gt; (To be clear - it is your project and you can do whatever the hell you like with it)</span><br />
+<span class="irc-date">[22:30]</span> <span class="irc-black">&lt;olabini&gt; and yes, if I want to have Ioke become a real alternative, I have to do that</span><br />
+<span class="irc-date">[22:30]</span> <span class="irc-black">&lt;olabini&gt; and yes, I will do that when and if I feel that Ioke has the potential to become a real alternative</span><br />
+<span class="irc-date">[22:31]</span> <span class="irc-black">&lt;olabini&gt; at that point I will try to use the same approach as Matz, an approach I highly respect</span><br />
+<span class="irc-date">[22:31]</span> <span class="irc-black">&lt;olabini&gt; he's been very good at having a specific vision, and keeping to that</span><br />
+<span class="irc-date">[22:31]</span> <span class="irc-black">&lt;olabini&gt; and the people he chooses has been very good at that to</span><br />
+<span class="irc-date">[22:33]</span> <span class="irc-black">&lt;rush&gt; A fair answer.</span><br />
+<span class="irc-date">[22:33]</span> <span class="irc-black">&lt;olabini&gt; but I'll take that problem when it arrives</span><br />
+<span class="irc-date">[22:33]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[22:33]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[22:34]</span> <span class="irc-black">&lt;cv&gt; it'll be a great problem to have, mind</span><br />
+<span class="irc-date">[22:35]</span> <span class="irc-black">&lt;rush&gt; it's never too early to start planning for success.</span><br />
+<span class="irc-date">[22:37]</span> <span class="irc-black">&lt;olabini&gt; haha</span><br />
+<span class="irc-date">[22:37]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[22:37]</span> <span class="irc-black">&lt;olabini&gt; I'm thinking that the Haskell way of avoiding success might be the right answer</span><br />
+<span class="irc-date">[22:37]</span> <span class="irc-black">&lt;Narnach&gt; :)</span><br />
+<span class="irc-date">[22:38]</span> <span class="irc-black">&lt;naeu&gt; olabini: is that a formalised technique? ;-)</span><br />
+<span class="irc-date">[22:38]</span> <span class="irc-black">&lt;olabini&gt; well, since it's been done before, I guess it's at least established</span><br />
+<span class="irc-date">[22:38]</span> <span class="irc-black">&lt;rush&gt; I live in Glasgow, and generations of students here have been force-fed Haskell. That's no way to do anything.</span><br />
+<span class="irc-date">[22:38]</span> <span class="irc-black">&lt;olabini&gt; haha</span><br />
+<span class="irc-date">[22:38]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[22:38]</span> <span class="irc-black">&lt;rush&gt; *shudder*</span><br />
+<span class="irc-date">[22:38]</span> <span class="irc-black">&lt;olabini&gt; of course, from a wannabe-cs-perspective I can kinda understand it</span><br />
+<span class="irc-date">[22:39]</span> <span class="irc-black">&lt;olabini&gt; the same way I understand way the 601 course was traditionally done in Scheme</span><br />
+<span class="irc-date">[22:39]</span> <span class="irc-black">&lt;olabini&gt; I fear that they now use Java for 601</span><br />
+<span class="irc-date">[22:39]</span> <span class="irc-black">&lt;rush&gt; Unless you mean that all TW consultants will force people to learn Ioke irrespective of what they or the world wants.</span><br />
+<span class="irc-date">[22:39]</span> <span class="irc-black">&lt;olabini&gt; let me change the emphasis there</span><br />
+<span class="irc-date">[22:39]</span> <span class="irc-black">&lt;olabini&gt; I am deeply scared for the future of the world, based on the fact that 601 is using Java</span><br />
+<span class="irc-date">[22:39]</span> <span class="irc-black">&lt;olabini&gt; rush: I'm quite sure that won't happen</span><br />
+<span class="irc-date">[22:39]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[22:40]</span> <span class="irc-black">&lt;rush&gt; Sorry, I've interviewed so many people that cry at the mention of Haskell .. brings me out in hives.</span><br />
+<span class="irc-date">[22:40]</span> <span class="irc-black">&lt;naeu&gt; olabini: do you fear that Java is never going to go away?</span><br />
+<span class="irc-date">[22:40]</span> <span class="irc-black">&lt;olabini&gt; most TW consultants probably still think I'm a bit of a kook since I hate the Java language so much</span><br />
+<span class="irc-date">[22:40]</span> <span class="irc-black">&lt;cv&gt; rush: +1 -- you ask 3 TWers which language they prefer and you get 80 answers</span><br />
+<span class="irc-date">[22:40]</span> <span class="irc-black">&lt;olabini&gt; naeu: JAva is ok</span><br />
+<span class="irc-date">[22:40]</span> <span class="irc-black">&lt;olabini&gt; Java</span><br />
+<span class="irc-date">[22:40]</span> <span class="irc-black">&lt;olabini&gt; but the language will continue to be around more as a systems language, but not an application language</span><br />
+<span class="irc-date">[22:40]</span> <span class="irc-black">&lt;olabini&gt; the JVM will have 20 years, at least</span><br />
+<span class="irc-date">[22:40]</span> <span class="irc-black">&lt;naeu&gt; oh, is it that you're scared of the kind of programmers will be created by a 601 Java course?</span><br />
+<span class="irc-date">[22:41]</span> <span class="irc-black">&lt;olabini&gt; it's getting more and more expensive to invest in infrastructure, and the existing investments in the JVM should not go to waste</span><br />
+<span class="irc-date">[22:41]</span> <span class="irc-black">&lt;olabini&gt; naeu: well, the 601 (I think it is 601 ... am I wrong on the number?)</span><br />
+<span class="irc-date">[22:41]</span> <span class="irc-black">&lt;naeu&gt; different universities use different numbers, I'm sure</span><br />
+<span class="irc-date">[22:41]</span> <span class="irc-black">&lt;olabini&gt; is a the first programming languages course in the really GOOD CS universities</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;naeu&gt; if your'e referring to the first course</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;naeu&gt; we called that 101</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;olabini&gt; it was tradiationally taught using the wizard book and Scheme</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;naeu&gt; I learnt C++</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;naeu&gt; and now they teach Java</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;naeu&gt; I couldn't stand any of it</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;olabini&gt; ah, it's the 6.001 course I'm talking about</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;naeu&gt; and learnt barely anything</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;rush&gt; A question, if you will. One of the things that interests me about Ioke is that it would seem that strict adherence to message passing would make it straight-forward to implement mail-box style concurrency. Is that one of your goals?</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;Narnach&gt; same here with Java</span><br />
+<span class="irc-date">[22:43]</span> <span class="irc-black">&lt;olabini&gt; rush: haven't decided yet</span><br />
+<span class="irc-date">[22:43]</span> <span class="irc-black">&lt;olabini&gt; am still considering how to do concurrency right</span><br />
+<span class="irc-date">[22:43]</span> <span class="irc-black">&lt;olabini&gt; you're correct that I could adopt a style like that</span><br />
+<span class="irc-date">[22:43]</span> <span class="irc-black">&lt;rush&gt; Of course, using straight-forward and concurrency in the same sentence does make me look like an idiot *grin*</span><br />
+<span class="irc-date">[22:43]</span> <span class="irc-black">&lt;olabini&gt; but there are also other alternatives</span><br />
+<span class="irc-date">[22:43]</span> <span class="irc-black">&lt;olabini&gt; the one thing I know I'm going to implement first is transparent futures, backed by thread pools.</span><br />
+<span class="irc-date">[22:44]</span> <span class="irc-black">&lt;olabini&gt; other than that, I'm not sure yet</span><br />
+<span class="irc-date">[22:44]</span> <span class="irc-black">&lt;olabini&gt; the Java integration has proved to be more complicated than I thought - partly because of other things intruding in my life at the momet</span><br />
+<span class="irc-date">[22:44]</span> <span class="irc-black">&lt;olabini&gt; moment</span><br />
+<span class="irc-date">[22:44]</span> <span class="irc-black">&lt;olabini&gt; so I'm focusing on that right now</span><br />
+<span class="irc-date">[22:47]</span> <span class="irc-black">&lt;rush&gt; For futures to be truly transparent, would the thread-pool have to be a global behind-the-scenes construct?</span><br />
+<span class="irc-date">[22:48]</span> <span class="irc-black">&lt;olabini&gt; possibly, yes.</span><br />
+<span class="irc-date">[22:48]</span> <span class="irc-black">&lt;olabini&gt; not really global, but Ioke runtime-global</span><br />
+<span class="irc-date">[22:49]</span> <span class="irc-black">&lt;olabini&gt; which should be OK</span><br />
+<span class="irc-date">[22:49]</span> <span class="irc-black">&lt;olabini&gt; cv: I don't think we're talking 80+ languages... probably only about 25. =)</span><br />
+<span class="irc-date">[22:50]</span> <span class="irc-black">&lt;olabini&gt; naeu: and to go back to your earlier comment: I'm glad I might be inspiring to others, but sadly, that doesn't extend to being inspiring to myself. =)</span><br />
+<span class="irc-date">[22:51]</span> <span class="irc-black">&lt;naeu&gt; olabini: I thought that might be the case</span><br />
+<span class="irc-date">[22:51]</span> <span class="irc-black">&lt;rush&gt; To make that sort of thing really transparent that approach is popular. But then things can get a little odd when users want to create threads and they have a balancing act where they can't see what's on one of the scales. I'll be interested to see how that turns out.</span><br />
+<span class="irc-date">[22:51]</span> <span class="irc-black">&lt;naeu&gt; but it might help to know that you inspire me</span><br />
+<span class="irc-date">[22:51]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[22:52]</span> <span class="irc-black">&lt;olabini&gt; rush: yes, truly</span><br />
+<span class="irc-date">[22:52]</span> <span class="irc-black">&lt;olabini&gt; we'll see how it works out</span><br />
+<span class="irc-date">[22:52]</span> <span class="irc-black">&lt;olabini&gt; nothing is set in stone, since I haven't implemented it yet</span><br />
+<span class="irc-date">[22:52]</span> <span class="irc-black">&lt;olabini&gt; and of course, since the features needed to make them transparent (specifically become) is actually already part of the language</span><br />
+<span class="irc-date">[22:52]</span> <span class="irc-black">&lt;olabini&gt; it should be quite trivial for someone to create a competing implementation for comparison</span><br />
+<span class="irc-date">[22:53]</span> <span class="irc-black">&lt;olabini&gt; in fact, the whole implementation is still tastefully small, and I would say that the cost for someone to do some radical changes would involve max 1 day to get to know the code base and then depending on the change wanted 1 hour to 1 week.</span><br />
+<span class="irc-date">[22:54]</span> <span class="irc-black">&lt;olabini&gt; where 1 week would be to implement some really large, sweeping changes</span><br />
+<span class="irc-date">[22:54]</span> <span class="irc-black">&lt;rush&gt; I guess, though, that the old 'Leaky Abstraction' notion comes into play. And even with the JVM you still need to care about the number of threads kicked off. To make them totally transparent is hard, hard, hard.</span><br />
+<span class="irc-date">[22:54]</span> <span class="irc-black">&lt;olabini&gt; ok. it's late-time in Sweden</span><br />
+<span class="irc-date">[22:54]</span> <span class="irc-black">&lt;olabini&gt; rush: right, sadly, that's true. but that's why I want to model them as futures, so they're at least one step removed from threads</span><br />
+<span class="irc-date">[22:55]</span> <span class="irc-black">&lt;rush&gt; I had been wondering what Ioke would look like if you made every object active and implemented everything in terms of futures.</span><br />
+<span class="irc-date">[22:55]</span> <span class="irc-black">&lt;olabini&gt; rush: right. that's a good question. why don't you do it? =)</span><br />
+<span class="irc-date">[22:55]</span> <span class="irc-black">&lt;olabini&gt; anyway. good night, people</span><br />
+<span class="irc-date">[22:55]</span> <span class="irc-black">&lt;Narnach&gt; good night</span><br />
+<span class="irc-date">[22:55]</span> <span class="irc-black">&lt;rush&gt; G'night.</span><br />
+<span class="irc-date">[22:55]</span> <span class="irc-brick">* olabini is going to sleep on a blog post, talking about my lack of evangilizing interest.</span><br />
+<span class="irc-date">[22:57]</span> <span class="irc-black">&lt;naeu&gt; night night</span><br />
+<span class="irc-date">[23:00]</span> <span class="irc-brick">* cv is reading through the logs</span><br />
+<span class="irc-date">[23:01]</span> <span class="irc-black">&lt;cv&gt; quite a philosophical night, it seems</span><br />
+<span class="irc-date">[23:01]</span> <span class="irc-black">&lt;cv&gt; need to get ola drunk more often</span><br />
+<span class="irc-date">[23:01]</span> <span class="irc-black">&lt;cv&gt; :)</span><br />
+<span class="irc-date">[23:01]</span> <span class="irc-black">&lt;Narnach&gt; :)</span><br />
+<span class="irc-date">[23:02]</span> <span class="irc-black">&lt;Narnach&gt; well, bedtime for me as well. good night!</span><br />
+<span class="irc-date">[23:02]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit ("Leaving...")</span><br />

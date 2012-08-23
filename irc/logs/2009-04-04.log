@@ -1,0 +1,26 @@
+<span class="irc-date">[7:18]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-45.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[8:24]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-45.vc-graz.ac.at) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-green">* martido (n=martin@dslb-088-067-179-023.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-green">* martido_ (n=martin@dslb-088-067-179-023.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-navy">* martido_ (n=martin@dslb-088-067-179-023.pools.arcor-ip.net) Quit (Client Quit)</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-green">* martido_ (n=martin@dslb-088-067-179-023.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-navy">* martido_ (n=martin@dslb-088-067-179-023.pools.arcor-ip.net) Quit (Client Quit)</span><br />
+<span class="irc-date">[10:12]</span> <span class="irc-navy">* martido (n=martin@dslb-088-067-179-023.pools.arcor-ip.net) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[10:34]</span> <span class="irc-green">* martido (n=martin@dslb-088-067-179-023.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[11:05]</span> <span class="irc-navy">* martido (n=martin@dslb-088-067-179-023.pools.arcor-ip.net) Quit ()</span><br />
+<span class="irc-date">[11:07]</span> <span class="irc-green">* martido (n=martin@dslb-088-067-179-023.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * ra9ccaed / (docs/missing src/builtin/D40_text.ik test/text_spec.ik): Add Text#% - <a href="http://bit.ly/y1hao">http://bit.ly/y1hao</a></span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * r341c84b / (docs/missing src/builtin/D40_text.ik test/text_spec.ik): Add Text#=~ - <a href="http://bit.ly/3iqqje">http://bit.ly/3iqqje</a></span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * r39990dd / (5 files in 3 dirs): Add Text#!~ and Regexp#!~ - <a href="http://bit.ly/mVoDx">http://bit.ly/mVoDx</a></span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * r7ed4535 / (4 files in 2 dirs): Add some pending specs for what should be implemented for the Ioke E release - <a href="http://bit.ly/11tIa5">http://bit.ly/11tIa5</a></span><br />
+<span class="irc-date">[16:19]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-58.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[16:35]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-58.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[16:35]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-58.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[17:12]</span> <span class="irc-navy">* martido (n=martin@dslb-088-067-179-023.pools.arcor-ip.net) Quit ()</span><br />
+<span class="irc-date">[18:19]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-58.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[19:24]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-82.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[20:30]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * rf5785b4 / (3 files in 3 dirs): Add List#compact and List#compact! - <a href="http://bit.ly/zBHcS">http://bit.ly/zBHcS</a></span><br />
+<span class="irc-date">[21:29]</span> <span class="irc-green">* embro1001 (n=sintaks@206.sub-97-202-130.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[22:10]</span> <span class="irc-navy">* embro1001 (n=sintaks@206.sub-97-202-130.myvzw.com) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[22:34]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-82.vc-graz.ac.at) Quit (Read error: 145 (Connection timed out))</span><br />
+<span class="irc-date">[22:59]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />

@@ -1,0 +1,117 @@
+<span class="irc-date">[3:17]</span> <span class="irc-black">&lt;bguthrie__&gt; olabini: whenever you get back, I think I figured it out - the process of moving a method to a new class broke a constant lookup. still not sure what triggered it but referencing the full constant including namespace seems to do the trick.</span><br />
+<span class="irc-date">[3:22]</span> <span class="irc-black">&lt;bguthrie__&gt; hmmm... nope. never mind.</span><br />
+<span class="irc-date">[3:27]</span> <span class="irc-black">&lt;bguthrie__&gt; for that same spec, the dump, over and over, was: java.lang.ClassNotFoundException: x</span><br />
+<span class="irc-date">[3:27]</span> <span class="irc-black">&lt;bguthrie__&gt; bizarre</span><br />
+<span class="irc-date">[3:27]</span> <span class="irc-black">&lt;bguthrie__&gt; but probably not the root cause so I'll just shut up now</span><br />
+<span class="irc-date">[3:39]</span> <span class="irc-black">&lt;bguthrie__&gt; the original CNFE was for the constant lookup which is why I thought I had it</span><br />
+<span class="irc-date">[3:40]</span> <span class="irc-black">&lt;bguthrie__&gt; the weird part is that the exception seems to originate from TypeCheckingJavaMethod</span><br />
+<span class="irc-date">[3:40]</span> <span class="irc-black">&lt;bguthrie__&gt; is that right?</span><br />
+<span class="irc-date">[3:43]</span> <span class="irc-black">&lt;bguthrie__&gt; other CNFE is in let_spec: can't find testOfLetMethod</span><br />
+<span class="irc-date">[3:43]</span> <span class="irc-black">&lt;bguthrie__&gt; I can't imagine what my changes to ISpec could have done to break these cases</span><br />
+<span class="irc-date">[6:03]</span> <span class="irc-black">&lt;olabini&gt; no idea</span><br />
+<span class="irc-date">[6:03]</span> <span class="irc-black">&lt;olabini&gt; seems very strange</span><br />
+<span class="irc-date">[6:03]</span> <span class="irc-black">&lt;olabini&gt; the CNFE is obviously from the Java stuff trying to find a class by that name, by why it's looping is another matter.</span><br />
+<span class="irc-date">[6:39]</span> <span class="irc-navy">* olabini (n=ola@c-d64ce155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[6:57]</span> <span class="irc-navy">* FiXato (n=fixato@fixato.demon.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[7:08]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit ("Leaving")</span><br />
+<span class="irc-date">[7:41]</span> <span class="irc-green">* olabini (n=ola@194.132.20.9) has joined #ioke</span><br />
+<span class="irc-date">[7:41]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[7:54]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[10:41]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[12:40]</span> <span class="irc-black">&lt;olabini&gt; after Java integration is working, I would be interested to know what people are most interested in me working on.</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;olabini&gt; also, if someone is working on something, it would be helpful to add a note to the Wiki Todo page that you're working on that feature</span><br />
+<span class="irc-date">[12:41]</span> <span class="irc-black">&lt;olabini&gt; I realize development have kinda stopped because of the sweeping changes and problems from Java integration. hopefully that should soon be over.</span><br />
+<span class="irc-date">[12:43]</span> <span class="irc-black">&lt;olabini&gt; also, if there's anything you realize is missing, it would be good to have on the todo-page</span><br />
+<span class="irc-date">[12:43]</span> <span class="irc-black">&lt;olabini&gt; I'm using it as my global feature tracker, really</span><br />
+<span class="irc-date">[12:45]</span> <span class="irc-navy">* bguthrie__ (n=bguthrie@c-24-30-76-226.hsd1.ga.comcast.net) Quit ()</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-black">&lt;martido&gt; ola: This is not really a feature, but it prevents the tests from running correctly on Windows. I've issued a bug some time ago about the FileSystem parentOf method not working correctly on Windows. Don't know if you've seen it. I would try to fix it, but the spec of the method's not clear to me ;)</span><br />
+<span class="irc-date">[13:25]</span> <span class="irc-black">&lt;martido&gt; btw, very cool you got the Java integration up and running... will try it out as soon as I can</span><br />
+<span class="irc-date">[13:36]</span> <span class="irc-green">* Narnach_ (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[13:39]</span> <span class="irc-black">&lt;olabini&gt; will take a look at the problem</span><br />
+<span class="irc-date">[13:49]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[14:26]</span> <span class="irc-navy">* olabini (n=ola@194.132.20.9) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[15:20]</span> <span class="irc-green">* olabini (n=ola@c-d64ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[15:20]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[16:28]</span> <span class="irc-navy">* Narnach_ (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[16:51]</span> <span class="irc-green">* azoic (n=azoic@nat/sun/x-c297698408633d8d) has left #ioke</span><br />
+<span class="irc-date">[17:00]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has left #ioke</span><br />
+<span class="irc-date">[17:28]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[17:28]</span> <span class="irc-black">&lt;melwin&gt; Dudes... :/</span><br />
+<span class="irc-date">[17:28]</span> <span class="irc-black">&lt;melwin&gt; No time for Ioke lately...</span><br />
+<span class="irc-date">[17:28]</span> <span class="irc-black">&lt;melwin&gt; olabini: How's the Java integration coming along? You pleased?</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;olabini&gt; that sucks</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;olabini&gt; it's been quiet</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;olabini&gt; Sam and Carlos seems to have been a bit too busy too</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;olabini&gt; Java Integration is coming along</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;olabini&gt; invocations seem to work</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;olabini&gt; take a look in test/java_ground_spec.rb</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;olabini&gt; .ik I mean</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;olabini&gt; to see what has been implemented</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;olabini&gt; but basically, argument coercion, choice among overloaded methods and so on works</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;olabini&gt; obviously inherited methods works too</span><br />
+<span class="irc-date">[17:37]</span> <span class="irc-black">&lt;olabini&gt; you can cast stuff so you can choose which overload to use - something that was never possible in JRuby</span><br />
+<span class="irc-date">[17:37]</span> <span class="irc-black">&lt;olabini&gt; so I'm happy about that</span><br />
+<span class="irc-date">[17:37]</span> <span class="irc-black">&lt;olabini&gt; starting work on JavaBean aliases</span><br />
+<span class="irc-date">[17:37]</span> <span class="irc-black">&lt;olabini&gt; one of those features that just make it so much easier to interact with Java APIs</span><br />
+<span class="irc-date">[17:37]</span> <span class="irc-black">&lt;olabini&gt; but first I'll fix that Windows parentOf bug</span><br />
+<span class="irc-date">[17:48]</span> <span class="irc-black">&lt;melwin&gt; Cool - I've read the discussions (or your descriptions at least) in the channel. Sounds like you've made good progress though.</span><br />
+<span class="irc-date">[18:02]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r9ed3e06 / test/file_system_spec.ik : Hopefully fix the problem with Bug 175 - <a href="http://bit.ly/xjBZ">http://bit.ly/xjBZ</a></span><br />
+<span class="irc-date">[18:02]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * r3edf90f / (3 files in 3 dirs): Fix some Java specs and documentation - <a href="http://bit.ly/13YiB">http://bit.ly/13YiB</a></span><br />
+<span class="irc-date">[18:06]</span> <span class="irc-black">&lt;olabini&gt; yep. I'm happy about it</span><br />
+<span class="irc-date">[18:09]</span> <span class="irc-green">* bguthrie (n=bguthrie@glo2.manheim.com) has joined #ioke</span><br />
+<span class="irc-date">[18:13]</span> <span class="irc-brick">* olabini is going to talk about Ioke at a ThoughtWorks London geek night. March 10, in conjunction with QCon London</span><br />
+<span class="irc-date">[18:20]</span> <span class="irc-navy">* bguthrie (n=bguthrie@glo2.manheim.com) Quit ()</span><br />
+<span class="irc-date">[18:40]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-116.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:55]</span> <span class="irc-black">&lt;CIA-7&gt; ioke: Ola Bini master * rd1b0673 / (6 files in 3 dirs): Add support for JavaBean easy access helpers. - <a href="http://bit.ly/2BR8pu">http://bit.ly/2BR8pu</a></span><br />
+<span class="irc-date">[20:09]</span> <span class="irc-green">* cv (n=cv@5acb0c77.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[20:09]</span> <span class="irc-black">&lt;cv&gt; howdy!</span><br />
+<span class="irc-date">[20:10]</span> <span class="irc-black">&lt;cv&gt; olabini: taking a look at the java integration, it's looking extremely cool</span><br />
+<span class="irc-date">[20:10]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-116.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[20:11]</span> <span class="irc-black">&lt;cv&gt; one small feature request: can i use() a jar file and have it available to ioke in some way? it'd make it so easy to script out any crazy thing without messing about too much</span><br />
+<span class="irc-date">[20:13]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-121.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[20:17]</span> <span class="irc-navy">* vincenz (n=vincenz@li23-146.members.linode.com) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[20:17]</span> <span class="irc-navy">* cv (n=cv@5acb0c77.bb.sky.com) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[20:17]</span> <span class="irc-green">* vincenz (n=vincenz@li23-146.members.linode.com) has joined #ioke</span><br />
+<span class="irc-date">[20:18]</span> <span class="irc-green">* cv (n=cv@5acb0c77.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-black">&lt;olabini&gt; cv: planning to add that, don't worry</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-black">&lt;olabini&gt; it's a very useful feature</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-black">&lt;cv&gt; w00t :)</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-black">&lt;olabini&gt; but there is some other stuff to add first</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-black">&lt;olabini&gt; ...</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-black">&lt;olabini&gt;  =)</span><br />
+<span class="irc-date">[20:20]</span> <span class="irc-black">&lt;cv&gt; do you have a list of stuff you're working on?</span><br />
+<span class="irc-date">[20:24]</span> <span class="irc-black">&lt;olabini&gt; ehm. yeah</span><br />
+<span class="irc-date">[20:25]</span> <span class="irc-black">&lt;olabini&gt; look in the java_ground_spec</span><br />
+<span class="irc-date">[20:25]</span> <span class="irc-black">&lt;olabini&gt; it contains most of the things I want to have</span><br />
+<span class="irc-date">[20:25]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[20:25]</span> <span class="irc-black">&lt;olabini&gt; you can also look in docs/java* where I have some ideas</span><br />
+<span class="irc-date">[20:25]</span> <span class="irc-black">&lt;olabini&gt; but the use-thing slipped my mind to document</span><br />
+<span class="irc-date">[20:27]</span> <span class="irc-black">&lt;cv&gt; ah cool</span><br />
+<span class="irc-date">[20:29]</span> <span class="irc-black">&lt;cv&gt; i'm getting a strange explosion in iik -- <a href="http://gist.github.com/60963">http://gist.github.com/60963</a></span><br />
+<span class="irc-date">[20:44]</span> <span class="irc-green">* cv_ (n=cv@5ad58ae5.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[21:02]</span> <span class="irc-navy">* cv (n=cv@5acb0c77.bb.sky.com) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[21:08]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit ("Leaving")</span><br />
+<span class="irc-date">[21:20]</span> <span class="irc-brown">-tomaw- [Global Notice] Hi all.  One of our client (leaf) server sponsors is having network connectivity problems.  We've removed the server from the DNS rotation until the issue is resolved.  Sorry for the disruption and thanks for using freenode!</span><br />
+<span class="irc-date">[21:50]</span> <span class="irc-black">&lt;olabini&gt; GAH. I knew I should never have claimed it worked on Windows</span><br />
+<span class="irc-date">[21:50]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[21:51]</span> <span class="irc-black">&lt;olabini&gt; well. nothing to do but bite the bullet.</span><br />
+<span class="irc-date">[21:51]</span> <span class="irc-black">&lt;olabini&gt; anyone wants to be Windows maintainer? =) preferrable someone who has at least _one_ windows machine...</span><br />
+<span class="irc-date">[21:52]</span> <span class="irc-black">&lt;cv_&gt; tall order :P</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-green">* bguthrie (n=bguthrie@glo2.manheim.com) has joined #ioke</span><br />
+<span class="irc-date">[22:09]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-121.vc-graz.ac.at) has left #ioke</span><br />
+<span class="irc-date">[22:10]</span> <span class="irc-navy">* bguthrie (n=bguthrie@glo2.manheim.com) Quit (Client Quit)</span><br />
+<span class="irc-date">[23:04]</span> <span class="irc-black">&lt;olabini&gt; cv_: I know about that problem. it's a bit weird, but I have a pending spec for it in java_ground_spec.ik</span><br />
+<span class="irc-date">[23:04]</span> <span class="irc-black">&lt;olabini&gt; what I can't figure out is why it only happens sometimes</span><br />
+<span class="irc-date">[23:06]</span> <span class="irc-black">&lt;olabini&gt; actually</span><br />
+<span class="irc-date">[23:06]</span> <span class="irc-black">&lt;olabini&gt; it's very inconsistent</span><br />
+<span class="irc-date">[23:06]</span> <span class="irc-black">&lt;olabini&gt; *sigh*</span><br />
+<span class="irc-date">[23:06]</span> <span class="irc-black">&lt;olabini&gt; you can create a test case for it by doing</span><br />
+<span class="irc-date">[23:06]</span> <span class="irc-black">&lt;olabini&gt; java:util:ArrayList new notice</span><br />
+<span class="irc-date">[23:17]</span> <span class="irc-black">&lt;cv_&gt; odd, it seems everything is in the right place</span><br />
+<span class="irc-date">[23:17]</span> <span class="irc-black">&lt;cv_&gt; i'm stepping through with a debugger</span><br />
+<span class="irc-date">[23:17]</span> <span class="irc-black">&lt;cv_&gt; btw, would you be interested in checking out the output from <a href="http://www.panopticode.org?">http://www.panopticode.org?</a></span><br />
+<span class="irc-date">[23:23]</span> <span class="irc-green">* bguthrie (n=bguthrie@glo2.manheim.com) has joined #ioke</span><br />
+<span class="irc-date">[23:28]</span> <span class="irc-navy">* bguthrie (n=bguthrie@glo2.manheim.com) Quit (Client Quit)</span><br />
+<span class="irc-date">[23:52]</span> <span class="irc-navy">* cv_ (n=cv@5ad58ae5.bb.sky.com) Quit ()</span><br />

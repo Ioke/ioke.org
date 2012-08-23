@@ -1,0 +1,252 @@
+<span class="irc-date">[1:08]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[1:19]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[5:18]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[6:50]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[7:35]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[7:55]</span> <span class="irc-green">* olabini (n=ola@194.132.20.9) has joined #ioke</span><br />
+<span class="irc-date">[7:55]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[8:03]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-251-055-193.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:06]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit ("Leaving")</span><br />
+<span class="irc-date">[8:10]</span> <span class="irc-black">&lt;naeu&gt; olabini: regarding templating implementations, is there a particular style you think I should try and emulate?</span><br />
+<span class="irc-date">[8:24]</span> <span class="irc-black">&lt;olabini&gt; nah, not at the moment</span><br />
+<span class="irc-date">[8:24]</span> <span class="irc-black">&lt;olabini&gt; I say let's go for an evolutionary approach</span><br />
+<span class="irc-date">[8:24]</span> <span class="irc-black">&lt;olabini&gt; I'm loathe to include a templating engine in the base distribution though.......</span><br />
+<span class="irc-date">[8:24]</span> <span class="irc-black">&lt;naeu&gt; sure</span><br />
+<span class="irc-date">[8:24]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[8:24]</span> <span class="irc-black">&lt;olabini&gt; we really need to get a packet distribution mechanism working</span><br />
+<span class="irc-date">[8:24]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[8:25]</span> <span class="irc-black">&lt;naeu&gt; right now i was thinking something railsy...</span><br />
+<span class="irc-date">[8:25]</span> <span class="irc-black">&lt;naeu&gt; templates with the possibility to use partial templates</span><br />
+<span class="irc-date">[8:32]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[8:44]</span> <span class="irc-black">&lt;naeu&gt; what about the tags?</span><br />
+<span class="irc-date">[8:44]</span> <span class="irc-black">&lt;naeu&gt; &lt;%= quux %&gt;</span><br />
+<span class="irc-date">[8:44]</span> <span class="irc-black">&lt;naeu&gt; always jars with my mind because it's so damned ugly</span><br />
+<span class="irc-date">[8:45]</span> <span class="irc-black">&lt;naeu&gt; but it's really hard to think of a set of chars that don't typically appear in the host language</span><br />
+<span class="irc-date">[8:48]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[8:50]</span> <span class="irc-black">&lt;olabini&gt; do you have an alternative?</span><br />
+<span class="irc-date">[8:50]</span> <span class="irc-black">&lt;olabini&gt; %&gt; might occur in the language</span><br />
+<span class="irc-date">[8:50]</span> <span class="irc-black">&lt;olabini&gt; that's the trouble with Ioke ... almost anythng can be an operator</span><br />
+<span class="irc-date">[8:50]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[8:51]</span> <span class="irc-black">&lt;naeu&gt; argh, true</span><br />
+<span class="irc-date">[8:51]</span> <span class="irc-black">&lt;olabini&gt; I think that is a point against ERb style templating</span><br />
+<span class="irc-date">[8:51]</span> <span class="irc-black">&lt;naeu&gt; i was just thinking in terms of host languages</span><br />
+<span class="irc-date">[8:51]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[8:51]</span> <span class="irc-black">&lt;naeu&gt; hmmm</span><br />
+<span class="irc-date">[8:52]</span> <span class="irc-black">&lt;olabini&gt; conceptually, the HAML approach is very clean and nice, of course. but most people find it unnatural</span><br />
+<span class="irc-date">[8:52]</span> <span class="irc-black">&lt;olabini&gt; damned. I need to get the Java integration stuff finished so we can start looking at all the other stuff</span><br />
+<span class="irc-date">[8:52]</span> <span class="irc-black">&lt;olabini&gt; ...</span><br />
+<span class="irc-date">[8:52]</span> <span class="irc-black">&lt;naeu&gt; it's almost like you can't make the content of the tags valid Ioke code, just pointers to valid Ioke code</span><br />
+<span class="irc-date">[8:52]</span> <span class="irc-black">&lt;Narnach&gt; olabini: after working with HAML I wouldn't volunteer to go back to ERB :)</span><br />
+<span class="irc-date">[8:53]</span> <span class="irc-black">&lt;Narnach&gt; the advantage of erb is that it is more generic. you can build yaml files or any other text file with them. haml is too focused on xml-ish formats</span><br />
+<span class="irc-date">[8:53]</span> <span class="irc-black">&lt;naeu&gt; I can see how HAML is great as an abstraction of html, but I'm struggling to visualise a HAML equivalent for c++</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-black">&lt;naeu&gt; Narnach: exactly</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-black">&lt;olabini&gt; hm</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-black">&lt;olabini&gt; true</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-black">&lt;olabini&gt; good points</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-black">&lt;Narnach&gt; how would a hybrid look like? clean-looking like haml, yet general purpose like erb</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-black">&lt;Narnach&gt; would that be possible?</span><br />
+<span class="irc-date">[8:55]</span> <span class="irc-black">&lt;olabini&gt; but it's true, maybe something like erb that only allows a limited subset of Ioke  code</span><br />
+<span class="irc-date">[8:55]</span> <span class="irc-black">&lt;olabini&gt; another alternative is to do something like &lt;( and )&gt; and have the parser count parenthesis.</span><br />
+<span class="irc-date">[8:58]</span> <span class="irc-black">&lt;naeu&gt; olabini: the problem is that the parser only sees the code within the tags, and not the tags themselves</span><br />
+<span class="irc-date">[8:58]</span> <span class="irc-black">&lt;naeu&gt; but actually,</span><br />
+<span class="irc-date">[8:59]</span> <span class="irc-black">&lt;naeu&gt; hmm</span><br />
+<span class="irc-date">[8:59]</span> <span class="irc-black">&lt;naeu&gt; crap, my iik is dead</span><br />
+<span class="irc-date">[9:00]</span> <span class="irc-black">&lt;olabini&gt; well, the only thing yiu need is for the eik parser to separate the non-Ioke from the Ioke code</span><br />
+<span class="irc-date">[9:01]</span> <span class="irc-black">&lt;naeu&gt; (1)&gt;(2)</span><br />
+<span class="irc-date">[9:01]</span> <span class="irc-black">&lt;naeu&gt; that's valid ioke code</span><br />
+<span class="irc-date">[9:01]</span> <span class="irc-black">&lt;olabini&gt; and there are basically two ways of doing the end tag - find a token that isn't valid Ioke</span><br />
+<span class="irc-date">[9:01]</span> <span class="irc-black">&lt;olabini&gt; or count parenths</span><br />
+<span class="irc-date">[9:01]</span> <span class="irc-black">&lt;olabini&gt; parenthesis</span><br />
+<span class="irc-date">[9:01]</span> <span class="irc-black">&lt;olabini&gt; yeah, I know</span><br />
+<span class="irc-date">[9:01]</span> <span class="irc-black">&lt;olabini&gt; but it's not a problem, since if you count parenthesis it will not be catched as the ending</span><br />
+<span class="irc-date">[9:02]</span> <span class="irc-black">&lt;olabini&gt; the problem is to find a token that isn't valid Ioke</span><br />
+<span class="irc-date">[9:02]</span> <span class="irc-black">&lt;naeu&gt; boring::c++ file code &lt;( foo bar quux. (1)&gt;(2).)&gt; rest of c++ for(int i = 0; i &lt; offByOne; i++){}</span><br />
+<span class="irc-date">[9:02]</span> <span class="irc-black">&lt;olabini&gt; and I'm not sure if it's possible</span><br />
+<span class="irc-date">[9:02]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[9:03]</span> <span class="irc-black">&lt;olabini&gt; hmm....</span><br />
+<span class="irc-date">[9:04]</span> <span class="irc-black">&lt;olabini&gt; what about ;&gt;</span><br />
+<span class="irc-date">[9:04]</span> <span class="irc-black">&lt;olabini&gt; ?</span><br />
+<span class="irc-date">[9:04]</span> <span class="irc-black">&lt;olabini&gt; the ; makes it a comment</span><br />
+<span class="irc-date">[9:04]</span> <span class="irc-black">&lt;olabini&gt; so the combination is valid Ioke code, but unlikely to be used</span><br />
+<span class="irc-date">[9:04]</span> <span class="irc-black">&lt;naeu&gt; yes, very nice</span><br />
+<span class="irc-date">[9:04]</span> <span class="irc-black">&lt;olabini&gt; &lt;: ;&gt;</span><br />
+<span class="irc-date">[9:04]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:05]</span> <span class="irc-black">&lt;naeu&gt; looks like a musketeer with a pointy hat</span><br />
+<span class="irc-date">[9:05]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[9:05]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:05]</span> <span class="irc-black">&lt;olabini&gt; well. maybe it should just be something like</span><br />
+<span class="irc-date">[9:05]</span> <span class="irc-black">&lt;olabini&gt; &lt;?ik ik?&gt;</span><br />
+<span class="irc-date">[9:05]</span> <span class="irc-black">&lt;olabini&gt; that's more verbose, but follows the php standard</span><br />
+<span class="irc-date">[9:06]</span> <span class="irc-black">&lt;olabini&gt; ?&gt; is not a valid parse in itself</span><br />
+<span class="irc-date">[9:06]</span> <span class="irc-black">&lt;olabini&gt; if there is whitespace before the question mark</span><br />
+<span class="irc-date">[9:06]</span> <span class="irc-black">&lt;naeu&gt; cell(:"ik?") = 1. ik?&gt;3</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-black">&lt;olabini&gt; yep. true</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-black">&lt;olabini&gt; but I'm actually kinda willing to accept that</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-black">&lt;olabini&gt; you shouoldn't have lots of code in templates</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-black">&lt;olabini&gt; well. I think we'll have to think about this a bit more</span><br />
+<span class="irc-date">[9:08]</span> <span class="irc-black">&lt;naeu&gt; sure, given that the main motivations for templating are purely pragmatic</span><br />
+<span class="irc-date">[9:08]</span> <span class="irc-black">&lt;naeu&gt; the implementation should be pragmatic too</span><br />
+<span class="irc-date">[9:09]</span> <span class="irc-black">&lt;naeu&gt; but my usecase is simple</span><br />
+<span class="irc-date">[9:09]</span> <span class="irc-black">&lt;naeu&gt; all i want is to call parameter-less cells for values</span><br />
+<span class="irc-date">[9:10]</span> <span class="irc-black">&lt;naeu&gt; and perform each iterations within which I can look up more parameter-less cells</span><br />
+<span class="irc-date">[9:11]</span> <span class="irc-black">&lt;naeu&gt; oh, and I also want to do conditions - which does add a lot more complication to matters</span><br />
+<span class="irc-date">[9:12]</span> <span class="irc-black">&lt;olabini&gt; hm. yeah</span><br />
+<span class="irc-date">[9:19]</span> <span class="irc-green">* cv (n=cv@201-95-123-20.dsl.telesp.net.br) has joined #ioke</span><br />
+<span class="irc-date">[9:19]</span> <span class="irc-black">&lt;cv&gt; olabini: you do know it's 6am here right? :P</span><br />
+<span class="irc-date">[9:19]</span> <span class="irc-black">&lt;olabini&gt; naeu: cv thinks erb is bad and argues for the haml approach</span><br />
+<span class="irc-date">[9:19]</span> <span class="irc-black">&lt;olabini&gt; cv: continue arguing</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-black">&lt;olabini&gt; cv: so what? =) you are obviously in great shape at the moment. =)</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-brick">* cv is drunk in sao paulo after a whole night drinking and eating sushi</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-black">&lt;cv&gt; anyways</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-black">&lt;olabini&gt; what are you doing in SP anyway?</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-black">&lt;cv&gt; yeah, erb is a bad idea</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-black">&lt;cv&gt; holidays :)</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-black">&lt;naeu&gt; cv: yeah, erb is awful</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-black">&lt;olabini&gt; ah, right</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-black">&lt;cv&gt; i'm moving back home at the end of the year, so gotta sort out bank accounts and mortgages and new car etc</span><br />
+<span class="irc-date">[9:21]</span> <span class="irc-black">&lt;naeu&gt; but it's pretty pragmatic</span><br />
+<span class="irc-date">[9:21]</span> <span class="irc-black">&lt;cv&gt; naeu: yeah, definitely</span><br />
+<span class="irc-date">[9:21]</span> <span class="irc-black">&lt;cv&gt; but it's completely context-agnostic</span><br />
+<span class="irc-date">[9:21]</span> <span class="irc-black">&lt;olabini&gt; ah, right</span><br />
+<span class="irc-date">[9:21]</span> <span class="irc-black">&lt;cv&gt; you could use erb to write out some text file and it wouldn't know</span><br />
+<span class="irc-date">[9:21]</span> <span class="irc-black">&lt;cv&gt; for that, StringTemplate is a much better set of constraints</span><br />
+<span class="irc-date">[9:21]</span> <span class="irc-black">&lt;cv&gt; (i'm using ST heavily at the moment and loving its limitations)</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;naeu&gt; cv: I currently have a nice little DSL-like structure (in Ruby) which can write itself as c++ via erb and then can compile the c++, launch it and wrap around its stdin/out</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;cv&gt; ah ok, entirely different problem than what i'm usually solving</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;naeu&gt; now, apart from the process stuff, I'd like to rewrite the DSL -&gt; c++ stuff in Ioke</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-black">&lt;cv&gt; i'm trying to sort out people who are developers and hence don't want to like (X)HTML</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;cv&gt; so something stringent and annoying like stringtemplate is beautiful for that</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;naeu&gt; I was explaining earlier, I only need three things for my templating solution: variable substution, iteration over collections and conditionals</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;cv&gt; perfect, that's ST for ya</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;olabini&gt; ST is pretty nice</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;cv&gt; and even then ST doesn't really let you do conditionals like "is this bigger than 3"</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;naeu&gt; is that a Java thing?</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;cv&gt; naeu: java python and .net</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;cv&gt; dunno if it's been ported to ruby</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;cv&gt; guess not yet</span><br />
+<span class="irc-date">[9:24]</span> <span class="irc-black">&lt;olabini&gt; well, you can soon use it with the Java integration</span><br />
+<span class="irc-date">[9:24]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:24]</span> <span class="irc-black">&lt;olabini&gt; it's not part of the runtime distro of Ioke</span><br />
+<span class="irc-date">[9:24]</span> <span class="irc-black">&lt;olabini&gt; but part of the build</span><br />
+<span class="irc-date">[9:24]</span> <span class="irc-black">&lt;olabini&gt; since Antlr uses it to generate the parser</span><br />
+<span class="irc-date">[9:24]</span> <span class="irc-black">&lt;naeu&gt; yeah, i was just reading that</span><br />
+<span class="irc-date">[9:24]</span> <span class="irc-black">&lt;naeu&gt; cool, so an Ioke ST wrapper might be just the ticket</span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-black">&lt;olabini&gt; should be simple. the API is dead small</span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-black">&lt;olabini&gt; but some interesting extensions might have to wait for interface implementation to land</span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-black">&lt;naeu&gt; \me just perusing <a href="http://www.antlr.org/wiki/display/ST/StringTemplate+cheat+sheet">http://www.antlr.org/wiki/display/ST/StringTemplate+cheat+sheet</a></span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-brick">* naeu can't tell the difference between the direction of slashes</span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-green">* ynyr (n=ynyr@host217-42-8-53.range217-42.btcentralplus.com) has joined #ioke</span><br />
+<span class="irc-date">[9:26]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:27]</span> <span class="irc-black">&lt;cv&gt; :)</span><br />
+<span class="irc-date">[9:28]</span> <span class="irc-black">&lt;cv&gt; i'm currently working with a team who knows their java</span><br />
+<span class="irc-date">[9:28]</span> <span class="irc-black">&lt;cv&gt; but are awfully bad at html and css</span><br />
+<span class="irc-date">[9:29]</span> <span class="irc-black">&lt;cv&gt; currently building a compiler like thing to tie ids and class names together</span><br />
+<span class="irc-date">[9:29]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[9:29]</span> <span class="irc-black">&lt;cv&gt; so the build fails if you try to style an element that doesn't (and won't ever) exist</span><br />
+<span class="irc-date">[9:29]</span> <span class="irc-black">&lt;olabini&gt; that sounds like great fun</span><br />
+<span class="irc-date">[9:29]</span> <span class="irc-black">&lt;olabini&gt; my kind of stuff</span><br />
+<span class="irc-date">[9:29]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:29]</span> <span class="irc-black">&lt;cv&gt; eek :P</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;olabini&gt; if you need some short time help with that, I wouldn't have any problem coming visiting the UK ... =)</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-green">* larsw (n=larsw@95.209.13.204.bredband.tre.se) has joined #ioke</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-navy">* larsw (n=larsw@95.209.13.204.bredband.tre.se) Quit (Client Quit)</span><br />
+<span class="irc-date">[9:40]</span> <span class="irc-black">&lt;cv&gt; surprisingly, there is no CSS2/3 parser implementation in java</span><br />
+<span class="irc-date">[9:40]</span> <span class="irc-black">&lt;olabini&gt; hm. strange</span><br />
+<span class="irc-date">[9:41]</span> <span class="irc-black">&lt;naeu&gt; cv: I guess all that stuff is typically done in c/c++ land</span><br />
+<span class="irc-date">[9:41]</span> <span class="irc-black">&lt;olabini&gt; but as it turns out, CSS2/3 is actually a complicated language</span><br />
+<span class="irc-date">[9:42]</span> <span class="irc-black">&lt;cv&gt; yeah</span><br />
+<span class="irc-date">[9:42]</span> <span class="irc-black">&lt;cv&gt; and if you "just" follow the spec, you end up with something that isn't backwards compatible</span><br />
+<span class="irc-date">[9:42]</span> <span class="irc-black">&lt;cv&gt; or compatible with FF/IE</span><br />
+<span class="irc-date">[9:44]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[9:44]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:45]</span> <span class="irc-black">&lt;cv&gt; i've been chatting with experienced (10+ years) html and CSS guys</span><br />
+<span class="irc-date">[9:46]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[9:46]</span> <span class="irc-black">&lt;cv&gt; they have so much implicit knowledge about hacks and weird things you can do to bend those implementations into doing whatever they want</span><br />
+<span class="irc-date">[9:46]</span> <span class="irc-black">&lt;cv&gt; it's insane</span><br />
+<span class="irc-date">[9:46]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[9:46]</span> <span class="irc-black">&lt;olabini&gt; true</span><br />
+<span class="irc-date">[9:46]</span> <span class="irc-black">&lt;cv&gt; it's actually a bit of a miracle that web pages display nicely at all, in any browser</span><br />
+<span class="irc-date">[9:47]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[9:48]</span> <span class="irc-black">&lt;olabini&gt; true</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;cv&gt; which brings me back to the point of haml</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;cv&gt; haml sets some good opinions about what is going down the pipe</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;cv&gt; and if you're doing haml and you don't do it the haml way, it's going to look fugly</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;olabini&gt; sure</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;cv&gt; no such barriers are in place when you're dealing with a templating lang like erb or ST</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[9:57]</span> <span class="irc-black">&lt;naeu&gt; just looking at: <a href="http://silentsoftware.blogspot.com/2007/02/grokking-stringtemplate.html">http://silentsoftware.blogspot.com/2007/02/grokking-stringtemplate.html</a></span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;naeu&gt; from this, ST looks pretty similar to ANTLR syntax</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;naeu&gt; and for me, moves away from the simplicity of the erb approach</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;naeu&gt; although i need to read further</span><br />
+<span class="irc-date">[9:59]</span> <span class="irc-black">&lt;naeu&gt; before I form any sort of firm opinion :-)</span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-black">&lt;olabini&gt; cv: will you be in London the week of QCon?</span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-black">&lt;cv&gt; heeeeeeeeeell yea :)</span><br />
+<span class="irc-date">[10:11]</span> <span class="irc-black">&lt;olabini&gt; coolers</span><br />
+<span class="irc-date">[10:12]</span> <span class="irc-black">&lt;olabini&gt; will you be at the geek night?</span><br />
+<span class="irc-date">[10:13]</span> <span class="irc-black">&lt;cv&gt; yeah</span><br />
+<span class="irc-date">[10:13]</span> <span class="irc-black">&lt;olabini&gt; cool. will be a fun preso, I think</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;olabini&gt; not sure how long it's going to be yet</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;cv&gt; i might have to defer going to manchester for a few weeks</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;olabini&gt; asked Robert about it</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;olabini&gt; cv: you should always mail while being drunk</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;olabini&gt; lovely answer to the functional testing thread</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;cv&gt; did that even make sense? :P</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-black">&lt;cv&gt; yay</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-black">&lt;cv&gt; i'm still a functional human being</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-black">&lt;olabini&gt; congratas</span><br />
+<span class="irc-date">[10:17]</span> <span class="irc-black">&lt;olabini&gt; congrats</span><br />
+<span class="irc-date">[10:17]</span> <span class="irc-black">&lt;olabini&gt; well, in fact</span><br />
+<span class="irc-date">[10:17]</span> <span class="irc-black">&lt;olabini&gt; I'm not sure everyone on the list will realize you were drunk and typing</span><br />
+<span class="irc-date">[10:17]</span> <span class="irc-black">&lt;olabini&gt; they'll just think: "well, there goes Carlos again"</span><br />
+<span class="irc-date">[10:17]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[10:17]</span> <span class="irc-black">&lt;cv&gt; aren't those the same? :P</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;olabini&gt; yeah, I guess</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;olabini&gt; heh</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;cv&gt; for the record, it's not been much more than 2 months since my last "sorry, i was drunk" reply to an email in an internal TW software-dev mailing list</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;olabini&gt; well, 2 months is pretty long</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;olabini&gt; which thread was that?</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-brick">* olabini is searching his archived email</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;cv&gt; the all-caps "you should've seen what the amazing stuff the e4 kids built" one</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;olabini&gt; ah, right</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;cv&gt; :)</span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;olabini&gt; I do remember that, but I guess it's telling that I didn't actually think that much about it</span><br />
+<span class="irc-date">[10:24]</span> <span class="irc-black">&lt;olabini&gt; I saw the all caps thing, then saw it was from you, and then didn't think more of it. =)</span><br />
+<span class="irc-date">[10:26]</span> <span class="irc-black">&lt;cv&gt; good, hope that happened to everyone :P</span><br />
+<span class="irc-date">[10:26]</span> <span class="irc-black">&lt;cv&gt; but in fact it didn't</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-251-055-193.chello.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;cv&gt; it actually prompted a really good reply by graham brooks later on</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; oh yeah? did you get any private mail about it too?</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; yeah, I liked that thread</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; it turned out to be pretty important</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; and still is</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; and I just see Alex S going back to that project again</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; in his latest reply</span><br />
+<span class="irc-date">[10:30]</span> <span class="irc-black">&lt;cv&gt; cool</span><br />
+<span class="irc-date">[10:30]</span> <span class="irc-black">&lt;cv&gt; i'm looking forward to catching up with him</span><br />
+<span class="irc-date">[10:31]</span> <span class="irc-black">&lt;cv&gt; and he brings a good point, that sorta web mindset dan's been preaching about makes so many hard things ridiculously easy</span><br />
+<span class="irc-date">[10:31]</span> <span class="irc-black">&lt;cv&gt; ie testing</span><br />
+<span class="irc-date">[10:37]</span> <span class="irc-navy">* cv (n=cv@201-95-123-20.dsl.telesp.net.br) Quit ()</span><br />
+<span class="irc-date">[11:00]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-251-055-193.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[12:10]</span> <span class="irc-green">* olabini (n=ola@194.132.20.9) has left #ioke</span><br />
+<span class="irc-date">[13:31]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[14:34]</span> <span class="irc-green">* olabini (n=ola@c-384ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[14:34]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[15:46]</span> <span class="irc-green">* cv (n=cv@201-95-123-20.dsl.telesp.net.br) has joined #ioke</span><br />
+<span class="irc-date">[15:59]</span> <span class="irc-navy">* cv (n=cv@201-95-123-20.dsl.telesp.net.br) Quit ("bye!")</span><br />
+<span class="irc-date">[17:04]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has left #ioke</span><br />
+<span class="irc-date">[17:06]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-251-055-193.chello.nl) Quit ()</span><br />
+<span class="irc-date">[17:26]</span> <span class="irc-navy">* ynyr (n=ynyr@host217-42-8-53.range217-42.btcentralplus.com) Quit ()</span><br />
+<span class="irc-date">[17:39]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[18:54]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[18:55]</span> <span class="irc-black">&lt;olabini&gt; gah. this is just getting really annoying</span><br />
+<span class="irc-date">[18:57]</span> <span class="irc-green">* kar8nga (n=kar8nga@m-187.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[20:25]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[20:46]</span> <span class="irc-green">* k2 (n=kar8nga@e-145.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[20:46]</span> <span class="irc-navy">* kar8nga (n=kar8nga@m-187.vc-graz.ac.at) Quit (Nick collision from services.)</span><br />
+<span class="irc-date">[20:46]</span> <span class="irc-green">* k2 is now known as kar8nga</span><br />
+<span class="irc-date">[21:05]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-145.vc-graz.ac.at) Quit (Read error: 145 (Connection timed out))</span><br />
+<span class="irc-date">[23:38]</span> <span class="irc-green">* zabbai (i=c9664f79@gateway/web/ajax/mibbit.com/x-b211b6421c0caad0) has joined #ioke</span><br />

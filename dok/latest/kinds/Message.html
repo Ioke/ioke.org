@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Kind: DefaultBehavior</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href=".././dokgen-style.css" type="text/css" media="screen" />
+    <script language="JavaScript" type="text/javascript">
+    // <![CDATA[
+
+        function toggleSource( id )
+        {
+          var elem
+          var link
+
+          if( document.getElementById )
+          {
+            elem = document.getElementById( id )
+            link = document.getElementById( "l_" + id )
+          }
+          else if ( document.all )
+          {
+            elem = eval( "document.all." + id )
+            link = eval( "document.all.l_" + id )
+          }
+          else
+            return false;
+
+          if( elem.style.display == "block" )
+          {
+            elem.style.display = "none"
+            link.innerHTML = "show source"
+          }
+          else
+          {
+            elem.style.display = "block"
+            link.innerHTML = "hide source"
+          }
+        }
+
+        function openCode( url )
+        {
+          window.open( url, "SOURCE_CODE", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=480,width=750" ).focus();
+        }
+      // ]]>
+    </script>
+  </head>
+
+  <body>
+    <table border='0' cellpadding='0' cellspacing='0' width="100%" class='banner'>
+      <tr>
+        <td>
+          <table width="100%" border='0' cellpadding='0' cellspacing='0'>
+            <tr>
+              <td class="file-title" colspan="2">
+                <span class="file-title-prefix">Kind</span>
+                <br />
+                Message
+              </td>
+              <td align="right">
+                <table cellspacing="0" cellpadding="2">
+                  <tr>
+                    <td>Main mimic:</td>
+                    <td>
+                      <a href="../kinds/Mixins/Enumerable.html">Mixins Enumerable</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <div id="bodyContent">
+      <div id="content">
+        <div class="description">
+          <p>
+A Message is the basic code unit in Ioke.
+          </p>
+        </div>
+
+        <div class="sectiontitle">Mimics</div>
+        <ul>
+          <li><a href="../kinds/Mixins/Enumerable.html">Mixins Enumerable</a></li><li><a href="../kinds/Origin.html">Origin</a></li><li><a href="../kinds/Mixins/Sequenced.html">Mixins Sequenced</a></li>
+        </ul>
+
+        <div class="sectiontitle">Inactive cells</div>
+        <ul>
+          <li><a href="#C00870">kind</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Active cells</div>
+        <ul>
+          <li><a href="#C00895">-&gt;(nextMessage)</a></li>
+<li><a href="#C00893">&lt;&lt;(...)</a></li>
+<li><a href="#C00910">==(other)</a></li>
+<li><a href="#C00911">===(other)</a></li>
+<li><a href="#C00894">&gt;&gt;(newArgument)</a></li>
+<li><a href="#C00892">appendArgument(newArgument)</a></li>
+<li><a href="#C00872">arguments()</a></li>
+<li><a href="#C00896">arguments=(newArguments)</a></li>
+<li><a href="#C00887">asStackTraceText()</a></li>
+<li><a href="#C00871">code()</a></li>
+<li><a href="#C00888">deepCopy()</a></li>
+<li><a href="#C00901">doText(code)</a></li>
+<li><a href="#C00876">each([indexOrArgOrCode] nil, [argOrCode] nil, [code] nil)</a></li>
+<li><a href="#C00898">evalArgAt(argumentIndex, context)</a></li>
+<li><a href="#C00897">evaluateOn(ground, receiver ground, +arguments)</a></li>
+<li><a href="#C00880">filename()</a></li>
+<li><a href="#C00873">formattedCode()</a></li>
+<li><a href="#C00909">from(...)</a></li>
+<li><a href="#C00899">fromText(code)</a></li>
+<li><a href="#C00889">keyword?()</a></li>
+<li><a href="#C00884">last()</a></li>
+<li><a href="#C00881">line()</a></li>
+<li><a href="#C00874">name()</a></li>
+<li><a href="#C00877">name=(newName)</a></li>
+<li><a href="#C00883">next()</a></li>
+<li><a href="#C00878">next=(newNext)</a></li>
+<li><a href="#C00882">position()</a></li>
+<li><a href="#C00885">prev()</a></li>
+<li><a href="#C00879">prev=(newPrev)</a></li>
+<li><a href="#C00926">rewrite(+patterns)</a></li>
+<li><a href="#C00927">rewrite:recursively(+patterns)</a></li>
+<li><a href="#C00891">sendTo(newReceiver, context nil)</a></li>
+<li><a href="#C00912">seq()</a></li>
+<li><a href="#C00890">symbol?()</a></li>
+<li><a href="#C00886">terminator?()</a></li>
+<li><a href="#C00875">walk([argOrCode] nil, [code] nil)</a></li>
+<li><a href="#C00900">wrap(value)</a></li>
+
+        </ul>
+
+        <div class="sectiontitle">Specs</div>
+        <div class="specs">
+          
+        </div>
+
+        <div class="sectiontitle">Inactive cells (details)</div>
+                <div class="cell">
+          <a name="C00870"></a>
+          <table border="0" cellpadding="5">
+            <tr valign="top">
+              <td class="cell-name">kind</td>
+              <td>=</td>
+              <td class="cell-value">"Message"</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div class="sectiontitle">Active cells (details)</div>
+                <div class="cell">
+          <div class="title">
+          <a name="C00895"></a><b>-&gt;</b>(nextMessage)
+          </div>
+          <div class="description">
+            <p>evaluates the argument and makes it the new next pointer of the receiver. it also modifies the argument so its prev pointer points back to this message. if the argument is nil, the next pointer will be erased. it then returns the receiving message.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00893"></a><b>&lt;&lt;</b>(...)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00910"></a><b>==</b>(other)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00910_source')" id="l_C00910_source">show source</a> ]</p>
+            <div id="C00910_source" class="dyn-source">
+<pre>
+method(other, 
+  cell(:other) kind ==("Message") &&(
+    @ name ==(other name)) &&(
+    @ arguments ==(other arguments)) &&(
+    @ next ==(other next)))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00911"></a><b>===</b>(other)
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00911_source')" id="l_C00911_source">show source</a> ]</p>
+            <div id="C00911_source" class="dyn-source">
+<pre>
+method(other, 
+  if(self same?(
+      ()), 
+    Reflector other:mimics?(cell(:other), 
+      ()), 
+    bind(rescue(Condition Error, fn(c, false)), 
+      self ==(
+        other))))
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00894"></a><b>&gt;&gt;</b>(newArgument)
+          </div>
+          <div class="description">
+            <p>evaluates the argument and adds it to the beginning of the argument list of this message. it then returns the receiving message.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00892"></a><b>appendArgument</b>(newArgument)
+          </div>
+          <div class="description">
+            <p>evaluates the argument and adds it to the argument list of this message. it then returns the receiving message.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00872"></a><b>arguments</b>()
+          </div>
+          <div class="description">
+            <p>Returns the unevaluated arguments for this message</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00896"></a><b>arguments=</b>(newArguments)
+          </div>
+          <div class="description">
+            <p>sets the arguments for this message. if given nil the arguments list will be creared, otherwise the list given as arguments will be used. it then returns the receiving message.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00887"></a><b>asStackTraceText</b>()
+          </div>
+          <div class="description">
+            <p>returns a string that describes this message as a stack trace elemtn</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00871"></a><b>code</b>()
+          </div>
+          <div class="description">
+            <p>Returns a code representation of the object</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00888"></a><b>deepCopy</b>()
+          </div>
+          <div class="description">
+            <p>returns a deep clone of this message chain, starting at the current point.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00901"></a><b>doText</b>(code)
+          </div>
+          <div class="description">
+            <p>Takes one evaluated argument and executes the contents of that text in the current context and returns the result of that.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00876"></a><b>each</b>([indexOrArgOrCode] nil, [argOrCode] nil, [code] nil)
+          </div>
+          <div class="description">
+            <p>takes either one or two or three arguments. if one argument is given, it should be a message chain that will be sent to each message in the chain. the result will be thrown away. if two arguments are given, the first is an unevaluated name that will be set to each of the messages in the chain in succession, and then the second argument will be evaluated in a scope with that argument in it. if three arguments is given, the first one is an unevaluated name that will be set to the index of each message, and the other two arguments are the name of the argument for the value, and the actual code. the code will evaluate in a lexical context, and if the argument name is available outside the context, it will be shadowed. the method will return the original message.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00898"></a><b>evalArgAt</b>(argumentIndex, context)
+          </div>
+          <div class="description">
+            <p>takes one index, and a context and returns the evaluated argument at that index.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00897"></a><b>evaluateOn</b>(ground, receiver ground, +arguments)
+          </div>
+          <div class="description">
+            <p>Takes one or more evaluated arguments and sends this message chain to where the first argument is ground, and if there are more arguments, the second is the receiver, and the rest will be the arguments</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00880"></a><b>filename</b>()
+          </div>
+          <div class="description">
+            <p>returns the file name where this message is written</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00873"></a><b>formattedCode</b>()
+          </div>
+          <div class="description">
+            <p>Returns a formatted code representation of the object</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00909"></a><b>from</b>(...)
+          </div>
+          <div class="description">
+            <p>returns the message chain for the argument given</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00909_source')" id="l_C00909_source">show source</a> ]</p>
+            <div id="C00909_source" class="dyn-source">
+<pre>
+macro(
+  argCount = call arguments length 
+  cond(
+    argCount ==(
+      1), 
+    
+    code = call arguments [](
+        0) 
+    
+    code deepCopy, 
+    error!(Condition Error Invocation NoMatch, message: call message, context: call currentContext)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00899"></a><b>fromText</b>(code)
+          </div>
+          <div class="description">
+            <p>Takes one evaluated argument and returns the message resulting from parsing and operator shuffling the resulting message.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00889"></a><b>keyword?</b>()
+          </div>
+          <div class="description">
+            <p>returns true if this message is a keyword parameter or not</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00884"></a><b>last</b>()
+          </div>
+          <div class="description">
+            <p>returns the last message in the chain</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00881"></a><b>line</b>()
+          </div>
+          <div class="description">
+            <p>returns the line where this message is written</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00874"></a><b>name</b>()
+          </div>
+          <div class="description">
+            <p>returns the name of this message</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00877"></a><b>name=</b>(newName)
+          </div>
+          <div class="description">
+            <p>sets the name of the message and then returns that name</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00883"></a><b>next</b>()
+          </div>
+          <div class="description">
+            <p>returns the next message in the chain, or nil</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00878"></a><b>next=</b>(newNext)
+          </div>
+          <div class="description">
+            <p>sets the next pointer of the message and then returns that pointer</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00882"></a><b>position</b>()
+          </div>
+          <div class="description">
+            <p>returns the position on the line where this message is written</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00885"></a><b>prev</b>()
+          </div>
+          <div class="description">
+            <p>returns the previous message in the chain, or nil</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00879"></a><b>prev=</b>(newPrev)
+          </div>
+          <div class="description">
+            <p>sets the prev pointer of the message and then returns that pointer</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00926"></a><b>rewrite</b>(+patterns)
+          </div>
+          <div class="description">
+            <p>Takes zero or more pairs of message chains, that describe how rewriting of the current message chain should happen. The message patterns can use symbols to match variable pieces of the pattern.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00926_source')" id="l_C00926_source">show source</a> ]</p>
+            <div id="C00926_source" class="dyn-source">
+<pre>
+method(+patterns, 
+  patterns inject(self, 
+    current, 
+    pattern, 
+    Rewriter rewrite(current, pattern)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00927"></a><b>rewrite:recursively</b>(+patterns)
+          </div>
+          <div class="description">
+            <p>Takes zero or more pairs of message chains, that describe how rewriting of the current message chain should happen. The message patterns can use symbols to match variable pieces of the pattern.</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00927_source')" id="l_C00927_source">show source</a> ]</p>
+            <div id="C00927_source" class="dyn-source">
+<pre>
+method(+patterns, 
+  patterns inject(self, 
+    current, 
+    pattern, 
+    Rewriter rewrite(current, pattern, true)) 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00891"></a><b>sendTo</b>(newReceiver, context nil)
+          </div>
+          <div class="description">
+            <p>Takes one evaluated argument and sends this message to that argument</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00912"></a><b>seq</b>()
+          </div>
+          <div class="description">
+            <p>nil</p>
+          </div>
+                    <div class="sourcecode">
+          <p class="source-link">[ <a href="javascript:toggleSource('C00912_source')" id="l_C00912_source">show source</a> ]</p>
+            <div id="C00912_source" class="dyn-source">
+<pre>
+method(
+  s = Sequence mimic do(
+      next = method(
+          obj = @ currentMessage 
+          @ currentMessage = @ currentMessage next 
+          obj 
+          ) 
+      next? = method(!(@ currentMessage nil?)) 
+      ) 
+  s currentMessage = @ 
+  s 
+  )
+</pre>
+            </div>
+            </div>
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00890"></a><b>symbol?</b>()
+          </div>
+          <div class="description">
+            <p>returns true if this message is a symbol message or not</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00886"></a><b>terminator?</b>()
+          </div>
+          <div class="description">
+            <p>returns true when this message is a terminator, otherwise false</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00875"></a><b>walk</b>([argOrCode] nil, [code] nil)
+          </div>
+          <div class="description">
+            <p>takes either one or two arguments. if one argument is given, it should be a message chain that will be sent to each message in the chain, recursively. the result will be thrown away. if two arguments are given, the first is an unevaluated name that will be set to each of the messages in the chain in succession, and then the second argument will be evaluated in a scope with that argument in it. the code will evaluate in a lexical context, and if the argument name is available outside the context, it will be shadowed. the method will return the original message.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+        <div class="cell">
+          <div class="title">
+          <a name="C00900"></a><b>wrap</b>(value)
+          </div>
+          <div class="description">
+            <p>Takes one evaluated argument and returns a message that wraps the value of that argument.</p>
+          </div>
+          
+          <div class="specs">
+            
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>

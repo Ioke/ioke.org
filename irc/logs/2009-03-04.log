@@ -1,0 +1,326 @@
+<span class="irc-date">[1:24]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[2:22]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[7:41]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[7:54]</span> <span class="irc-black">&lt;olabini&gt; now I am</span><br />
+<span class="irc-date">[7:58]</span> <span class="irc-black">&lt;naeu&gt; if i put \A in a string the whole thing blows up</span><br />
+<span class="irc-date">[7:59]</span> <span class="irc-black">&lt;naeu&gt; it took me ages last night to work out what was happening</span><br />
+<span class="irc-date">[7:59]</span> <span class="irc-black">&lt;olabini&gt; well, yeah</span><br />
+<span class="irc-date">[7:59]</span> <span class="irc-black">&lt;olabini&gt; you realize \A is not a valid escape in a Text</span><br />
+<span class="irc-date">[7:59]</span> <span class="irc-black">&lt;olabini&gt; so you must escape it</span><br />
+<span class="irc-date">[7:59]</span> <span class="irc-black">&lt;olabini&gt; but of course, I think that \A in a regexp isn't handled correctly anyway</span><br />
+<span class="irc-date">[8:00]</span> <span class="irc-black">&lt;olabini&gt; so thanks for the issues</span><br />
+<span class="irc-date">[8:00]</span> <span class="irc-black">&lt;olabini&gt; I might take a break from Java stuff and work on things like that for a while</span><br />
+<span class="irc-date">[8:00]</span> <span class="irc-black">&lt;naeu&gt; so if it's not a valid Text escape, then surely it shouldn't need escaping?</span><br />
+<span class="irc-date">[8:00]</span> <span class="irc-black">&lt;naeu&gt; but can just be valid text characters</span><br />
+<span class="irc-date">[8:00]</span> <span class="irc-black">&lt;olabini&gt; uhm</span><br />
+<span class="irc-date">[8:00]</span> <span class="irc-black">&lt;olabini&gt; no</span><br />
+<span class="irc-date">[8:00]</span> <span class="irc-black">&lt;olabini&gt; just like in other languages, an invalid escape is invalid</span><br />
+<span class="irc-date">[8:01]</span> <span class="irc-black">&lt;olabini&gt; well, just as in Java, for example</span><br />
+<span class="irc-date">[8:01]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[8:01]</span> <span class="irc-black">&lt;olabini&gt; I don't like that Ruby allows anything</span><br />
+<span class="irc-date">[8:01]</span> <span class="irc-black">&lt;naeu&gt; oh ok :-)</span><br />
+<span class="irc-date">[8:01]</span> <span class="irc-black">&lt;olabini&gt; that makes it very unobvious when you make a mistake with escapes</span><br />
+<span class="irc-date">[8:01]</span> <span class="irc-black">&lt;naeu&gt; sure, I can understand that</span><br />
+<span class="irc-date">[8:01]</span> <span class="irc-black">&lt;olabini&gt; so the idea of how this should work is basically that you should do this:</span><br />
+<span class="irc-date">[8:01]</span> <span class="irc-black">&lt;olabini&gt; Regexp from("\\Afoo")</span><br />
+<span class="irc-date">[8:01]</span> <span class="irc-black">&lt;olabini&gt; is the same as</span><br />
+<span class="irc-date">[8:02]</span> <span class="irc-black">&lt;olabini&gt; #/\Afoo/</span><br />
+<span class="irc-date">[8:02]</span> <span class="irc-black">&lt;olabini&gt; now, the escapes that are valid in regexps will also be constrained to those that the underlying engine recognizes</span><br />
+<span class="irc-date">[8:02]</span> <span class="irc-black">&lt;olabini&gt; I guess I'll use your bug about \A as a placeholder for all that</span><br />
+<span class="irc-date">[8:02]</span> <span class="irc-black">&lt;olabini&gt; but first I need to work on those presentations</span><br />
+<span class="irc-date">[8:02]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[8:03]</span> <span class="irc-black">&lt;olabini&gt; damned. the Java stuff just is a bit uninspiring, so I end up not working as much on it as I should</span><br />
+<span class="irc-date">[8:03]</span> <span class="irc-black">&lt;naeu&gt; also, if you get chance  could you take a look at the beginnings of StringScanner in melwin/stringscanner</span><br />
+<span class="irc-date">[8:03]</span> <span class="irc-black">&lt;naeu&gt; it would be good to get some feedback before I carry on with it</span><br />
+<span class="irc-date">[8:04]</span> <span class="irc-black">&lt;olabini&gt; sure</span><br />
+<span class="irc-date">[8:04]</span> <span class="irc-black">&lt;olabini&gt; absolutely</span><br />
+<span class="irc-date">[8:04]</span> <span class="irc-black">&lt;naeu&gt; but yeah, I can totally imagine that the Java stuff is uninspiring</span><br />
+<span class="irc-date">[8:04]</span> <span class="irc-black">&lt;naeu&gt; btw I'm looking forward to your geek night presentation</span><br />
+<span class="irc-date">[8:08]</span> <span class="irc-black">&lt;olabini&gt; you going to be there?</span><br />
+<span class="irc-date">[8:08]</span> <span class="irc-black">&lt;olabini&gt; at QCon too?</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;naeu&gt; yep</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;naeu&gt; and yep</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;olabini&gt; cool</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;olabini&gt; see you there then</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;naeu&gt; i'm doing a couple of tutorials</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;olabini&gt; I'm working on the presentations for that stuff today</span><br />
+<span class="irc-date">[8:09]</span> <span class="irc-black">&lt;olabini&gt; doing or attending?</span><br />
+<span class="irc-date">[8:49]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[8:59]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:02]</span> <span class="irc-green">* ynyr (n=ynyr@host217-42-8-53.range217-42.btcentralplus.com) has joined #ioke</span><br />
+<span class="irc-date">[9:06]</span> <span class="irc-black">&lt;olabini&gt; naeu: you disappeared</span><br />
+<span class="irc-date">[9:06]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:06]</span> <span class="irc-black">&lt;olabini&gt; &lt;olabini&gt; I'm working on the presentations for that stuff today</span><br />
+<span class="irc-date">[9:06]</span> <span class="irc-black">&lt;olabini&gt; &lt;olabini&gt; doing or attending?</span><br />
+<span class="irc-date">[9:06]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[9:06]</span> <span class="irc-black">&lt;naeu&gt; I'm doing a couple of tutorials</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-black">&lt;olabini&gt; about what?</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-black">&lt;naeu&gt; advanced ruby</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-black">&lt;Narnach&gt; Good morning!</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-black">&lt;olabini&gt; ah, cool</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-black">&lt;olabini&gt; what will you talk about?</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-black">&lt;naeu&gt; which will be a whirlwind tour of the various programming styles available to ruby</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-black">&lt;olabini&gt; anything I need to know?</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-black">&lt;naeu&gt; it will be concept driven</span><br />
+<span class="irc-date">[9:07]</span> <span class="irc-black">&lt;olabini&gt; Narnach: morning</span><br />
+<span class="irc-date">[9:08]</span> <span class="irc-black">&lt;naeu&gt; Narnach: morning :-)</span><br />
+<span class="irc-date">[9:08]</span> <span class="irc-black">&lt;Narnach&gt; :)</span><br />
+<span class="irc-date">[9:08]</span> <span class="irc-black">&lt;naeu&gt; and Aesthetic Programming</span><br />
+<span class="irc-date">[9:08]</span> <span class="irc-black">&lt;naeu&gt; which will be much more dialog driven</span><br />
+<span class="irc-date">[9:08]</span> <span class="irc-black">&lt;olabini&gt; hmm, interesting</span><br />
+<span class="irc-date">[9:08]</span> <span class="irc-black">&lt;olabini&gt; I might be at the second one at least</span><br />
+<span class="irc-date">[9:08]</span> <span class="irc-black">&lt;naeu&gt; yeah, i'm most looking forward to the second one</span><br />
+<span class="irc-date">[9:08]</span> <span class="irc-black">&lt;olabini&gt; of course</span><br />
+<span class="irc-date">[9:09]</span> <span class="irc-black">&lt;olabini&gt; so, is that the slides you've been working on for a while (about closures and things like that?)</span><br />
+<span class="irc-date">[9:09]</span> <span class="irc-black">&lt;naeu&gt; I have some slides I stole from Koren's wabi-sabi book</span><br />
+<span class="irc-date">[9:09]</span> <span class="irc-black">&lt;olabini&gt; the advanced ruby one, I mean</span><br />
+<span class="irc-date">[9:09]</span> <span class="irc-black">&lt;olabini&gt; aha</span><br />
+<span class="irc-date">[9:09]</span> <span class="irc-black">&lt;naeu&gt; and yeah, the closure slides is for the advanced ruby</span><br />
+<span class="irc-date">[9:09]</span> <span class="irc-black">&lt;naeu&gt; I wanted to get the concepts down in easy-to-digest diagrams</span><br />
+<span class="irc-date">[9:09]</span> <span class="irc-black">&lt;olabini&gt; god knows I'm not interesting in sitting a whole day with the Erlang presentation</span><br />
+<span class="irc-date">[9:09]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[9:10]</span> <span class="irc-black">&lt;naeu&gt; and I realise that 3 hours is not enough to teach advanced anything</span><br />
+<span class="irc-date">[9:10]</span> <span class="irc-black">&lt;naeu&gt; so I'm just trying to get the core concepts across</span><br />
+<span class="irc-date">[9:10]</span> <span class="irc-black">&lt;naeu&gt; i mention Ioke in the Ruby one though ;-)</span><br />
+<span class="irc-date">[9:11]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[9:13]</span> <span class="irc-black">&lt;naeu&gt; and my core message is that Ruby is a gateway language</span><br />
+<span class="irc-date">[9:13]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[9:13]</span> <span class="irc-black">&lt;naeu&gt; and is an easy way into different styles of language</span><br />
+<span class="irc-date">[9:13]</span> <span class="irc-black">&lt;naeu&gt; although i totally ignore concurrency</span><br />
+<span class="irc-date">[9:15]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://skitch.com/samaaron/bg4ma/advanced-ruby">http://skitch.com/samaaron/bg4ma/advanced-ruby</a></span><br />
+<span class="irc-date">[9:16]</span> <span class="irc-black">&lt;naeu&gt; although i now notice that hooks are mentioned twice :-)</span><br />
+<span class="irc-date">[9:16]</span> <span class="irc-black">&lt;olabini&gt; interesting</span><br />
+<span class="irc-date">[9:16]</span> <span class="irc-black">&lt;olabini&gt; concurrency, yeah. that's a minefield</span><br />
+<span class="irc-date">[9:18]</span> <span class="irc-black">&lt;olabini&gt; I'm not seeing macros anywhere</span><br />
+<span class="irc-date">[9:18]</span> <span class="irc-black">&lt;olabini&gt; also, you should say something about generators and coroutines in functinoal style</span><br />
+<span class="irc-date">[9:18]</span> <span class="irc-black">&lt;olabini&gt; even though you really can't do it in Ruby. =)</span><br />
+<span class="irc-date">[9:18]</span> <span class="irc-black">&lt;olabini&gt; or actually, fibers allow you to do stuff like coroutines</span><br />
+<span class="irc-date">[9:24]</span> <span class="irc-black">&lt;naeu&gt; yeah, how (and why) would you describe macros in Ruby?</span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-black">&lt;naeu&gt; hmm, yeah, fibers might be worth looking at</span><br />
+<span class="irc-date">[9:27]</span> <span class="irc-black">&lt;olabini&gt; good question</span><br />
+<span class="irc-date">[9:27]</span> <span class="irc-black">&lt;olabini&gt; maybe use parsetree</span><br />
+<span class="irc-date">[9:28]</span> <span class="irc-black">&lt;naeu&gt; and what would be the point - to say that this is awful in Ruby?</span><br />
+<span class="irc-date">[9:28]</span> <span class="irc-black">&lt;naeu&gt; ;-)</span><br />
+<span class="irc-date">[9:29]</span> <span class="irc-black">&lt;olabini&gt; I guess</span><br />
+<span class="irc-date">[9:29]</span> <span class="irc-black">&lt;olabini&gt; actually</span><br />
+<span class="irc-date">[9:29]</span> <span class="irc-black">&lt;olabini&gt; I would say that defining new methods using eval</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;olabini&gt; like for example Rails has_many</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;olabini&gt; is an inferior way of metaprogramming compared to macros</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-black">&lt;olabini&gt; basically</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;naeu&gt; absolutely :-)</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-black">&lt;naeu&gt; it gives very poor ways of manipulating the parse tree, and working with the interpreter</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;naeu&gt; the way i see it now is that the interpreter is just a regular program that can store state and operates over a data structure</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-black">&lt;naeu&gt; the state happens to be stacks and heaps, and the data structure happens to be the AST</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;naeu&gt; it's very similar to standard Java programming</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;naeu&gt; the AST is equialent to the gajillions of XML config files</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;naeu&gt; ;-)</span><br />
+<span class="irc-date">[9:33]</span> <span class="irc-black">&lt;naeu&gt; and many of the libraries are just interpreters for those XML config files</span><br />
+<span class="irc-date">[9:35]</span> <span class="irc-black">&lt;naeu&gt; and we all know how much we still really need to hack the XML directly if we want real control of what the libraries are doing</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;olabini&gt; true</span><br />
+<span class="irc-date">[9:39]</span> <span class="irc-black">&lt;naeu&gt; it also explains why ant is Turing complete ;-)</span><br />
+<span class="irc-date">[9:40]</span> <span class="irc-black">&lt;naeu&gt; it's just really an AST for the ant interpreter ;-)</span><br />
+<span class="irc-date">[9:40]</span> <span class="irc-green">* ynyr_ (n=ynyr@host217-42-8-53.range217-42.btcentralplus.com) has joined #ioke</span><br />
+<span class="irc-date">[9:41]</span> <span class="irc-black">&lt;naeu&gt; i think that the point is, from a traditional Java code, compile, configure XML mindset, none of this stuff is obvious at all</span><br />
+<span class="irc-date">[9:41]</span> <span class="irc-navy">* ynyr (n=ynyr@host217-42-8-53.range217-42.btcentralplus.com) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit (Connection timed out)</span><br />
+<span class="irc-date">[9:44]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[9:45]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[9:45]</span> <span class="irc-black">&lt;olabini&gt; you know Jelly?</span><br />
+<span class="irc-date">[9:45]</span> <span class="irc-black">&lt;olabini&gt; the XML script language that is used for Maven 1?</span><br />
+<span class="irc-date">[9:45]</span> <span class="irc-black">&lt;olabini&gt; it's 30% more compact than Java</span><br />
+<span class="irc-date">[9:45]</span> <span class="irc-black">&lt;olabini&gt; and that's a language based on XML</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;naeu&gt; i hadn't heard of it</span><br />
+<span class="irc-date">[9:51]</span> <span class="irc-black">&lt;naeu&gt; but it makes sens</span><br />
+<span class="irc-date">[9:51]</span> <span class="irc-black">&lt;naeu&gt; given XML's inherent tree structured nature</span><br />
+<span class="irc-date">[9:51]</span> <span class="irc-black">&lt;naeu&gt; it wouldn't be that bad at representing ASTs</span><br />
+<span class="irc-date">[9:59]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-green">* RobL__ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-green">* ynyr (n=ynyr@host217-42-8-53.range217-42.btcentralplus.com) has joined #ioke</span><br />
+<span class="irc-date">[10:33]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[10:37]</span> <span class="irc-navy">* ynyr_ (n=ynyr@host217-42-8-53.range217-42.btcentralplus.com) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[10:54]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[11:05]</span> <span class="irc-navy">* RobL__ (n=RobL@roblally.plus.com) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[11:18]</span> <span class="irc-green">* ynyr_ (n=ynyr@host217-44-177-41.range217-44.btcentralplus.com) has joined #ioke</span><br />
+<span class="irc-date">[11:27]</span> <span class="irc-green">* adakkak_ (n=adakkak@gres110.lis.illinois.edu) has joined #ioke</span><br />
+<span class="irc-date">[11:29]</span> <span class="irc-navy">* ynyr (n=ynyr@host217-42-8-53.range217-42.btcentralplus.com) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[13:00]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[13:23]</span> <span class="irc-green">* Narnach_ (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[13:30]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[14:36]</span> <span class="irc-green">* Narnach_ is now known as Narnach</span><br />
+<span class="irc-date">[14:54]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-251-057-220.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[17:06]</span> <span class="irc-navy">* ynyr_ (n=ynyr@host217-44-177-41.range217-44.btcentralplus.com) Quit ()</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-251-057-220.chello.nl) Quit ()</span><br />
+<span class="irc-date">[17:43]</span> <span class="irc-black">&lt;martido&gt; exit</span><br />
+<span class="irc-date">[17:43]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[17:43]</span> <span class="irc-black">&lt;martido&gt; ah ... nope ... wrong window ;)</span><br />
+<span class="irc-date">[17:43]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[17:45]</span> <span class="irc-black">&lt;martido&gt; ah... somebody's there ;)</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[17:54]</span> <span class="irc-black">&lt;martido&gt; btw, ola, I've just been looking at the TODO list in the wikis. I wanna do something ;) I thought maybe I could take on Tuples? Would that be ok? Or do you have any other ideas?</span><br />
+<span class="irc-date">[17:55]</span> <span class="irc-black">&lt;olabini&gt; sure, tuples are fine</span><br />
+<span class="irc-date">[17:55]</span> <span class="irc-black">&lt;olabini&gt; they are connected with  destructuring assignment, which is a bit complicated. =)</span><br />
+<span class="irc-date">[17:55]</span> <span class="irc-black">&lt;olabini&gt; but sure!</span><br />
+<span class="irc-date">[17:56]</span> <span class="irc-black">&lt;martido&gt; I didn't see that :) how is this connected?</span><br />
+<span class="irc-date">[17:57]</span> <span class="irc-black">&lt;martido&gt; and what is even more important: what exactly IS destructuring assignment? =)</span><br />
+<span class="irc-date">[18:04]</span> <span class="irc-black">&lt;martido&gt; ok, got it ... I knew I had heard the term before, but it wasn't immediately clear...</span><br />
+<span class="irc-date">[18:08]</span> <span class="irc-black">&lt;martido&gt; I've had a few thoughts on tuples already, but I'll think about how that fits with destructuring assignments on the train home. gotta go, talk to you later ...</span><br />
+<span class="irc-date">[18:09]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit ()</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[19:26]</span> <span class="irc-green">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[19:37]</span> <span class="irc-black">&lt;olabini&gt; I used to have a document describing that.... hmm</span><br />
+<span class="irc-date">[19:44]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[19:48]</span> <span class="irc-black">&lt;naeu&gt; hey there</span><br />
+<span class="irc-date">[19:48]</span> <span class="irc-black">&lt;olabini&gt; hi!</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;naeu&gt; hey ola</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;olabini&gt; Sam</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;olabini&gt; I'm working on the geek night presentation</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;naeu&gt; i'm working my way through the Ruby StringScanner methods</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;olabini&gt; ah, right</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;olabini&gt; interesting work?</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;naeu&gt; yeah, i'm finding it really interesting</span><br />
+<span class="irc-date">[19:51]</span> <span class="irc-black">&lt;olabini&gt; I'm planning to spend some time tomorrow fixing those regexp stuff</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-black">&lt;olabini&gt; was supposed to do it today, but the presentations really got out of hand</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-black">&lt;naeu&gt; looking at implementations and translation is really interesting</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-black">&lt;naeu&gt; for example: StringScanner#getch</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-black">&lt;olabini&gt; ah, right</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-black">&lt;naeu&gt; what should that be called in Ioke land?</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-black">&lt;olabini&gt; well, I guess parts of the IO protocol is missing</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-black">&lt;olabini&gt; not sure, really</span><br />
+<span class="irc-date">[19:52]</span> <span class="irc-black">&lt;olabini&gt; getChar I guess</span><br />
+<span class="irc-date">[19:53]</span> <span class="irc-black">&lt;naeu&gt; do we deal with chars?</span><br />
+<span class="irc-date">[19:53]</span> <span class="irc-black">&lt;naeu&gt; or symbols</span><br />
+<span class="irc-date">[19:53]</span> <span class="irc-black">&lt;naeu&gt; or.. :-)</span><br />
+<span class="irc-date">[19:56]</span> <span class="irc-black">&lt;olabini&gt; what do you mean with symbols here?</span><br />
+<span class="irc-date">[19:56]</span> <span class="irc-black">&lt;olabini&gt; chars... well, there is no char type</span><br />
+<span class="irc-date">[19:56]</span> <span class="irc-black">&lt;olabini&gt; it's just a number</span><br />
+<span class="irc-date">[19:57]</span> <span class="irc-black">&lt;naeu&gt; i just was thinking, if you've moved terminology from String to Text</span><br />
+<span class="irc-date">[19:57]</span> <span class="irc-black">&lt;naeu&gt; perhaps you've moved from Char to something else :-)</span><br />
+<span class="irc-date">[19:57]</span> <span class="irc-black">&lt;naeu&gt; just a vocab thing</span><br />
+<span class="irc-date">[19:57]</span> <span class="irc-black">&lt;naeu&gt; nothng more</span><br />
+<span class="irc-date">[20:03]</span> <span class="irc-black">&lt;olabini&gt; no, not really</span><br />
+<span class="irc-date">[20:03]</span> <span class="irc-black">&lt;olabini&gt; Character is actually a really good word for what it is</span><br />
+<span class="irc-date">[20:03]</span> <span class="irc-black">&lt;olabini&gt; a text is made up of characters</span><br />
+<span class="irc-date">[20:04]</span> <span class="irc-navy">* Narnach (n=narnach@195-241-27-75.ip.telfort.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[20:04]</span> <span class="irc-green">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:05]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[20:06]</span> <span class="irc-black">&lt;naeu_&gt; :-)</span><br />
+<span class="irc-date">[20:31]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit ()</span><br />
+<span class="irc-date">[20:50]</span> <span class="irc-green">* ynyr (n=ynyr@host217-44-177-41.range217-44.btcentralplus.com) has joined #ioke</span><br />
+<span class="irc-date">[20:54]</span> <span class="irc-navy">* adakkak_ (n=adakkak@gres110.lis.illinois.edu) Quit ("Ex-Chat")</span><br />
+<span class="irc-date">[21:16]</span> <span class="irc-black">&lt;naeu_&gt; olabini: what's the preferred way of grabbing a particular char at a particular index from a text?</span><br />
+<span class="irc-date">[21:16]</span> <span class="irc-black">&lt;naeu_&gt; "sam" chars[1]</span><br />
+<span class="irc-date">[21:16]</span> <span class="irc-black">&lt;naeu_&gt; "sam" [1..1]</span><br />
+<span class="irc-date">[21:23]</span> <span class="irc-black">&lt;naeu_&gt; also, do you have any opinions of Ioke names for the equivalent of StringScanner#beginning_of_line? and StringScanner#eos?</span><br />
+<span class="irc-date">[21:23]</span> <span class="irc-black">&lt;naeu_&gt; I'm currently using atHead? and atTail?</span><br />
+<span class="irc-date">[21:27]</span> <span class="irc-black">&lt;olabini&gt; seems good</span><br />
+<span class="irc-date">[21:27]</span> <span class="irc-black">&lt;olabini&gt; except they are ambigious</span><br />
+<span class="irc-date">[21:27]</span> <span class="irc-black">&lt;olabini&gt; tail of what?</span><br />
+<span class="irc-date">[21:27]</span> <span class="irc-black">&lt;olabini&gt; tail of string? tail of line?</span><br />
+<span class="irc-date">[21:27]</span> <span class="irc-black">&lt;olabini&gt; I prefer chars[1] for readability, really.</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-black">&lt;naeu_&gt; tail of the line under scan</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-black">&lt;olabini&gt; well, that's wrong too</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-black">&lt;olabini&gt; tail is a bad word</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-black">&lt;naeu_&gt; :-</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-black">&lt;olabini&gt; it implies there is something in the tail</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-black">&lt;naeu_&gt; atStartofText?</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-black">&lt;olabini&gt; why not just</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-black">&lt;olabini&gt; textStart?</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-black">&lt;olabini&gt; textEnd?</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-black">&lt;olabini&gt; lineStart?</span><br />
+<span class="irc-date">[21:28]</span> <span class="irc-black">&lt;olabini&gt; lineEnd?</span><br />
+<span class="irc-date">[21:29]</span> <span class="irc-black">&lt;naeu_&gt; what's the difference between textStart? and lineStart?</span><br />
+<span class="irc-date">[21:29]</span> <span class="irc-black">&lt;olabini&gt; text start is the beginning of the full text</span><br />
+<span class="irc-date">[21:29]</span> <span class="irc-black">&lt;olabini&gt; txt = "foo\nbar"</span><br />
+<span class="irc-date">[21:29]</span> <span class="irc-black">&lt;olabini&gt; then if index = 0, textStart? =&gt; true</span><br />
+<span class="irc-date">[21:29]</span> <span class="irc-black">&lt;olabini&gt; and lineStart? =&gt; true</span><br />
+<span class="irc-date">[21:30]</span> <span class="irc-black">&lt;olabini&gt; if index = 4, textStart? =&gt; false</span><br />
+<span class="irc-date">[21:30]</span> <span class="irc-black">&lt;olabini&gt; lineStart? =&gt; true</span><br />
+<span class="irc-date">[21:30]</span> <span class="irc-black">&lt;olabini&gt; you with me?</span><br />
+<span class="irc-date">[21:30]</span> <span class="irc-black">&lt;olabini&gt; not sure if StringScanner needs that, of course</span><br />
+<span class="irc-date">[21:30]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[21:30]</span> <span class="irc-black">&lt;naeu_&gt; not quite...</span><br />
+<span class="irc-date">[21:30]</span> <span class="irc-black">&lt;naeu_&gt; the Ruby StringScanner doesn't appear to recognise line breaks</span><br />
+<span class="irc-date">[21:30]</span> <span class="irc-black">&lt;naeu_&gt; it just sees one big string</span><br />
+<span class="irc-date">[21:31]</span> <span class="irc-black">&lt;naeu_&gt; I guess you're referring to the difference between \A and ^</span><br />
+<span class="irc-date">[21:32]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[21:32]</span> <span class="irc-black">&lt;olabini&gt; exactly</span><br />
+<span class="irc-date">[21:32]</span> <span class="irc-black">&lt;olabini&gt; beginning_of_line? recognizes line breaks</span><br />
+<span class="irc-date">[21:32]</span> <span class="irc-black">&lt;naeu_&gt; well at the moment TextScanner has a position cell</span><br />
+<span class="irc-date">[21:32]</span> <span class="irc-black">&lt;naeu_&gt; which stores the current pointer position</span><br />
+<span class="irc-date">[21:33]</span> <span class="irc-black">&lt;naeu_&gt; so how about</span><br />
+<span class="irc-date">[21:33]</span> <span class="irc-black">&lt;naeu_&gt; atStartPosition?</span><br />
+<span class="irc-date">[21:33]</span> <span class="irc-black">&lt;naeu_&gt; and atEndPosition?</span><br />
+<span class="irc-date">[21:34]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[21:34]</span> <span class="irc-black">&lt;olabini&gt; but in that case it might not be necessary to have Position be part of the word</span><br />
+<span class="irc-date">[21:34]</span> <span class="irc-black">&lt;olabini&gt; if there's only ever one kind of start and end...</span><br />
+<span class="irc-date">[21:35]</span> <span class="irc-black">&lt;naeu_&gt; indeed</span><br />
+<span class="irc-date">[21:35]</span> <span class="irc-black">&lt;naeu_&gt; but your'e right about Ruby's bol? recognising line breaks</span><br />
+<span class="irc-date">[21:36]</span> <span class="irc-black">&lt;naeu_&gt; although it seems a little fuzzy</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-black">&lt;naeu_&gt; i.e. why isn't there an end_of_line?</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-black">&lt;naeu_&gt; and a start_of_string?</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-black">&lt;olabini&gt; hm</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-black">&lt;olabini&gt; well, Ruby developers have never been known for their consistency</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-black">&lt;naeu_&gt; I think i'll go with your original suggestion of textStart? textEnd? lineStart and lineEnd</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-black">&lt;naeu_&gt; (with ? on the line cells, naturally)</span><br />
+<span class="irc-date">[21:38]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[21:38]</span> <span class="irc-black">&lt;naeu_&gt; btw, so far I have 170 lines of specs to 35 lines of code ;-)</span><br />
+<span class="irc-date">[21:40]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[21:40]</span> <span class="irc-black">&lt;olabini&gt; ISpec is too verbose, right? =)</span><br />
+<span class="irc-date">[21:40]</span> <span class="irc-black">&lt;naeu_&gt; haha</span><br />
+<span class="irc-date">[21:40]</span> <span class="irc-black">&lt;naeu_&gt; well i find it strange not having before blocks</span><br />
+<span class="irc-date">[21:41]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[21:41]</span> <span class="irc-black">&lt;naeu_&gt; but I remember you saying that they encouraged back practice</span><br />
+<span class="irc-date">[21:41]</span> <span class="irc-black">&lt;olabini&gt; I decided I would add them when I needed them</span><br />
+<span class="irc-date">[21:41]</span> <span class="irc-black">&lt;olabini&gt; and I haven't needed them</span><br />
+<span class="irc-date">[21:41]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[21:41]</span> <span class="irc-black">&lt;naeu_&gt; I was going to ask you why when you were in Amsterdam but never got round to it</span><br />
+<span class="irc-date">[21:41]</span> <span class="irc-black">&lt;olabini&gt; not having them encourages you to keep your tests small and to the point</span><br />
+<span class="irc-date">[21:41]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[21:41]</span> <span class="irc-black">&lt;olabini&gt; hmm.</span><br />
+<span class="irc-date">[21:41]</span> <span class="irc-black">&lt;olabini&gt; search Jay Fields blog for it</span><br />
+<span class="irc-date">[21:41]</span> <span class="irc-black">&lt;olabini&gt; he's got it somewhere there</span><br />
+<span class="irc-date">[21:41]</span> <span class="irc-black">&lt;naeu_&gt; ok, cool</span><br />
+<span class="irc-date">[21:41]</span> <span class="irc-black">&lt;olabini&gt; I have the same opinion, mostly.</span><br />
+<span class="irc-date">[21:42]</span> <span class="irc-black">&lt;olabini&gt; you can of course simulate a before block by defining a method</span><br />
+<span class="irc-date">[21:42]</span> <span class="irc-black">&lt;olabini&gt; and then calling that method at the top of your tets</span><br />
+<span class="irc-date">[21:42]</span> <span class="irc-black">&lt;olabini&gt; tests</span><br />
+<span class="irc-date">[21:42]</span> <span class="irc-black">&lt;olabini&gt; that makes it a bit obvious too</span><br />
+<span class="irc-date">[21:42]</span> <span class="irc-black">&lt;naeu_&gt; sure :-)</span><br />
+<span class="irc-date">[21:42]</span> <span class="irc-black">&lt;olabini&gt; I'm actually more interested in adding a "subject" kind of feature from RSpec</span><br />
+<span class="irc-date">[21:43]</span> <span class="irc-black">&lt;olabini&gt; that is much neater, and also much more communicative</span><br />
+<span class="irc-date">[21:45]</span> <span class="irc-black">&lt;naeu_&gt; could you explain more?</span><br />
+<span class="irc-date">[21:45]</span> <span class="irc-black">&lt;naeu_&gt; do you mean "given, when, then"?</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;naeu_&gt; oh, and I just pushed my latest work to melwin/textscanner</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;olabini&gt; no, not really</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;olabini&gt; hm.</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;naeu_&gt; it's far from ready yet, but would be nice to get some feedback</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;olabini&gt; search for subject+rspec and you'll see it</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;olabini&gt; it's a pretty new feature</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;olabini&gt; will look tomorrow</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;olabini&gt; now - sleep time</span><br />
+<span class="irc-date">[22:09]</span> <span class="irc-black">&lt;naeu_&gt; yeah, same for me too</span><br />
+<span class="irc-date">[22:09]</span> <span class="irc-black">&lt;naeu_&gt; sleep well</span><br />
+<span class="irc-date">[22:10]</span> <span class="irc-black">&lt;naeu_&gt; btw, do you sleep in your hat?</span><br />
+<span class="irc-date">[22:10]</span> <span class="irc-black">&lt;naeu_&gt; :-p</span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-black">&lt;olabini&gt; no, obviously I have a special sleep-hat!</span><br />
+<span class="irc-date">[22:11]</span> <span class="irc-black">&lt;naeu_&gt; hahaha</span><br />
+<span class="irc-date">[22:12]</span> <span class="irc-black">&lt;naeu_&gt; I'm guess it's also black though ;-)</span><br />
+<span class="irc-date">[22:12]</span> <span class="irc-black">&lt;olabini&gt; of course</span><br />
+<span class="irc-date">[22:12]</span> <span class="irc-black">&lt;naeu_&gt; hehe</span><br />
+<span class="irc-date">[22:12]</span> <span class="irc-black">&lt;naeu_&gt; night night</span><br />
+<span class="irc-date">[22:13]</span> <span class="irc-navy">* naeu_ (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[22:30]</span> <span class="irc-black">&lt;olabini&gt; not sure I like the name preMatch. maybe beforeMatch instead?</span><br />
+<span class="irc-date">[22:31]</span> <span class="irc-black">&lt;olabini&gt; also, not sure why the comments are surrounded with quotes</span><br />
+<span class="irc-date">[22:33]</span> <span class="irc-black">&lt;olabini&gt; also, in some cases you're inconsistent with uses of @. my rule is to only use @ when assigning, unless there is a specific conflict</span><br />
+<span class="irc-date">[22:33]</span> <span class="irc-black">&lt;olabini&gt; you have</span><br />
+<span class="irc-date">[22:33]</span> <span class="irc-black">&lt;olabini&gt;  if(@match, text[x], nil)</span><br />
+<span class="irc-date">[22:33]</span> <span class="irc-black">&lt;olabini&gt; where text is also a cell</span><br />
+<span class="irc-date">[22:34]</span> <span class="irc-black">&lt;olabini&gt; other than those things, it looks very clean indeed. nice work.</span><br />
+<span class="irc-date">[22:55]</span> <span class="irc-navy">* ynyr (n=ynyr@host217-44-177-41.range217-44.btcentralplus.com) Quit ()</span><br />

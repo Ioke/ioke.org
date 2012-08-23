@@ -1,0 +1,46 @@
+<span class="irc-date">[1:06]</span> <span class="irc-green">* Raynes (~Raynes@unaffiliated/raynes) has joined #ioke</span><br />
+<span class="irc-date">[2:02]</span> <span class="irc-navy">* Raynes (~Raynes@unaffiliated/raynes) Quit (Ping timeout: 240 seconds)</span><br />
+<span class="irc-date">[2:21]</span> <span class="irc-green">* Raynes (~Raynes@unaffiliated/raynes) has joined #ioke</span><br />
+<span class="irc-date">[3:47]</span> <span class="irc-green">* jdp (~justin@75.97.120.11.res-cmts.senj.ptd.net) has joined #ioke</span><br />
+<span class="irc-date">[5:21]</span> <span class="irc-green">* jewel (~jewel@vc-41-30-88-77.umts.vodacom.co.za) has joined #ioke</span><br />
+<span class="irc-date">[5:51]</span> <span class="irc-navy">* jdp (~justin@75.97.120.11.res-cmts.senj.ptd.net) Quit (Remote host closed the connection)</span><br />
+<span class="irc-date">[5:56]</span> <span class="irc-navy">* jewel (~jewel@vc-41-30-88-77.umts.vodacom.co.za) Quit (Ping timeout: 276 seconds)</span><br />
+<span class="irc-date">[7:17]</span> <span class="irc-green">* jdp (~gu@75.97.120.11.res-cmts.senj.ptd.net) has joined #ioke</span><br />
+<span class="irc-date">[9:18]</span> <span class="irc-green">* lenbust (~lnx@c-3d54e555.023-3-67626717.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[10:06]</span> <span class="irc-navy">* Raynes (~Raynes@unaffiliated/raynes) Quit (Ping timeout: 248 seconds)</span><br />
+<span class="irc-date">[10:11]</span> <span class="irc-green">* Raynes (~Raynes@unaffiliated/raynes) has joined #ioke</span><br />
+<span class="irc-date">[12:24]</span> <span class="irc-green">* melwin (~soup@95.209.21.69.bredband.tre.se) has joined #ioke</span><br />
+<span class="irc-date">[12:24]</span> <span class="irc-green">* naeu (~sam@a151182.upc-a.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[13:33]</span> <span class="irc-black">&lt;Raynes&gt; 11 users.</span><br />
+<span class="irc-date">[13:33]</span> <span class="irc-black">&lt;Raynes&gt; NEW RECORD!</span><br />
+<span class="irc-date">[13:48]</span> <span class="irc-black">&lt;naeu&gt; ha</span><br />
+<span class="irc-date">[13:48]</span> <span class="irc-black">&lt;naeu&gt; I think the record should be num users concurrently chatting ;-)</span><br />
+<span class="irc-date">[13:53]</span> <span class="irc-brick">* melwin chats to help setting a new record.</span><br />
+<span class="irc-date">[13:54]</span> <span class="irc-black">&lt;melwin&gt; s/ting//g</span><br />
+<span class="irc-date">[13:55]</span> <span class="irc-black">&lt;Raynes&gt; Then the record is probably 1 and a half. :o</span><br />
+<span class="irc-date">[14:29]</span> <span class="irc-black">&lt;naeu&gt; haha</span><br />
+<span class="irc-date">[14:29]</span> <span class="irc-black">&lt;naeu&gt; sorry i was away trying to build OS X binaries</span><br />
+<span class="irc-date">[14:29]</span> <span class="irc-black">&lt;naeu&gt; no fun at all</span><br />
+<span class="irc-date">[14:31]</span> <span class="irc-black">&lt;Raynes&gt; I wrote the most awesome Ioke code ever earlier.</span><br />
+<span class="irc-date">[14:31]</span> <span class="irc-black">&lt;Raynes&gt; "Hello, World!" println</span><br />
+<span class="irc-date">[14:33]</span> <span class="irc-black">&lt;naeu&gt; 3 times("Wow, that's cool Raynes" println)</span><br />
+<span class="irc-date">[14:33]</span> <span class="irc-black">&lt;Raynes&gt; ;)</span><br />
+<span class="irc-date">[14:43]</span> <span class="irc-black">&lt;naeu&gt; Raynes: where abouts are you from?</span><br />
+<span class="irc-date">[14:43]</span> <span class="irc-black">&lt;Raynes&gt; naeu: Alabama, USA.</span><br />
+<span class="irc-date">[14:43]</span> <span class="irc-black">&lt;naeu&gt; nice</span><br />
+<span class="irc-date">[15:22]</span> <span class="irc-green">* gu2 (~gu@75.97.120.11.res-cmts.senj.ptd.net) has joined #ioke</span><br />
+<span class="irc-date">[15:23]</span> <span class="irc-navy">* jdp (~gu@75.97.120.11.res-cmts.senj.ptd.net) Quit (Ping timeout: 246 seconds)</span><br />
+<span class="irc-date">[17:13]</span> <span class="irc-navy">* naeu (~sam@a151182.upc-a.chello.nl) Quit (Quit: naeu)</span><br />
+<span class="irc-date">[17:29]</span> <span class="irc-green">* gu2 is now known as jdp</span><br />
+<span class="irc-date">[18:03]</span> <span class="irc-green">* naeu (~sam@dhcp-077-250-237-109.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-navy">* Raynes (~Raynes@unaffiliated/raynes) Quit (Ping timeout: 264 seconds)</span><br />
+<span class="irc-date">[18:46]</span> <span class="irc-navy">* melwin (~soup@95.209.21.69.bredband.tre.se) Quit (Ping timeout: 265 seconds)</span><br />
+<span class="irc-date">[21:47]</span> <span class="irc-green">* felipe__ (~felipe@189-55-17-168-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[21:48]</span> <span class="irc-green">* felipero (~felipero@189-55-17-168-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[21:49]</span> <span class="irc-navy">* felipe__ (~felipe@189-55-17-168-nd.cpe.vivax.com.br) Quit (Client Quit)</span><br />
+<span class="irc-date">[22:53]</span> <span class="irc-navy">* jdp (~gu@75.97.120.11.res-cmts.senj.ptd.net) Quit ()</span><br />
+<span class="irc-date">[22:53]</span> <span class="irc-navy">* naeu (~sam@dhcp-077-250-237-109.chello.nl) Quit (*.net *.split)</span><br />
+<span class="irc-date">[22:53]</span> <span class="irc-navy">* lenbust (~lnx@c-3d54e555.023-3-67626717.cust.bredbandsbolaget.se) Quit (*.net *.split)</span><br />
+<span class="irc-date">[22:55]</span> <span class="irc-green">* lenbust (~lnx@c-3d54e555.023-3-67626717.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[23:03]</span> <span class="irc-green">* naeu (~sam@dhcp-077-250-237-109.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[23:55]</span> <span class="irc-navy">* naeu (~sam@dhcp-077-250-237-109.chello.nl) Quit (Quit: naeu)</span><br />

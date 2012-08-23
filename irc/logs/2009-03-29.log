@@ -1,0 +1,98 @@
+<span class="irc-date">[0:30]</span> <span class="irc-green">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) has joined #ioke</span><br />
+<span class="irc-date">[1:18]</span> <span class="irc-navy">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) Quit ()</span><br />
+<span class="irc-date">[1:50]</span> <span class="irc-green">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) has joined #ioke</span><br />
+<span class="irc-date">[1:51]</span> <span class="irc-navy">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[7:01]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-23.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[7:55]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-23.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[9:28]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-138.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[10:07]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-138.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-green">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[11:26]</span> <span class="irc-black">&lt;olabini&gt; hm. I really want the next Ioke version released soon</span><br />
+<span class="irc-date">[11:26]</span> <span class="irc-black">&lt;olabini&gt; time to put some energy into Java integration, and then call it a wrap, I think</span><br />
+<span class="irc-date">[13:28]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-208.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[13:35]</span> <span class="irc-black">&lt;olabini&gt; cute. if a call to "use" doesn't get any arguments, then it will return itself</span><br />
+<span class="irc-date">[13:35]</span> <span class="irc-black">&lt;olabini&gt; so to add something so you can do for example:</span><br />
+<span class="irc-date">[13:35]</span> <span class="irc-black">&lt;olabini&gt;   use relative("blah")</span><br />
+<span class="irc-date">[13:35]</span> <span class="irc-black">&lt;olabini&gt; you just add a "relative" method on cell(:use)</span><br />
+<span class="irc-date">[13:43]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * r9293eb1 / (12 files in 4 dirs): First support for making it possible to use a jar-file - <a href="http://bit.ly/3K0V7y">http://bit.ly/3K0V7y</a></span><br />
+<span class="irc-date">[13:43]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * r085f02d / test/java_ground_spec.ik : More tests of jar-files - <a href="http://bit.ly/12MoB">http://bit.ly/12MoB</a></span><br />
+<span class="irc-date">[13:43]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * r3c68c27 / (6 files in 4 dirs): Finalize pieces of jar-loading - <a href="http://bit.ly/5Te5H">http://bit.ly/5Te5H</a></span><br />
+<span class="irc-date">[13:43]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * r0ef6fa4 / src/builtin/A30_system.ik : Make assignment of use-modules even easier - <a href="http://bit.ly/LMit">http://bit.ly/LMit</a></span><br />
+<span class="irc-date">[14:47]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-208.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[16:18]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * ra5e0197 / (6 files in 3 dirs): Add basic support for byte Java arrays - <a href="http://bit.ly/4xv">http://bit.ly/4xv</a></span><br />
+<span class="irc-date">[16:18]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * raa64e2a / (4 files in 2 dirs): Support getting and setting values in byte arrays - <a href="http://bit.ly/1k9TU6">http://bit.ly/1k9TU6</a></span><br />
+<span class="irc-date">[17:52]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[17:53]</span> <span class="irc-black">&lt;naeu&gt; olabini: just  read your latest blog post</span><br />
+<span class="irc-date">[17:53]</span> <span class="irc-black">&lt;naeu&gt; this is probably a really na??ve question, but what's the difference here between your laziness method and memoization?</span><br />
+<span class="irc-date">[18:02]</span> <span class="irc-black">&lt;olabini&gt; this is lazy+memoization</span><br />
+<span class="irc-date">[18:02]</span> <span class="irc-black">&lt;olabini&gt; no large difference in itself</span><br />
+<span class="irc-date">[18:05]</span> <span class="irc-black">&lt;olabini&gt; it makes a larger difference when applied to function arguments</span><br />
+<span class="irc-date">[18:06]</span> <span class="irc-black">&lt;olabini&gt; where Ioke's macros have lazy arguments, but not memoization in them</span><br />
+<span class="irc-date">[18:18]</span> <span class="irc-black">&lt;naeu&gt; does ioke have explicit support for memoization?</span><br />
+<span class="irc-date">[18:19]</span> <span class="irc-black">&lt;naeu&gt; although i still don't see any major difference between lazy and memoization in this particular instance</span><br />
+<span class="irc-date">[18:20]</span> <span class="irc-black">&lt;naeu&gt; except, perhaps, that you're replacing the function with the value rather than checking if a value has been previously calculated and retrieving it, if necessary, from a stored location</span><br />
+<span class="irc-date">[18:21]</span> <span class="irc-black">&lt;naeu&gt; not that your approach isn't interesting, I think it is</span><br />
+<span class="irc-date">[18:21]</span> <span class="irc-black">&lt;naeu&gt; you could, of course, also have implemented it with a dsyntax</span><br />
+<span class="irc-date">[18:22]</span> <span class="irc-black">&lt;naeu&gt; if i'm not mistaken (which actually is pretty regular ;-)</span><br />
+<span class="irc-date">[18:59]</span> <span class="irc-black">&lt;mozinator&gt; naeu, hi Sam, I managed to link JMusic to Clojure, <a href="http://mozinator.eu/?p=16">http://mozinator.eu/?p=16</a></span><br />
+<span class="irc-date">[19:09]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-198.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[19:10]</span> <span class="irc-black">&lt;naeu&gt; mozinator: hey there</span><br />
+<span class="irc-date">[19:10]</span> <span class="irc-black">&lt;naeu&gt; what's jmusic?</span><br />
+<span class="irc-date">[19:10]</span> <span class="irc-black">&lt;naeu&gt; ah: <a href="http://jmusic.ci.qut.edu.au/">http://jmusic.ci.qut.edu.au/</a></span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-black">&lt;mozinator&gt; naeu, a java library which makes it easy to make music programmaticly</span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-black">&lt;mozinator&gt; yupo</span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-black">&lt;naeu&gt; does it have a timer?</span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-black">&lt;mozinator&gt; naeu, I'm sure it has</span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-black">&lt;naeu&gt; what made you look at it?</span><br />
+<span class="irc-date">[19:11]</span> <span class="irc-black">&lt;mozinator&gt; the next thing I am going to do with jmusic is to make a simple baseline</span><br />
+<span class="irc-date">[19:12]</span> <span class="irc-black">&lt;naeu&gt; cool</span><br />
+<span class="irc-date">[19:12]</span> <span class="irc-black">&lt;mozinator&gt; naeu, I knew some things like this existed, so I googled it</span><br />
+<span class="irc-date">[19:12]</span> <span class="irc-black">&lt;mozinator&gt; there was also JSyn</span><br />
+<span class="irc-date">[19:12]</span> <span class="irc-black">&lt;mozinator&gt; but that one was not open source</span><br />
+<span class="irc-date">[19:12]</span> <span class="irc-black">&lt;mozinator&gt; some guys at #clojure also made some cool stuff with clojure + music</span><br />
+<span class="irc-date">[19:13]</span> <span class="irc-black">&lt;mozinator&gt; naeu,  <a href="http://github.com/cmvkk/lumenc/tree/master">http://github.com/cmvkk/lumenc/tree/master</a></span><br />
+<span class="irc-date">[19:13]</span> <span class="irc-black">&lt;naeu&gt; cool</span><br />
+<span class="irc-date">[19:13]</span> <span class="irc-black">&lt;mozinator&gt; <a href="http://www.fatvat.co.uk/2009/02/jmusic-and-clojure.html">http://www.fatvat.co.uk/2009/02/jmusic-and-clojure.html</a></span><br />
+<span class="irc-date">[19:13]</span> <span class="irc-black">&lt;mozinator&gt; I took some ideas from the fatvat blogpost, but I didn't like that it first rendered to midi, I wanted it to be live so I could do live coding, and make music from the REPL</span><br />
+<span class="irc-date">[19:14]</span> <span class="irc-black">&lt;mozinator&gt; just like the rubyfringe guy: <a href="http://www.infoq.com/presentations/archaeopteryx-bowkett">http://www.infoq.com/presentations/archaeopteryx-bowkett</a></span><br />
+<span class="irc-date">[19:14]</span> <span class="irc-black">&lt;naeu&gt; sure :-)</span><br />
+<span class="irc-date">[19:14]</span> <span class="irc-black">&lt;naeu&gt; have you seen ChucK</span><br />
+<span class="irc-date">[19:15]</span> <span class="irc-black">&lt;mozinator&gt; naeu, yup, and CMusic, but those two are not java based :)</span><br />
+<span class="irc-date">[19:15]</span> <span class="irc-black">&lt;naeu&gt; sure, but it wouldn't be hard to send OSC messages to ChucK processes</span><br />
+<span class="irc-date">[19:15]</span> <span class="irc-black">&lt;mozinator&gt; nope, would be easy</span><br />
+<span class="irc-date">[19:16]</span> <span class="irc-black">&lt;mozinator&gt; naeu, you have seen the Archaeopteryx presentation ?</span><br />
+<span class="irc-date">[19:16]</span> <span class="irc-black">&lt;naeu&gt; that's my plan at least</span><br />
+<span class="irc-date">[19:16]</span> <span class="irc-black">&lt;naeu&gt; mozinator: not yet, but i've looked at it quite a bit</span><br />
+<span class="irc-date">[19:17]</span> <span class="irc-black">&lt;mozinator&gt; naeu, I think the coolest thing is to keep everything Java, so I could make applets and run it in the browser, maybe make some nice visualisations with Processing</span><br />
+<span class="irc-date">[19:19]</span> <span class="irc-black">&lt;mozinator&gt; mozinator, and then some server backend and make it possible to do jams :)</span><br />
+<span class="irc-date">[19:20]</span> <span class="irc-black">&lt;naeu&gt; sure</span><br />
+<span class="irc-date">[19:20]</span> <span class="irc-black">&lt;naeu&gt; although i don't mind separating the instruments from the composition and organisation</span><br />
+<span class="irc-date">[19:21]</span> <span class="irc-black">&lt;naeu&gt; it's just conceptually similar to using hardware instruments</span><br />
+<span class="irc-date">[19:21]</span> <span class="irc-black">&lt;mozinator&gt; naeu, that's true I guess</span><br />
+<span class="irc-date">[19:22]</span> <span class="irc-black">&lt;mozinator&gt; naeu, I think I will just discover everything as I go, first things first, generating music :)</span><br />
+<span class="irc-date">[19:26]</span> <span class="irc-black">&lt;naeu&gt; absolutely!</span><br />
+<span class="irc-date">[19:26]</span> <span class="irc-black">&lt;naeu&gt; keep me informed with your progress!</span><br />
+<span class="irc-date">[19:26]</span> <span class="irc-black">&lt;mozinator&gt; will do</span><br />
+<span class="irc-date">[19:28]</span> <span class="irc-black">&lt;mozinator&gt; btw, JMusic is very well documented on <a href="http://jmusic.ci.qut.edu.au/jmtutorial/t1.html">http://jmusic.ci.qut.edu.au/jmtutorial/t1.html</a></span><br />
+<span class="irc-date">[19:28]</span> <span class="irc-black">&lt;naeu&gt; ah, nice</span><br />
+<span class="irc-date">[19:49]</span> <span class="irc-black">&lt;olabini&gt; naeu: yeah, you could do it with dsyntax</span><br />
+<span class="irc-date">[19:49]</span> <span class="irc-black">&lt;olabini&gt; but it's not as good</span><br />
+<span class="irc-date">[19:49]</span> <span class="irc-black">&lt;olabini&gt; what would happen with dsyntax is that a message invocation would still happen, of a synthetic wrapped value</span><br />
+<span class="irc-date">[19:49]</span> <span class="irc-black">&lt;olabini&gt; this is a bit clearer, in my mind</span><br />
+<span class="irc-date">[19:54]</span> <span class="irc-black">&lt;naeu&gt; yes, sure :-)</span><br />
+<span class="irc-date">[19:55]</span> <span class="irc-black">&lt;naeu&gt; so, with dsyntax is it only possible to replace one function with another rather than replace a function with a message</span><br />
+<span class="irc-date">[19:56]</span> <span class="irc-black">&lt;naeu&gt; (rather than replace a function with a function that contains a message)</span><br />
+<span class="irc-date">[19:56]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-198.vc-graz.ac.at) Quit (Connection timed out)</span><br />
+<span class="irc-date">[20:02]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[20:16]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-187.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[20:34]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-187.vc-graz.ac.at) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[21:06]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit (wolfe.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit (SendQ exceeded)</span><br />
+<span class="irc-date">[21:08]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[21:52]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[22:13]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[23:14]</span> <span class="irc-navy">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) Quit ("Ik ga weg")</span><br />
+<span class="irc-date">[23:40]</span> <span class="irc-green">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) has joined #ioke</span><br />
+<span class="irc-date">[23:51]</span> <span class="irc-navy">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) Quit ()</span><br />
+<span class="irc-date">[23:52]</span> <span class="irc-green">* slava (n=slava@li13-154.members.linode.com) has joined #ioke</span><br />

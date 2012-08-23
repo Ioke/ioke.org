@@ -1,0 +1,64 @@
+<span class="irc-date">[3:39]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[6:41]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[6:45]</span> <span class="irc-black">&lt;olabini&gt; morning everyone</span><br />
+<span class="irc-date">[6:49]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[6:53]</span> <span class="irc-green">* HeMan (n=jimmy@ssh.southpole.se) has left #ioke</span><br />
+<span class="irc-date">[6:54]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[7:28]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit ("Leaving")</span><br />
+<span class="irc-date">[7:30]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[8:01]</span> <span class="irc-green">* naeu (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:16]</span> <span class="irc-black">&lt;naeu&gt; olabini: s/wary/vary in your latest post :-)</span><br />
+<span class="irc-date">[8:16]</span> <span class="irc-black">&lt;naeu&gt; s/generally will/will generally</span><br />
+<span class="irc-date">[8:18]</span> <span class="irc-black">&lt;naeu&gt; nice article though</span><br />
+<span class="irc-date">[8:18]</span> <span class="irc-black">&lt;olabini&gt; GAH</span><br />
+<span class="irc-date">[8:19]</span> <span class="irc-black">&lt;naeu&gt; you mention that kind_of? checks are a warning sign</span><br />
+<span class="irc-date">[8:19]</span> <span class="irc-black">&lt;olabini&gt; I hate those parts of the egnlish language</span><br />
+<span class="irc-date">[8:19]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[8:19]</span> <span class="irc-black">&lt;naeu&gt; what do you think of respond_to? checks?</span><br />
+<span class="irc-date">[8:19]</span> <span class="irc-black">&lt;olabini&gt; english</span><br />
+<span class="irc-date">[8:19]</span> <span class="irc-black">&lt;olabini&gt; check the comments</span><br />
+<span class="irc-date">[8:19]</span> <span class="irc-black">&lt;olabini&gt; it's discussed a lot there</span><br />
+<span class="irc-date">[8:19]</span> <span class="irc-black">&lt;naeu&gt; egnlish is a great language</span><br />
+<span class="irc-date">[8:19]</span> <span class="irc-black">&lt;naeu&gt; ah ok, i've just got it in my feed reader right now</span><br />
+<span class="irc-date">[8:20]</span> <span class="irc-black">&lt;slava&gt; I have mixed feelings on dynamic typing</span><br />
+<span class="irc-date">[8:20]</span> <span class="irc-black">&lt;slava&gt; I like the idea generally but as I add more static checks to factor I find my productivity increasing</span><br />
+<span class="irc-date">[8:33]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[8:33]</span> <span class="irc-black">&lt;olabini&gt; yeah. I know what you mean</span><br />
+<span class="irc-date">[8:34]</span> <span class="irc-black">&lt;olabini&gt; I think it's one of those things that vary/wary depending on person</span><br />
+<span class="irc-date">[8:34]</span> <span class="irc-black">&lt;olabini&gt; some people are more comfortable with static checks</span><br />
+<span class="irc-date">[8:34]</span> <span class="irc-black">&lt;olabini&gt; for me it is a matter of tradeoffs. in some circumstances I am much more comfortable with static checks</span><br />
+<span class="irc-date">[8:34]</span> <span class="irc-black">&lt;olabini&gt; in some cases I'm not</span><br />
+<span class="irc-date">[8:35]</span> <span class="irc-black">&lt;olabini&gt; but I have a very hard time verbalizing what the criteria for those are</span><br />
+<span class="irc-date">[10:26]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[10:26]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[11:47]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[13:57]</span> <span class="irc-green">* martido_ (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[13:57]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[13:58]</span> <span class="irc-green">* martido_ (n=martin@213.61.180.190) has left #ioke</span><br />
+<span class="irc-date">[14:24]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit (Connection timed out)</span><br />
+<span class="irc-date">[14:26]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * re80c734 / (3 files in 2 dirs): Extract all Java code from the grammar - <a href="http://bit.ly/vtAS">http://bit.ly/vtAS</a></span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[15:13]</span> <span class="irc-navy">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[15:15]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[15:15]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[15:39]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit ()</span><br />
+<span class="irc-date">[15:50]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[17:10]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit ("Leaving")</span><br />
+<span class="irc-date">[17:18]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-101.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[17:22]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[18:09]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[18:59]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-101.vc-graz.ac.at) Quit (Read error: 131 (Connection reset by peer))</span><br />
+<span class="irc-date">[19:22]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[19:25]</span> <span class="irc-navy">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[19:35]</span> <span class="irc-green">* melwin (n=soup@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[20:08]</span> <span class="irc-green">* RobL__ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[20:08]</span> <span class="irc-navy">* RobL_ (n=RobL@roblally.plus.com) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[20:10]</span> <span class="irc-navy">* RobL__ (n=RobL@roblally.plus.com) Quit (Client Quit)</span><br />
+<span class="irc-date">[20:11]</span> <span class="irc-green">* mkrauskopf_ (n=mkrausko@nat/sun/x-d2b35a806817b0b6) has joined #ioke</span><br />
+<span class="irc-date">[20:28]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-green">* felipero (n=Felipe@189-55-18-206-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[21:45]</span> <span class="irc-green">* RobL_ (n=RobL@roblally.plus.com) has joined #ioke</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-navy">* felipero (n=Felipe@189-55-18-206-nd.cpe.vivax.com.br) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[22:29]</span> <span class="irc-navy">* mkrauskopf_ (n=mkrausko@nat/sun/x-d2b35a806817b0b6) Quit ("Leaving")</span><br />
+<span class="irc-date">[23:34]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />

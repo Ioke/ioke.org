@@ -1,0 +1,33 @@
+<span class="irc-date">[0:58]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[1:11]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[3:44]</span> <span class="irc-green">* basu (n=basu@139.147.89.98) has joined #ioke</span><br />
+<span class="irc-date">[3:45]</span> <span class="irc-black">&lt;basu&gt;  hi</span><br />
+<span class="irc-date">[3:50]</span> <span class="irc-green">* basu (n=basu@139.147.89.98) has left #ioke</span><br />
+<span class="irc-date">[4:07]</span> <span class="irc-green">* basu (n=basu@139.147.89.98) has joined #ioke</span><br />
+<span class="irc-date">[4:36]</span> <span class="irc-green">* basu (n=basu@139.147.89.98) has left #ioke</span><br />
+<span class="irc-date">[7:32]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[7:37]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[8:07]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini master * r5e666e2 / (3 files in 2 dirs): Add first pieces for message rewriting - <a href="http://bit.ly/oJF5r">http://bit.ly/oJF5r</a></span><br />
+<span class="irc-date">[8:07]</span> <span class="irc-black">&lt;CIA-8&gt; ioke: Ola Bini master * r206d184 / src/ikc/main/Ioke.Lang/Parser/FunctionalOperatorShuffler.fs : Use higher order functions for some iterations, instead of pattern matching - <a href="http://bit.ly/xoNPb">http://bit.ly/xoNPb</a></span><br />
+<span class="irc-date">[8:25]</span> <span class="irc-green">* martido (n=martin@dslb-088-066-195-013.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[13:13]</span> <span class="irc-green">* basu (n=basu@139.147.89.98) has joined #ioke</span><br />
+<span class="irc-date">[13:19]</span> <span class="irc-green">* mozinator (n=mozinato@195-241-109-215.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-green">* basu (n=basu@139.147.89.98) has left #ioke</span><br />
+<span class="irc-date">[15:13]</span> <span class="irc-green">* basu (n=basu@139.147.89.98) has joined #ioke</span><br />
+<span class="irc-date">[15:21]</span> <span class="irc-navy">* basu (n=basu@139.147.89.98) Quit ()</span><br />
+<span class="irc-date">[15:21]</span> <span class="irc-green">* basu (n=basu@139.147.89.98) has joined #ioke</span><br />
+<span class="irc-date">[15:23]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[17:46]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-96.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-96.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[18:19]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[18:55]</span> <span class="irc-green">* basu_ (n=basu@139.147.18.6) has joined #ioke</span><br />
+<span class="irc-date">[18:59]</span> <span class="irc-black">&lt;basu_&gt; are there any large production programs written in Ioke?</span><br />
+<span class="irc-date">[19:16]</span> <span class="irc-green">* basu (n=basu@139.147.89.98) has left #ioke</span><br />
+<span class="irc-date">[19:21]</span> <span class="irc-black">&lt;martido&gt; no, Ioke's an experimental language so far</span><br />
+<span class="irc-date">[19:22]</span> <span class="irc-black">&lt;martido&gt; well ... of course maybe somebody's doing something with Ioke that I don't of =) so I hope I didn't make a false claim...</span><br />
+<span class="irc-date">[19:29]</span> <span class="irc-navy">* martido (n=martin@dslb-088-066-195-013.pools.arcor-ip.net) Quit ()</span><br />
+<span class="irc-date">[19:32]</span> <span class="irc-navy">* basu_ (n=basu@139.147.18.6) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[20:13]</span> <span class="irc-navy">* mozinator (n=mozinato@195-241-109-215.ip.telfort.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[20:52]</span> <span class="irc-green">* basu (n=basu@139.147.18.6) has joined #ioke</span><br />
+<span class="irc-date">[21:25]</span> <span class="irc-navy">* basu (n=basu@139.147.18.6) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[22:34]</span> <span class="irc-green">* basu (n=basu@139.147.18.6) has joined #ioke</span><br />

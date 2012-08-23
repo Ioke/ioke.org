@@ -1,0 +1,200 @@
+<span class="irc-date">[0:15]</span> <span class="irc-green">* felipe__ (n=felipe@189-55-73-254-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[0:17]</span> <span class="irc-navy">* felipe__ (n=felipe@189-55-73-254-nd.cpe.vivax.com.br) Quit (Client Quit)</span><br />
+<span class="irc-date">[0:31]</span> <span class="irc-navy">* felipero (n=felipe@189-55-73-254-nd.cpe.vivax.com.br) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[2:13]</span> <span class="irc-green">* junebug (n=azoic@adsl-76-200-189-126.dsl.pltn13.sbcglobal.net) has joined #ioke</span><br />
+<span class="irc-date">[2:48]</span> <span class="irc-green">* felipe__ (n=felipe@189-55-73-254-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[3:56]</span> <span class="irc-navy">* junebug (n=azoic@adsl-76-200-189-126.dsl.pltn13.sbcglobal.net) Quit ()</span><br />
+<span class="irc-date">[4:53]</span> <span class="irc-navy">* felipe__ (n=felipe@189-55-73-254-nd.cpe.vivax.com.br) Quit ("leaving")</span><br />
+<span class="irc-date">[4:55]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[5:08]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[6:15]</span> <span class="irc-green">* bguthrie (n=bguthrie@20.sub-75-196-137.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[7:29]</span> <span class="irc-navy">* bguthrie (n=bguthrie@20.sub-75-196-137.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[8:33]</span> <span class="irc-black">&lt;olabini&gt; no action tonight. I guess most people here are in Europe time zones</span><br />
+<span class="irc-date">[8:34]</span> <span class="irc-black">&lt;melwin&gt; :]</span><br />
+<span class="irc-date">[8:35]</span> <span class="irc-black">&lt;melwin&gt; I had a small monologue before realizing no one was listening...</span><br />
+<span class="irc-date">[8:36]</span> <span class="irc-black">&lt;melwin&gt; Just like now! ;P</span><br />
+<span class="irc-date">[9:12]</span> <span class="irc-black">&lt;olabini&gt; melwin: so what will be number 4 in your guide?</span><br />
+<span class="irc-date">[9:12]</span> <span class="irc-black">&lt;olabini&gt; compiling Ioke?</span><br />
+<span class="irc-date">[9:13]</span> <span class="irc-black">&lt;melwin&gt; Install Java and Ant, then get Ioke, compile, and set up ioke-mode etc...</span><br />
+<span class="irc-date">[9:13]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[9:13]</span> <span class="irc-black">&lt;melwin&gt; But probably split into 2 or three parts...</span><br />
+<span class="irc-date">[9:14]</span> <span class="irc-brick">* olabini is trying to figure out what the apsects should look like. that's what I'll focus on this weekend</span><br />
+<span class="irc-date">[9:14]</span> <span class="irc-black">&lt;melwin&gt; Cool.</span><br />
+<span class="irc-date">[9:14]</span> <span class="irc-black">&lt;melwin&gt; I saw the tests you added.</span><br />
+<span class="irc-date">[9:14]</span> <span class="irc-black">&lt;melwin&gt; You planning on populating those, then?</span><br />
+<span class="irc-date">[9:15]</span> <span class="irc-black">&lt;olabini&gt; yes</span><br />
+<span class="irc-date">[9:16]</span> <span class="irc-black">&lt;olabini&gt; definitely</span><br />
+<span class="irc-date">[9:16]</span> <span class="irc-black">&lt;olabini&gt; it's going to be good functionality to have</span><br />
+<span class="irc-date">[9:16]</span> <span class="irc-black">&lt;olabini&gt; will make it really easy to express composition of computations</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;melwin&gt; Do cells "redefined" in an object trigger aspects set in mimics?</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;olabini&gt; well. I haven't decided yet.</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;olabini&gt; we'll see</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;olabini&gt; probably</span><br />
+<span class="irc-date">[9:23]</span> <span class="irc-black">&lt;melwin&gt; Ok. Just curious.</span><br />
+<span class="irc-date">[9:28]</span> <span class="irc-black">&lt;melwin&gt; Breakfast time.</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:51]</span> <span class="irc-black">&lt;naeu&gt; morning</span><br />
+<span class="irc-date">[9:55]</span> <span class="irc-black">&lt;melwin&gt; Hey.</span><br />
+<span class="irc-date">[9:57]</span> <span class="irc-black">&lt;naeu&gt; I'm off to spend a day hacking with some friends</span><br />
+<span class="irc-date">[9:57]</span> <span class="irc-black">&lt;naeu&gt; hopefully I can fit some Ioke time into it</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;naeu&gt; what's the current state of play with the conversion fixes?</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;melwin&gt; Nice - have fun!</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;melwin&gt; I've committed a few to work for Number Decimal. And felipero was going to look at Range.</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;naeu&gt; cool</span><br />
+<span class="irc-date">[9:59]</span> <span class="irc-black">&lt;naeu&gt; I've noticed that the new_convert_helper_method branch was a fork from the work branch</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;melwin&gt; Yeah - but that's merged back in.</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;naeu&gt; and the work branch had a bunch of stuff added which didn't look like it had been specced first</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;melwin&gt; Really? What?</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;naeu&gt; that was ola's comment, not mine</span><br />
+<span class="irc-date">[10:01]</span> <span class="irc-black">&lt;melwin&gt; I think that was for the old tests for List &lt;=&gt; for instance.</span><br />
+<span class="irc-date">[10:01]</span> <span class="irc-black">&lt;naeu&gt; for example, Initial test of arg validation for &lt;=&gt; and +. didn't include any specs in the commit</span><br />
+<span class="irc-date">[10:01]</span> <span class="irc-black">&lt;melwin&gt; Right.</span><br />
+<span class="irc-date">[10:01]</span> <span class="irc-black">&lt;melwin&gt; So - how should we do this, you think?</span><br />
+<span class="irc-date">[10:02]</span> <span class="irc-black">&lt;naeu&gt; I think that we should start afresh from a new fork of olabini/master</span><br />
+<span class="irc-date">[10:02]</span> <span class="irc-black">&lt;naeu&gt; and make sure we are clear what tests the code is targetted for</span><br />
+<span class="irc-date">[10:02]</span> <span class="irc-black">&lt;naeu&gt; and if it's just a plain refactoring (i.e. cleaning up of internals) we should probably explicitly state that</span><br />
+<span class="irc-date">[10:03]</span> <span class="irc-black">&lt;naeu&gt; I'd like to make it as easy as possible for Ola to see the intention of what we're doing</span><br />
+<span class="irc-date">[10:03]</span> <span class="irc-black">&lt;naeu&gt; and I think that writing specs (in addition to decent commit messages) is probably one of the best ways of doing that :-)</span><br />
+<span class="irc-date">[10:03]</span> <span class="irc-black">&lt;melwin&gt; Right. Then I think we should first add the helper in IokeObject and IokeData, then add the test+fix commits.</span><br />
+<span class="irc-date">[10:03]</span> <span class="irc-black">&lt;naeu&gt; yeah, cool :-)</span><br />
+<span class="irc-date">[10:03]</span> <span class="irc-black">&lt;naeu&gt; I don't want to start sounding all anal</span><br />
+<span class="irc-date">[10:04]</span> <span class="irc-black">&lt;naeu&gt; I just think that at this stage we probably need to be over careful with what we do with the internals</span><br />
+<span class="irc-date">[10:04]</span> <span class="irc-black">&lt;melwin&gt; Worth having separate branches for the different objects?</span><br />
+<span class="irc-date">[10:04]</span> <span class="irc-black">&lt;naeu&gt; and be over communicative of our intention</span><br />
+<span class="irc-date">[10:04]</span> <span class="irc-black">&lt;naeu&gt; *intentions</span><br />
+<span class="irc-date">[10:04]</span> <span class="irc-black">&lt;naeu&gt; hmm, that might be a good idea</span><br />
+<span class="irc-date">[10:05]</span> <span class="irc-black">&lt;naeu&gt; we should probably get Ola to commit the helper methods to core as soon as possible</span><br />
+<span class="irc-date">[10:05]</span> <span class="irc-black">&lt;naeu&gt; so I suggest creating a new branch for those from core and package them up nicely :-)</span><br />
+<span class="irc-date">[10:05]</span> <span class="irc-black">&lt;naeu&gt; and see what he thinks</span><br />
+<span class="irc-date">[10:06]</span> <span class="irc-black">&lt;melwin&gt; Ok. Let me try.</span><br />
+<span class="irc-date">[10:06]</span> <span class="irc-black">&lt;naeu&gt; cool!</span><br />
+<span class="irc-date">[10:06]</span> <span class="irc-black">&lt;melwin&gt; Suggestion for branch name?</span><br />
+<span class="irc-date">[10:06]</span> <span class="irc-black">&lt;naeu&gt; conversion_helper_methods</span><br />
+<span class="irc-date">[10:07]</span> <span class="irc-black">&lt;melwin&gt; Is underscore the convention?</span><br />
+<span class="irc-date">[10:07]</span> <span class="irc-black">&lt;naeu&gt; and once he's committed it to core, we can then fork core for the various Object branches you suggested</span><br />
+<span class="irc-date">[10:07]</span> <span class="irc-black">&lt;naeu&gt; I'm not aware of any convention :-)</span><br />
+<span class="irc-date">[10:08]</span> <span class="irc-black">&lt;naeu&gt; it's just what my fingers naturally typed ;-)</span><br />
+<span class="irc-date">[10:08]</span> <span class="irc-black">&lt;naeu&gt; being a Ruby chap and all</span><br />
+<span class="irc-date">[10:08]</span> <span class="irc-black">&lt;melwin&gt; I'm sorry.</span><br />
+<span class="irc-date">[10:08]</span> <span class="irc-black">&lt;naeu&gt; what for?</span><br />
+<span class="irc-date">[10:09]</span> <span class="irc-black">&lt;naeu&gt; I think you should use whatever convention suits your mood today :-)</span><br />
+<span class="irc-date">[10:09]</span> <span class="irc-black">&lt;melwin&gt; Right now: For my lame attempt at a joke.</span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-black">&lt;naeu&gt; haha, I didn't even see it ;-)</span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-black">&lt;naeu&gt; now I'm sorry for my lame ability to detect jokes!</span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-black">&lt;melwin&gt; By implying that being a Ruby chap is something to be sorry for.</span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-black">&lt;naeu&gt; hahahaha, now I get it</span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-black">&lt;naeu&gt; pointy-hair</span><br />
+<span class="irc-date">[10:10]</span> <span class="irc-black">&lt;naeu&gt; :-p</span><br />
+<span class="irc-date">[10:11]</span> <span class="irc-black">&lt;melwin&gt; :]</span><br />
+<span class="irc-date">[10:11]</span> <span class="irc-black">&lt;naeu&gt; did you see my pic of strange tubes of paste yesterday?</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;melwin&gt; Strange tubes? No, but I remember you asking if I was going to eat some...</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;melwin&gt; Ah, yes - I see.</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;melwin&gt; Haha, I don't eat that</span><br />
+<span class="irc-date">[10:14]</span> <span class="irc-black">&lt;melwin&gt; .</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;naeu&gt; ;-)</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;melwin&gt; You know, soft cheese is a Swedish invention.</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;naeu&gt; right I'm off to Utrecht</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;naeu&gt; chat in a bit :-)</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;melwin&gt; Cheerio!</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;naeu&gt; i'll start work adding failing specs to List on the train</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;naeu&gt; cheerio!</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[10:37]</span> <span class="irc-black">&lt;melwin&gt; olabini: Could you please merge <a href="http://github.com/melwin/ioke/commit/1531b3df25b2ef1386caec33e3fb3be48df136ef">http://github.com/melwin/ioke/commit/1531b3df25b2ef1386caec33e3fb3be48df136ef</a> if you find it acceptable?</span><br />
+<span class="irc-date">[10:37]</span> <span class="irc-black">&lt;melwin&gt; It's just a first single commit with the helper.</span><br />
+<span class="irc-date">[10:38]</span> <span class="irc-black">&lt;melwin&gt; Then we add fixes and tests based on it.</span><br />
+<span class="irc-date">[10:38]</span> <span class="irc-black">&lt;melwin&gt; This is to make it simpler for others to help fixing as well.</span><br />
+<span class="irc-date">[13:33]</span> <span class="irc-green">* naeu (n=sam@s5593ec6c.adsl.wanadoo.nl) has joined #ioke</span><br />
+<span class="irc-date">[13:51]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[13:58]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[14:51]</span> <span class="irc-black">&lt;olabini&gt; melwin: done. thanks.</span><br />
+<span class="irc-date">[14:55]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[15:41]</span> <span class="irc-navy">* naeu (n=sam@s5593ec6c.adsl.wanadoo.nl) Quit ()</span><br />
+<span class="irc-date">[16:30]</span> <span class="irc-green">* bguthrie (n=bguthrie@158.sub-70-208-175.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[16:52]</span> <span class="irc-brick">* olabini is starting the real work on aspects now</span><br />
+<span class="irc-date">[17:10]</span> <span class="irc-green">* junebug (n=azoic@adsl-76-200-189-126.dsl.pltn13.sbcglobal.net) has joined #ioke</span><br />
+<span class="irc-date">[18:06]</span> <span class="irc-black">&lt;olabini&gt; wow. that really killed performance even more</span><br />
+<span class="irc-date">[18:07]</span> <span class="irc-black">&lt;olabini&gt; at some point I'll have to figure out an efficient way to do this...</span><br />
+<span class="irc-date">[18:20]</span> <span class="irc-navy">* bguthrie (n=bguthrie@158.sub-70-208-175.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[18:44]</span> <span class="irc-black">&lt;olabini&gt; hmm. I think I might have to rethink the aspects.</span><br />
+<span class="irc-date">[18:50]</span> <span class="irc-black">&lt;olabini&gt; or maybe I am just being stupid here. damn it</span><br />
+<span class="irc-date">[18:57]</span> <span class="irc-black">&lt;olabini&gt; right. I'll scale back the aspects and implement them as syntax instead.</span><br />
+<span class="irc-date">[19:08]</span> <span class="irc-navy">* CIA-45 (n=CIA@208.69.182.149) Quit ()</span><br />
+<span class="irc-date">[19:10]</span> <span class="irc-green">* CIA-45 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[19:24]</span> <span class="irc-green">* felipero (n=felipe@189-55-73-254-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[19:24]</span> <span class="irc-black">&lt;felipero&gt; hi guys</span><br />
+<span class="irc-date">[19:27]</span> <span class="irc-black">&lt;felipero&gt; melwin, are you there?</span><br />
+<span class="irc-date">[19:35]</span> <span class="irc-black">&lt;felipero&gt; olabini, are you there? I got one question about range_spec...</span><br />
+<span class="irc-date">[19:40]</span> <span class="irc-black">&lt;olabini&gt; yeah, I'm here</span><br />
+<span class="irc-date">[19:40]</span> <span class="irc-black">&lt;olabini&gt; more or less</span><br />
+<span class="irc-date">[19:48]</span> <span class="irc-black">&lt;felipero&gt; =)</span><br />
+<span class="irc-date">[19:48]</span> <span class="irc-black">&lt;felipero&gt; must be late by there... I'm still at 5pm</span><br />
+<span class="irc-date">[19:49]</span> <span class="irc-black">&lt;felipero&gt; I got an error and could not fix it when running range_spec.ik</span><br />
+<span class="irc-date">[19:49]</span> <span class="irc-black">&lt;felipero&gt; could you help me?</span><br />
+<span class="irc-date">[19:50]</span> <span class="irc-black">&lt;felipero&gt; Says that could not find the Conditional cell in Range kind</span><br />
+<span class="irc-date">[19:59]</span> <span class="irc-black">&lt;olabini&gt; well, there is no Conditional kind</span><br />
+<span class="irc-date">[19:59]</span> <span class="irc-black">&lt;olabini&gt; You might want to write Condition instead?</span><br />
+<span class="irc-date">[20:17]</span> <span class="irc-navy">* felipero (n=felipe@189-55-73-254-nd.cpe.vivax.com.br) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[20:19]</span> <span class="irc-green">* felipero (n=felipe@189-55-73-254-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[20:21]</span> <span class="irc-black">&lt;felipero&gt; sorry ola, I was disconnected...</span><br />
+<span class="irc-date">[20:22]</span> <span class="irc-black">&lt;felipero&gt; oh.. man, how couldn't I see that?</span><br />
+<span class="irc-date">[20:22]</span> <span class="irc-black">&lt;felipero&gt; ok.. my spec is working and I got a expected very ugly ClassCastException</span><br />
+<span class="irc-date">[20:22]</span> <span class="irc-black">&lt;felipero&gt; cool.. =)</span><br />
+<span class="irc-date">[20:22]</span> <span class="irc-black">&lt;felipero&gt; my first ispec... =)</span><br />
+<span class="irc-date">[20:37]</span> <span class="irc-black">&lt;olabini&gt; cool!</span><br />
+<span class="irc-date">[20:38]</span> <span class="irc-black">&lt;felipero&gt; could you take a look at my last commit? make sure it is ok?</span><br />
+<span class="irc-date">[20:39]</span> <span class="irc-black">&lt;felipero&gt; <a href="http://github.com/felipero/ioke/commit/9093a7a5fd949a54998f8849d3983e198eb4bd36">http://github.com/felipero/ioke/commit/9093a7a5fd949a54998f8849d3983e198eb4bd36</a></span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-black">&lt;felipero&gt; olabini, I found something weird in range kind</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-black">&lt;felipero&gt; not sure it is a problem...</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-black">&lt;felipero&gt; I can set the from value for some range</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-black">&lt;felipero&gt; like:</span><br />
+<span class="irc-date">[21:07]</span> <span class="irc-black">&lt;felipero&gt; x = (34..9)</span><br />
+<span class="irc-date">[21:08]</span> <span class="irc-black">&lt;felipero&gt; x from = (2..5) from</span><br />
+<span class="irc-date">[21:08]</span> <span class="irc-black">&lt;felipero&gt; x from println</span><br />
+<span class="irc-date">[21:08]</span> <span class="irc-black">&lt;felipero&gt; =&gt; 2</span><br />
+<span class="irc-date">[21:08]</span> <span class="irc-black">&lt;felipero&gt; i that correct?</span><br />
+<span class="irc-date">[21:08]</span> <span class="irc-black">&lt;felipero&gt; is*</span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-black">&lt;cv&gt; i guess it is, can't see a reason why a range couldn't be immutable</span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-black">&lt;cv&gt; er, mutable</span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-black">&lt;felipero&gt; x each (z, z println)</span><br />
+<span class="irc-date">[21:10]</span> <span class="irc-black">&lt;felipero&gt; prints:</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;felipero&gt; 34</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;felipero&gt; 33</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;felipero&gt; 32</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;felipero&gt; ...</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;felipero&gt; so I think if this is the correct behavior, we shoud define the JavaMethod for "from="</span><br />
+<span class="irc-date">[21:11]</span> <span class="irc-black">&lt;felipero&gt; in the Range class</span><br />
+<span class="irc-date">[21:13]</span> <span class="irc-black">&lt;felipero&gt; cv, this method should redefine the range</span><br />
+<span class="irc-date">[21:15]</span> <span class="irc-navy">* CIA-45 (n=CIA@208.69.182.149) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[21:15]</span> <span class="irc-black">&lt;cv&gt; actually, i take it all back - ranges should be immutable, but give you new ones as needed</span><br />
+<span class="irc-date">[21:15]</span> <span class="irc-black">&lt;cv&gt; iik&gt; (1..9) do(from = 10) asList</span><br />
+<span class="irc-date">[21:15]</span> <span class="irc-black">&lt;cv&gt; +&gt; [1, 2, 3, 4, 5, 6, 7, 8, 9]</span><br />
+<span class="irc-date">[21:15]</span> <span class="irc-black">&lt;cv&gt; ; is ok</span><br />
+<span class="irc-date">[21:20]</span> <span class="irc-green">* bguthrie (n=bguthrie@155.sub-75-199-130.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[21:23]</span> <span class="irc-black">&lt;felipero&gt; any way there is something to change.. right?</span><br />
+<span class="irc-date">[21:23]</span> <span class="irc-black">&lt;felipero&gt; olabini, any opinion about that?</span><br />
+<span class="irc-date">[21:25]</span> <span class="irc-black">&lt;felipero&gt; cv, this example you sent should return what exactly?</span><br />
+<span class="irc-date">[21:29]</span> <span class="irc-green">* CIA-48 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[21:36]</span> <span class="irc-black">&lt;olabini&gt; well, the problem is that your examples are fault</span><br />
+<span class="irc-date">[21:36]</span> <span class="irc-black">&lt;olabini&gt; faulty</span><br />
+<span class="irc-date">[21:36]</span> <span class="irc-black">&lt;olabini&gt; x = 1..5</span><br />
+<span class="irc-date">[21:36]</span> <span class="irc-black">&lt;olabini&gt; x from = 10</span><br />
+<span class="irc-date">[21:36]</span> <span class="irc-black">&lt;olabini&gt; this will in fact create a NEW cell called "from" on that specific range</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-black">&lt;olabini&gt; that "from" cell will shadow the "from" cell that is a method that returns the from value</span><br />
+<span class="irc-date">[21:37]</span> <span class="irc-black">&lt;olabini&gt; at the moment I don't see a problem with Range's being immutable, so one solution would be to implement from= and to=</span><br />
+<span class="irc-date">[21:38]</span> <span class="irc-black">&lt;felipero&gt; that's what I said.. implement "from="</span><br />
+<span class="irc-date">[21:39]</span> <span class="irc-black">&lt;felipero&gt; or somehow don't let the from to be hidden...</span><br />
+<span class="irc-date">[21:44]</span> <span class="irc-black">&lt;olabini&gt; the second choice is not a good one</span><br />
+<span class="irc-date">[21:44]</span> <span class="irc-black">&lt;olabini&gt; implement from= is probably what is expected</span><br />
+<span class="irc-date">[21:46]</span> <span class="irc-black">&lt;felipero&gt; nice... I'll give that a shot. For sure will need some advices, so I'll ask here whenever get a more elaborated question..</span><br />
+<span class="irc-date">[21:49]</span> <span class="irc-navy">* bguthrie (n=bguthrie@155.sub-75-199-130.myvzw.com) Quit ()</span><br />
+<span class="irc-date">[21:54]</span> <span class="irc-green">* bguthrie (n=bguthrie@27.sub-75-198-214.myvzw.com) has joined #ioke</span><br />
+<span class="irc-date">[21:55]</span> <span class="irc-black">&lt;felipero&gt; I've got go now... see you guys later...</span><br />
+<span class="irc-date">[21:55]</span> <span class="irc-black">&lt;melwin&gt; Laters.</span><br />
+<span class="irc-date">[21:57]</span> <span class="irc-black">&lt;felipero&gt; hey melwin, please check my two last commits in the branch work</span><br />
+<span class="irc-date">[21:57]</span> <span class="irc-black">&lt;felipero&gt; let me know if it is ok..</span><br />
+<span class="irc-date">[21:58]</span> <span class="irc-brick">* felipero is leaving, because his girlfriend will hit him if he don't...</span><br />
+<span class="irc-date">[21:58]</span> <span class="irc-navy">* felipero (n=felipe@189-55-73-254-nd.cpe.vivax.com.br) Quit ("Saindo")</span><br />
+<span class="irc-date">[22:04]</span> <span class="irc-black">&lt;melwin&gt; Umm... Almost... :]</span><br />
+<span class="irc-date">[22:48]</span> <span class="irc-navy">* junebug (n=azoic@adsl-76-200-189-126.dsl.pltn13.sbcglobal.net) Quit ()</span><br />
+<span class="irc-date">[22:50]</span> <span class="irc-brown">-Martinp23- [Global Notice] Hi all! Just a quick note to say that in about 10 minutes, one of our client servers will go down for some maintenance. The downtime window is one hour. About 700 users will split - if you've had no prior messages about this, you're not on the server which is affected. Sorry for the disruption and thanks for using freenode!</span><br />

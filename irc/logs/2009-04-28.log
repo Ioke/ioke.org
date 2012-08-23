@@ -1,0 +1,158 @@
+<span class="irc-date">[2:00]</span> <span class="irc-green">* bguthrie (n=bguthrie@c-98-230-174-93.hsd1.ga.comcast.net) has joined #ioke</span><br />
+<span class="irc-date">[2:55]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[5:37]</span> <span class="irc-navy">* bguthrie (n=bguthrie@c-98-230-174-93.hsd1.ga.comcast.net) Quit ()</span><br />
+<span class="irc-date">[7:18]</span> <span class="irc-green">* naeu (n=sam@77.248.60.144) has joined #ioke</span><br />
+<span class="irc-date">[7:19]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[7:27]</span> <span class="irc-navy">* naeu (n=sam@77.248.60.144) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[7:27]</span> <span class="irc-green">* naeu (n=sam@77.248.60.144) has joined #ioke</span><br />
+<span class="irc-date">[7:44]</span> <span class="irc-navy">* naeu (n=sam@77.248.60.144) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[7:52]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[8:12]</span> <span class="irc-green">* exlibris (n=exlibris@port-87-193-165-87.static.qsc.de) has joined #ioke</span><br />
+<span class="irc-date">[8:29]</span> <span class="irc-green">* naeu (n=sam@80.101.160.54) has joined #ioke</span><br />
+<span class="irc-date">[9:20]</span> <span class="irc-navy">* naeu (n=sam@80.101.160.54) Quit ()</span><br />
+<span class="irc-date">[10:53]</span> <span class="irc-navy">* exlibris (n=exlibris@port-87-193-165-87.static.qsc.de) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[10:53]</span> <span class="irc-green">* exlibris (n=exlibris@port-87-193-165-87.static.qsc.de) has joined #ioke</span><br />
+<span class="irc-date">[12:31]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[13:19]</span> <span class="irc-green">* Narnach_ (n=narnach@a82-94-4-219.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[13:35]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[14:30]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-251-116-041.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[15:39]</span> <span class="irc-navy">* Narnach_ (n=narnach@a82-94-4-219.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[15:40]</span> <span class="irc-green">* felipero (n=Felipe@189-55-18-206-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[15:41]</span> <span class="irc-black">&lt;felipero&gt; hi all</span><br />
+<span class="irc-date">[15:41]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[15:41]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[15:41]</span> <span class="irc-black">&lt;felipero&gt; what you think is a good name for a load file in ikanserve?</span><br />
+<span class="irc-date">[15:41]</span> <span class="irc-black">&lt;felipero&gt; this file will be responsible for loading ikanserve apps</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;felipero&gt; by ikanserve apps I mean any object that has a dispatch method</span><br />
+<span class="irc-date">[15:42]</span> <span class="irc-black">&lt;felipero&gt; and that returna dict of 3 positions</span><br />
+<span class="irc-date">[15:51]</span> <span class="irc-navy">* andreaja (n=sodoff@65.111.170.77) Quit (niven.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[15:51]</span> <span class="irc-navy">* IokeHurricane (n=IokeHurr@8.12.35.212) Quit (niven.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[15:53]</span> <span class="irc-green">* andreaja (n=sodoff@65.111.170.77) has joined #ioke</span><br />
+<span class="irc-date">[15:55]</span> <span class="irc-green">* IokeHurricane (n=IokeHurr@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-green">* olabini sets mode +o IokeHurricane </span><br />
+<span class="irc-date">[16:33]</span> <span class="irc-navy">* exlibris (n=exlibris@port-87-193-165-87.static.qsc.de) Quit ("Leaving...")</span><br />
+<span class="irc-date">[16:39]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-251-116-041.chello.nl) Quit ()</span><br />
+<span class="irc-date">[16:46]</span> <span class="irc-navy">* martido (n=martin@213.61.180.190) Quit ()</span><br />
+<span class="irc-date">[17:15]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[17:17]</span> <span class="irc-black">&lt;naeu&gt; olabini: guess what...</span><br />
+<span class="irc-date">[17:17]</span> <span class="irc-black">&lt;naeu&gt; (you won't believe it)</span><br />
+<span class="irc-date">[17:20]</span> <span class="irc-black">&lt;felipero&gt; why does Ground getCell requires two params IokeObject?</span><br />
+<span class="irc-date">[17:22]</span> <span class="irc-black">&lt;naeu&gt; felipero: I'm assuming you're talking about ikj</span><br />
+<span class="irc-date">[17:22]</span> <span class="irc-black">&lt;felipero&gt; yes</span><br />
+<span class="irc-date">[17:23]</span> <span class="irc-black">&lt;naeu&gt; well i'm not you're expert then :-)</span><br />
+<span class="irc-date">[17:26]</span> <span class="irc-black">&lt;felipero&gt; sorry... it is not on Ground it is at IokeObject</span><br />
+<span class="irc-date">[17:27]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[17:27]</span> <span class="irc-black">&lt;olabini&gt; it is because getCell need the message and the context</span><br />
+<span class="irc-date">[17:27]</span> <span class="irc-black">&lt;olabini&gt; so it can signal a condition if something goes wrong</span><br />
+<span class="irc-date">[17:27]</span> <span class="irc-black">&lt;olabini&gt; naeu: no, what. another regexp problem? =)</span><br />
+<span class="irc-date">[17:29]</span> <span class="irc-black">&lt;felipero&gt; so, is that ok?</span><br />
+<span class="irc-date">[17:29]</span> <span class="irc-black">&lt;felipero&gt;  IokeObject.findCell(r.ground, null, null, "myCell");</span><br />
+<span class="irc-date">[17:30]</span> <span class="irc-black">&lt;olabini&gt; no, not if you can avoid it</span><br />
+<span class="irc-date">[17:30]</span> <span class="irc-black">&lt;olabini&gt; you should provide appropriate message and context values if you can</span><br />
+<span class="irc-date">[17:30]</span> <span class="irc-black">&lt;olabini&gt; if you REALLY don't have them, create a new message and use that</span><br />
+<span class="irc-date">[17:30]</span> <span class="irc-black">&lt;olabini&gt; and then use r.ground as the contex</span><br />
+<span class="irc-date">[17:30]</span> <span class="irc-black">&lt;olabini&gt; t</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;naeu&gt; olabini: I met THE REAL Rod Johnson!!!!!!!!</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;olabini&gt; oh wow!</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;olabini&gt; amazing!</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;naeu&gt; i know!</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;olabini&gt; you are SO COOL</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;naeu&gt; i couldn't believe it myself</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;olabini&gt; can I touch you the next time we meet?</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;naeu&gt; he even SPOKE TO ME</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;naeu&gt; and I SHOOK HIS HAND</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;naeu&gt; his ACTUAL HAND!</span><br />
+<span class="irc-date">[17:33]</span> <span class="irc-black">&lt;olabini&gt; wow!</span><br />
+<span class="irc-date">[17:33]</span> <span class="irc-black">&lt;olabini&gt; wow</span><br />
+<span class="irc-date">[17:33]</span> <span class="irc-black">&lt;olabini&gt; wow</span><br />
+<span class="irc-date">[17:33]</span> <span class="irc-black">&lt;olabini&gt; wow</span><br />
+<span class="irc-date">[17:33]</span> <span class="irc-black">&lt;olabini&gt; wow</span><br />
+<span class="irc-date">[17:33]</span> <span class="irc-black">&lt;olabini&gt; wow</span><br />
+<span class="irc-date">[17:33]</span> <span class="irc-black">&lt;olabini&gt; wow</span><br />
+<span class="irc-date">[17:33]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: WOW</span><br />
+<span class="irc-date">[17:33]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: rimming is freaking distgusting</span><br />
+<span class="irc-date">[17:33]</span> <span class="irc-black">&lt;olabini&gt; agreed</span><br />
+<span class="irc-date">[17:33]</span> <span class="irc-black">&lt;olabini&gt; or something</span><br />
+<span class="irc-date">[17:34]</span> <span class="irc-black">&lt;naeu&gt; hahaha</span><br />
+<span class="irc-date">[17:38]</span> <span class="irc-green">* kar8nga (n=kar8nga@f-23.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;felipero&gt; wow...somehow I know that is not the one who created spring... =)</span><br />
+<span class="irc-date">[17:42]</span> <span class="irc-black">&lt;felipero&gt; olabini, IokeObject.findCell(runtime.ground, r.message, r.ground, "IKanServe"); is ok then?</span><br />
+<span class="irc-date">[17:42]</span> <span class="irc-black">&lt;felipero&gt; if not, what does message stands for in this case?</span><br />
+<span class="irc-date">[17:46]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[17:46]</span> <span class="irc-black">&lt;olabini&gt; create a new message from scratch with all the info you want in it</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;olabini&gt; do that by doing something like runtime.newMessage("IKanServe")</span><br />
+<span class="irc-date">[17:47]</span> <span class="irc-black">&lt;felipero&gt; this sounds like evaluation of ioke code... is that right?</span><br />
+<span class="irc-date">[17:48]</span> <span class="irc-black">&lt;felipero&gt; but in fact I was just trying to check if some cell was created correctly</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;olabini&gt; but that is still a partway evaluation</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[17:49]</span> <span class="irc-black">&lt;olabini&gt; if you really want to go under the covers</span><br />
+<span class="irc-date">[17:50]</span> <span class="irc-black">&lt;olabini&gt; you should just do .getCells().containsKey("IKanServe")</span><br />
+<span class="irc-date">[17:50]</span> <span class="irc-black">&lt;felipero&gt; I tried that before...</span><br />
+<span class="irc-date">[17:50]</span> <span class="irc-black">&lt;felipero&gt; now I'm trying to understand why I need a message</span><br />
+<span class="irc-date">[17:51]</span> <span class="irc-black">&lt;felipero&gt; since lot of method from ikj takes that as arg</span><br />
+<span class="irc-date">[17:51]</span> <span class="irc-black">&lt;felipero&gt; is it just for condition?</span><br />
+<span class="irc-date">[17:52]</span> <span class="irc-black">&lt;felipero&gt; so we know what did signal that condition?</span><br />
+<span class="irc-date">[17:53]</span> <span class="irc-black">&lt;olabini&gt; yeah, among other things</span><br />
+<span class="irc-date">[17:54]</span> <span class="irc-black">&lt;felipero&gt; so every time I need the message I just need to create from runtime using the ioke code I would use if I was in a ioke code?</span><br />
+<span class="irc-date">[17:55]</span> <span class="irc-black">&lt;felipero&gt; that lights my way a lot...</span><br />
+<span class="irc-date">[17:57]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;felipero&gt; cool... I'm using easyB to test IKanServe... I think I'll have something working well by this weekend</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;olabini&gt; haha</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;olabini&gt; that's funny</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;olabini&gt; why not using ispec?</span><br />
+<span class="irc-date">[17:59]</span> <span class="irc-black">&lt;felipero&gt; easyB to test java code</span><br />
+<span class="irc-date">[18:00]</span> <span class="irc-black">&lt;felipero&gt; ispec to test ioke code. =)</span><br />
+<span class="irc-date">[18:00]</span> <span class="irc-black">&lt;felipero&gt; unless I find I can use ispec to test java code too</span><br />
+<span class="irc-date">[18:01]</span> <span class="irc-black">&lt;olabini&gt; right. well, you should be able to use ispec for java code</span><br />
+<span class="irc-date">[18:01]</span> <span class="irc-black">&lt;olabini&gt; since Java integration is there</span><br />
+<span class="irc-date">[18:02]</span> <span class="irc-black">&lt;felipero&gt; is there any mock lib already?</span><br />
+<span class="irc-date">[18:03]</span> <span class="irc-black">&lt;olabini&gt; nope</span><br />
+<span class="irc-date">[18:04]</span> <span class="irc-black">&lt;felipero&gt; ok.. I think I choose easyb because it is more familiar to me. I'll give ispec a shot for java code as well later...</span><br />
+<span class="irc-date">[18:11]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[19:14]</span> <span class="irc-black">&lt;naeu&gt; olabini: is there a form of text literal that doesn't attempt to evaluate escape chars?</span><br />
+<span class="irc-date">[19:44]</span> <span class="irc-black">&lt;olabini&gt; nope</span><br />
+<span class="irc-date">[19:46]</span> <span class="irc-black">&lt;naeu&gt; shame, that would be nice</span><br />
+<span class="irc-date">[19:49]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[19:49]</span> <span class="irc-black">&lt;olabini&gt; don't want yet another text syntax though. hmm.</span><br />
+<span class="irc-date">[19:49]</span> <span class="irc-black">&lt;olabini&gt; unless you come up with something really good. =)</span><br />
+<span class="irc-date">[19:50]</span> <span class="irc-black">&lt;felipero&gt; there is a literal text form in groovy I like a lot</span><br />
+<span class="irc-date">[19:50]</span> <span class="irc-black">&lt;felipero&gt; the triple " syntax</span><br />
+<span class="irc-date">[19:50]</span> <span class="irc-black">&lt;felipero&gt; it is useful for emails templates and things like that</span><br />
+<span class="irc-date">[19:53]</span> <span class="irc-black">&lt;olabini&gt; I hate that one</span><br />
+<span class="irc-date">[19:54]</span> <span class="irc-black">&lt;olabini&gt; it's from Python</span><br />
+<span class="irc-date">[19:54]</span> <span class="irc-black">&lt;olabini&gt; it's very annoying</span><br />
+<span class="irc-date">[19:54]</span> <span class="irc-black">&lt;olabini&gt; I would have used single quotes, but they are so much more useful for quoting</span><br />
+<span class="irc-date">[19:56]</span> <span class="irc-black">&lt;olabini&gt; triple quotes are so verbose, since most cases when you need it is for pretty short strings with lots of escaped things</span><br />
+<span class="irc-date">[19:56]</span> <span class="irc-black">&lt;felipero&gt; in fact in groovy single quotes are for java.lang.String, double quotes for GStrings and triple qutoes for this kind</span><br />
+<span class="irc-date">[19:56]</span> <span class="irc-black">&lt;olabini&gt; triple quotes are generally used for cases where you want literal newlines in your string, which Ioke allows in all versions anyway</span><br />
+<span class="irc-date">[19:57]</span> <span class="irc-black">&lt;felipero&gt; yes...</span><br />
+<span class="irc-date">[19:58]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[19:59]</span> <span class="irc-black">&lt;felipero&gt; a single quote literal could map to String</span><br />
+<span class="irc-date">[19:59]</span> <span class="irc-black">&lt;olabini&gt; what about #'</span><br />
+<span class="irc-date">[19:59]</span> <span class="irc-black">&lt;olabini&gt; felipero: well, single quotes are already taken</span><br />
+<span class="irc-date">[19:59]</span> <span class="irc-black">&lt;olabini&gt; and Ioke text already maps to Strings in a pretty well defined way</span><br />
+<span class="irc-date">[19:59]</span> <span class="irc-black">&lt;olabini&gt; naeu: what about something like this:</span><br />
+<span class="irc-date">[20:00]</span> <span class="irc-black">&lt;olabini&gt; x = #'foo said: "blah" and I said #{foo}'</span><br />
+<span class="irc-date">[20:00]</span> <span class="irc-black">&lt;olabini&gt; no interpolation, no escape possible except for \\ and \'</span><br />
+<span class="irc-date">[20:00]</span> <span class="irc-black">&lt;olabini&gt; that would be pretty much ok syntax</span><br />
+<span class="irc-date">[20:00]</span> <span class="irc-black">&lt;olabini&gt; and is good enough symmetry with regexps and set literals</span><br />
+<span class="irc-date">[20:00]</span> <span class="irc-black">&lt;olabini&gt; hmmm</span><br />
+<span class="irc-date">[20:00]</span> <span class="irc-black">&lt;olabini&gt; or maybe...</span><br />
+<span class="irc-date">[20:01]</span> <span class="irc-black">&lt;olabini&gt; I'm not sure I like using single quotes</span><br />
+<span class="irc-date">[20:01]</span> <span class="irc-black">&lt;olabini&gt; maybe I should be inspired by Common Lisp instead</span><br />
+<span class="irc-date">[20:01]</span> <span class="irc-black">&lt;olabini&gt; what about this:</span><br />
+<span class="irc-date">[20:01]</span> <span class="irc-black">&lt;olabini&gt; x = #|foo said: "blah" and I said #{foo}|</span><br />
+<span class="irc-date">[20:22]</span> <span class="irc-black">&lt;naeu&gt; yeah, i was about to say, i don't like the single quotes</span><br />
+<span class="irc-date">[20:25]</span> <span class="irc-black">&lt;naeu&gt; how about: #"foo said \"blah\" and I said #{foo}"</span><br />
+<span class="irc-date">[20:26]</span> <span class="irc-black">&lt;naeu&gt; where the only escaping you can do is \" and \\</span><br />
+<span class="irc-date">[20:31]</span> <span class="irc-navy">* kar8nga (n=kar8nga@f-23.vc-graz.ac.at) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[20:34]</span> <span class="irc-black">&lt;naeu&gt; but thinking about it #|| is really nice too</span><br />
+<span class="irc-date">[20:34]</span> <span class="irc-black">&lt;naeu&gt; the only problem is that it might be useful for something else late on...</span><br />
+<span class="irc-date">[20:35]</span> <span class="irc-black">&lt;naeu&gt; *later</span><br />
+<span class="irc-date">[20:59]</span> <span class="irc-black">&lt;naeu&gt; or maybe there's a way of adding a modifier to the #[] syntax</span><br />
+<span class="irc-date">[21:00]</span> <span class="irc-black">&lt;naeu&gt; #!["foo" said bar #{no interpolation}]</span><br />
+<span class="irc-date">[22:12]</span> <span class="irc-navy">* felipero (n=Felipe@189-55-18-206-nd.cpe.vivax.com.br) Quit ("Saindo")</span><br />
+<span class="irc-date">[22:24]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[22:48]</span> <span class="irc-green">* thewolt (n=thewolt@ip-178.net-89-3-176.rev.numericable.fr) has joined #ioke</span><br />

@@ -1,0 +1,131 @@
+<span class="irc-date">[1:17]</span> <span class="irc-green">* donizetti (n=donizett@201-13-7-77.dsl.telesp.net.br) has joined #ioke</span><br />
+<span class="irc-date">[1:20]</span> <span class="irc-black">&lt;donizetti&gt; hey guys</span><br />
+<span class="irc-date">[1:20]</span> <span class="irc-black">&lt;donizetti&gt; there are any example about using ispec ?</span><br />
+<span class="irc-date">[1:52]</span> <span class="irc-black">&lt;olabini&gt; well. the test directory in the source distribution all is in ispec format</span><br />
+<span class="irc-date">[2:05]</span> <span class="irc-black">&lt;donizetti&gt; yeah, I've study it</span><br />
+<span class="irc-date">[2:05]</span> <span class="irc-black">&lt;donizetti&gt; but i'm having problem when running it</span><br />
+<span class="irc-date">[2:05]</span> <span class="irc-black">&lt;donizetti&gt; I wrote an Client example</span><br />
+<span class="irc-date">[2:06]</span> <span class="irc-black">&lt;donizetti&gt; and I'd like to test it</span><br />
+<span class="irc-date">[2:06]</span> <span class="irc-black">&lt;donizetti&gt; and some doubts came up</span><br />
+<span class="irc-date">[2:07]</span> <span class="irc-black">&lt;donizetti&gt; how do I show to my client_spec.ik where my client.ik with my mimic Client is ?</span><br />
+<span class="irc-date">[2:09]</span> <span class="irc-black">&lt;olabini&gt; well, that depends on how you want to run it</span><br />
+<span class="irc-date">[2:09]</span> <span class="irc-black">&lt;olabini&gt; one way of doing it is to make sure the client.ik is on the load path when running the client_spec.ik</span><br />
+<span class="irc-date">[2:09]</span> <span class="irc-black">&lt;olabini&gt; another alternative is to let client_spec.ik ensure that the place where client.ik can be found is on the load path</span><br />
+<span class="irc-date">[2:09]</span> <span class="irc-black">&lt;olabini&gt; the latter is a standard in Ruby</span><br />
+<span class="irc-date">[2:09]</span> <span class="irc-black">&lt;olabini&gt; you can find the load path in</span><br />
+<span class="irc-date">[2:09]</span> <span class="irc-black">&lt;olabini&gt; System loadPath</span><br />
+<span class="irc-date">[2:10]</span> <span class="irc-black">&lt;olabini&gt; so say you have a lib and a test directory</span><br />
+<span class="irc-date">[2:10]</span> <span class="irc-black">&lt;olabini&gt; if client_spec.ik is in test and client.ik is in lib</span><br />
+<span class="irc-date">[2:10]</span> <span class="irc-black">&lt;olabini&gt; you could do this at the top of client_spec.ik:</span><br />
+<span class="irc-date">[2:10]</span> <span class="irc-black">&lt;olabini&gt; System loadPath &lt;&lt; "../lib"</span><br />
+<span class="irc-date">[2:10]</span> <span class="irc-black">&lt;olabini&gt; use("client")</span><br />
+<span class="irc-date">[2:11]</span> <span class="irc-black">&lt;donizetti&gt; =D</span><br />
+<span class="irc-date">[2:11]</span> <span class="irc-black">&lt;donizetti&gt; i'm going to try it right now</span><br />
+<span class="irc-date">[2:11]</span> <span class="irc-black">&lt;olabini&gt; good luck</span><br />
+<span class="irc-date">[2:11]</span> <span class="irc-black">&lt;donizetti&gt; i'm really in love with ioke !</span><br />
+<span class="irc-date">[2:11]</span> <span class="irc-black">&lt;olabini&gt; I'm going back to bed</span><br />
+<span class="irc-date">[2:11]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[2:11]</span> <span class="irc-black">&lt;donizetti&gt; thanks Ola</span><br />
+<span class="irc-date">[2:11]</span> <span class="irc-black">&lt;olabini&gt; ttyl</span><br />
+<span class="irc-date">[2:11]</span> <span class="irc-black">&lt;olabini&gt; no worries</span><br />
+<span class="irc-date">[2:20]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * rf46313a / test/list_spec.ik : Add some new pending tests for list functionality - <a href="http://bit.ly/6mZ6C">http://bit.ly/6mZ6C</a></span><br />
+<span class="irc-date">[6:02]</span> <span class="irc-navy">* donizetti (n=donizett@201-13-7-77.dsl.telesp.net.br) Quit ()</span><br />
+<span class="irc-date">[8:25]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:30]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[9:30]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-40.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-navy">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-green">* martido (n=martin@dslb-088-067-183-203.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[11:13]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-40.vc-graz.ac.at) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[12:00]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[12:19]</span> <span class="irc-navy">* martido (n=martin@dslb-088-067-183-203.pools.arcor-ip.net) Quit (Read error: 113 (No route to host))</span><br />
+<span class="irc-date">[12:36]</span> <span class="irc-green">* martido (n=martin@dslb-088-067-183-203.pools.arcor-ip.net) has joined #ioke</span><br />
+<span class="irc-date">[12:59]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[13:38]</span> <span class="irc-green">* kar8nga (n=kar8nga@e-196.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-green">* donizetti (n=donizett@201-13-7-77.dsl.telesp.net.br) has joined #ioke</span><br />
+<span class="irc-date">[15:25]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[15:25]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[15:36]</span> <span class="irc-black">&lt;olabini&gt; hi people</span><br />
+<span class="irc-date">[16:32]</span> <span class="irc-navy">* kar8nga (n=kar8nga@e-196.vc-graz.ac.at) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[16:35]</span> <span class="irc-green">* kar8nga (n=kar8nga@a-70.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[16:44]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-70.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[17:02]</span> <span class="irc-green">* felipero (n=Felipe@200.223.229.3) has joined #ioke</span><br />
+<span class="irc-date">[17:03]</span> <span class="irc-black">&lt;felipero&gt; Hi guys...</span><br />
+<span class="irc-date">[17:03]</span> <span class="irc-navy">* donizetti (n=donizett@201-13-7-77.dsl.telesp.net.br) Quit ()</span><br />
+<span class="irc-date">[17:03]</span> <span class="irc-black">&lt;felipero&gt; I wonder how to 'use' a set of files at once... is there any way?</span><br />
+<span class="irc-date">[17:28]</span> <span class="irc-black">&lt;olabini&gt; wll</span><br />
+<span class="irc-date">[17:28]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[17:28]</span> <span class="irc-black">&lt;olabini&gt; easiest way to do it is something like in ISpec</span><br />
+<span class="irc-date">[17:29]</span> <span class="irc-black">&lt;olabini&gt; FileSystem["lib/**/*.ik"] each(f, use(f))</span><br />
+<span class="irc-date">[17:30]</span> <span class="irc-black">&lt;felipero&gt; humm... cool</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;felipero&gt; I was thinking in do something like that to find any controller we have</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;olabini&gt; that will be hard</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;felipero&gt; starting with only one controller, could do something like FileSystem["*Controller.ik"].exists?</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;olabini&gt; yeah, you can do</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;olabini&gt; can do that</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;olabini&gt; of course, that will only search in subdirectories</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;olabini&gt; of the current directory</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;olabini&gt; that's why I did the whole iks_application.ik thing</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;felipero&gt; can't I use the ../ ?</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;olabini&gt; no matter where on the load path that file is</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;olabini&gt; "use" will be able to use it</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;olabini&gt; yeah, you can</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;felipero&gt; great</span><br />
+<span class="irc-date">[17:33]</span> <span class="irc-black">&lt;felipero&gt; I changed the IKanServe to use a iks_load.ik</span><br />
+<span class="irc-date">[17:33]</span> <span class="irc-black">&lt;felipero&gt; this file would be added to our classes dir and is like a config file for IKanServe</span><br />
+<span class="irc-date">[17:33]</span> <span class="irc-black">&lt;olabini&gt; ok</span><br />
+<span class="irc-date">[17:34]</span> <span class="irc-black">&lt;felipero&gt; the other option is create a filter in ikido to load the ikido.ik in the runtime</span><br />
+<span class="irc-date">[17:34]</span> <span class="irc-black">&lt;felipero&gt; what you think is better?</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;olabini&gt; hm?</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;olabini&gt; not sure what the other option is</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;felipero&gt; also I though about have a ikanserve filter (javax.servlet.Filter) to load some ioke written filters... but did not tried yet</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;felipero&gt; not sure is a good option too</span><br />
+<span class="irc-date">[17:35]</span> <span class="irc-black">&lt;olabini&gt; sure, that should be easy</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;olabini&gt; but it might be easier to just have one dispatch happening and then implement filters in ikido itself</span><br />
+<span class="irc-date">[17:36]</span> <span class="irc-black">&lt;felipero&gt; yes... but this would require some manipulation of web.xml</span><br />
+<span class="irc-date">[17:37]</span> <span class="irc-black">&lt;olabini&gt; nope, not really</span><br />
+<span class="irc-date">[17:37]</span> <span class="irc-black">&lt;olabini&gt; if you just have the basic dispatch go to Ikido you can always have the same web.xml</span><br />
+<span class="irc-date">[17:37]</span> <span class="irc-black">&lt;felipero&gt; so ikido filters would be in ioke?</span><br />
+<span class="irc-date">[17:37]</span> <span class="irc-black">&lt;felipero&gt; otherwise we have to load the filter in the web.xml</span><br />
+<span class="irc-date">[17:39]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[17:39]</span> <span class="irc-black">&lt;olabini&gt; the dispatch should probably be a filter anyway</span><br />
+<span class="irc-date">[17:40]</span> <span class="irc-black">&lt;felipero&gt; but the dispatch in in ikanserve</span><br />
+<span class="irc-date">[17:40]</span> <span class="irc-black">&lt;felipero&gt; I didn't plan to bring it to ikido... at least not yet</span><br />
+<span class="irc-date">[17:40]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;felipero&gt; I need a way to make ikanserve load ikido by itself</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;felipero&gt; so I don't need to use java at ikido</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[17:42]</span> <span class="irc-black">&lt;olabini&gt; so why don't you just use the iks_application mechanism, or something similar?</span><br />
+<span class="irc-date">[17:42]</span> <span class="irc-black">&lt;felipero&gt; yes... the iks_load.ik</span><br />
+<span class="irc-date">[17:42]</span> <span class="irc-black">&lt;felipero&gt; that's the name by now... =)</span><br />
+<span class="irc-date">[17:42]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[17:43]</span> <span class="irc-black">&lt;felipero&gt; cool... validating my thoughts</span><br />
+<span class="irc-date">[17:43]</span> <span class="irc-black">&lt;felipero&gt; =)</span><br />
+<span class="irc-date">[18:16]</span> <span class="irc-green">* kar8nga (n=kar8nga@b-4.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[18:55]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[18:57]</span> <span class="irc-navy">* felipero (n=Felipe@200.223.229.3) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[19:12]</span> <span class="irc-navy">* martido (n=martin@dslb-088-067-183-203.pools.arcor-ip.net) Quit ()</span><br />
+<span class="irc-date">[19:16]</span> <span class="irc-green">* felipero (n=Felipe@200.223.229.3) has joined #ioke</span><br />
+<span class="irc-date">[19:18]</span> <span class="irc-black">&lt;felipero&gt; first app in ikido is now on github</span><br />
+<span class="irc-date">[19:18]</span> <span class="irc-black">&lt;felipero&gt; but depends on a specific version of IKanServe</span><br />
+<span class="irc-date">[20:21]</span> <span class="irc-navy">* felipero (n=Felipe@200.223.229.3) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[20:35]</span> <span class="irc-green">* k (n=kar8nga@a-54.vc-graz.ac.at) has joined #ioke</span><br />
+<span class="irc-date">[20:35]</span> <span class="irc-navy">* kar8nga (n=kar8nga@b-4.vc-graz.ac.at) Quit (Nick collision from services.)</span><br />
+<span class="irc-date">[20:35]</span> <span class="irc-green">* k is now known as kar8nga</span><br />
+<span class="irc-date">[20:44]</span> <span class="irc-green">* donizetti (n=donizett@201-13-7-77.dsl.telesp.net.br) has joined #ioke</span><br />
+<span class="irc-date">[20:45]</span> <span class="irc-navy">* donizetti (n=donizett@201-13-7-77.dsl.telesp.net.br) Quit (Client Quit)</span><br />
+<span class="irc-date">[21:00]</span> <span class="irc-green">* donizetti (n=donizett@201-13-7-77.dsl.telesp.net.br) has joined #ioke</span><br />
+<span class="irc-date">[21:17]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[21:20]</span> <span class="irc-navy">* donizetti (n=donizett@201-13-7-77.dsl.telesp.net.br) Quit ()</span><br />
+<span class="irc-date">[21:29]</span> <span class="irc-green">* donizetti (n=donizett@201-13-7-77.dsl.telesp.net.br) has joined #ioke</span><br />
+<span class="irc-date">[21:29]</span> <span class="irc-navy">* donizetti (n=donizett@201-13-7-77.dsl.telesp.net.br) Quit (Client Quit)</span><br />
+<span class="irc-date">[21:39]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[21:39]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[21:55]</span> <span class="irc-navy">* kar8nga (n=kar8nga@a-54.vc-graz.ac.at) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[21:57]</span> <span class="irc-navy">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) Quit ()</span><br />
+<span class="irc-date">[22:07]</span> <span class="irc-black">&lt;CIA-28&gt; ioke: Ola Bini master * rb7cdcf3 / test/java_ground_spec.ik : Add some pending specs for jar-files - <a href="http://bit.ly/qYlPj">http://bit.ly/qYlPj</a></span><br />
+<span class="irc-date">[22:50]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[23:02]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[23:43]</span> <span class="irc-navy">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />

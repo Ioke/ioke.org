@@ -1,0 +1,339 @@
+<span class="irc-date">[0:03]</span> <span class="irc-black">&lt;CIA-73&gt; ioke: Ola Bini master * r43dab53 / (6 files in 6 dirs): Hacky way of handling whitespace between operator and parenthesis - <a href="http://tinyurl.com/8pwnd3">http://tinyurl.com/8pwnd3</a></span><br />
+<span class="irc-date">[0:03]</span> <span class="irc-black">&lt;CIA-73&gt; ioke: Ola Bini master * re70d2ca / (3 files in 3 dirs): More simplification of grammar - <a href="http://tinyurl.com/84qqdr">http://tinyurl.com/84qqdr</a></span><br />
+<span class="irc-date">[0:03]</span> <span class="irc-black">&lt;CIA-73&gt; ioke: Ola Bini master * r8c491d4 / src/grammar/ioke.g : Some more tightening up of the grammar - <a href="http://tinyurl.com/7uoccj">http://tinyurl.com/7uoccj</a></span><br />
+<span class="irc-date">[0:03]</span> <span class="irc-black">&lt;CIA-73&gt; ioke: Ola Bini master * rb9a1271 / (src/grammar/ioke.g test/number_spec.ik): Totally unleash possible operators. This means that good spacing should always be used, as something like 2&lt;&lt;-3 will try to call the &lt;&lt;- method, which doesn't exist - <a href="http://tinyurl.com/6vtvng">http://tinyurl.com/6vtvng</a></span><br />
+<span class="irc-date">[0:04]</span> <span class="irc-navy">* vincenz (n=vincenz@li23-146.members.linode.com) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[0:16]</span> <span class="irc-black">&lt;cv&gt; olabini: i'm still dicking around with the roman numerals example</span><br />
+<span class="irc-date">[0:16]</span> <span class="irc-black">&lt;cv&gt; and i found myself wanting some way of iterating through a message chain</span><br />
+<span class="irc-date">[0:19]</span> <span class="irc-black">&lt;cv&gt; essentially converting a chain like M C M L X X X I I into 1000 + 900 + 50 + 10 + 10 + 10 + 1 + 1</span><br />
+<span class="irc-date">[1:33]</span> <span class="irc-green">* junebug (n=azoic@adsl-76-202-116-203.dsl.pltn13.sbcglobal.net) has joined #ioke</span><br />
+<span class="irc-date">[1:34]</span> <span class="irc-green">* cv_ (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[1:42]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[1:46]</span> <span class="irc-black">&lt;cv_&gt; oh well. not as pretty as i'd imagined</span><br />
+<span class="irc-date">[1:46]</span> <span class="irc-black">&lt;cv_&gt; <a href="http://github.com/cv/ioke/blob/44b7bd7fb8484c596e6208185633aa6aa6820ef8/examples/misc/roman.ik">http://github.com/cv/ioke/blob/44b7bd7fb8484c596e6208185633aa6aa6820ef8/examples/misc/roman.ik</a></span><br />
+<span class="irc-date">[2:07]</span> <span class="irc-navy">* cv_ (n=cv@5acb0c3c.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[4:20]</span> <span class="irc-navy">* junebug (n=azoic@adsl-76-202-116-203.dsl.pltn13.sbcglobal.net) Quit ()</span><br />
+<span class="irc-date">[6:48]</span> <span class="irc-navy">* HeMan (n=jimmy@ssh.southpole.se) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[7:33]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[7:39]</span> <span class="irc-navy">* olabini (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[8:01]</span> <span class="irc-green">* HeMan (n=jimmy@ssh.southpole.se) has joined #ioke</span><br />
+<span class="irc-date">[8:08]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:22]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[8:36]</span> <span class="irc-green">* olabini (n=ola@194.132.20.9) has joined #ioke</span><br />
+<span class="irc-date">[8:36]</span> <span class="irc-green">* IokeHurricane sets mode +o olabini </span><br />
+<span class="irc-date">[8:36]</span> <span class="irc-black">&lt;olabini&gt; morning</span><br />
+<span class="irc-date">[8:46]</span> <span class="irc-green">* cv (n=cv@5acb0c3c.bb.sky.com) has joined #ioke</span><br />
+<span class="irc-date">[8:56]</span> <span class="irc-green">* naeu (n=sam@j27119.upc-j.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[8:58]</span> <span class="irc-black">&lt;naeu&gt; morning :-)</span><br />
+<span class="irc-date">[8:58]</span> <span class="irc-black">&lt;naeu&gt; I completely agree that  2&lt;&lt;-3 shouldn't be internalised as 2 &lt;&lt;(-(3))</span><br />
+<span class="irc-date">[9:25]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit ("Leaving")</span><br />
+<span class="irc-date">[9:26]</span> <span class="irc-black">&lt;olabini&gt; naeu:</span><br />
+<span class="irc-date">[9:26]</span> <span class="irc-black">&lt;olabini&gt; good</span><br />
+<span class="irc-date">[9:26]</span> <span class="irc-black">&lt;olabini&gt; I'm doing some serious simplifications at the moment</span><br />
+<span class="irc-date">[9:27]</span> <span class="irc-black">&lt;olabini&gt; the grammar will be so much more pleasent</span><br />
+<span class="irc-date">[9:27]</span> <span class="irc-black">&lt;olabini&gt; and it allows any kind of operator combination, really.</span><br />
+<span class="irc-date">[9:31]</span> <span class="irc-navy">* cv (n=cv@5acb0c3c.bb.sky.com) Quit ()</span><br />
+<span class="irc-date">[9:36]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;naeu&gt; so, what are the implications for the list of operators in the emacs major mode?</span><br />
+<span class="irc-date">[9:38]</span> <span class="irc-black">&lt;naeu&gt; so far I've seen the following symbols used within operators</span><br />
+<span class="irc-date">[9:39]</span> <span class="irc-black">&lt;naeu&gt; .=*&amp;|&gt;!&lt;%#@/\\+?$~^-</span><br />
+<span class="irc-date">[9:39]</span> <span class="irc-black">&lt;naeu&gt; might it make sense to match the following as an operator:</span><br />
+<span class="irc-date">[9:41]</span> <span class="irc-black">&lt;naeu&gt; (?&lt;![.=*&amp;|&gt;!&lt;%#@/\\+?$~^-])[.=*&amp;|&gt;!&lt;%#@/\\+?$~^-]+(?![.=*&amp;|&gt;!&lt;%#@/\\+?$~^-])</span><br />
+<span class="irc-date">[9:41]</span> <span class="irc-black">&lt;naeu&gt; although this isn't a complete solution, as you'd have to be careful about accidentally matching periods</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-black">&lt;naeu&gt; (?&lt;![.=*&amp;|&gt;!&lt;%#@/\\+?$~^-])(\.\.+|[.=*&amp;|&gt;!&lt;%#@/\\+?$~^-]+)(?![.=*&amp;|&gt;!&lt;%#@/\\+?$~^-])</span><br />
+<span class="irc-date">[9:43]</span> <span class="irc-black">&lt;naeu&gt; might be a better fit</span><br />
+<span class="irc-date">[9:47]</span> <span class="irc-black">&lt;olabini&gt; naeu: actually, operators are totally disappearing from the grammar soon</span><br />
+<span class="irc-date">[9:48]</span> <span class="irc-black">&lt;naeu&gt; ok, but they would still be probably useful to highlight differently from other messages</span><br />
+<span class="irc-date">[9:48]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;olabini&gt; I'll probably stick to highlighting the same things that OperatorShuffle recognizes</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;naeu&gt; ah ok</span><br />
+<span class="irc-date">[9:49]</span> <span class="irc-black">&lt;naeu&gt; i haven't looked at OperatorShuffle yet</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;naeu&gt; where is it defined?</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;olabini&gt; it's in a Java class</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;olabini&gt; you can see the operators in it</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;olabini&gt; in Message OperatorTable operators</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;olabini&gt; and Message OperatorTable assignOperators</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;olabini&gt; I wrote about that in my post on operators, I think</span><br />
+<span class="irc-date">[9:50]</span> <span class="irc-black">&lt;naeu&gt; yeah, i remember you mentioning operator shuffling</span><br />
+<span class="irc-date">[9:52]</span> <span class="irc-black">&lt;naeu&gt; ah, it's called opShuffle</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-black">&lt;olabini&gt; ah, sorry</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-black">&lt;olabini&gt; I'm finally getting the main parsing parts to the simplicity I would like</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-black">&lt;olabini&gt; expression</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-black">&lt;olabini&gt;     :</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-black">&lt;olabini&gt;         Identifier (OpenParen commatedExpression? CloseParen)? -&gt; ^(MESSAGE_SEND Identifier OpenParen? commatedExpression?)</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-black">&lt;olabini&gt;     |   '(' commatedExpression? ')'                            -&gt; ^(MESSAGE_SEND_SIMPLE Identifier[""] commatedExpression?)</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-black">&lt;olabini&gt;     |   '[' commatedExpression? ']'                            -&gt; ^(MESSAGE_SEND_SIMPLE Identifier["[]"] commatedExpression?)</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-black">&lt;olabini&gt;     |   '{' commatedExpression? '}'                            -&gt; ^(MESSAGE_SEND_SIMPLE Identifier["{}"] commatedExpression?)</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-black">&lt;olabini&gt;     |   literals</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-black">&lt;olabini&gt;     |   Terminator</span><br />
+<span class="irc-date">[9:54]</span> <span class="irc-black">&lt;olabini&gt;     ;</span><br />
+<span class="irc-date">[9:55]</span> <span class="irc-black">&lt;olabini&gt;  </span><br />
+<span class="irc-date">[9:55]</span> <span class="irc-black">&lt;naeu&gt; well that's already a lot more readable :-)</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;naeu&gt; what do the integers represent in:</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;naeu&gt; new OpTable("!",   0)</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;naeu&gt; new OpTable("&gt;",   5)</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;naeu&gt; etc.</span><br />
+<span class="irc-date">[9:59]</span> <span class="irc-black">&lt;olabini&gt; precedence</span><br />
+<span class="irc-date">[10:00]</span> <span class="irc-black">&lt;naeu&gt; ah, nice</span><br />
+<span class="irc-date">[10:01]</span> <span class="irc-black">&lt;naeu&gt; that's very clear :-)</span><br />
+<span class="irc-date">[10:02]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[10:03]</span> <span class="irc-black">&lt;naeu&gt; hmm, interesting, return is an operator</span><br />
+<span class="irc-date">[10:03]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[10:03]</span> <span class="irc-black">&lt;naeu&gt; allows you to do</span><br />
+<span class="irc-date">[10:03]</span> <span class="irc-black">&lt;naeu&gt; return val</span><br />
+<span class="irc-date">[10:03]</span> <span class="irc-black">&lt;olabini&gt; the reason being so that you don't have to use parenthesis</span><br />
+<span class="irc-date">[10:03]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[10:03]</span> <span class="irc-black">&lt;naeu&gt; rather than val return</span><br />
+<span class="irc-date">[10:04]</span> <span class="irc-black">&lt;naeu&gt; or would you have had to do</span><br />
+<span class="irc-date">[10:04]</span> <span class="irc-black">&lt;naeu&gt; return(val)</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;olabini&gt; exactly</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;naeu&gt; so</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;naeu&gt; val return</span><br />
+<span class="irc-date">[10:15]</span> <span class="irc-black">&lt;naeu&gt; would never have worked (with or without return being an operator)</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-black">&lt;olabini&gt; well, it would have worked, except the returned value would always be nil</span><br />
+<span class="irc-date">[10:16]</span> <span class="irc-black">&lt;olabini&gt; since return is a method on DefaultBehavior</span><br />
+<span class="irc-date">[10:17]</span> <span class="irc-black">&lt;naeu&gt; ah, that makes sense</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;olabini&gt; this parser refactoring is really large, and I would never have been able to do it without my test suite</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;olabini&gt; I love TDD.</span><br />
+<span class="irc-date">[10:18]</span> <span class="irc-black">&lt;naeu&gt; so, with the exception of the assignment operators, the operator shuffling just adds parens around the correct message</span><br />
+<span class="irc-date">[10:19]</span> <span class="irc-black">&lt;naeu&gt; 1 === 2</span><br />
+<span class="irc-date">[10:19]</span> <span class="irc-black">&lt;naeu&gt; 1 ===(2)</span><br />
+<span class="irc-date">[10:19]</span> <span class="irc-black">&lt;naeu&gt; oh, and I totally understand how TDD makes refactorings like this at all possible</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;naeu&gt; I think it's both the combination of a test suite and a version control tool capable of decent branching that's the super-combo-win</span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;olabini&gt; actually, the operator shuffling can extend the parenthesis around several messages too</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;naeu&gt; oh, could you give an example?</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;olabini&gt; uhm. well</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;olabini&gt; if you do</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;olabini&gt; 1 === 2 foo</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;olabini&gt; that should become</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;olabini&gt; 1 ===(2 foo)</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;naeu&gt; ah yes</span><br />
+<span class="irc-date">[10:21]</span> <span class="irc-black">&lt;naeu&gt; that makes total sense</span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;olabini&gt; and for more complicated things, that is quite useful</span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;CIA-73&gt; ioke: Ola Bini master * r3148c02 / (src/grammar/ioke.g src/main/ioke/lang/parser/Levels.java): Simplify grammar some more - <a href="http://tinyurl.com/7hu3gv">http://tinyurl.com/7hu3gv</a></span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;CIA-73&gt; ioke: Ola Bini master * reb0a59e / (src/grammar/ioke.g src/main/ioke/lang/Message.java): Remove separate Equals token - <a href="http://tinyurl.com/8d6qlu">http://tinyurl.com/8d6qlu</a></span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;CIA-73&gt; ioke: Ola Bini master * rf69e5e5 / (src/grammar/ioke.g src/main/ioke/lang/Message.java): Simplify the brackets messages quite a lot - <a href="http://tinyurl.com/9j3lc8">http://tinyurl.com/9j3lc8</a></span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;CIA-73&gt; ioke: Ola Bini master * rcbe3635 / (3 files in 3 dirs): Consolidate the operators into identifiers - <a href="http://tinyurl.com/779vvj">http://tinyurl.com/779vvj</a></span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;CIA-73&gt; ioke: Ola Bini master * r2b0ced3 / (4 files in 3 dirs): Final part of parser reorganization for now - <a href="http://tinyurl.com/9q62dg">http://tinyurl.com/9q62dg</a></span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;naeu&gt; nice</span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;naeu&gt; 1 === foo bar == baz</span><br />
+<span class="irc-date">[10:22]</span> <span class="irc-black">&lt;olabini&gt; I just pushed all the parser changes. take a look at the grammar file and compare with the earlier ones</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;naeu&gt; 1 ===(foo bar) ==(baz)</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;olabini&gt; yep</span><br />
+<span class="irc-date">[10:23]</span> <span class="irc-black">&lt;naeu&gt; and now it's just a nice message chain</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;naeu&gt; haha, nice:</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;naeu&gt; -    MESSAGE_SEND;</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;naeu&gt; -    MESSAGE_SEND_OP;</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;naeu&gt; -    MESSAGE_SEND_EMPTY;</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;naeu&gt; -    MESSAGE_SEND_SQUARE;</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;naeu&gt; -    MESSAGE_SEND_CURLY;</span><br />
+<span class="irc-date">[10:25]</span> <span class="irc-black">&lt;naeu&gt; byee!</span><br />
+<span class="irc-date">[10:27]</span> <span class="irc-black">&lt;olabini&gt; yeah, exactly</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-black">&lt;olabini&gt; the way the grammar looks now matches much more closely how I think about the syntax</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-black">&lt;naeu&gt; I preferred the format of the operator chars when you had them one per line</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-black">&lt;olabini&gt; now I just want to get rid of the backtracking too</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-black">&lt;olabini&gt; ah, right</span><br />
+<span class="irc-date">[10:28]</span> <span class="irc-black">&lt;olabini&gt; I might go back to that format</span><br />
+<span class="irc-date">[10:29]</span> <span class="irc-black">&lt;naeu&gt; where does the backtracking happen (this is pretty much my first time of looking at ANTLR grammars)</span><br />
+<span class="irc-date">[10:55]</span> <span class="irc-black">&lt;olabini&gt; actually, Antlr automatically inserts it</span><br />
+<span class="irc-date">[10:55]</span> <span class="irc-black">&lt;olabini&gt; that's why it says backtrack=true at the top</span><br />
+<span class="irc-date">[10:55]</span> <span class="irc-black">&lt;naeu&gt; ah, ok</span><br />
+<span class="irc-date">[10:56]</span> <span class="irc-black">&lt;naeu&gt; do you recommend the pragpress ANTLR book?</span><br />
+<span class="irc-date">[10:56]</span> <span class="irc-black">&lt;olabini&gt; another tricky part is the interpolation stuff, but there isn't much I can do about those</span><br />
+<span class="irc-date">[10:56]</span> <span class="irc-black">&lt;olabini&gt; well, it's good. not fantastic, but good</span><br />
+<span class="irc-date">[10:56]</span> <span class="irc-black">&lt;olabini&gt; gives a good grounding to the tool</span><br />
+<span class="irc-date">[10:56]</span> <span class="irc-black">&lt;naeu&gt; (which is what i'm currently lacking ;-))</span><br />
+<span class="irc-date">[11:05]</span> <span class="irc-black">&lt;naeu&gt; ok, just ordered it</span><br />
+<span class="irc-date">[11:05]</span> <span class="irc-black">&lt;naeu&gt; along with another copy of GEB</span><br />
+<span class="irc-date">[11:07]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@nat/sun/x-0f9a90348e8f8066) has joined #ioke</span><br />
+<span class="irc-date">[11:13]</span> <span class="irc-green">* vincenz (n=vincenz@li23-146.members.linode.com) has joined #ioke</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;CIA-73&gt; ioke: Ola Bini master * r7124d36 / (build.xml src/grammar/ioke.g): Remove backtracking and fix naming of productions. Ioke grammar is now LL(1). - <a href="http://tinyurl.com/7lxugu">http://tinyurl.com/7lxugu</a></span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;olabini&gt; well. finally made that work. yay.</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;olabini&gt; no more backtracking</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;olabini&gt; one measly semantic predicate, and the rest is LL(1)</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;olabini&gt; another copy of GEB? why have more than one?</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;olabini&gt; or actually, my copy is getting a bit worn out, I just realized.</span><br />
+<span class="irc-date">[11:25]</span> <span class="irc-black">&lt;vincenz&gt; CIA-73: version</span><br />
+<span class="irc-date">[11:30]</span> <span class="irc-black">&lt;naeu&gt; it's a gift for someone :-)</span><br />
+<span class="irc-date">[11:30]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[11:30]</span> <span class="irc-black">&lt;naeu&gt; i still haven't managed to penetrate more than a fifth of it</span><br />
+<span class="irc-date">[11:31]</span> <span class="irc-black">&lt;naeu&gt; it really requires significant and brain energy sustained over a hefty period of time</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;naeu&gt; i think the best way of getting through it all is to explicitly integrate it into my life patterns</span><br />
+<span class="irc-date">[11:32]</span> <span class="irc-black">&lt;naeu&gt; but the fifth I have read was a significant read, and still manages to permeate a lot of my current thinking</span><br />
+<span class="irc-date">[11:33]</span> <span class="irc-black">&lt;naeu&gt; ah, gitx is really nice</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;naeu&gt; so, what's the win from removing backtracking?</span><br />
+<span class="irc-date">[11:34]</span> <span class="irc-black">&lt;naeu&gt; does it just speed the process up?</span><br />
+<span class="irc-date">[11:35]</span> <span class="irc-black">&lt;olabini&gt; yes, both speed and memory gets better</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-black">&lt;olabini&gt; also, the grammar becomes less complicated</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-black">&lt;olabini&gt; I'm thinking about rewriting the parser directly in Java, to make it even faster</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-black">&lt;naeu&gt; interesting</span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-black">&lt;olabini&gt; right now it needs to do three passes - first parsing, then creating messages, and then shuffling</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;naeu&gt; then you could have switchable Terminator strings!</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;olabini&gt; but if I can put together the parsing and creation of messages, that should be quite significant.</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;olabini&gt; actually, I think I have an idea on how to accomplish that</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;olabini&gt; but I want to retain the ANTLR grammar</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;olabini&gt; it's a good reference, and it's also a good thing to base a hand written parser on</span><br />
+<span class="irc-date">[11:37]</span> <span class="irc-black">&lt;naeu&gt; the ANTLR grammar is a really great reference</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;naeu&gt; indeed :-)</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;olabini&gt; I'm really happy with the way it looks right now, actually</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;naeu&gt; yeah, it's extremely clean</span><br />
+<span class="irc-date">[11:38]</span> <span class="irc-black">&lt;CIA-73&gt; ioke: Ola Bini master * re556c7d / src/grammar/ioke.g : Extract a number predicate</span><br />
+<span class="irc-date">[12:00]</span> <span class="irc-black">&lt;CIA-73&gt; ioke: Ola Bini master * rdae3846 / src/main/ioke/lang/parser/Levels.java : Make it possible to override an assign operator by assigning it to -1 - <a href="http://tinyurl.com/96zqkp">http://tinyurl.com/96zqkp</a></span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-black">&lt;olabini&gt; hmm. I think that everything that starts with an operator char should actually be treated like an operator.</span><br />
+<span class="irc-date">[12:30]</span> <span class="irc-navy">* CIA-73 (n=CIA@208.69.182.149) Quit (Excess Flood)</span><br />
+<span class="irc-date">[12:31]</span> <span class="irc-black">&lt;naeu&gt; that could be interesting</span><br />
+<span class="irc-date">[12:31]</span> <span class="irc-green">* CIA-45 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[12:34]</span> <span class="irc-black">&lt;olabini&gt; hmm. and I think I will do what scala does with stuff ending in :. seems like an interesting idea.</span><br />
+<span class="irc-date">[12:34]</span> <span class="irc-black">&lt;olabini&gt; the ultimate syntactic freedom.</span><br />
+<span class="irc-date">[12:34]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[12:35]</span> <span class="irc-black">&lt;olabini&gt; but enough structure to have it actually be useful</span><br />
+<span class="irc-date">[12:42]</span> <span class="irc-navy">* vincenz (n=vincenz@li23-146.members.linode.com) Quit (clarke.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[12:45]</span> <span class="irc-green">* vincenz (n=vincenz@li23-146.members.linode.com) has joined #ioke</span><br />
+<span class="irc-date">[12:45]</span> <span class="irc-black">&lt;naeu&gt; although you'd still have to differentiate between standard and assignment operators</span><br />
+<span class="irc-date">[12:46]</span> <span class="irc-black">&lt;naeu&gt; what does scala do with stuff ending in :. ?</span><br />
+<span class="irc-date">[12:56]</span> <span class="irc-black">&lt;olabini&gt; right-assicatoive</span><br />
+<span class="irc-date">[12:56]</span> <span class="irc-black">&lt;olabini&gt; foo :: bar</span><br />
+<span class="irc-date">[12:56]</span> <span class="irc-black">&lt;olabini&gt; will end up as</span><br />
+<span class="irc-date">[12:56]</span> <span class="irc-black">&lt;olabini&gt; bar.::(foo)</span><br />
+<span class="irc-date">[12:56]</span> <span class="irc-black">&lt;olabini&gt; and yes, assignment I still need to keep check on</span><br />
+<span class="irc-date">[12:58]</span> <span class="irc-black">&lt;CIA-45&gt; ioke: Ola Bini master * r8e7ea5d / (3 files in 3 dirs): Make sure all trees have line and position information, add : as a valid part of operators, and update everything ackordingly - <a href="http://tinyurl.com/9boyyq">http://tinyurl.com/9boyyq</a></span><br />
+<span class="irc-date">[12:58]</span> <span class="irc-black">&lt;CIA-45&gt; ioke: Ola Bini master * rc7895b0 / (src/grammar/ioke.g src/main/ioke/lang/parser/Levels.java): Add some stuff so that anything beginning with an operator will be interpreted as an operator with the correct precedence - <a href="http://tinyurl.com/8sqr78">http://tinyurl.com/8sqr78</a></span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-black">&lt;naeu&gt; ah ok, so that would work with any message ending in : (I guess except keyword arguments)</span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-black">&lt;naeu&gt; foo bar: baz</span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-black">&lt;naeu&gt; baz bar:(foo)</span><br />
+<span class="irc-date">[13:04]</span> <span class="irc-black">&lt;naeu&gt; or am I getting the wrong end of the stick?</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-black">&lt;olabini&gt; actually, I won't do that</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-black">&lt;olabini&gt; for that specific reason.</span><br />
+<span class="irc-date">[13:10]</span> <span class="irc-black">&lt;olabini&gt; among others</span><br />
+<span class="irc-date">[13:11]</span> <span class="irc-black">&lt;olabini&gt; instead I will have a dynamic list of invertedOperators</span><br />
+<span class="irc-date">[13:11]</span> <span class="irc-black">&lt;olabini&gt; just like the other things in Message OperatorTable</span><br />
+<span class="irc-date">[13:11]</span> <span class="irc-black">&lt;olabini&gt; if an operator is found there, the last thing that happens in shuffling of that message will be too switch places of the receiver side and the argument side</span><br />
+<span class="irc-date">[13:12]</span> <span class="irc-black">&lt;CIA-45&gt; ioke: Ola Bini master * r78ba742 / (4 files in 4 dirs): Change name of assignOperators to trinaryOperators - <a href="http://tinyurl.com/8tamt6">http://tinyurl.com/8tamt6</a></span><br />
+<span class="irc-date">[13:15]</span> <span class="irc-black">&lt;naeu&gt; ok, that makes a little more sense</span><br />
+<span class="irc-date">[13:29]</span> <span class="irc-black">&lt;olabini&gt; so there will basically be three kinds of operators</span><br />
+<span class="irc-date">[13:29]</span> <span class="irc-black">&lt;olabini&gt; regular operators</span><br />
+<span class="irc-date">[13:29]</span> <span class="irc-black">&lt;olabini&gt; trinary operators</span><br />
+<span class="irc-date">[13:29]</span> <span class="irc-black">&lt;olabini&gt; and inverted operators</span><br />
+<span class="irc-date">[13:29]</span> <span class="irc-black">&lt;olabini&gt; where regular operators are translated:</span><br />
+<span class="irc-date">[13:29]</span> <span class="irc-black">&lt;olabini&gt; foo + bar</span><br />
+<span class="irc-date">[13:29]</span> <span class="irc-black">&lt;olabini&gt; foo +(bar)</span><br />
+<span class="irc-date">[13:29]</span> <span class="irc-black">&lt;olabini&gt; where trinary operators are translated:</span><br />
+<span class="irc-date">[13:29]</span> <span class="irc-black">&lt;olabini&gt; foo += bar</span><br />
+<span class="irc-date">[13:30]</span> <span class="irc-black">&lt;olabini&gt; +=(foo, bar)</span><br />
+<span class="irc-date">[13:30]</span> <span class="irc-black">&lt;olabini&gt; wehere inverted operators are translated:</span><br />
+<span class="irc-date">[13:30]</span> <span class="irc-black">&lt;olabini&gt; foo :: bar</span><br />
+<span class="irc-date">[13:30]</span> <span class="irc-black">&lt;olabini&gt; bar ::(foo)</span><br />
+<span class="irc-date">[13:34]</span> <span class="irc-black">&lt;naeu&gt; that makes complete sense</span><br />
+<span class="irc-date">[13:34]</span> <span class="irc-black">&lt;naeu&gt; and are you going to stick with the visual queue of having a : on the end of inverted operators?</span><br />
+<span class="irc-date">[13:40]</span> <span class="irc-black">&lt;olabini&gt; possibly</span><br />
+<span class="irc-date">[13:40]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[13:40]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[13:40]</span> <span class="irc-black">&lt;naeu&gt; well it doesn't really matter I guess</span><br />
+<span class="irc-date">[13:41]</span> <span class="irc-black">&lt;naeu&gt; it's just as easy to have the syntax highlighter differentiate</span><br />
+<span class="irc-date">[13:41]</span> <span class="irc-black">&lt;olabini&gt; probably not. I'm not sure if I'll use the inverted operators in the core library at all, actually</span><br />
+<span class="irc-date">[13:41]</span> <span class="irc-black">&lt;olabini&gt; just like giving the opportunity</span><br />
+<span class="irc-date">[13:42]</span> <span class="irc-black">&lt;naeu&gt; yeah, as it's completely possible to make your own inverted operators using macros</span><br />
+<span class="irc-date">[13:47]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[14:02]</span> <span class="irc-green">* junebug (n=azoic@adsl-76-202-116-203.dsl.pltn13.sbcglobal.net) has joined #ioke</span><br />
+<span class="irc-date">[14:08]</span> <span class="irc-black">&lt;olabini&gt; IokeHurricane: say something!</span><br />
+<span class="irc-date">[14:08]</span> <span class="irc-black">&lt;IokeHurricane&gt; olabini: I like women the way I like my filesystem</span><br />
+<span class="irc-date">[14:09]</span> <span class="irc-black">&lt;naeu&gt; hmm, you can tell men programmed Hurricane</span><br />
+<span class="irc-date">[14:09]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[14:09]</span> <span class="irc-black">&lt;olabini&gt; actually, the quotes are scraped from bash.org</span><br />
+<span class="irc-date">[14:09]</span> <span class="irc-black">&lt;naeu&gt; even worse...</span><br />
+<span class="irc-date">[14:09]</span> <span class="irc-black">&lt;naeu&gt; ;-)</span><br />
+<span class="irc-date">[14:09]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-black">&lt;naeu&gt; oh, out of interest, have you prepared some sharp-witty-quips to use in retaliation of people making the remark - "Ioke is a Joke with its tail chopped off"</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-black">&lt;olabini&gt; haha</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-black">&lt;olabini&gt; not really.</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-black">&lt;naeu&gt; be prepared ;-)</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-black">&lt;naeu&gt; there are some people in the world who's job it is to dislike things and put them down</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-black">&lt;olabini&gt; right now I'm trying to figure out a good small code example that I can include on the ioke.org front page.</span><br />
+<span class="irc-date">[14:13]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[14:14]</span> <span class="irc-black">&lt;naeu&gt; ah, just like ruby-lang.org</span><br />
+<span class="irc-date">[14:14]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;naeu&gt; for me, I really liked the succinctness of [1,2,3,4,5] map(*2)</span><br />
+<span class="irc-date">[14:19]</span> <span class="irc-black">&lt;naeu&gt; but you might be wise to avoid any camelcase words</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-black">&lt;naeu&gt; otherwise you might put off underscore luddites at the first turn</span><br />
+<span class="irc-date">[14:20]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[14:21]</span> <span class="irc-black">&lt;naeu&gt; although_i_must_say_i_do_prefer_the_underscores_for_method_and_variable_names</span><br />
+<span class="irc-date">[14:21]</span> <span class="irc-black">&lt;olabini&gt; right</span><br />
+<span class="irc-date">[14:21]</span> <span class="irc-black">&lt;naeu&gt; itReadsMuchMoreReadilyForMeEyes</span><br />
+<span class="irc-date">[14:21]</span> <span class="irc-black">&lt;naeu&gt; *MyEyes</span><br />
+<span class="irc-date">[14:21]</span> <span class="irc-black">&lt;olabini&gt; sure</span><br />
+<span class="irc-date">[14:21]</span> <span class="irc-black">&lt;olabini&gt; agree about that</span><br />
+<span class="irc-date">[14:21]</span> <span class="irc-black">&lt;naeu&gt; actually, I really like how Ruby uses both</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;naeu&gt; ClassNames, var_names</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;olabini&gt; yeah. I used that convention first, but it didn't feel right. and it will feel even less right with the Java stuff later</span><br />
+<span class="irc-date">[14:22]</span> <span class="irc-black">&lt;naeu&gt; sure :-)</span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;naeu&gt; and I'm not so myopic (damn headius for introducing that term) to not want to explore Ioke because of the camel casing</span><br />
+<span class="irc-date">[14:23]</span> <span class="irc-black">&lt;olabini&gt; haha</span><br />
+<span class="irc-date">[14:26]</span> <span class="irc-black">&lt;naeu&gt; in my head right now, I have the following strap line for Ioke "the expressiveness of Lisp with the OO of Smalltalk and the readability of Ruby"</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;naeu&gt; although that's sure to change rapidly and diversely as my understanding increases</span><br />
+<span class="irc-date">[14:27]</span> <span class="irc-black">&lt;naeu&gt; but if the little code sample could cover those bases, then I think it would be perfect</span><br />
+<span class="irc-date">[14:39]</span> <span class="irc-navy">* junebug (n=azoic@adsl-76-202-116-203.dsl.pltn13.sbcglobal.net) Quit ()</span><br />
+<span class="irc-date">[14:56]</span> <span class="irc-black">&lt;CIA-45&gt; ioke: Ola Bini master * r51bc403 / (4 files in 3 dirs): Add support for inverted operators - <a href="http://tinyurl.com/7a2wj2">http://tinyurl.com/7a2wj2</a></span><br />
+<span class="irc-date">[14:58]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@nat/sun/x-0f9a90348e8f8066) Quit ("Leaving")</span><br />
+<span class="irc-date">[15:02]</span> <span class="irc-black">&lt;naeu&gt; two more operator symbols for the collection...</span><br />
+<span class="irc-date">[15:15]</span> <span class="irc-navy">* olabini (n=ola@194.132.20.9) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[16:19]</span> <span class="irc-green">* olabini (n=ola@c-574ee155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[16:19]</span> <span class="irc-green">* IokeHurricane sets mode +o olabini </span><br />
+<span class="irc-date">[16:28]</span> <span class="irc-green">* mkrauskopf (n=mkrausko@195.47.79.66) has joined #ioke</span><br />
+<span class="irc-date">[17:44]</span> <span class="irc-navy">* naeu (n=sam@j27119.upc-j.chello.nl) Quit ()</span><br />
+<span class="irc-date">[18:16]</span> <span class="irc-black">&lt;CIA-45&gt; ioke: Ola Bini master * r337824c / src/grammar/ioke.g : Factor out some redundancies in grammar - <a href="http://tinyurl.com/7xp233">http://tinyurl.com/7xp233</a></span><br />
+<span class="irc-date">[18:16]</span> <span class="irc-brick">* olabini is making Message Enumerable.</span><br />
+<span class="irc-date">[18:30]</span> <span class="irc-black">&lt;olabini&gt; !seen cv</span><br />
+<span class="irc-date">[18:30]</span> <span class="irc-black">&lt;IokeHurricane&gt; cv (n=cv@5acb0c3c.bb.sky.com) was last seen quitting from #ioke 8 hours, 59 minutes ago stating ().</span><br />
+<span class="irc-date">[18:36]</span> <span class="irc-black">&lt;CIA-45&gt; ioke: Ola Bini master * r4069727 / (src/main/ioke/lang/Message.java test/message_spec.ik): Make Message Enumerable, plus add Message#each - <a href="http://tinyurl.com/78k85o">http://tinyurl.com/78k85o</a></span><br />
+<span class="irc-date">[19:13]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[19:45]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit (Read error: 104 (Connection reset by peer))</span><br />
+<span class="irc-date">[19:45]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:12]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[20:20]</span> <span class="irc-black">&lt;vincenz&gt; out of curiousity, what does ioke compile to?</span><br />
+<span class="irc-date">[20:25]</span> <span class="irc-black">&lt;olabini&gt; it doesn't compile. it's interpreted</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-black">&lt;CIA-45&gt; ioke: Ola Bini master * rafd1c5c / examples/eliza/pattern.ik : Add segment matching to the Eliza example - <a href="http://tinyurl.com/9uy9z5">http://tinyurl.com/9uy9z5</a></span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-black">&lt;CIA-45&gt; ioke: Ola Bini master * r66657f1 / examples/eliza/pattern.ik : Add segment matching to the Eliza example - <a href="http://tinyurl.com/8dha9f">http://tinyurl.com/8dha9f</a></span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-black">&lt;CIA-45&gt; ioke: Ola Bini master * r27f0bc4 / (4 files in 2 dirs):</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-black">&lt;CIA-45&gt; ioke: Fix a REALLY subtle problem with rescues and restart that manifested when code</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-black">&lt;CIA-45&gt; ioke: from inside of a running rescue/restart used a condition. can't really figure</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-black">&lt;CIA-45&gt; ioke: out how to unit test it actually... but the place where I had the problem has</span><br />
+<span class="irc-date">[21:12]</span> <span class="irc-black">&lt;CIA-45&gt; ioke: been fixed now. - <a href="http://tinyurl.com/9je4wq">http://tinyurl.com/9je4wq</a></span><br />
+<span class="irc-date">[21:13]</span> <span class="irc-black">&lt;CIA-45&gt; ioke: Ola Bini master * r0d8bb66 / (examples/eliza/eliza.ik examples/eliza/pattern.ik): Finalize the Ioke Eliza version. Not really that convenient to use messages for this - <a href="http://tinyurl.com/77kfj4">http://tinyurl.com/77kfj4</a></span><br />
+<span class="irc-date">[21:25]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[22:24]</span> <span class="irc-navy">* mkrauskopf (n=mkrausko@195.47.79.66) Quit ("Leaving")</span><br />
+<span class="irc-date">[22:34]</span> <span class="irc-green">* melwin (n=Martin@ua-83-227-215-81.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[22:34]</span> <span class="irc-black">&lt;melwin&gt; Evenin',</span><br />
+<span class="irc-date">[22:39]</span> <span class="irc-black">&lt;naeu&gt; good evening</span><br />
+<span class="irc-date">[22:41]</span> <span class="irc-black">&lt;melwin&gt; naeu, I hope this evening finds you in good condition...?</span><br />
+<span class="irc-date">[22:41]</span> <span class="irc-black">&lt;naeu&gt; it finds me fighting for time to play with Ioke vs the wife ;-)</span><br />
+<span class="irc-date">[22:41]</span> <span class="irc-black">&lt;naeu&gt; and it also finds me getting very annoyed with TextMate's language support tools!</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;naeu&gt; and the cat pissed all over the sofa</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;naeu&gt; other than that, I'm good :-)</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;melwin&gt; Hmmm... As I see you here I suppose Ioke has one up on the wife?</span><br />
+<span class="irc-date">[22:42]</span> <span class="irc-black">&lt;naeu&gt; actually...</span><br />
+<span class="irc-date">[22:43]</span> <span class="irc-black">&lt;naeu&gt; I'd better go give her a hand for a moment ;-)</span><br />
+<span class="irc-date">[22:44]</span> <span class="irc-black">&lt;melwin&gt; You do that. Say hi from me!</span><br />
+<span class="irc-date">[22:48]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[22:48]</span> <span class="irc-black">&lt;naeu&gt; done</span><br />
+<span class="irc-date">[22:48]</span> <span class="irc-black">&lt;naeu&gt; now to continue being annoyed with TextMate ;-)</span><br />
+<span class="irc-date">[22:51]</span> <span class="irc-black">&lt;melwin&gt; :)</span><br />
+<span class="irc-date">[22:52]</span> <span class="irc-black">&lt;naeu&gt; I'm trying to generate a symbol table containing all the methods in the current buffer</span><br />
+<span class="irc-date">[22:52]</span> <span class="irc-black">&lt;naeu&gt; I just don't think it's possible given the hooks that TM provide</span><br />
+<span class="irc-date">[22:53]</span> <span class="irc-black">&lt;naeu&gt; well it seems that I either highlight the method stuff correctly, or generate the symbol table</span><br />
+<span class="irc-date">[22:54]</span> <span class="irc-black">&lt;melwin&gt; Ummm... Wish I could help...</span><br />
+<span class="irc-date">[22:54]</span> <span class="irc-black">&lt;melwin&gt; But not both?</span><br />
+<span class="irc-date">[22:54]</span> <span class="irc-black">&lt;naeu&gt; seems not</span><br />
+<span class="irc-date">[22:54]</span> <span class="irc-black">&lt;naeu&gt; perhaps there's a way</span><br />
+<span class="irc-date">[22:55]</span> <span class="irc-black">&lt;naeu&gt; but it's all a bit of a black art</span><br />
+<span class="irc-date">[22:55]</span> <span class="irc-black">&lt;naeu&gt; and certainly not as transparent as the emacs approach</span><br />
+<span class="irc-date">[22:57]</span> <span class="irc-black">&lt;melwin&gt; Hehe. I've heard a lot of good things about TextMate, but I guess it</span><br />
+<span class="irc-date">[22:57]</span> <span class="irc-black">&lt;melwin&gt; s innards are as arcane as anything else.</span><br />
+<span class="irc-date">[22:59]</span> <span class="irc-black">&lt;melwin&gt; Well, I'm off to bed. Good luck!</span><br />
+<span class="irc-date">[22:59]</span> <span class="irc-black">&lt;naeu&gt; yeah, it's pretty nice to use</span><br />
+<span class="irc-date">[22:59]</span> <span class="irc-black">&lt;naeu&gt; but not so fun to program ;-)</span><br />
+<span class="irc-date">[22:59]</span> <span class="irc-black">&lt;naeu&gt; sleep well!</span><br />
+<span class="irc-date">[22:59]</span> <span class="irc-black">&lt;melwin&gt; You too. Cheers,</span><br />

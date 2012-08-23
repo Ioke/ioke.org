@@ -1,0 +1,31 @@
+<span class="irc-date">[0:30]</span> <span class="irc-green">* richcollins (n=richcoll@75-147-129-166-SFBA.hfc.comcastbusiness.net) has joined #ioke</span><br />
+<span class="irc-date">[3:06]</span> <span class="irc-navy">* richcollins (n=richcoll@75-147-129-166-SFBA.hfc.comcastbusiness.net) Quit (holmes.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[3:06]</span> <span class="irc-navy">* skaar (n=skaar@substruction.net) Quit (holmes.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[3:06]</span> <span class="irc-navy">* CIA-11 (n=CIA@208.69.182.149) Quit (holmes.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[3:07]</span> <span class="irc-green">* richcollins (n=richcoll@75-147-129-166-SFBA.hfc.comcastbusiness.net) has joined #ioke</span><br />
+<span class="irc-date">[3:07]</span> <span class="irc-green">* CIA-11 (n=CIA@208.69.182.149) has joined #ioke</span><br />
+<span class="irc-date">[3:07]</span> <span class="irc-green">* skaar (n=skaar@substruction.net) has joined #ioke</span><br />
+<span class="irc-date">[3:36]</span> <span class="irc-navy">* richcollins (n=richcoll@75-147-129-166-SFBA.hfc.comcastbusiness.net) Quit ()</span><br />
+<span class="irc-date">[6:24]</span> <span class="irc-green">* richcollins (n=richcoll@70-36-196-192.dsl.static.sonic.net) has joined #ioke</span><br />
+<span class="irc-date">[8:00]</span> <span class="irc-green">* kar8nga (n=kar8nga@jol13-1-82-66-176-74.fbx.proxad.net) has joined #ioke</span><br />
+<span class="irc-date">[8:12]</span> <span class="irc-navy">* kar8nga (n=kar8nga@jol13-1-82-66-176-74.fbx.proxad.net) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-green">* pietia (n=pietia@cek235.neoplus.adsl.tpnet.pl) has joined #ioke</span><br />
+<span class="irc-date">[9:32]</span> <span class="irc-navy">* richcollins (n=richcoll@70-36-196-192.dsl.static.sonic.net) Quit ()</span><br />
+<span class="irc-date">[11:24]</span> <span class="irc-black">&lt;CIA-11&gt; ioke: Ola Bini master * r5653332 / (bin/ioke build.xml): Force compilation using UTF-8 compilation - and make sure file.encoding is always set to UTF-8 too - <a href="http://bit.ly/5AV86h">http://bit.ly/5AV86h</a></span><br />
+<span class="irc-date">[11:36]</span> <span class="irc-navy">* jdp (n=justin@75.97.120.11.res-cmts.senj.ptd.net) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[15:49]</span> <span class="irc-green">* kar8nga (n=kar8nga@jol13-1-82-66-176-74.fbx.proxad.net) has joined #ioke</span><br />
+<span class="irc-date">[18:03]</span> <span class="irc-green">* richcollins (n=richcoll@70-36-196-192.dsl.static.sonic.net) has joined #ioke</span><br />
+<span class="irc-date">[18:45]</span> <span class="irc-navy">* richcollins (n=richcoll@70-36-196-192.dsl.static.sonic.net) Quit ()</span><br />
+<span class="irc-date">[19:36]</span> <span class="irc-green">* richcollins (n=richcoll@70-36-196-192.dsl.static.sonic.net) has joined #ioke</span><br />
+<span class="irc-date">[19:44]</span> <span class="irc-navy">* richcollins (n=richcoll@70-36-196-192.dsl.static.sonic.net) Quit ()</span><br />
+<span class="irc-date">[19:54]</span> <span class="irc-navy">* kar8nga (n=kar8nga@jol13-1-82-66-176-74.fbx.proxad.net) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[20:26]</span> <span class="irc-green">* richcollins (n=richcoll@c-71-198-61-203.hsd1.ca.comcast.net) has joined #ioke</span><br />
+<span class="irc-date">[20:31]</span> <span class="irc-navy">* richcollins (n=richcoll@c-71-198-61-203.hsd1.ca.comcast.net) Quit ()</span><br />
+<span class="irc-date">[20:38]</span> <span class="irc-green">* richcollins (n=richcoll@c-71-198-61-203.hsd1.ca.comcast.net) has joined #ioke</span><br />
+<span class="irc-date">[20:40]</span> <span class="irc-green">* felipero (n=Felipe@189-55-75-117-nd.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[21:25]</span> <span class="irc-green">* kar8nga (n=kar8nga@jol13-1-82-66-176-74.fbx.proxad.net) has joined #ioke</span><br />
+<span class="irc-date">[21:29]</span> <span class="irc-navy">* kar8nga (n=kar8nga@jol13-1-82-66-176-74.fbx.proxad.net) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[22:06]</span> <span class="irc-navy">* pietia (n=pietia@cek235.neoplus.adsl.tpnet.pl) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[22:06]</span> <span class="irc-green">* pietia (n=pietia@ccg184.neoplus.adsl.tpnet.pl) has joined #ioke</span><br />
+<span class="irc-date">[22:32]</span> <span class="irc-navy">* richcollins (n=richcoll@c-71-198-61-203.hsd1.ca.comcast.net) Quit ()</span><br />
+<span class="irc-date">[22:50]</span> <span class="irc-green">* richcollins (n=richcoll@c-71-198-61-203.hsd1.ca.comcast.net) has joined #ioke</span><br />

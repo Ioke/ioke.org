@@ -1,0 +1,115 @@
+<span class="irc-date">[2:07]</span> <span class="irc-green">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) has joined #ioke</span><br />
+<span class="irc-date">[2:10]</span> <span class="irc-navy">* embro1001 (n=sintaks@CPE-70-94-3-19.wi.res.rr.com) Quit (Client Quit)</span><br />
+<span class="irc-date">[2:12]</span> <span class="irc-green">* zabbai (i=c9664f79@gateway/web/ajax/mibbit.com/x-66aabf0e86f6b993) has joined #ioke</span><br />
+<span class="irc-date">[2:27]</span> <span class="irc-navy">* zabbai (i=c9664f79@gateway/web/ajax/mibbit.com/x-66aabf0e86f6b993) Quit ("<a href="http://www.mibbit.com">http://www.mibbit.com</a> ajax IRC Client")</span><br />
+<span class="irc-date">[7:41]</span> <span class="irc-green">* Narnach (n=narnach@a82-94-4-220.adsl.xs4all.nl) has joined #ioke</span><br />
+<span class="irc-date">[7:44]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[7:48]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[8:37]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[8:45]</span> <span class="irc-green">* ynyr (n=ynyr@host217-44-177-41.range217-44.btcentralplus.com) has joined #ioke</span><br />
+<span class="irc-date">[8:56]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has joined #ioke</span><br />
+<span class="irc-date">[8:57]</span> <span class="irc-green">* olabini (n=ola@c-398de155.234-1-64736c10.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[8:57]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[9:14]</span> <span class="irc-green">* naeu (n=sam@h36036.upc-h.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[9:18]</span> <span class="irc-black">&lt;martido&gt; good day all</span><br />
+<span class="irc-date">[9:34]</span> <span class="irc-navy">* naeu (n=sam@h36036.upc-h.chello.nl) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[9:37]</span> <span class="irc-black">&lt;olabini&gt; hi there</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-black">&lt;martido&gt; olabini: you said yesterday that you had a document describing destructuring assignments? could you mail me that or upload it to the wiki?</span><br />
+<span class="irc-date">[9:59]</span> <span class="irc-black">&lt;martido&gt; haven't had the chance to think about it yesterday because there was a football match. it was disasatrous... so had to drink ;)</span><br />
+<span class="irc-date">[10:46]</span> <span class="irc-green">* naeu (n=sam@mail.innovationfactory.nl) has joined #ioke</span><br />
+<span class="irc-date">[10:49]</span> <span class="irc-black">&lt;naeu&gt; morning :-)</span><br />
+<span class="irc-date">[12:30]</span> <span class="irc-black">&lt;olabini&gt; everything I have is in the wiki or in the docs folder</span><br />
+<span class="irc-date">[12:30]</span> <span class="irc-black">&lt;olabini&gt; naeu: I made some comments earlier, look in the logs</span><br />
+<span class="irc-date">[12:30]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[12:30]</span> <span class="irc-black">&lt;naeu&gt; olabini: yeah i saw them this morning</span><br />
+<span class="irc-date">[12:30]</span> <span class="irc-black">&lt;naeu&gt; the only thing i didn't understand was:</span><br />
+<span class="irc-date">[12:30]</span> <span class="irc-black">&lt;naeu&gt; [22:33] &lt;olabini&gt; if(@match, text[x], nil)</span><br />
+<span class="irc-date">[12:31]</span> <span class="irc-black">&lt;naeu&gt; [22:33] &lt;olabini&gt; where text is also a cell</span><br />
+<span class="irc-date">[12:34]</span> <span class="irc-black">&lt;olabini&gt; well, why do you have the @ in @match?</span><br />
+<span class="irc-date">[12:57]</span> <span class="irc-black">&lt;martido&gt; olabini: ok, seen your notes in the wiki. I'm sorry ... that was obvious :(</span><br />
+<span class="irc-date">[13:00]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[13:02]</span> <span class="irc-black">&lt;naeu&gt; olabini: ah ok, I understand now :-)</span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-black">&lt;naeu&gt; but you're absolutely right about the consistency issues</span><br />
+<span class="irc-date">[13:03]</span> <span class="irc-black">&lt;naeu&gt; thanks for having a look at it</span><br />
+<span class="irc-date">[13:46]</span> <span class="irc-green">* olabini (n=ola@c-398de155.234-1-64736c10.cust.bredbandsbolaget.se) has left #ioke</span><br />
+<span class="irc-date">[14:12]</span> <span class="irc-green">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) has joined #ioke</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-green">* olabini (n=ola@c-9f4ce155.1110-8-64736c13.cust.bredbandsbolaget.se) has joined #ioke</span><br />
+<span class="irc-date">[14:41]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[15:15]</span> <span class="irc-black">&lt;naeu&gt; ola, do you see any need for an equivalent of StringScanner's skip and skip until</span><br />
+<span class="irc-date">[15:16]</span> <span class="irc-black">&lt;naeu&gt; they just seem to be equivalent's of scan and scan_until, except that they return the pointer value rather than the match</span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-black">&lt;olabini&gt; not sure</span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-black">&lt;olabini&gt; I think the semantics are good to have</span><br />
+<span class="irc-date">[15:17]</span> <span class="irc-black">&lt;olabini&gt; since it's a different operation from a semantic level</span><br />
+<span class="irc-date">[15:18]</span> <span class="irc-black">&lt;naeu&gt; i think that the name needs to change then</span><br />
+<span class="irc-date">[15:18]</span> <span class="irc-black">&lt;olabini&gt; even though the implementation might be the same</span><br />
+<span class="irc-date">[15:19]</span> <span class="irc-black">&lt;naeu&gt; both scan and skip check that the pattern matches from the positino of the pointer, and if so, both advance the pointer until after the match</span><br />
+<span class="irc-date">[15:19]</span> <span class="irc-black">&lt;naeu&gt; it's just that scan returns the match, and skip returns the pointer</span><br />
+<span class="irc-date">[15:19]</span> <span class="irc-black">&lt;naeu&gt; and that doesn't seem all that obvious from the names of the cells</span><br />
+<span class="irc-date">[15:22]</span> <span class="irc-navy">* Narnach (n=narnach@a82-94-4-220.adsl.xs4all.nl) Quit ("Leaving...")</span><br />
+<span class="irc-date">[15:52]</span> <span class="irc-black">&lt;naeu&gt; perhaps pointerScan and pointerSearch might be good names for the pointer-returning methods?</span><br />
+<span class="irc-date">[15:55]</span> <span class="irc-black">&lt;olabini&gt; not sure I liked the word pointer</span><br />
+<span class="irc-date">[15:55]</span> <span class="irc-black">&lt;olabini&gt; =)</span><br />
+<span class="irc-date">[15:55]</span> <span class="irc-black">&lt;olabini&gt; it's overloaded from C territory</span><br />
+<span class="irc-date">[15:55]</span> <span class="irc-black">&lt;naeu&gt; positionScan?</span><br />
+<span class="irc-date">[15:55]</span> <span class="irc-black">&lt;olabini&gt; probably better</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;naeu&gt; ok great</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;naeu&gt; the problem was coming up with a pointer-returning name for the equivalent of search</span><br />
+<span class="irc-date">[15:56]</span> <span class="irc-black">&lt;naeu&gt; i had scan, search, skip and ____</span><br />
+<span class="irc-date">[15:57]</span> <span class="irc-black">&lt;naeu&gt; but scan, search, positionScan and positionSearch work well with me</span><br />
+<span class="irc-date">[16:37]</span> <span class="irc-black">&lt;naeu&gt; hmm, i'm having a hard time trying to find consistent names for the TextScanner methods</span><br />
+<span class="irc-date">[16:38]</span> <span class="irc-black">&lt;naeu&gt; for example, what about the dry-run equivalents of scan and search which don't move the position pointer</span><br />
+<span class="irc-date">[16:40]</span> <span class="irc-black">&lt;naeu&gt; Ruby calls them match? and exists? respectively</span><br />
+<span class="irc-date">[16:45]</span> <span class="irc-green">* martido (n=martin@213.61.180.190) has left #ioke</span><br />
+<span class="irc-date">[17:17]</span> <span class="irc-black">&lt;naeu&gt; I think i'm going to look more closely at Java's Scanner</span><br />
+<span class="irc-date">[17:17]</span> <span class="irc-black">&lt;naeu&gt; it seems a little better thought out than Ruby's</span><br />
+<span class="irc-date">[17:17]</span> <span class="irc-black">&lt;olabini&gt; ah</span><br />
+<span class="irc-date">[17:17]</span> <span class="irc-black">&lt;olabini&gt; that's probably true</span><br />
+<span class="irc-date">[17:17]</span> <span class="irc-black">&lt;naeu&gt; at least in terms of naming</span><br />
+<span class="irc-date">[17:17]</span> <span class="irc-black">&lt;naeu&gt; and dealing with lines and delimiters</span><br />
+<span class="irc-date">[17:19]</span> <span class="irc-black">&lt;naeu&gt; does Ioke have locales?</span><br />
+<span class="irc-date">[17:20]</span> <span class="irc-black">&lt;olabini&gt; nope</span><br />
+<span class="irc-date">[17:20]</span> <span class="irc-black">&lt;olabini&gt; not yet at least</span><br />
+<span class="irc-date">[17:20]</span> <span class="irc-black">&lt;olabini&gt; I would really want to avoid dealing with that... =)</span><br />
+<span class="irc-date">[17:20]</span> <span class="irc-black">&lt;olabini&gt; but yeah</span><br />
+<span class="irc-date">[17:20]</span> <span class="irc-black">&lt;olabini&gt; hmm</span><br />
+<span class="irc-date">[17:20]</span> <span class="irc-black">&lt;naeu&gt; :-)</span><br />
+<span class="irc-date">[17:28]</span> <span class="irc-black">&lt;naeu&gt; would it be wise to add an isWhitespace? method to Text?</span><br />
+<span class="irc-date">[17:29]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[17:29]</span> <span class="irc-black">&lt;olabini&gt; that doesn't really make sense</span><br />
+<span class="irc-date">[17:29]</span> <span class="irc-black">&lt;olabini&gt; what do you want to ask?</span><br />
+<span class="irc-date">[17:29]</span> <span class="irc-black">&lt;olabini&gt; is there ANY whitespace in the text?</span><br />
+<span class="irc-date">[17:30]</span> <span class="irc-black">&lt;olabini&gt; is the first character whitespace?</span><br />
+<span class="irc-date">[17:30]</span> <span class="irc-black">&lt;olabini&gt; is it ALL whitespace?</span><br />
+<span class="irc-date">[17:30]</span> <span class="irc-black">&lt;naeu&gt; the latter</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Character.html#isWhitespace(char)">http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Character.html#isWhitespace(char)</a></span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;naeu&gt; does it make sense to define whitespace at the language level</span><br />
+<span class="irc-date">[17:31]</span> <span class="irc-black">&lt;naeu&gt; that's the question I'm asking really :-)</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;olabini&gt; hm</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;olabini&gt; well</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;olabini&gt; you can always use a regexp for white space</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;olabini&gt; using the unicode property whte space</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;olabini&gt; and if you're asking if it is all whitesapce, then I prefer Ruby's blank?</span><br />
+<span class="irc-date">[17:32]</span> <span class="irc-black">&lt;naeu&gt; sure :-)</span><br />
+<span class="irc-date">[17:33]</span> <span class="irc-black">&lt;naeu&gt; blank is defined on Object I think</span><br />
+<span class="irc-date">[17:33]</span> <span class="irc-black">&lt;naeu&gt; nil.blank? #=&gt; true</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;naeu&gt; does anyone here know how Java's (or even Ruby's) scanner deals with new lines</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;naeu&gt; Java's scanner has a nextLine method</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;naeu&gt; which skips to the next line</span><br />
+<span class="irc-date">[17:41]</span> <span class="irc-black">&lt;naeu&gt; however, what's not clear to me is what this is and how it might be used</span><br />
+<span class="irc-date">[17:42]</span> <span class="irc-black">&lt;naeu&gt; for example what is the definition of  a new line</span><br />
+<span class="irc-date">[17:42]</span> <span class="irc-black">&lt;naeu&gt; and does scan ignore lines?</span><br />
+<span class="irc-date">[17:44]</span> <span class="irc-black">&lt;naeu&gt; i.e. if the pointer is at the end of a line, and a scan is performed, will that return nil or will it automatically move over to the next line?</span><br />
+<span class="irc-date">[17:50]</span> <span class="irc-black">&lt;olabini&gt; blank? is not defined on Object, it's just defined on collection classes, String and NilClass</span><br />
+<span class="irc-date">[17:51]</span> <span class="irc-black">&lt;olabini&gt; I think</span><br />
+<span class="irc-date">[17:55]</span> <span class="irc-black">&lt;naeu&gt; <a href="http://api.rubyonrails.org/classes/Object.html#M000265">http://api.rubyonrails.org/classes/Object.html#M000265</a></span><br />
+<span class="irc-date">[17:55]</span> <span class="irc-black">&lt;naeu&gt; right i'm off home now</span><br />
+<span class="irc-date">[17:56]</span> <span class="irc-black">&lt;naeu&gt; if you have any thoughts on how scanners should deal with line breaks, then i'm all ears</span><br />
+<span class="irc-date">[17:56]</span> <span class="irc-navy">* naeu (n=sam@mail.innovationfactory.nl) Quit ()</span><br />
+<span class="irc-date">[17:57]</span> <span class="irc-black">&lt;olabini&gt; well. it's because of those lovely problems that I'm letting you deal with hard things like this. =)</span><br />
+<span class="irc-date">[18:27]</span> <span class="irc-navy">* ynyr (n=ynyr@host217-44-177-41.range217-44.btcentralplus.com) Quit ()</span><br />
+<span class="irc-date">[19:48]</span> <span class="irc-green">* ynyr (n=ynyr@host217-44-177-41.range217-44.btcentralplus.com) has joined #ioke</span><br />
+<span class="irc-date">[20:04]</span> <span class="irc-green">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) has joined #ioke</span><br />
+<span class="irc-date">[20:48]</span> <span class="irc-navy">* naeu (n=sam@dhcp-077-248-060-144.chello.nl) Quit ()</span><br />
+<span class="irc-date">[22:12]</span> <span class="irc-green">* embro1001 (n=sintaks@h69-129-134-210.nwblwi.dedicated.static.tds.net) has joined #ioke</span><br />
+<span class="irc-date">[23:07]</span> <span class="irc-navy">* ynyr (n=ynyr@host217-44-177-41.range217-44.btcentralplus.com) Quit ()</span><br />
+<span class="irc-date">[23:58]</span> <span class="irc-navy">* mozinator (n=mozinato@82-170-176-50.ip.telfort.nl) Quit (Remote closed the connection)</span><br />

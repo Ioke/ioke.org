@@ -1,0 +1,33 @@
+<span class="irc-date">[2:05]</span> <span class="irc-navy">* pdelgallego (n=pdelgall@42.Red-217-125-2.staticIP.rima-tde.net) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[2:48]</span> <span class="irc-green">* olabini (n=ola@219.235.233.66) has joined #ioke</span><br />
+<span class="irc-date">[2:48]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[2:49]</span> <span class="irc-black">&lt;olabini&gt; if the question still stands ...</span><br />
+<span class="irc-date">[2:49]</span> <span class="irc-black">&lt;olabini&gt; the object that is yielded when sending "each" to a Dict</span><br />
+<span class="irc-date">[2:49]</span> <span class="irc-black">&lt;olabini&gt; will be a Pair</span><br />
+<span class="irc-date">[2:49]</span> <span class="irc-black">&lt;olabini&gt; where a Pair have two kinds of accessors. "first" and "second"</span><br />
+<span class="irc-date">[2:49]</span> <span class="irc-black">&lt;olabini&gt; and "key" and "value"</span><br />
+<span class="irc-date">[2:49]</span> <span class="irc-black">&lt;olabini&gt; so you can do something like this:</span><br />
+<span class="irc-date">[2:50]</span> <span class="irc-black">&lt;olabini&gt; {foo: 42, bar: 55} each(e, e value println)</span><br />
+<span class="irc-date">[2:57]</span> <span class="irc-black">&lt;CIA-42&gt; ioke: Ola Bini gh-pages * rb982bd8 / index.html : Fix a small typo on front page - <a href="http://bit.ly/3s3s3a">http://bit.ly/3s3s3a</a></span><br />
+<span class="irc-date">[3:02]</span> <span class="irc-black">&lt;CIA-42&gt; ioke: Ola Bini master * r0946c12 / examples/chinese/account.ik : Some minor changes - <a href="http://bit.ly/Akpx0">http://bit.ly/Akpx0</a></span><br />
+<span class="irc-date">[4:37]</span> <span class="irc-black">&lt;CIA-42&gt; ioke: Ola Bini master * r61960d5 / examples/chinese/account_en.ik : Add english translation of the account example - <a href="http://bit.ly/1QMqdN">http://bit.ly/1QMqdN</a></span><br />
+<span class="irc-date">[6:13]</span> <span class="irc-green">* BanzaiMan (n=asari@75-134-20-174.dhcp.mdsn.wi.charter.com) has joined #ioke</span><br />
+<span class="irc-date">[6:13]</span> <span class="irc-green">* BanzaiMan (n=asari@75-134-20-174.dhcp.mdsn.wi.charter.com) has left #ioke</span><br />
+<span class="irc-date">[7:28]</span> <span class="irc-black">&lt;olabini&gt; thinking about starting work on tuples</span><br />
+<span class="irc-date">[7:28]</span> <span class="irc-black">&lt;olabini&gt; would be nice to have</span><br />
+<span class="irc-date">[7:28]</span> <span class="irc-black">&lt;olabini&gt; any thoughts?</span><br />
+<span class="irc-date">[8:54]</span> <span class="irc-green">* kar8nga (n=kar8nga@jol13-1-82-66-176-74.fbx.proxad.net) has joined #ioke</span><br />
+<span class="irc-date">[9:22]</span> <span class="irc-navy">* olabini (n=ola@219.235.233.66) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-green">* olabini (n=ola@58.30.34.163) has joined #ioke</span><br />
+<span class="irc-date">[9:58]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[10:20]</span> <span class="irc-green">* olabini` (n=ola@58.30.34.163) has joined #ioke</span><br />
+<span class="irc-date">[10:31]</span> <span class="irc-navy">* olabini (n=ola@58.30.34.163) Quit (Read error: 110 (Connection timed out))</span><br />
+<span class="irc-date">[11:08]</span> <span class="irc-navy">* kar8nga (n=kar8nga@jol13-1-82-66-176-74.fbx.proxad.net) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[12:53]</span> <span class="irc-green">* BanzaiMan (n=asari@75-134-20-174.dhcp.mdsn.wi.charter.com) has joined #ioke</span><br />
+<span class="irc-date">[13:45]</span> <span class="irc-navy">* BanzaiMan (n=asari@75-134-20-174.dhcp.mdsn.wi.charter.com) Quit ()</span><br />
+<span class="irc-date">[14:18]</span> <span class="irc-green">* BanzaiMan (n=asari@outbound-tdsinternet2.epicsystems.com) has joined #ioke</span><br />
+<span class="irc-date">[14:46]</span> <span class="irc-navy">* BanzaiMan (n=asari@outbound-tdsinternet2.epicsystems.com) Quit ()</span><br />
+<span class="irc-date">[14:47]</span> <span class="irc-green">* kar8nga (n=kar8nga@jol13-1-82-66-176-74.fbx.proxad.net) has joined #ioke</span><br />
+<span class="irc-date">[18:34]</span> <span class="irc-navy">* kar8nga (n=kar8nga@jol13-1-82-66-176-74.fbx.proxad.net) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[19:58]</span> <span class="irc-green">* jdp (n=justin@ool-435238c0.dyn.optonline.net) has joined #ioke</span><br />
+<span class="irc-date">[21:25]</span> <span class="irc-navy">* jdp (n=justin@ool-435238c0.dyn.optonline.net) Quit (Remote closed the connection)</span><br />

@@ -1,0 +1,56 @@
+<span class="irc-date">[10:34]</span> <span class="irc-green">* IokeStormBot (n=PircBot@8.12.35.212) has joined #ioke</span><br />
+<span class="irc-date">[10:34]</span> <span class="irc-green">* Topic is 'Ioke - a dynamic programming language for the JVM | <a href="http://ioke.org">http://ioke.org</a> | Logs <a href="http://ioke.org/irc/logs'">http://ioke.org/irc/logs'</a></span><br />
+<span class="irc-date">[10:34]</span> <span class="irc-green">* Set by olabini on Thu Jan 22 13:02:32 GMT 2009</span><br />
+<span class="irc-date">[10:34]</span> <span class="irc-green">* olabini (n=ola@80-73-60-114.cust.kungalv.net) has joined #ioke</span><br />
+<span class="irc-date">[10:34]</span> <span class="irc-green">* ChanServ sets mode +o olabini </span><br />
+<span class="irc-date">[10:35]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:36]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:37]</span> <span class="irc-black">&lt;IokeHurricane&gt; op me please!</span><br />
+<span class="irc-date">[10:37]</span> <span class="irc-green">* olabini sets mode +o IokeHurricane </span><br />
+<span class="irc-date">[11:19]</span> <span class="irc-green">* donizetti (n=donizett@187.37.199.195) has joined #ioke</span><br />
+<span class="irc-date">[11:19]</span> <span class="irc-green">* donizetti (n=donizett@187.37.199.195) has left #ioke</span><br />
+<span class="irc-date">[12:00]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Ola Bini master * r52258df / (docs/release_todo src/builtin/H50_struct.ik): Add Struct to IokeGround instead of Ground. Also reorder release todos - <a href="http://bit.ly/85T34b">http://bit.ly/85T34b</a></span><br />
+<span class="irc-date">[12:00]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Ola Bini master * rfba8e59 / docs/release_announcement_P : Add release announcement for Ioke P - <a href="http://bit.ly/51czCf">http://bit.ly/51czCf</a></span><br />
+<span class="irc-date">[12:00]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Ola Bini master * r1a4171c / (7 files in 6 dirs): Update versions to final release versions - <a href="http://bit.ly/5xBJfp">http://bit.ly/5xBJfp</a></span><br />
+<span class="irc-date">[12:00]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Ola Bini master * rdd0a623 / (src/builtin/D45_fileSystem.ik test/file_system_spec.ik): Fix a slight test failure and also fix a typo for the Windows version of readLines - <a href="http://bit.ly/7D4itd">http://bit.ly/7D4itd</a></span><br />
+<span class="irc-date">[12:00]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Ola Bini master * r5cddfe4 / test/struct_spec.ik : Fix a test to not be dependent on hash ordering - <a href="http://bit.ly/6IXEIs">http://bit.ly/6IXEIs</a></span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Ola Bini gh-pages * r616c3ef / (6 files): Add binaries for Ioke P release - <a href="http://bit.ly/5WylSd">http://bit.ly/5WylSd</a></span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Ola Bini gh-pages * re97de37 / (142 files in 21 dirs): Upgrade dok version to Ioke P - <a href="http://bit.ly/5XZuQB">http://bit.ly/5XZuQB</a></span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Ola Bini gh-pages * rc13fbb8 / (download.html index.html): Update Ioke versions for the release - <a href="http://bit.ly/5CHbuj">http://bit.ly/5CHbuj</a></span><br />
+<span class="irc-date">[12:01]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Ola Bini gh-pages * rf83b77b / (6 files): Updated versions to latest fixes, including new F# version - <a href="http://bit.ly/5GMfvC">http://bit.ly/5GMfvC</a></span><br />
+<span class="irc-date">[12:05]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Ola Bini master * r26d1838 / (2 files in 2 dirs): Update F# version - <a href="http://bit.ly/6CGMWE">http://bit.ly/6CGMWE</a></span><br />
+<span class="irc-date">[12:11]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Ola Bini gh-pages * r1511cd7 / (3 files): Final version of P-0.4.0 - <a href="http://bit.ly/5Yk9iH">http://bit.ly/5Yk9iH</a></span><br />
+<span class="irc-date">[12:11]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Ola Bini master * rc53aae8 / (2 files in 2 dirs): Fix tests to be unambigious - <a href="http://bit.ly/7AfIWk">http://bit.ly/7AfIWk</a></span><br />
+<span class="irc-date">[12:11]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Ola Bini master * ra76c112 / docs/release_todo : Update release docs again - <a href="http://bit.ly/5v3li1">http://bit.ly/5v3li1</a></span><br />
+<span class="irc-date">[12:22]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Ola Bini master * r8116ce4 / (4 files in 4 dirs): Remove infinity symbol since Mono on Windows doesn't seem to like it. Gah. - <a href="http://bit.ly/6R9PSE">http://bit.ly/6R9PSE</a></span><br />
+<span class="irc-date">[12:23]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Ola Bini gh-pages * rfdda3a1 / (6 files): Remove a feature to be able to push final versions - <a href="http://bit.ly/8rkFe1">http://bit.ly/8rkFe1</a></span><br />
+<span class="irc-date">[12:29]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Ola Bini master * r7cdbca3 / test/set_spec.ik : Change test to not use a unicode character Mono on Windows dislikes - <a href="http://bit.ly/6E3vzZ">http://bit.ly/6E3vzZ</a></span><br />
+<span class="irc-date">[12:39]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Ola Bini master * rb091910 / (src/ikc/main/Ioke.Lang/IokeSet.cs test/set_spec.ik): Stop using literal unicode characters in the source of C# files - <a href="http://bit.ly/7R85dg">http://bit.ly/7R85dg</a></span><br />
+<span class="irc-date">[12:40]</span> <span class="irc-green">* felipero (n=Felipe@201-74-251-87-am.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[12:46]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Ola Bini master * r8b22187 / (4 files in 4 dirs):</span><br />
+<span class="irc-date">[12:46]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Revert "Remove infinity symbol since Mono on Windows doesn't seem to like it. Gah."</span><br />
+<span class="irc-date">[12:46]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: This reverts commit 8116ce4775503567113efaa67762c8e9d41fe54a. - <a href="http://bit.ly/80clmD">http://bit.ly/80clmD</a></span><br />
+<span class="irc-date">[12:46]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Ola Bini master * r5dfc114 / src/ikc/main/Ioke.Lang/Number.cs : Use Unicode letter instead of literal for omega symbol - <a href="http://bit.ly/57Psjq">http://bit.ly/57Psjq</a></span><br />
+<span class="irc-date">[12:53]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Ola Bini gh-pages * r70aae6e / (6 files): Probably the final final release versions. =) - <a href="http://bit.ly/5XmUfz">http://bit.ly/5XmUfz</a></span><br />
+<span class="irc-date">[13:09]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Ola Bini gh-pages * rb4c486f / (189 files in 34 dirs): Add new doks - <a href="http://bit.ly/5IwKqP">http://bit.ly/5IwKqP</a></span><br />
+<span class="irc-date">[13:22]</span> <span class="irc-navy">* jdp (n=justin@75.97.120.11.res-cmts.senj.ptd.net) Quit (holmes.freenode.net irc.freenode.net)</span><br />
+<span class="irc-date">[13:24]</span> <span class="irc-green">* jdp (n=justin@75.97.120.11.res-cmts.senj.ptd.net) has joined #ioke</span><br />
+<span class="irc-date">[13:29]</span> <span class="irc-black">&lt;CIA-10&gt; ioke: Ola Bini master * rf0aef7a / (7 files in 6 dirs): Update version to next snapshot version - <a href="http://bit.ly/5rl5WN">http://bit.ly/5rl5WN</a></span><br />
+<span class="irc-date">[14:08]</span> <span class="irc-green">* harryv (n=harry@vangberg.name) has joined #ioke</span><br />
+<span class="irc-date">[14:28]</span> <span class="irc-green">* chawls (n=nix@62.219.145.16) has joined #ioke</span><br />
+<span class="irc-date">[16:09]</span> <span class="irc-navy">* felipero (n=Felipe@201-74-251-87-am.cpe.vivax.com.br) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[16:21]</span> <span class="irc-green">* felipero (n=Felipe@201-74-251-87-am.cpe.vivax.com.br) has joined #ioke</span><br />
+<span class="irc-date">[19:24]</span> <span class="irc-green">* piranha (n=piranha@94-248-77-216.dynamic.peoplenet.ua) has joined #ioke</span><br />
+<span class="irc-date">[19:24]</span> <span class="irc-black">&lt;piranha&gt; hi guys</span><br />
+<span class="irc-date">[19:24]</span> <span class="irc-black">&lt;piranha&gt; I've just downloaded ioke-P-ikj-0.4.0.tar.gz and I don't see iik inside</span><br />
+<span class="irc-date">[19:24]</span> <span class="irc-black">&lt;piranha&gt; is it available somewhere separately?</span><br />
+<span class="irc-date">[19:29]</span> <span class="irc-black">&lt;piranha&gt; ah, I just need to start ioke without arguments and that requires some time. I'm too impatient :-)</span><br />
+<span class="irc-date">[19:40]</span> <span class="irc-green">* naeu (n=sam@AToulon-156-1-81-2.w92-153.abo.wanadoo.fr) has joined #ioke</span><br />
+<span class="irc-date">[20:40]</span> <span class="irc-navy">* piranha (n=piranha@94-248-77-216.dynamic.peoplenet.ua) Quit (Remote closed the connection)</span><br />
+<span class="irc-date">[21:08]</span> <span class="irc-black">&lt;olabini&gt; yeah</span><br />
+<span class="irc-date">[21:08]</span> <span class="irc-black">&lt;olabini&gt; sorry</span><br />
+<span class="irc-date">[21:08]</span> <span class="irc-black">&lt;olabini&gt; hehe</span><br />
+<span class="irc-date">[22:35]</span> <span class="irc-navy">* naeu (n=sam@AToulon-156-1-81-2.w92-153.abo.wanadoo.fr) Quit (Read error: 60 (Operation timed out))</span><br />
+<span class="irc-date">[22:37]</span> <span class="irc-green">* naeu (n=sam@AToulon-156-1-81-2.w92-153.abo.wanadoo.fr) has joined #ioke</span><br />
+<span class="irc-date">[22:38]</span> <span class="irc-navy">* naeu (n=sam@AToulon-156-1-81-2.w92-153.abo.wanadoo.fr) Quit (Client Quit)</span><br />
+<span class="irc-date">[23:26]</span> <span class="irc-navy">* felipero (n=Felipe@201-74-251-87-am.cpe.vivax.com.br) Quit (Read error: 60 (Operation timed out))</span><br />
