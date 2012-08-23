@@ -61,7 +61,7 @@ $wgDBtype           = "mysql";
 $wgDBserver         = "localhost";
 $wgDBname           = "wikidb";
 $wgDBuser           = "wikiuser";
-$wgDBpassword       = "d34tRuct1on";
+$wgDBpassword       = "WIKI_DB_PASSWORD";
 
 # MySQL specific settings
 $wgDBprefix         = "ioke_";
@@ -140,4 +140,3 @@ $wgAccountRequestMinWords = 0;
 $wgAccountRequestToS = false;
 $wgAccountRequestExtraInfo = false;
 $wgConfirmAccountContact = "ola.bini+iokewiki@gmail.com";
-
