@@ -22,7 +22,7 @@ function MygmaParserInit() {
 	return true;
 }
 
-function MygmaRender( $input, $args = array(), $parser, $frame ) {
+function MygmaRender( $input, $args = array(), $parser ) {
     global $pygmentize_path;
     if( isset( $args['lang'] ) && $args['lang'] ) {
         $lang = '-l ' . escapeshellarg($args['lang']) . ' ';
