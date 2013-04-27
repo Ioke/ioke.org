@@ -123,7 +123,7 @@ $wgDiff3 = "";
 # sure that cached pages are cleared.
 $wgCacheEpoch = max( $wgCacheEpoch, gmdate( 'YmdHis', @filemtime( __FILE__ ) ) );
 
-$wgLogo = "http://ioke.org/img/IokeLogoSmall.png";
+$wgLogo = "https://ioke.org/img/IokeLogoSmall.png";
 
 #require_once("extensions/SyntaxHighlight_GeSHi/SyntaxHighlight_GeSHi.php");
 require_once("extensions/Mygma.php");
