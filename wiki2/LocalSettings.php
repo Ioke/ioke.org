@@ -132,8 +132,8 @@ $wgGroupPermissions['*']['edit'] = false;
 
 $wgSpamRegex = "/\<.*style.*?(display|position|overflow|visibility|height)\s*:.*?>/i";
 
-require_once( "$IP/extensions/ConfirmEdit/ConfirmEdit.php" );
-require_once("$IP/extensions/ConfirmAccount/SpecialConfirmAccount.php");
+#require_once( "$IP/extensions/ConfirmEdit/ConfirmEdit.php" );
+#require_once("$IP/extensions/ConfirmAccount/SpecialConfirmAccount.php");
 
 $wgUseRealNamesOnly = false;
 $wgAccountRequestMinWords = 0;
