@@ -125,9 +125,6 @@ $wgCacheEpoch = max( $wgCacheEpoch, gmdate( 'YmdHis', @filemtime( __FILE__ ) ) )
 
 $wgLogo = "https://ioke.org/img/IokeLogoSmall.png";
 
-#require_once("extensions/SyntaxHighlight_GeSHi/SyntaxHighlight_GeSHi.php");
-require_once("extensions/Mygma.php");
-
 $wgGroupPermissions['*']['edit'] = false;
 
 $wgSpamRegex = "/\<.*style.*?(display|position|overflow|visibility|height)\s*:.*?>/i";
@@ -142,3 +139,7 @@ $wgAccountRequestExtraInfo = false;
 $wgConfirmAccountContact = "ola.bini+iokewiki@gmail.com";
 
 wfLoadSkin( 'MonoBook' );
+wfLoadExtension( 'SyntaxHighlight_GeSHi' );
+#require_once("extensions/SyntaxHighlight_GeSHi/SyntaxHighlight_GeSHi.php");
+#require_once("extensions/Mygma.php");
+
