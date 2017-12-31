@@ -41,7 +41,7 @@ $wgSitename         = "IokeWiki";
 ## defaults for all runtime URL paths are based off of this.
 ## For more information on customizing the URLs please see:
 ## http://www.mediawiki.org/wiki/Manual:Short_URL
-$wgScriptPath       = "/wiki";
+$wgScriptPath       = "/wiki2";
 $wgScriptExtension  = ".php";
 
 ## UPO means: this is also a user preference option
@@ -132,7 +132,7 @@ $wgGroupPermissions['*']['edit'] = false;
 
 $wgSpamRegex = "/\<.*style.*?(display|position|overflow|visibility|height)\s*:.*?>/i";
 
-#require_once( "$IP/extensions/ConfirmEdit/ConfirmEdit.php" );
+require_once( "$IP/extensions/ConfirmEdit/ConfirmEdit.php" );
 #require_once("$IP/extensions/ConfirmAccount/SpecialConfirmAccount.php");
 
 $wgUseRealNamesOnly = false;
@@ -140,3 +140,5 @@ $wgAccountRequestMinWords = 0;
 $wgAccountRequestToS = false;
 $wgAccountRequestExtraInfo = false;
 $wgConfirmAccountContact = "ola.bini+iokewiki@gmail.com";
+
+wfLoadSkin( 'MonoBook' );
