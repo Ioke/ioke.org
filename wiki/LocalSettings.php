@@ -43,7 +43,8 @@ $wgSitename         = "IokeWiki";
 ## http://www.mediawiki.org/wiki/Manual:Short_URL
 $wgScriptPath       = "/wiki";
 $wgScriptExtension  = ".php";
-
+$wgServer           = "https://ioke.org"
+                    
 ## UPO means: this is also a user preference option
 
 $wgEnableEmail      = true;
